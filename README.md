@@ -1,7 +1,7 @@
 ![Hyblab 2017][1]
 ==========
 
-Source code of all the projects of [Hyblab 2016][2]. Hyblab is a datajournalism project organized by [Ouest Medilab][3] in the city of Nantes (France) from January 24 to February 07, 2014.
+Source code of all the projects of [Hyblab 2017][2]. Hyblab is a datajournalism project organized by [Ouest Medilab][3] in the city of Nantes (France) from January 24 to February 07, 2017.
 
 Three schools participated in this project:
 
