@@ -1,5 +1,5 @@
 // Use strict mode
-"use strict";
+'use strict';
 
 // Load usefull expressjs and nodejs objects / modules
 var express = require('express');

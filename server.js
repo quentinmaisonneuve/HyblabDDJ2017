@@ -1,3 +1,5 @@
+'use strict';
+
 // general routing framework
 var express = require('express')
 //var basicAuth = require('basic-auth-connect');
@@ -9,7 +11,9 @@ var app = express()
 // declare the list of sub apps
 var app_names = [];
 
-var ddj2017_names = ['simple-example'];
+var ddj2017_names = ['simple-example','auran', 'casus_ludi', 'double_mixte',
+  'euradio_nantes', 'julie_reux', 'le_crabe_fantome', 'mathias_virili',
+  'open_odyssey', 'ouest_france', 'saint_nazaire', 'sun'];
 
 app_names.push.apply(app_names, ddj2017_names);
 
@@ -18,7 +22,7 @@ var sub_apps = [];
 // create sub apps
 // and register sub-apps
 app_names.forEach( function( element, index, array) {
-  console.log("Registering: " + element);
+  console.log('Registering: ' + element);
 	sub_apps[element] = require('./' + element + '/server');
 	app.use('/' + element, sub_apps[element]);
 });

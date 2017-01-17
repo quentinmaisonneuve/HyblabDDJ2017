@@ -10,8 +10,19 @@ Three schools participated in this project:
  - [AGR-L'école de l'image][6] (web design)
 
 
-The 12 projects where proposed by different local, national and international media:
+The 11 projects where proposed by different local and national media and independent journalists:
 
+- [L'Auran][7]
+- [Casus Ludi][8]
+- [Double Mixte][9]
+- [Euradio Nantes][10]
+- [Julie Reux][11]
+- [Le Crabe Fantôme][12]
+- [Mathias Virilli][13]
+- [Open Odyssey][14]
+- [Ouest France][15]
+- [Saint Nazaire][16]
+- [SUN][17]
 
 [1]: http://www.hyblab.fr/wp-content/uploads/2016/11/sliderddj2017edition5web.png
 [2]: http://www.hyblab.fr
@@ -19,6 +30,17 @@ The 12 projects where proposed by different local, national and international me
 [4]: http://www.sciencescom.org
 [5]: http://www.polytech.univ-nantes.fr
 [6]: http://www.agrnantes.fr
+[7]: http://www.auran.org
+[8]: http://www.casusludi.com
+[9]: http://www.agence-double-mixte.com
+[10]: http://www.agence-double-mixte.com
+[11]: http://www.julie-reux.fr
+[12]: http://www.crabe-fantome.fr
+[13]: http://www.rfi.fr/auteur/mathias-virilli/
+[14]: http://www.open-odyssey.org
+[15]: http://www.ouest-france.fr
+[16]: http://www.mairie-saintnazaire.fr
+[17]: http://www.lesonunique.com
 
 
 # How to run the code ?
