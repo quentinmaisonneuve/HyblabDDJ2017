@@ -1,4 +1,4 @@
-# Descriptif du projet
+﻿# Descriptif du projet
 
 Média :
 
@@ -6,7 +6,7 @@ Sujet :
 
 Equipe :
 
-Patricipants :
+Participants :
 
 - AGR :
 - Polytech :  
