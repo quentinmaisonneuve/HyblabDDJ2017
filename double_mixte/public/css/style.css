@@ -22,3 +22,9 @@ header img{
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent #96B571;
 }
+
+/* Graphique 2013 */
+#chart {
+    height: 440px;
+    width: 100%;
+}
