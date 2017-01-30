@@ -1,4 +1,4 @@
-# Descriptif du projet
+﻿# Descriptif du projet
 
 Média :
 
@@ -9,7 +9,7 @@ Equipe :
 Patricipants :
 
 - AGR :
-- Polytech :  
+- Polytech : Aurélie DURAND, Meriem EL QSIMI, Thibaud GAUTON, Hassan KARAKI
 - SciencesCom :
 
 # Installation
