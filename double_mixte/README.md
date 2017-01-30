@@ -6,7 +6,7 @@ Sujet :
 
 Equipe :
 
-Patricipants :
+Participants :
 
 - AGR :
 - Polytech : Aurélie DURAND, Meriem EL QSIMI, Thibaud GAUTON, Hassan KARAKI

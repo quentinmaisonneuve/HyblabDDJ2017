@@ -13,3 +13,18 @@ header img{
   max-width: 100%;
 	height: auto;
 }
+
+/* Couleur des flèches de navigation */
+.fp-controlArrow.fp-prev {
+	border-color: transparent #96B571 transparent transparent;
+}	
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #96B571;
+}
+
+/* Graphique 2013 */
+#chart {
+    height: 440px;
+    width: 100%;
+}
