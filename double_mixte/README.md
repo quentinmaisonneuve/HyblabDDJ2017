@@ -9,7 +9,7 @@ Equipe :
 Participants :
 
 - AGR :
-- Polytech :  
+- Polytech : Aurélie DURAND, Meriem EL QSIMI, Thibaud GAUTON, Hassan KARAKI
 - SciencesCom :
 
 # Installation
