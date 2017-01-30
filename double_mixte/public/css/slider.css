@@ -1,0 +1,8 @@
+/* Couleur des flèches de navigation */
+.fp-controlArrow.fp-prev {
+	border-color: transparent #96B571 transparent transparent;
+}	
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #96B571;
+}
