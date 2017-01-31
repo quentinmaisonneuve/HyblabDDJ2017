@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded',function(){
     };
 
     var options = {
-        seriesBarDistance: 20
+        seriesBarDistance: 20,
+        height: "20em",
     };
 
     var responsiveOptions = [
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded',function(){
         ['screen and (max-width: 640px)', {
             seriesBarDistance: 13,
             showLine: false,
+            height: "10em",
             axisX: {
                 labelInterpolationFnc: function (value) {
                     return value[0];
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
         }]
     ];
 
-    var mychart = Chartist.Bar('.ct-chart', data);
+    var mychart = Chartist.Bar('.ct-chart', data, options, responsiveOptions);
 
     mychart.on('draw', function (data) {
         if (data.type === 'bar') {
