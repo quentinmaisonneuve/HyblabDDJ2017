@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded',function(){
     };
 
     var options = {
-        seriesBarDistance: 20,
+        seriesBarDistance: 30,
         height: "20em",
     };
 
     var responsiveOptions = [
         ['screen and (min-width: 641px) and (max-width: 1024px)', {
-            seriesBarDistance: 15,
+            seriesBarDistance: 30,
             axisX: {
                 labelInterpolationFnc: function (value) {
                     return value;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',function(){
         }
         }],
         ['screen and (max-width: 640px)', {
-            seriesBarDistance: 13,
+            seriesBarDistance: 30,
             showLine: false,
             height: "10em",
             axisX: {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded',function(){
             data.element.attr({
                 style: 'stroke-width: 0px'
             });
-            var strokeWidth = 10;
+            var strokeWidth = 28;
 
             for (var s = 0; s < data.series.length; ++s) {
                 if (data.seriesIndex === s) {
