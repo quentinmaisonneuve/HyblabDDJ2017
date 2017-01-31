@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded',function(){
     };
 
     var options = {
-        seriesBarDistance: 20,
-        height: "20em"
+        seriesBarDistance: 20
     };
 
     var responsiveOptions = [
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded',function(){
         ['screen and (max-width: 640px)', {
             seriesBarDistance: 13,
             showLine: false,
-            height: "10em",
             axisX: {
                 labelInterpolationFnc: function (value) {
                     return value[0];
@@ -33,35 +31,35 @@ document.addEventListener('DOMContentLoaded',function(){
         }]
     ];
 
-new Chartist.Bar('.ct-chart', data, options, responsiveOptions);
+    var mychart = Chartist.Bar('.ct-chart', data);
 
-$('#chart1').on('draw', function (data) {
-    if (data.type === 'bar') {
-        data.element.attr({
-            style: 'stroke-width: 0px'
-        });
-        var strokeWidth = 10;
+    mychart.on('draw', function (data) {
+        if (data.type === 'bar') {
+            data.element.attr({
+                style: 'stroke-width: 0px'
+            });
+            var strokeWidth = 10;
 
-        for (var s = 0; s < data.series.length; ++s) {
-            if (data.seriesIndex === s) {
-                data.element.animate({
-                    y2:             {
-                        begin:  s * 500,
-                        dur:    500,
-                        from:   data.y1,
-                        to:     data.y2,
-                        easing: Chartist.Svg.Easing.easeOutSine
-                    },
-                    'stroke-width': {
-                        begin: s * 500,
-                        dur:   1,
-                        from:  0,
-                        to:    strokeWidth,
-                        fill:  'freeze'
-                    }
-                }, false);
+            for (var s = 0; s < data.series.length; ++s) {
+                if (data.seriesIndex === s) {
+                    data.element.animate({
+                        y2:             {
+                            begin:  s * 500,
+                            dur:    500,
+                            from:   data.y1,
+                            to:     data.y2,
+                            easing: Chartist.Svg.Easing.easeOutSine
+                        },
+                        'stroke-width': {
+                            begin: s * 500,
+                            dur:   1,
+                            from:  0,
+                            to:    strokeWidth,
+                            fill:  'freeze'
+                        }
+                    }, false);
+                }
             }
         }
-    }
-});
+    });
 });
