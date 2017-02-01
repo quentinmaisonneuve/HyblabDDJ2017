@@ -7,13 +7,29 @@
     <title>Hyblab 2016</title>
     <!-- Basic viewport setting for mobile friendly page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Déclaration de la feuille de style du document-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
     <!-- Those polyfills are required so that old browsers support fetch mecanism -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+
+    <!-- Déclaration des scripts js et librairies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <!-- Simple sample script that loads data from a dummy json file -->
     <script src="js/example.js" defer></script>
+
+    <!-- scipt pour le fonctionnement de fullpage.js -->
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+			});
+		});
+	</script>
 </head>
 <body>
     <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
@@ -23,13 +39,66 @@
 
         <!-- l'entête de la page: titre, barre de recherche -->
         <header>
-            <img src="img/logo_hyblab.png" alt="logo hyblab" />
-            <h1>Hyblab Datajournalism 2017</h1>
+            <!--<img src="img/logo_hyblab.png" alt="logo hyblab" />-->
+            <!--<h1>Hyblab Datajournalism 2017</h1>-->
         </header>
 
         <!-- Le contenu du site -->
-        <p>Replace this content by your web app !</p>
-        <p>Here is some data from a json file : <span id="data"></span></p>
+
+        <div id="fullpage">
+          <!--first page-->
+          <div class="section" id="s1">
+            <h2>
+              Vous ne vous êtes jamais demandé combien de personnes empruntent chaque jour les mêmes routes que vous ? Avec qui partagez-vous le bus chaque matin, ou à qui appartient cette berline rouge que vous doublez tous les lundis ?
+              Dans votre département, la question des déplacements est devenue omniprésente, que l’on parle des bouchons de l’agglomération nantaise, ou de l’agrandissement de la Métropole. Ainsi, en 2015, vous accumuliez, tous ensemble, plus de 5 millions de déplacements quotidiens.
+              Grâce à une enquête menée par l’AURAN auprès de 20799 habitants de Loire-Atlantique, nous vous proposons de vous accompagner dans la découverte de ce qui fait votre département au jour le jour, la multiplicité de vos déplacements !
+            </h2>
+          </div>
+
+          <!--second page-->
+          <div class="section" id="s2">
+            <h2>
+               Sélectionnez votre point de départ puis votre destination.
+          </div>
+
+          <!--third page -->
+          <div class="section" id="s3">
+            <h2>
+              Choisissez le mode de transport que vous empruntez le plus
+            <h2>
+          </div>
+
+          <!--fourth page -->
+          <div class="section" id="scenario1">
+            <h2>
+              Première image de scénar
+            </h2>
+          </div>
+
+          <!--fifth page -->
+          <div class="section" id="scenario2">
+            <h2>
+              Deuxième image de scénar
+            </h2>
+          </div>
+
+          <!--sixth page -->
+          <div class="section" id="scenario2">
+            <h2>
+              Troisième image de scénar
+            </h2>
+          </div>
+
+          <!-- final page -->
+          <div class="section" id="scenario2">
+            <h2>
+              En Loire-Atlantique les déplacements restent en grande majorité effectués sur de courtes distances
+            </h2>
+          </div>
+
+        </div>
+
+        <!--t    <p>Replace this content by your web app !</p>     <p>Here is some data from a json file : <span id="data"></span></p> -->
 
         <!-- Notre pied de page -->
         <footer>
