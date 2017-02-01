@@ -1,16 +1,16 @@
 # Descriptif du projet
 
-Média :
+Média : Ouest France
 
-Sujet :
+Sujet : Transports urbains
 
-Equipe :
+Equipe : ActionTAN
 
 Patricipants :
 
-- AGR :
-- Polytech :  
-- SciencesCom :
+- AGR : Anthony RICHEFOU, Nathan ALLARD
+- Polytech : Corentin MARIE, Guillaume DOUSSET, Ronan JAMET, Jinbo LIU
+- SciencesCom : Bastien GAURIAU, Raphaël Thureau, Mathieu RIVY
 
 # Installation
 
