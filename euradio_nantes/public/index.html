@@ -1,40 +1,143 @@
-<!DOCTYPE html>
-<html lang="fr"> <!-- Notre page est en français -->
-  <head>
-    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-    <meta charset="utf-8">
-    <title>Hyblab 2016</title>
-		<!-- Basic viewport setting for mobile friendly page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Déclaration de la feuille de style du document-->
-    <link rel="stylesheet" href="css/style.css">
-		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/index.js" defer></script>
-  </head>
-  <body>
-    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+<!doctype html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- l'entête de la page: titre, barre de recherche -->
-    <header>
-			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
-      <h1>Hyblab Datajournalism 2017</h1>
-    </header>
+		<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- Le contenu du site -->
-    <p>Replace this content by your web app !</p>
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+		<link rel="stylesheet" href="css/style-timeline.css"> <!-- Timeline -->
+		<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-		<p>Here is some data from a json file : <span id="data"></span><p>
+		<title>Euradionantes</title>
+	</head>
+	<body>
+		<nav class="cd-vertical-nav">
+			<ul>
+				<li><a href="#section1" class="active"><span class="label">Intro</span></a></li>
+				<li><a href="#section2"><span class="label">Radio européenne</span></a></li>
+				<li><a href="#section3"><span class="label">Pour les européens</span></a></li>
+				<li><a href="#section4"><span class="label">Par les européens</span></a></li>
+			</ul>
+		</nav><!-- .cd-vertical-nav -->
 
-    <!-- Notre pied de page -->
-    <footer>
-      <p>Copyright Hyblab team 2017</p>
-    </footer>
-    </div>
-  </body>
+		<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+
+		<section id="section1" class="cd-section">
+			<div class="content-wrapper">
+				<h1>Une radio européenne, pour et par les européens.</h1>
+				<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
+			</div>
+		</section><!-- cd-section -->
+
+		<section id="section2" class="cd-section">
+			<div class="content-wrapper">
+				<h2>Radio européenne</h2>
+		<!-- Ajout de la timeline -->
+
+				<section id="cd-timeline" class="cd-container">
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+						
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<img src="img/timeline/img_europe_1.png" alt="Les français votent non au référendum de la constitution européenne">
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-movie">
+							<img src="img/cd-icon-movie.svg" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Title of section 2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+							<a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Jan 18</span>
+						</div> <!-- cd-timeline-content -->
+
+						<div class="cd-timeline-content cd-timeline-content-right">
+							<h2>Title of section 2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+							<a href="#0" class="cd-read-more">Read more</a>
+						</div> <!-- cd-timeline-content -->
+
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-picture">
+							<img src="img/cd-icon-picture.svg" alt="Picture">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Title of section 3</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+							<a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Jan 24</span>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-location">
+							<img src="img/cd-icon-location.svg" alt="Location">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Title of section 4</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+							<a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Feb 14</span>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-location">
+							<img src="img/cd-icon-location.svg" alt="Location">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Title of section 5</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+							<a href="#0" class="cd-read-more">Read more</a>
+							<span class="cd-date">Feb 18</span>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img cd-movie">
+							<img src="img/cd-icon-movie.svg" alt="Movie">
+						</div> <!-- cd-timeline-img -->
+
+						<div class="cd-timeline-content">
+							<h2>Final Section</h2>
+							<p>This is the content of the last section</p>
+							<span class="cd-date">Feb 26</span>
+						</div> <!-- cd-timeline-content -->
+					</div> <!-- cd-timeline-block -->
+				</section> <!-- cd-timeline -->
+
+    <!--                      -->
+			</div>
+		</section><!-- cd-section -->
+
+		<section id="section3" class="cd-section">
+			<div class="content-wrapper">
+				<h2>Pour les européens</h2>
+			</div>
+		</section><!-- cd-section -->
+
+		<section id="section4" class="cd-section">
+			<div class="content-wrapper">
+				<h2>Par les européens</h2>
+			</div>
+		</section><!-- cd-section -->
+
+		<script src="js/jquery-2.1.4.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
+		<script src="js/main-timeline.js"></script>
+	</body>
 </html>
