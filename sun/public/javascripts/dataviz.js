@@ -1,56 +1,48 @@
-var svg = d3.select("svg"),
-    width = +svg.attr("width");
+var diameter = 500, //max size of the bubbles
+    color    = d3.scale.category20b(); //color category
 
-var format = d3.format(",d");
-
-var color = d3.scaleOrdinal(d3.schemeCategory20c);
-
-var pack = d3.pack()
-    .size([width, width])
+var bubble = d3.layout.pack()
+    .sort(null)
+    .size([diameter, diameter])
     .padding(1.5);
 
-/*d3.json("./creneauSeason/winter/0", function(data) {
-    data.
+var svg = d3.select("svg")
+    .append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+    .attr("class", "bubble");
 
-});
- d3.json("./creneauSeason/winter/0", function(d) {
-*/
-d3.json("./creneauSeason/winter/0", function(error, d) {
-    d.forEach(function(d) {
-        d.value = +d.value;
-        if (d.value) return d;
-    });
-}, function(error, classes) {
-    if (error) throw error;
+//d3.csv("./csv/test.csv", function(error, data){
+d3.json("./creneauSeason/winter/1", function(error, data){
+    //convert numerical values from strings to numbers
+    data = data.map(function(d){ d.value = +d["value"]; return d; });
 
-    var root = d3.hierarchy({children: classes})
-        .sum(function(d) { return d.value; })
+    //bubbles needs very specific format, convert data to this.
+    var nodes = bubble.nodes({children:data}).filter(function(d) { return !d.children; });
 
-    var node = svg.selectAll(".node")
-        .data(pack(root).leaves())
-        .enter().append("g")
-        .attr("class", "node")
-        .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+    //setup the chart
+    var bubbles = svg.append("g")
+        .attr("transform", "translate(0,0)")
+        .selectAll(".bubble")
+        .data(nodes)
+        .enter();
 
-    node.append("circle")
-        .attr("id", function(d) { return d.id; })
-        .attr("r", function(d) { return d.r; })
-        .style("fill", function(d) { return color(d.package); });
+    //create the bubbles
+    bubbles.append("circle")
+        .attr("r", function(d){ return d.r; })
+        .attr("cx", function(d){ return d.x; })
+        .attr("cy", function(d){ return d.y; })
+        .style("fill", function(d) { return color(d.value); });
 
-    node.append("clipPath")
-        .attr("id", function(d) { return "clip-" + d.id; })
-        .append("use")
-        .attr("xlink:href", function(d) { return "#" + d.id; });
-
-    node.append("text")
-        .attr("clip-path", function(d) { return "url(#clip-" + d.id + ")"; })
-        .selectAll("tspan")
-        .data(function(d) { return d.class.split(/(?=[A-Z][^A-Z])/g); })
-        .enter().append("tspan")
-        .attr("x", 0)
-        .attr("y", function(d, i, nodes) { return 13 + (i - nodes.length / 2 - 0.5) * 10; })
-        .text(function(d) { return d; });
-
-    node.append("title")
-        .text(function(d) { return d.id + "\n" + format(d.value); });
-});
+    //format the text for each bubble
+    bubbles.append("text")
+        .attr("x", function(d){ return d.x; })
+        .attr("y", function(d){ return d.y + 5; })
+        .attr("text-anchor", "middle")
+        .text(function(d){ return d["id"]; })
+        .style({
+            "fill":"white",
+            "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
+            "font-size": "12px"
+        });
+})
