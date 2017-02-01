@@ -1,11 +1,18 @@
 {
   "name": "sun",
-  "version": "1.0.0",
-  "description": "Projet hyblab DDJ 2017",
-  "main": "server.js",
-  "repository": "",
-  "author": "",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "d3": "^4.5.0",
+    "debug": "~2.2.0",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
   }
 }
