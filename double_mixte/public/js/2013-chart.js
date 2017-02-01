@@ -1,9 +1,26 @@
+var chart_annee = new Array();
+var chart_aout = new Array();
+var chart_octobre = new Array();
+
+$(function() {
+    $.get("data/2013-data.json", function(data) {
+        var json_data = data;
+        
+        for(var i = 0; i < json_data.length; i++) {
+            chart_annee.push(json_data[i].annee);
+            chart_aout.push(json_data[i].aout);
+            chart_octobre.push(json_data[i].octobre);
+        }
+        console.log(json_data);
+    })
+});
+
 document.addEventListener('DOMContentLoaded',function(){
     var data = {
-        labels: ['2011', '2012', '2013'],
+        labels: chart_annee,
         series: [
-            [60356.99009, 59817.68384, 72346.9775],
-            [72929.96518, 67039.10476, 69870.0879]
+            chart_aout,
+            chart_octobre
         ]
     };
 
