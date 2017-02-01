@@ -17,6 +17,7 @@
 }
 
 .element {
+	left: 200px;
     top: 0px;
     width: 40em;
     position: absolute;

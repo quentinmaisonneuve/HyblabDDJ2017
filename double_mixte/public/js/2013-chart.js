@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     mychart.on('draw', function (data) {
         if (data.type === 'bar') {
+
             data.element.attr({
                 style: 'stroke-width: 0px'
             });
@@ -82,3 +83,18 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     });
 });
+
+
+$(function() {
+    console.log($("body").html());
+    var test = $('#line1').length;
+    console.log(test);
+    //$('p').css("color", "red");
+});
+
+
+
+
+
+
+

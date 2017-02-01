@@ -6,3 +6,15 @@
 	font-size: 0.9em;
 }
 
+.ct-series-a > line {
+	stroke: #481C8C !important;
+}
+
+.ct-series-b > line {
+	stroke: #DE8948 !important;
+}
+
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+    font-size: 1.7em;
+    color: #481C8C;
+    font-family: fantasy;
