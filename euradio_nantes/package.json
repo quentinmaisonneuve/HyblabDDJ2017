@@ -1,11 +1,10 @@
 {
-  "name": "euradio_nantes",
-  "version": "1.0.0",
-  "description": "Projet hyblab DDJ 2017",
-  "main": "server.js",
-  "repository": "",
-  "author": "",
+  "name": "HyblabDDJ2017",
+  "version": "0.1.0",
   "dependencies": {
-    "express": "^4.13.3"
+    "micro": "latest"
+  },
+  "scripts": {
+    "start": "node --harmony-async-await index"
   }
 }
