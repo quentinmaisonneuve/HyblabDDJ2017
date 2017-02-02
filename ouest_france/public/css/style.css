@@ -33,3 +33,29 @@ html,body {
     background-color: #0f4864;
     bottom: 0px;
 }
+
+#section1 .proto_img
+{
+    width:100px;
+    height:100px;
+    background: #ff0000;
+    position:relative;
+    animation:mymove 2s infinite;
+    -moz-animation:mymove 2s infinite; /*Firefox*/
+    -webkit-animation:mymove 2s infinite; /*Safari and Chrome*/
+}
+@keyframes mymove
+{
+    0%   {left:0px; top:0px;}
+    100% {left:200px; top:200px;}
+}
+@-moz-keyframes mymove /*Firefox*/
+{
+    from {left:0px;}
+    to {left:200px;}
+}
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    from {left:0px;}
+    to {left:200px;}
+}
