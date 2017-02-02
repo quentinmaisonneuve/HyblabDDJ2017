@@ -1,6 +1,20 @@
 <script>
-    var myRect={x:150, y:75, w:50, h:50, color:"red"};
     var canvas = document.getElementById("myCanvas");
+    var container = document.getElementById("container");
+    var town = document.getElementById("town");
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    container.width  = window.innerWidth;
+    container.height = window.innerHeight;
+    town.width  = window.innerWidth;
+    town.height = window.innerHeight;
+    function getXCoordinate(xPourcentage){
+        return xPourcentage/100*screen.width;
+    }
+    function getYCoordinate(yPourcentage){
+        return yPourcentage/100*screen.height;
+    }
+    var myRect={x:getXCoordinate(50), y:getYCoordinate(50), w:100, h:100, color:"red"};
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = myRect.color;
     ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
@@ -24,6 +38,29 @@
         ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
     }
 </script>
-<canvas id="myCanvas" width="700" height="500" style="border:1px solid #c3c3c3;">
-    Your browser does not support the HTML5 canvas tag.
-</canvas>
+<style>
+
+
+    #myCanvas{
+        position: absolute;
+        z-index: 50;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border:1px solid #c3c3c3;
+    }
+    #town{
+        width: 60%;
+        height: 60%;
+        left: 0;
+        bottom: 10%;
+        position: absolute;
+    }
+</style>
+<div id="container">
+    <img id="town" src="img/plateau.svg"/>
+    <canvas id="myCanvas">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</div>
