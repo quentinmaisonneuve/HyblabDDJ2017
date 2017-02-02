@@ -5,7 +5,7 @@
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <!-- Script de defilement -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -14,24 +14,49 @@
           $('.js-scrollTo').on('click', function() { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
             var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            $('html, body, #container, #content').animate( { scrollTop: $(page).offset().top }, speed ); // Go
             return false;
           });
         });
     </script>
   </head>
+
   <body id="fullpage">
-    <div id="pageOne" class="section">
+  
+<div id="container">
+    <div id="content">
+      <div id="pageOne">
+        <img src="/images/logo-home.png">
+
+        <p class="pageOnePremierP">En 2016, pendant les matinées d'été tout le monde écoute du rock !</p>
+        <p class="pageOneDeuxiemeP">Et toi, c'est quoi ton mood...</p>
+        <a class="js-scrollTo" href="#pageTwo"><button>START</button></a>
+      </div>
+
+    <!--div id="pageOne" class="section">
       <p>Aujourd'hui <span id="numberOfMusicToday">? personne</span> ont joué une chanson sur Radio Sun</p>
       <a class="js-scrollTo" href="#pageTwo"><button>On Air</button></a>
-    </div>
+    </div-->
+
 
 
       <div id="pageTwo">
-        <h1>Quand écoutes tu le plus la musique ?</h1>
-        
-        <div class="blocTwo">
-          <p>//Saison</p>
+        <h1>"Dites nous quand vous m'écoutez, je vous dirais ce que vous aimez"</h1>
+        <h2>La rédac' SUN</h2>
+        <hr>
+        <div class="blocTwoOne">
+          <div class="Saison">
+            <p>aaaa</p>
+          </div>
+          <div class="Saison">
+            <p>bbb</p>
+          </div>
+          <div class="Saison">
+            <p>ccc</p>
+          </div>
+          <div class="Saison">
+            <p>dddd</p>
+          </div>
         </div>
         
         <div class="blocTwo">
@@ -43,14 +68,16 @@
         </div>
       </div>
 
+
       <div id="pageThree" class="section">
         <div id="bubble3" width="400" height="200"></div>
       </div>
 
-      <div id="pageFour" class="section">
-        
-      </div>
       <script src="./javascripts/pageOne.js"></script>
       <script src="./javascripts/pageThree.js"></script>
+
+</div>
+</div>
+
   </body>
 </html>

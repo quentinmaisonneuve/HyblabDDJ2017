@@ -151,7 +151,36 @@ var data = {
         //return db.query("SELECT count(*), _genre4 FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE DAYOFYEAR(date_heure_diffusion_reelle) < DAYOFYEAR(NOW()) AND DAYOFYEAR(date_heure_diffusion_reelle) >= (DAYOFYEAR(NOW())-1) GROUP BY _genre4;", callback)
     },
 
+getMoodCreneau:function(mood,start, stop, callback)
+    {
+        if (!valideDate(start) || !valideDate(stop))
+            throw "Bad SQL Date Format";
+        else
+        switch(mood)
+        {
+            case "Nostalgique":
+                
+                return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
+                break;
+            case "Cool" :
+                return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback);
+                break;
+            case "Stimulante":
+                return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée' );", callback);
+                break;
+            case "Agressive":   
+                return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
+                break;
+            case "Sentimentale":
+                return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
+                break;
+            default:
+                throw "Bad mood";
+                break;
 
+
+        }
+},
 getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
     {
         var intervalle = "";
@@ -185,33 +214,33 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
         {
             case "Nostalgique":
                 if (week == 0) // Week
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
                 else if (week == 1) // Week End
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
                 break;
             case "Cool" :
                 if (week == 0) // Week
-                        return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback);
+                        return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback);
                 else if (week == 1) // Week End
-                        return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback);
+                        return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback);
                 break;
             case "Stimulante":
                 if (week == 0) // Week
-                     return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée' );", callback);
+                     return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée' );", callback);
                 else if (week == 1) // Week End
-                     return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée');", callback);
+                     return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée');", callback);
                 break;
             case "Agressive":   
                 if (week == 0) // Week
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
                 else if (week == 1) // Week End
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
                 break;
             case "Sentimentale":
                 if (week == 0) // Week
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
                 else if (week == 1) // Week End
-                    return db.query("SELECT count(*) AS value, _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
+                    return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
                 break;
             default:
                 throw "Bad mood";
