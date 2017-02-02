@@ -1,6 +1,6 @@
 	'use strict'
 	
-$("#2050").click(function(e){
+$("#Bouton2050").click(function(e){
 	if(document.getElementById("scenar1").value==1){
 		
 	}
