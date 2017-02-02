@@ -1,139 +1,131 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="lib/animate.css" />
 
-  	<!-- Chartists -->
-	<script src="lib/chartist.js"></script>
-	<link rel="stylesheet" type="text/css" href="lib/chartist.css" />
+ <!-- Chartists -->
+ <script src="lib/chartist.js"></script>
+ <link rel="stylesheet" type="text/css" href="lib/chartist.css" />
 
-	<!-- D3 -->
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js'></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!-- D3 -->
+ <script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js'></script>
+ <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- Nos fichiers CSS -->
-	<link rel="stylesheet" href="css/slide.css">
-	<link rel="stylesheet" href="css/2014-chart.css">
-	<link rel="stylesheet" href="css/2013-chart.css">
+ <!-- Nos fichiers CSS -->
+ <link rel="stylesheet" href="css/slide.css">
+ <link rel="stylesheet" href="css/2014-chart.css">
+ <link rel="stylesheet" href="css/2013-chart.css">
 
-  	<!-- Nos fichiers Javascript -->
-	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
-  	<script src="js/2013-chart.js"></script>
+ <!-- Nos fichiers Javascript -->
+ <script src="js/2014-chart_age.js"  charset="utf-8"></script>
+ <script src="js/2013-chart.js"></script>
 </head>
 
 <body>
 	<div class="container-fluid">
-    
+
     <div id="carousel-example-generic" class="carousel slide">
     	<!-- Indicators -->
     	<ol class="carousel-indicators">
-	        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      	</ol>
+       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+       <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+     </ol>
 
-      	<!-- Wrapper for slides -->
-      	<div class="carousel-inner" role="listbox">
+     <!-- Wrapper for slides -->
+     <div class="carousel-inner" role="listbox">
 
-        <!-- First slide -->
-        <div class="item active deepskyblue">
+      <!-- First slide -->
+      <div class="item active deepskyblue">
 
-        	<div class="carousel-caption">
+       <div class="carousel-caption">
 
-            	<h3 data-animation="animated bounceInLeft"></h3>
-            	<h3 data-animation="animated bounceInRight"></h3>
-            	<button class="btn btn-primary btn-lg" data-animation="animated zoomInUp"></button>
-          	</div>
-        </div> 
+         <h3 data-animation="animated bounceInLeft"></h3>
+         <h3 data-animation="animated bounceInRight"></h3>
+         <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp"></button>
+       </div>
+     </div> 
 
-        <!-- Second slide -->
-        <div class="item skyblue">
-        	<div class="carousel-caption">
-            	<h3 class="icon-container" data-animation="animated bounceInDown">
-              		<span class="glyphicon glyphicon-heart"></span>
-            	</h3>
-	            <svg version="1.1"
-	            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	            x="0px" y="0px" width="800px" height="450px"
-	            overflow="visible" xml:space="preserve">
-	            
-		            <!-- Web Circle Bar Chart -->
-		            <g id="circleBarCharts" >
-						<g id="circleBar-web-group" transform="translate(0,0)">
-							<image id="circleBar-web-icon" opacity="0" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="" />
-							<text id="circleBar-web-text" opacity="0" x="200" y="155">Age</text>
-							<g id="circleBar-web-chart" transform="translate(215,150)"></g>
-							<clippath id="circleBar-web-clipPath">
-							<rect id="circleBar-web-clipLabels" x="205" y="215" width="180" height="0"></rect>
-							</clippath>
-						<g id="circleBar-web-legend" clip-path="url(#circleBar-web-clipPath)">
-						<text id="circleBar-web-values" transform="translate(222,225)"></text>
-						<text id="circleBar-web-labels" transform="translate(277,225)"></text>
-						</g>
-					</g>
-		            <!-- END: Web Circle Bar Chart -->
-		              
-		            <!-- Mobile Circle Bar Chart -->
-		            	<g id="circleBar-mobile-group" transform="translate(362,0)">
-		                	<image id="circleBar-mobile-icon" opacity="0" x="195" y="112" overflow="visible" width="40" height="77" xlink:href="" />
-		                	<text id="circleBar-mobile-text" opacity="0" x="187" y="155">Classes sociales</text>
-		                	<g id="circleBar-mobile-chart" transform="translate(215,150)"></g>
-		                	<clippath id="circleBar-mobile-clipPath">
-		                  		<rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
-		                	</clippath>
-		                	<g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
-		                		<text id="circleBar-mobile-values" transform="translate(222,268)"></text>
-		                  		<text id="circleBar-mobile-labels" transform="translate(277,268)"></text>
-		                	</g>
-		             	</g>
-		            </g> <!-- END: Mobile Circle Bar Chart -->
-	          	</svg>
+     <!-- Second slide -->
+     <div class="item skyblue">
+        <svg  id="mysvg" viewBox="0 0 800 400" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+        width="80%" height="75%"
+        overflow="visible" xml:space="preserve">
+        <g id="circleBarCharts" >
+          <g id="circleBar-web-group" transform="translate(250,0)">
+           <image id="circleBar-web-icon" opacity="0" x="166" y="100" overflow="visible" xlink:href="http://www.iconsdb.com/icons/preview/dark-gray/circle-xxl.png" />
+           <text id="circleBar-web-text" width="50%" opacity="0" x="200" y="155"></text>
+           <g id="circleBar-web-chart" transform="translate(215,150)"></g>
+           <clippath id="circleBar-web-clipPath">
+             <rect id="circleBar-web-clipLabels" x="205" y="215" width="200" height="0"></rect>
+           </clippath>
+           <g id="circleBar-web-legend" width=1000px clip-path="url(#circleBar-web-clipPath)">
+            <text id="circleBar-web-values" transform="translate(210,225)"></text>
+            <!--<text id="circleBar-web-labels" transform="translate(220,225)"></text>-->
+          </g>
+        </g>
 
-        	<h3 data-animation="animated bounceInUp"></h3>
-        		<button class="btn btn-primary btn-lg" data-animation="animated zoomInRight"></button>
-        	</div>
+        <g id="circleBar-mobile-group" transform="translate(0,0)">
+         <image id="circleBar-mobile-icon" opacity="0" x="125" y="48" overflow="visible" xlink:href="http://www.iconsdb.com/icons/preview/dark-gray/circle-xxl.png" />
+         <text id="circleBar-mobile-text" opacity="0"  x="150" y="155"></text>
+         <g id="circleBar-mobile-chart" width="100%" transform="translate(215,150)"></g>
+         <clippath id="circleBar-mobile-clipPath">
+          <rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
+        </clippath>
 
-    	</div><!-- /.item -->
+        <g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
+          <text id="circleBar-mobile-values" transform="translate(200,268)"></text>
+          <!--<text id="circleBar-mobile-labels" transform="translate(220,268)"></text>-->
+        </g>
+      </g>
+    </g> <!-- END: Mobile Circle Bar Chart -->
+  </svg>
+  <!--<h3 data-animation="animated bounceInUp"></h3> -->
 
-	    <!-- Third slide -->
-	    <div class="item darkerskyblue">
-	      	<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					<span id="label-aout" class="label label-default">Aout</span>
-					<span id="label-octobre" class="label label-default">Octobre</span>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-	        <div class="carousel-caption">
-	          <h3 class="icon-container" data-animation="animated zoomInLeft">
-	            <span class="glyphicon glyphicon-glass"></span>
-	          </h3>
+</div><!-- /.item -->
 
-	          <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn"></button>
-	        </div>
-	    </div><!-- /.item -->
+<!-- Third slide -->
+<div class="item darkerskyblue">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+     <div class="ct-chart .ct-golden-section" id="chart1"></div>
+     <span id="label-aout" class="label label-default">Aout</span>
+     <span id="label-octobre" class="label label-default">Octobre</span>
+   </div>
+   <div class="col-md-4"></div>
+ </div>
+ <div class="carousel-caption">
+   <h3 class="icon-container" data-animation="animated zoomInLeft">
+     <span class="glyphicon glyphicon-glass"></span>
+   </h3>
 
-	</div><!-- /.carousel-inner -->
+ </div>
+</div><!-- /.item -->
 
-	    <!-- Controls -->
-	    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-	    </a>
-	</div><!-- /.carousel -->
+</div><!-- /.carousel-inner -->
+
+<!-- Controls -->
+<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+ <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+ <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+ <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+ <span class="sr-only">Next</span>
+</a>
+</div><!-- /.carousel -->
 </div><!-- /.container -->
 
 <script type="text/javascript">
-  
+
 /* 
 Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Maria Antonietta Perna
 */
@@ -149,8 +141,8 @@ Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Mari
 				$this.removeClass($animationType);
 			});
 		});
-  	}
-  
+ }
+
 // Variables on page load 
 var $myCarousel = $('#carousel-example-generic'),
 $firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
@@ -167,7 +159,8 @@ $myCarousel.carousel('pause');
 $myCarousel.on('slide.bs.carousel', function (e) {
 	var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
 	doAnimations($animatingElems);
-	doGraphAnim2014();
+	doGraphAnimAge();
+  doGraphAnimCSP();
 	drawChart();
 });  
 
