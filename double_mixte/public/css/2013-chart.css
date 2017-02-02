@@ -18,3 +18,12 @@
     font-size: 1.7em;
     color: #481C8C;
     font-family: fantasy;
+}
+
+#label-aout {
+	background-color: #481C8C !important;
+}
+
+#label-octobre {
+	background-color: #DE8948 !important;
+}

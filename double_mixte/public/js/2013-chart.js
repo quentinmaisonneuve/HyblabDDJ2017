@@ -1,8 +1,8 @@
-var chart_annee = new Array();
-var chart_aout = new Array();
-var chart_octobre = new Array();
+function drawChart() {
+    var chart_annee = new Array();
+    var chart_aout = new Array();
+    var chart_octobre = new Array();
 
-$(function() {
     $.get("data/2013-data.json", function(data) {
         var json_data = data;
         
@@ -11,11 +11,14 @@ $(function() {
             chart_aout.push(json_data[i].aout);
             chart_octobre.push(json_data[i].octobre);
         }
+        toto(chart_annee, chart_aout, chart_octobre);
+        titi();
+        //setTimeout(titi(), 3000);
         console.log(json_data);
-    })
-});
+    });
+}
 
-document.addEventListener('DOMContentLoaded',function(){
+function toto(chart_annee, chart_aout, chart_octobre){
     var data = {
         labels: chart_annee,
         series: [
@@ -82,16 +85,26 @@ document.addEventListener('DOMContentLoaded',function(){
             }
         }
     });
-});
+}
+
+
+function titi() {
+    console.log($("body").html());
+    var test = $('.ct-bar').attr('x1');
+    console.log(test);
+}
 
 
 $(function() {
-    console.log($("body").html());
-    var test = $('#line1').length;
-    console.log(test);
+    //drawChart();
     //$('p').css("color", "red");
 });
 
+/*
+$(document).on('ready', function() {
+    drawChart();
+});
+*/
 
 
 
