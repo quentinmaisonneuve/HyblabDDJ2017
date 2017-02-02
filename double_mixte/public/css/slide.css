@@ -1,11 +1,6 @@
 .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-}    
-.main-container {
-	background : url(../img/VAN/img/bg.svg);
+
+  background : url(../img/VAN/img/bg.svg);
 	width:100%;
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
