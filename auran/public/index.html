@@ -30,6 +30,7 @@
     <script>
         $(function(){
             $("#page1").load("page1.html");
+            $("#page2").load("page2.html");
         });
     </script>
     <script type="text/javascript">
@@ -38,6 +39,9 @@
                 afterLoad: function(anchorLink, index){
                     if(index==2){
                         animateBuildings();
+                    }
+                    else if(index==3){
+                        animateComponents();
                     }
                 }
             });
@@ -52,10 +56,7 @@
         <div id="page1"></div>
     </div>
     <div class="section" id="section2">
-        <div class="intro">
-            <h1>Feel free!</h1>
-            <p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
-        </div>
+        <div id="page2"></div>
     </div>
 </div>
 

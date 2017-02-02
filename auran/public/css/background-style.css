@@ -49,11 +49,11 @@ h1{
     background: linear-gradient(#140F21,#140F21);
 }
 
-#section2{
+#section2 {
     background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
     background: -webkit-linear-gradient(#140F21, #140F21);
-    background: linear-gradient(#140F21,#140F21);
-
+    background: linear-gradient(#140F21, #140F21);
+}
 
 /*Adding background for the slides
 * --------------------------------------- */
