@@ -34,6 +34,7 @@
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
   	<script src="js/2011.js"></script>
+  	<script src="js/2012.js"></script>
   	<script src="js/2013.js"></script>
   	<script src="js/2014.js"></script>
   	<script src="js/2015.js"></script>
@@ -81,10 +82,18 @@
         	</div>
         </div> 
 		
-		<!-- 2011 -->
+		<!-- 2012 -->
         <div class="item slide2012">
-        	<div id="stackedbarchart" >
-		</div>
+        	<div class="nbnuitees">
+        		<img id="2012chiffre0" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre1" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre2" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre3" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre4" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre5" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre6" class="2012chiffre chiffre" src="img/zero.svg"/>
+        	</div>
+        	<div id="stackedbarchart"></div>
         </div>
 
         <!-- 2013 -->
@@ -227,7 +236,9 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	doGraphAnim2014();
 	drawChart();
 	drawStackedBarChart();
+
 	animateDigits2011();
+	animateDigits2012();
 	animateDigits2013();
 	animateDigits2014();
 	animateDigits2015();
