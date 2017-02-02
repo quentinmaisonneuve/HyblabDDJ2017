@@ -1,0 +1,117 @@
+/*#stackedbarchart1 {
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    //height: 100px; 
+    border: 0px solid black;
+}*/
+#stackedbarchart{
+	position: relative;
+	width:700px;
+	border-width:0px;
+    /*border-style: solid;
+    border-color: #8B0000;*/
+	padding:5px;
+	left: 10%;
+	top:15%;
+}
+/*
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}*/
+
+#stackedbarchart .c3-axis-y text {
+   fill: red;
+   font-size:12px;
+}
+#stackedbarchart .c3-axis-x text {
+    font: italic bold 15px Georgia, serif;
+    fill:	#00C745;	
+}
+//.c3-axis-x .tick line{
+//   display: none;
+}
+#stackedbarchart .c3-axis-x line {
+	stroke-width:0px;	
+}
+#stackedbarchart .c3-axis-x path {
+    stroke:#00C745;
+	stroke-width:3px;	
+}
+#stackedbarchart .c3-xgrid-focus line {
+	stroke-width:0px;	
+}
+#stackedbarchart .c3-title {
+font: normal bold 20px "Comic Sans MS", cursive, sans-serif;
+  /*font-size: 20px;*/
+ // stroke: #8B0000;
+  fill: #00C745; 
+}
+#stackedbarchart .c3-legend-item {
+//font-size:15px;
+font: italic bold 15px Georgia, serif;
+fill:#00C745;
+ }
+ 
+ 
+/*-- Tooltip --*/
+#stackedbarchart .c3-tooltip-container {
+  z-index: 10; }
+
+#stackedbarchart .c3-tooltip {
+  border-radius:25px; 
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  empty-cells: show;
+  -webkit-box-shadow: 7px 7px 12px -9px #777777;
+  -moz-box-shadow: 7px 7px 12px -9px #777777;
+  box-shadow: 7px 7px 12px -9px #777777;
+  opacity: 0.9; 
+  }
+
+#stackedbarchart .c3-tooltip tr {
+  border: 1px solid #CCC; 
+   }
+
+#stackedbarchart .c3-tooltip th {
+  font: italic bold 15px Georgia, serif;
+  background-color: #aaa;
+  //font-size: 14px;
+  padding: 2px 5px;
+  text-align: left;
+  color: #FFF;
+ }
+
+#stackedbarchart .c3-tooltip td {
+  font-size: 13px;
+  padding: 3px 6px;
+  background-color: #fff;
+  border-left: 1px dotted #999; }
+
+#stackedbarchart .c3-tooltip td > span {
+  display: inline-block;
+  width: 10px; //largeur de legend couleur
+  height: 10px;
+  margin-right: 6px;
+border-radius:15px;  }
+
+#stackedbarchart .c3-tooltip td.value {
+  text-align: right;
+font: normal bold 15px "Comic Sans MS", cursive, sans-serif;  }
+
+.stackedbartooltip
+{
+	font: normal bold 15px "Comic Sans MS", cursive, sans-serif;
+	background-color:#DCDCDC;
+	border: 2px solid;
+    border-radius: 20px;
+	border-color:#00C745;
+	border-width:3px;
+	padding:2px;
+	font-size:15px;
+}

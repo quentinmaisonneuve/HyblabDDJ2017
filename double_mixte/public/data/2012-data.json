@@ -1,0 +1,9 @@
+{
+	"elements": ["Eléphant", "Galerie", "Caroussel"],
+	"machines": {
+		"Eléphant": [52960, 58943, 73458],
+		"Galerie": [230251, 247436, 236800],
+		"Caroussel": [0, 0, 194986]
+	},
+	"annees": ["2010", "2011", "2012"]
+}

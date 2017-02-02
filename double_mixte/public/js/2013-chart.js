@@ -14,7 +14,7 @@ function drawChart() {
         toto(chart_annee, chart_aout, chart_octobre);
         titi();
         //setTimeout(titi(), 3000);
-        console.log(json_data);
+        //console.log(json_data);
     });
 }
 
@@ -89,9 +89,12 @@ function toto(chart_annee, chart_aout, chart_octobre){
 
 
 function titi() {
-    console.log($("body").html());
-    var test = $('.ct-bar').attr('x1');
-    console.log(test);
+    //console.log($("body").html());
+    var test = $('.ct-series-a').length;
+    $('line').on('click', function() {
+        alert($('line').attr('x1'));
+    });   
+    //console.log(test);
 }
 
 
