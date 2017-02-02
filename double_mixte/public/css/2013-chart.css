@@ -27,3 +27,7 @@
 #label-octobre {
 	background-color: #DE8948 !important;
 }
+
+.ct-grid {
+    stroke: rgba(0, 0, 0, 0.0);
+}

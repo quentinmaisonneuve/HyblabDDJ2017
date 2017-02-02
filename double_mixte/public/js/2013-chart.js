@@ -12,7 +12,7 @@ function drawChart() {
             chart_octobre.push(json_data[i].octobre);
         }
         toto(chart_annee, chart_aout, chart_octobre);
-        titi();
+        //titi();
         //setTimeout(titi(), 3000);
         //console.log(json_data);
     });
@@ -53,13 +53,14 @@ function toto(chart_annee, chart_aout, chart_octobre){
         }]
     ];
 
-    var mychart = Chartist.Bar('.ct-chart', data, options, responsiveOptions);
+    var mychart = new Chartist.Bar('#chart1', data, options, responsiveOptions);
 
     mychart.on('draw', function (data) {
         if (data.type === 'bar') {
 
             data.element.attr({
-                style: 'stroke-width: 0px'
+                style: 'stroke-width: 0px',
+                id: 'line1'
             });
             var strokeWidth = 28;
 
@@ -85,6 +86,21 @@ function toto(chart_annee, chart_aout, chart_octobre){
             }
         }
     });
+
+    $('#chart1').on('mouseover', '.ct-chart-bar .ct-series-a line, .ct-chart-bar .ct-series-b line, .ct-chart-bar .ct-series-c line', function(evt) {
+        console.log('ok');
+        console.log($(this).attr('ct:value'));
+        var val = $(this).attr('ct:value');
+        $(this).attr('data-toggle', 'tooltip');
+        $(this).attr('data-placement', 'top');
+        $(this).attr('title', 'test');
+        $(this).popover('show');
+    });
+    $('.ct-bar').popover('show');
+    //callback();
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
 }
 
 
@@ -108,6 +124,10 @@ $(document).on('ready', function() {
     drawChart();
 });
 */
+
+
+
+
 
 
 
