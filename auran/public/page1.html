@@ -1,0 +1,29 @@
+<script>
+    var myRect={x:150, y:75, w:50, h:50, color:"red"};
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = myRect.color;
+    ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
+    canvas.addEventListener("mousemove", function(e){
+        var rect = canvas.getBoundingClientRect();
+        var xPosition=e.clientX - rect.left;
+        var yPosition = e.clientY - rect.top
+        console.log("canvas:mousemove: ("+xPosition+";"+yPosition+") and rect: ("+myRect.x+";"+myRect.y+";"+myRect.w+";"+myRect.h);
+        if ((xPosition>=myRect.x)&&(xPosition<=myRect.x+myRect.w)&&(yPosition>=myRect.y)&&(yPosition<=myRect.y+myRect.h)){
+            console.log("rect -> green");
+            myRect.color = "green";}
+        else{
+            console.log("rect -> red");
+            myRect.color = "red";}
+        updateCanvas();
+    }, false);
+
+
+    function updateCanvas(){
+        ctx.fillStyle = myRect.color;
+        ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
+    }
+</script>
+<canvas id="myCanvas" width="700" height="500" style="border:1px solid #c3c3c3;">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
