@@ -119,4 +119,12 @@ router.get('/today', function(req, res, next) {
     });
 });
 
+router.get('/creneauMood/:mood/:season/:week/:start/:end', function(req, res, next) {
+    data.getMoodSeasonWeekHour(req.params.mood,req.params.season, req.params.week, req.params.start, req.params.end, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
 module.exports = router;
