@@ -1,19 +1,23 @@
     
 .main-container {
-  width:100%;
+	background : url(../img/VAN/img/bg.svg);
+	width:100%;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;  
 }
 .skyblue {
-  background-color: #22c8ff;
   width:100%;
 }
 .deepskyblue {
-  background-color: #00bfff;
-
   width:100%;
 }
 .darkerskyblue {
   width:100%;
-  background-color: #00a6dd;
+}
+
+.darkerskyblue .skyblue .deepskyblue {
+
 }
 .carousel-indicators {
   bottom: 0;
