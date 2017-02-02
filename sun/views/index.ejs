@@ -4,16 +4,29 @@
     <title><%= title %></title>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <!-- Script de defilement -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            return false;
+          });
+        });
+    </script>
   </head>
   <body id="fullpage">
 
-    <div id="pageOne">
-      <p>Aujourd'hui 354 personnes on joués une chanson sur Radio Sun</p>
-      <a href="#pageTwo"></a><button>On Air</button>
+    <div id="pageOne" class="section">
+      <p>Aujourd'hui 354 personnes ont joué une chanson sur Radio Sun</p>
+      <a class="js-scrollTo" href="#pageTwo"><button>On Air</button></a>
     </div>
 
 
-    <div id="pageTwo">
+    <div id="pageTwo" class="section">
       <h1>Quand écoutes tu le plus la musique ?</h1>
       
       <div class="blocTwo">
@@ -30,16 +43,21 @@
     </div>
 
 
-    <div id="pageThree">
-      
+    <div id="pageThree" class="section">
+  
+    </div>
 
-      <hr>
+    <div id="pageFour" class="section">
       
     </div>
 
-    <div id="pageFour">
-      
-    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+  
+    </script>
+    <script type="text/javascript" src="functions.js"></script>
 
   </body>
 </html>
