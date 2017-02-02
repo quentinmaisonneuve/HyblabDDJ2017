@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!-- Notre page est en français -->
+<head>
+    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
+    <meta charset="utf-8">
+    <title>En route !</title>
+    <!-- Basic viewport setting for mobile friendly page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Déclaration de la feuille de style du document-->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+
+    <!-- Those polyfills are required so that old browsers support fetch mecanism -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+
+    <!-- Déclaration des scripts js et librairies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <!-- Simple sample script that loads data from a dummy json file -->
+    <!--<script src="js/example.js" defer></script>-->
+
+    <!-- scipt pour le fonctionnement de fullpage.js -->
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+			});
+		});
+	  </script>
+</head>
+<body>
+    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
+    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
+    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
+    <div id="container">
+
+        <!-- l'entête de la page: titre, barre de recherche -->
+        <header>
+            <!--<img src="img/logo_hyblab.png" alt="logo hyblab" />-->
+            <!--<h1>Hyblab Datajournalism 2017</h1>-->
+        </header>
+
+        <!-- Le contenu du site -->
+
+        <div id="fullpage">
+          <div class="section" id="s">
+            <h3>
+              Vous ne vous êtes jamais demandé combien de personnes empruntent chaque jour les mêmes routes que vous ? Avec qui partagez-vous le bus chaque matin, ou à qui appartient cette berline rouge que vous doublez tous les lundis ?
+              Dans votre département, la question des déplacements est devenue omniprésente, que l’on parle des bouchons de l’agglomération nantaise, ou de l’agrandissement de la Métropole. Ainsi, en 2015, vous accumuliez, tous ensemble, plus de 5 millions de déplacements quotidiens.
+              Grâce à une enquête menée par l’AURAN auprès de 20799 habitants de Loire-Atlantique, nous vous proposons de vous accompagner dans la découverte de ce qui fait votre département au jour le jour, la multiplicité de vos déplacements !
+            </h3>
+          </div>
+          <div class="section" id="s2">
+            <h2>
+               Sélectionnez votre point de départ puis votre destination.
+           </h2>
+         </div>
+        </div>
+
+        <!--t    <p>Replace this content by your web app !</p>     <p>Here is some data from a json file : <span id="data"></span></p> -->
+
+        <!-- Notre pied de page -->
+        <footer>
+            <p>Copyright © Hyblab team 2017</p>
+        </footer>
+    </div>
+</body>
+</html>

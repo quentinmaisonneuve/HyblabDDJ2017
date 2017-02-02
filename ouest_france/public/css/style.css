@@ -1,55 +1,21 @@
-/* just a sample css rule to show that everything works */
-html{
-	-moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    cursor: default;
-    font-family: "Avenir",Arial,sans-serif;
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+html,body {
+    padding: 0;
+    margin: 0;
 }
 
-footer p
-{
-  font-size: small;
-  text-align: center;
+#section0, #section1, #section2, #section6 {
+  background: linear-gradient(to bottom, #0f4864, #35a8e0);
 }
 
-header{
-  text-align: center;
+#section3, #section4, #section5 {
+  background-color: #efefef;
 }
 
-header img{
-  max-width: 100%;
-	height: auto;
-}
-
-h2{
-	color: #C2DEBC;
-	font-size: 4vmin;
-	text-align: center;
-	position: absolute;
-	top : 2vh;
-	width: 75vw;
-	margin: 0 12.5vw;
-}
-
-h3{
-    color: #C2DEBC;
-	font-size: 4vmin;
-	text-align: center;
-	position: absolute;
-	top : 25vh;
-	width: 75vw;
-	margin: 0 12.5vw;
-}
-
-img{
-    position:absolute;
-	top : 20vh;
-	left : 37vw;
-}
-
-#Prez{
-    vertical-align: middle;
+.footer{
+  position: absolute;
+  bottom: -18px;
+  left: -25px;
 }
