@@ -18,7 +18,8 @@ header img{
         * --------------------------------------- */
 h1{
     font-size: 5em;
-    font-family: arial,helvetica;
+    /*font-family: 'Raleway', sans-serif;*/
+     font-family: arial,helvetica;   
     color: #fff;
     margin:0;
     padding:0;
@@ -26,6 +27,7 @@ h1{
 .intro p{
     color: #fff;
 }
+
 
 /* Centered texts in each section
 * --------------------------------------- */
@@ -54,7 +56,6 @@ h1{
     background: -webkit-linear-gradient(#969AC6, #636F8F);
     background: linear-gradient(#969AC6,#636F8F);
 }
-
 
 
 /*Adding background for the slides

@@ -34,8 +34,8 @@ caption,th {
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
     font-size: 100%;
-    margin:0;
-    padding:0;
+	margin:0;
+	padding:0;
     color:#444;
 }
 q:before,q:after {
@@ -48,7 +48,8 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Raleway', sans-serif;
+	/*font-family: arial,helvetica; */
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -60,23 +61,49 @@ body{
 }
 h1{
 	font-size: 5em;
-	font-family: arial,helvetica;
+    font-family: 'Raleway', sans-serif;
+	/*font-family: arial,helvetica; */
 	color: #fff;
 	margin:0;
 	padding:0;
 }
-p{
+
+h3{
 	font-size: 2em;
+	font-family: arial,helvetica;
+	color: #fff;
+}
+
+.section{
+	text-align:center;
+	display: inline-block;
+}
+
+.section-content {
+	text-align : justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.section-dataviz {
+	padding : 100px;
+}
+
+p{
+	font-size: 1em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin-top : 10px;
+	margin-bottom: 10px;
 }
 .intro p{
 	width: 50%;
 	margin: 0 auto;
 	font-size: 1.5em;
+    
 	color: #fff;
 }
-.section{
-	text-align:center;
-}
+
 
 /* Defining each section background and styles
         * --------------------------------------- */
@@ -98,7 +125,17 @@ p{
 	background: linear-gradient(#969AC6,#636F8F);
 }
 
+#section3{
+	background: -webkit-gradient(linear, top left, bottom left, from(#636F8F), to(#969AC6));
+	background: -webkit-linear-gradient(#636F8F, #969AC6);
+	background: linear-gradient(#636F8F,#969AC6);
+}
 
+#section4{
+	background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+	background: -webkit-linear-gradient(#969AC6, #636F8F);
+	background: linear-gradient(#969AC6,#636F8F);
+}
 
 /*Adding background for the slides
 * --------------------------------------- */
@@ -283,7 +320,7 @@ p{
 	z-index: 999;
  }
 
-#myVideo{
+.video-graphique{
 	position: absolute;
 	right: 0;
 	bottom: 0;
