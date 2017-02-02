@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Notre page est en français -->
+	<head>
+    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
+    <meta charset="utf-8">
+    <title>Hyblab 2016</title>
+		<!-- Basic viewport setting for mobile friendly page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+		<!-- Simple sample script that loads data from a dummy json file -->
+		<script src="js/example.js" defer></script>
+		<!-- Full page slider -->
+		<link rel="stylesheet" type="text/css" href="lib/jquery.fullPage.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.fullPage.js"></script>
+		<!-- Chartists -->
+    	<script src="lib/chartist.js"></script>
+    	<link rel="stylesheet" type="text/css" href="lib/chartist.css" />
+    	<!-- D3 -->
+  		<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js'></script>
+    	<!-- Bootstrap Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Nos fichiers CSS -->
+		<link rel="stylesheet" href="css/slider.css">
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/2013-chart.css">
+
+    	<link rel="stylesheet" href="css/2014-chart.css">
+    	<!-- Nos fichiers Javascript -->
+    	<script src="js/slider.js"></script>
+    	<script src="data/2013-data.js"></script>
+    	<script src="js/2013-chart.js"></script>
+    	<script src="js/2014-chart_age.js"></script>
+    	<script>
+		$(document).ready(function() {
+			$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+				var page = $(this).attr('href'); // Page cible
+				var speed = 750; // Durée de l'animation (en ms)
+				$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+				return false;
+			});
+		});
+		</script>
+  	</head>
+  	<body>
+	    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
+	    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
+	    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
+	    <div id="container">
+			<div id="fullpage">
+			    <div class="section">
+			    	    <div class="slide"> 
+			    	    	<p align="center">Page d'accueil</p>
+			    	    	<p align="center">Here is some data from a json file : <span id="data"></span><p>
+			    	    </div>
+						<div class="slide"> 
+							<p align="center">Page d'introduction</p>
+						</div>
+						<div class="slide">
+							<p align="center">2011</p>
+						</div>
+						<div class="slide">
+							<p align="center">2012</p>
+						</div>
+						<div class="slide">
+						
+							<div class="row">
+								<div class="col-md-4"></div>
+								<div class="col-md-4">
+									<div class="ct-chart .ct-golden-section" id="chart1"></div>
+								</div>
+								<div class="col-md-4"></div>
+								</div>
+						</div>
+						<div class="slide">
+							<p align="center">2014</p>
+							  <svg version="1.1"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+								 x="0px" y="0px" width="724px" height="400px"
+								 overflow="visible" xml:space="preserve">
+							    
+							    <g id="circleBarCharts">
+							        <!-- Mobile Circle Bar Chart -->
+							        <g id="circleBar-mobile-group" transform="translate(362,0)">
+							            <image id="circleBar-mobile-icon" x="195" y="112" overflow="visible" width="40" height="77" xlink:href="http://www.frank-designs.com/images/icon_mobile.png" />
+							            <text id="circleBar-mobile-text"  x="187" y="155">MOBILE</text>
+							            <g id="circleBar-mobile-chart" transform="translate(215,150)"></g>
+							            <clippath id="circleBar-mobile-clipPath">
+							                <rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
+							            </clippath>
+							            <g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
+							                <text id="circleBar-mobile-values" transform="translate(222,225)"></text>
+							                <text id="circleBar-mobile-labels" transform="translate(277,225)"></text>
+							            </g>
+							        </g>
+							        <!-- END: Mobile Circle Bar Chart -->
+   								</g>
+   								<g id="circleBarCharts">
+							        <!-- Mobile Circle Bar Chart -->
+							        <g id="circleBar-web-group" transform="translate(362,0)">
+							            <image id="circleBar-web-icon" x="195" y="112" overflow="visible" width="40" height="77" xlink:href="http://www.frank-designs.com/images/icon_mobile.png" />
+							            <text id="circleBar-web-text"  x="187" y="155">MOBILE</text>
+							            <g id="circleBar-mobile-chart" transform="translate(215,150)"></g>
+							            <clippath id="circleBar-web-clipPath">
+							                <rect id="circleBar-web-clipLabels" x="205" y="215" width="150" height="0"></rect>
+							            </clippath>
+							            <g id="circleBar-web-legend" clip-path="url(#circleBar-web-clipPath)">
+							                <text id="circleBar-web-values" transform="translate(222,225)"></text>
+							                <text id="circleBar-web-labels" transform="translate(277,225)"></text>
+							            </g>
+							        </g>
+							        <!-- END: Mobile Circle Bar Chart -->
+   								</g>
+							</svg>
+						</div>
+						<div class="slide">
+							<p align="center">2015</p>
+						</div>
+						<div class="slide">
+							<p align="center">2016</p>
+						</div>
+			    </div>
+			</div>
+		    <!-- Notre pied de page -->
+		    <footer>
+		      	<p>Copyright Hyblab team 2017</p>
+		    </footer>
+	    </div>
+  	</body>
+</html>

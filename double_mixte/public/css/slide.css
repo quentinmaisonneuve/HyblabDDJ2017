@@ -1,0 +1,77 @@
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}    
+.main-container {
+  width:100%;
+}
+.skyblue {
+  background-color: #22c8ff;
+  width:100%;
+}
+.deepskyblue {
+  background-color: #00bfff;
+
+  width:100%;
+}
+.darkerskyblue {
+  width:100%;
+  background-color: #00a6dd;
+}
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel .item {
+  min-height: 350px; 
+  height: 100%;
+  width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+  background-color: #09c;
+}
+.carousel-caption h3 {
+  padding: .5em;
+}
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.carousel-caption button {
+  border-color: #00bfff;
+  margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+.carousel-caption #circleBarCharts {
+  animation-delay: 3s;
+}
+
+
+.carousel-caption button {
+  animation-delay: 3s;
+}
+
+
+.p {
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+}
