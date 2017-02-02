@@ -250,6 +250,16 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
         }
         
     }
+     getThisWeek:function(callback) {
+        rand = Math.floor((Math.random() * 12) + 1); 
+        switch(mood):
+            {
+                case 1 :
+                    return db.query("select count(*) from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Rock';",callback)
+                    break;
+            }
+            
+    },
 };
 
 // Function verify if a date format sql is correct

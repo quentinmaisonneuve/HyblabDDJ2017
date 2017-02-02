@@ -6,7 +6,6 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-
     <!-- Script de defilement -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -86,18 +85,18 @@
       </div>
 
 
-
-      <div id="pageThree">
-
-
-
+      <div id="pageThree" class="section">
+        <div id="bubble3" width="400" height="200"></div>
+        <input type="radio" name="season" value="summer" onclick="loadBubble();">Été</input>
+        <input type="radio" name="season" value="spring" onclick="loadBubble();">Printemps</input>
+        <input type="radio" name="season" value="autumn" onclick="loadBubble();">Automne</input>
+        <input type="radio" name="season" value="winter" onclick="loadBubble();">Hiver</input>
       </div>
 
       <script src="./javascripts/pageOne.js"></script>
-
+      <script src="./javascripts/pageThree.js"></script>
 </div>
 </div>
-
 
   </body>
 </html>
