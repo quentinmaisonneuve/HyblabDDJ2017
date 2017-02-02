@@ -99,4 +99,12 @@ router.get('/creneauSeasonWeek/:season/:week', function(req, res, next) {
     });
 });
 
+router.get('/creneau/:season/:week/:start/:end', function(req, res, next) {
+    data.getCreneauSeasonWeekHour(req.params.season, req.params.week, req.params.start, req.params.end, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
 module.exports = router;
