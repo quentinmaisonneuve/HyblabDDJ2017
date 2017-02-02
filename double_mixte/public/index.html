@@ -14,14 +14,19 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<!-- animate.css -->
+	<link rel="stylesheet" href="lib/animate.css">
+	
 	<!-- Nos fichiers CSS -->
 	<link rel="stylesheet" href="css/slide.css">
 	<link rel="stylesheet" href="css/2014-chart.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
+	<link rel="stylesheet" href="css/2011.css">
 
   	<!-- Nos fichiers Javascript -->
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
+  	<script src="js/2011.js"></script>
 </head>
 
 <body>
@@ -33,6 +38,7 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       	</ol>
 
       	<!-- Wrapper for slides -->
@@ -47,6 +53,19 @@
             	<h3 data-animation="animated bounceInRight"></h3>
             	<button class="btn btn-primary btn-lg" data-animation="animated zoomInUp"></button>
           	</div>
+        </div> 
+
+        <!-- 2011 -->
+        <div class="item slide2011">
+        	<div id="nbnuitees">
+        		<img id="chiffre0" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre1" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre2" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre3" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre4" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre5" class="chiffre" src="img/zero.svg"/>
+				<img id="chiffre6" class="chiffre" src="img/zero.svg"/>
+        	</div>
         </div> 
 
         <!-- Second slide -->
@@ -169,6 +188,7 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	doAnimations($animatingElems);
 	doGraphAnim2014();
 	drawChart();
+	animateDigits();
 });  
 
 
