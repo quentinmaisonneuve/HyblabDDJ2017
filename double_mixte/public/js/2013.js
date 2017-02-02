@@ -1,62 +1,63 @@
-function animateDigits2011() {
-	$('.chiffre').attr('src', 'img/zero.svg');
-
+function animateDigits2013() {
 	$.get("data/nuiteesannuelles.json", function(data) {
-    	        
-        var nbNuitees = data[5].nbnuitees;
+    	var nbNuiteesPrecedentes = data[5].nbnuitees;
+        var nbNuitees = data[7].nbnuitees;
         var array = nbNuitees.toString().split("").map(function(t){return parseInt(t)});
-        setTimeout(function(){ $('#2011chiffre0').animateCss0('flipInX'); }, 1000);
-	    setTimeout(function(){ $('#2011chiffre1').animateCss1('flipInX'); }, 1100);
-	    setTimeout(function(){ $('#2011chiffre2').animateCss2('flipInX');}, 1200);
-	    setTimeout(function(){ $('#2011chiffre3').animateCss3('flipInX');}, 1300);
-	    setTimeout(function(){ $('#2011chiffre4').animateCss4('flipInX');}, 1400);
-	    setTimeout(function(){ $('#2011chiffre5').animateCss5('flipInX');}, 1500);
-	    setTimeout(function(){ $('#2011chiffre6').animateCss6('flipInX');}, 1600);
+        var array2 = nbNuiteesPrecedentes.toString().split("").map(function(t){return parseInt(t)});
         
-	    $('.chiffre').removeClass('animated flipInX');
-
+        replaceAllDigits(array2, 2013);
+       
+        setTimeout(function(){ $('#2013chiffre0').animateCss20130('flipInX'); }, 1000);
+	    setTimeout(function(){ $('#2013chiffre1').animateCss20131('flipInX'); }, 1100);
+	    setTimeout(function(){ $('#2013chiffre2').animateCss20132('flipInX');}, 1200);
+	    setTimeout(function(){ $('#2013chiffre3').animateCss20133('flipInX');}, 1300);
+	    setTimeout(function(){ $('#2013chiffre4').animateCss20134('flipInX');}, 1400);
+	    setTimeout(function(){ $('#2013chiffre5').animateCss20135('flipInX');}, 1500);
+	    setTimeout(function(){ $('#2013chiffre6').animateCss20136('flipInX');}, 1600);
+        
+	    $('.2013chiffre').removeClass('animated flipInX');
 
 	    $.fn.extend({
-		    animateCss0: function (animationName) {
+		    animateCss20130: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {
-	            	replaceDigit(0, array, 2011); 
+	            	replaceDigit(0, array, 2013); 
 		        });
     		},
-    		animateCss1: function (animationName) {
+    		animateCss20131: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {    
-	            	replaceDigit(1, array, 2011);
+	            	replaceDigit(1, array, 2013);
 		        });
     		},
-    		animateCss2: function (animationName) {
+    		animateCss20132: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {    
-	            	replaceDigit(2, array, 2011);
+	            	replaceDigit(2, array, 2013);
 		        });
     		},
-    		animateCss3: function (animationName) {
+    		animateCss20133: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {
-	            	replaceDigit(3, array, 2011); 
+	            	replaceDigit(3, array, 2013); 
 		        });
     		},
-    		animateCss4: function (animationName) {
+    		animateCss20134: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {
-	            	replaceDigit(4, array, 2011);
+	            	replaceDigit(4, array, 2013);
 		        });
     		},
-    		animateCss5: function (animationName) {
+    		animateCss20135: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {
-	            	replaceDigit(5, array, 2011);  
+	            	replaceDigit(5, array, 2013);  
 		        });
     		},
-    		animateCss6: function (animationName) {
+    		animateCss20136: function (animationName) {
 		        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 		        this.addClass('animated ' + animationName).one(animationEnd, function() {
-	            	replaceDigit(6, array, 2011);
+	            	replaceDigit(6, array, 2013);
 		        });
     		}
 		});

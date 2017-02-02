@@ -27,6 +27,8 @@
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
   	<script src="js/2011.js"></script>
+  	<script src="js/2013.js"></script>
+  	<script src="js/chiffresenhautagauche.js"></script>
 </head>
 
 <body>
@@ -57,16 +59,38 @@
 
         <!-- 2011 -->
         <div class="item slide2011">
-        	<div id="nbnuitees">
-        		<img id="chiffre0" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre1" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre2" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre3" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre4" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre5" class="chiffre" src="img/zero.svg"/>
-				<img id="chiffre6" class="chiffre" src="img/zero.svg"/>
+        	<div class="nbnuitees">
+        		<img id="2011chiffre0" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre1" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre2" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre3" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre4" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre5" class="chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre6" class="chiffre" src="img/zero.svg"/>
         	</div>
         </div> 
+
+        <!-- 2013 -->
+	    <div class="item darkerskyblue">
+	    	<div class="nbnuitees">
+        		<img id="2013chiffre0" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre1" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre2" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre3" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre4" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre5" class="2013chiffre chiffre" src="img/zero.svg"/>
+				<img id="2013chiffre6" class="2013chiffre chiffre" src="img/zero.svg"/>
+        	</div>
+	      	<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="ct-chart .ct-golden-section" id="chart1"></div>
+					<span id="label-aout" class="label label-default">Aout</span>
+					<span id="label-octobre" class="label label-default">Octobre</span>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+	    </div>
 
         <!-- Second slide -->
         <div class="item skyblue">
@@ -117,25 +141,7 @@
 
     	</div><!-- /.item -->
 
-	    <!-- Third slide -->
-	    <div class="item darkerskyblue">
-	      	<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					<span id="label-aout" class="label label-default">Aout</span>
-					<span id="label-octobre" class="label label-default">Octobre</span>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-	        <div class="carousel-caption">
-	          <h3 class="icon-container" data-animation="animated zoomInLeft">
-	            <span class="glyphicon glyphicon-glass"></span>
-	          </h3>
-
-	          <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn"></button>
-	        </div>
-	    </div><!-- /.item -->
+	    
 
 	</div><!-- /.carousel-inner -->
 
@@ -188,7 +194,8 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	doAnimations($animatingElems);
 	doGraphAnim2014();
 	drawChart();
-	animateDigits();
+	animateDigits2011();
+	animateDigits2013();
 });  
 
 
