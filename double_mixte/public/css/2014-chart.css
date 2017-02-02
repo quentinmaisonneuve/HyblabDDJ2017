@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    background-color:#eee;
+}
+#circleBar-web-text,
+#circleBar-mobile-text{
+    font-family: 'FranklinGothic-Book' "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+	font-size:20px;
+    fill:#000;
+}
+#circleBar-web-labels tspan,
+#circleBar-mobile-labels tspan {
+    font-family: 'FranklinGothic-Book' "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size:12px;
+    fill:#6D6E71;
+}
+
+#circleBar-web-values tspan,
+#circleBar-mobile-values tspan {
+    font-family: 'FranklinGothic-Book' "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    font-size: 12px;
+    font-weight:bold;
+}
+#circleBar-web-values tspan {
+    fill: #7D3A4D;
+}
+#circleBar-mobile-values tspan {
+    fill: #684E88;
+	padding-top:200px;
+}
