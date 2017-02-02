@@ -99,8 +99,20 @@ router.get('/creneauSeasonWeek/:season/:week', function(req, res, next) {
     });
 });
 
+// season : winter, spring, summer, autumn
+// week : 0 week - 1 weekend
+// start: start of  (0-23)
+// end: end of intervalle hour : (0-23)
 router.get('/creneau/:season/:week/:start/:end', function(req, res, next) {
     data.getCreneauSeasonWeekHour(req.params.season, req.params.week, req.params.start, req.params.end, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+router.get('/today', function(req, res, next) {
+    data.getToday(function(err, rows)
     {
         if(err){res.json(err);}
         else{res.json(rows);}

@@ -9,6 +9,11 @@ var data = {
     getAllData:function(callback) {
         return db.query("SELECT * FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id", callback);
     },
+
+    //TODO: CHANGE With DATE('2016-09-29 14:53:33') with DATE(NOW())
+    getToday:function(callback) {
+        return db.query("SELECT id FROM musique_auditeur_tbl WHERE DATE('2016-09-29 14:53:33') = DATE(date_heure_diffusion_reelle)", callback);
+    },
     // Get occurency of each music genre during Winter
     getWinterGenre:function(callback)
     {
