@@ -1,0 +1,401 @@
+[
+  {
+    "EMISSION": "ACCENT D'EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 360,
+    "STYLE": "Magazine d'informations européennes"
+  },
+  {
+    "EMISSION": "CARREFOUR DE L'EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Magazine d'informations européennes"
+  },
+  {
+    "EMISSION": "ON N'EST PAS SORTI DE L'EUROPE / L'EUROPE PRÈS DE CHEZ VOUS",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 600,
+    "STYLE": "Actualités parlementaires et européennes"
+  },
+  {
+    "EMISSION": "NANTES EUROPE EXPRESS",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 300,
+    "STYLE": "Magazine d'informations locales, nationales et européennes"
+  },
+  {
+    "EMISSION": "FLASH INFOS",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 75,
+    "STYLE": "Actualités généralistes"
+  },
+  {
+    "EMISSION": "ENGLISH FOR EVERYONE",
+    "PAYS": "France",
+    "LANGUE": "Anglais",
+    "DUREE": 1620,
+    "STYLE": "Culture : Musiques, concerts, théâtre, cinéma…"
+  },
+  {
+    "EMISSION": "A DOMICILE",
+    "PAYS": "France",
+    "LANGUE": "Anglais",
+    "DUREE": 90,
+    "STYLE": "Session live accoustique en tout genre"
+  },
+  {
+    "EMISSION": "PLAY MISTY FOR ME",
+    "PAYS": "Belgique",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Jazz"
+  },
+  {
+    "EMISSION": "EL HEXAGONO",
+    "PAYS": "Espagne",
+    "LANGUE": "Espagnol",
+    "DUREE": 60,
+    "STYLE": "Chançon Française"
+  },
+  {
+    "EMISSION": "BECHAMEL CHA CHA",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 120,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "OH ! LES FILLES",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "REPRISE PARTY",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 30,
+    "STYLE": "Covers"
+  },
+  {
+    "EMISSION": "EN CADENCE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 30,
+    "STYLE": "Musiques populaires"
+  },
+  {
+    "EMISSION": "NOVORAMA",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Indie pop, rock, folk, électro"
+  },
+  {
+    "EMISSION": "INCREDIBLE KIDS",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "ROCKOMONDO",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 30,
+    "STYLE": "Indie pop, rock, folk, électro"
+  },
+  {
+    "EMISSION": "JOLIE FOUTOIR",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 30,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "SOLÉNOÏDE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "THE BURGER RADIO SHOW",
+    "PAYS": "Etats-Unis",
+    "LANGUE": "Américain",
+    "DUREE": 60,
+    "STYLE": "Rock'n'roll"
+  },
+  {
+    "EMISSION": "LA SOUTERRAINE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 120,
+    "STYLE": "French pop underground"
+  },
+  {
+    "EMISSION": "RADIO RECTANGLE",
+    "PAYS": "Belgique",
+    "LANGUE": "Français",
+    "DUREE": 240,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "WE WANT 2 WIGOLER",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": ""
+  },
+  {
+    "EMISSION": "VIDRO AZUL",
+    "PAYS": "Portugal",
+    "LANGUE": "Portugais",
+    "DUREE": 120,
+    "STYLE": "Folk, glitch, indietronica, ambient, jazz, indie pop, minimal"
+  },
+  {
+    "EMISSION": "TARAN'S FREE JAZZ HOUR",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Jazz"
+  },
+  {
+    "EMISSION": "BOILER ROOM",
+    "PAYS": "Royaume-Unis",
+    "LANGUE": "Anglais",
+    "DUREE": 120,
+    "STYLE": "Musiques électroniques"
+  },
+  {
+    "EMISSION": "BYTE FM",
+    "PAYS": "Allemagne",
+    "LANGUE": "Allemand",
+    "DUREE": 120,
+    "STYLE": "Électro pop"
+  },
+  {
+    "EMISSION": "MIGRATIONS RADIO SHOW",
+    "PAYS": "Montenegro",
+    "LANGUE": "Français",
+    "DUREE": 120,
+    "STYLE": "Nu Jazz"
+  },
+  {
+    "EMISSION": "ARTE RADIO",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Émission artistique : Création sonore"
+  },
+  {
+    "EMISSION": "CASH AND CULTURE",
+    "PAYS": "France",
+    "LANGUE": "Anglais",
+    "DUREE": 60,
+    "STYLE": "Culture"
+  },
+  {
+    "EMISSION": "LABEX",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Histoire et Europe"
+  },
+  {
+    "EMISSION": "UN MONDE D'HISTOIRE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Histoire"
+  },
+  {
+    "EMISSION": "GARE DE L'EST",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités orientales"
+  },
+  {
+    "EMISSION": "ON THE MOVE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités européennes"
+  },
+  {
+    "EMISSION": "LES CAUSERIES DE LA MSH",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités nationales et européennes appliquées au secteur scientifique"
+  },
+  {
+    "EMISSION": "DÉTOUR DU MONDE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur la mobilité européenne, la citoyenneté et l'interculturalité"
+  },
+  {
+    "EMISSION": "RADIO LIBRE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur la citoyenneté européenne"
+  },
+  {
+    "EMISSION": "EN QUÊTE D'EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Acutalités sur les politiques européennes"
+  },
+  {
+    "EMISSION": "LES ARTISANS DU CHANGEMENT",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur la créativité et l'innovation appliquées à l'entreprenariat"
+  },
+  {
+    "EMISSION": "FRÉQUENCE CITOYENNE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur Nantes Métropole"
+  },
+  {
+    "EMISSION": "SOCIAL EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur les initiatives de la société civiles à l'échelle européenne"
+  },
+  {
+    "EMISSION": "TURNING THE PAGE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Acutalités littéraires"
+  },
+  {
+    "EMISSION": "ILE D'EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur les initiatives culturelles à l'échelle de Nantes"
+  },
+  {
+    "EMISSION": "L'ÉCOLO BUISSONNIÈRE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités environnementales"
+  },
+  {
+    "EMISSION": "POLYSONS",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités sur les métiers de l'ingénieurie"
+  },
+  {
+    "EMISSION": "À L'ŒUVRE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Création sonore"
+  },
+  {
+    "EMISSION": "CHRONIQUES EUROPÉENNES",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités européennes"
+  },
+  {
+    "EMISSION": "L'HEURE CENTRALIENNE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Actualités liées à l'électronique, la robotique et la mécanique"
+  },
+  {
+    "EMISSION": "PARCOURS D'EUROPE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 60,
+    "STYLE": "Acutalités sur les politiques européennes et l'actualités européennes en général"
+  },
+  {
+    "EMISSION": "QUEEN KONG",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 20,
+    "STYLE": "Un regard féministe sur l'actualité européenne"
+  },
+  {
+    "EMISSION": "EN CLAIR",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 20,
+    "STYLE": "Actualités juridiques européennes"
+  },
+  {
+    "EMISSION": "CITIZEN LAW",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 20,
+    "STYLE": "Actualités juridiques européennes"
+  },
+  {
+    "EMISSION": "3 MINUTES POUR UNE ŒUVRE",
+    "PAYS": "France",
+    "LANGUE": "Français",
+    "DUREE": 20,
+    "STYLE": "Culture : art"
+  },
+  {
+    "EMISSION": "CULTURE VO",
+    "PAYS": "France",
+    "LANGUE": "Anglais/Espagnol",
+    "DUREE": 20,
+    "STYLE": "Culture"
+  },
+  {
+    "EMISSION": "22 MINUTI",
+    "PAYS": "Italie",
+    "LANGUE": "Italien",
+    "DUREE": 20,
+    "STYLE": "Actualités européennes"
+  },
+  {
+    "EMISSION": "WE THINK WE'RE FUNNY",
+    "PAYS": "Royaume-Unis",
+    "LANGUE": "Anglais",
+    "DUREE": 60,
+    "STYLE": "Actualités européennes"
+  },
+  {
+    "EMISSION": "UN LIBRO PER L'EUROPA",
+    "PAYS": "Italie",
+    "LANGUE": "Italien",
+    "DUREE": 60,
+    "STYLE": "Actualités littéraires"
+  },
+  {
+    "EMISSION": "YCBS",
+    "PAYS": "Allemagne",
+    "LANGUE": "Allemand",
+    "DUREE": 60,
+    "STYLE": "Voyages et rencontres"
+  }
+]

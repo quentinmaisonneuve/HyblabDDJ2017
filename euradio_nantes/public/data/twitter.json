@@ -1,0 +1,27 @@
+{
+	"audiencePourcentage":
+	{
+		"homme":52,
+		"femme":48
+	},
+	"abonnee":4791,
+	"visites":3475,
+	"mentions":118,
+	"retweet":264,
+	"jaime":262,
+	"interetAudiencePourcentage":
+	{
+		"affaireActu":85,
+		"musique":43
+	},
+	"langueAbonneesPourcentage":
+	{
+		"francais":84,
+		"anglais":47
+	},
+	"picImpression":
+	{
+		"jour":"Jeudi, Vendredi",
+		"horaire":"16-20"
+	}
+}
