@@ -1,8 +1,9 @@
-var chart_annee = new Array();
-var chart_aout = new Array();
-var chart_octobre = new Array();
+function drawChart() {
+    var chart_annee = new Array();
+    var chart_aout = new Array();
+    var chart_octobre = new Array();
 
-$(function() {
+
     $.get("data/2013-data.json", function(data) {
         var json_data = data;
         
@@ -13,7 +14,7 @@ $(function() {
         }
         console.log(json_data);
     })
-});
+
 
 document.addEventListener('DOMContentLoaded',function(){
     var data = {
@@ -83,11 +84,14 @@ document.addEventListener('DOMContentLoaded',function(){
         }
     });
 });
+}
 
+
+drawChart();
 
 $(function() {
     console.log($("body").html());
-    var test = $('#line1').length;
+    var test = $('line').length;
     console.log(test);
     //$('p').css("color", "red");
 });
