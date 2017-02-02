@@ -62,11 +62,32 @@ table {
 /*#################### Début #################### */
 html {
 	height: 100%;
+	width: 101%;
 }
 
 body {
 	height: 100%;
+	width: 101%;
 }
+
+html, body{
+    height: 100%;
+    overflow:hidden;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 15px;
+}
+
 
 /* ################### Div Un ################### */
 

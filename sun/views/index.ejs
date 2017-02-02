@@ -12,15 +12,21 @@
           $('.js-scrollTo').on('click', function() { // Au clic sur un élément
             var page = $(this).attr('href'); // Page cible
             var speed = 750; // Durée de l'animation (en ms)
-            $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+            $('html, body, #container, #content').animate( { scrollTop: $(page).offset().top }, speed ); // Go
             return false;
           });
         });
     </script>
   </head>
+
   <body id="fullpage">
+  
+<div id="container">
+    <div id="content">
+
+
       <div id="pageOne">
-        <p>Aujourd'hui <span id="numberOfMusicToday">0 personne</span> personnes ont joué une chanson sur Radio Sun</p>
+        <p>Aujourd'hui <span id="numberOfMusicToday">0 personnes</span> ont joué une chanson sur Radio Sun</p>
         <a class="js-scrollTo" href="#pageTwo"><button>On Air</button></a>
       </div>
 
@@ -50,5 +56,10 @@
         
       </div>
       <script src="./javascripts/pageOne.js"></script>
+
+</div>
+</div>
+
+
   </body>
 </html>
