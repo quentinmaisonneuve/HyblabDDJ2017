@@ -1,4 +1,40 @@
 <script>
+    function getXCoordinate(xPourcentage){
+        return xPourcentage/100*screen.width;
+    }
+    function getYCoordinate(yPourcentage){
+        return yPourcentage/100*screen.height;
+    }
+
+    function image() {
+        var img = document.createElement("IMG");
+        img.src = "img/bat_1-1.svg";
+        img.width=60;
+        img.height=60;
+        img.style.bottom = window.innerHeight+'px';
+        img.id="bat";
+        img.setAttribute("position", "absolute");
+        $('#container').append(img);
+        $('#bat').hide();
+        img.addEventListener("mouseover", function () {
+            img.src="img/bat_1-2.svg";
+        });
+        img.addEventListener("mouseout", function () {
+            img.src = "img/bat_1-1.svg";
+        });
+    }
+    function animateBuildings(){
+        $('#bat').show();
+        $('#bat').animate({
+            bottom: getXCoordinate(50)/2,
+            left: "100px"
+        }, 'slow');
+    }
+    image();
+</script>
+
+<script>
+    /*
     var canvas = document.getElementById("myCanvas");
     var container = document.getElementById("container");
     var town = document.getElementById("town");
@@ -32,11 +68,11 @@
         updateCanvas();
     }, false);
 
-
     function updateCanvas(){
         ctx.fillStyle = myRect.color;
         ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
     }
+    */
 </script>
 <style>
 
@@ -57,10 +93,12 @@
         bottom: 10%;
         position: absolute;
     }
+    #bat{
+        width: 30%;
+        height: 30%;
+        position: absolute;
+    }
 </style>
 <div id="container">
     <img id="town" src="img/plateau.svg"/>
-    <canvas id="myCanvas">
-        Your browser does not support the HTML5 canvas tag.
-    </canvas>
 </div>
