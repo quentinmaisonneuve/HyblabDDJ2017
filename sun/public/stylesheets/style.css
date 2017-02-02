@@ -92,39 +92,48 @@ html, body{
 /* ################### Div Un ################### */
 
 #pageOne{
-	background-color: #054365;
+	background-color: #004265;
 	min-height: 100%;
+	text-align: center;
 }
 
-#pageOne p {
-	color: #FDCA2E;
-	font-size: 1.5em;
+#pageOne .pageOnePremierP {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 1.3em;
 	text-align: center;
-	line-height: 130%;
+	width: 35%;
+	margin: 0 auto;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+#pageOne .pageOneDeuxiemeP {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
 	width: 50%;
 	margin: 0 auto;
-	padding-top: 18%;
+	padding-top: 1%;
 }
 
+
 #pageOne button {
-	background-color: #FDCA2E;
-	width: 6%;
-	color: white;
+	background-color: #004265;
+	width: 10%;
+	color: #F1D030;
 	font-weight: bold;
-	font-size: 1.1em;
-	border: none;
-	border-radius: 3px;
-	padding-top: 0.3em;
-	padding-bottom: 0.4em;
-	margin-top: 5%;
-	float: right;
-	margin-right: 30%;
+	border: 3px #F1D030 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
 }
 
 /* ################### pageTwo ################### */
 
 #pageTwo {
-	background-color: #FECB2E;
+	background-color: #105A7F;
 	min-height: 100%;
 }
 
@@ -132,7 +141,33 @@ html, body{
 	font-size: 1.5em;
 	text-align: center;
 	padding-top: 2%;
-	color: #054365;
+	color: white;
+}
+
+#pageTwo h2 {
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 2%;
+	color: #FFD439;
+	font-style: italic;
+}
+
+#pageTwo hr {
+	width: 10%;
+	border: 2px solid #FFD439;
+	margin-top: 1%;
+}
+
+#pageTwo .blocTwoOne {
+	width: 70%;
+	background-color: grey;
+	margin: 0 auto;
+}
+
+#pageTwo .blocTwoOne .Saison {
+	width: 24%;
+	background-color: white;
+	display: inline-block;
 }
 
 #pageTwo .blocTwo {
@@ -141,21 +176,14 @@ html, body{
 	text-align: center;
 	background-color: grey;
 	margin-top: 5%;
-	padding-top: 3%;
+	padding-top: 2%;
 	padding-bottom: 3%;
 }
+
 
 /* ################### pageThree ################### */
 
 #pageThree {
 	background-color: #F5EED8;
 	min-height: 100%;
-}
-
-/* ################### pageFour ################### */
-
-#pageFour {
-	background-color: #F5EED8;
-	min-height: 100%;
-	border-top: 1px solid black;
 }
