@@ -9,16 +9,16 @@
 	<script src="lib/chartist.js"></script>
 	<link rel="stylesheet" type="text/css" href="lib/chartist.css" />
 
-	
-	
 	<!-- D3 -->
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Load d3.js and c3.js c3.css -->
+
+	<!-- Load d3.js and c3.js c3.css -->
 	<script src="lib/d3.v3.min.js" charset="utf-8"></script>
 	<script src="lib/c3.min.js" ></script>
 	<link href="lib/c3.css" rel="stylesheet" type="text/css">
+	
 	<!-- animate.css -->
 	<link rel="stylesheet" href="lib/animate.css">
 	
@@ -33,11 +33,7 @@
 	<script src="js/2012-chart.js" type="text/javascript"></script>
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
-  	<script src="js/2011.js"></script>
-  	<script src="js/2012.js"></script>
-  	<script src="js/2013.js"></script>
-  	<script src="js/2014.js"></script>
-  	<script src="js/2015.js"></script>
+
   	<script src="js/chiffresenhautagauche.js"></script>
 </head>
 
@@ -237,11 +233,15 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	drawChart();
 	drawStackedBarChart();
 
-	animateDigits2011();
-	animateDigits2012();
+	animateDigits(2011);
+	animateDigits(2012);
+	animateDigits(2013);
+	animateDigits(2014);
+	animateDigits(2015);
+	/*animateDigits2012();
 	animateDigits2013();
 	animateDigits2014();
-	animateDigits2015();
+	animateDigits2015();*/
 });  
 
 
