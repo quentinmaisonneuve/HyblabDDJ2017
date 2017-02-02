@@ -48,3 +48,16 @@
 			$(".DigueJ4-3").fadeIn("slow");
 		}
 	});
+	
+	$("#vague").click(function(e){
+		var rand = Math.floor((Math.random() * 10) + 1);
+		if(rand<3){
+			alert("inf3");
+		}
+		if(rand>=3 && rand<=6){
+			alert("3-6");
+		}
+		if(rand>=7){
+			alert("sup6");
+		}
+	});
