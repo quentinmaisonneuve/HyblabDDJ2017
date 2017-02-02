@@ -126,15 +126,21 @@ p{
 }
 
 #section3{
-	background: -webkit-gradient(linear, top left, bottom left, from(#636F8F), to(#969AC6));
-	background: -webkit-linear-gradient(#636F8F, #969AC6);
-	background: linear-gradient(#636F8F,#969AC6);
+	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+	background: -webkit-linear-gradient(#140F21, #140F21);
+	background: linear-gradient(#140F21,#140F21);
 }
 
 #section4{
-	background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
-	background: -webkit-linear-gradient(#969AC6, #636F8F);
-	background: linear-gradient(#969AC6,#636F8F);
+	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+	background: -webkit-linear-gradient(#140F21, #140F21);
+	background: linear-gradient(#140F21,#140F21);
+}
+
+#section6, #section7 {
+	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+	background: -webkit-linear-gradient(#140F21, #140F21);
+	background: linear-gradient(#140F21, #140F21);
 }
 
 /*Adding background for the slides

@@ -1,4 +1,7 @@
 <script>
+    var yCoordinate=getYCoordinate(25);
+    var buildings = [];
+
     function getXCoordinate(xPourcentage){
         return xPourcentage/100*screen.width;
     }
@@ -6,31 +9,52 @@
         return yPourcentage/100*screen.height;
     }
 
-    function image() {
+    function image(source, lightSource) {
         var img = document.createElement("IMG");
-        img.src = "img/bat_1-1.png";
-        img.width=60;
-        img.height=60;
+        img.src = source;
+        img.style.width="5%";
+        img.style.height="auto";
+        img.style.position="absolute";
         img.style.bottom = window.innerHeight+'px';
-        img.id="bat";
-        img.setAttribute("position", "absolute");
+
+        var imageId='bat'+buildings.length;
+        var hashTagId='#'+imageId;
+        console.log("bat_id="+imageId);
+        console.log("hashBatTagId="+hashTagId);
+        img.id=imageId;
+
         $('#container').append(img);
-        $('#bat').hide();
+        $(hashTagId).hide();
         img.addEventListener("mouseover", function () {
-            img.src="img/bat_1-2.png";
+            img.src=lightSource;
         });
         img.addEventListener("mouseout", function () {
-            img.src = "img/bat_1-1.png";
+            img.src = source;
         });
+
+        var obj = {
+            image: $(hashTagId),
+            x: "100px",
+            y: yCoordinate
+        };
+        yCoordinate*=1.05;
+        buildings.push(obj);
     }
+
     function animateBuildings(){
-        $('#bat').show();
-        $('#bat').animate({
-            bottom: getXCoordinate(50)/2,
-            left: "100px"
-        }, 'slow');
+        console.log("animateBuildings");
+        var i;
+        for (i = 0; i < buildings.length; i++) {
+            var image = buildings[i].image;
+            image.show();
+            image.animate({
+                left: getXCoordinate(25),
+                bottom: getYCoordinate(25)
+            }, 'slow');
+        }
+
     }
-    image();
+    image("img/bat_1-1.png", "img/bat_1-2.png");
 </script>
 
 <script>
@@ -84,7 +108,6 @@
         right: 0;
         top: 0;
         bottom: 0;
-        border:1px solid #c3c3c3;
     }
     #town{
         width: 60%;
@@ -96,7 +119,6 @@
     #bat{
         width: 30%;
         height: 30%;
-        border:5px solid black;
         position: absolute;
     }
 </style>
