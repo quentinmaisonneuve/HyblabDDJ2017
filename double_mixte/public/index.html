@@ -28,6 +28,8 @@
   	<script src="js/2013-chart.js"></script>
   	<script src="js/2011.js"></script>
   	<script src="js/2013.js"></script>
+  	<script src="js/2014.js"></script>
+  	<script src="js/2015.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
 </head>
 
@@ -41,6 +43,7 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
       	</ol>
 
       	<!-- Wrapper for slides -->
@@ -60,13 +63,13 @@
         <!-- 2011 -->
         <div class="item slide2011">
         	<div class="nbnuitees">
-        		<img id="2011chiffre0" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre1" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre2" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre3" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre4" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre5" class="chiffre" src="img/zero.svg"/>
-				<img id="2011chiffre6" class="chiffre" src="img/zero.svg"/>
+        		<img id="2011chiffre0" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre1" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre2" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre3" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre4" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre5" class="2011chiffre chiffre" src="img/zero.svg"/>
+				<img id="2011chiffre6" class="2011chiffre chiffre" src="img/zero.svg"/>
         	</div>
         </div> 
 
@@ -92,12 +95,18 @@
 			</div>
 	    </div>
 
-        <!-- Second slide -->
+        <!-- 2014 -->
         <div class="item skyblue">
+        	<div class="nbnuitees">
+        		<img id="2014chiffre0" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre1" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre2" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre3" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre4" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre5" class="2014chiffre chiffre" src="img/zero.svg"/>
+				<img id="2014chiffre6" class="2014chiffre chiffre" src="img/zero.svg"/>
+        	</div>
         	<div class="carousel-caption">
-            	<h3 class="icon-container" data-animation="animated bounceInDown">
-              		<span class="glyphicon glyphicon-heart"></span>
-            	</h3>
 	            <svg version="1.1"
 	            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	            x="0px" y="0px" width="800px" height="450px"
@@ -134,13 +143,22 @@
 		             	</g>
 		            </g> <!-- END: Mobile Circle Bar Chart -->
 	          	</svg>
-
-        	<h3 data-animation="animated bounceInUp"></h3>
-        		<button class="btn btn-primary btn-lg" data-animation="animated zoomInRight"></button>
         	</div>
+    	</div>
 
-    	</div><!-- /.item -->
-
+    	<!-- 2015 -->
+	    <div class="item darkerskyblue">
+	    	<div class="nbnuitees">
+        		<img id="2015chiffre0" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre1" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre2" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre3" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre4" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre5" class="2015chiffre chiffre" src="img/zero.svg"/>
+				<img id="2015chiffre6" class="2015chiffre chiffre" src="img/zero.svg"/>
+        	</div>
+	      	
+	    </div>
 	    
 
 	</div><!-- /.carousel-inner -->
@@ -196,6 +214,8 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 	drawChart();
 	animateDigits2011();
 	animateDigits2013();
+	animateDigits2014();
+	animateDigits2015();
 });  
 
 
