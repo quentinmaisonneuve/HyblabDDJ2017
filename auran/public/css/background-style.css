@@ -40,23 +40,22 @@ h1{
 /* Defining each section background and styles
 * --------------------------------------- */
 #section0{
-    background: -webkit-gradient(linear, top left, bottom left, from(#3949AB), to(#283593));
-    background: -webkit-linear-gradient(#3949AB, #283593);
-    background: linear-gradient(#3949AB,#283593);
+    background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+    background: -webkit-linear-gradient(#140F21, #140F21);
+    background: linear-gradient(#140F21,#140F21);
 }
 
 #section1{
-    background: -webkit-gradient(linear, top left, bottom left, from(#283593), to(#969ac6));
-    background: -webkit-linear-gradient(#283593, #969ac6);
-    background: linear-gradient(#283593,#969ac6);
+    background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+    background: -webkit-linear-gradient(#140F21, #140F21);
+    background: linear-gradient(#140F21,#140F21);
 }
 
-#section2{
-    background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
-    background: -webkit-linear-gradient(#969AC6, #636F8F);
-    background: linear-gradient(#969AC6,#636F8F);
+#section2 {
+    background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
+    background: -webkit-linear-gradient(#140F21, #140F21);
+    background: linear-gradient(#140F21, #140F21);
 }
-
 
 /*Adding background for the slides
 * --------------------------------------- */
