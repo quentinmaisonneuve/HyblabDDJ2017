@@ -81,9 +81,15 @@ p{
 /* Defining each section background and styles
         * --------------------------------------- */
 #section0{
-	background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
-	background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
-	background: linear-gradient(#4BBFC3,#7BAABE);
+	background: -webkit-gradient(linear, top left, bottom left, from(#3949AB), to(#283593));
+	background: -webkit-linear-gradient(#3949AB, #283593);
+	background: linear-gradient(#3949AB,#283593);
+}
+
+#section1{
+	background: -webkit-gradient(linear, top left, bottom left, from(#283593), to(#969ac6));
+	background: -webkit-linear-gradient(#283593, #969ac6);
+	background: linear-gradient(#283593,#969ac6);
 }
 
 #section2{
