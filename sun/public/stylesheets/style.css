@@ -68,6 +68,7 @@ html {
 body {
 	height: 100%;
 	width: 101%;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -92,13 +93,15 @@ html, body{
 /* ################### Div Un ################### */
 
 #pageOne{
-	background-color: #004265;
+	background-color: #004266;
 	min-height: 100%;
 	text-align: center;
+	background-image: url("/images/tout_les_tirets.png");
+	background-size: 100% 100%;
+
 }
 
 #pageOne .pageOnePremierP {
-	font-family: 'Open Sans', sans-serif;
 	color: white;
 	font-size: 1.3em;
 	text-align: center;
@@ -109,7 +112,6 @@ html, body{
 }
 
 #pageOne .pageOneDeuxiemeP {
-	font-family: 'Open Sans', sans-serif;
 	color: white;
 	font-size: 1.2em;
 	text-align: center;
@@ -120,7 +122,7 @@ html, body{
 
 
 #pageOne button {
-	background-color: #004265;
+	background-color: #004266;
 	width: 10%;
 	color: #F1D030;
 	font-weight: bold;
@@ -133,41 +135,56 @@ html, body{
 /* ################### pageTwo ################### */
 
 #pageTwo {
-	background-color: #105A7F;
+	background-color: #FFD000;
 	min-height: 100%;
+	background-image: url("/images/page2_tiret.png");
+	background-size: 100% 100%;
+	text-align: center;
 }
 
 #pageTwo h1 {
-	font-size: 1.5em;
-	text-align: center;
-	padding-top: 2%;
-	color: white;
+	font-size: 1.7em;
+	font-weight: bold;
+	padding-top: 4%;
+	color: #004266;
+	width: 40%;
+	margin: 0 auto;
 }
 
 #pageTwo h2 {
 	font-size: 1.5em;
-	text-align: center;
-	padding-top: 2%;
-	color: #FFD439;
+	padding-top: 1%;
+	color: #004266;
 	font-style: italic;
+	text-align: center;
 }
 
 #pageTwo hr {
 	width: 10%;
-	border: 2px solid #FFD439;
+	border: 1px solid #004266;
 	margin-top: 1%;
 }
 
 #pageTwo .blocTwoOne {
 	width: 70%;
-	background-color: grey;
 	margin: 0 auto;
+	margin-top: 2%;
+	padding-top: 1%;
+}
+
+#pageTwo .blocTwoOne .Saison img {
+	margin-top: 5%;
+}
+
+#pageTwo .blocTwoOne .Saison {
+	margin-top: 5%;
 }
 
 #pageTwo .blocTwoOne .Saison {
 	width: 24%;
-	background-color: white;
 	display: inline-block;
+	color: #004266;
+	font-weight: bold;
 }
 
 #pageTwo .blocTwo {
