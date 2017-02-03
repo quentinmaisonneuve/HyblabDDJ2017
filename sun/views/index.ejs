@@ -48,6 +48,36 @@
           return false;
       }
     </script>
+    <script type="text/javascript">
+      function toggleTwo(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/ambiance_off.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/ambiance_on.svg';
+              el.className="play";
+          }
+          return false;
+      }
+    </script>
+    <script type="text/javascript">
+      function toggleThree(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/btn-weekend.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/btn-semaine.svg';
+              el.className="play";
+          }
+          return false;
+      }
+    </script>
 
   </head>
 
@@ -96,29 +126,61 @@
 
       <div id="pageThree" class="section">
 
-        <audio id="Alternative">
-          <source src="/music/Alternative.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Rock">
-          <source src="/music/Rock.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Pop">
-          <source src="/music/Pop.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Jazz">
-          <source src="/music/Jazz.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Urban">
-          <source src="/music/Urban.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Electro">
-          <source src="/music/Electro.mp3" type="audio/mp3">
-        </audio>
-        <div id="bubble3" width="400" height="200"></div>
-        <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
-        <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
-        <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
-        <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input>
+        
+        <div id="bubleChart">
+         <!-- <audio id="Alternative">
+            <source src="/music/Alternative.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Rock">
+            <source src="/music/Rock.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Pop">
+            <source src="/music/Pop.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Jazz">
+            <source src="/music/Jazz.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Urban">
+            <source src="/music/Urban.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Electro">
+            <source src="/music/Electro.mp3" type="audio/mp3">
+          </audio>
+          <div id="bubble3" width="400" height="200"></div>
+          <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
+          <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
+          <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
+          <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input> -->
+          <p>ff</p>
+        </div>
+
+        <div id="boutonBuble">
+          <div id="boutonBubleTop">
+            <div id="boutonBubleTopLeft">
+              <p>Logo</p>
+            </div>
+            <div id="boutonBubleTopRight">
+              <p>Genre</p>
+              <input type="image" src="/images/ambiance_on.svg" class="play" onclick="toggleTwo(this);"/>
+              <p>Ambiance</p>
+            </div>
+          </div>
+          <div id="boutonBubleBottom">
+            <div id="boutonBubleBottomLeft">
+              <p>Semaine</p>
+              <input type="image" src="/images/btn-semaine.svg" class="play" onclick="toggleThree(this);"/>
+              <p>Week-end</p>
+            </div>
+            <div id="boutonBubleBottomRight">
+              <p>ff</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="BubleBottom">
+          
+        </div>
+
       </div>
 
       <script src="./javascripts/pageOne.js"></script>
