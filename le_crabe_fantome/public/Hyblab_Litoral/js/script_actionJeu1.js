@@ -87,12 +87,12 @@ $("#Bouton2050").click(function(e){
 
 
 $("#scenar1").click(function(e){
-	$("#BateauRougeGrosJ2").fadeOut("slow");
-	$("#BateauRougePetitJ2").fadeIn("slow");
-	$("#BateauBleuClairJ2").fadeOut("slow");
-	$("#BateauRoseJ2").fadeOut("slow");
-	$("#BateauBleuFonceJ2").fadeIn("slow");
-	$("#BateauNoirJ2").fadeOut("slow");
+	$(".BateauG1").fadeOut("slow");
+	$(".BateauP1").fadeIn("slow");
+	$(".BateauM1").fadeOut("slow");
+	$(".BateauM2").fadeOut("slow");
+	$(".BateauP2").fadeIn("slow");
+	$(".BateauG2").fadeOut("slow");
 	
 	$("#solea").style.transform = 'scale(' +  + ')';
 	$("#homarda").style.transform = 'scale(' +  + ')';
@@ -102,12 +102,12 @@ $("#scenar1").click(function(e){
 });
 
 $("#scenar2").click(function(e){
-	$("#BateauRougeGrosJ2").fadeIn("slow");
-	$("#BateauRougePetitJ2").fadeOut("slow");
-	$("#BateauBleuClairJ2").fadeOut("slow");
-	$("#BateauRoseJ2").fadeOut("slow");
-	$("#BateauBleuFonceJ2").fadeOut("slow");
-	$("#BateauNoirJ2").fadeIn("slow");
+	$(".BateauG1").fadeIn("slow");
+	$(".BateauP1").fadeOut("slow");
+	$(".BateauM1").fadeOut("slow");
+	$(".BateauM2").fadeOut("slow");
+	$(".BateauP2").fadeOut("slow");
+	$(".BateauG2").fadeIn("slow");
 	
 	$("#solea").style.transform = 'scale(' +  + ')';
 	$("#homarda").style.transform = 'scale(' +  + ')';
@@ -115,12 +115,12 @@ $("#scenar2").click(function(e){
 });
 
 $("#scenar3").click(function(e){
-	$("#BateauRougeGrosJ2").fadeIn("slow");
-	$("#BateauRougePetitJ2").fadeIn("slow");
-	$("#BateauBleuClairJ2").fadeOut("slow");
-	$("#BateauRoseJ2").fadeOut("slow");
-	$("#BateauBleuFonceJ2").fadeIn("slow");
-	$("#BateauNoirJ2").fadeIn("slow");
+	$(".BateauG1").fadeIn("slow");
+	$(".BateauP1").fadeIn("slow");
+	$(".BateauM1").fadeOut("slow");
+	$(".BateauM2").fadeOut("slow");
+	$(".BateauP2").fadeIn("slow");
+	$(".BateauG2").fadeIn("slow");
 	
 	$("#solea").style.transform = 'scale(' +  + ')';
 	$("#homarda").style.transform = 'scale(' +  + ')';
@@ -128,12 +128,12 @@ $("#scenar3").click(function(e){
 });
 
 $("#scenar4").click(function(e){
-	$("#BateauRougeGrosJ2").fadeIn("slow");
-	$("#BateauRougePetitJ2").fadeIn("slow");
-	$("#BateauBleuClairJ2").fadeIn("slow");
-	$("#BateauRoseJ2").fadeIn("slow");
-	$("#BateauBleuFonceJ2").fadeIn("slow");
-	$("#BateauNoirJ2").fadeIn("slow");
+	$(".BateauG1").fadeIn("slow");
+	$(".BateauP1").fadeIn("slow");
+	$(".BateauM1").fadeIn("slow");
+	$(".BateauM2").fadeIn("slow");
+	$(".BateauP2").fadeIn("slow");
+	$(".BateauG2").fadeIn("slow");
 	
 	$("#solea").style.transform = 'scale(' +  + ')';
 	$("#homarda").style.transform = 'scale(' +  + ')';
@@ -144,12 +144,12 @@ $("#scenar4").click(function(e){
 /*
 $("#barreJ2").mouseup(function(e){
 	if (document.getElementById("barreJ2").value==0){
-		$("#BateauRougeGrosJ2").fadeOut("slow");
-		$("#BateauRougePetitJ2").fadeOut("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeOut("slow");
-		$("#BateauBleuFonceJ2").fadeOut("slow");
-		$("#BateauNoirJ2").fadeOut("slow");
+		$(".BateauG1").fadeOut("slow");
+		$(".BateauP1").fadeOut("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeOut("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
 		$("#MerluJ2-1").fadeIn("slow");
@@ -165,12 +165,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==1){
-		$("#BateauRougeGrosJ2").fadeOut("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeOut("slow");
-		$("#BateauBleuFonceJ2").fadeOut("slow");
-		$("#BateauNoirJ2").fadeOut("slow");
+		$(".BateauG1").fadeOut("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeOut("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
 		$("#MerluJ2-1").fadeIn("slow");
@@ -186,12 +186,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==2){
-		$("#BateauRougeGrosJ2").fadeIn("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeOut("slow");
-		$("#BateauBleuFonceJ2").fadeOut("slow");
-		$("#BateauNoirJ2").fadeOut("slow");
+		$(".BateauG1").fadeIn("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeOut("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
 		$("#MerluJ2-1").fadeIn("slow");
@@ -207,12 +207,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==3){
-		$("#BateauRougeGrosJ2").fadeIn("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeIn("slow");
-		$("#BateauBleuFonceJ2").fadeOut("slow");
-		$("#BateauNoirJ2").fadeOut("slow");
+		$(".BateauG1").fadeIn("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
 		$("#MerluJ2-1").fadeOut("slow");
@@ -228,12 +228,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==4){
-		$("#BateauRougeGrosJ2").fadeIn("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeIn("slow");
-		$("#BateauBleuFonceJ2").fadeIn("slow");
-		$("#BateauNoirJ2").fadeOut("slow");
+		$(".BateauG1").fadeIn("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeIn("slow");
+		$(".BateauP2").fadeIn("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
 		$("#MerluJ2-1").fadeOut("slow");
@@ -249,12 +249,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==5){
-		$("#BateauRougeGrosJ2").fadeIn("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeOut("slow");
-		$("#BateauRoseJ2").fadeIn("slow");
-		$("#BateauBleuFonceJ2").fadeIn("slow");
-		$("#BateauNoirJ2").fadeIn("slow");
+		$(".BateauG1").fadeIn("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauM1").fadeIn("slow");
+		$(".BateauP2").fadeIn("slow");
+		$(".BateauG2").fadeIn("slow");
 		
 		
 		$("#MerluJ2-1").fadeOut("slow");
@@ -270,12 +270,12 @@ $("#barreJ2").mouseup(function(e){
 	}
 	
 	else if (document.getElementById("barreJ2").value==6){
-		$("#BateauRougeGrosJ2").fadeIn("slow");
-		$("#BateauRougePetitJ2").fadeIn("slow");
-		$("#BateauBleuClairJ2").fadeIn("slow");
-		$("#BateauRoseJ2").fadeIn("slow");
-		$("#BateauBleuFonceJ2").fadeIn("slow");
-		$("#BateauNoirJ2").fadeIn("slow");
+		$(".BateauG1").fadeIn("slow");
+		$(".BateauP1").fadeIn("slow");
+		$(".BateauP2").fadeIn("slow");
+		$(".BateauM1").fadeIn("slow");
+		$(".BateauP2").fadeIn("slow");
+		$(".BateauG2").fadeIn("slow");
 		
 		
 		$("#MerluJ2-1").fadeOut("slow");
