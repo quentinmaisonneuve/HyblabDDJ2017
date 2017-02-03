@@ -1,6 +1,10 @@
 	'use strict';
 
 window.onload = function init (){
+	
+	
+	
+	
 		$("#BateauRougeGrosJ1").fadeOut("slow");
 		$("#BateauRougePetitJ1").fadeOut("slow");
 		$("#BateauBleuClairJ1").fadeOut("slow");
@@ -9,16 +13,20 @@ window.onload = function init (){
 		$("#BateauNoirJ1").fadeOut("slow");
 		
 		
-		$("#MerluJ1-1").fadeIn("slow");
-		$("#MerluJ1-2").fadeIn("slow");
-		$("#MerluJ1-3").fadeIn("slow");
-		$("#ColinJ1-1").fadeIn("slow");
-		$("#ColinJ1-2").fadeIn("slow");
-		$("#HomardJ1-1").fadeIn("slow");
-		$("#HomardJ1-2").fadeIn("slow");
-		$("#HomardJ1-3").fadeIn("slow");
-		$("#PoissonJ1-1").fadeIn("slow");
-		$("#PoissonJ1-2").fadeIn("slow");
+		$("#HomardJ2-1").fadeIn("slow");
+		$("#HomardJ2-2").fadeIn("slow");
+		$("#HomardJ2-3").fadeOut("slow");
+		$("#HomardJ2-4").fadeOut("slow");
+		
+		$("#MerluJ2-1").fadeIn("slow");
+		$("#MerluJ2-2").fadeIn("slow");
+		$("#MerluJ2-3").fadeOut("slow");
+		$("#MerluJ2-4").fadeOut("slow");
+		
+		$("#SoleJ2-1").fadeIn("slow");
+		$("#SoleJ2-2").fadeIn("slow");
+		$("#SoleJ2-3").fadeOut("slow");
+		$("#SoleJ2-4").fadeOut("slow");
 		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}
