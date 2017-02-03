@@ -171,75 +171,75 @@ h3{
 }
 
 #container1 #encadre1 {
-  z-index: 0;
-  position: absolute;
-  top: 26px;
-  width: 600px;
-  left: 271px;
+    z-index: 0;
+    position: absolute;
+    top: 23vh;
+    width: 60.7vh;
+    left: 63.5vh;
 }
 
 #container1 #buttonEncadre1
 {
-  position: absolute;
-  opacity: 0;
-  border-radius: 100%;
-  z-index: 11;
-  cursor: pointer;
-  background-color: #1f1c1c;
-  left: 822px;
-  bottom: 181px;
-  height: 76px;
-  width: 77px;
+    position: absolute;
+    opacity: 0;
+    border-radius: 100%;
+    z-index: 11;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    left: 118vh;
+    bottom: 25vh;
+    height: 11.5vh;
+    width: 11.5vh;
 }
 
 #container2 #encadre2 {
-  z-index: 0;
-  position: absolute;
-  bottom: 203px;
-  width: 600px;
-  left: 426px
+    z-index: 0;
+    position: absolute;
+    bottom: 29vh;
+    width: 70vh;
+    left: 61vh;
 }
 
 #container2 #buttonEncadre2
 {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0;
-  z-index: 11;
-  cursor: pointer;
-  background-color: #1f1c1c;
-  left: 398px;
-  bottom: 134px;
-  height: 77px;
-  width: 72px;
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 11;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    left: 56.7vh;
+    bottom: 19.5vh;
+    height: 10.5vh;
+    width: 10.5vh;
 }
 
 #drapeau {
-  z-index: 12;
-  position: absolute;
-  bottom: 253px;
-  left: 866px;
-  width: 91px;
+    z-index: 12;
+    position: absolute;
+    bottom: 36vh;
+    left: 124vh;
+    width: 13vh;
 }
 
 #container3 #encadre3 {
-  z-index: 0;
-  position: absolute;
-  width: 600px;
-  bottom: 276px;
-  left: 323px;
+    z-index: 0;
+    position: absolute;
+    width: 67vh;
+    bottom: 47vh;
+    left: 64.5vh;
 }
 
 #container3 #buttonEncadre3
 {
-  z-index: 13;
-  position: absolute;
-  opacity: 0;
-  border-radius: 100%;
-  cursor: pointer;
-  background-color: #1f1c1c;
-  height: 80px;
-  bottom: 264px;
-  left: 873px;
-  width: 79px;
+    z-index: 13;
+    position: absolute;
+    opacity: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    height: 10.5vh;
+    bottom: 38vh;
+    left: 125.1vh;
+    width: 10.5vh;
 }
