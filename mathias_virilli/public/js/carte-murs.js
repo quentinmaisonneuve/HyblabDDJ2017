@@ -60,7 +60,7 @@ function MouseOverFunction(d,i) {
 	);
 
 
-     tooltip.html("hi world")
+     tooltip.html(d.properties["Pays financeur"]+'<br />'+d.properties["Pays frontalier"]+'<br />'+d.properties["Longueur (km)"]+" km")
      					.style("left",(d3.event.pageX)+"px")
     					.style("top",(d3.event.pageY+20)+"px")
     					.style("opacity",1.0);
@@ -93,7 +93,7 @@ d3.json("data/world-110m.json", function(error, topology) {
 
 });
 
-var minDateUnix = 1989;
+var minDateUnix = 1980;
 var maxDateUnix = 2018;
 var secondsInDay = 1;
 var newData;
@@ -103,7 +103,7 @@ d3.select('#slider3').call(d3.slider()
      newData = _(sites_data).filter(function(site) {
  
     	
-      return site.properties.debut <= value;
+      return site.properties["Date annonce"] <= value;
 
     });	 
     display(newData);
