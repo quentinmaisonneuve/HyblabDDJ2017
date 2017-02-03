@@ -562,6 +562,31 @@ body{
 	top : 28%;
 	width :3%;
 }
+
+ #pb{  
+	position: absolute;
+    top: -0.8vw;
+    left: 14%;
+}
+
+ #gb{
+	 position: absolute;
+    top: 1.6vw;
+    left: 14%;
+}
+
+ #gpb{
+	position: absolute;
+    top: 4vw;
+    left: 14%;
+}
+
+ #flotte{
+	 position: absolute;
+    top: 6.4vw;
+    left: 14%;
+}
+
  #Bouton2050,#Reset2,#Data2{
  	font-size: 1.5vw;
 }
