@@ -10,18 +10,22 @@ var jsonObject;
 $.get("data/2012-data.json",function(data){
 	jsonObject=data;
 	})
+	var chart;
+function toggle(id) {
+    chart.toggle(id);
+}
 	
 function drawStackedBarChart()
 {
 	//onReadystackedbar('#stackedbarchart', function() {
-		var chart = c3.generate({
+		chart = c3.generate({
 			bindto: '#stackedbarchart',
 			size: {
-				width: 500,// document.getElementById('stackedbarchart').getAttribute("width")
+				width: 400,
 				height: 200
 			},
 			color: {
-				pattern: ['#66D18F','#708090','#000000','#F5F594','#66A69C','#DAA520','#8A2BE2', '#1f77b4', '#aec7e8', '#ff7f0e']
+				pattern: ['#f43f00','#443308','#89590b','#89590b','#dd9014','#66D18F','#708090','#000000','#F5F594','#66A69C','#DAA520','#8A2BE2', '#1f77b4', '#aec7e8', '#ff7f0e']
 			},
 			interaction: {
 				enabled: true
@@ -34,9 +38,9 @@ function drawStackedBarChart()
 					ratio: 0.5
 				}
 			},
-			title: {
+			/*title: {
 				text: "Billeterie des Machines"
-			},
+			},*/
 			data: {
 				json: jsonObject.machines,
 			//classes: 'dataa',
@@ -97,24 +101,74 @@ function drawStackedBarChart()
 				show: true,
 				grouped:false,
 				contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-					return "<div class='stackedbartooltip'><font color='"+color(d[0])+"'>" + d[0].value +"</font></div>";
+					return "<div class='stackedbartooltip' border='3' style='border-color:"+color(d[0])+"'><font color='"+color(d[0])+"'>" + d[0].value +"</font></div>";
 						//return "<font color='"+color(d[0])+"'>" + d[0].value +"</font>";
 						}
 				
 			},
 		legend: {
-			position: 'right'
+			position: 'right',
+			show:false
 			//position: 'bottom'
 			//position: 'inset',
            },
 		zoom: {
 			enabled: false
 		}
-		});
+		})
 		//chart.groups(jsonObject.annees);
-		chart.groups([jsonObject.elements]);
+		//chart.groups([jsonObject.elements]);
+		//.insert('div', '.chart').attr('class', 'legend')
+d3.select('.containerstacked').html("");
+   d3.select('.containerstacked').selectAll('div').insert('div', '.chart').attr('class', 'legend')
+  .data(["Eléphant", "Galerie", "Caroussel"])
+  .enter().append('div')
+  .attr('data-id', function(id) {
+    return id;
+  }).attr('style','text-align: center')
+  .html(function(id) {
+	  var img;
+	  if(id=="Eléphant")
+	  {img="img/billetterie/elephant.svg";}
+	  else if(id=="Galerie")
+	  {img="img/test.png";}
+		else if(id=="Caroussel")
+		{img="img/test.png";}
+		else{ img="img/test.png";}
+	 return '<div class="legend-machines"><img class="machine" src="'+img+'" style="(vertical-align: middle;margin:auto)" alt="Smiley face"  width="40px"/></div><br/><div class="legend-label">'+id+'</div>';
 
-		//});
+   // return '<span></span>'+id;
+  })
+  .each(function(id) {
+    //d3.select(this).append('span').style
+    d3.select(this).select('span').style('background-color', 'red');
+	d3.select(this).select('.legend-machines').style('background-color', chart.color(id));
+	d3.select(this).select('.legend-machines').style('border-radius', '50%');
+	d3.select(this).select('.legend-machines').style('display','inline-block');
+	d3.select(this).select('.legend-machines').style('position','relative');
+	d3.select(this).select('.legend-machines').style('width','40px');
+	d3.select(this).select('.legend-machines').style('height','40px');
+	d3.select(this).select('.legend-machines').style('vertical-align','middle');
+	d3.select(this).select('.legend-machines').style('text-align','center');
+	d3.select(this).select('.legend-label').style('font', 'italic bold 15px Georgia, serif');
+	d3.select(this).select('.legend-label').style('color', chart.color(id));
+	d3.select(this).select('#machine').style('margin', 'auto');
+
+
+	
+  })
+  .on('mouseover', function(id) {
+    chart.focus(id);
+  })
+  .on('mouseout', function(id) {
+    chart.revert();
+  })
+  .on('click', function(id) {
+  $(this).toggleClass("c3-legend-item-hidden")
+    chart.toggle(id);
+  });
+
+		
 	
 }
 	

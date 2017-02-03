@@ -5,15 +5,43 @@
     //height: 100px; 
     border: 0px solid black;
 }*/
-#stackedbarchart{
-	position: relative;
-	width:700px;
-	border-width:0px;
-    /*border-style: solid;
-    border-color: #8B0000;*/
+.chartandlegend{
+	/*
+	overflow: visible;
 	padding:5px;
-	left: 10%;
-	top:15%;
+	position: absolute;
+	*/
+	position: relative;
+	margin-right: 10%;
+	width:600px;
+	float : right;
+	border-width:0px;
+	vertical-align: middle;
+	
+}
+#stackedbartitle{
+	position: relative;
+	display:inline-block;
+	width:100%;
+	border-width:0px;
+	vertical-align: text-center;
+	text-align:center;
+	font: normal bold 16px "Comic Sans MS", cursive, sans-serif;
+    fill: #001526;
+	
+}
+#stackedbartitle #stackedbartitleunit{
+	display:inline-block;
+	position: relative;
+	border-width:0px;
+	text-align:center;
+	font-size:10px;
+}
+#stackedbarchart{
+	display:inline-block;
+	/*position: relative;*/
+	border-width:0px;
+	/*padding:5px;*/
 }
 /*
 @-webkit-keyframes slide {
@@ -30,17 +58,17 @@
 }
 #stackedbarchart .c3-axis-x text {
     font: italic bold 15px Georgia, serif;
-    fill:	#00C745;	
+    fill:	#001526;	
 }
-//.c3-axis-x .tick line{
-//   display: none;
-}
+/*.c3-axis-x .tick line{
+  display: none;
+}*/
 #stackedbarchart .c3-axis-x line {
 	stroke-width:0px;	
 }
 #stackedbarchart .c3-axis-x path {
-    stroke:#00C745;
-	stroke-width:3px;	
+    /*stroke:#00C745;*/
+	stroke-width:0px;	
 }
 #stackedbarchart .c3-xgrid-focus line {
 	stroke-width:0px;	
@@ -49,7 +77,7 @@
 font: normal bold 20px "Comic Sans MS", cursive, sans-serif;
   /*font-size: 20px;*/
  // stroke: #8B0000;
-  fill: #00C745; 
+  fill: #001526; 
 }
 #stackedbarchart .c3-legend-item {
 //font-size:15px;
@@ -110,8 +138,52 @@ font: normal bold 15px "Comic Sans MS", cursive, sans-serif;  }
 	background-color:#DCDCDC;
 	border: 2px solid;
     border-radius: 20px;
-	border-color:#00C745;
-	border-width:3px;
-	padding:2px;
+	border-width:2px;
+	padding:5px;
 	font-size:15px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	-webkit-box-shadow: 7px 7px 12px -9px #777777;
+	-moz-box-shadow: 7px 7px 12px -9px #777777;
+	box-shadow: 7px 7px 12px -9px #777777;
+	opacity: 0.9; 
+}/*
+.legend span {
+    width: 33.333333%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}*/
+
+/*
+.containerstacked .legend{
+	vertical-align: middle;
+	text-align: center;
+}*/
+#stackedbarchart2
+{
+	width:100%;
+	vertical-align:middle;
 }
+.containerstacked {
+    position: relative;
+	display: inline-block;
+	border-width:0px;
+	margin:2px;
+    /*border-style: solid;
+    border-color: #8B0000;*/
+	/*padding:5px;
+	right:1px;*/
+	width:50;
+    text-align: center;
+}
+.containerstacked .c3-legend-item-hidden {
+  opacity: 0.3; }
+/*.containerstacked .legned div {
+  width: 100%;
+}
+
+*/
+
