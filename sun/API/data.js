@@ -236,7 +236,7 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
                 else if (week == 1) // Week End
                     return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'AND (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');", callback);
                 break;
-            case "Sentimentale":
+            case "Nostalgique":
                 if (week == 0) // Week
                     return db.query("SELECT count(*) AS value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');", callback);
                 else if (week == 1) // Week End
@@ -249,17 +249,84 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
 
         }
         
-    }/*,
-     getThisWeek:function(callback) {
+    },
+     //TODO: CHANGE With DATE('2016-09-29 14:53:33') with DATE(NOW()) for the 12 function that follow
+     getThisWeekRock:function(callback) {
         var rand = Math.floor((Math.random() * 12) + 1);
-        switch(mood):
-            {
-                case 1 :
-                    return db.query("select count(*) from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Rock';",callback)
-                    break;
-            }
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Rock';",callback)
+                
             
-    },*/
+    },
+    getThisWeekAlternativeEtPunk:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+              
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Alternative et punk';",callback)
+                  
+    },
+    getThisWeekUrban:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+   
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Electronica';",callback)
+                
+            
+    },
+    getThisWeekElectronica:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Urban';",callback)
+
+    },
+   
+    getThisWeekJazz:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+ 
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Jazz';",callback)
+
+    },
+    getThisWeekPop:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  _genre4='Pop';",callback)
+  
+    },
+    getThisWeekSentimentale:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');",callback)
+  
+    },
+    getThisWeekAgressive:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse');",callback)
+  
+    },
+    getThisWeekStimulante:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée' );",callback)
+  
+    },
+    getThisWeekCool:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');",callback)
+  
+    },
+    getThisWeekNostalgique:function(callback) {
+        var rand = Math.floor((Math.random() * 12) + 1);
+
+                
+                return db.query("select count(*) as value from winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id where dayofyear(DATE('2016-09-29 14:53:33'))-7 <= dayofyear(DATE(date_heure_diffusion_reelle)) AND dayofyear(DATE(date_heure_diffusion_reelle))<= dayofyear(DATE('2016-09-29 14:53:33')) AND year('2016-09-29 14:53:33')=year(date_heure_diffusion_reelle) AND  (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');",callback)
+  
+    },
+
 };
 
 // Function verify if a date format sql is correct
