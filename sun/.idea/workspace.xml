@@ -38,8 +38,8 @@
           <file leaf-file-name="pageThree.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/javascripts/pageThree.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -51,7 +51,7 @@
             <entry file="file://$PROJECT_DIR$/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="124" column="74" selection-start-line="124" selection-start-column="74" selection-end-line="124" selection-end-column="74" />
+                  <caret line="143" column="74" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
                   <folding />
                 </state>
               </provider>
@@ -104,8 +104,8 @@
           <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="218">
-                  <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+                <state relative-caret-position="503">
+                  <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -268,12 +268,12 @@
       <workItem from="1486025075813" duration="3072000" />
       <workItem from="1486032115806" duration="8541000" />
       <workItem from="1486045389983" duration="12253000" />
-      <workItem from="1486126759221" duration="8021000" />
+      <workItem from="1486126759221" duration="8137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40217000" />
+    <option name="totallyTimeSpent" value="40333000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,15 +697,15 @@
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="124" column="74" selection-start-line="124" selection-start-column="74" selection-end-line="124" selection-end-column="74" />
+          <caret line="143" column="74" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/pageThree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
