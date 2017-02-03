@@ -26,5 +26,5 @@ fetch('data/numeric_shares.json')
     .then(function (json) {
         var pourcentage_big = json.pourcentage_big;
         var pourcentage_small = json.pourcentage_small;
-        completeMotherBoard(pourcentage_small, pourcentage_big)
+        //completeMotherBoard(pourcentage_small, pourcentage_big)
     });

@@ -107,7 +107,9 @@ p{
 
 /* Defining each section background and styles
         * --------------------------------------- */
-
+.page1{
+    height: 100vh;
+}
 .page2{
 	height: 100vh;
 }
