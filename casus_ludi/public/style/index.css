@@ -1,0 +1,238 @@
+/*Allows the use of Quicksand font in the css file*/
+@font-face {
+    font-family: quicksand;
+    src: url(quicksand/Quicksand_Book.otf);
+}
+@font-face {
+    font-family: quicksandBold;
+    src: url(quicksand/Quicksand_Bold.otf);
+}
+
+
+html, body{
+	padding:0;
+	margin: 0;
+	font-family: quicksand;
+}
+
+
+#image_fond{
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}
+
+#sous-titre{
+	position:absolute;
+	padding:0;
+	margin:0;
+	height: 10%;
+	width: 35%;
+	font-size: 2.5vh;
+	top:18%;
+	left:31.5%;
+	text-align: center;
+}
+
+#texte-bouton{
+	position:absolute;
+	padding:0;
+	margin:0;
+	height: 3.5%;
+	width: 11%;
+	font-size: 1.7vh;
+	top:26.45%;
+	left:42.9%;
+	text-align: center;
+	font-family:quicksandBold;
+	color:white;
+	padding-top:0.8%;
+}
+
+#nuages{
+	position: absolute;
+	z-index: -2;
+	height: 69%;
+	width: 69%;
+	top:22%;
+	left:14.7%;
+}
+
+#aiguille1{
+	position: absolute;
+	height: 25%;
+	width: 25%;
+	left: 12.78%;
+	top:40.5%;
+}
+
+#aiguille2{
+	position: absolute;
+	height: 25%;
+	width: 25%;
+	left: 12.73%;
+	top:40.55%;
+}
+
+#main{
+	position: absolute;
+	height:13%;
+	width: 13%;
+	top:43.2%;
+	left: 30.5%;
+}
+
+#cle_USB{
+	z-index: -3;
+	position: absolute;
+	height:13%;
+	width: 13%;
+	bottom:23%;
+	left: 24%;
+}
+
+#fleche{
+	position: absolute;
+	height:4.5%;
+	width: 4.5%;
+	top:39%;
+	right: 26.5%;
+}
+
+#personnage{
+	position: absolute;
+	height:17%;
+	width: 17%;
+	bottom:24%;
+	left: 40.5%;
+	opacity: 0;
+}
+
+ .responsive_container
+{
+	overflow: hidden;
+	width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
+.responsive-container-exception{
+	overflow: hidden;
+	width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    max-height: 100vh;
+    max-width: 200vh; /* 16/7 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
+#intro-fond{
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#yeux{
+	position: absolute;
+	top:32%;
+	left:19.8%;
+	height: 8.5%;
+	width: 8.5%;
+}
+
+#tableau{
+	z-index:-1;
+	position: absolute;
+	top:-37%;
+	left:26.45%;
+	height: 75%;
+	width: 75%;
+}
+
+#aiguilleMotion1, #aiguilleMotion2{
+	position: absolute;
+	height: 30%;
+	width: 30%;
+	left: 1%;
+	top:3.75%;
+}
+
+video{
+	z-index: 0;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 49.8%;
+	height:63%;
+	top:18%;/*18% for full scrolling*/
+	right:11.40%;
+	opacity:0;
+}
+
+.node {
+    cursor: pointer;
+    stroke : #000040;
+    stroke-width : 2px;
+    margin: 1px;
+}
+
+.node:hover {
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.node--leaf {
+    fill: white;
+    stroke-width : 0px;
+}
+
+.node--root {
+    stroke-width : 0px;
+    fill : none;
+}
+
+.label {
+    font: 11px "quicksandBold","Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    fill : black;
+    text-shadow: 0 1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 -1px 0 #ffffff;
+}
+
+.label,
+.node--root,
+.node--leaf {
+  pointer-events: none;
+}
+
+/* DATAVIZ 1*/
+
+
+#graphe{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	margin:auto;
+	top:10%;
+	left:20%;
+}
+
+#radios{
+	width: 85px;
+
+}
+
+#imagePerso{
+	position: absolute;
+	top:15%;
+	width: 15%;
+	
+}
+
