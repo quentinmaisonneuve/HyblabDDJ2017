@@ -16,11 +16,11 @@ jQuery(document).ready(function($){
 					'</li>');
 				olEventsContent.append(
 					'<li data-date="' + this.date + '">' +
+						'<center>' +
+							'<img src="img/timeline/' + this.img + '"/>' +
+						'</center>' +
 						'<p>' +
-							'<center>' +
-								'<img src="img/timeline/' + this.img + '"/>' +
-							'</center>' +
-                            this.description + 
+                            this.description +
 						'</p>' +
 					'</li>'
 				);
