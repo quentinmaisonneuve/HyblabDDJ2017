@@ -1,0 +1,48 @@
+ function loadBubble()
+ {
+ //document.getElementById("bubble3").innerHTML = "";
+  d3.json("/creneau/winter/1/1/18/", function(error, data) {
+ var diameter = 600, //max size of the bubbles
+ color    = d3.scale.category20b(); //color category
+
+ var bubble = d3.layout.pack()
+ .sort(null)
+ .size([diameter, diameter])
+ .padding(-20.5);
+
+ var svg = d3.select("#bubble3")
+ .append("svg")
+ .attr("width", diameter)
+ .attr("height", diameter)
+ .attr("class", "bubble");
+
+ //d3.csv("./csv/test.csv", function(error, data){
+ d3.json(getRoad(), function(error, data){
+ //convert numerical values from strings to numbers
+ data = data.map(function(d){
+ d.value = +d["value"];
+ return d;
+ });
+
+ //bubbles needs very specific format, convert data to this.
+ var nodes = bubble.nodes({children:data}).filter(function(d) {
+ return (!d.children && d.id != "");
+ });
+
+ nodes.sort(function(a,b){
+ return b.value-a.value;
+ });
+ nodes.splice(3); // garder les 3 meilleurs !
+ nodes.sort(function(a,b){
+ return a.value-b.value;
+ });
+
+ // Define the div for the tooltip
+ var div = d3.select("body").append("div")
+ .attr("class", "tooltip")
+ .style("opacity", 0);
+
+
+ }
+  }
+ }
