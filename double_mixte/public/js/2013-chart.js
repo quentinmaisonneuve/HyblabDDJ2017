@@ -94,15 +94,18 @@ function toto(chart_annee, chart_aout, chart_octobre){
     });
 
     $('#chart1').on('mouseover', '.ct-chart-bar .ct-series-a line, .ct-chart-bar .ct-series-b line, .ct-chart-bar .ct-series-c line', function(evt) {
-        console.log('ok');
-        console.log($(this).attr('ct:value'));
         var val = $(this).attr('ct:value');
         val = Math.floor(val);
         $(this).attr('data-toggle', 'tooltip');
         $(this).attr('data-placement', 'top');
         $(this).attr('title', 'test');
-        $('#val_graph2013').html('<h3><p>'+val+' nuitées </p></h3>');
-
+        
+        if($(this).parent().attr('class') === 'ct-series ct-series-a') {
+            $('#val_graph2013').html('<h3><p id="color-series-a">'+val+' nuitées </p></h3>');
+        }
+         if($(this).parent().attr('class') === 'ct-series ct-series-b') {
+            $('#val_graph2013').html('<h3><p id="color-series-b">'+val+' nuitées </p></h3>');
+        }
     });
     
 }

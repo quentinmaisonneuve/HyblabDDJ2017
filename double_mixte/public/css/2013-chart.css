@@ -1,3 +1,19 @@
+#color-series-a {
+	color: #f43f00;
+}
+
+#color-series-b {
+	color: #89590b;
+}
+
+.ct-series-a > line:hover {
+    stroke: #ff794d !important;
+}
+
+.ct-series-b > line:hover {
+    stroke: #d48a11 !important;
+}
+
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
 	font-size: 0.9em;
 }
@@ -11,7 +27,7 @@
 }
 
 .ct-series-b > line {
-	stroke: #ffed43 !important;
+	stroke: #89590b !important;
 }
 /* Label années */
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
@@ -82,8 +98,8 @@
 }
 
 .ct-legend li.ct-series-1:before {
-    background-color: #ffed43;
-    border-color: #ffed43;
+    background-color: #89590b;
+    border-color: #89590b;
 }
 
 #val_graph2013 {
