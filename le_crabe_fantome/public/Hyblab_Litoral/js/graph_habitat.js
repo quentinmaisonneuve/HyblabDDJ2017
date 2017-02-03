@@ -5,6 +5,7 @@ var width=svgContainer.node().getBoundingClientRect().width;
 
 
 $.getJSON("data/habitat.json",function(dataJson) {
+
     var buttonData=[];
     var data=[];
     dataJson.vulnerability.forEach(
@@ -23,6 +24,8 @@ $.getJSON("data/habitat.json",function(dataJson) {
         .data(data[0])
         .enter()
         .append("rect");
+    //<text x="100" y="100" alignment-baseline="middle" text-anchor="middle">AAAA</text>
+    var tip=svgContainer.append("text").attr("alignment-baseline","middle").attr("text-anchor","middle");
     var buttons = anneContainer.selectAll("button")
         .data(buttonData)
         .enter()
@@ -69,7 +72,8 @@ $.getJSON("data/habitat.json",function(dataJson) {
                 return color[i];
             })
             .attr("id", function(d,i){return i});
-
+        tip.html(Math.floor(d.value*100)+"%").attr("x", (d3.event.pageX+30) )
+            .attr("y", (d3.event.pageY-185) );
     });
 
     rect.attr("x",10)
@@ -92,16 +96,21 @@ $.getJSON("data/habitat.json",function(dataJson) {
         })
         .attr("id", function(d,i){return i});
 
-    rect.on("mouseover", function(d, i){
+
+    rect.on("mousemove", function(d, i){
         rect.transition().style("fill-opacity", function(d2, i2){
             if (i === i2) return 1;
             else return 0.2;
         })
+        tip.html(Math.floor(d.value*100)+"%").attr("x", (d3.event.pageX+30) )
+            .attr("y", (d3.event.pageY-185) );
     });
 
     rect.on("mouseout", function(){
         rect.transition()
             .style("fill-opacity",1);
+        tip.html("");
     })
+
 
 });
