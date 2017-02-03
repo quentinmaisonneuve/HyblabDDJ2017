@@ -1,7 +1,7 @@
 
 function putRandWeek()
 {
-	rand = Math.floor(Math.random() * 12) + 1; 
+	rand = Math.floor(Math.random() * 11) + 1; 
     switch (rand) {
     	case 1 :
     		$.getJSON('/ThisWeekRock/', function(data) 
@@ -31,14 +31,8 @@ function putRandWeek()
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
     	});
     		break;
+    	
     	case 5 :
-    		$.getJSON('/ThisWeekClassique/', function(data) {
-    			number=data[0].value;
-    			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont décidé d’écouter de la musique classique"
-    			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
-    		});
-    		break;
-    	case 6 :
     		$.getJSON('/ThisWeekJazz/', function(data) {
     			number=data[0].value;
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont partagé leur musique de jazz préférée"
@@ -46,42 +40,42 @@ function putRandWeek()
     		});
     		break;
     	
-    	case 7 :
+    	case 6 :
     		$.getJSON('/ThisWeekPop/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont choisi de danser sur des chansons pop"
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
     		});
     		break;
-    	case 8 :
+    	case 7 :
     		$.getJSON('/ThisWeekNostalgique/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs se sentaient nostalgique"
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
     		});
     		break;
-    	case 9 :
+    	case 8 :
     		$.getJSON('/ThisWeekCool/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs étaient d’humeur cool"
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
     		});
     		break;
-    	case 10 :
+    	case 9 :
     		$.getJSON('/ThisWeekStimulante/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont voulu vous transmettre leur énergie"
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
     		});
     		break;
-    	case 11 :
+    	case 10 :
     		$.getJSON('/ThisWeekAgressive/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont partagé des musiques énervées"
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
     		});
     		break;
-    	case 12 :
+    	case 11 :
     		$.getJSON('/ThisWeekSentimentale/', function(data) {
     			number=data[0].value; 
     			document.getElementById("randomWeek").innerHTML ="Cette semaine " + number + " d’auditeurs ont choisi de partager leurs sentiments"

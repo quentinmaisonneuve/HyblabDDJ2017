@@ -164,13 +164,7 @@ router.get('/ThisWeekElectronica', function(req, res, next) {
     });
 });
 
-router.get('/ThisWeekClassique', function(req, res, next) {
-    data.getThisWeekClassique( function(err, rows)
-    {
-        if(err){res.json(err);}
-        else{res.json(rows);}
-    });
-});
+
 router.get('/ThisWeekJazz', function(req, res, next) {
     data.getThisWeekJazz( function(err, rows)
     {
