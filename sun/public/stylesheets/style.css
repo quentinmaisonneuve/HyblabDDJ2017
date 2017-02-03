@@ -166,16 +166,8 @@ html, body{
 #pageTwo .blocTwoOne {
 	width: 70%;
 	margin: 0 auto;
-	margin-top: 2%;
+	margin-top: 1%;
 	padding-top: 1%;
-}
-
-#pageTwo .blocTwoOne .Saison img {
-	margin-top: 5%;
-}
-
-#pageTwo .blocTwoOne .Saison {
-	margin-top: 5%;
 }
 
 #pageTwo .blocTwoOne .Saison {
@@ -190,20 +182,36 @@ html, body{
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 5%;
-	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #004266;
+	display: flex;
+
 }
 
 #pageTwo .blocTwoTwo .inlineBloc {
 	width: 30%;
 	display: inline-block;
+	margin: auto;
 }
 
-#pageTwo .blocTwoTwo img {
-	max-width: 13%;
+.inlineBlocWE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-right: 20%;
+}
+
+.inlineBlocSE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-left: 20%;
+}
+
+#pageTwo {
+	min-height: 100%;
 }
 
 #pageTwo button {
@@ -267,28 +275,31 @@ html, body{
 
 .cc-selector label.drinkcard-cc.printemps::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 30%;
 }
 .cc-selector label.drinkcard-cc.ete::before{
 	margin-top: 80%;
-	margin-right: 26%;
+	margin-right: 55%;
 }
 .cc-selector label.drinkcard-cc.automne::before{
 	margin-top: 80%;
-	margin-right: 9%;
+	margin-right: 15%;
 }
 .cc-selector label.drinkcard-cc.hiver::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 60%;
 }
 
-.cc-selector label.drinkcard-cc.ete {
-	margin-left: 5%;
+label.drinkcard-cc.ete {
+	margin-left: 10%;
 }
 .cc-selector label.drinkcard-cc.automne {
 	margin-left: 5%;
 }
 .cc-selector label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+label.drinkcard-cc.printemps {
 	margin-left: 7%;
 }
 
@@ -387,12 +398,69 @@ input:checked + .slider:before {
 /* ################### pageThree ################### */
 
 #pageThree {
-	background-color: #F5EED8;
+	background-color: #FECB2E;
 	min-height: 100%;
 }
 
+#bubleChart {
+	width: 50%;
+	height: 70%;
+	display: inline-block;
+  	margin:0;
+  	padding:0;
+  	background: url(/images/fond-matiere.png) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+  	margin-left: 1%;
+}
+
+#boutonBuble {
+	width: 45%;
+	height: 70%;
+	display: inline-block;
+	margin-top: 2%;
+}
+
+#boutonBubleTopLeft {
+	width: 49%;
+	display: inline-block;
+	background-color: grey;
+}
 
 
+#boutonBubleTopRight {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleTopRight p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomLeft {
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleBottomLeft p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomRight {
+	width: 49%;
+	display: inline-block;
+	background-color: grey;
+}
 /* ################### pageFour ################### */
 
 #pageFour {
@@ -400,11 +468,6 @@ input:checked + .slider:before {
 	min-height: 100%;
 	border-top: 1px solid black;
 }
-
-
-
-
-
 
 /* ########### TOOLTIPS ########################*/
 div.tooltip {

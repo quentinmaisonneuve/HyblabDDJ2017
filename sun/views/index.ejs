@@ -10,10 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/fullPage.js-master/jquery.fullPage.min.js"></script>
 
-    <script src="./javascripts/pageOne.js"></script>
-    <script src="./javascripts/pageTwo.js"></script>
-    <script src="./javascripts/pageThree.js"></script>
-
     <script type="text/javascript">
     	$(document).ready(function() {
 			 $('#fullpage').fullpage();
@@ -48,7 +44,6 @@
       }
     </script>
 
-
     <script type="text/javascript">
       function toggle(el){
           if(el.className!="pause")
@@ -61,7 +56,36 @@
               el.src='/images/bouton_semaine_weekend_page2.png';
               el.className="play";
           }
-          
+          return false;
+      }
+    </script>
+    <script type="text/javascript">
+      function toggleTwo(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/ambiance_off.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/ambiance_on.svg';
+              el.className="play";
+          }
+          return false;
+      }
+    </script>
+    <script type="text/javascript">
+      function toggleThree(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/btn-weekend.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/btn-semaine.svg';
+              el.className="play";
+          }
           return false;
       }
     </script>
@@ -71,47 +95,40 @@
 <body >
   
 <div id="container">
-
-    <div id="fullpage">
+  <div id="fullpage">
       <div id="pageOne" class="section">
         <img src="/images/logo-home.png">
-
         <p class="pageOnePremierP"><span id="randomWeek"></span></p>
         <p class="pageOneDeuxiemeP"><span id="randomWeek2"></span></p>
         <a class="js-scrollTo"><button>START</button></a>
-
       </div>
+
 
       <div id="pageTwo" class="section">
         <h1>"Dites nous quand vous m'écoutez, je vous dirais ce que vous aimez"</h1>
         <h2>La rédac' SUN</h2>
         <hr>
         <div class="blocTwoOne">
-
           <form>
             <div class="cc-selector">
-              <input id="printemps" type="radio" name="credit-card" value="printemps" />
-              <label class="drinkcard-cc printemps" for="printemps"></label>
-
-              <input id="ete" type="radio" name="credit-card" value="ete" />
-              <label class="drinkcard-cc ete"for="ete"></label>
 
               <input id="automne" type="radio" name="credit-card" value="automne" />
               <label class="drinkcard-cc automne"for="automne"></label>
-
               <input id="hiver" type="radio" name="credit-card" value="hiver" />
               <label class="drinkcard-cc hiver"for="hiver"></label>
+              <input id="printemps" type="radio" name="credit-card" value="printemps" />
+              <label class="drinkcard-cc printemps" for="printemps"></label>
+              <input id="ete" type="radio" name="credit-card" value="ete" />
+              <label class="drinkcard-cc ete"for="ete"></label>
             </div>
           </form>
-        
-        <div class="blocTwoTwo">
-          <p class="inlineBloc">SEMAINE</p>
-
-          <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
-          
-          <p class="inlineBloc">WEEK-END</p>
         </div>
-        
+        <div class="blocTwoTwo">
+
+          <p class="inlineBlocSE">SEMAINE</p>
+              <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
+          <p class="inlineBlocWE">WEEK-END</p>
+        </div>
         <div class="blocTwoThree">
           <input id="timeline" type="range" value="6" max="11" min="0" step="1"/>
           <span id="timeline_value"></span>
@@ -119,18 +136,72 @@
        
         <a class="js-scrollTo"><button>VALIDER</button></a>
       </div>
-    </div>
-
 
       <div id="pageThree" class="section">
-        <div id="bubble3" width="400" height="200"></div>
-        <input type="radio" name="season" value="summer" onclick="loadBubble();">Été</input>
-        <input type="radio" name="season" value="spring" onclick="loadBubble();">Printemps</input>
-        <input type="radio" name="season" value="autumn" onclick="loadBubble();">Automne</input>
-        <input type="radio" name="season" value="winter" onclick="loadBubble();">Hiver</input>
+
+        
+        <div id="bubleChart">
+         <!-- <audio id="Alternative">
+            <source src="/music/Alternative.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Rock">
+            <source src="/music/Rock.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Pop">
+            <source src="/music/Pop.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Jazz">
+            <source src="/music/Jazz.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Urban">
+            <source src="/music/Urban.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Electro">
+            <source src="/music/Electro.mp3" type="audio/mp3">
+          </audio>
+          <div id="bubble3" width="400" height="200"></div>
+          <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
+          <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
+          <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
+          <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input> -->
+          <p>ff</p>
+        </div>
+
+        <div id="boutonBuble">
+          <div id="boutonBubleTop">
+            <div id="boutonBubleTopLeft">
+              <p>Logo</p>
+            </div>
+            <div id="boutonBubleTopRight">
+              <p>Genre</p>
+              <input type="image" src="/images/ambiance_on.svg" class="play" onclick="toggleTwo(this);"/>
+              <p>Ambiance</p>
+            </div>
+          </div>
+          <div id="boutonBubleBottom">
+            <div id="boutonBubleBottomLeft">
+              <p>Semaine</p>
+              <input type="image" src="/images/btn-semaine.svg" class="play" onclick="toggleThree(this);"/>
+              <p>Week-end</p>
+            </div>
+            <div id="boutonBubleBottomRight">
+              <p>ff</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="BubleBottom">
+          
+        </div>
+
       </div>
-</div>
+
+      <script src="./javascripts/pageOne.js"></script>
+          <script src="./javascripts/pageTwo.js"></script>
+
+      <script src="./javascripts/pageThree.js"></script>
+  </div>
 </div>
 
-  </body>
+</body>
 </html>
