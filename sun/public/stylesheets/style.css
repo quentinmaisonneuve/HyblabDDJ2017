@@ -467,6 +467,21 @@ input:checked + .slider:before {
 	display: inline-block;
 	background-color: grey;
 }
+
+/* Bubble vinyle Effect Animation */
+.bubbleC:hover
+{
+	animation:spin 4s linear infinite;
+}
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
 /* ################### pageFour ################### */
 
 #pageFour {
@@ -487,3 +502,4 @@ div.tooltip {
 	border-radius: 8px;
 	pointer-events: none;
 }
+

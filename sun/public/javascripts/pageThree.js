@@ -89,6 +89,7 @@ function initBubble(node)
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
             .on("mouseover", function(d) {
+                d3.select(this).classed("hover", true);
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
@@ -98,6 +99,7 @@ function initBubble(node)
                 musiqueCommence(d.id);
             })
             .on("mouseout", function(d) {
+                d3.select(this).classed("hover", false);
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
@@ -206,6 +208,21 @@ function getTooltip(genre)
             break;
         case "Urban":
             return "Que vous préfériez le Rap ou le R’n’B, que vous soyiez plus beatmaking que backpacker, vous êtes un poète dans l’âme. Et, au final, qu’il soit des nineties ou bien actuel, l’esprit hip-hop est resté intact et vous le savez bien.";
+            break;
+        case "Sentimentale":
+            return "Par votre grandeur d’âme, <br/> Vous déclarez votre flamme <br/> <br/>         Comme vous l’aurez compris, vous êtes une personne sentimentale. Avec MySun, trouvez votre âme-soeur musicale !";
+            break;
+        case "Agressive":
+            return "LA MAJUSCULE DE VOTRE CLAVIER EST VOTRE TOUCHE PRÉFÉRÉE. <br/> Et ouais, vous aimez les bons riffs, les mélodies accrocheuses ou encore les berceuses à base de Metallica. Avouez, le Hellfest est votre terrain de jeu ! ";
+            break;
+        case "Stimulante":
+            return "En soirée, vous êtes une pile électrique, <br/> Suivre le tempo est votre technique ! <br/> Vous ne vous arrêtez jamais. Continuez à nous ambiancer avec MySun !";
+            break;
+        case "Cool":
+            return "Des fleurs sur tous vos habits, <br/> Bob Marley est votre sonnerie, <br/> Bref, vous êtes cool ! <br/> Peace and Love, pas de prises de tête. Avec MySun, partagez votre bonne humeur.";
+            break;
+        case "Nostalgique":
+            return "Vous re-penserez à votre jeunesse, <br/> Telle est notre promesse ! <br/> Vous êtes nostalgique et ça nous plait ! A chaque souvenir sa chanson, partagez les avec MySun !";
             break;
     }
 }
