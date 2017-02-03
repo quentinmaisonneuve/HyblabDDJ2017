@@ -249,9 +249,9 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
 
         }
         
-    }
+    }/*,
      getThisWeek:function(callback) {
-        rand = Math.floor((Math.random() * 12) + 1); 
+        var rand = Math.floor((Math.random() * 12) + 1);
         switch(mood):
             {
                 case 1 :
@@ -259,7 +259,7 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
                     break;
             }
             
-    },
+    },*/
 };
 
 // Function verify if a date format sql is correct
