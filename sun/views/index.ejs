@@ -19,6 +19,31 @@
           });
         });
     </script>
+
+    <script type="text/javascript">
+      function changer_image(image) {
+          $('.image').css('background-image', 'url("'+image+'")');
+      }
+    </script>
+
+
+    <script type="text/javascript">
+      function toggle(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/bouton_semaine_weekend_page2v2.png';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/bouton_semaine_weekend_page2.png';
+              el.className="play";
+          }
+          
+          return false;
+      }
+    </script>
+
   </head>
 
   <body id="fullpage">
@@ -45,44 +70,41 @@
         <h2>La rédac' SUN</h2>
         <hr>
         <div class="blocTwoOne">
-          <div class="Saison printemps">
-            <p>PRINTEMPS</p>
-            <img src="/images/page2_feuille.png">
-              <FORM>
-                <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
-              </FORM>
-          </div>
-          <div class="Saison ete">
-            <p>ÉTÉ</p>
-            <img src="/images/page2_soleil.png">
-              <FORM>
-                <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
-              </FORM>
-          </div>
-          <div class="Saison automne">
-            <p>AUTOMNE</p>
-            <img src="/images/page2_automne.png">
-              <FORM>
-                <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
-              </FORM>
-          </div>
-          <div class="Saison hiver">
-            <p>HIVER</p>
-            <img src="/images/page2_hiver.png">
-            <FORM>
-                <INPUT type="checkbox" name="nom" value="valeur attachée au bouton">
-              </FORM>
-          </div>
+
+          <form>
+            <div class="cc-selector">
+              <input id="printemps" type="radio" name="credit-card" value="printemps" />
+              <label class="drinkcard-cc printemps" for="printemps"></label>
+
+              <input id="ete" type="radio" name="credit-card" value="ete" />
+              <label class="drinkcard-cc ete"for="ete"></label>
+
+              <input id="automne" type="radio" name="credit-card" value="automne" />
+              <label class="drinkcard-cc automne"for="automne"></label>
+
+              <input id="hiver" type="radio" name="credit-card" value="hiver" />
+              <label class="drinkcard-cc hiver"for="hiver"></label>
+            </div>
+          </form>
+        
+        <div class="blocTwoTwo">
+          <p class="inlineBloc">SEMAINE</p>
+          
+<!--<label class="switch">
+  <input type="checkbox">
+  <div class="slider"></div>
+</label>-->
+
+<input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
+          
+          <p class="inlineBloc">WEEK-END</p>
         </div>
         
-        <div class="blocTwo">
-          <p>//Semaine/Weekend</p>
-        </div>
-        
-        <div class="blocTwo">
+        <div class="blocTwoThree">
           <p>Timeline</p>
         </div>
       </div>
+    </div>
 
 
       <div id="pageThree" class="section">
