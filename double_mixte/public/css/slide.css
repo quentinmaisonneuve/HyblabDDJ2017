@@ -13,19 +13,21 @@
 .slide2012 {
   width:100%;
 }
-.deepskyblue {
+.accueil {
+  width:100%;
+  background : url(../img/VAN/ligne.svg);
+}
+.slide2014 {
   width:100%;
 }
-.darkerskyblue {
+.slide2013 {
   width:100%;
 }
 .slide2011 {
   width:100%;
 }
 
-.darkerskyblue .skyblue .deepskyblue {
 
-}
 .carousel-indicators {
   bottom: 0;
 }
@@ -63,9 +65,6 @@
 }
 .carousel-caption h3:nth-child(2) {
   animation-delay: 2s;
-}
-.carousel-caption #circleBarCharts {
-  animation-delay: 3s;
 }
 
 
