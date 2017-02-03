@@ -1,8 +1,23 @@
-body, html{
-  margin: 0;
-  padding: 0;
+#arrow_l, #arrow_m, #arrow_d
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
 
-.section{
-  background: linear-gradient(to bottom, #0f4864, #35a8e0);
+#arrow_l
+{
+    background-color: red;
+    float: left;
+}
+
+#arrow_m
+{
+    background-color: grey;
+    float: 50%;
+}
+#arrow_d
+{
+    background-color: green;
+    float: right;
 }

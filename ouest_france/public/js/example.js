@@ -2,7 +2,7 @@
 
 // No need for window.onload event here since we are using the def attribute
 // when loading our scripts
-
+/*
 // Load a dummy json file using the fetch API
 fetch('data/dummy.json')
     // this promise will be fulfilled when the json fill will be
@@ -23,3 +23,12 @@ fetch('data/dummy.json')
         document.querySelector('#data')
             .textContent = json.data;
     });
+*/
+window.onload = function () {
+    document.getElementById('arrow_d').onclick = function () {
+         document.getElementById('car').src = "../public/img/Velo.svg";
+      };
+    document.getElementById('arrow_l').onclick = function () {
+           document.getElementById('car').src = "../public/img/Voiture.svg";
+        };
+}
