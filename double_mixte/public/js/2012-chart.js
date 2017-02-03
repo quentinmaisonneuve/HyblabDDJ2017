@@ -21,7 +21,7 @@ function drawStackedBarChart()
 		chart = c3.generate({
 			bindto: '#stackedbarchart',
 			size: {
-				width: 500,// document.getElementById('stackedbarchart').getAttribute("width")
+				width: 400,
 				height: 200
 			},
 			color: {
@@ -118,8 +118,9 @@ function drawStackedBarChart()
 		})
 		//chart.groups(jsonObject.annees);
 		//chart.groups([jsonObject.elements]);
+		//.insert('div', '.chart').attr('class', 'legend')
 d3.select('.containerstacked').html("");
-   d3.select('.containerstacked').insert('div', '.chart').attr('class', 'legend').selectAll('div')
+   d3.select('.containerstacked').selectAll('div').insert('div', '.chart').attr('class', 'legend')
   .data(["Eléphant", "Galerie", "Caroussel"])
   .enter().append('div')
   .attr('data-id', function(id) {
@@ -128,13 +129,13 @@ d3.select('.containerstacked').html("");
   .html(function(id) {
 	  var img;
 	  if(id=="Eléphant")
-	  {img="img/test.png";}
+	  {img="img/billetterie/elephant.svg";}
 	  else if(id=="Galerie")
 	  {img="img/test.png";}
 		else if(id=="Caroussel")
 		{img="img/test.png";}
 		else{ img="img/test.png";}
-	 return '<div class="legend-machines"><img src="'+img+'" style="(vertical-align: middle)" alt="Smiley face"  width="42"/></div><br/><div class="legend-label">'+id+'</div>';
+	 return '<div class="legend-machines"><img class="machine" src="'+img+'" style="(vertical-align: middle;margin:auto)" alt="Smiley face"  width="40px"/></div><br/><div class="legend-label">'+id+'</div>';
 
    // return '<span></span>'+id;
   })
@@ -145,9 +146,14 @@ d3.select('.containerstacked').html("");
 	d3.select(this).select('.legend-machines').style('border-radius', '50%');
 	d3.select(this).select('.legend-machines').style('display','inline-block');
 	d3.select(this).select('.legend-machines').style('position','relative');
-	d3.select(this).select('.legend-machines').style('margin','2px');
+	d3.select(this).select('.legend-machines').style('width','40px');
+	d3.select(this).select('.legend-machines').style('height','40px');
+	d3.select(this).select('.legend-machines').style('vertical-align','middle');
+	d3.select(this).select('.legend-machines').style('text-align','center');
 	d3.select(this).select('.legend-label').style('font', 'italic bold 15px Georgia, serif');
 	d3.select(this).select('.legend-label').style('color', chart.color(id));
+	d3.select(this).select('#machine').style('margin', 'auto');
+
 
 	
   })
