@@ -125,7 +125,15 @@
 
 		<section id="section7" class="cd-section">
 			<div class="content-wrapper">
-				<h2>RESEAUX</h2>
+				<div id=reseau style="height: 300px; width: 70%; margin: 0 auto;">
+      				<div id=reseauButtons style="margin: 0 auto;display:none" >
+        				<button onclick="showFacebook();">Facebook</button>
+        				<button onclick="showTwitter();" >Twitter</button></div>
+      				<div align="center" id="reseauLogos" >
+        				<img src="img/facebook.png" alt="Facebook" width="10%" height="10%" onclick="showFacebook();"/>
+       					<img src="img/twitte.png" alt="Twitte" width="10%" height="10%"/ onclick="showTwitter();"></div>
+      				<div id="chartContainer" style="height:600px; width: 100%;" >      					
+      				</div>
 			</div>
 		</section><!-- cd-section -->
 
@@ -141,5 +149,7 @@
 
 		<script src='js/bootstrap.js'></script>
 		<script src="js/carrousel.js"></script>
+		<script type="text/javascript" src="js/canvasjs.min.js"></script><!-- Resource canvasjs -->
+    	<script type="text/javascript" src="js/data.js"></script><!-- Resource reseauxdata -->
 	</body>
 </html>
