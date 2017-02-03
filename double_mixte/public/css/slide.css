@@ -10,17 +10,37 @@
 .skyblue {
   width:100%;
 }
-.slide2012 {
+.darkerskyblue {
   width:100%;
 }
 .page-accueil {
   width:100%;
+   background: url(../img/ligne_accueil.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;   
 }
-.darkerskyblue {
-  width:100%;
+.page-intro {
+    width:100%;
+   background: url(../img/ligne_intro.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;   
 }
+
 .slide2011 {
   width:100%;
+  background: url(../img/fond_2011.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;
+}
+.slide2012 {
+  width:100%;
+  background: url(../img/fond_2012.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;   
 }
 .slide2013 {
   width:100%;
@@ -30,10 +50,45 @@
     background-position: center center;          
 }
 
-.slide2016 {
+.slide2014 {
   width:100%;
+  background: url(../img/fond_2014.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;          
 }
 
+.slide2015 {
+  width:100%;
+  background: url(../img/fond_2015.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;          
+}
+
+.slide2016 {
+  width:100%;
+  background: url(../img/fond_2016.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
+.slidebilan {
+  width:100%;
+  background: url(../img/fond_bilan.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;     
+}
+
+.slideremerciements {
+  width:100%;
+  background: url(../img/fond_remerciements.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;
+}
 .darkerskyblue .skyblue .deepskyblue {
 
 }
