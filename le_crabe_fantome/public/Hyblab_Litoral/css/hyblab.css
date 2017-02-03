@@ -16,7 +16,7 @@ html{
 	/*background-image: url(../pictures/Exemple.jpg);*/
 	background-color: #faf7f5;
 	background-repeat: no-repeat;
-	font-family: 'Lato'; 
+	font-family: 'Lato';
 }
 
 body{
@@ -90,20 +90,21 @@ body{
 	height: 20%;
 	background-color: #faf7f5;
 	position: absolute;
-	bottom: 0;	
+	bottom: 0;
 }
 
 .Cross{
-	width: 0.47%;
-	height: 4.6%;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: url(../pictures/Boutons/bouton_croix.png);
+	background-size: contain;
 	display: inline-block;
 }
 
 #CrossJ2{
 	position: absolute;
-	left : 43.8%;
-	top : 21%;
+	left : 41.8%;
+	top : 2vw;
 }
 
 /*INTRO*/
@@ -122,7 +123,7 @@ body{
 	left : 540px;
 	background-image: url(../pictures/Intro/algue_verte_grande.png);
 	width:54px;
-	height:172px;	
+	height:172px;
 }
 .AlgueIntro3{
 	position: absolute;
@@ -238,7 +239,7 @@ body{
 	right : 326px;
 	background-image: url(../pictures/Intro/fumee_cheminee.png);
 	width:20px;
-	height:59px;	
+	height:59px;
 }
 
 .PoissonIntro{
@@ -262,7 +263,7 @@ body{
 	background-image: url(../pictures/Intro/nuage_petit.png);
 	width:102px;
 	height:43px;
-	
+
 }
 #NuageIntro2{
 	position: absolute;
@@ -416,7 +417,7 @@ body{
 
 .CoteCarte{
 	width:100%;
-	height:100%; 
+	height:100%;
 }
 
 .ImageJeu2{
@@ -488,15 +489,15 @@ body{
 	display: block;
 	position: absolute;
 	top : 2%;
-	left : 45.5%;
+	left : 43.5%;
 }
 
 .TextJ2 p {
-	margin-top : 10px;
+	margin-top : 1vw;
 	margin-bottom: auto;
 	text-align: center;
-	line-height: 200px;
-	font-size: 20px;
+	line-height: 2vw;
+	font-size: 1.5vw;
 }
 
 /*Solution trouvée sur le net pour centrer correctement*/
@@ -508,7 +509,7 @@ body{
 	margin-left : auto;
 }
 .TextJ2>p>span>span {
-	line-height: 30px; /* on ajuste le "véritable" line-height du texte */
+	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
 }
 
 .barre{
@@ -689,8 +690,8 @@ body{
 	top : -20px;
 
 	background-color: #ffffff;
-	box-shadow: 2px 2px 0px 0px #999999; 	
-	
+	box-shadow: 2px 2px 0px 0px #999999;
+
 
 }
 
@@ -727,125 +728,101 @@ body{
 	width :3%;
 }
  #Bouton2050{
-
- }
-
-
-
-
-
+}
 
 /*Jeu3*/
 
 
 /*Jeu4*/
-/*
-.MerJ4-1{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);
-	position: absolute;
-	top : 0%;
-	left : 0%;
+.FondJ4{
+	display: inline-block;
+	background-image: url(../pictures/Jeu4/ciel_jeu4.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;    
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
 }
-.MerJ4-2{	
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);
-	position: absolute;
-	top : 0%;
-	left : 0%;
+.Mer1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.MerJ4-3{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);
-	position: absolute;
-	top : 0%;
-	left : 0%;
+.Mer2"{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.MerJ4-4{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
+.Mer3"{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.SableJ4{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
+.Mer4"{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.MaisonJ4-1{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.MaisonJ4-2{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.MaisonJ4-3{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.MaisonJ4-4{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.DigueJ4-1{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.DigueJ4-2{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.DigueJ4-3{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-.DigueJ4-4{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);	
-	position: absolute;
-	top : 0%;
-	left : 0%;
-}
-*/
 
+.Maison1 {
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Maison2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Maison3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Digue1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Digue2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Digue3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Money{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
 /*Logos*/
 .LogoEclaireur{
 	background-image: url(../pictures/Logo/.png);
@@ -920,7 +897,46 @@ body{
 	left : 0px;
 }
 
+#bandeau {
+  	padding: 8px;
+}
 
+#bandeau li{
+	  list-style-type: none;
+	  display: inline-block;
+	  vertical-align: middle;
+	  margin: 0 12px;
+}
+
+
+#bandeau img{
+ 	height: 46px;
+}
+
+#bandeau #hyblab{
+	  margin: 46px 0;
+	  height: 50px;
+	  float: left;
+}
+
+#bandeau #cc, #bandeau #opensource
+{
+  	height:16px;
+}
+
+#bandeau .stacked{
+  	display:block;
+}
+
+#bandeau ul{
+	text-align: center;
+	padding: 0 0;
+}
+
+#bandeau .institutionnel
+{
+	height: 42px;
+}
 
 
 
