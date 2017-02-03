@@ -13,25 +13,19 @@
 .slide2012 {
   width:100%;
 }
-<<<<<<< HEAD
-.accueil {
-=======
 .page-accueil {
->>>>>>> 1fa47312516b4969bda66f2bd235fad87fbd5f73
-  width:100%;
-  background : url(../img/VAN/ligne.svg);
-}
-.slide2014 {
   width:100%;
 }
-.slide2013 {
+.darkerskyblue {
   width:100%;
 }
 .slide2011 {
   width:100%;
 }
 
+.darkerskyblue .skyblue .deepskyblue {
 
+}
 .carousel-indicators {
   bottom: 0;
 }
@@ -69,6 +63,9 @@
 }
 .carousel-caption h3:nth-child(2) {
   animation-delay: 2s;
+}
+.carousel-caption #circleBarCharts {
+  animation-delay: 3s;
 }
 
 

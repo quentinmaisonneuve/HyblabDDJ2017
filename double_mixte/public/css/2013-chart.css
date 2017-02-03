@@ -105,3 +105,7 @@
 #val_graph2013 {
 	font-family: Josefin Sans;
 }
+
+#chart1 line {
+	stroke-width: 2vw !important;
+}
