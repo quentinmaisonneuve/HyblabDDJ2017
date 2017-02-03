@@ -1,95 +1,125 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <title>En route !</title> <!-- Transport Urbain - Hyblab 2017 -->
+                
+        <meta name="author" content="Matthew Howell" />
+        <meta name="description" content="fullPage continuous scrolling demo." />
+        <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+        <meta name="Resource-type" content="Document" />
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Continuous scrolling - fullPage.js</title>
-    <meta name="author" content="Matthew Howell" />
-    <meta name="description" content="fullPage continuous scrolling demo." />
-    <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
-    <meta name="Resource-type" content="Document" />
+        <!-- Basic viewport setting for mobile friendly page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+        <!--[if IE]>
+            <script type="text/javascript">
+                 var console = { log: function() {} };
+            </script>
+        <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+        
+        <!-- jQuery : librairie nécessaire pour fullPage.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-    <!--[if IE]>
+        <!-- Pour ne pas afficher la slide nav lors du "trajet" -->
+        <script src="js/noSlideNav.js"></script>
+        
+        <!-- fullPage.js -->
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
         <script type="text/javascript">
-             var console = { log: function() {} };
-        </script>
-    <![endif]-->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/example.js" defer></script>
-    <script type="text/javascript" defer>
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-              menu: '#menu',
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                  //anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                  //menu: '#menu',
+                  afterLoad: updateSlideNav,
+                });
             });
-        });
-    </script>
+        </script>
+    </head>
 
-</head>
-<body>
+    <body>
 
-<div id="fullpage">
-    <div class="section " id="section0">
-        <h1>En route !</h1>
-        <p>Continuous Scrolling Enabled</p>
-    </div>
-    <div class="section active" id="section1">
-        <div classe="middle" id="center">
-          <img class="middle" id="route" src="img/Route.svg">
-          <img class="img_car" id="car" src="img/Voiture.svg"></img>
+        <div id="fp-nav" class="right">
+            <ul>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+            </ul>
         </div>
-        <button type="button" class="middle" id="arrow_l" onclick="alert('Précèdent')"></button>
-        <button type="button" class="middle" id="arrow_d"></button>
-        <img class="footer_g" id="houses_g" src="img/Visuel-Footer-gauche.svg">
-        <img class="footer_d" id="houses_d" src="img/Visuel-Footer-droite.svg">
-        <div class="bande_footer"></div>
-    </div>
-    <div class="section" id="section2">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the first section</p>
-        </div>
-        <img class="footer_g" id="houses1_g" src="img/Visuel-Footer-gauche.svg">
-        <img class="footer_d" id="houses1_d" src="img/Visuel-Footer-droite.svg">
-        <div class="bande_footer"></div>
-    </div>
-    <div class="section" id="section3">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the second section</p>
-        </div>
+                    
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <h2>En Route ! <h2/>
+                <h3>
+                  Vous ne vous êtes jamais demandé combien de personnes empruntent chaque jour les mêmes routes que vous ? Avec qui partagez-vous le bus chaque matin, ou à qui appartient cette berline rouge que vous doublez tous les lundis ?
+                  Dans votre département, la question des déplacements est devenue omniprésente, que l’on parle des bouchons de l’agglomération nantaise, ou de l’agrandissement de la Métropole. Ainsi, en 2015, vous accumuliez, tous ensemble, plus de 5 millions de déplacements quotidiens.
+                  Grâce à une enquête menée par l’AURAN auprès de 20799 habitants de Loire-Atlantique, nous vous proposons de vous accompagner dans la découverte de ce qui fait votre département au jour le jour, la multiplicité de vos déplacements !           
+                </h3>
+                <input type="button" id="enroute"  value="En Route !"/>  
+            </div>
+            
+            <div class="section" id="section1">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the first section</p>
+                </div>
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">
+            </div>
+            
+            <div class="section" id="section2">
+                <div classe="middle" id="center">
+                      <img class="middle" id="route" src="img/Route.svg">
+                      <img class="img_car" id="car" src="img/Voiture.svg"></img>
+                </div>
+                <button type="button" class="middle" id="arrow_l" onclick="alert('Précèdent')"></button>
+                <button type="button" class="middle" id="arrow_d"></button>
+                
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">                
+            </div>
+            
+            <div class="section" id="scenario1">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the second section</p>
+                </div>
 
-    </div>
-    <div class="section" id="section4">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the third section</p>
+            </div>
+            <div class="section" id="scenario2">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the third section</p>
+                </div>
+            </div>
+            
+            <div class="section" id="scenario3">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the fourth section</p>
+                </div>
+            </div>
+            
+            <div class="section" id="section6">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the fifth section</p>
+                </div>
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">
+            </div>
         </div>
-    </div>
-    <div class="section" id="section5">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the fourth section</p>
-        </div>
-    </div>
-    <div class="section" id="section6">
-        <div class="intro">
-            <h1>Scroll Down</h1>
-            <p>And it will animate down to the fifth section</p>
-        </div>
-        <img class="footer_g" id="houses2_g" src="img/Visuel-Footer-gauche.svg">
-        <img class="footer_d" id="houses2_d" src="img/Visuel-Footer-droite.svg">
-        <div class="bande_footer"></div>
-    </div>
-</div>
-
-</body>
+        
+        <!-- Notre pied de page -->
+        <footer>
+            <p>Copyright © Hyblab team 2017</p>
+        </footer>
+    </body>
 </html>
