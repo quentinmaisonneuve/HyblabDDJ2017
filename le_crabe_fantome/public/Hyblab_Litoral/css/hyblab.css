@@ -74,8 +74,9 @@ body{
 
 .Titre{
 	background-image: url(../pictures/Intro/titre_nouveau.png);
-	width:993px;
-	height:285px;
+	background-size: contain;
+	width:46vw;
+	height:14vw;
 	margin: auto;
 	position: relative;
 	top : 125px;
@@ -321,8 +322,9 @@ body{
 	bottom: 11%;
 	left : 10%;
 	background-image: url(../pictures/Intro/image_mer.png);
-	width:533px;
-	height:382px;
+	background-size:contain;
+	width:27.8vw;
+	height:20vw;
 }
 
 .DroiteIntro{
@@ -330,8 +332,9 @@ body{
 	bottom: 11%;
 	right: 10%;
 	background-image: url(../pictures/Intro/illu_homme.png);
-	width:586px;
-	height:415px;
+	background-size:contain;
+	width:30.5vw;
+	height:22vw;
 }
 
 #BoutonP1{
@@ -370,7 +373,7 @@ body{
 	margin-top :30px !important;
 	margin : auto;
 
-	font-size: 40px;
+	font-size: 2vw;
 	text-decoration: none;
 	text-align: center;
 	text-shadow: 2px 0 #86c6ca;
@@ -378,8 +381,8 @@ body{
 	padding-top: 10px; /*permet le centrage vertical*/
 	padding-bottom: 10px;
 
-	width:245px;
-	height:50px;
+	width:10vw;
+	height:3vw;
 	display: block;
 
 	background-color: #6a9dae;
@@ -416,10 +419,11 @@ body{
 	height:100%; 
 }
 
-.ImageJeu1{
+.ImageJeu2{
 	display: inline-block;
-	width: 262px;
-	height: 148px;
+	background-size: contain;
+	width: 11vw;
+	height: 6.2vw;
 	background-image: url(../pictures/Carte/bateau_carte.png);
 	position: absolute;
 	bottom: 22%;
@@ -427,10 +431,11 @@ body{
 	font-size: 0;
 }
 
-.ImageJeu2{
+.ImageJeu1{
 	display: inline-block;
-	width: 190px;
-	height: 151px;
+	background-size: contain;
+	width: 10vw;
+	height: 7.8vw;
 	background-image: url(../pictures/Carte/mouettes_rocher.png);
 	position: absolute;
 	top: 24.5%;
@@ -440,8 +445,9 @@ body{
 
 .ImageJeu3{
 	display: inline-block;
-	width: 181px;
-	height: 210px;
+	background-size: contain;
+	width: 6.7vw;
+	height: 7.8vw;
 	background-image: url(../pictures/Carte/algues_carte.png);
 	position: absolute;
 	bottom: 10%;
@@ -451,12 +457,13 @@ body{
 
 .ImageJeu4{
 	display: inline-block;
-	width: 251px;
-	height: 170px;
+	background-size: contain;
+	width: 11.1vw;
+	height: 7.5vw;
 	background-image: url(../pictures/Carte/maison_carte.png);
 	position: absolute;
-	bottom: 41%;
-	left :12.4%;
+	bottom: 42%;
+	left :12.5%;
 	font-size: 0;
 }
 
@@ -465,275 +472,277 @@ body{
 
 }
 
-
-
-
-
-
-
 /*JEU 1*/
 
-.InterfaceJ1 article{
+
+
+
+
+/*JEU 2*/
+
+.InterfaceJ2 article{
 	display: inline-block;
 }
 
-.TextJ1{
+.TextJ2{
 	display: block;
+	position: absolute;
+	top : 2%;
+	left : 75.5%;
+}
+
+.TextJ2 p {
+	margin-top : 10px;
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 200px;
+	font-size: 20px;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ2>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ2>p>span>span {
+	line-height: 30px; /* on ajuste le "véritable" line-height du texte */
 }
 
 .barre{
 	-webkit-appearance: slider-vertical;
 }
 
-.Mer1{
+.FondJ2{
 	display: inline-block;
-	height: 410px;
-	width: 1300px;
-	margin: auto;
-	background-color: #38a0a7;
-	font-size: 0;
-	border: 10px solid #ffffff;
-	border-top : none;
-	position: absolute;
-	top : 41%;
-	left :22.93%;
-}
-
-.Ciel{
-	display: inline-block;
-	width: 1300px;
-	height: 150px;
-	margin: auto;
-	background-color: #58c0c7;
-	border : 10px solid #ffffff;
-	border-bottom: none;
-	position: absolute;
-	top : 24.41%;
-	left :22.93%;
-}
-
-.Boué{
-	width:  30px; 
-	height : 560px;
-	background-image: url(../pictures/Jeu1/ligne_bouee_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/visu_jeu_peche.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;    
 	position: relative;
-	left :650px;
+    top: 11vw;
+    left: 20vw;
+    border : 1vw;
+}
+
 }
 
 .MerluP{
 	width:  97px; 
 	height : 34px;
-	background-image: url(../pictures/Jeu1/merlu_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/merlu_jeu_peche.png);
 }
 
 .Merlu{
 	width:  123px; 
 	height : 43px;
-	background-image: url(../pictures/Jeu1/merlu_gros_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/merlu_gros_jeu_peche.png);
 }
 
 .Homard{
 	width:  113px; 
 	height : 35px;
-	background-image: url(../pictures/Jeu1/homard_gros.png);
+	background-image: url(../pictures/Jeu2/homard_gros.png);
 }
 
 .HomardP{
 	width:  77px; 
 	height : 23px;
-	background-image: url(../pictures/Jeu1/homard_petit.png);
+	background-image: url(../pictures/Jeu2/homard_petit.png);
 }
 
 .Colin{
 	width:  151px; 
 	height : 52px;
-	background-image: url(../pictures/Jeu1/colin_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/colin_jeu_peche.png);
 }
 
 .ColinP{
 	width:  103px; 
 	height : 35px;
-	background-image: url(../pictures/Jeu1/colin_petit_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/colin_petit_jeu_peche.png);
 }
 
 .Poisson{
 	width:  56px; 
 	height : 15px;
-	background-image: url(../pictures/Jeu1/poisson_gris_petit.png);
+	background-image: url(../pictures/Jeu2/poisson_gris_petit.png);
 }
 
 
 .BateauRougeGros{
 	width:  150px; 
 	height : 78px;	
-	background-image: url(../pictures/Jeu1/bateau_rouge_gros.png);.
+	background-image: url(../pictures/Jeu2/bateau_rouge_gros.png);.
 
 }
 .BateauRougePetit{
 	width:  98px; 
 	height : 51px;
-	background-image: url(../pictures/Jeu1/bateau_rouge.png);
+	background-image: url(../pictures/Jeu2/bateau_rouge.png);
 }
 .BateauBleuClair{
 	width:  127px; 
 	height : 66px;
-	background-image: url(../pictures/Jeu1/bateau_bleuclair.png);
+	background-image: url(../pictures/Jeu2/bateau_bleuclair.png);
 }
 .BateauNoir{
 	width:  127px; 
 	height : 66px;
-	background-image: url(../pictures/Jeu1/bateau_noir_gros.png);
+	background-image: url(../pictures/Jeu2/bateau_noir_gros.png);
 }
 .BateauBleuFonce{
 	width:  98px; 
 	height : 51px;
-	background-image: url(../pictures/Jeu1/bateau_bleufonce.png);
+	background-image: url(../pictures/Jeu2/bateau_bleufonce.png);
 }
 .BateauRose{
 	width:  127px; 
 	height : 66px;
-	background-image: url(../pictures/Jeu1/bateau_coque_rose.png);
+	background-image: url(../pictures/Jeu2/bateau_coque_rose.png);
 }
 
 
 .NuageP{
 	width:  58px; 
 	height : 24px;
-	background-image: url(../pictures/Jeu1/nuage_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/nuage_jeu_peche.png);
 }
 
 .NuageG{
 	width:  88px; 
 	height : 38px;
-	background-image: url(../pictures/Jeu1/nuage_jeu_peche_gros.png);
+	background-image: url(../pictures/Jeu2/nuage_jeu_peche_gros.png);
 }
 
 .Phare{
 	width:  31px; 
 	height : 85px;
-	background-image: url(../pictures/Jeu1/Phare_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/Phare_jeu_peche.png);
 }
 
 .Rocher{
 	width:  82px; 
 	height : 23px;
-	background-image: url(../pictures/Jeu1/rocher_jeu_peche.png);
+	background-image: url(../pictures/Jeu2/rocher_jeu_peche.png);
 }
 
 
-#BateauRougeGrosJ1{
+#BateauRougeGrosJ2{
 	position: absolute;
 	left :725px;
 	top : 50px;
 }
-#BateauRougePetitJ1{
+#BateauRougePetitJ2{
 	position: absolute;
 	left : 1150px;
 	top : 20px;
 }
-#BateauBleuClairJ1{
+#BateauBleuClairJ2{
 	position: absolute;
 	left :925px;
 	top : 100px;
 }
-#BateauRoseJ1{
+#BateauRoseJ2{
 	position: absolute;
 	left :800px;
 	top : 220px;
 }
-#BateauBleuFonceJ1{
+#BateauBleuFonceJ2{
 	position: absolute;
 	left :940px;
 	top : 300px;
 }
-#BateauNoirJ1{
+#BateauNoirJ2{
 	position: absolute;
 	left :1100px;
 	top : 200px;
 }
-#MerluJ1-1{
+#MerluJ2-1{
 position: absolute;
 	left : 300px;
 	top : 108px;
 }
-#MerluJ1-2{
+#MerluJ2-2{
 	position: absolute;
 	left :100px;
 	top : 216px;
 }
-#MerluJ1-3{
+#MerluJ2-3{
 	position: absolute;
 	left :250px;
 	top : 276px;
 }
-#ColinJ1-1{
+#ColinJ2-1{
 	position: absolute;
 	left :400px;
 	top : 135px;
 }
-#ColinJ1-2{
+#ColinJ2-2{
 	position: absolute;
 	left :100px;
 	top : 48px;
 }
-#HomardJ1-1{
+#HomardJ2-1{
 	position: absolute;
 	left :225px;
 	top : 155px;
 }
-#HomardJ1-2{
+#HomardJ2-2{
 	position: absolute;
 	left :450px;
 	top : 75px;
 }
-#HomardJ1-3{
+#HomardJ2-3{
 	position: absolute;
 	left :530px;
 	top : 300px;
 }
-#PoissonJ1-1{
+#PoissonJ2-1{
 	position: absolute;
 	left :115px;
 	top : 150px;
 }
-#PoissonJ1-2{
+#PoissonJ2-2{
 	position: absolute;
 	left :300px;
 	top : 50px;
 }
-#NuageJ1-1{
+#NuageJ2-1{
 position: absolute;
 	left :800px;
 	top : 32px;
 }
-#NuageJ1-2{
+#NuageJ2-2{
 	position: absolute;
 	left :434px;
 	top : 30px;
 }
-#NuageJ1-3{
+#NuageJ2-3{
 	position: absolute;
 	left :180px;
 	top : 51px;
 }
-#NuageJ1-4{
+#NuageJ2-4{
 	position: absolute;
 	left :1010px;
 	top : 71px;
 }
-#PhareJ1{
+#PhareJ2{
 	position: absolute;
 	left :40px;
 	top : 49px;
 }
-#RocherJ1{
+#RocherJ2{
 	position: absolute;
 	left :10px;
 	top : 132px;
 }
 
 
-.radioJ1 label{
+.radioJ2 label{
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
@@ -750,7 +759,7 @@ position: absolute;
 
 }
 
-.radioJ1 label:after
+.radioJ2 label:after
 {
 	opacity: 0;
 	content: '';
@@ -769,7 +778,7 @@ position: absolute;
 }
 
 
-.radioJ1 input[type=radio]:checked + label:after {
+.radioJ2 input[type=radio]:checked + label:after {
 	opacity: 1;
 	transition: opacity 1s ease-out, transform 1s;
 	transform: rotate(315deg);
@@ -782,185 +791,8 @@ position: absolute;
 
 
 
-/*JEU 2*/
-/*Taille et image a changer*/
 
 
-.InterfaceJ2 article{
-	display: inline-block;
-}
-
-.MerJ2{
-	width:  607px; 
-	height : 120px;
-	background-image: url(../pictures/Jeu2/mer.png);
-}
-.MouetteHorizontale{
-	width:  105px; 
-	height : 67px;
-	background-image: url(../pictures/Jeu2/mouette-de-combat.png);
-}
-.MouettePosey{
-	width:  62px; 
-	height : 86px;
-	background-image: url(../pictures/Jeu2/mouette-handicapé.png);
-}
-.Fiente{
-	width:  16px; 
-	height : 37px;
-	background-image: url(../pictures/Jeu2/guano.png);
-}
-.Huitre{
-	width:  47px; 
-	height : 35px;
-	background-image: url(../pictures/Jeu2/huitre1.png);
-}
-.Splash{
-	width:  63px; 
-	height : 40px;
-	background-image: url(../pictures/Jeu1/splash-de-caca.png);
-}
-.RocherJ2{ /*Pas l'image*/
-	width:  82px; 
-	height : 23px;
-	background-image: url(../pictures/Jeu1/rocher_jeu_peche.png);
-}
-.Vague{
-	width:  250px; 
-	height : 31px;
-	background-image: url(../pictures/Jeu2/vague.png);
-}
-.Plage{
-	width:  525px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/plage.png);
-}
-
-.Touriste{
-	width:  139px; 
-	height : 264px;
-}
-
-#Touriste1{
-	height : 258px;
-	background-image: url(../pictures/Jeu2/touriste-baigneur.png);
-}
-
-#Touriste2{
-	background-image: url(../pictures/Jeu2/touriste-beauf.png);
-}
-
-#Touriste3{
-	background-image: url(../pictures/Jeu2/touriste-bimbo.png);
-}
-
-#Touriste4{
-	width:  105px; 
-	height : 192px;
-	background-image: url(../pictures/Jeu2/touriste-enfant.png);
-}
-
-#Touriste5{
-	width:  131px; 
-	height : 163px;
-	background-image: url(../pictures/Jeu2/homme_tronc.png);
-}
-
-#MH1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#P3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#P4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N6{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N7{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
 
 /*Jeu3*/
 
