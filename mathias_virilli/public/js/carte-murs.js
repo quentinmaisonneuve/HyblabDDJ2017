@@ -42,7 +42,7 @@ var display= function(data1,data2,data3){
 		.on("mouseout",MouseOutFunction)
 		.transition().duration(200);
 
-	svg.selectAll("a")
+	svgCarte.selectAll("a")
 		.data(data2)
 	   .enter()
 		.append("path")
@@ -53,7 +53,7 @@ var display= function(data1,data2,data3){
 		.transition().duration(200);    
       
    
-      svg.selectAll("a")
+      svgCarte.selectAll("a")
 		.data(data3)
 	   .enter()
 		.append("path")
