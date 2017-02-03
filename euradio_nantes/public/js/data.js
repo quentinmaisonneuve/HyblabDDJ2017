@@ -138,11 +138,11 @@ function creatTwitter(){
 var provenancePaysPourcentageFacebook = 
 [
 
-      /*{
+      {
         "label": "France",
         "y": 6352,
         "indexLabel": "81,59%"
-      },*/
+      },
       {
         "label": "Italie",
         "y": 206,
@@ -188,17 +188,17 @@ var provenancePaysPourcentageFacebook =
         "label": "Portugal",
         "y": 31,
         "indexLabel": "0,4%"
-      }/*,
+      },
       {
         "label": "Autre",
         "y": 386,
         "indexLabel": "6.99%"
-      }*/,
+      }/*,
       {
         "label": "Algérie",
         "y": 29,
         "indexLabel": "0,37%"
-      }/*,
+      },
       {
         "label": "Grèce",
         "y": 29,
