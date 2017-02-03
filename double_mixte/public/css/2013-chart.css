@@ -44,11 +44,11 @@
 	background-color: #DE8948 !important;
 }
 
-.ct-grid {
+#chart1 .ct-grid {
     stroke: rgba(0, 0, 0, 0.0);
 }
 
-.ct-label.ct-vertical.ct-start {
+#chart1 .ct-label.ct-vertical.ct-start {
     display: none;
 }
 
@@ -70,6 +70,7 @@
     line-height: 16px;
     color: #661600;
     font-family: Josefin Sans;
+    font-size: 1.5em;
 }
 
 .ct-legend li:before {
@@ -104,4 +105,11 @@
 
 #val_graph2013 {
 	font-family: Josefin Sans;
+}
+
+#chart1 {
+    position: absolute;
+    top: 30vh;
+    left: 57vw;
+    width: 30vw;
 }

@@ -20,8 +20,11 @@
 	<script src="lib/c3.min.js" ></script>
 	<link href="lib/c3.css" rel="stylesheet" type="text/css">
 	
-  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  	<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
 
+  	<!-- Bootflat -->
+  	<link href="lib/bootflat.min.css" rel="stylesheet" type="text/css">
+	
 	<!-- animate.css -->
 	<link rel="stylesheet" href="lib/animate.css">
 	
@@ -34,7 +37,10 @@
 	<link rel="stylesheet" href="css/2014-chart.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
 	<link rel="stylesheet" href="css/2011.css">
-	<link rel="stylesheet" href="css/accueil.css">
+
+	<link rel="stylesheet" href="css/tooltip_nuitees.css">
+
+	<link rel="stylesheet" href="css/2016-chart.css">
 
 
   	<!-- Nos fichiers Javascript -->
@@ -43,6 +49,8 @@
   	<script src="js/2013-chart.js"></script>
   	<script src="js/tooltip-nuitees.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
+	<script src="js/2016-chart_nuiteesannuelles.js"></script>
+
 </head>
 
 <body>
@@ -56,19 +64,22 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+		<li data-target="#carousel-example-generic" data-slide-to="9"></li>
       	</ol>
 
       	<!-- Wrapper for slides -->
       	<div class="carousel-inner" role="listbox">
 
-        <!-- First slide -->
-        <div class="item active deepskyblue">
-        
-        <center><div id="img-accueil"><img src="img/accueil.svg"></div></center>
-
+        <!-- Accueil -->
+        <div class="item active page-accueil">
         </div> 
 
+        <div class="item page-intro">
+        </div>
         <!-- 2011 -->
         <div class="item slide2011">
         	<div class="nbnuitees">
@@ -85,7 +96,6 @@
 		
 		<!-- 2012 -->
         <div class="item slide2012">
-			
         	<div class="nbnuitees">
         		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2012chiffre0" class="2012chiffre chiffre" src="img/zero.svg"/>
@@ -96,6 +106,7 @@
 				<img id="2012chiffre5" class="2012chiffre chiffre" src="img/zero.svg"/>
 				<img id="2012chiffre6" class="2012chiffre chiffre" src="img/zero.svg"/>
         	</div>
+			
         	<div class="chartandlegend">
 				<div id="stackedbartitle">Billetterie des Machines <div id="stackedbartitleunit">(nombre de visiteurs)</div></div>
 				<div id="stackedbarchart2">
@@ -109,9 +120,9 @@
         </div>
 
         <!-- 2013 -->
-	    <div class="item darkerskyblue">
+	    <div class="item slide2013">
 	    	<div class="nbnuitees">
-	    		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
+	    		<img class="info-nuitees" src="img/picto_nuitees.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2013chiffre0" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre1" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre2" class="2013chiffre chiffre" src="img/zero.svg"/>
@@ -120,33 +131,12 @@
 				<img id="2013chiffre5" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre6" class="2013chiffre chiffre" src="img/zero.svg"/>
         	</div>
-        	<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
+       			
 					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					
 					<div id="val_graph2013"></div>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-	      	<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="ct-chart .ct-golden-section" id="chart1"></div>
 					
-					<div id="val_graph2013"></div>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4">
-					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					
-					<div id="val_graph2013"></div>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
+		
+	
 	    </div>
 
         <!-- 2014 -->
@@ -196,7 +186,7 @@
       </div>
 
     	<!-- 2015 -->
-	    <div class="item darkerskyblue">
+	    <div class="item slide2015">
 	    	<div class="nbnuitees">
 	    		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2015chiffre0" class="2015chiffre chiffre" src="img/zero.svg"/>
@@ -210,6 +200,31 @@
 	      	
 	    </div>
 	    
+		<!-- 2016 -->
+	      <div class="item slide2016">
+		<div class="nbnuitees">
+		  <img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
+		  <img id="2011chiffre0" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre1" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre2" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre3" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre4" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre5" class="2016chiffre chiffre" src="img/zero.svg"/>
+		  <img id="2011chiffre6" class="2016chiffre chiffre" src="img/zero.svg"/>
+		</div>
+		<div class="graphenbnuitees">
+		  <div class="ct-chart .ct-golden-section" id="chart2"></div>
+		</div>
+	      </div>
+
+
+	    <div class="item slidebilan">
+
+	   	</div>
+
+	   	<div class="item slideremerciements">
+
+	   	</div>
 
 	</div><!-- /.carousel-inner -->
 
@@ -262,6 +277,8 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   doAnimations($animatingElems);
 
   drawChart();
+	
+  drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));

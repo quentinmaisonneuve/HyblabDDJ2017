@@ -29,7 +29,8 @@ function toto(chart_annee, chart_aout, chart_octobre){
 
     var options = {
         seriesBarDistance: 30,
-        height: "20em",
+        height: "50vh",
+        width: "30vw",
         plugins: [
             Chartist.plugins.legend({
                 position: 'bottom',
@@ -50,7 +51,6 @@ function toto(chart_annee, chart_aout, chart_octobre){
         ['screen and (max-width: 640px)', {
             seriesBarDistance: 30,
             showLine: false,
-            height: "10em",
             axisX: {
                 labelInterpolationFnc: function (value) {
                     return value[0];
@@ -122,8 +122,7 @@ function titi() {
 
 
 $(function() {
-    //drawChart();
-    //$('p').css("color", "red");
+    
 });
 
 /*
