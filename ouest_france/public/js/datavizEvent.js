@@ -1,5 +1,9 @@
 'use strict';
 
+document.getElementById('enroute').onclick = function() {
+  $.fn.fullpage.moveSectionDown();
+}
+
 document.getElementById('buttonEncadre1').onclick = function() {
   var value = document.getElementById('encadre1').style["z-index"];
   if (value != 0) {
