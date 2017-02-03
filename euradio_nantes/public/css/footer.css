@@ -1,0 +1,47 @@
+footer {
+    width: 50%;
+    margin: auto;
+}
+
+#bandeau {
+    padding: 8px;
+}
+
+#bandeau li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+#bandeau img {
+    height: 46px;
+}
+
+#bandeau #hyblab {
+    margin: 46px 0;
+    height: 50px;
+    float: left;
+}
+
+#euradio {
+    margin-left: 20px;
+    margin-bottom: -5%;
+}
+
+#bandeau #cc, #bandeau #opensource {
+    height: 16px;
+}
+
+#bandeau .stacked {
+    display: block;
+}
+
+#bandeau ul {
+    text-align: center;
+    padding: 0 0;
+}
+
+#bandeau .institutionnel {
+    height: 42px;
+}

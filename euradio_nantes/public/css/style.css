@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("../fonts/Blogger_Sans.otf");
+}
+@font-face {
+  font-family: "Blogger Sans";
+  font-weight: bold;
+  src: url("../fonts/Blogger_Sans-Bold.otf");
+}
+
 /* just a sample css rule to show that everything works */
 footer p
 {
@@ -29,6 +39,11 @@ body {
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+    font-family: "Blogger Sans";
+    font-weight: bold;
 }
 
 a {
@@ -193,7 +208,7 @@ Timeline
   bottom: 0;
   z-index: 2;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding-bottom: 15px;
   color: #383838;
   /* fix bug on Safari - text flickering while timeline translates */
@@ -485,6 +500,9 @@ Timeline
 center img {
     margin-bottom: 10px;
     width: 100%;
+}
+.timeline a {
+    font-family: "Blogger Sans";
 }
 
 /*
