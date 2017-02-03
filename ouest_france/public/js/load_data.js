@@ -1,6 +1,8 @@
 'use strict';
 
-var loaded = (function () {
+var loaded = false;
+
+var counter = (function () {
     var count = 1;
 
     return function () {
@@ -8,30 +10,24 @@ var loaded = (function () {
     }
 })();
 
-var to_load = [
-    {
-        path: "data/csv",
-        name: "MOD_D30_Mode_Marche",
-        ext: "csv",
-        type: "matrix",
-        area: "d30",
-        more: ["mode", "marche"]
-    },
-    {
-        path: "data/csv",
-        name: "PER_D30_Age",
-        ext: "csv",
-        type: "per",
-        area: "d30",
-        more: ["age"]
-    }
-];
-
 var index = {};
 var data = {};
+var files = 0;
 
 // Load index file
-fetch("data/index.json")
+fetch_json("data/index.json", function (json) {
+    index = json;
+    ready();
+});
+
+// Load csv data files
+fetch_json("data/data.json", function (json) {
+    load_files(json)
+});
+
+// Functions
+function fetch_json(filename, callback) {
+    fetch(filename)
     .then(function (response) {
         if (response.ok)
             return response.json();
@@ -41,51 +37,58 @@ fetch("data/index.json")
     .catch(function (error) {
         return { err: "Invalid JSON" };
     })
-    .then(function (json) {
-        index = json;
-        if (loaded() === 1) {
-        }
+    .then(callback);
+}
+
+function load_files(json) {
+    json.map(function (f) {
+        data[f.area] = {};
+
+        f.data.map(function (d) {
+            var current = data[f.area];
+
+            if (!(d.type in current)) {
+                current[d.type] = {};
+            }
+
+            current = current[d.type];
+
+            if ("subtype" in d) {
+                current[d.subtype] = {};
+            }
+
+            d.docs.map(function (doc) {
+                files += doc.files.length;
+            });
+        });
+
+        f.data.map(function (d) {
+            var current = data[f.area][d.type];
+
+            if ("subtype" in d) {
+                current = current[d.subtype];
+            }
+
+            d.docs.map(function (doc) {
+                doc.files.map(function (file) {
+                    load(current, doc.path + '/' + file.name + '.' + file.ext, file.content);
+                });
+            });
+        });
     });
+}
 
-// Load csv data files
-to_load.map(function (file) {
-    if (!(file.area in data)) {
-        data[file.area] = {};
-    }
-
-    var current = data[file.area];
-
-    if (!(file.type in current)) {
-        current[file.type] = {};
-    }
-
-    current = current[file.type];
-
-    file.more.map(function (m) {
-        if (!(m in current)) {
-            current[m] = {};
-        }
-
-        current = current[m];
-    });
-
-    load(file.path + '/' + file.name + '.' + file.ext, file.type, file.area, file.more);
-});
-
-// Functions
-function load(filename, type, area, more) {
+function load(data, filename, content) {
     d3.text(filename, function (file) {
         var rows = [];
 
         d3.dsvFormat(";").parseRows(file, function (row) {
             rows.push(row);
         });
-        
-        var current = data[area][type];
 
-        more.map(function (m) {
-            current = current[m];
-        });
+        data[content] = {};
+
+        var current = data[content];
 
         for (var i = 1; i < rows.length; ++i) {
             current[rows[i][0]] = {};
@@ -93,7 +96,13 @@ function load(filename, type, area, more) {
                 current[rows[i][0]][rows[0][j]] = +rows[i][j];
             }
         }
-    });
 
-    console.log(data);
+        ready();
+    });
+}
+
+function ready() {
+    if (counter() === files) {
+        loaded = true;
+    }
 }
