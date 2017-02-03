@@ -123,9 +123,9 @@ html, body{
 #pageOne button {
 	background-color: #004266;
 	width: 10%;
-	color: #F1D030;
+	color: #FFD000;
 	font-weight: bold;
-	border: 3px #F1D030 solid;
+	border: 3px #FFD000 solid;
 	border-radius: 15px;
 	padding: 15px;
 	margin-top: 2%;
@@ -144,7 +144,6 @@ html, body{
 #pageTwo h1 {
 	font-size: 1.7em;
 	font-weight: bold;
-	padding-top: 4%;
 	color: #004266;
 	width: 40%;
 	margin: 0 auto;
@@ -205,6 +204,17 @@ html, body{
 
 #pageTwo .blocTwoTwo img {
 	max-width: 13%;
+}
+
+#pageTwo button {
+	background-color: #FFD000;
+	width: 10%;
+	color: #004266;
+	font-weight: bold;
+	border: 3px #004266 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
 }
 
 
@@ -294,6 +304,36 @@ html, body{
 /* Hide default HTML checkbox */
 .switch input {display:none;}
 
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  max-width : 450px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+}
+
+input[type=range]::-ms-track { color: red; }
+
 /* The slider */
 .slider {
   position: absolute;
@@ -333,7 +373,16 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.play, .pause {width:100px;height:100px;}
+.play, .pause {
+	width:75px;
+	height:75px;
+}
+
+.inlineBloc {
+
+	position: relative;
+	top: 32px;
+}
 
 /* ################### pageThree ################### */
 
