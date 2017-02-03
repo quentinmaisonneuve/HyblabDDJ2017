@@ -165,7 +165,7 @@ var provenancePaysPourcentageFacebook =
         "indexLabel": "1,26%"
       },
       {
-        "label": "Royaume Uni",
+        "label": "Royaume-Uni",
         "y": 83,
         "indexLabel": "1,07%"
       },
@@ -188,12 +188,12 @@ var provenancePaysPourcentageFacebook =
         "label": "Portugal",
         "y": 31,
         "indexLabel": "0,4%"
-      },
+      }/*,
       {
         "label": "Algérie",
         "y": 29,
         "indexLabel": "0,37%"
-      }/*,
+      },
       {
         "label": "Grèce",
         "y": 29,
