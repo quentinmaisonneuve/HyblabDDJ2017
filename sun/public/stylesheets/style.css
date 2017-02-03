@@ -187,16 +187,154 @@ html, body{
 	font-weight: bold;
 }
 
-#pageTwo .blocTwo {
+#pageTwo .blocTwoTwo {
 	width: 70%;
 	margin: 0 auto;
 	text-align: center;
-	background-color: grey;
 	margin-top: 5%;
 	padding-top: 2%;
 	padding-bottom: 3%;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #004266;
 }
 
+#pageTwo .blocTwoTwo .inlineBloc {
+	width: 30%;
+	display: inline-block;
+}
+
+#pageTwo .blocTwoTwo img {
+	max-width: 13%;
+}
+
+
+/* FORM */
+.printemps{background-image:url(/images/page2_feuille.png);}
+.ete{background-image:url(/images/page2_soleil.png);}
+.automne{background-image:url(/images/page2_automne.png);}
+.hiver{background-image:url(/images/page2_hiver.png);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:125px;height:90px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.9);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.9);
+            filter: brightness(1.8) grayscale(1) opacity(.9);
+}
+
+input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    border: 2px solid #004266;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: #004266;
+    border-color: #004266;
+    box-shadow: inset 0px 0px 0px 2px #FFD000;
+}
+
+label.drinkcard-cc.printemps::before{
+	margin-top: 80%;
+	margin-right: 35%;
+}
+label.drinkcard-cc.ete::before{
+	margin-top: 80%;
+	margin-right: 26%;
+}
+label.drinkcard-cc.automne::before{
+	margin-top: 80%;
+	margin-right: 9%;
+}
+label.drinkcard-cc.hiver::before{
+	margin-top: 80%;
+	margin-right: 35%;
+}
+
+label.drinkcard-cc.ete {
+	margin-left: 5%;
+}
+label.drinkcard-cc.automne {
+	margin-left: 5%;
+}
+label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+
+/* TOGLE */
+/* The slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #004266;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #004266;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.play, .pause {width:100px;height:100px;}
 
 /* ################### pageThree ################### */
 
@@ -204,6 +342,8 @@ html, body{
 	background-color: #F5EED8;
 	min-height: 100%;
 }
+
+
 
 /* ################### pageFour ################### */
 
