@@ -13,6 +13,7 @@
   max-height: none;
   background-color: transparent;
   display: table;
+  z-index: 100;
 }
 .cd-vertical-nav a {
   display: block;
@@ -33,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -93,7 +94,7 @@
   transition: transform 0.4s, background-color 0.2s;
 }
 .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-  background-color: #c0a672;
+  background-color: #7b9d6f;
 }
 .cd-vertical-nav .label {
   display: block;

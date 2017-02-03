@@ -12,14 +12,10 @@ var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 // You can then add whatever routing code you need
-app.get("/public/data/timeline.json", function(req, res) {
-    var json = JSON.parse(fs.readFileSync('euradio_nantes/public/data/timeline.json', 'utf8'));
+app.get("/public/data/*", function(req, res) {
+    var file = req.url.replace('/public/data/', '');
+    var json = JSON.parse(fs.readFileSync('euradio_nantes/public/data/' + file, 'utf8'));
     res.json(json);
-});
-
-app.get("/public/img/*", function(req, res) {
-    var img = fs.readFileSync('euradio_nantes' + req.url);
-    res.write(img);
 });
 
 // This module is exported and served by the main server.js located
