@@ -158,10 +158,11 @@ h3{
 
 .social-media {
 	display: inline-block;
-	width : 100%;
-	vertical-align: middle;
+	width : 25%;
 	font-size : 1px;
 	position : relative;
+	margin-right : 5%;
+	float : right;
 }
 
 #twitter-widget-0, #twitter-widget-1 {
@@ -184,6 +185,7 @@ h3{
 	width : 110px;
 }
 
+
 .section{
 	text-align:center;
 	display: block;
@@ -192,9 +194,39 @@ h3{
 .section-content {
 	width : 90%;
 	text-align : justify;
-	margin: auto;
+	margin : 50px;
 }
 
+#def {
+	display : block;
+	vertical-align: middle;
+}
+
+.line1, .line2 {
+	display : inline-block;
+	text-align: center;
+	margin : 5% 0 5% 0;
+
+}
+
+.data1,.data2, .data3 {
+	position : relative;
+	vertical-align: top;
+	display : inline-block;
+	width : 30%
+}
+
+.data4, .data5 {
+	position : relative;
+	vertical-align: top;
+	display : inline-block;
+	width : 45%
+}
+
+.source {
+	font-size : 0.7em;
+	color : darkgrey;
+}
 p{
 	font-size: 1em;
 	font-family: arial,helvetica;
@@ -204,9 +236,14 @@ p{
 }
 
 ul {
+	position : relative;
 	list-style-type: disc;
 	color : #fff;
-	margin-left : 10%;
+	margin-left : 20%;
+}
+
+ul li {
+	width : 70%;
 }
 
 strong {
@@ -248,13 +285,13 @@ strong {
 	background: linear-gradient(#140F21,#140F21);
 }
 
-#section4{
+#section5{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21,#140F21);
 }
 
-#section6, #section7 {
+#section6, #section7, #section8{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21, #140F21);
