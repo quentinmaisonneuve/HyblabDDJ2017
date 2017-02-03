@@ -79,14 +79,8 @@ path {
 	border-radius:5px;	
 }
 
-.arc {
-  fill: none;
-  stroke: #3FFF00;
-  stroke-width: 0.5px;
-  stroke-linecap: round;
-}
 
-.arc2 {
+.arc {
   fill: none;
   stroke: #FFE812;
   stroke-width: 2.5px;
@@ -94,7 +88,7 @@ path {
 }
 
 
-.arc3 {
+.arc2 {
   fill: none;
   stroke: #FFB655;
   stroke-width: 2.5px;
