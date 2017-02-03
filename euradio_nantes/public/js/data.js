@@ -50,20 +50,9 @@ function creatFacebook(){
                 indexLabelFontFamily: "Verdana",
                 color: "#3b5998",
                 type: "bar",
-                dataPoints: provenancePaysPourcentageFacebook.reverse()
-                /*
-                [
-                    { y: 21, label: "21%", indexLabel: "France" },
-                    { y: 25, label: "25%", indexLabel: "USA" },
-                    { y: 33, label: "33%", indexLabel: "Alemande" },
-                    { y: 36, label: "36%", indexLabel: "Belge" },
-                    { y: 42, label: "42%", indexLabel: "Espanyol" },
-                    { y: 49, label: "49%", indexLabel: "Italy" },
-                    { y: 50, label: "50%", indexLabel: "Monago" },
-                    { y: 55, label: "55%", indexLabel: "Suisse" },
-                    { y: 61, label: "61%", indexLabel: "Pays-pas" }
-                ]
-                */
+                
+                dataPoints: /*Data*/provenancePaysPourcentageFacebook.reverse()
+
             }
             ]
         });
@@ -105,18 +94,7 @@ function creatTwitter(){
                 indexLabelFontFamily: "Verdana",
                 color: "#00acee",
                 type: "bar",
-                dataPoints: provenancePaysPourcentageTwitter.reverse()
-                /*[
-                    { y: 21, label: "21%", indexLabel: "Suisse" },
-                    { y: 25, label: "25%", indexLabel: "Pays-pas" },
-                    { y: 33, label: "33%", indexLabel: "Alemande" },
-                    { y: 36, label: "36%", indexLabel: "Italy" },
-                    { y: 42, label: "42%", indexLabel: "Espanyol" },
-                    { y: 49, label: "49%", indexLabel: "Belge" },
-                    { y: 50, label: "50%", indexLabel: "Monago" },
-                    { y: 55, label: "55%", indexLabel: "France" },
-                    { y: 61, label: "61%", indexLabel: "USA" }
-                ]*/
+                dataPoints: /*Data*/provenancePaysPourcentageTwitter.reverse()
             }
             ]
         });
