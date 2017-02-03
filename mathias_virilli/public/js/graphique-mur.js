@@ -72,7 +72,7 @@ window.onload = function() {
 var ulObjets = document.getElementById("objets-separations");
 OBJETS.forEach(function(obj) {
     var li = document.createElement("li");
-    li.id = "obj-" + obj;
+    li.id = "obj-" + obj.split(" ").join("-");
     ulObjets.append(li);
 });
 
@@ -87,8 +87,8 @@ function updateAnnee(val) {
     draw(displayData.longueurs);
     
     OBJETS.forEach(function(obj) {
-        var li = document.getElementById("obj-" + obj);
-        li.innerText = obj + " : " + displayData.objets[obj];
+        var li = document.getElementById("obj-" + obj.split(" ").join("-"));
+        li.innerHTML = '<span class="value">' + displayData.objets[obj] + '</span><span class="name">' + obj + '</span>';
     });
 }
 
