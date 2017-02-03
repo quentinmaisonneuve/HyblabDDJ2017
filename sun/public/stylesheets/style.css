@@ -123,9 +123,9 @@ html, body{
 #pageOne button {
 	background-color: #004266;
 	width: 10%;
-	color: #F1D030;
+	color: #FFD000;
 	font-weight: bold;
-	border: 3px #F1D030 solid;
+	border: 3px #FFD000 solid;
 	border-radius: 15px;
 	padding: 15px;
 	margin-top: 2%;
@@ -144,7 +144,6 @@ html, body{
 #pageTwo h1 {
 	font-size: 1.7em;
 	font-weight: bold;
-	padding-top: 4%;
 	color: #004266;
 	width: 40%;
 	margin: 0 auto;
@@ -167,16 +166,8 @@ html, body{
 #pageTwo .blocTwoOne {
 	width: 70%;
 	margin: 0 auto;
-	margin-top: 2%;
+	margin-top: 1%;
 	padding-top: 1%;
-}
-
-#pageTwo .blocTwoOne .Saison img {
-	margin-top: 5%;
-}
-
-#pageTwo .blocTwoOne .Saison {
-	margin-top: 5%;
 }
 
 #pageTwo .blocTwoOne .Saison {
@@ -191,20 +182,47 @@ html, body{
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 5%;
-	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #004266;
+	display: flex;
+
 }
 
 #pageTwo .blocTwoTwo .inlineBloc {
 	width: 30%;
 	display: inline-block;
+	margin: auto;
 }
 
-#pageTwo .blocTwoTwo img {
-	max-width: 13%;
+.inlineBlocWE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-right: 20%;
+}
+
+.inlineBlocSE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-left: 20%;
+}
+
+#pageTwo {
+	min-height: 100%;
+}
+
+#pageTwo button {
+	background-color: #FFD000;
+	width: 10%;
+	color: #004266;
+	font-weight: bold;
+	border: 3px #004266 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
 }
 
 
@@ -257,28 +275,31 @@ html, body{
 
 .cc-selector label.drinkcard-cc.printemps::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 30%;
 }
 .cc-selector label.drinkcard-cc.ete::before{
 	margin-top: 80%;
-	margin-right: 26%;
+	margin-right: 55%;
 }
 .cc-selector label.drinkcard-cc.automne::before{
 	margin-top: 80%;
-	margin-right: 9%;
+	margin-right: 15%;
 }
 .cc-selector label.drinkcard-cc.hiver::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 60%;
 }
 
-.cc-selector label.drinkcard-cc.ete {
-	margin-left: 5%;
+label.drinkcard-cc.ete {
+	margin-left: 10%;
 }
 .cc-selector label.drinkcard-cc.automne {
 	margin-left: 5%;
 }
 .cc-selector label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+label.drinkcard-cc.printemps {
 	margin-left: 7%;
 }
 
@@ -293,6 +314,36 @@ html, body{
 
 /* Hide default HTML checkbox */
 .switch input {display:none;}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  max-width : 450px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+}
+
+input[type=range]::-ms-track { color: red; }
 
 /* The slider */
 .slider {
@@ -333,17 +384,89 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.play, .pause {width:100px;height:100px;}
+.play, .pause {
+	width:75px;
+	height:75px;
+}
+
+.inlineBloc {
+
+	position: relative;
+	top: 32px;
+}
 
 /* ################### pageThree ################### */
 
 #pageThree {
-	background-color: #F5EED8;
+	background-color: #FECB2E;
 	min-height: 100%;
 }
 
+#bubleChart {
+	width: 50%;
+	height: 70%;
+	display: inline-block;
+  	margin:0;
+  	padding:0;
+  	background: url(/images/fond-matiere.png) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+  	margin-left: 1%;
+}
 
+#boutonBuble {
+	width: 45%;
+	height: 70%;
+	display: inline-block;
+	margin-top: 2%;
+}
 
+#boutonBubleTopLeft {
+	width: 49%;
+	display: inline-block;
+}
+
+#boutonBubleTopLeft img {
+	width: 50%;
+}
+
+#boutonBubleTopLeft {
+	text-align: center;
+}
+
+#boutonBubleTopRight {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleTopRight p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomLeft {
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleBottomLeft p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomRight {
+	width: 49%;
+	display: inline-block;
+	background-color: grey;
+}
 /* ################### pageFour ################### */
 
 #pageFour {
@@ -351,11 +474,6 @@ input:checked + .slider:before {
 	min-height: 100%;
 	border-top: 1px solid black;
 }
-
-
-
-
-
 
 /* ########### TOOLTIPS ########################*/
 div.tooltip {

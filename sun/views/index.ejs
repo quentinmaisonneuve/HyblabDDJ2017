@@ -10,30 +10,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/fullPage.js-master/jquery.fullPage.min.js"></script>
 
-
     <script type="text/javascript">
     	$(document).ready(function() {
-			$('#fullpage').fullpage();
-			
-			$.fn.fullpage.setAllowScrolling(true);
-			$.fn.fullpage.setKeyboardScrolling(true);
-    	});
+			 $('#fullpage').fullpage();
+			 $.fn.fullpage.setAllowScrolling(true);
+			 $.fn.fullpage.setKeyboardScrolling(true);
+       $('#timeline_value').html((" " + ($('#timeline').val()*2) + "h " + " " + ($('#timeline').val()*2+2) + "h "));
+      });
 	</script>
 
-    <script>
+  <script>
+    $(document).on('input change', '#timeline', function() {
+      $('#timeline_value').html((" " + ($(this).val()*2) + "h " + " " + ($(this).val()*2+2) + "h "));
+    });
+  </script>
+  <script>
 		$(document).ready(function() {
     	    $('.js-scrollTo').on('click', function() {
 				$.fn.fullpage.moveSectionDown();
-			});			
+			});	
 		});
-    </script>
+  </script>
+
+  <script>
+    $('input[type="range"]').rangeslider();
+    $('input[type="range"]').rangeslider('destroy');
+    $('input[type="range"]').rangeslider('update', true);
+  </script>
 
     <script type="text/javascript">
       function changer_image(image) {
           $('.image').css('background-image', 'url("'+image+'")');
       }
     </script>
-
 
     <script type="text/javascript">
       function toggle(el){
@@ -47,7 +56,36 @@
               el.src='/images/bouton_semaine_weekend_page2.png';
               el.className="play";
           }
-          
+          return false;
+      }
+    </script>
+    <script type="text/javascript">
+      function toggleTwo(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/ambiance_off.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/ambiance_on.svg';
+              el.className="play";
+          }
+          return false;
+      }
+    </script>
+    <script type="text/javascript">
+      function toggleThree(el){
+          if(el.className!="pause")
+          {
+              el.src='/images/btn-weekend.svg';
+              el.className="pause";
+          }
+          else if(el.className=="pause")
+          {
+              el.src='/images/btn-semaine.svg';
+              el.className="play";
+          }
           return false;
       }
     </script>
@@ -57,22 +95,13 @@
 <body >
   
 <div id="container">
-
-    <div id="fullpage">
+  <div id="fullpage">
       <div id="pageOne" class="section">
         <img src="/images/logo-home.png">
-
         <p class="pageOnePremierP"><span id="randomWeek"></span></p>
         <p class="pageOneDeuxiemeP"><span id="randomWeek2"></span></p>
         <a class="js-scrollTo"><button>START</button></a>
-
       </div>
-
-    <!--div id="pageOne" class="section">
-      <p> <span id="numberOfMusicToday">? personne</span> ont joué une chanson sur Radio Sun</p>
-      <a class="js-scrollTo" href="#pageTwo"><button>On Air</button></a>
-    </div-->
-
 
 
       <div id="pageTwo" class="section">
@@ -80,76 +109,102 @@
         <h2>La rédac' SUN</h2>
         <hr>
         <div class="blocTwoOne">
-
           <form>
             <div class="cc-selector">
-              <input id="printemps" type="radio" name="credit-card" value="printemps" class="season" />
-              <label class="drinkcard-cc printemps" for="printemps"></label>
 
-              <input id="ete" type="radio" name="credit-card" value="ete" class="season"/>
-              <label class="drinkcard-cc ete"for="ete"></label>
-
-              <input id="automne" type="radio" name="credit-card" value="automne" class="season"/>
+              <input id="automne" type="radio" name="credit-card" value="automne" />
               <label class="drinkcard-cc automne"for="automne"></label>
-
-              <input id="hiver" type="radio" name="credit-card" value="hiver" class="season"/>
+              <input id="hiver" type="radio" name="credit-card" value="hiver" />
               <label class="drinkcard-cc hiver"for="hiver"></label>
+              <input id="printemps" type="radio" name="credit-card" value="printemps" />
+              <label class="drinkcard-cc printemps" for="printemps"></label>
+              <input id="ete" type="radio" name="credit-card" value="ete" />
+              <label class="drinkcard-cc ete"for="ete"></label>
             </div>
           </form>
-        
+        </div>
         <div class="blocTwoTwo">
-          <p class="inlineBloc">SEMAINE</p>
-          
-<!--<label class="switch">
-  <input type="checkbox">
-  <div class="slider"></div>
-</label>-->
 
-<input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
-          
-          <p class="inlineBloc">WEEK-END</p>
+          <p class="inlineBlocSE">SEMAINE</p>
+              <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
+          <p class="inlineBlocWE">WEEK-END</p>
         </div>
-        
         <div class="blocTwoThree">
-          <p>Timeline</p>
+          <input id="timeline" type="range" value="6" max="11" min="0" step="1"/>
+          <span id="timeline_value"></span>
         </div>
+       
+        <a class="js-scrollTo"><button>VALIDER</button></a>
       </div>
-    </div>
 
-<a name="slide3" />
       <div id="pageThree" class="section">
 
-        <audio id="Alternative">
-          <source src="/music/Alternative.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Rock">
-          <source src="/music/Rock.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Pop">
-          <source src="/music/Pop.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Jazz">
-          <source src="/music/Jazz.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Urban">
-          <source src="/music/Urban.mp3" type="audio/mp3">
-        </audio>
-        <audio id="Electro">
-          <source src="/music/Electro.mp3" type="audio/mp3">
-        </audio>
+        
+        <div id="bubleChart">
+         <!-- <audio id="Alternative">
+            <source src="/music/Alternative.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Rock">
+            <source src="/music/Rock.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Pop">
+            <source src="/music/Pop.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Jazz">
+            <source src="/music/Jazz.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Urban">
+            <source src="/music/Urban.mp3" type="audio/mp3">
+          </audio>
+          <audio id="Electro">
+            <source src="/music/Electro.mp3" type="audio/mp3">
+          </audio>
+          <div id="bubble3" width="400" height="200"></div>
+          <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
+          <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
+          <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
+          <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input> -->
+          <p>ff</p>
+        </div>
 
-        <div id="bubble3" width="400" height="200"></div>
+        <div id="boutonBuble">
+          <div id="boutonBubleTop">
+            <div id="boutonBubleTopLeft">
+              <img src="/images/SUN-LABEL2-BLEU.svg">
+            </div>
+            <div id="boutonBubleTopRight">
+              <p>Genre</p>
+              <input type="image" src="/images/ambiance_on.svg" class="play" onclick="toggleTwo(this);"/>
+              <p>Ambiance</p>
+            </div>
+          </div>
+          <div id="boutonBubleBottom">
+            <div id="boutonBubleBottomLeft">
+              <p>Semaine</p>
+              <input type="image" src="/images/btn-semaine.svg" class="play" onclick="toggleThree(this);"/>
+              <p>Week-end</p>
+            </div>
+            <div id="boutonBubleBottomRight">
+              <form action="">
+                <input type="radio" name="gender" value="male"> <br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+              </form>
+            </div>
+          </div>
+        </div>
 
-        <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
-        <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
-        <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
-        <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input>
+        <div id="BubleBottom">
+          
+        </div>
       </div>
 
       <script src="./javascripts/pageOne.js"></script>
+          <script src="./javascripts/pageTwo.js"></script>
+
       <script src="./javascripts/pageThree.js"></script>
-</div>
+  </div>
 </div>
 
-  </body>
+</body>
 </html>
