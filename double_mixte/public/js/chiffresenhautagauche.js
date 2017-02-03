@@ -8,36 +8,40 @@
 });*/
 
 function replaceDigit(digit, array, annee) {
-    if(array[digit] == 0) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/zero.svg');
-    } 
-    else if(array[digit] == 1) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/un.svg');
-    } 
-    else if(array[digit] == 2) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/deux.svg');
+    var image;
+    switch(array[digit]) {
+        case 0:
+            image = 'zero.svg';
+            break;
+        case 1:
+            image = 'un.svg';
+            break;
+        case 2:
+            image = 'deux.svg';
+            break;
+        case 3:
+            image = 'trois.svg';
+            break;
+        case 4:
+            image = 'quatre.svg';
+            break;
+        case 5:
+            image = 'cinq.svg';
+            break;
+        case 6:
+            image = 'six.svg';
+            break;
+        case 7:
+            image = 'sept.svg';
+            break;
+        case 8:
+            image = 'huit.svg';
+            break;
+        case 9:
+            image = 'neuf.svg';
+            break;  
     }
-    else if(array[digit] == 3) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/trois.svg');
-    }
-    else if(array[digit] == 4) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/quatre.svg');
-    }
-    else if(array[digit] == 5) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/cinq.svg');
-    }
-    else if(array[digit] == 6) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/six.svg');
-    }
-    else if(array[digit] == 7) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/sept.svg');
-    }
-    else if(array[digit] == 8) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/huit.svg');
-    }
-    else if(array[digit] == 9) {
-        $('#'+annee+'chiffre'+digit).attr('src', 'img/neuf.svg');
-    } 
+    $('#'+annee+'chiffre'+digit).attr('src', 'img/'+image);
 }
 
 function replaceAllDigits(array, annee) {

@@ -1,11 +1,11 @@
 .social {
     display: inline-block;
     position: absolute;
-    top: 85%;
-    left: 40%;
+    top: 90%;
+    left: 52%;
 }
 
 .social img {
-	width: 2.5vw;
+	width: 2vw;
 	margin-left: -0.2vw;
 }

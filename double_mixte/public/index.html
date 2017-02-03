@@ -50,6 +50,8 @@
   	<script src="js/tooltip-nuitees.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
 	<script src="js/2016-chart_nuiteesannuelles.js"></script>
+	<script src="js/social.js"></script>
+
 
 </head>
 
@@ -143,7 +145,21 @@
 				
 
 			<div class="social">
-	    		<img class="info-nuitees" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre de like sur Facebook"/>
+	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Facebook"/>
+ 				<img id="2013facebook0" src="img/blanc.svg"/>
+ 				<img id="2013facebook1" src="img/blanc.svg"/>
+ 				<img id="2013facebook2" src="img/blanc.svg"/>
+ 				<img id="2013facebook3" src="img/blanc.svg"/>
+ 				<img id="2013facebook4" src="img/blanc.svg"/>
+
+ 				<img class="info-social" src="img/tweet.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Twitter"/>
+ 				<img src="img/blanc.svg"/>
+ 				<img src="img/blanc.svg"/>
+ 				<img src="img/blanc.svg"/>
+ 				<img src="img/blanc.svg"/>
+ 				<img src="img/blanc.svg"/>
+
+ 				<img class="info-social" src="img/insta.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Instagram"/>
  				<img src="img/blanc.svg"/>
  				<img src="img/blanc.svg"/>
  				<img src="img/blanc.svg"/>
@@ -215,16 +231,7 @@
 	    
 		<!-- 2016 -->
 	      <div class="item slide2016">
-		<div class="nbnuitees">
-		  <img class="info-nuitees" src="img/picto_nuitees.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
-		  <img id="2011chiffre0" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre1" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre2" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre3" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre4" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre5" class="2016chiffre chiffre" src="img/zero.svg"/>
-		  <img id="2011chiffre6" class="2016chiffre chiffre" src="img/zero.svg"/>
-		</div>
+		
 		<div class="graphenbnuitees">
 		  <div class="ct-chart .ct-golden-section" id="chart2"></div>
 		</div>
@@ -323,6 +330,7 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   animateDigits(2012);
   animateDigits(2013);
   animateDigits(2015);
+  animateSocial(2013);
   /*animateDigits2012();
   animateDigits2013();
   animateDigits2014();
