@@ -24,7 +24,7 @@
 			});
 		</script>
 
-		<script src="script_onload.js"></script>
+		<script src="./js/script_onload.js"></script>
 
 	</head>
 	<body>
@@ -99,9 +99,9 @@
 							<img class="Homard3" src="./pictures/Jeu2/homardmoyen.png">
 							<img class="Homard4" src="./pictures/Jeu2/homardgrand.png">
 
-							<img class="SoleA" src="./pictures/Jeu2/solepetite.png">
-							<img class="HomardA" src="./pictures/Jeu2/homardpetit.png">
-							<img class="MerluA" src="./pictures/Jeu2/merlupetit.png">
+							<img class="SoleA" id="Sa" src="./pictures/Jeu2/solepetite.png">
+							<img class="HomardA" id="Ha" src="./pictures/Jeu2/homardpetit.png">
+							<img class="MerluA" id="Ma" src="./pictures/Jeu2/merlupetit.png">
 
 							<img class="BateauP1" src="./pictures/Jeu2/bateaupetit.png">
 							<img class="BateauP2" src="./pictures/Jeu2/bateaupetit.png">
@@ -132,10 +132,14 @@
 									<input type= "radio" name="scenar" checked="checked" id="scenar4" value="4"></input>
 									<label for="scenar4">Sénario 4</label>
 								</div>
-								<button id="Bouton2050">2050</button>
+								<button class = "Bouton" id="Bouton2050">2050</button>
+								<br/>
+								<button class = "Bouton" id="Reset1">reset</button>
+								
 							</section>
 
 					</section>
+					<script src='./js/script_actionJeu1.js'></script>
 					<a href="#lastPage/2" class="Data">Data</a>
 					<a href="#3rdPage/0" class="Cross" id="CrossJ2"></a>
 				</div>
@@ -201,8 +205,10 @@
 				</div>
 				<div class="slide">
 					<section> Data liées 4</section>
+					<svg class="chart_habitat" width=400 height=400></svg>
+					<div class="list_annee" width=400 height=100></div>
 					<a href="#3rdPage/4"> Retour au jeu </a>
-					<svg class="chart_habitat2" width=400 height=400></svg>
+
 				</div>
 			</section>
 			<section class="Partenaires">

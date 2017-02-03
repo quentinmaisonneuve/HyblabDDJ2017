@@ -342,144 +342,152 @@ body{
 }
 
 .Merlu1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;    
+	position: absolute;
+    top: 17vw;
+    left: 30%;
 }
 .Merlu2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;    
+	position: absolute;
+    top: 23vw;
+    left: 5%;
 }
 .Merlu3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3vw;
+	width : 6vw;    
+	position: absolute;
+    top: 7vw;
+    left: 35%;
 }
 .Merlu4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4vw;
+	width : 8vw;    
+	position: absolute;
+    top: 12vw;
+    left: 12%;
 }
 .Sole1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;    
+	position: absolute;
+    top: 8.5vw;
+    left: 21%;
 }
 .Sole2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;    
+	position: absolute;
+    top: 26vw;
+    left: 15%;
 }
 .Sole3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2.5vw;
+	width : 5.5vw;    
+	position: absolute;
+    top: 12.5vw;
+    left: 33%;
 }
 .Sole4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7vw;    
+	position: absolute;
+    top: 18vw;
+    left: 1%;
 }
 .Homard1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 3vw;    
+	position: absolute;
+    top: 19.5vw;
+    left: 42%;
 }
 .Homard2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 3vw;    
+	position: absolute;
+    top: 11vw;
+    left: 5%;
 }
 .Homard3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4.5vw;    
+	position: absolute;
+    top: 27vw;
+    left: 2%;
 }
 .Homard4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4vw;
+	width : 7.5vw;    
+	position: absolute;
+    top: 19.5vw;
+    left: 17%;
 }
 .SoleA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 2vw;    
+	position: absolute;
+    top: 31.5vw;
+    left: 36.8%;
 }
 .HomardA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 2.5vw;    
+	position: absolute;
+    top: 31.5vw;
+    left: 48%;
 }
 .MerluA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1.5vw;
+	width : 2.5vw;    
+	position: absolute;
+    top: 31.2vw;
+    left: 59.5%;
 }
 .BateauP1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 5vw;    
+	position: absolute;
+    top: 8vw;
+    left: 60%;
 }
 .BateauP2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 5vw;    
+	position: absolute;
+    top: 25vw;
+    left: 85%;
 }
 .BateauM1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7.5vw;    
+	position: absolute;
+    top: 15vw;
+    left: 55%;
 }
 .BateauM2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7.5vw;    
+	position: absolute;
+    top: 28vw;
+    left: 74%;
 }
 .BateauG1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4.5vw;
+	width : 9vw;    
+	position: absolute;
+    top: 7vw;
+    left: 79%;
+}
+
+.BateauG2{
+	height : 5vw;
+	width : 9.5vw;    
+	position: absolute;
+    top: 16vw;
+    left: 73%;
 }
 
 
@@ -980,4 +988,35 @@ html.fp-enabled,
 	height:80px;
 	display:block;
 	background-color:red;
+}
+.list_annee{
+	margin-left:10px;
+	margin－top:30px;
+	margin-bottom: 30px;
+}
+.button_anne{
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #; /* Green */
+	border: none;
+	color: white;
+	display: inline-block;
+	width: 98px;
+	margin: auto;
+	padding: auto;
+
+}
+.button_anne_selected{
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	display: inline-block;
+	width: 98px;
+	margin: auto;
+	padding: auto;
+
 }
