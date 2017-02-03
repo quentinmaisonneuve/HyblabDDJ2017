@@ -3,7 +3,13 @@
 window.onload = function init (){
 	
 	
-	
+		$("#H1C").fadeIn("slow");
+		$("#H2C").fadeIn("slow");
+		$("#H3C").fadeIn("slow");
+		
+		$("#H1PC").fadeOut("slow");
+		$("#H2PC").fadeOut("slow");
+		$("#H3PC").fadeOut("slow");
 	
 		$(".BateauG1").fadeOut("slow");
 		$(".BateauP1").fadeOut("slow");
