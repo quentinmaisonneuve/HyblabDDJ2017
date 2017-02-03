@@ -94,16 +94,16 @@ body{
 }
 
 .Cross{
-	width:45px;
-	height: 45px;
+	width: 0.47%;
+	height: 4.6%;
 	background-image: url(../pictures/Boutons/bouton_croix.png);
 	display: inline-block;
 }
 
-#CrossJ1{
+#CrossJ2{
 	position: absolute;
-	left : 2188px;
-	top : 230px;
+	left : 43.8%;
+	top : 21%;
 }
 
 /*INTRO*/
@@ -488,7 +488,7 @@ body{
 	display: block;
 	position: absolute;
 	top : 2%;
-	left : 75.5%;
+	left : 45.5%;
 }
 
 .TextJ2 p {
@@ -522,223 +522,150 @@ body{
 	height : 35vw;
 	width : 60vw;    
 	position: relative;
-    top: 11vw;
+    top: 5vw;
     left: 20vw;
-    border : 1vw;
+    border : 0.5vw solid white;
 }
 
+.Merlu1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.MerluP{
-	width:  97px; 
-	height : 34px;
-	background-image: url(../pictures/Jeu2/merlu_jeu_peche.png);
+.Merlu2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Merlu{
-	width:  123px; 
-	height : 43px;
-	background-image: url(../pictures/Jeu2/merlu_gros_jeu_peche.png);
+.Merlu3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Homard{
-	width:  113px; 
-	height : 35px;
-	background-image: url(../pictures/Jeu2/homard_gros.png);
+.Merlu4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.HomardP{
-	width:  77px; 
-	height : 23px;
-	background-image: url(../pictures/Jeu2/homard_petit.png);
+.Sole1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Colin{
-	width:  151px; 
-	height : 52px;
-	background-image: url(../pictures/Jeu2/colin_jeu_peche.png);
+.Sole2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.ColinP{
-	width:  103px; 
-	height : 35px;
-	background-image: url(../pictures/Jeu2/colin_petit_jeu_peche.png);
+.Sole3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Poisson{
-	width:  56px; 
-	height : 15px;
-	background-image: url(../pictures/Jeu2/poisson_gris_petit.png);
+.Sole4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-
-.BateauRougeGros{
-	width:  150px; 
-	height : 78px;	
-	background-image: url(../pictures/Jeu2/bateau_rouge_gros.png);.
-
+.Homard1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.BateauRougePetit{
-	width:  98px; 
-	height : 51px;
-	background-image: url(../pictures/Jeu2/bateau_rouge.png);
+.Homard2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.BateauBleuClair{
-	width:  127px; 
-	height : 66px;
-	background-image: url(../pictures/Jeu2/bateau_bleuclair.png);
+.Homard3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.BateauNoir{
-	width:  127px; 
-	height : 66px;
-	background-image: url(../pictures/Jeu2/bateau_noir_gros.png);
+.Homard4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.BateauBleuFonce{
-	width:  98px; 
-	height : 51px;
-	background-image: url(../pictures/Jeu2/bateau_bleufonce.png);
+.SoleA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-.BateauRose{
-	width:  127px; 
-	height : 66px;
-	background-image: url(../pictures/Jeu2/bateau_coque_rose.png);
+.HomardA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-
-.NuageP{
-	width:  58px; 
-	height : 24px;
-	background-image: url(../pictures/Jeu2/nuage_jeu_peche.png);
+.MerluA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.NuageG{
-	width:  88px; 
-	height : 38px;
-	background-image: url(../pictures/Jeu2/nuage_jeu_peche_gros.png);
+.BateauP1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Phare{
-	width:  31px; 
-	height : 85px;
-	background-image: url(../pictures/Jeu2/Phare_jeu_peche.png);
+.BateauP2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-.Rocher{
-	width:  82px; 
-	height : 23px;
-	background-image: url(../pictures/Jeu2/rocher_jeu_peche.png);
+.BateauM1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-
-
-#BateauRougeGrosJ2{
-	position: absolute;
-	left :725px;
-	top : 50px;
+.BateauM2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
-#BateauRougePetitJ2{
-	position: absolute;
-	left : 1150px;
-	top : 20px;
-}
-#BateauBleuClairJ2{
-	position: absolute;
-	left :925px;
-	top : 100px;
-}
-#BateauRoseJ2{
-	position: absolute;
-	left :800px;
-	top : 220px;
-}
-#BateauBleuFonceJ2{
-	position: absolute;
-	left :940px;
-	top : 300px;
-}
-#BateauNoirJ2{
-	position: absolute;
-	left :1100px;
-	top : 200px;
-}
-#MerluJ2-1{
-position: absolute;
-	left : 300px;
-	top : 108px;
-}
-#MerluJ2-2{
-	position: absolute;
-	left :100px;
-	top : 216px;
-}
-#MerluJ2-3{
-	position: absolute;
-	left :250px;
-	top : 276px;
-}
-#ColinJ2-1{
-	position: absolute;
-	left :400px;
-	top : 135px;
-}
-#ColinJ2-2{
-	position: absolute;
-	left :100px;
-	top : 48px;
-}
-#HomardJ2-1{
-	position: absolute;
-	left :225px;
-	top : 155px;
-}
-#HomardJ2-2{
-	position: absolute;
-	left :450px;
-	top : 75px;
-}
-#HomardJ2-3{
-	position: absolute;
-	left :530px;
-	top : 300px;
-}
-#PoissonJ2-1{
-	position: absolute;
-	left :115px;
-	top : 150px;
-}
-#PoissonJ2-2{
-	position: absolute;
-	left :300px;
-	top : 50px;
-}
-#NuageJ2-1{
-position: absolute;
-	left :800px;
-	top : 32px;
-}
-#NuageJ2-2{
-	position: absolute;
-	left :434px;
-	top : 30px;
-}
-#NuageJ2-3{
-	position: absolute;
-	left :180px;
-	top : 51px;
-}
-#NuageJ2-4{
-	position: absolute;
-	left :1010px;
-	top : 71px;
-}
-#PhareJ2{
-	position: absolute;
-	left :40px;
-	top : 49px;
-}
-#RocherJ2{
-	position: absolute;
-	left :10px;
-	top : 132px;
+.BateauG1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
 
 
@@ -784,10 +711,16 @@ position: absolute;
 	transform: rotate(315deg);
 }
 
-.EnsembleRadio, #Bouton2050{
-	position: relative;
-	left: 85%;
+.EnsembleRadio{
+	display: inline-block;
+	position: absolute;
+	left: 56.5%;
+	top : 28%;
+	width :3%;
 }
+ #Bouton2050{
+
+ }
 
 
 
