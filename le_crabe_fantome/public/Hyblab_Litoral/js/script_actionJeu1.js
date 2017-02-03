@@ -1,6 +1,6 @@
 	'use strict'
 	
-$("#Reset1").click(function(e){
+$("#Reset2").click(function(e){
 	$(".BateauG1").fadeOut("slow");
 	$(".BateauP1").fadeOut("slow");
 	$(".BateauM1").fadeOut("slow");
@@ -27,6 +27,15 @@ $("#Reset1").click(function(e){
 	document.getElementById("Ma").style.transform = 'scale(' + 1 + ')';
 	document.getElementById("Ha").style.transform = 'scale(' + 1 + ')';
 	document.getElementById("Sa").style.transform = 'scale(' + 1 + ')';
+	
+	$("#H1C").fadeIn("slow");
+	$("#H2C").fadeIn("slow");
+	$("#H3C").fadeIn("slow");
+	
+	$("#H1PC").fadeOut("slow");
+	$("#H2PC").fadeOut("slow");
+	$("#H3PC").fadeOut("slow");
+	
 });
 	
 $("#Bouton2050").click(function(e){
@@ -49,6 +58,15 @@ $("#Bouton2050").click(function(e){
 		document.getElementById("Ma").style.transform = 'scale(' + 1.1 + ')';
 		document.getElementById("Ha").style.transform = 'scale(' + 0.3 + ')';
 		document.getElementById("Sa").style.transform = 'scale(' + 0 + ')';
+		
+		$("#H1C").fadeOut("slow");
+		$("#H2C").fadeOut("slow");
+		$("#H3C").fadeIn("slow");
+		
+		$("#H1PC").fadeIn("slow");
+		$("#H2PC").fadeIn("slow");
+		$("#H3PC").fadeOut("slow");
+		
 	}
 	if(document.getElementById("scenar2").checked){
 		$(".Homard1").fadeIn("slow");
@@ -69,6 +87,14 @@ $("#Bouton2050").click(function(e){
 		document.getElementById("Ma").style.transform = 'scale(' + 1.05 + ')';
 		document.getElementById("Ha").style.transform = 'scale(' + 0.95 + ')';
 		document.getElementById("Sa").style.transform = 'scale(' + 0 + ')';
+		
+		$("#H1C").fadeOut("slow");
+		$("#H2C").fadeOut("slow");
+		$("#H3C").fadeIn("slow");
+		
+		$("#H1PC").fadeIn("slow");
+		$("#H2PC").fadeIn("slow");
+		$("#H3PC").fadeOut("slow");
 	}
 	if(document.getElementById("scenar3").checked){
 		$(".Homard1").fadeIn("slow");
@@ -89,6 +115,14 @@ $("#Bouton2050").click(function(e){
 		document.getElementById("Ma").style.transform = 'scale(' + 0.90 + ')';
 		document.getElementById("Ha").style.transform = 'scale(' + 0.2 + ')';
 		document.getElementById("Sa").style.transform = 'scale(' + 0 + ')';
+		
+		$("#H1C").fadeOut("slow");
+		$("#H2C").fadeOut("slow");
+		$("#H3C").fadeOut("slow");
+		
+		$("#H1PC").fadeIn("slow");
+		$("#H2PC").fadeIn("slow");
+		$("#H3PC").fadeIn("slow");
 		
 	}
 	if(document.getElementById("scenar4").checked){
@@ -111,6 +145,13 @@ $("#Bouton2050").click(function(e){
 		document.getElementById("Ha").style.transform = 'scale(' + 0 + ')';
 		document.getElementById("Sa").style.transform = 'scale(' + 0 + ')';
 		
+		$("#H1C").fadeOut("slow");
+		$("#H2C").fadeOut("slow");
+		$("#H3C").fadeOut("slow");
+		
+		$("#H1PC").fadeIn("slow");
+		$("#H2PC").fadeIn("slow");
+		$("#H3PC").fadeIn("slow");
 	}
 });
 
