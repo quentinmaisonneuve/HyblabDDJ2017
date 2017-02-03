@@ -1,6 +1,8 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
 // TODO: transition http://jsfiddle.net/CCRb5/
+var audio=null;
+var audioCourant = null;
 function initBubble(node)
 {
 
@@ -65,11 +67,13 @@ function initBubble(node)
                 div	.html(getTooltip(d.id))
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
+                musiqueCommence(d.id);
             })
             .on("mouseout", function(d) {
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
+                musiqueArrete(d.id); 
             });
 
         //format the text for each bubble
@@ -100,9 +104,6 @@ function getTooltip(genre)
         case "Rock":
             return "Ce qui vous fait vibrer quand vous entendez du rock, c’est de vous imaginer au milieu d’un bon vieux riff ! Veste en cuir sur le dos, vous êtes un accro du Hellfest.";
             break;
-        case "Classique":
-            return "La musique pour vous est avant tout un moyen de vous apaiser. Lorsque les accords s’entremêlent, des frissons traversent votre corps. Votre bonheur : passer de la musique de chambre à l’orchestre symphonique.";
-            break;
         case "Electronica":
             return "De la musique ? Oui mais surtout du son ! Pour s’éclater ou se détendre, des mixes qui vous ensorcellent et vous font vibrer.";
             break;
@@ -128,3 +129,56 @@ function getRoad()
 }
 
 initBubble(getRoad());
+
+function musiqueCommence(genre){
+     switch (genre)
+    {
+        case "Alternative et punk":
+            if (audio==null || audioCourant!="Alternative"){
+                audio = document.getElementById("Alternative");
+                audioCourant = "Alternative";
+            }
+            audio.play();
+            break;
+        case "Rock":
+            if (audio==null||audioCourant!="Rock"){
+                audio = document.getElementById("Rock");
+                audioCourant = "Rock";
+            }
+            audio.play();
+            break;
+        case "Electronica":
+            if (audio==null||audioCourant!="Electronica"){
+                audio = document.getElementById("Electro");
+                audioCourant = "Electronica";
+            }
+            audio.play();
+            break;
+        case "Jazz":
+            if (audio==null||audioCourant!="Jazz"){
+                audio = document.getElementById("Jazz");
+                audioCourant = "Jazz";
+            }
+            audio.play();
+            break;
+        case "Pop":
+            if (audio==null||audioCourant!="Pop"){
+                audio = document.getElementById("Pop");
+                audioCourant = "Pop";
+            }
+            audio.play();
+            break;
+        case "Urban":
+            if (audio==null||audioCourant!="Urban"){
+                audio = document.getElementById("Urban");
+                audioCourant = "Urban";
+            }
+            audio.play();
+            break;
+    }
+
+}
+
+function musiqueArrete(genre){
+        audio.pause();      
+}
