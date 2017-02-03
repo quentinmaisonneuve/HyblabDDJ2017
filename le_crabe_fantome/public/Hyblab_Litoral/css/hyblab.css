@@ -96,7 +96,7 @@ body{
 .Cross{
 	width: 2.5vw;
 	height: 2.5vw;
-	background-image: url(../pictures/Boutons/bouton_croix.png);
+	background-image: url(../pictures/Boutons/bouton_maison.png);
 	background-size: contain;
 	display: inline-block;
 }
@@ -108,216 +108,7 @@ body{
 }
 
 /*INTRO*/
-/*
-.AlgueIntro1{
-	position: absolute;
-	bottom: 185px;
-	left : 500px;
-	background-image: url(../pictures/Intro/algue_verte_petite.png);
-	width:40px;
-	height:129px;
-}
-.AlgueIntro2{
-	position: absolute;
-	bottom : 180px;
-	left : 540px;
-	background-image: url(../pictures/Intro/algue_verte_grande.png);
-	width:54px;
-	height:172px;
-}
-.AlgueIntro3{
-	position: absolute;
-	bottom : 180px;
-	left : 400px;
-	background-image: url(../pictures/Intro/algue_rouge_milieu.png);
-	width:87px;
-	height:251px;
-}
 
-.AlgueIntro4{
-	position: absolute;
-	bottom : 180px;
-	left : 270px;
-	width:108px;
-	height:223px;
-	background-image: url(../pictures/Intro/algue_verte_rocher.png);
-}
-.AlgueIntro5{
-	position: absolute;
-	bottom : 180px;
-	left : 150px;
-	background-image: url(../pictures/Intro/algue_rouge_gauche.png);
-	width:91px;
-	height:227px;
-}
-.AlgueIntro6{
-	position: absolute;
-	bottom: 180px;
-	left : 600px;
-	background-image: url(../pictures/Intro/algue_rouge_droite.png);
-	width:82px;
-	height:172px;
-}
-
-
-#MerluIntro{
-	position: absolute;
-	bottom: 250px;
-	left : 300px;
-	background-image: url(../pictures/Intro/merlu.png);
-	width:172px;
-	height:60px;
-}
-#ColinIntro1{
-	position: absolute;
-	bottom: 350px;
-	left : 550px;
-	background-image: url(../pictures/Intro/colin_lepetit.png);
-	width:136px;
-	height:46px;
-}
-#HomardIntro1{
-	position: absolute;
-	bottom: 130px;
-	left : 442px;
-	background-image: url(../pictures/Intro/homard.png);
-	width:202px;
-	height:63px;
-}
-.BullesGIntro{
-	background-image: url(../pictures/Intro/bubulles.png);
-	width:20px;
-	height:20px;
-}
-.BullesPIntro{
-	background-image: url(../pictures/Intro/bulles.png);
-	width:15px;
-	height:15px;
-}
-.BullesTGIntro{
-	position: absolute;
-	bottom: 430px;
-	left : 550px;
-	background-image: url(../pictures/Intro/bububulles.png);
-	width:32px;
-	height:32px;
-}
-#BullesIntro1{
-	position: absolute;
-	bottom: 470px;
-	left : 520px;
-
-}
-#BullesIntro2{
-	position: absolute;
-	bottom: 475px;
-	left : 604px;
-}
-#BullesIntro3{
-	position: absolute;
-	bottom: 400px;
-	left : 225px;
-}
-#BullesIntro4{
-	position: absolute;
-	bottom: 560px;
-	left : 600px;
-}
-#BullesIntro5{
-	position: absolute;
-	bottom: 500px;
-	left : 569px;
-}
-#BullesIntro6{
-	position: absolute;
-	bottom: 425px;
-	left : 240px;
-}
-.FumeeIntro{
-	position: absolute;
-	bottom: 288px;
-	right : 326px;
-	background-image: url(../pictures/Intro/fumee_cheminee.png);
-	width:20px;
-	height:59px;
-}
-
-.PoissonIntro{
-	position: absolute;
-	bottom: 345px;
-	left : 350px;
-	background-image: url(../pictures/Intro/poissons_fond.png);
-	width:183px;
-	height:92px;
-
-}
-#NuageIntro1{
-	background-image: url(../pictures/Intro/nuage_gros.png);
-	width:127px;
-	height:54px;
-	position: absolute;
-	top: 350px;
-	right : 700px;
-}
-.NuagePIntro{
-	background-image: url(../pictures/Intro/nuage_petit.png);
-	width:102px;
-	height:43px;
-
-}
-#NuageIntro2{
-	position: absolute;
-	top: 150px;
-	right : 300px;
-	position: absolute;
-	top: 400px;
-	right : 200px;
-}
-#NuageIntro3{
-	position: absolute;
-	top: 150px;
-	right : 300px;
-	position: absolute;
-	top: 490px;
-	right : 412px;
-}
-
-.ArbreIntro1{
-	position: absolute;
-	bottom: 150px;
-	right : 200px;
-	background-image: url(../pictures/Intro/arbre_rouge.png);
-	width:114px;
-	height:171px;
-}
-
-.ArbreIntro2{
-	position: absolute;
-	bottom: 150px;
-	right : 600px;
-	background-image: url(../pictures/Intro/arbre_rose.png);
-	width:114px;
-	height:206px;
-}
-
-.MaisonIntro1{
-	position: absolute;
-	bottom: 150px;
-	right : 300px;
-	background-image: url(../pictures/Intro/maison_bleue.png);
-	width:126px;
-	height:138px;
-}
-
-.HommeIntro1{
-	position: absolute;
-	bottom: 100px;
-	right : 475px;
-	background-image: url(../pictures/Intro/monsieur.png);
-	width:115px;
-	height:354px;
-}
-*/
 .GaucheIntro{
 	position: absolute;
 	bottom: 11%;
@@ -468,10 +259,32 @@ body{
 	font-size: 0;
 }
 
-.ImageJeu1:hover, .ImageJeu2:hover,.ImageJeu3:hover, .ImageJeu4:hover{
+.Credit{
+	margin-top :30px !important;
+	margin : auto;
+
+	font-size: 2vw;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 0 #86c6ca;
+	color : black;
+	padding-top: 10px; /*permet le centrage vertical*/
+	padding-bottom: 10px;
+
+	width:10vw;
+	height:3vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+.ImageJeu1:hover, .ImageJeu2:hover,.ImageJeu3:hover, .ImageJeu4:hover, .Credit:hover{
 	opacity: 0.7;
 
 }
+
 
 /*JEU 1*/
 
@@ -484,20 +297,29 @@ body{
 .InterfaceJ2 article{
 	display: inline-block;
 }
+.TitreJ2{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 47.5%;
+	font-size: 2.5vw;
+}
 
 .TextJ2{
 	display: block;
 	position: absolute;
 	top : 2%;
-	left : 43.5%;
+	left : 42.5%;
 }
 
 .TextJ2 p {
-	margin-top : 1vw;
 	margin-bottom: auto;
 	text-align: center;
 	line-height: 2vw;
 	font-size: 1.5vw;
+	position: relative;
+	top : 4vw;
+	height: 70vw;
 }
 
 /*Solution trouvée sur le net pour centrer correctement*/
@@ -521,7 +343,7 @@ body{
 	background-image: url(../pictures/Jeu2/visu_jeu_peche.png);
 	background-size: contain;
 	height : 35vw;
-	width : 60vw;    
+	width : 60vw;
 	position: relative;
     top: 5vw;
     left: 20vw;
@@ -529,146 +351,179 @@ body{
 }
 
 .Merlu1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 17vw;
+    left: 30%;
 }
 .Merlu2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 23vw;
+    left: 5%;
 }
 .Merlu3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3vw;
+	width : 6vw;
+	position: absolute;
+    top: 7vw;
+    left: 35%;
 }
 .Merlu4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4vw;
+	width : 8vw;
+	position: absolute;
+    top: 12vw;
+    left: 12%;
 }
 .Sole1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 8.5vw;
+    left: 21%;
 }
 .Sole2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 26vw;
+    left: 15%;
 }
 .Sole3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2.5vw;
+	width : 5.5vw;
+	position: absolute;
+    top: 12.5vw;
+    left: 33%;
 }
 .Sole4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7vw;
+	position: absolute;
+    top: 18vw;
+    left: 1%;
 }
 .Homard1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 3vw;
+	position: absolute;
+    top: 19.5vw;
+    left: 42%;
 }
 .Homard2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 3vw;
+	position: absolute;
+    top: 11vw;
+    left: 5%;
 }
 .Homard3{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 4.5vw;
+	position: absolute;
+    top: 27vw;
+    left: 2%;
 }
 .Homard4{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 19.5vw;
+    left: 17%;
 }
 .SoleA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 2vw;
+	position: absolute;
+    top: 31.5vw;
+    left: 36.8%;
 }
 .HomardA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1vw;
+	width : 2.5vw;
+	position: absolute;
+    top: 31.5vw;
+    left: 48%;
 }
 .MerluA{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 1.5vw;
+	width : 2.5vw;
+	position: absolute;
+    top: 31.2vw;
+    left: 59.5%;
 }
 .BateauP1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 5vw;
+	position: absolute;
+    top: 8vw;
+    left: 60%;
 }
 .BateauP2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 2vw;
+	width : 5vw;
+	position: absolute;
+    top: 25vw;
+    left: 85%;
 }
 .BateauM1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 15vw;
+    left: 55%;
 }
 .BateauM2{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 3.5vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 28vw;
+    left: 74%;
 }
 .BateauG1{
-	height : 0.1vw;
-	width : 1vw;    
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	height : 4.5vw;
+	width : 9vw;
+	position: absolute;
+    top: 7vw;
+    left: 79%;
 }
 
+.BateauG2{
+	height : 5vw;
+	width : 9.5vw;
+	position: absolute;
+    top: 16vw;
+    left: 73%;
+}
+
+.Homme1{
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left:44%;
+}
+
+
+.Homme2{
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left: 32.5%;
+}
+
+
+.Homme3{
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left: 56.35%;
+}
 
 .radioJ2 label{
 	display: inline-block;
@@ -719,7 +574,41 @@ body{
 	top : 28%;
 	width :3%;
 }
- #Bouton2050{
+
+ #pb{  
+	position: absolute;
+    top: -0.8vw;
+    left: 14%;
+}
+
+ #gb{
+	 position: absolute;
+    top: 1.6vw;
+    left: 14%;
+}
+
+ #gpb{
+	position: absolute;
+    top: 4vw;
+    left: 14%;
+}
+
+ #flotte{
+	 position: absolute;
+    top: 6.4vw;
+    left: 14%;
+}
+
+ #Bouton2050,#Reset2,#Data2{
+ 	font-size: 1.5vw;
+}
+
+#Data2{
+	position: absolute;
+	bottom : 1vw;
+	left : 41%;
+	padding-top: 1vw;
+	padding-bottom: 0vw;
 }
 
 /*Jeu3*/
@@ -731,36 +620,41 @@ body{
 	background-image: url(../pictures/Jeu4/ciel_jeu4.png);
 	background-size: contain;
 	height : 35vw;
-	width : 60vw;    
+	width : 60vw;
 	position: relative;
     top: 5vw;
     left: 20vw;
     border : 0.5vw solid white;
 }
+
+.Sable
+{
+
+}
 .Mer1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Mer2"{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Mer3"{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Mer4"{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
@@ -768,49 +662,49 @@ body{
 
 .Maison1 {
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Maison2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Maison3{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Digue1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Digue2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Digue3{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Money{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
@@ -1163,6 +1057,40 @@ html.fp-enabled,
 	display:block;
 	background-color:red;
 }
+
+#dataviz2_img{
+	display: block;
+	margin: auto;
+	width: 70vw;
+	height: 40vw;
+}
+
+#chart_bateau1{
+	position: absolute;
+	top: 9.5vw;
+	left: 235.75vw;
+	width: 32vw;
+	height: 26vw;
+}
+
+#chart_bateau1 .line{
+	fill: none;
+	stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.tick line{
+	display: none;
+}
+
+#text_age_bateau{
+	position: absolute;
+	top: 28vw;
+	left: 222vw;
+	font-size: 2.5vw;
+	color: white;
+}
+
 .list_annee{
 	margin-left:10px;
 	margin－top:30px;

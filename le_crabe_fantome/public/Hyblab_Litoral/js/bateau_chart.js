@@ -4,7 +4,7 @@ d3.json("data/bateau.json", function(dataset){
   var padding = { top: 50, right: 50, bottom: 50, left: 50 };
 
   var svg = d3.select('#chart_bateau1');
-  var text = d3.select('#text_age_bateau');
+  var text = d3.select('#text_age_bateau').text('Age ');
 
   var main = svg.append('g')
           .classed('main', true)
@@ -33,20 +33,26 @@ d3.json("data/bateau.json", function(dataset){
 
 
   // Créer axe Y
+  var ticks = [];
+  dataset.forEach(function(e){ticks.push(e.amount);});
+
+  /*
   var yAxis = d3.svg.axis()
           .scale(yScale)
           .orient('left')
-          .ticks(20)
-          .tickFormat(function(d){return d;});
+          .tickSize(0)
+          .tickValues(ticks);
   // Ajouter élément SVG de X
+  /*
   main.append('g')
           .attr('class', 'axis')
           .attr('transform', 'translate(0,' + (height - padding.top - padding.bottom) + ')')
-          .call(xAxis);
+          .call(xAxis);*/
   // Ajouter élément SVG de Y
+  /*
   main.append('g')
           .attr('class', 'axis')
-          .call(yAxis);
+          .call(yAxis);*/
   // Ajouter la ligne
   var line = d3.svg.line()
           .x(function(d) {
@@ -67,7 +73,7 @@ d3.json("data/bateau.json", function(dataset){
     .append('circle')
     .attr('cx', function(d) {return xScale(d.date);})
     .attr('cy', function(d) {return yScale(d.amount);})
-    .attr('r', 40)
+    .attr('r', 30)
     .style('opacity', 0);
 
   var subCircles = main.selectAll('subCircles')
@@ -77,14 +83,14 @@ d3.json("data/bateau.json", function(dataset){
     .attr('cx', function(d) {return xScale(d.date);})
     .attr('cy', function(d) {return yScale(d.amount);})
     .attr('r', 5)
-    .attr('fill', '#2ec7c9');
+    .attr('fill', '#6a9dae');
 
   circles.on("mouseover", function(d,i){
     subCircles.transition().attr('r', function(d2,i2){
       if (i === i2) return 10;
       else return 5;
     })
-    text.text(d.m_age);
+    text.text('Age '+d3.round(d.m_age,2));
   })
 
   subCircles.on("mouseover", function(d,i){
@@ -92,11 +98,11 @@ d3.json("data/bateau.json", function(dataset){
       if (i === i2) return 10;
       else return 5;
     })
-    text.text(d.m_age);
+    text.text('Age '+d3.round(d.m_age,2));
   })
 
    circles.on("mouseout", function(d,i){
      subCircles.transition().attr('r', 5);
-     text.text('');
+     text.text('Age ');
    })
  });

@@ -3,30 +3,36 @@
 window.onload = function init (){
 	
 	
+		$("#H1C").fadeIn("slow");
+		$("#H2C").fadeIn("slow");
+		$("#H3C").fadeIn("slow");
+		
+		$("#H1PC").fadeOut("slow");
+		$("#H2PC").fadeOut("slow");
+		$("#H3PC").fadeOut("slow");
 	
-	
-		$("#BateauRougeGrosJ1").fadeOut("slow");
-		$("#BateauRougePetitJ1").fadeOut("slow");
-		$("#BateauBleuClairJ1").fadeOut("slow");
-		$("#BateauRoseJ1").fadeOut("slow");
-		$("#BateauBleuFonceJ1").fadeOut("slow");
-		$("#BateauNoirJ1").fadeOut("slow");
+		$(".BateauG1").fadeOut("slow");
+		$(".BateauP1").fadeOut("slow");
+		$(".BateauM1").fadeOut("slow");
+		$(".BateauM2").fadeOut("slow");
+		$(".BateauP2").fadeOut("slow");
+		$(".BateauG2").fadeOut("slow");
 		
 		
-		$("#HomardJ2-1").fadeIn("slow");
-		$("#HomardJ2-2").fadeIn("slow");
-		$("#HomardJ2-3").fadeOut("slow");
-		$("#HomardJ2-4").fadeOut("slow");
+		$(".Homard1").fadeIn("slow");
+		$(".Homard2").fadeOut("slow");
+		$(".Homard3").fadeIn("slow");
+		$(".Homard4").fadeOut("slow");
 		
-		$("#MerluJ2-1").fadeIn("slow");
-		$("#MerluJ2-2").fadeIn("slow");
-		$("#MerluJ2-3").fadeOut("slow");
-		$("#MerluJ2-4").fadeOut("slow");
+		$(".Merlu1").fadeIn("slow");
+		$(".Merlu2").fadeOut("slow");
+		$(".Merlu3").fadeIn("slow");
+		$(".Merlu4").fadeOut("slow");
 		
-		$("#SoleJ2-1").fadeIn("slow");
-		$("#SoleJ2-2").fadeIn("slow");
-		$("#SoleJ2-3").fadeOut("slow");
-		$("#SoleJ2-4").fadeOut("slow");
+		$(".Sole1").fadeIn("slow");
+		$(".Sole2").fadeOut("slow");
+		$(".Sole3").fadeOut("slow");
+		$(".Sole4").fadeIn("slow");
 		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}

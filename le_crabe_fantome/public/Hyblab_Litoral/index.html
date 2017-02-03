@@ -24,7 +24,7 @@
 			});
 		</script>
 
-		<script src="script_onload.js"></script>
+		<script src="./js/script_onload.js"></script>
 
 	</head>
 	<body>
@@ -52,6 +52,7 @@
 			</section>
 			<section class="section">
 				<section class="Page2">
+
 					<article class="Presentation"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
 					<article class="MouetteHorizontale" id="MouetteP2"></article>
 
@@ -66,10 +67,12 @@
 						<a class="ImageJeu2" href="#3rdPage/2">Lien Jeu2</a>
 						<a class="ImageJeu3" href="#3rdPage/3">Lien Jeu3</a>
 						<a class="ImageJeu4" href="#3rdPage/4">Lien Jeu4</a>
+						<a class="Credit" href="#lastPage/0">Crédit</a>
 
 					</div>
 				</div>
 				<div class="slide">
+					<article class="TitreJ1"></article>
 					<article class="TextJ1"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
 					<section class="InterfaceJ1">
 
@@ -79,7 +82,8 @@
 					<script src='script_actionJeu1.js'></script>
 				</div>
 				<div class="slide">
-					<article class="TextJ2"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
+					<article class="TitreJ2">La pêche aux dilemmes</article>
+					<article class="TextJ2"><p><span><span>Les poissons sont nos amis … mais c’est quand même pas mal en papillote ou accompagné d’un beurre blanc.<br/> Choisis un type de bateau et projette toi en 2050 pour découvrir comment la biomasse et le butin de pêche auront évolué.</span></span></p></article>
 					<section class="InterfaceJ2">
 						<section class="FondJ2">
 							<img class="Merlu1" src="./pictures/Jeu2/merlupetit.png">
@@ -95,9 +99,9 @@
 							<img class="Homard3" src="./pictures/Jeu2/homardmoyen.png">
 							<img class="Homard4" src="./pictures/Jeu2/homardgrand.png">
 
-							<img class="SoleA" src="./pictures/Jeu2/solepetite.png">
-							<img class="HomardA" src="./pictures/Jeu2/homardpetit.png">
-							<img class="MerluA" src="./pictures/Jeu2/merlupetit.png">
+							<img class="SoleA" id="Sa" src="./pictures/Jeu2/solepetite.png">
+							<img class="HomardA" id="Ha" src="./pictures/Jeu2/homardpetit.png">
+							<img class="MerluA" id="Ma" src="./pictures/Jeu2/merlupetit.png">
 
 							<img class="BateauP1" src="./pictures/Jeu2/bateaupetit.png">
 							<img class="BateauP2" src="./pictures/Jeu2/bateaupetit.png">
@@ -106,9 +110,13 @@
 							<img class="BateauG1" src="./pictures/Jeu2/bateaugrand.png">
 							<img class="BateauG2" src="./pictures/Jeu2/bateaugrand.png">
 
-							<img class="Homme1" src="./pictures/Jeu2/.png">
-							<img class="Homme2" src="./pictures/Jeu2/.png">
-							<img class="Homme3" src="./pictures/Jeu2/.png">
+							<img class="Homme1" id="H1C" src="./pictures/Jeu2/homme1souriant.png">
+							<img class="Homme2" id="H2C" src="./pictures/Jeu2/homme2souriant.png">
+							<img class="Homme3" id="H3C" src="./pictures/Jeu2/femmesouriante.png">
+							
+							<img class="Homme1" id="H1PC" src="./pictures/Jeu2/homme1mechant.png">
+							<img class="Homme2" id="H2PC" src="./pictures/Jeu2/homme2mechant.png">
+							<img class="Homme3" id="H3PC" src="./pictures/Jeu2/femmemechante.png">
 
 						</section>
 						<section class="EnsembleRadio">
@@ -128,23 +136,27 @@
 									<input type= "radio" name="scenar" checked="checked" id="scenar4" value="4"></input>
 									<label for="scenar4">Sénario 4</label>
 								</div>
-								<button id="Bouton2050">2050</button>
+								<button class = "Bouton" id="Bouton2050">2050</button>
+								<br/>
+								<button class = "Bouton" id="Reset2">2010</button>
+								
 							</section>
 
 					</section>
-					<a href="#lastPage/2" class="Data">Data</a>
+					<script src='./js/script_actionJeu1.js'></script>
+					<a href="#lastPage/2" class="Bouton" id="Data2">Data</a>
 					<a href="#3rdPage/0" class="Cross" id="CrossJ2"></a>
 				</div>
 				<div class="slide">
-					<section class="Jeu3">Jeu3</section>
+					<article class="TitreJ3"></article>
 					<a href="#lastPage/3" class="Data">Data</a>
 					<a class="Cross" href="#3rdPage/0" id="CrossJ3"></a>
 				</div>
 				<div class="slide">
-					<section class="Jeu4">Jeu4</section>
-
+					<article class="TitreJ4"></article>
 					<section class="InterfaceJ4">
 						<section class="FondJ4">
+							<img class="Sable" src="./pictures/Jeu4/sable.png">
 							<img class="Mer1" src="./pictures/Jeu4/mer1.png">
 							<img class="Mer2" src="./pictures/Jeu4/mer2.png">
 							<img class="Mer3" src="./pictures/Jeu4/mer3.png">
@@ -184,12 +196,13 @@
 				<div class="slide">
 					<section> Data liées 1</section>
 					<a href="#3rdPage/1"> Retour au jeu </a>
-					<svg id="chart_bateau1" width=600 height=400></svg>
-					<text id="text_age_bateau" width=100 height=50></text>
 				</div>
-				<div class="slide">
+				<div id="dataviz2" class="slide">
+					<img id="dataviz2_img" src="./pictures/dataviz2/visu_jeu4.png">
 					<section> Data liées 2</section>
 					<a href="#3rdPage/2"> Retour au jeu </a>
+					<svg id="chart_bateau1" width=600 height=400></svg>
+					<text id="text_age_bateau" width=100 height=50></text>
 				</div>
 				<div class="slide">
 					<section> Data liées 3</section>
