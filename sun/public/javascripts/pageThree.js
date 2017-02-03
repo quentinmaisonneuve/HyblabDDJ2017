@@ -67,11 +67,13 @@ function initBubble(node)
                 div	.html(getTooltip(d.id))
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
+                musiqueCommence(d.id);
             })
             .on("mouseout", function(d) {
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
+                musiqueArrete(d.id);
             });
 
         //format the text for each bubble
