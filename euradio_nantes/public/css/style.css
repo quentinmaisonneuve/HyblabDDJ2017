@@ -116,6 +116,20 @@ a {
   background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
 }
 
+#homeLogo img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    width: 33%;
+}
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+#mapsvg {
+    width: 66%;
+}
+
 /*
 Timeline
 */
@@ -503,6 +517,7 @@ center img {
 }
 .timeline a {
     font-family: "Blogger Sans";
+    text-decoration: none;
 }
 
 /*
