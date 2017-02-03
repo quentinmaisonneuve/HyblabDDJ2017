@@ -24,7 +24,7 @@ d3.json("data/murs.json", function(error, json) {
 	window.sites_data=json.features;
 		
 });
-var display= function(data1,data2,data3){
+var display= function(data1,data2){
 
 		
 	svgCarte.selectAll("path")
@@ -53,16 +53,7 @@ var display= function(data1,data2,data3){
 		.transition().duration(200);    
       
    
-      svgCarte.selectAll("a")
-		.data(data3)
-	   .enter()
-		.append("path")
-		.attr("class","arc3")
-		.attr("d", path)
-		.on("mouseover",MouseOverFunction)
-		.on("mouseout",MouseOutFunction)
-		.transition().duration(200);
-
+      
 };
 
 function MouseOverFunction(d,i) {
@@ -117,34 +108,28 @@ d3.select('#slider3').call(d3.slider()
     sliderValue = value;
     updateAnnee(value); // pour le graphique
     
-     newData_construit = _(sites_data).filter(function(site) {
+     var newData_construit = _(sites_data).filter(function(site) {
  
     	
-      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]!='';
+     return(site.properties["Fin construction"]!='' && site.properties["Fin construction"]<= value) || (site.properties["Construction"]!='' && site.properties["Construction"] <= value );
+   
    
 
     });
 	
 	    
-    newData_pasconstruit = _(sites_data).filter(function(site) {
- 
-    	
-      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]==''&& site.properties["Construction"]!='' ;
-   
 
-    });
-    
-    newData_annonce = _(sites_data).filter(function(site) {
+    var newData_annonce = _(sites_data).filter(function(site) {
  
     	
-      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]=='' && site.properties["Construction"]=='';
+      return site.properties["Date annonce"] != ''&& site.properties["Date annonce"] <= value;
    
 
     });
     
     
     	 
-    display(newData_construit,newData_pasconstruit,newData_annonce);
+    display(newData_annonce, newData_construit);
   
   })
 );
