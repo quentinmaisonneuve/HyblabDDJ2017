@@ -1,13 +1,13 @@
 'use strict';
 
-const LONGUEUR_MAX = 15000;
+const LONGUEUR_MAX = 30000;
+const YEAR_BEGIN = 1989;
+const YEAR_END = 2016;
 
 var walls;
 d3.json("data/walls.json", function(error, data) {
     walls = data;
 });
-
-var listeObjets = ["zone de conflit", "immigration", "terrorisme", "trafic", "inégalités"];
 
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
@@ -23,6 +23,7 @@ var x = d3.scale.ordinal()
 var y = d3.scale.linear()
     .range([height, 0]);
 
+
 // D3 Axis - renders a d3 scale in SVG
 var xAxis = d3.svg.axis()
     .scale(x)
@@ -31,6 +32,10 @@ var xAxis = d3.svg.axis()
 var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
+    
+var line = d3.svg.line()
+    .x(function(d) { return x(d.annee); })
+    .y(function(d) { return y(d.longueur); });
 
 // create an SVG element (appended to body)
 // set size
@@ -56,9 +61,13 @@ svg.append("g")
     //.attr("dy", ".71em")
     .style("text-anchor", "end")
     .text("Longueur cumulée des murs (km)");
+    
+// Add the line path.
+svg.append("path")
+    .attr("class", "line");
 
 window.onload = function() {
-    replay(generateDisplayData());
+    draw(generateDisplayData());
 }
 
 
@@ -68,92 +77,54 @@ window.onload = function() {
 function updateAnnee(val) {
     document.getElementById("affichage-annee").innerHTML = val;
     
-    replay(generateDisplayData());
+    draw(generateDisplayData());
 }
 
 // Traite les données du JSON pour générer les données à afficher
 function generateDisplayData() {
 
     var annee = document.getElementById("annee").value;
+    
     var displayData = [];
+    for(var y = YEAR_BEGIN ; y <= YEAR_END ; y++) {
+        displayData.push({'annee': y, 'longueur': 0});
+    }
 
     // Génération des données à afficher
     walls.forEach(function(d) {
 	  
-        if(d['Date annonce'] <= annee) {
-	
-	        listeObjets.forEach(function(obj) {
+        if(d['Date annonce'] !== "" && d['Longueur (km)'] !== "" && d['Date annonce'] <= annee) {
 	        
-	            if(d[obj] !== "" && d['Longueur (km)'] !== "") {
-	                var found = displayData.find(function(elem) {
-	                    return elem['type'] === obj;
-	                });
-	            	
-	            	var longueur = d['Longueur (km)'];
-	            	
-                    if(found === undefined) {
-                        displayData.push({'type': obj, 'longueur': longueur});
-                    } else {
-                        found['longueur'] += longueur;
-                    }
+            displayData.forEach(function(elem) {
+                if(elem.annee >= d['Date annonce'] && elem.annee <= annee) {
+                    elem.longueur += d['Longueur (km)'];
                 }
             });
         }
     });
     
     return displayData;
-}    
-
-function type(d) {
-    // + coerces to a Number from a String (or anything)
-    d.longueur = +d.longueur;
-    return d;
-}
-
-function replay(data) {
-    var slices = [];
-    for (var i = 0; i < data.length; i++) {
-        slices.push(data.slice(0, i+1));
-    }
-    slices.forEach(function(slice, index){
-        draw(slice);
-    });
 }
 
 function draw(data) {
 
+    var annee = document.getElementById("annee").value;
+
     // measure the domain
     // now the scales are finished and usable
-    x.domain(data.map(function(d) { return d.type; }));
+    x.domain(data.map(function(d) { if(d.annee <= annee) return d.annee; }));
     y.domain([0, LONGUEUR_MAX]);
+    
+    xAxis.tickValues(x.domain().filter(function(d, i) { return !(i % 4); }));
 
-    // another g element, this time to move the origin to the bottom of the svg element
-    // someSelection.call(thing) is roughly equivalent to thing(someSelection[i])
-    //   for everything in the selection\
-    // the end result is g populated with text and lines!
-    svg.select('.x.axis').transition().duration(300).call(xAxis);
+    // Select the section we want to apply our changes to
+    var svg = d3.select("#graphique-mur");
 
-    // same for yAxis but with more transform and a title
-    svg.select(".y.axis").transition().duration(300).call(yAxis)
-
-    // THIS IS THE ACTUAL WORK!
-    var bars = svg.selectAll(".bar").data(data, function(d) { return d.type; }) // (data) is an array/iterable thing, second argument is an ID generator function
-
-    bars.exit().transition().duration(300)
-        .attr("y", y(0))
-        .attr("height", height - y(0))
-        .style('fill-opacity', 1e-6)
-        .remove();
-
-    // data that needs DOM = enter() (a set/selection, not an event!)
-    bars.enter().append("rect")
-        .attr("class", "bar")
-        .attr("y", y(0))
-        .attr("height", height - y(0));
-
-    // the "UPDATE" set:
-    bars.transition().duration(300).attr("x", function(d) { return x(d.type); }) // (d) is one item from the data array, x is the scale object from above
-        .attr("width", x.rangeBand()) // constant, so no callback function(d) here
-        .attr("y", function(d) {  return y(d.longueur); })
-        .attr("height", function(d) { return height - y(d.longueur); }); // flip the height, because y's domain is bottom up, but SVG renders top down
+    // Make the changes
+    svg.select(".line")   // change the line
+        .attr("d", line(data));
+    svg.select(".x.axis") // change the x axis
+        .call(xAxis);
+    svg.select(".y.axis") // change the y axis
+        .call(yAxis);
 }
