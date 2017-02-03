@@ -560,3 +560,7 @@ Carrousel
 .multi-item-carousel .carouse-control.right {
     background-image: none;
 }
+
+.img-responsive {
+    border-radius: 10px;
+}
