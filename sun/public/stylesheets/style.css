@@ -144,7 +144,6 @@ html, body{
 #pageTwo h1 {
 	font-size: 1.7em;
 	font-weight: bold;
-	padding-top: 4%;
 	color: #004266;
 	width: 40%;
 	margin: 0 auto;
@@ -167,16 +166,8 @@ html, body{
 #pageTwo .blocTwoOne {
 	width: 70%;
 	margin: 0 auto;
-	margin-top: 2%;
+	margin-top: 1%;
 	padding-top: 1%;
-}
-
-#pageTwo .blocTwoOne .Saison img {
-	margin-top: 5%;
-}
-
-#pageTwo .blocTwoOne .Saison {
-	margin-top: 5%;
 }
 
 #pageTwo .blocTwoOne .Saison {
@@ -191,20 +182,36 @@ html, body{
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 5%;
-	padding-top: 2%;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #004266;
+	display: flex;
+
 }
 
 #pageTwo .blocTwoTwo .inlineBloc {
 	width: 30%;
 	display: inline-block;
+	margin: auto;
 }
 
-#pageTwo .blocTwoTwo img {
-	max-width: 13%;
+.inlineBlocWE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-right: 20%;
+}
+
+.inlineBlocSE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-left: 20%;
+}
+
+#pageTwo {
+	min-height: 100%;
 }
 
 
@@ -257,28 +264,30 @@ input[type=radio]:checked + label:before {
 
 label.drinkcard-cc.printemps::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 30%;
 }
 label.drinkcard-cc.ete::before{
 	margin-top: 80%;
-	margin-right: 26%;
+	margin-right: 55%;
 }
 label.drinkcard-cc.automne::before{
 	margin-top: 80%;
-	margin-right: 9%;
+	margin-right: 15%;
 }
 label.drinkcard-cc.hiver::before{
 	margin-top: 80%;
-	margin-right: 35%;
+	margin-right: 60%;
 }
-
 label.drinkcard-cc.ete {
-	margin-left: 5%;
+	margin-left: 10%;
 }
 label.drinkcard-cc.automne {
 	margin-left: 5%;
 }
 label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+label.drinkcard-cc.printemps {
 	margin-left: 7%;
 }
 
@@ -342,8 +351,6 @@ input:checked + .slider:before {
 	min-height: 100%;
 }
 
-
-
 /* ################### pageFour ################### */
 
 #pageFour {
@@ -351,11 +358,6 @@ input:checked + .slider:before {
 	min-height: 100%;
 	border-top: 1px solid black;
 }
-
-
-
-
-
 
 /* ########### TOOLTIPS ########################*/
 div.tooltip {
