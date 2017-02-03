@@ -34,12 +34,19 @@ html,body {
     bottom: 0px;
 }
 
+#center
+{
+  position: absolute;
+  bottom:47%;
+  left:51%;
+}
+
 #section1 #car
 {
     z-index: 2;
     position:absolute;
-    left:50%;
-    top:19.5%;
+    bottom: 147px;
+    left: 22px;
     animation:mymove 5s infinite;
     -moz-animation:mymove 5s infinite; /*Firefox*/
     -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
@@ -86,14 +93,16 @@ html,body {
 
 #arrow_l, #arrow_d
 {
-    width: 20px;
-    height:20px;
+    width: 40px;
+    height: 40px;
+    border: 0;
     cursor: pointer;
+    background-size: 100%;
+    background-size: 40px auto;
 }
 
 #arrow_l
 {
-    background-color: red;
     background-image: url("../img/fleche-gauche-blanche.svg");
     float: left;
     margin-left: 8%;
@@ -101,7 +110,6 @@ html,body {
 
 #arrow_d
 {
-    background-color: green;
     background-image: url("../img/fleche-droite-blanche.svg");
     float: right;
     margin-right: 8%;

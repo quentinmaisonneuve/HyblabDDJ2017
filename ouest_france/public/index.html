@@ -23,8 +23,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/example.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="js/example.js" defer></script>
+    <script type="text/javascript" defer>
         $(document).ready(function() {
             $('#fullpage').fullpage({
               anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
@@ -42,16 +42,15 @@
         <p>Continuous Scrolling Enabled</p>
     </div>
     <div class="section active" id="section1">
+        <div classe="middle" id="center">
+          <img class="middle" id="route" src="img/Route.svg">
+          <img class="img_car" id="car" src="img/Voiture.svg"></img>
+        </div>
+        <button type="button" class="middle" id="arrow_l" onclick="alert('Précèdent')"></button>
+        <button type="button" class="middle" id="arrow_d"></button>
         <img class="footer_g" id="houses_g" src="img/Visuel-Footer-gauche.svg">
         <img class="footer_d" id="houses_d" src="img/Visuel-Footer-droite.svg">
         <div class="bande_footer"></div>
-        <img class="img_car" id="car" src="img/Voiture.svg">
-        <img class="middle" id="route" src="img/Route.svg">
-        <div class="bike"></div>
-        <div class="bus"></div>
-        <div class="walk"></div>
-        <button type="button" class="middle" id="arrow_l" onclick="alert('Précèdent')"></button>
-        <button type="button" class="middle" id="arrow_d"></button>
     </div>
     <div class="section" id="section2">
         <div class="intro">

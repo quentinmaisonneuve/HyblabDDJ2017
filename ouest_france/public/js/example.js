@@ -25,10 +25,21 @@ fetch('data/dummy.json')
     });
 */
 window.onload = function () {
+    var listeSVG = ["../public/img/Voiture.svg","../public/img/Bus-Transport-en-commun.svg","../public/img/Velo.svg","../public/img/Pieton.svg"];
+    var iterator = 0;
     document.getElementById('arrow_d').onclick = function () {
-         document.getElementById('car').src = "../public/img/Velo.svg";
+        iterator = iterator + 1;
+        if (iterator > 3) {
+          iterator = 0;
+        }
+        document.getElementById('car').src = listeSVG[iterator];
+
       };
     document.getElementById('arrow_l').onclick = function () {
-           document.getElementById('car').src = "../public/img/Voiture.svg";
+          iterator = iterator - 1;
+          if (iterator < 0) {
+            iterator = 3;
+          }
+           document.getElementById('car').src = listeSVG[iterator];
         };
 }
