@@ -24,21 +24,16 @@ d3.json("data/murs.json", function(error, json) {
 	window.sites_data=json.features;
 		
 });
-var display= function(data){
+var display= function(data1,data2,data3){
 
-  
-   svgCarte.selectAll("path")
-		.data(data)
-	   .exit()
-		.remove();
 		
-	 svgCarte.selectAll("path")
+	svgCarte.selectAll("path")
 		.data(window.sites_data)
 	   .exit()
 		.remove();
 		
 	svgCarte.selectAll("a")
-		.data(data)
+		.data(data1)
 	   .enter()
 		.append("path")
 		.attr("class","arc")
@@ -46,15 +41,32 @@ var display= function(data){
 		.on("mouseover",MouseOverFunction)
 		.on("mouseout",MouseOutFunction)
 		.transition().duration(200);
-	
+
+	svg.selectAll("a")
+		.data(data2)
+	   .enter()
+		.append("path")
+		.attr("class","arc2")
+		.attr("d", path)
+		.on("mouseover",MouseOverFunction)
+		.on("mouseout",MouseOutFunction)
+		.transition().duration(200);    
+      
+   
+      svg.selectAll("a")
+		.data(data3)
+	   .enter()
+		.append("path")
+		.attr("class","arc3")
+		.attr("d", path)
+		.on("mouseover",MouseOverFunction)
+		.on("mouseout",MouseOutFunction)
+		.transition().duration(200);
 
 };
 
 function MouseOverFunction(d,i) {
 	d3.select(this).style(
-		"stroke", "orange"
-		
-	).style(
 		"stroke-width", "5px"
 		
 	);
@@ -69,9 +81,6 @@ function MouseOverFunction(d,i) {
 
 function MouseOutFunction(d,i) {
 	d3.select(this).style(
-		"stroke", "red"
-		
-	).style(
 		"stroke-width", "1.5px"
 		
 	);
@@ -100,13 +109,35 @@ var newData;
 d3.select('#slider3').call(d3.slider()
   .axis(true).min(minDateUnix).max(maxDateUnix).step(secondsInDay)
   .on("slide", function(evt, value) {
-     newData = _(sites_data).filter(function(site) {
+     console.log("year courant"+value);
+     newData_construit = _(sites_data).filter(function(site) {
  
     	
-      return site.properties["Date annonce"] <= value;
+      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]!='';
+   
 
-    });	 
-    display(newData);
+    });
+	
+	    
+    newData_pasconstruit = _(sites_data).filter(function(site) {
+ 
+    	
+      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]==''&& site.properties["Construction"]!='' ;
+   
+
+    });
+    
+    newData_annonce = _(sites_data).filter(function(site) {
+ 
+    	
+      return site.properties["Date annonce"] <= value && site.properties["Fin construction"]=='' && site.properties["Construction"]=='';
+   
+
+    });
+    
+    
+    	 
+    display(newData_construit,newData_pasconstruit,newData_annonce);
   
   })
 );
