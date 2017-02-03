@@ -1,9 +1,8 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
 // TODO: transition http://jsfiddle.net/CCRb5/
-function loadBubble()
+function initBubble(node)
 {
-    document.getElementById("bubble3").innerHTML = "";
 
     var diameter = 600, //max size of the bubbles
         color    = d3.scale.category20b(); //color category
@@ -85,8 +84,10 @@ function loadBubble()
                 "font-size": "12px"
             });
     });
-};
-loadBubble();
+}
+
+
+
 
 /*########################## TOOLTIP ##############################################" */
 function getTooltip(genre)
@@ -125,3 +126,5 @@ function getRoad()
     var season = $('input[type=radio][name=season]:checked').attr('value');
     return "./creneau/"+season+"/0/1/20";
 }
+
+initBubble(getRoad());
