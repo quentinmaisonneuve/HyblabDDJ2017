@@ -19,30 +19,49 @@ app.use(express.static(path.join(__dirname, 'public')));
 // or more generally: http(s)://server_name:port/name_of_you_project/
 module.exports = app;
 
+// Header
+function writeHeader(req, res, next) {
+
+    fs.readFile(__dirname + '/public/header.html', function (error, data) {
+        res.write(data);
+        next();
+    });
+}
+
+// Footer
+function writeFooter(req, res, next) {
+
+    fs.readFile(__dirname + '/public/footer.html', function (error, data) {
+        res.write(data);
+        res.end();
+    });
+}
 
 // Carte avec les différentes régions
-app.get('/regions', function (req, res) {
+function writeRegions(req, res, next) {
     
     fs.readFile(__dirname + '/public/carte-regions.html', function (error, data) {
         res.write(data);
-        res.end();
+        next();
     });
-});
-
-// Graphique montrant l'évolution de la longueur des murs en fonction de l'année
-app.get('/mur', function (req, res) {
-
-    fs.readFile(__dirname + '/public/graphique-mur.html', function (error, data) {
-        res.write(data);
-        res.end();
-    });
-});
+};
 
 // Carte avec tous les murs
-app.get('/carte-murs', function (req, res) {
+function writeWallsMap(req, res, next) {
 
     fs.readFile(__dirname + '/public/carte-murs.html', function (error, data) {
         res.write(data);
-        res.end();
+        next();
     });
-});
+};
+
+// Graphique montrant l'évolution de la longueur des murs en fonction de l'année
+function writeBricksChart(req, res, next) {
+
+    fs.readFile(__dirname + '/public/graphique-mur.html', function (error, data) {
+        res.write(data);
+        next();
+    });
+};
+
+app.get('/murs-frontieres', writeHeader, writeRegions, writeWallsMap, writeBricksChart, writeFooter);

@@ -47,20 +47,17 @@ function drawCircles(json) {
 }
 
 
-// Fonction principale
-window.onload = function() {
 
-    // Récupération des données depuis le fichier JSON
-    fetch('data/regions.json')
-        .then(function(response) {
-            if(response.ok) {
-                return response.json();
-            } else {
-                return {data: "JSON file not found"};
-            }
-        })
-        .catch(function(error) {
-            return {data: "Invalid JSON"};
-        })
-        .then(drawCircles);
-}
+// Récupération des données depuis le fichier JSON
+fetch('data/regions.json')
+    .then(function(response) {
+        if(response.ok) {
+            return response.json();
+        } else {
+            return {data: "JSON file not found"};
+        }
+    })
+    .catch(function(error) {
+        return {data: "Invalid JSON"};
+    })
+    .then(drawCircles);

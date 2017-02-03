@@ -38,7 +38,18 @@ svg
     margin-left: 25%;
 }
 
+path {
+  fill: none;
+  stroke: #000;
+  stroke-width: .5px;
+}
 
+.arc {
+  fill: none;
+  stroke: red;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+}
 
 .bar {
   fill: steelblue;

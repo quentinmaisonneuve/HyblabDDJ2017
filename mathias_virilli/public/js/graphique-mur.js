@@ -9,6 +9,61 @@ d3.json("data/walls.json", function(error, data) {
 
 var listeObjets = ["zone de conflit", "immigration", "terrorisme", "trafic", "inégalités"];
 
+// Mike Bostock "margin conventions"
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 400 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// D3 scales = just math
+// x is a function that transforms from "domain" (data) into "range" (usual pixels)
+// domain gets set after the data loads
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+// D3 Axis - renders a d3 scale in SVG
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left");
+
+// create an SVG element (appended to body)
+// set size
+// add a "g" element (think "group")
+// annoying d3 gotcha - the 'svg' variable here is a 'g' element
+// the final line sets the transform on <g>, not on <svg>
+var svg = d3.select("#graphique-mur").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.append("g")
+    .attr("class", "x axis")
+    .attr("transform", "translate(0," + height + ")")
+
+svg.append("g")
+    .attr("class", "y axis")
+  .append("text") // just for the title (ticks are automatic)
+    //.attr("transform", "rotate(-90)") // rotate the text!
+    .attr("x", 140)
+    .attr("y", -9)
+    //.attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .text("Longueur cumulée des murs (km)");
+
+window.onload = function() {
+    replay(generateDisplayData());
+}
+
+
+
+
 // Met à jour la page en fonction de l'année indiquée par le slider
 function updateAnnee(val) {
     document.getElementById("affichage-annee").innerHTML = val;
@@ -47,61 +102,7 @@ function generateDisplayData() {
     });
     
     return displayData;
-}
-
-
-// Mike Bostock "margin conventions"
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 400 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
-
-// D3 scales = just math
-// x is a function that transforms from "domain" (data) into "range" (usual pixels)
-// domain gets set after the data loads
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
-var y = d3.scale.linear()
-    .range([height, 0]);
-
-// D3 Axis - renders a d3 scale in SVG
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
-
-// create an SVG element (appended to body)
-// set size
-// add a "g" element (think "group")
-// annoying d3 gotcha - the 'svg' variable here is a 'g' element
-// the final line sets the transform on <g>, not on <svg>
-var svg = d3.select("body").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-
-svg.append("g")
-    .attr("class", "y axis")
-  .append("text") // just for the title (ticks are automatic)
-    //.attr("transform", "rotate(-90)") // rotate the text!
-    .attr("x", 140)
-    .attr("y", -9)
-    //.attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text("Longueur cumulée des murs (km)");
-
-window.onload = function() {
-    replay(generateDisplayData());
-}
-    
+}    
 
 function type(d) {
     // + coerces to a Number from a String (or anything)
