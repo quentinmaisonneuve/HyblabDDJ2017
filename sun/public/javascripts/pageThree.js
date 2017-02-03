@@ -1,13 +1,13 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
 
-var diameter = 400, //max size of the bubbles
+var diameter = 600, //max size of the bubbles
     color    = d3.scale.category20b(); //color category
 
 var bubble = d3.layout.pack()
     .sort(null)
     .size([diameter, diameter])
-    .padding(-20.5);
+    .padding(-15.5);
 
 
 var svg = d3.select("#bubble3")
@@ -52,14 +52,17 @@ function initBubble(node)
             .data(nodes)
             .enter();
 
+
         //create the bubbles
-        bubbles.append("circle")
-            .attr("r", function(d){ return d.r; })
-            .attr("cx", function(d){ return d.x; })
-            .attr("cy", function(d){ return d.y; })
+        bubbles.append("svg:image")
+            .attr("xlink:href","./images/vynile-bleu.svg")
+            .attr("width", function(d){ return d.r; })
+            .attr("height", function(d){ return d.r; })
+            .attr("x", function(d){ return d.x; })
+            .attr("y", function(d){ return d.y; })
             .attr("class", function(d) {return d.id})
             .attr("class", "bubbleC")
-            .style("fill", function(d) { return color(d.value); })
+           /* .style("fill", function(d) { return color(d.value); })*/
             .on("mouseover", function(d) {
                 div.transition()
                     .duration(200)
@@ -74,12 +77,16 @@ function initBubble(node)
                     .style("opacity", 0);
             });
 
+
+
+        //circle.append()
         //format the text for each bubble
         bubbles.append("text")
             .attr("x", function(d){ return d.x; })
             .attr("y", function(d){ return d.y + 5; })
             .attr("text-anchor", "middle")
             .text(function(d){ return d["id"]; })
+            .attr("class", "bubbleCTxt")
             .style({
                 "fill":"white",
                 "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
@@ -116,15 +123,14 @@ function changeBubble(node)
         d3.selectAll(".bubbleC").data(data);
 
         // SELECT THE SECTION
-        var svg = d3.select("#bubble3").transition();
+        var svg = d3.selectAll("#bubble3").transition();
 
 
         // MAKE THE CHANGE
         svg.selectAll(".bubbleC")   // change the bubble
             .duration(750)
-            .attr("r", function(d){ return d.r; })
-            .attr("cx", function(d){ return d.x; })
-            .attr("cy", function(d){ return d.y; })
+            .attr("width", function(d){ return d.r; })
+            .attr("class", "bubbleC")
     });
 
 }
