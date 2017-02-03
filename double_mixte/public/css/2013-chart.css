@@ -1,9 +1,9 @@
 #color-series-a {
-	color: #f43f00;
+	color: black;
 }
 
 #color-series-b {
-	color: #89590b;
+	color: black;
 }
 
 .ct-series-a > line:hover {
@@ -105,9 +105,7 @@
 
 #val_graph2013 {
     font-family: Josefin Sans;
-    position: absolute;
-    left: 45vw;
-    top: 69vh;
+    text-align: center;
 }
 
 #chart1 {
@@ -119,6 +117,11 @@
 
 #img-nuitees-2013 {
     position: absolute;
-    left: 47vw;
+    left: 40vw;
     top: 55vh;
+    width: 20vw;
+}
+#img-nuitees-2013 img {
+    display: block;
+    margin: auto;
 }
