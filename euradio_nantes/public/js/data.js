@@ -45,7 +45,7 @@ function creatFacebook(){
                 toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
 
                 indexLabelPlacement: "inside",
-                indexLabelFontColor: "red",
+                indexLabelFontColor: "#FF6666",
                 indexLabelFontWeight: 600,
                 indexLabelFontFamily: "Verdana",
                 color: "#3b5998",
@@ -99,7 +99,7 @@ function creatTwitter(){
                 indexLabelFontSize: 26,
                 toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
 
-                indexLabelPlacement: "",
+                indexLabelPlacement: "inside",
                 indexLabelFontColor: "#FF6666",
                 indexLabelFontWeight: 600,
                 indexLabelFontFamily: "Verdana",
@@ -138,11 +138,11 @@ function creatTwitter(){
 var provenancePaysPourcentageFacebook = 
 [
 
-      {
+      /*{
         "label": "France",
         "y": 6352,
         "indexLabel": "81,59%"
-      },
+      },*/
       {
         "label": "Italie",
         "y": 206,
@@ -193,7 +193,7 @@ var provenancePaysPourcentageFacebook =
         "label": "Algérie",
         "y": 29,
         "indexLabel": "0,37%"
-      },
+      }/*,
       {
         "label": "Grèce",
         "y": 29,
