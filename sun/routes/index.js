@@ -134,5 +134,87 @@ router.get('/creneauMood/:mood/:season/:week/:start/:end', function(req, res, ne
         else{res.json(rows);}
     });
 });
+router.get('/ThisWeekRock', function(req, res, next) {
+    data.getThisWeekRock( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+router.get('/ThisWeekAlternativeEtPunk', function(req, res, next) {
+    data.getThisWeekAlternativeEtPunk( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+router.get('/ThisWeekUrban', function(req, res, next) {
+    data.getThisWeekUrban( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
 
+router.get('/ThisWeekElectronica', function(req, res, next) {
+    data.getThisWeekElectronica( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+
+router.get('/ThisWeekJazz', function(req, res, next) {
+    data.getThisWeekJazz( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+router.get('/ThisWeekPop', function(req, res, next) {
+    data.getThisWeekPop( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+router.get('/ThisWeekNostalgique', function(req, res, next) {
+    data.getThisWeekNostalgique( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+router.get('/ThisWeekCool', function(req, res, next) {
+    data.getThisWeekPop( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+router.get('/ThisWeekStimulante', function(req, res, next) {
+    data.getThisWeekStimulante( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+router.get('/ThisWeekAgressive', function(req, res, next) {
+    data.getThisWeekAgressive( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+router.get('/ThisWeekSentimentale', function(req, res, next) {
+    data.getThisWeekSentimentale( function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
 module.exports = router;
