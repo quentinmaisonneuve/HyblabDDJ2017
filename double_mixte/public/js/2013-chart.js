@@ -97,10 +97,11 @@ function toto(chart_annee, chart_aout, chart_octobre){
         console.log('ok');
         console.log($(this).attr('ct:value'));
         var val = $(this).attr('ct:value');
+        val = Math.floor(val);
         $(this).attr('data-toggle', 'tooltip');
         $(this).attr('data-placement', 'top');
         $(this).attr('title', 'test');
-        $('#val_graph2013').html('<p>'+val+'</p>');
+        $('#val_graph2013').html('<h3><p>'+val+' nuitées </p></h3>');
 
     });
     
