@@ -53,6 +53,7 @@
 		var rand = Math.floor((Math.random() * 10) + 1);
 		if(rand<3){
 			alert("inf3");
+			
 		}
 		if(rand>=3 && rand<=6){
 			alert("3-6");
@@ -61,3 +62,5 @@
 			alert("sup6");
 		}
 	});
+
+	
