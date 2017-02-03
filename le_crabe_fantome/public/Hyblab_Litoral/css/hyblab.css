@@ -500,17 +500,29 @@ body{
 }
 
 .Homme1{
-
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left:44%;
 }
 
 
 .Homme2{
-
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left: 32.5%;
 }
 
 
 .Homme3{
-
+	height : 7vw;
+	width : 6.5vw;    
+	position: absolute;
+    top: 22.72vw;
+    left: 56.35%;
 }
 
 .radioJ2 label{
