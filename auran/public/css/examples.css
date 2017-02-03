@@ -58,12 +58,13 @@ body{
 	width: 960px;
 	position: relative;
 }
-h1{
+h1 {
 	font-size: 5em;
-	font-family: arial,helvetica;
+	font-family: arial, helvetica;
 	color: #fff;
-	margin:0;
-	padding:0;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
 }
 
 h3{
@@ -72,19 +73,43 @@ h3{
 	color: #fff;
 }
 
+.social-media {
+	display: inline-block;
+	width : 100%;
+	vertical-align: middle;
+	font-size : 1px;
+	position : relative;
+}
+
+#twitter-widget-0, #twitter-widget-1 {
+	margin : 10px;
+}
+
+.social-media iframe {
+	vertical-align: middle;
+	margin-top : 10px;
+}
+
+.fb-share-button {
+	margin : 10px;
+	width : 74px;
+}
+
+.social-media span {
+	display : inline-block;
+	width : 110px;
+}
+
 .section{
 	text-align:center;
-	display: inline-block;
+	display: block;
 }
 
 .section-content {
+	width : 90%;
 	text-align : justify;
 	margin-left: 10%;
 	margin-right: 10%;
-}
-
-.section-dataviz {
-	padding : 100px;
 }
 
 p{
@@ -93,8 +118,18 @@ p{
 	color: #fff;
 	margin-top : 10px;
 	margin-bottom: 10px;
-
 }
+
+ul {
+	list-style-type: disc;
+	color : #fff;
+	margin-left : 10%;
+}
+
+strong {
+	color: #5e3c58;
+}
+
 .intro p{
 	width: 50%;
 	margin: 0 auto;

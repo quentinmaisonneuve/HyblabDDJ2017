@@ -21,6 +21,7 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>{lang: 'fr'}</script>
 
     <script type="text/javascript" src="./js/scrolloverflow.js"></script>
 
@@ -35,10 +36,33 @@
 
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    !function(d,s,id){
+        var js,
+            fjs=d.getElementsByTagName(s)[0],
+            p=/^http:/.test(d.location)?'http':'https';
+
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src=p+'://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }(document, 'script', 'twitter-wjs');
+    </script>
 
 <div id="fullpage">
+
     <div class="section " id="section0">
-        <h1>L'économie numérique</h1>
+        <h1>Qui sont les vrais acteurs de l'économie numérique à Nantes ?</h1>
     </div>
     <div class="section" id="section1">
         <h3>Mais qu'est-ce que l'économie numérique ?</h3>
@@ -63,16 +87,26 @@
             </p>
         </div>
 
-        <div class="section-dataviz">
-
+        <div class="social-media">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="SpokaLab" data-hashtags="Hyblab"></a>
+            <div class="fb-share-button" data-href="http://bit.ly/2jK2Yqj" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp://bit.ly/2kYNp2S&amp;src=sdkpreparse">Partager</a></div>
+            <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://bit.ly/2jK2Yqj"></div>
         </div>
-
     </div>
+
     <div class="section" id="section3">
+
         <h3>Les entreprises qui emploient</h3>
         <div class="section-content">
             <p>Les grosses entreprises sont celles qui pèsent le plus dans l'économie numérique, puisqu'elles créent plus d'emplois. Les secteurs privilégiés par les entreprises qui emploient le plus sont :</p>
         </div>
+
+        <div class="social-media">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="SpokaLab" data-hashtags="Hyblab"></a>
+            <div class="fb-share-button" data-href="http://bit.ly/2kYNp2S" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A63342%2FHyblabDDJ2017%2Fauran%2Fpublic%2Findex.html%3F_ijt%3D6p03dv4a4rev7ssu3nn169u84v%23section3&amp;src=sdkpreparse">Partager</a></div>
+            <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://bit.ly/2kYNp2S"></div>
+        </div>
+
     </div>
     <div class="section" id="section4">
         <h3>L'écosystème numérique et ses interactions</h3>
