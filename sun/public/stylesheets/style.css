@@ -374,9 +374,15 @@ input:checked + .slider:before {
 #boutonBubleTopLeft {
 	width: 49%;
 	display: inline-block;
-	background-color: grey;
 }
 
+#boutonBubleTopLeft img {
+	width: 50%;
+}
+
+#boutonBubleTopLeft {
+	text-align: center;
+}
 
 #boutonBubleTopRight {
 	width: 50%;
