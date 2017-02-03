@@ -1,0 +1,127 @@
+<script>
+    var yCoordinate=getYCoordinate(25);
+    var buildings = [];
+
+    function getXCoordinate(xPourcentage){
+        return xPourcentage/100*screen.width;
+    }
+    function getYCoordinate(yPourcentage){
+        return yPourcentage/100*screen.height;
+    }
+
+    function image(source, lightSource) {
+        var img = document.createElement("IMG");
+        img.src = source;
+        img.style.width="5%";
+        img.style.height="auto";
+        img.style.position="absolute";
+        img.style.bottom = window.innerHeight+'px';
+
+        var imageId='bat'+buildings.length;
+        var hashTagId='#'+imageId;
+        console.log("bat_id="+imageId);
+        console.log("hashBatTagId="+hashTagId);
+        img.id=imageId;
+
+        $('#container').append(img);
+        $(hashTagId).hide();
+        img.addEventListener("mouseover", function () {
+            img.src=lightSource;
+        });
+        img.addEventListener("mouseout", function () {
+            img.src = source;
+        });
+
+        var obj = {
+            image: $(hashTagId),
+            x: "100px",
+            y: yCoordinate
+        };
+        yCoordinate*=1.05;
+        buildings.push(obj);
+    }
+
+    function animateBuildings(){
+        console.log("animateBuildings");
+        var i;
+        for (i = 0; i < buildings.length; i++) {
+            var image = buildings[i].image;
+            image.show();
+            image.animate({
+                left: getXCoordinate(25),
+                bottom: getYCoordinate(25)
+            }, 'slow');
+        }
+
+    }
+    image("img/bat_1-1.png", "img/bat_1-2.png");
+</script>
+
+<script>
+    /*
+    var canvas = document.getElementById("myCanvas");
+    var container = document.getElementById("container");
+    var town = document.getElementById("town");
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    container.width  = window.innerWidth;
+    container.height = window.innerHeight;
+    town.width  = window.innerWidth;
+    town.height = window.innerHeight;
+    function getXCoordinate(xPourcentage){
+        return xPourcentage/100*screen.width;
+    }
+    function getYCoordinate(yPourcentage){
+        return yPourcentage/100*screen.height;
+    }
+    var myRect={x:getXCoordinate(50), y:getYCoordinate(50), w:100, h:100, color:"red"};
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = myRect.color;
+    ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
+    canvas.addEventListener("mousemove", function(e){
+        var rect = canvas.getBoundingClientRect();
+        var xPosition=e.clientX - rect.left;
+        var yPosition = e.clientY - rect.top
+        console.log("canvas:mousemove: ("+xPosition+";"+yPosition+") and rect: ("+myRect.x+";"+myRect.y+";"+myRect.w+";"+myRect.h);
+        if ((xPosition>=myRect.x)&&(xPosition<=myRect.x+myRect.w)&&(yPosition>=myRect.y)&&(yPosition<=myRect.y+myRect.h)){
+            console.log("rect -> green");
+            myRect.color = "green";}
+        else{
+            console.log("rect -> red");
+            myRect.color = "red";}
+        updateCanvas();
+    }, false);
+
+    function updateCanvas(){
+        ctx.fillStyle = myRect.color;
+        ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
+    }
+    */
+</script>
+<style>
+
+
+    #myCanvas{
+        position: absolute;
+        z-index: 50;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #town{
+        width: 60%;
+        height: 60%;
+        left: 0;
+        bottom: 10%;
+        position: absolute;
+    }
+    #bat{
+        width: 30%;
+        height: 30%;
+        position: absolute;
+    }
+</style>
+<div id="container">
+    <img id="town" src="img/plateau.svg"/>
+</div>

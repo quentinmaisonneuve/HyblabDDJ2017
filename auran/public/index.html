@@ -9,7 +9,7 @@
     <meta name="keywords"  content="economie, numerique, dynamique, Nantes, métropole" />
     <meta name="Resource-type" content="Document" />
 
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="./css/examples.css" />
 
@@ -28,12 +28,26 @@
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="./js/examples.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage();
+    <script>
+        $(function(){
+            $("#page1").load("page1.html");
+            $("#page2").load("page2.html");
         });
     </script>
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                afterLoad: function(anchorLink, index){
+                    if(index==7){
+                        animateBuildings();
+                    }
+                    else if(index==8){
+                        animateComponents();
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -85,6 +99,7 @@
             </p>
             <p>A Nantes, quand on parle du secteur numérique, on a plutôt tendance à parler des entreprises individuelles, des startups qui appartiennent à la catégorie des PME et des associations (Atlantic 2.0 par exemple). Pourtant, les grandes entreprises (ESN) occupent une place plus importante dans le secteur numérique en métropole nantaise. On fait beaucoup moins de communication autour de ces grandes entreprises lors des forums ou des salons organisés à Nantes sur le secteur numérique (Web2day).
             </p>
+
         </div>
 
         <div class="social-media">
@@ -92,6 +107,17 @@
             <div class="fb-share-button" data-href="http://bit.ly/2jK2Yqj" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp://bit.ly/2kYNp2S&amp;src=sdkpreparse">Partager</a></div>
             <div class="g-plusone" data-size="tall" data-annotation="none" data-href="http://bit.ly/2jK2Yqj"></div>
         </div>
+    </div>
+  
+    <div class="section" id="section-dataviz1">
+        <video class="video-graphique" muted data-autoplay>
+            <source src="data/mov_bbb.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="section" id="section-dataviz2">
+        <video class="video-graphique" muted data-autoplay>
+            <source src="data/mov_bbb.mp4" type="video/mp4">
+        </video>
     </div>
 
     <div class="section" id="section3">
@@ -108,12 +134,18 @@
         </div>
 
     </div>
-    <div class="section" id="section4">
+    <!--
+    <div class="section" id="section5">
         <h3>L'écosystème numérique et ses interactions</h3>
         <p></p>
     </div>
-</div>
-
-
+    -->
+   <div class="section" id="section6">
+        <div id="page1"></div>
+    </div>
+    <div class="section" id="section7">
+        <div id="page2"></div>
+    </div>
+  </div>
 </body>
 </html>
