@@ -4,12 +4,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Kenya-Somalie",
-        "zone": "Afrique-Est",
-        "objet": "terrorisme",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 700
+        "Nom du mur": "",
+		"Pays financeur": "Kenya",
+		"Pays frontalier": "Somalie",
+		"Zone géographique": "Afrique de l'Est",
+		"Continent": "Afrique",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 700,
+		"Sources": "RFI"
       },
       "geometry": {
         "type": "LineString",
@@ -40,12 +51,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Mur des Sables (Maroc-Mauritanie)",
-        "zone": "Afrique-Nord",
-        "objet": "conflit",
-        "debut": 1987,
-        "fin": "",
-        "longueur": 2720
+        "Nom du mur": "Mur des Sables ou mur de défense",
+		"Pays financeur": "Maroc",
+		"Pays frontalier": "Mauritanie",
+		"Zone géographique": "Afrique du Nord",
+		"Continent": "Afrique",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1982,
+		"Construction": "",
+		"Fin construction": 1987,
+		"Destruction": "",
+		"Longueur (km)": 2720,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -88,12 +110,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Tunisie-Lybie",
-        "zone": "Afrique-Nord",
-        "objet": "terrorisme",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 168
+        "Nom du mur": "",
+		"Pays financeur": "Tunisie",
+		"Pays frontalier": "Lybie",
+		"Zone géographique": "Afrique du Nord",
+		"Continent": "Afrique",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 168,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -128,12 +161,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Algerie-Lybie",
-        "zone": "Afrique-Nord",
-        "objet": "terrorisme",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 350
+        "Nom du mur": "",
+		"Pays financeur": "Algérie",
+		"Pays frontalier": "Lybie",
+		"Zone géographique": "Afrique du Nord",
+		"Continent": "Afrique",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2016,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 350,
+		"Sources": "afrik"
       },
       "geometry": {
         "type": "LineString",
@@ -184,12 +228,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Afrique du Sud-Zimbabwe",
-        "zone": "Afrique-Meridionale",
-        "objet": "immigration",
-        "debut": 2007,
-        "fin": "",
-        "longueur": 500
+        "Nom du mur": "",
+		"Pays financeur": "Afrique du Sud",
+		"Pays frontalier": "Zimbabwe",
+		"Zone géographique": "Afrique méridionale",
+		"Continent": "Afrique",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2007,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 500,
+		"Sources": "BBC"
       },
       "geometry": {
         "type": "LineString",
@@ -220,12 +275,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Grillage de la discorde(Botswana-Zimbabwe)",
-        "zone": "Afrique-Meridionale",
-        "objet": "immigration",
-        "debut": 2003,
-        "fin": "",
-        "longueur": 480
+        "Nom du mur": "Grillage de la discorde",
+		"Pays financeur": "Botswana",
+		"Pays frontalier": "Zimbabwe",
+		"Zone géographique": "Afrique méridionale",
+		"Continent": "Afrique",
+		"objet de la séparation": "Immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2003,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 480,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -272,12 +338,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Guantanamo (USA-Cuba)",
-        "zone": "Amerique Centrale",
-        "objet": "immigration",
-        "debut": 1959,
-        "fin": "",
-        "longueur": 28
+        "Nom du mur": "Guantanamo",
+		"Pays financeur": "Etats-Unis",
+		"Pays frontalier": "Cuba",
+		"Zone géographique": "Amérique centrale",
+		"Continent": "Amérique",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1959,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 28,
+		"Sources": "Courrier international"
       },
       "geometry": {
         "type": "LineString",
@@ -304,12 +381,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Tortilla Curtain (USA-Mexique)",
-        "zone": "Amerique-Nord",
-        "objet": "immigration",
-        "debut": 2006,
-        "fin": "",
-        "longueur": 1200
+        "Nom du mur": "Tortilla Curtain ou Muro de la Verguenza",
+		"Pays financeur": "Etats-Unis",
+		"Pays frontalier": "Mexique",
+		"Zone géographique": "Amérique du Nord",
+		"Continent": "Amérique",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2006,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 3200,
+		"Sources": "Mondialisation.ca"
       },
       "geometry": {
         "type": "LineString",
@@ -396,12 +484,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Murs Favelas Rio de Janeiro, Brésil",
-        "zone": "Amérique-Sud",
-        "objet": "terrorisme",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 100
+        "Nom du mur": "",
+		"Pays financeur": "Brésil",
+		"Pays frontalier": "",
+		"Zone géographique": "Amérique du Sud",
+		"Continent": "Amérique",
+		"objet de la séparation": "inégalités sociales",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "x",
+		"Date annonce": 2009,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 10,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -436,12 +535,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Turkmenistan-Ouzbekistan",
-        "zone": "Asie Centrale",
-        "objet": "immigration",
-        "debut": 1999,
-        "fin": "",
-        "longueur": 870
+        "Nom du mur": "",
+		"Pays financeur": "Ouzbékistan",
+		"Pays frontalier": "Turkmenistan",
+		"Zone géographique": "Asie centrale",
+		"Continent": "Asie",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1999,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 870,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -576,12 +686,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ouzbekistan-Afghanistan",
-        "zone": "Asie Centrale",
-        "objet": "terrorisme",
-        "debut": 2001,
-        "fin": "",
-        "longueur": 209
+        "Nom du mur": "",
+		"Pays financeur": "Ouzbékistan",
+		"Pays frontalier": "Afghanistan",
+		"Zone géographique": "Asie centrale",
+		"Continent": "Asie",
+		"objet de la séparation": "immigration, terrorisme",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2001,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 209,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -612,12 +733,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ouzbekistan-Kirghizistan",
-        "zone": "Asie Centrale",
-        "objet": "terrorisme",
-        "debut": 1999,
-        "fin": "",
-        "longueur": 870
+        "Nom du mur": "",
+		"Pays financeur": "Ouzbékistan",
+		"Pays frontalier": "Kirghizistan",
+		"Zone géographique": "Asie centrale",
+		"Continent": "Asie",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1999,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 870,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -788,12 +920,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ligne Durand (Pakistan-Afghanistan)",
-        "zone": "Asie Centrale",
-        "objet": "terrorisme",
-        "debut": 2007,
-        "fin": "",
-        "longueur": 32
+       "Nom du mur": "ligne Durand",
+		"Pays financeur": "Pakistan",
+		"Pays frontalier": "Afghanistan",
+		"Zone géographique": "Asie centrale",
+		"Continent": "Asie",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2007,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 32,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -928,12 +1071,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Kazakhstan-Ouzbekistan",
-        "zone": "Asie Centrale",
-        "objet": "Trafic Drogue",
-        "debut": 2006,
-        "fin": "",
-        "longueur": 45
+        "Nom du mur": "",
+		"Pays financeur": "Kazakhstan",
+		"Pays frontalier": "Ouzbekistan",
+		"Zone géographique": "Asie centrale",
+		"Continent": "Asie",
+		"objet de la séparation": "trafic",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2006,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 45,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -1040,12 +1194,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Zone demilitarisée Corée du Nord-Corée du Sud",
-        "zone": "Asie-Est",
-        "objet": "conflit",
-        "debut": 1977,
-        "fin": "",
-        "longueur": 240
+        "Nom du mur": "DMZ ou zone démilitarisée",
+		"Pays financeur": "Corée du Nord",
+		"Pays frontalier": "Corée du Sud",
+		"Zone géographique": "Asie de l'Est",
+		"Continent": "Asie",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1953,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 240,
+		"Sources": "RFI"
       },
       "geometry": {
         "type": "LineString",
@@ -1080,12 +1245,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Corée du Nord-Chine",
-        "zone": "Asie-Est",
-        "objet": "immigration",
-        "debut": 2006,
-        "fin": "",
-        "longueur": 1416
+        "Nom du mur": "",
+		"Pays financeur": "Chine",
+		"Pays frontalier": "Corée du Nord",
+		"Zone géographique": "Asie de l'Est",
+		"Continent": "Asie",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2006,
+		"Construction": "",
+		"Fin construction": 2012,
+		"Destruction": "",
+		"Longueur (km)": 1416,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -1180,12 +1356,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Inde-Bangladesh",
-        "zone": "Asie-Sud",
-        "objet": "conflit",
-        "debut": 1993,
-        "fin": 2012,
-        "longueur": 3200
+        "Nom du mur": "Mur de la peur et de la mort",
+		"Pays financeur": "Inde",
+		"Pays frontalier": "Bangladesh",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "Immigration, terrorisme, trafic",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "x",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 1980,
+		"Construction": 1993,
+		"Fin construction": 2012,
+		"Destruction": "",
+		"Longueur (km)": 3200,
+		"Sources": "Libération"
       },
       "geometry": {
         "type": "LineString",
@@ -1416,12 +1603,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Mur de Limbang (Malaisie-Brunei)",
-        "zone": "Asie-Sud",
-        "objet": "Trafic Drogue, immigration, terrorism",
-        "debut": 2005,
-        "fin": "",
-        "longueur": 20
+        "Nom du mur": "Mur de Limbang",
+		"Pays financeur": "Brunei",
+		"Pays frontalier": "Malaisie",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "immigration, trafic",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2005,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 20,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -1668,12 +1866,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Grillage de la discorde (Inde-Myanmar)",
-        "zone": "Asie-Sud",
-        "objet": "Trafic Drogue",
-        "debut": 2003,
-        "fin": "",
-        "longueur": 1463
+        "Nom du mur": "Grillage de la Discorde",
+		"Pays financeur": "Inde",
+		"Pays frontalier": "Myanmar",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "trafic",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2003,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 1463,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -1816,12 +2025,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ligne de contrôle Cachemire (Inde-Pakistan)",
-        "zone": "Asie-Sud",
-        "objet": "conflit",
-        "debut": 2004,
-        "fin": "",
-        "longueur": 972
+        "Nom du mur": "Ligne de contrôle Cachemire",
+		"Pays financeur": "Inde",
+		"Pays frontalier": "Pakistan",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1980,
+		"Construction": 2004,
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 972,
+		"Sources": "RFI"
       },
       "geometry": {
         "type": "LineString",
@@ -2060,12 +2280,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Mur des Rohingya (Myanmar-Bangladesh)",
-        "zone": "Asie-Sud",
-        "objet": "immigration",
-        "debut": 2009,
-        "fin": "",
-        "longueur": 70
+        "Nom du mur": "Mur des Rohingya",
+		"Pays financeur": "Myanmar",
+		"Pays frontalier": "Bangladesh",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "Immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2009,
+		"Construction": "ok",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 70,
+		"Sources": "Libération"
       },
       "geometry": {
         "type": "LineString",
@@ -2100,12 +2331,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Murs de Belfast",
-        "zone": "Europe",
-        "objet": "conflit",
-        "debut": 1970,
-        "fin": 2023,
-        "longueur": 50
+        "Nom du mur": "Peace Walls / Murs de Belfast",
+		"Pays financeur": "Irlande du Nord",
+		"Pays frontalier": "Irlande du Nord",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1970,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": 2023,
+		"Longueur (km)": 50,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -2152,12 +2394,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ligne d'Attila (République Turque de Chypre du Nord-Chypre",
-        "zone": "Europe",
-        "objet": "conflit",
-        "debut": 1974,
-        "fin": 2008,
-        "longueur": 180
+        "Nom du mur": "Ligne verte ou ligne d'Attila ou mur de Nicosie",
+		"Pays financeur": "République turque de Chypre Nord",
+		"Pays frontalier": "République de Chypre",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1974,
+		"Construction": 2008,
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 180,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -2176,12 +2429,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Israel-Liban",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2012,
-        "fin": "",
-        "longueur": 2
+        "Nom du mur": "",
+		"Pays financeur": "Israël",
+		"Pays frontalier": "Liban",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1967,
+		"Construction": 2012,
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 2,
+		"Sources": "Tracés"
       },
       "geometry": {
         "type": "LineString",
@@ -2236,12 +2500,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Israel-Liban",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2013,
-        "fin": "",
-        "longueur": 70
+        "Nom du mur": "",
+		"Pays financeur": "Israël",
+		"Pays frontalier": "Syrie",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1967,
+		"Construction": 2013,
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 70,
+		"Sources": "Tracés"
       },
       "geometry": {
         "type": "LineString",
@@ -2296,12 +2571,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Afrique du Sud-Mozambique",
-        "zone": "Afrique méridionale",
-        "objet": "immigration",
-        "debut": 1975,
-        "fin": "",
-        "longueur": 120
+        "Nom du mur": "",
+		"Pays financeur": "Afrique du Sud",
+		"Pays frontalier": "Mozambique",
+		"Zone géographique": "Afrique méridionale",
+		"Continent": "Afrique",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1975,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 120,
+		"Sources": "Wikipedia"
       },
       "geometry": {
         "type": "LineString",
@@ -2328,12 +2614,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Koweit-Irak",
-        "zone": "Moyen-Orient",
-        "objet": "conflit",
-        "debut": 1991,
-        "fin": "",
-        "longueur": 193
+        "Nom du mur": "",
+		"Pays financeur": "Koweit",
+		"Pays frontalier": "Irak",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 1991,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 193,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -2380,12 +2677,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Melilla (Espagne-Maroc)",
-        "zone": "Europe",
-        "objet": "immigration, trafic drogue",
-        "debut": 2005,
-        "fin": "",
-        "longueur": 12
+        "Nom du mur": "Mellila",
+		"Pays financeur": "Espagne",
+		"Pays frontalier": "Maroc",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration, trafic",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 1998,
+		"Construction": "",
+		"Fin construction": 2005,
+		"Destruction": "",
+		"Longueur (km)": 12,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -2416,12 +2724,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ceuta (Espagne-Maroc)",
-        "zone": "Europe",
-        "objet": "immigration, trafic drogue",
-        "debut": 2001,
-        "fin": "",
-        "longueur": 8
+        "Nom du mur": "Barrière de Ceuta",
+		"Pays financeur": "Espagne",
+		"Pays frontalier": "Maroc",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration, trafic",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2001,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 8,
+		"Sources": "Wikipedia"
       },
       "geometry": {
         "type": "LineString",
@@ -2452,12 +2771,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Cisjordanie-Palestine",
-        "zone": "Moyen-Orient",
-        "objet": "conflit",
-        "debut": 2002,
-        "fin": "",
-        "longueur": 730
+        "Nom du mur": "Mur de Fer (Israel) / Mur de la Honte ou de l'apartheid (Palestine)",
+		"Pays financeur": "Israel  (Cisjordanie)",
+		"Pays frontalier": "Palestine",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2002,
+		"Construction": "ok",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 730,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -2636,12 +2966,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Oman-Emirats Arabes Unis",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2002,
-        "fin": "",
-        "longueur": 470
+        "Nom du mur": "",
+		"Pays financeur": "Emirats Arabes Unis",
+		"Pays frontalier": "Oman",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2002,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 410,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -2716,12 +3057,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Arabie Saoudite-Yémen",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2013,
-        "fin": "",
-        "longueur": 75
+        "Nom du mur": "",
+		"Pays financeur": "Arabie saoudite",
+		"Pays frontalier": "Yemen",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2003,
+		"Construction": "",
+		"Fin construction": 2013,
+		"Destruction": "",
+		"Longueur (km)": 75,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -2820,12 +3172,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Malaisie-Thailande",
-        "zone": "Asie-Sud",
-        "objet": "terrorisme, trafic drogue",
-        "debut": 2007,
-        "fin": "",
-        "longueur": 640
+        "Nom du mur": "",
+		"Pays financeur": "Thaïlande",
+		"Pays frontalier": "Malaisie",
+		"Zone géographique": "Asie du Sud",
+		"Continent": "Asie",
+		"objet de la séparation": "terrorisme, trafic",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2004,
+		"Construction": 2007,
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 640,
+		"Sources": "Le Petit Journal"
       },
       "geometry": {
         "type": "LineString",
@@ -2896,12 +3259,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Charm-el-Cheikh",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme",
-        "debut": 2005,
-        "fin": "",
-        "longueur": 20
+        "Nom du mur": "Mur de Charm el Cheikh",
+		"Pays financeur": "Egypte",
+		"Pays frontalier": "",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2005,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 20,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -2932,12 +3306,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Mur Via Anelli (Padoue, Italie)",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2006,
-        "fin": "",
-        "longueur": 0.083
+        "Nom du mur": "Mur de Via Anelli",
+		"Pays financeur": "Italie",
+		"Pays frontalier": "",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2006,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 0,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -2976,12 +3361,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Arabie Saoudite-Irak",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme",
-        "debut": 2014,
-        "fin": "",
-        "longueur": 965
+        "Nom du mur": "",
+		"Pays financeur": "Arabie saoudite",
+		"Pays frontalier": "Irak",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2006,
+		"Construction": 2014,
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 965,
+		"Sources": "Europe 1"
       },
       "geometry": {
         "type": "LineString",
@@ -3016,12 +3412,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Mur de Bagdad (Irak)",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme",
-        "debut": 2007,
-        "fin": "",
-        "longueur": 5
+        "Nom du mur": "Mur de Badgad",
+		"Pays financeur": "Irak",
+		"Pays frontalier": "",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2007,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 5,
+		"Sources": "RTS"
       },
       "geometry": {
         "type": "LineString",
@@ -3060,12 +3467,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Pakistan-Iran",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme, trafic drogue",
-        "debut": 2007,
-        "fin": "",
-        "longueur": 700
+        "Nom du mur": "",
+		"Pays financeur": "Iran",
+		"Pays frontalier": "Pakistan",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "trafic, terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2007,
+		"Construction": "ok",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 700,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -3120,12 +3538,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Gaza-Egypte",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2008,
-        "fin": "",
-        "longueur": 15
+        "Nom du mur": "",
+		"Pays financeur": "Egypte",
+		"Pays frontalier": "Gaza",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2008,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 15,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -3144,12 +3573,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Israel-Egypte",
-        "zone": "Moyen-Orient",
-        "objet": "immigration,terrorisme",
-        "debut": 2013,
-        "fin": "",
-        "longueur": 230
+        "Nom du mur": "",
+		"Pays financeur": "Israël",
+		"Pays frontalier": "Egypte",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration, terrorisme",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2010,
+		"Construction": "",
+		"Fin construction": 2013,
+		"Destruction": "",
+		"Longueur (km)": 230,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -3196,12 +3636,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Iran-Afghanistan",
-        "zone": "Moyen-Orient",
-        "objet": "trafic",
-        "debut": 2010,
-        "fin": "",
-        "longueur": 700
+        "Nom du mur": "Mur de l'apartheid",
+		"Pays financeur": "Iran",
+		"Pays frontalier": "Afghanistan",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "trafic",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2010,
+		"Construction": "ok",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 700,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -3280,12 +3731,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Grece-Turquie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2011,
-        "fin": "",
-        "longueur": 12
+        "Nom du mur": "",
+		"Pays financeur": "Grèce",
+		"Pays frontalier": "Turquie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2011,
+		"Construction": "",
+		"Fin construction": "ok",
+		"Destruction": "",
+		"Longueur (km)": 12,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -3336,12 +3798,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Homs (Syrie)",
-        "zone": "Moyen-Orient",
-        "objet": "conflit",
-        "debut": 2012,
-        "fin": "",
-        "longueur": 1
+        "Nom du mur": "",
+		"Pays financeur": "Syrie (Homs)",
+		"Pays frontalier": "",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2012,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 0,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -3380,12 +3853,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Arabie Saoudite-Oman",
-        "zone": "Moyen-Orient",
-        "objet": "trafic drogue",
-        "debut": 2013,
-        "fin": "",
-        "longueur": 1800
+        "Nom du mur": "",
+		"Pays financeur": "Arabie saoudite",
+		"Pays frontalier": "Oman",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "trafic, trafic",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2013,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 1800,
+		"Sources": "Sputnik"
       },
       "geometry": {
         "type": "LineString",
@@ -3412,12 +3896,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Turquie-Syrie",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme",
-        "debut": 2014,
-        "fin": "",
-        "longueur": 7
+        "Nom du mur": "",
+		"Pays financeur": "Turquie",
+		"Pays frontalier": "Syrie",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2014,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 7,
+		"Sources": "Sud Ouest"
       },
       "geometry": {
         "type": "LineString",
@@ -3548,12 +4043,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Turquie-Bulgarie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 30
+        "Nom du mur": "",
+		"Pays financeur": "Bulgarie",
+		"Pays frontalier": "Turquie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2014,
+		"Construction": "",
+		"Fin construction": 2015,
+		"Destruction": "",
+		"Longueur (km)": 30,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -3608,12 +4114,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Turquie-Iran",
-        "zone": "Moyen-Orient",
-        "objet": "trafic drogue, terrorisme",
-        "debut": 2014,
-        "fin": "",
-        "longueur": 456
+        "Nom du mur": "",
+		"Pays financeur": "Iran",
+		"Pays frontalier": "Turquie",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "trafic, terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "x",
+		"inégalités": "",
+		"Date annonce": 2014,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 456,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -3724,12 +4241,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Irak-Jordanie",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": ""
+        "Nom du mur": "",
+		"Pays financeur": "Irak",
+		"Pays frontalier": "Jordanie",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "Immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "ok",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": "",
+		"Sources": "France Culture"
       },
       "geometry": {
         "type": "LineString",
@@ -3764,12 +4292,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Israel-Jordanie",
-        "zone": "Moyen-Orient",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 30
+        "Nom du mur": "",
+		"Pays financeur": "Israel",
+		"Pays frontalier": "Jordanie",
+		"Zone géographique": "Moyen-Orient",
+		"Continent": "Moyen-Orient",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": "",
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -3820,12 +4359,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Ukraine-Russie",
-        "zone": "Europe",
-        "objet": "conflit",
-        "debut": 2018,
-        "fin": "",
-        "longueur": 2000
+        "Nom du mur": "",
+		"Pays financeur": "Ukraine",
+		"Pays frontalier": "Russie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "zone de conflit",
+		"zone de conflit": "x",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": 2018,
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 2000,
+		"Sources": "La Voix du Nord"
       },
       "geometry": {
         "type": "LineString",
@@ -4048,12 +4598,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Slovenie-Croatie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": ""
+        "Nom du mur": "",
+		"Pays financeur": "Slovénie",
+		"Pays frontalier": "Croatie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": "",
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -4136,12 +4697,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Hongrie-Serbie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 175
+        "Nom du mur": "",
+		"Pays financeur": "Hongrie",
+		"Pays frontalier": "Serbie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 175,
+		"Sources": "Mondialisation.ca"
       },
       "geometry": {
         "type": "LineString",
@@ -4200,12 +4772,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Suede-Danemark",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 1
+        "Nom du mur": "",
+		"Pays financeur": "Suède",
+		"Pays frontalier": "Danemark",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 1,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -4224,12 +4807,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Macédoine-Grèce",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 2
+        "Nom du mur": "",
+		"Pays financeur": "Macédoine",
+		"Pays frontalier": "Grèce",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 2,
+		"Sources": "Courrier International"
       },
       "geometry": {
         "type": "LineString",
@@ -4296,12 +4890,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Georgie-Russie",
-        "zone": "Moyen-Orient",
-        "objet": "terrorisme",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 85
+        "Nom du mur": "",
+		"Pays financeur": "Russie",
+		"Pays frontalier": "Georgie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "terrorisme",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "x",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 85,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -4420,12 +5025,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Hongrie-Roumanie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": ""
+        "Nom du mur": "",
+		"Pays financeur": "Hongrie",
+		"Pays frontalier": "Roumanie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": "",
+		"Sources": "RFI"
       },
       "geometry": {
         "type": "LineString",
@@ -4476,12 +5092,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Hongrie-Croatie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 116
+        "Nom du mur": "",
+		"Pays financeur": "Hongrie",
+		"Pays frontalier": "Croatie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 116,
+		"Sources": "Le Monde"
       },
       "geometry": {
         "type": "LineString",
@@ -4528,12 +5155,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Lettonie-Russie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 90
+        "Nom du mur": "",
+		"Pays financeur": "Lettonie",
+		"Pays frontalier": "Russie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "Immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 90,
+		"Sources": "Sputnik News"
       },
       "geometry": {
         "type": "LineString",
@@ -4604,12 +5242,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Estonie-Russie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2015,
-        "fin": "",
-        "longueur": 108
+         "Nom du mur": "",
+		"Pays financeur": "Estonie",
+		"Pays frontalier": "Russie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": 2018,
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 108,
+		"Sources": "Sputnik News"
       },
       "geometry": {
         "type": "LineString",
@@ -4704,12 +5353,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Inde-Bhoutan",
-        "zone": "Asie-Sud",
-        "objet": "",
-        "debut": "",
-        "fin": "",
-        "longueur": ""
+        "Nom du mur": "",
+		"Pays financeur": "Inde",
+		"Pays frontalier": "Bhoutan",
+		"Zone géographique": "Asie",
+		"Continent": "Asie",
+		"objet de la séparation": "",
+		"zone de conflit": "",
+		"immigration": "",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2015,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": "",
+		"Sources": "france culture"
       },
       "geometry": {
         "type": "LineString",
@@ -4864,12 +5524,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Calais (R-U, France)",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2016,
-        "fin": "",
-        "longueur": 3
+        "Nom du mur": "Mur de Calais",
+		"Pays financeur": "Royaume Uni",
+		"Pays frontalier": "France",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2016,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 3,
+		"Sources": ""
       },
       "geometry": {
         "type": "LineString",
@@ -4900,12 +5571,23 @@
     {
       "type": "Feature",
       "properties": {
-        "nom": "Norvege-Russie",
-        "zone": "Europe",
-        "objet": "immigration",
-        "debut": 2016,
-        "fin": "",
-        "longueur": ""
+        "Nom du mur": "",
+		"Pays financeur": "Norvège",
+		"Pays frontalier": "Russie",
+		"Zone géographique": "Europe",
+		"Continent": "Europe",
+		"objet de la séparation": "immigration",
+		"zone de conflit": "",
+		"immigration": "x",
+		"terrorisme": "",
+		"trafic": "",
+		"inégalités": "",
+		"Date annonce": 2016,
+		"Construction": "",
+		"Fin construction": "",
+		"Destruction": "",
+		"Longueur (km)": 0,
+		"Sources": "L'Obs"
       },
       "geometry": {
         "type": "LineString",

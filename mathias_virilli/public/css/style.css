@@ -85,6 +85,23 @@ path {
   stroke-linecap: round;
 }
 
+.arc2 {
+  fill: none;
+  stroke: #FFE812;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+}
+
+
+.arc3 {
+  fill: none;
+  stroke: #FFB655;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+}
+
+
+
 .bar {
   fill: steelblue;
 }
