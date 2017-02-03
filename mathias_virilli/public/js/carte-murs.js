@@ -12,16 +12,76 @@ var projection = d3.geo.equirectangular()
 
 var path = d3.geo.path()
     .projection(projection);
+    
+var tooltip = d3.select("#carte-murs").append("div")
+    					.attr("class","tooltip") 
+    					.attr("opacity",0.0); 
+ 
+           
+d3.json("data/murs.json", function(error, json) {
+	if (error) throw error;
 
-d3.json("data/exemple.json", function(error, json) {
-    if (error) throw error;
-    svgCarte.selectAll("path")
-	    .data(json.features)
-	    .enter()
-	    .append("path")
-	    .attr("class","arc")
-	    .attr("d", path);
+	window.sites_data=json.features;
+		
 });
+var display= function(data){
+
+  
+   svgCarte.selectAll("path")
+		.data(data)
+	   .exit()
+		.remove();
+		
+	 svgCarte.selectAll("path")
+		.data(window.sites_data)
+	   .exit()
+		.remove();
+		
+	svgCarte.selectAll("a")
+		.data(data)
+	   .enter()
+		.append("path")
+		.attr("class","arc")
+		.attr("d", path)
+		.on("mouseover",MouseOverFunction)
+		.on("mouseout",MouseOutFunction)
+		.transition().duration(200);
+	
+
+};
+
+function MouseOverFunction(d,i) {
+	d3.select(this).style(
+		"stroke", "orange"
+		
+	).style(
+		"stroke-width", "5px"
+		
+	);
+
+
+     tooltip.html("hi world")
+     					.style("left",(d3.event.pageX)+"px")
+    					.style("top",(d3.event.pageY+20)+"px")
+    					.style("opacity",1.0);
+}
+
+
+function MouseOutFunction(d,i) {
+	d3.select(this).style(
+		"stroke", "red"
+		
+	).style(
+		"stroke-width", "1.5px"
+		
+	);
+	tooltip.style("opacity",0.0);
+	
+	
+}
+
+
+
 
 d3.json("data/world-110m.json", function(error, topology) {
     if (error) throw error;
@@ -32,3 +92,21 @@ d3.json("data/world-110m.json", function(error, topology) {
       .attr("class", "land-boundary");
 
 });
+
+var minDateUnix = 1989;
+var maxDateUnix = 2018;
+var secondsInDay = 1;
+var newData;
+d3.select('#slider3').call(d3.slider()
+  .axis(true).min(minDateUnix).max(maxDateUnix).step(secondsInDay)
+  .on("slide", function(evt, value) {
+     newData = _(sites_data).filter(function(site) {
+ 
+    	
+      return site.properties.debut <= value;
+
+    });	 
+    display(newData);
+  
+  })
+);
