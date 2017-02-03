@@ -89,8 +89,8 @@ p{
   z-index: 1;
   position: absolute;
   width: 28vw;
-  bottom: 18vw;
-  left: 69vw;
+  bottom: 2vw;
+  left: 63vw;
 }
 
 #center
@@ -280,7 +280,7 @@ p{
   100% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
 }
 
-.inner {
+.effect1 {
   z-index: 10;
   position: absolute;
   background-color:transparent;
@@ -289,6 +289,32 @@ p{
   border-radius:50px;
   left: 118vh;
   bottom: 26vh;
+  box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+.effect2 {
+  z-index: 10;
+  position: absolute;
+  background-color:transparent;
+  width: 10vh;
+  height: 10vh;
+  border-radius:50px;
+  left: 57vh;
+  bottom: 19.7vh;
+  box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+  -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+.effect3 {
+  z-index: 13;
+  position: absolute;
+  background-color:transparent;
+  width: 10.5vh;
+  height: 10.5vh;
+  border-radius:50px;
+  left: 125.3vh;
+  bottom: 38.2vh;
   box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
   -webkit-animation: pulse 1s linear 1s infinite;
 }
