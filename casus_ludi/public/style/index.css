@@ -29,10 +29,11 @@ html, body{
 	margin:0;
 	height: 10%;
 	width: 35%;
-	font-size: 2.5vh;
+	font-size: 2.5vmin;
 	top:18%;
 	left:31.5%;
 	text-align: center;
+	color:#000044;
 }
 
 #texte-bouton{
@@ -41,7 +42,7 @@ html, body{
 	margin:0;
 	height: 3.5%;
 	width: 11%;
-	font-size: 1.7vh;
+	font-size: 1.7vmin;
 	top:26.45%;
 	left:43%;
 	text-align: center;
@@ -200,8 +201,8 @@ video{
 	z-index: 50;
 	position:absolute;
 	width:49.8%;
-	height: 45%;
-	top:33%;
+	height: 49.8%;
+	top:27%;
 	right:11.4%;
 	opacity:0;
 }
@@ -258,6 +259,14 @@ li {
     display: inline-block;
 }
 
+#divDownload{
+	display : inline-block;
+	width : 30%
+	height: 100%;
+	position : absolute;
+	top : -20%;
+	left : 30%;
+}
 
 .textLegend {
 	display: inline;
@@ -272,12 +281,17 @@ li {
 
 /* DATAVIZ 1*/
 
-
+#titre{
+	position: absolute;
+	width: 35%;
+	height: 18%;
+	left:15%;
+}
 #graphe{
 	position: absolute;
-	width: 50%;
+	width: 45%;
 	margin:auto;
-	top:19%;
+	top:21%;
 	left:1%;
 	font-size: 85%
 }
@@ -286,69 +300,58 @@ li {
 	margin-left: 6.5%;
 }
 
+
 #imagePerso{
 	position: absolute;
-	top:50%;
+	top:60%;
 	width: 15%;
 	left:62%;
 }
 
 #imageBullePerso{
 	position: absolute;
-	top:50%;
-	width: 20%;
+	top:60%;
+	width: 21%;
 	height: 40%;
 	left:72%;
 }
-
-#topCreate{
+#topCreate,#flopCreate,#topUpdate,#flopUpdate{
 	position: absolute;
-	left:62%;
+	width: 13%; 
+	height: 18%;
+}
+
+#topCreate,#flopCreate{
 	top:10%;
-	width: 15%; 
-	height: 18%;
-	border: 3px solid #A0A0A0; 
-	background: #C0C0C0;
 }
 
-#flopCreate{
-	position: absolute;
-	left:78%;
-	top:10%;
-	width: 15%; 
-	height: 18%;
-	border: 3px solid #A0A0A0; 
-	background: #C0C0C0;
+#topUpdate,#flopUpdate{
+	top:37%;
 }
 
-#topUpdate{
-	position: absolute;
-	left:62%;
-	top:30%;
-	width: 15%; 
-	height: 18%;
-	border: 3px solid #A0A0A0; 
-	background: #C0C0C0;
+#topCreate,#topUpdate{
+	left:63.3%;
 }
 
-#flopUpdate{
-	position: absolute;
-	left:78%;
-	top:30%;
-	width: 15%; 
-	height: 18%;
-	border: 3px solid #A0A0A0; 
-	background: #C0C0C0;
+#flopCreate,#flopUpdate{
+	left:81%;
 }
+
 
 #topFlop p{
-	font-size:2vh;
+	font-size:1.8vmin;
 }
+
+li {
+  list-style-type: decimal;
+  color:#000033;
+}
+
 
 #explicationAnnee{
 	position: absolute;
 	left:77%;
-	top:58%;
+	top:68%;
 	width: 15%; 
 	height: 23%;
 	/*border: 3px solid #000000; */
@@ -358,10 +361,60 @@ li {
 	display: none;
 }
 
-#explication2013 p, #explication2014 p,#explication2015 p,#explication2016 p,#explication2017 p{
-	opacity:0;
+
+#imageTopC,#imageFlopC,#imageTopU,#imageFlopU{
+	position: absolute;
+	height:20%;
+	width:10%;
 }
 
+#imageTopC,#imageTopU{
+	left:61%;
+}
+
+#imageFlopC,#imageFlopU{
+	left:75%;
+}
+
+#imageTopC,#imageFlopC{
+	top:2%;
+}
+
+#imageTopU,#imageFlopU{
+	top:33%; 
+}
+
+#legendC,#legendU{
+	position:absolute;
+	top:92.5%;
+}
+
+#donneP,#donneM{
+	position:absolute;
+	top:90%;
+	font-size:2vmin;
+}
+#legendC,#legendU{
+	width: 5%; 
+}
+
+#legendC{
+	left:8%;
+}
+
+#donneP{
+	left:14%;
+}
+
+#legendU{
+	left:26%;
+}
+
+#donneM{
+	left:32%;;
+}
+
+/*** Remerciement ***/
 #outro-fond{
 	width: 100%;
 	height:100%;
@@ -369,12 +422,38 @@ li {
 	left,right: 0;
 }
 
-#remerciements{
+#remerciementsText{
 	position: absolute;
 	width: 80%;
 	height: 20%;
-	font-size: 2.30vh;
-	top:3%;
+	/*font-size: 2.21vh;*/
+	font-size:1.8vmin;
+	top:10%;
 	left:9.7%;
 	text-align: center;
+	color:#000044;
+}
+
+#remerciements{
+	z-index: -3;
+	position: absolute;
+	width: 80%;
+	height: 20%;
+	font-size: 2.5vmin;
+	top:2%;
+	left:9.7%;
+	text-align: center;
+	color:#000044;
+}
+
+#partenaires{
+	z-index: -3;
+	position: absolute;
+	width: 80%;
+	height: 20%;
+	font-size: 1vw;
+	top:79%;
+	left:9.2%;
+	text-align: center;
+	color:#000044;
 }

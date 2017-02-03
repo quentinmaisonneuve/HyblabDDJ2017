@@ -81,8 +81,6 @@ $(document).ready(function(){
                         }
                         else if(index == 2){
                                 animerMotion();
-                        }else if(index == 3){
-                                anime2013();
                         }
                 },
                 afterRender: function(){},

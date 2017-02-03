@@ -31,71 +31,24 @@ $(function(){
 		switch($( "input:checked" ).val()){
 			case '2013':
        			texte2013();
-       			reset();
-       			anime2013();
             break;
             case '2014':
        			texte2014();
-       			reset();
-       			anime2014();
             break;
             case '2015':
        			texte2015();
-       			reset();
-       			anime2015();
             break;
             case '2016':
        			texte2016();
-       			reset();
-       			anime2016();
             break;
             case '2017':
        			texte2017();
-       			reset();
-       			anime2017();
             break;
 		}
 
 	});
 
 });
-// Animation texte
-function anime2013(){
-	$('p:nth-child(1)').transition({opacity:1},2000);
-	$('p:nth-child(2)').transition({opacity:1,delay:1500},2000);
-	$('p:nth-child(3)').transition({opacity:1,delay:3000},2000);
-}
-function anime2014(){
-	$('p:nth-child(1)').transition({opacity:1},2000);
-	$('p:nth-child(2)').transition({opacity:1,delay:1500},2000);
-	$('p:nth-child(3)').transition({opacity:1,delay:3000},2000);
-}
-function anime2015(){
-	$('p:nth-child(1)').transition({opacity:1},2000);
-	$('p:nth-child(2)').transition({opacity:1,delay:1500},2000);
-	$('p:nth-child(3)').transition({opacity:1,delay:3000},2000);
-}
-function anime2016(){
-	$('p:nth-child(1)').transition({opacity:1},2000);
-	$('p:nth-child(2)').transition({opacity:1,delay:1500},2000);
-	$('p:nth-child(3)').transition({opacity:1,delay:3000},2000);
-}
-function anime2017(){
-	$('p:nth-child(1)').transition({opacity:1},2000);
-	$('p:nth-child(2)').transition({opacity:1,delay:1500},2000);
-	$('p:nth-child(3)').transition({opacity:1,delay:3000},2000);
-}
-// Remise à zéro
-function reset(){
-	$('p:nth-child(1)').transition({opacity:0});
-	$('p:nth-child(2)').transition({opacity:0});
-	$('p:nth-child(3)').transition({opacity:0});
-}
-
-/*function stopAnime(){
-	stop true true
-	$('explicationAnnee').
-}*/
 
 // Actualisation des textes explicatifs selon l'année sélectionné
 function texte2013(){

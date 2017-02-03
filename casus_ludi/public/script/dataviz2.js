@@ -4,7 +4,7 @@
 // when loading our scripts
 setTimeout(function(){
     
-    var arrayColor = {"association" : "#A5C0F5","budget" : "#698AF0","couts-des-services" : "#002CE6","culture" : "#87A5F2","education" : "#96B2F4","election" : "#7897F1","Environnement" : "#2D54EA","equipements" : "#5A7DEE","marche-public" : "#1E47E9","permis-de-construire" : "#4B6FED","pv-deliberations" : "#C3DBF8","subventions" : "#B4CDF6","transport" : "#3C62EB","urbanisme" : "#0F39E7", "France" : "none"}; 
+    var arrayColor = {"association" : "#96B2F4","budget" : "#5A7DEE","couts-des-services" : "#001DC3","culture" : "#00F365","education" : "#00F02B","election" : "#7897F1","Environnement" : "#00F7BE","equipements" : "#00F483","marche-public" : "#1E47E9","permis-de-construire" : "#3C62EB","pv-deliberations" : "#C3DBF8","subventions" : "#B4CDF6","transport" : "#00F6A0","urbanisme" : "#00F9DB", "France" : "none"}; 
     var regions = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comte","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d-Azur"]; 
     var arrayRegionsX = {"Auvergne-Rhone-Alpes" : 107,"Bourgogne-Franche-Comte" : 29,"Bretagne" : -94,"Centre-Val-de-Loire" : -109,"Corse" : 239,"Grand-Est" : 348,"Hauts-de-France" : 131,"Ile-de-France" : 150,"Normandie" : -85,"Nouvelle-Aquitaine" : -189,"Occitanie" : -140,"Pays-de-la-Loire" : -329,"Provence-Alpes-Cote-d-Azur" : 72}
     var arrayRegionsY = {"Auvergne-Rhone-Alpes" : -8,"Bourgogne-Franche-Comte" : 98,"Bretagne" : -287,"Centre-Val-de-Loire" : 49,"Corse" : 363,"Grand-Est" : -136,"Hauts-de-France" : -287,"Ile-de-France" : -13,"Normandie" : 41,"Nouvelle-Aquitaine" : -86,"Occitanie" : 119,"Pays-de-la-Loire" : 48,"Provence-Alpes-Cote-d-Azur" : 310}
@@ -162,7 +162,19 @@ setTimeout(function(){
     circle.attr("r", function(d) { return d.r * k; });
   }
 
+    var dataDownload = datavizDownLoad();
 
+    console.log(dataDownload);
 
-}, 3000);
+    new Chartist.Pie('.ct-chart', {
+      series: dataDownload
+    }, {
+      donut: true,
+      donutWidth: 60,
+      startAngle: 270,
+      total: 200,
+      showLabel: false
+    });
+
+}, 5000);
 

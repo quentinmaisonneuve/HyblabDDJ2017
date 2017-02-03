@@ -11,10 +11,10 @@ var types = ["service","democratique"];
 
 var arrayYearRegionC =  [];
 var arrayYearRegionU = [];   
-var arrayRegionKeyword = []; 
-var arrayKeywordRegion = []; 
-var arrayRegionDownload = []; 
-var arraySerDemo = []; 
+var arrayRegionKeyword = {}; 
+var arrayKeywordRegion = {}; 
+var arrayRegionDownload = {}; 
+var arraySerDemo = {}; 
 
 for(var year in years){
     arrayYearRegionC[years[year]] = []; 
@@ -29,24 +29,23 @@ for(var keyword in keywords){
 }
 
 for(var region in regions){
-    arrayRegionKeyword[regions[region]] = []; 
+    arrayRegionKeyword[regions[region]] = {}; 
     arrayRegionKeyword[regions[region]].all = 0; 
-    arrayRegionDownload[regions[region]] = []; 
+    arrayRegionDownload[regions[region]] = {}; 
     arrayRegionDownload[regions[region]].all = 0; 
 }
 
 for(var other in others){
-    arrayRegionKeyword[others[other]] = []; 
+    arrayRegionKeyword[others[other]] = {}; 
     arrayRegionKeyword[others[other]].all = 0; 
-    arrayRegionDownload[others[other]] = []; 
+    arrayRegionDownload[others[other]] = {}; 
     arrayRegionDownload[others[other]].all = 0; 
 }
 
 for(var type in types){
-    arraySerDemo[types[type]] = []; 
+    arraySerDemo[types[type]] = {}; 
     arraySerDemo[types[type]].all = 0; 
 }
-
 
 fetch('data/data.json')
     // this promise will be fulfilled when the json fill will be
@@ -193,6 +192,22 @@ function dataUpdateYear(year){
     return data; 
 }
 
+/*function classementCreationTop(){
+    arrayYearRegionC[2013]["Hauts-de-France"]
+}
+
+function classementCreationFlop(){
+
+}
+
+function classementModificationTop(){
+
+}
+
+function classementModificationFlop(){
+
+}*/
+
 function decimalAdjust(type, value, exp) {
     // Si la valeur de exp n'est pas définie ou vaut zéro...
     if (typeof exp === 'undefined' || +exp === 0) {
@@ -213,9 +228,6 @@ function decimalAdjust(type, value, exp) {
     return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
 }
 
-function updateData(year){
-    
-}
 function datavizCircle(){
     var data = {"name":"France","children" : [] };  
     for(region in regions){
@@ -230,3 +242,15 @@ function datavizCircle(){
     }
     return data; 
 }
+
+function datavizDownLoad(region = "all"){
+    if(region == "all"){
+        return arrayKeywordRegion[regions["all"]];
+    }
+}
+
+function getSerDemo(type, region){
+    //console.log("Hellllllo            ", arraySerDemo[type][region]);
+    return arraySerDemo[type][region];
+};
+

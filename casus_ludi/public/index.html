@@ -18,7 +18,7 @@
 
   <!-- JS --> 
   <script src="script/modele.js"></script>
-  
+
   <!-- LIENS BOOTSTRAP SI NÉCÉSSAIRE
   <LINK rel="stylesheet" type="text/css" href="style/bootstrap-3.3.5-dist/css/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -59,7 +59,7 @@
     <section class="section">
       <span class="responsive_container">
         <!-- animé dans script/animation.js -->
-        <text id="sous-titre">Panorama de la France à l’ère de la <br/>“République numérique”</text>
+        <text id="sous-titre">Observatoire de la diffusion des données démocratiques et servicielles</text>
         <a href="#Intro"><text id="texte-bouton">Découvrir</text></a>
         <img id="image_fond" src="img/FOND.svg" alt="image accueil"/>
         <img id="nuages" src="img/nuages.svg" alt="image nuages"/>
@@ -80,7 +80,7 @@
         <img id="paupieresBas" src="img/DATA2/paupieresBas.svg"/>
         <img id="yeux" src="img/DATA2/yeux.svg"/>
         <img id="tableau" src="img/DATA2/tableau.svg"/>
-        <img id="thumbnail" src="img/thumbnail_video.png"/>
+        <img id="thumbnail" src="img/thumbnail_video2.png"/>
         <img id="aiguilleMotion1" src="img/aiguille1.svg"/>
         <img id="aiguilleMotion2" src="img/aiguille2.svg"/>
         <video id="videoMotion" controls="controls">
@@ -90,9 +90,15 @@
     </section>
     <section class="section">
       <span class="responsive_container responsive-container-exception">
+      	<!-- Titre -->
+		<img id="titre" src="img/titre_data1.png" alt="titre"/>
         <!-- Personnage -->
 		<img id="imagePerso" src="img/PersonnageViz1.svg" alt="personnage 1"/>
-
+		<!-- Cadre Top-Flop -->
+		<img id="imageFlopC" src="img/mod/top-flop1.png" alt="top-flop publication"/>
+		<img id="imageTopC" src="img/mod/top-flop2.png" alt="top-flop modification"/>
+		<img id="imageTopU" src="img/mod/topbleu.png" alt="top-flop publication"/>
+		<img id="imageFlopU" src="img/mod/flopbleu.png" alt="top-flop modification"/>
 		<!-- Bulle Personnage -->
 		<img id="imageBullePerso" src="img/bulle.svg" alt="bulle"/>
 		<!-- Graphe -->
@@ -114,35 +120,43 @@
 			</div>
 		</div>
 
-		<!-- Top-Flop -->
+		<!-- Legende -->
+		<div id="legende">
+			<img id="legendC" src="img/Legendes/bouton-texte.svg" alt="lengende publication"/>
+			<p id="donneP">Données publiées</p>
+			<img id="legendU" src="img/Legendes/bouton-texte2.svg" alt="lengende modification"/>
+			<p id="donneM">Données modifiées</p>
+		</div>
+		
+		<!-- Donnée Top-Flop -->
 		<div id="topFlop">
 			<div id="topCreate"> 
 				<ul>
-					<li>Centre-Val-de-Loire</li>
-				  	<li>Auvergne-Rhone-Alpes</li>
-				  	<li>Ile-de-France</li>
-				</ul> 
+					<li>Centre-Val</li>
+					<li>Auvergne-Rhone-Alpes</li>
+					<li>Ile-de-France</li>
+				</ul>
 			</div>
 			<div id="flopCreate">
 				<ul>
-					<li>Centre-Val-de-Loire</li>
-				  	<li>Auvergne-Rhone-Alpes</li>
-				  	<li>Ile-de-France</li>
-				</ul> 
+					<li>Centre-Val</li>
+					<li>Auvergne-Rhone-Alpes</li>
+					<li>Ile-de-France</li>
+				</ul>
 			</div>
 			<div id="topUpdate">
 				<ul>
-					<li>Centre-Val-de-Loire</li>
-				  	<li>Auvergne-Rhone-Alpes</li>
-				  	<li>Ile-de-France</li>
-				</ul>  
+					<li>Centre-Val</li>
+					<li>Auvergne-Rhone-Alpes</li>
+					<li>Ile-de-France</li>
+				</ul> 
 			</div>
 			<div id="flopUpdate">
 				<ul>
-					<li>Centre-Val-de-Loire</li>
-				  	<li>Auvergne-Rhone-Alpes</li>
-				  	<li>Ile-de-France</li>
-				</ul> 
+					<li>Centre-Val</li>
+					<li>Auvergne-Rhone-Alpes</li>
+					<li>Ile-de-France</li>
+				</ul>
 			</div>
 		</div>
 
@@ -181,37 +195,182 @@
       <span class="responsive_container">
         <h1> Quelle répartition entre les régions et les thématiques ? </h1>
         <!-- CODE ICI -->
-        <p>Cliquez sur chaque région pour visualiser la part de chaque mot-clé et le nombre de téléchargements correspondant.</p> 
-        <span>  
+        <p>Cliquez sur chaque région pour visualiser la part de chaque mot-clé sur la carte et le nombre de téléchargements correspondant.</p> 
+        <div>  
             <div style="display : inline-block" width="50%" "> <svg id="circleChart" width="500" height="500"></svg></div>
-            <div id="divLegend"  width="50%"> 
+            <div id="divLegend"  width="20%" height="100%"> 
             <ul>
-                <li><svg class="mapLegend" style="top: 39px; left: 29px"><circle cx="10" cy="10" r="10" fill="#002CE6" /></svg><p class="textLegend">Coûts des services</p></li>
-                <li><svg class="mapLegend" ><circle cx="10" cy="10" r="10" fill="#0F39E7" /></svg><p class="textLegend">Urbanisme </p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#1E42E9" /></svg><p class="textLegend">Marché public</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#2D54EA" /></svg><p class="textLegend">Environnement</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#3C62EB" /></svg><p class="textLegend">Transport</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#4B6FED" /></svg><p class="textLegend">Permis de construire</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#5A7DEE" /></svg><p class="textLegend">Equipements</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#698AF0" /></svg><p class="textLegend">Budget</p></li>
+                <li><svg class="mapLegend" style="top: 39px; left: 29px"><circle cx="10" cy="10" r="10" fill="#001DC3" /></svg><p class="textLegend">Coûts des services</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#1E47E9" /></svg><p class="textLegend">Marché public</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#3C62EB" /></svg><p class="textLegend">Permis de construire</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#5A7DEE" /></svg><p class="textLegend">Budget</p></li>
                 <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#7897F1" /></svg><p class="textLegend">Election</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#87A5F2" /></svg><p class="textLegend">Culture</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#96B2F4" /></svg><p class="textLegend">Education</p></li>
-                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#A5C0F5" /></svg><p class="textLegend">Association</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#96B2F4" /></svg><p class="textLegend">Association</p></li>
                 <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#B4CDF6" /></svg><p class="textLegend">Subvention</p></li>
                 <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#C3DBF8" /></svg><p class="textLegend">PV et délibérations</span></li>
+
+                <li><svg class="mapLegend" ><circle cx="10" cy="10" r="10" fill="#00F9DB" /></svg><p class="textLegend">Urbanisme </p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#00F7BE" /></svg><p class="textLegend">Environnement</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#00F6A0" /></svg><p class="textLegend">Transport</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#00F483" /></svg><p class="textLegend">Equipements</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#00F365" /></svg><p class="textLegend">Culture</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#00F02B" /></svg><p class="textLegend">Education</p></li>
+
             </ul>
 
             </div>
-         </span>
+            <div id="divDownload"> <div id="downloadChart"></div>
+            </div>
+         </div>
 
         <!--<div display="inline-block"> <div id="chart2"> </div> </span>
       </div>-->
     </section>
     <section class="section">
       <span class="responsive_container">
-        <!-- CODE ICI -->
-        Dataviz 3
+        <style type="text/css">
+          body{background-color:white;}
+          a{text-decoration:none;color:black}
+          .choix{
+            background-color:white;
+            text-align:center;
+          }
+          tr.sousGauche{
+            border-width:1px;
+            border-style:solid;
+          }
+          tr.sousDroite{
+            border-width:1px;
+            border-style:solid;
+          }
+          #affiche_balance{
+            background-color:white;
+          }
+          h1{
+            background-color:white;
+            text-align:center;
+          }
+          p{
+            margin-top:0;
+            margin-bottom:10px;
+            margin-right:0;
+            margin-left:0;
+          }
+          p.sousGauche{
+            background-color:white;
+            text-align:right;
+          }
+          p.sousDroite{
+            background-color:white;
+            text-align:left;
+          }
+          caption{
+            caption-side:top;
+            text-align:center;
+          }
+          #aiguilleBalance{
+            transform: rotate(-45deg);
+            width:75px;
+            position:absolute;
+            top:10%;
+            right:47.35%;
+          }
+          .textee{
+            margin-left:25px;
+            text-align:justify;
+          }
+          a.menu3{
+            text-align:center;
+            color:#002BE5;
+          }
+          #poids1{visibility:hidden; position:absolute;}
+          #poids2{visibility:hidden; position:absolute;}
+          img.bouton{display: block;
+                     margin: auto;};
+      </style>
+    <div id='title'>
+      <h1>Quelle proportion entre les données démocratiques et servicielles ?</h1>
+    </div>
+    <div>
+      <table width='100%'>
+        <tr width='100%'>
+          <td width='33%'>
+            <a class='menu3' id='democratique' href='#dataviz3'><img class='bouton' src='./img/bouton.svg' width='50px' heigth='50px'></br><p>Données démocratiques</p></a>
+          </td>
+          <td width='33%'>
+            <a class='menu3' id='tauxRegion' href='#dataviz3'><img class='bouton' src='./img/bouton3.svg' width='50px' height='50px'><p>Opposition sur une région</p></a>
+            </td>
+          <td class='bouton' width='33%'>
+            <a class='menu3' id='service' href='#dataviz3'><img class='bouton' src='./img/bouton2.svg' width='50px' heigth='50px'></br><p>Données servicielles</p></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <table>
+      <tr>
+        <td width='33%' height='90%'>
+          <table class='choix' id='gauche'>
+            <tr><p class='sousGauche' id='Auvergne-Rhone-Alpes'><a href='#dataviz3'>Auvergne-Rhônes-Alpes</a></p></tr>
+            <tr><p class='sousGauche' id='Bourgogne-Franche-Comte'><a href='#dataviz3'>Bourgogne-Franche-Comté</a></p></tr>
+            <tr><p class='sousGauche' id='Bretagne'><a href='#dataviz3'>Bretagne</a></p></tr>
+            <tr><p class='sousGauche' id='Centre-Val-de-Loire'><a href='#dataviz3'>Centre-Val-de-Loire</a></p></tr>
+            <tr><p class='sousGauche' id='Corse'><a href='#dataviz3'>Corse</a></p></tr>
+            <tr><p class='sousGauche' id='Grand-Est'><a href='#dataviz3'>Grand-Est</a></p></tr>
+            <tr><p class='sousGauche' id='Hauts-de-France'><a href='#dataviz3'>Hauts-de-France</a></p></tr>
+            <tr><p class='sousGauche' id='Ile-de-France'><a href='#dataviz3'>Île-de-France</a></p></tr>
+            <tr><p class='sousGauche' id='Normandie'><a href='#dataviz3'>Normandie</a></p></tr>
+            <tr><p class='sousGauche' id='Nouvelle-Aquitaine'><a href='#dataviz3'>Nouvelle-Aquitaine</a></p></tr>
+            <tr><p class='sousGauche' id='Occitanie'><a href='#dataviz3'>Occitanie</a></p></tr>
+            <tr><p class='sousGauche' id='Pays-de-la-Loire'><a href='#dataviz3'>Pays-de-la-Loire</a></p></tr>
+            <tr><p class='sousGauche' id='Provence-Alpes-Cote-d-Azur'><a href='#dataviz3'>Provence-Alpes-Côtes-D'Azur</a></p></tr>
+          </table>
+        </td>
+        <td id='caseBalance' width='33%' height='90%'>
+          <div id='affiche_balance'>
+            <img id='poids1' src="./img/poids.svg">
+            <img id='poids2' src="./img/poids.svg">
+            <object id='balance' data="./img/Balance.svg" width="640px" height="360px" type="image/svg+xml">
+                <embed id='balance_ie' src="./img/Balance.svg" width="500" height="500" type="image/svg+xml" />
+            </object>
+            <img id='aiguilleBalance' src="./img/aiguilleBalance.svg" width="640px" height="360px">
+          </div>
+        </td>
+        <td id='Droit' width='33%' height='90%'>
+          <table class='choix' id='droit'>
+            <tr><p class='sousDroite' id='Auvergne-Rhone-Alpes'><a href='#dataviz3'>Auvergne-Rhônes-Alpes</a></p></tr>
+            <tr><p class='sousDroite' id='Bourgogne-Franche-Comté'><a href='#dataviz3'>Bourgogne-Franche-Comté</a></p></tr>
+            <tr><p class='sousDroite' id='Bretagne'><a href='#dataviz3'>Bretagne</a></p></tr>
+            <tr><p class='sousDroite' id='Centre-Val-de-Loire'><a href='#dataviz3'>Centre-Val-de-Loire</a></p></tr>
+            <tr><p class='sousDroite' id='Corse'><a href='#dataviz3'>Corse</a></p></tr>
+            <tr><p class='sousDroite' id='Grand-Est'><a href='#dataviz3'>Grand-Est</a></p></tr>
+            <tr><p class='sousDroite' id='Hauts-de-France'><a href='#dataviz3'>Hauts-de-France</a></p></tr>
+            <tr><p class='sousDroite' id='Ile-de-France'><a href='#dataviz3'>Île-de-France</a></p></tr>
+            <tr><p class='sousDroite' id='Normandie'><a href='#dataviz3'>Normandie</a></p></tr>
+            <tr><p class='sousDroite' id='Nouvelle-Aquitaine'><a href='#dataviz3'>Nouvelle-Aquitaine</a></p></tr>
+            <tr><p class='sousDroite' id='Occitanie'><a href='#dataviz3'>Occitanie</a></p></tr>
+            <tr><p class='sousDroite' id='Pays-de-la-Loire'><a href='#dataviz3'>Pays-de-la-Loire</a></p></tr>
+            <tr><p class='sousDroite' id='Provence-Alpes-Cote-d-Azur'><a href='#dataviz3'>Provence-Alpes-Côtes-D'Azur</a></p></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <thead>
+        <th> Données démocratiques </th>
+        <th width='10%'></th>
+        <th> Données servicielles </th>
+      <tr>
+        <td class='textee' width='45%'>
+          Il s’agit des données qui ne peuvent pas être exploitées pour développer des services mais qui permettent de connaître et de comprendre les débats, les prises de décisions et les actions des collectivités publiques. Elles regroupent l’association, le budget, coûts et service, les élections etc...
+        </td>
+        <td width='10%'></td>
+        <td class='textee ' width='45%'>
+         Il s’agit des données qui peuvent être exploitées pour développer ou améliorer un service public ou un service commercial. Ici elles comprennent l'environnement, la culture, le transport ou les équipements etc…
+        </td>
+      </tr>
+    </table>
+    </br>
+        SOURCE : <a href='http://data.gouv.fr'>http://data.gouv.fr</a>
       </span>
     </section>
     <section class="section">
@@ -223,10 +382,11 @@
     <section class="section">
       <span class="responsive_container">
           <img id="outro-fond" src="img/remerciements.svg"/>
-          <text id="remerciements">
-            <h1>REMERCIEMENTS</h1>
-            Un projet riche et enrichissant, il a permis un véritable travail d’équipe et un mélange fou de compétences avec un groupe de jeunes dynamiques, créatifs et pleins de joie. On ne remerciera jamais assez Ouest Médialab ainsi que la participation d’Audencia SciencesCom, L’AGR école d’image et Polytech Nantes. Merci aussi à Casus Ludi pour nous avoir confié ce projet. Longue vie à John Cena, à bientôt !
+          <h1 id="remerciements">REMERCIEMENTS</h1>
+          <text id="remerciementsText">
+            Ce projet riche et enrichissant a permis le véritable travail d’équipe et mélange de compétences d'un groupe de jeunes dynamiques, créatifs et motivés. Nous souhaitons remercier Ouest Médialab ainsi qu’Audencia SciencesCom, L’AGR école d’image et Polytech Nantes. Merci évidemment à Casus Ludi pour nous avoir confié ce projet.
           </text>
+          <h1 id="partenaires">PARTENAIRES</h1>
       </span>
     </section>
   </div>
@@ -237,3 +397,5 @@
 </body>
 <script type="text/javascript" src="script/dataviz1.js"></script>
 <script src="script/dataviz2.js" defer></script>
+<script src="script/dataviz3.js" defer></script>
+  
