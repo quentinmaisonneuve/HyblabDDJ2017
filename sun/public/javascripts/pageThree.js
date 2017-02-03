@@ -4,7 +4,7 @@
 function initBubble(node)
 {
 
-    var diameter = 600, //max size of the bubbles
+    var diameter = 400, //max size of the bubbles
         color    = d3.scale.category20b(); //color category
 
     var bubble = d3.layout.pack()

@@ -234,11 +234,11 @@ html, body{
             filter: brightness(1.8) grayscale(1) opacity(.9);
 }
 
-input[type=radio]{
+.cc-selector input[type=radio]{
     display: none;
 }
 /* Affichage par défaut du bouton radio personnalisé */
-input[type=radio] + label:before {
+.cc-selector input[type=radio] + label:before {
     border: 2px solid #004266;
     border-radius: 50%;
     display: inline-block;
@@ -249,36 +249,36 @@ input[type=radio] + label:before {
     margin: 0 auto;
 }
 /* Affichage du bouton radio personnalisé quand il est sélectionné */
-input[type=radio]:checked + label:before {
+.cc-selector input[type=radio]:checked + label:before {
     background: #004266;
     border-color: #004266;
     box-shadow: inset 0px 0px 0px 2px #FFD000;
 }
 
-label.drinkcard-cc.printemps::before{
+.cc-selector label.drinkcard-cc.printemps::before{
 	margin-top: 80%;
 	margin-right: 35%;
 }
-label.drinkcard-cc.ete::before{
+.cc-selector label.drinkcard-cc.ete::before{
 	margin-top: 80%;
 	margin-right: 26%;
 }
-label.drinkcard-cc.automne::before{
+.cc-selector label.drinkcard-cc.automne::before{
 	margin-top: 80%;
 	margin-right: 9%;
 }
-label.drinkcard-cc.hiver::before{
+.cc-selector label.drinkcard-cc.hiver::before{
 	margin-top: 80%;
 	margin-right: 35%;
 }
 
-label.drinkcard-cc.ete {
+.cc-selector label.drinkcard-cc.ete {
 	margin-left: 5%;
 }
-label.drinkcard-cc.automne {
+.cc-selector label.drinkcard-cc.automne {
 	margin-left: 5%;
 }
-label.drinkcard-cc.hiver {
+.cc-selector label.drinkcard-cc.hiver {
 	margin-left: 7%;
 }
 
