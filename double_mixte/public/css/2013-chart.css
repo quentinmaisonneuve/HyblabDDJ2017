@@ -37,9 +37,6 @@
 }
 
 
-
-
-
 .ct-legend {
     position: relative;
     z-index: 10;
@@ -87,4 +84,8 @@
 .ct-legend li.ct-series-1:before {
     background-color: #ffed43;
     border-color: #ffed43;
+}
+
+#val_graph2013 {
+	font-family: Josefin Sans;
 }
