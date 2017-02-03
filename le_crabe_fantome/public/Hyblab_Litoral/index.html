@@ -8,7 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
 
 		<script type="text/javascript" src="fullPage.js-master/jquery.fullPage.js"></script>
 
@@ -241,6 +241,8 @@
 				<div class="slide">
 					<section> Data liées 1</section>
 					<a href="#3rdPage/1"> Retour au jeu </a>
+					<svg id="chart_bateau1" width=600 height=400></svg>
+					<text id="text_age_bateau" width=100 height=50></text>
 				</div>
 				<div class="slide">
 					<section> Data liées 2</section>
@@ -253,7 +255,7 @@
 				<div class="slide">
 					<section> Data liées 4</section>
 					<a href="#3rdPage/4"> Retour au jeu </a>
-					<svg class="chart_habitat" width=400 height=400></svg>
+					<svg class="chart_habitat2" width=400 height=400></svg>
 				</div>
 			</section>
 			<section class="Partenaires">
@@ -272,5 +274,6 @@
 			</section>
 		</section>
 	</body>
-	<script src="./js/graph_habitat.js"></script>
+	<script src="js/graph_habitat.js"></script>
+	<script src="js/bateau_chart.js"></script>
 </html>

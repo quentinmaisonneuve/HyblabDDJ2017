@@ -1,14 +1,7 @@
-var svgContainer = d3.select(".chart_habitat");
+var svgContainer = d3.select(".chart_habitat1");
 
 var height=svgContainer.node().getBoundingClientRect().height;
 var width=svgContainer.node().getBoundingClientRect().width;
-
-var data=[
-{value:0.25},
-{value:0.4},
-{value:0.25},
-{value:0.1}];
-
 
 var color=["#062a3a","#6a9dae","#b8e8f2","#ffffff"];
 
