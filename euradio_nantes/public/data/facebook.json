@@ -7,230 +7,51 @@
 
 	"provenancePaysPourcentage":
 	[
-	  {
-	    "pays": "France",
-	    "quantité": 6352,
-	    "pourcentage": "81,59"
-	  },
-	  {
-	    "pays": "Italie",
-	    "quantité": 206,
-	    "pourcentage": "2,65"
-	  },
-	  {
-	    "pays": "Belgique",
-	    "quantité": 189,
-	    "pourcentage": "2,43"
-	  },
-	  {
-	    "pays": "Espagne",
-	    "quantité": 105,
-	    "pourcentage": "1,35"
-	  },
-	  {
-	    "pays": "Allemagne",
-	    "quantité": 98,
-	    "pourcentage": "1,26"
-	  },
-	  {
-	    "pays": "Royaume Uni",
-	    "quantité": 83,
-	    "pourcentage": "1,07"
-	  },
-	  {
-	    "pays": "Etats Unis",
-	    "quantité": 63,
-	    "pourcentage": "0,81"
-	  },
-	  {
-	    "pays": "Canada",
-	    "quantité": 48,
-	    "pourcentage": "0,62"
-	  },
-	  {
-	    "pays": "Suisse",
-	    "quantité": 36,
-	    "pourcentage": "0,46"
-	  },
-	  {
-	    "pays": "Portugal",
-	    "quantité": 31,
-	    "pourcentage": "0,4"
-	  },
-	  {
-	    "pays": "Algérie",
-	    "quantité": 29,
-	    "pourcentage": "0,37"
-	  },
-	  {
-	    "pays": "FGrèce",
-	    "quantité": 29,
-	    "pourcentage": "0,37"
-	  },
-	  {
-	    "pays": "Roumanie",
-	    "quantité": 24,
-	    "pourcentage": "0,31"
-	  },
-	  {
-	    "pays": "Maroc",
-	    "quantité": 23,
-	    "pourcentage": "0,3"
-	  },
-	  {
-	    "pays": "Tunisie",
-	    "quantité": 18,
-	    "pourcentage": "0,23"
-	  },
-	  {
-	    "pays": "Pologne",
-	    "quantité": 17,
-	    "pourcentage": "0,22"
-	  },
-	  {
-	    "pays": "Irlande",
-	    "quantité": 16,
-	    "pourcentage": "0,21"
-	  },
-	  {
-	    "pays": "Mexique",
-	    "quantité": 16,
-	    "pourcentage": "0,21"
-	  },
-	  {
-	    "pays": "Brésil",
-	    "quantité": 16,
-	    "pourcentage": "0,21"
-	  },
-	  {
-	    "pays": "Pays Bas",
-	    "quantité": 14,
-	    "pourcentage": "0,18"
-	  },
-	  {
-	    "pays": "Hongrie",
-	    "quantité": 13,
-	    "pourcentage": "0,17"
-	  },
-	  {
-	    "pays": "Bulgarie",
-	    "quantité": 13,
-	    "pourcentage": "0,17"
-	  },
-	  {
-	    "pays": "Turquie",
-	    "quantité": 11,
-	    "pourcentage": "0,14"
-	  },
-	  {
-	    "pays": "Danemark",
-	    "quantité": 11,
-	    "pourcentage": "0,14"
-	  },
-	  {
-	    "pays": "Sénégal",
-	    "quantité": 11,
-	    "pourcentage": "0,14"
-	  },
-	  {
-	    "pays": "Réunion",
-	    "quantité": 10,
-	    "pourcentage": "0,13"
-	  },
-	  {
-	    "pays": "République Tchèque",
-	    "quantité": 9,
-	    "pourcentage": "0,12"
-	  },
-	  {
-	    "pays": "Géorgie",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Ukraine",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Russie",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Argentine",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Pérou",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Luxembourg",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Autriche",
-	    "quantité": 8,
-	    "pourcentage": "0,1"
-	  },
-	  {
-	    "pays": "Lituanie",
-	    "quantité": 7,
-	    "pourcentage": "0,09"
-	  },
-	  {
-	    "pays": "Inde",
-	    "quantité": 7,
-	    "pourcentage": "0,09"
-	  },
-	  {
-	    "pays": "Suède",
-	    "quantité": 7,
-	    "pourcentage": "0,09"
-	  },
-	  {
-	    "pays": "Finlande",
-	    "quantité": 7,
-	    "pourcentage": "0,09"
-	  },
-	  {
-	    "pays": "Philippines",
-	    "quantité": 6,
-	    "pourcentage": "0,08"
-	  },
-	  {
-	    "pays": "Serbie",
-	    "quantité": 6,
-	    "pourcentage": "0,08"
-	  },
-	  {
-	    "pays": "Guadeloupe",
-	    "quantité": 6,
-	    "pourcentage": "0,08"
-	  },
-	  {
-	    "pays": "Guyane Française",
-	    "quantité": 6,
-	    "pourcentage": "0,08"
-	  },
-	  {
-	    "pays": "Indonésie",
-	    "quantité": 6,
-	    "pourcentage": "0,08"
-	  },
-	  {
-	    "pays": "Chili",
-	    "quantité": 5,
-	    "pourcentage": "0,06"
-	  },
-	  {
-	    "pays": "Australie",
-	    "quantité": 5,
-	    "pourcentage": "0,06"
-	  }
+		{
+          "label": "Italie",
+          "y": 206,
+          "indexLabel": "2,65%"
+        },
+
+        {
+          "label": "Belgique",
+          "y": 189,
+          "indexLabel": "2,43%"
+        },
+        {
+          "label": "Espagne",
+          "y": 105,
+          "indexLabel": "1,35%"
+        },
+        {
+          "label": "Allemagne",
+          "y": 98,
+          "indexLabel": "1,26%"
+        },
+        {
+          "label": "Royaume-Uni",
+          "y": 83,
+          "indexLabel": "1,07%"
+        },
+        {
+          "label": "Etats Unis%",
+          "y": 63,
+          "indexLabel": "0,81%"
+        },
+        {
+          "label": "Canada",
+          "y": 48,
+          "indexLabel": "0,62%"
+        },
+        {
+          "label": "Suisse",
+          "y": 36,
+          "indexLabel": "0,46%"
+        },
+        {
+          "label": "Portugal",
+          "y": 31,
+          "indexLabel": "0,4%"
+        }
 	]
 }

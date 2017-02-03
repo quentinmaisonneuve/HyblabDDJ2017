@@ -121,6 +121,10 @@ a {
     margin-bottom: 20px;
 }
 
+a, a:active, a:focus {
+    outline: none;
+}
+
 /*
 Timeline
 */
@@ -508,6 +512,7 @@ center img {
 }
 .timeline a {
     font-family: "Blogger Sans";
+    text-decoration: none;
 }
 
 /*
