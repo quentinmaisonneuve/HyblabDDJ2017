@@ -29,7 +29,7 @@ function createChart(){
 		width: '600px',
 		height: '300px',
 		axisX: {
-    		offset: 0
+    		offset: 50
   		},
   			axisY: {
     		offset: 60
