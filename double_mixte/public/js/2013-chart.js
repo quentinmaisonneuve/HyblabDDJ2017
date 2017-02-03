@@ -29,7 +29,7 @@ function toto(chart_annee, chart_aout, chart_octobre){
 
     var options = {
         seriesBarDistance: 30,
-        height: "50vh",
+        height: "30vh",
         width: "30vw",
         plugins: [
             Chartist.plugins.legend({
@@ -100,12 +100,14 @@ function toto(chart_annee, chart_aout, chart_octobre){
         $(this).attr('data-placement', 'top');
         $(this).attr('title', 'test');
         
+        $('#texte_nuitees').html(val+ ' nuitées');
+        /*
         if($(this).parent().attr('class') === 'ct-series ct-series-a') {
-            $('#val_graph2013').html('<h3><p id="color-series-a">'+val+' nuitées </p></h3>');
+            $('#texte_nuitees').html(val+' nuitées');
         }
          if($(this).parent().attr('class') === 'ct-series ct-series-b') {
-            $('#val_graph2013').html('<h3><p id="color-series-b">'+val+' nuitées </p></h3>');
-        }
+            $('#texte_nuitees').html('<h3><p id="color-series-b">'+val+' nuitées </p></h3>');
+        }*/
     });
     
 }
