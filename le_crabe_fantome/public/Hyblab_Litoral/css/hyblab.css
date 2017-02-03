@@ -74,8 +74,9 @@ body{
 
 .Titre{
 	background-image: url(../pictures/Intro/titre_nouveau.png);
-	width:993px;
-	height:285px;
+	background-size: contain;
+	width:46vw;
+	height:14vw;
 	margin: auto;
 	position: relative;
 	top : 125px;
@@ -93,16 +94,16 @@ body{
 }
 
 .Cross{
-	width:45px;
-	height: 45px;
+	width: 0.47%;
+	height: 4.6%;
 	background-image: url(../pictures/Boutons/bouton_croix.png);
 	display: inline-block;
 }
 
-#CrossJ1{
+#CrossJ2{
 	position: absolute;
-	left : 2188px;
-	top : 230px;
+	left : 43.8%;
+	top : 21%;
 }
 
 /*INTRO*/
@@ -321,8 +322,9 @@ body{
 	bottom: 11%;
 	left : 10%;
 	background-image: url(../pictures/Intro/image_mer.png);
-	width:533px;
-	height:382px;
+	background-size:contain;
+	width:27.8vw;
+	height:20vw;
 }
 
 .DroiteIntro{
@@ -330,8 +332,9 @@ body{
 	bottom: 11%;
 	right: 10%;
 	background-image: url(../pictures/Intro/illu_homme.png);
-	width:586px;
-	height:415px;
+	background-size:contain;
+	width:30.5vw;
+	height:22vw;
 }
 
 #BoutonP1{
@@ -370,7 +373,7 @@ body{
 	margin-top :30px !important;
 	margin : auto;
 
-	font-size: 40px;
+	font-size: 2vw;
 	text-decoration: none;
 	text-align: center;
 	text-shadow: 2px 0 #86c6ca;
@@ -378,8 +381,8 @@ body{
 	padding-top: 10px; /*permet le centrage vertical*/
 	padding-bottom: 10px;
 
-	width:245px;
-	height:50px;
+	width:10vw;
+	height:3vw;
 	display: block;
 
 	background-color: #6a9dae;
@@ -416,10 +419,11 @@ body{
 	height:100%;
 }
 
-.ImageJeu1{
+.ImageJeu2{
 	display: inline-block;
-	width: 262px;
-	height: 148px;
+	background-size: contain;
+	width: 11vw;
+	height: 6.2vw;
 	background-image: url(../pictures/Carte/bateau_carte.png);
 	position: absolute;
 	bottom: 22%;
@@ -427,10 +431,11 @@ body{
 	font-size: 0;
 }
 
-.ImageJeu2{
+.ImageJeu1{
 	display: inline-block;
-	width: 190px;
-	height: 151px;
+	background-size: contain;
+	width: 10vw;
+	height: 7.8vw;
 	background-image: url(../pictures/Carte/mouettes_rocher.png);
 	position: absolute;
 	top: 24.5%;
@@ -440,8 +445,9 @@ body{
 
 .ImageJeu3{
 	display: inline-block;
-	width: 181px;
-	height: 210px;
+	background-size: contain;
+	width: 6.7vw;
+	height: 7.8vw;
 	background-image: url(../pictures/Carte/algues_carte.png);
 	position: absolute;
 	bottom: 10%;
@@ -451,12 +457,13 @@ body{
 
 .ImageJeu4{
 	display: inline-block;
-	width: 251px;
-	height: 170px;
+	background-size: contain;
+	width: 11.1vw;
+	height: 7.5vw;
 	background-image: url(../pictures/Carte/maison_carte.png);
 	position: absolute;
-	bottom: 41%;
-	left :12.4%;
+	bottom: 42%;
+	left :12.5%;
 	font-size: 0;
 }
 
@@ -465,36 +472,22 @@ body{
 
 }
 
-
-
-
-
-
-
 /*JEU 1*/
 
-.InterfaceJ1 article{
+
+
+
+
+/*JEU 2*/
+
+.InterfaceJ2 article{
 	display: inline-block;
 }
 
-.TextJ1{
+.TextJ2{
 	display: block;
-}
-
-.barre{
-	-webkit-appearance: slider-vertical;
-}
-
-.Mer1{
-	display: inline-block;
-	height: 410px;
-	width: 1300px;
-	margin: auto;
-	background-color: #38a0a7;
-	font-size: 0;
-	border: 10px solid #ffffff;
-	border-top : none;
 	position: absolute;
+<<<<<<< HEAD
 	top : 41%;
 	left :22.93%;
 }
@@ -618,122 +611,191 @@ body{
 	width:  82px;
 	height : 23px;
 	background-image: url(../pictures/Jeu1/rocher_jeu_peche.png);
+=======
+	top : 2%;
+	left : 45.5%;
+}
+
+.TextJ2 p {
+	margin-top : 10px;
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 200px;
+	font-size: 20px;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ2>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ2>p>span>span {
+	line-height: 30px; /* on ajuste le "véritable" line-height du texte */
+}
+
+.barre{
+	-webkit-appearance: slider-vertical;
+}
+
+.FondJ2{
+	display: inline-block;
+	background-image: url(../pictures/Jeu2/visu_jeu_peche.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;    
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
+>>>>>>> 40e518f449336594fca46479523df7f148a49fcb
+}
+
+.Merlu1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Merlu2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Merlu3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Merlu4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Sole1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Sole2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Sole3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Sole4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Homard1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Homard2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Homard3{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.Homard4{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.SoleA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.HomardA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.MerluA{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.BateauP1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.BateauP2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.BateauM1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.BateauM2{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
+}
+.BateauG1{
+	height : 0.1vw;
+	width : 1vw;    
+	position: relative;
+    top: 30vw;
+    left: 45vw;
 }
 
 
-#BateauRougeGrosJ1{
-	position: absolute;
-	left :725px;
-	top : 50px;
-}
-#BateauRougePetitJ1{
-	position: absolute;
-	left : 1150px;
-	top : 20px;
-}
-#BateauBleuClairJ1{
-	position: absolute;
-	left :925px;
-	top : 100px;
-}
-#BateauRoseJ1{
-	position: absolute;
-	left :800px;
-	top : 220px;
-}
-#BateauBleuFonceJ1{
-	position: absolute;
-	left :940px;
-	top : 300px;
-}
-#BateauNoirJ1{
-	position: absolute;
-	left :1100px;
-	top : 200px;
-}
-#MerluJ1-1{
-position: absolute;
-	left : 300px;
-	top : 108px;
-}
-#MerluJ1-2{
-	position: absolute;
-	left :100px;
-	top : 216px;
-}
-#MerluJ1-3{
-	position: absolute;
-	left :250px;
-	top : 276px;
-}
-#ColinJ1-1{
-	position: absolute;
-	left :400px;
-	top : 135px;
-}
-#ColinJ1-2{
-	position: absolute;
-	left :100px;
-	top : 48px;
-}
-#HomardJ1-1{
-	position: absolute;
-	left :225px;
-	top : 155px;
-}
-#HomardJ1-2{
-	position: absolute;
-	left :450px;
-	top : 75px;
-}
-#HomardJ1-3{
-	position: absolute;
-	left :530px;
-	top : 300px;
-}
-#PoissonJ1-1{
-	position: absolute;
-	left :115px;
-	top : 150px;
-}
-#PoissonJ1-2{
-	position: absolute;
-	left :300px;
-	top : 50px;
-}
-#NuageJ1-1{
-position: absolute;
-	left :800px;
-	top : 32px;
-}
-#NuageJ1-2{
-	position: absolute;
-	left :434px;
-	top : 30px;
-}
-#NuageJ1-3{
-	position: absolute;
-	left :180px;
-	top : 51px;
-}
-#NuageJ1-4{
-	position: absolute;
-	left :1010px;
-	top : 71px;
-}
-#PhareJ1{
-	position: absolute;
-	left :40px;
-	top : 49px;
-}
-#RocherJ1{
-	position: absolute;
-	left :10px;
-	top : 132px;
-}
-
-
-.radioJ1 label{
+.radioJ2 label{
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
@@ -750,7 +812,7 @@ position: absolute;
 
 }
 
-.radioJ1 label:after
+.radioJ2 label:after
 {
 	opacity: 0;
 	content: '';
@@ -769,27 +831,22 @@ position: absolute;
 }
 
 
-.radioJ1 input[type=radio]:checked + label:after {
+.radioJ2 input[type=radio]:checked + label:after {
 	opacity: 1;
 	transition: opacity 1s ease-out, transform 1s;
 	transform: rotate(315deg);
 }
 
-.EnsembleRadio, #Bouton2050{
-	position: relative;
-	left: 85%;
-}
-
-
-
-/*JEU 2*/
-/*Taille et image a changer*/
-
-
-.InterfaceJ2 article{
+.EnsembleRadio{
 	display: inline-block;
+	position: absolute;
+	left: 56.5%;
+	top : 28%;
+	width :3%;
 }
+ #Bouton2050{
 
+<<<<<<< HEAD
 .MerJ2{
 	width:  607px;
 	height : 120px;
@@ -840,16 +897,13 @@ position: absolute;
 	width:  139px;
 	height : 264px;
 }
+=======
+ }
+>>>>>>> 40e518f449336594fca46479523df7f148a49fcb
 
-#Touriste1{
-	height : 258px;
-	background-image: url(../pictures/Jeu2/touriste-baigneur.png);
-}
 
-#Touriste2{
-	background-image: url(../pictures/Jeu2/touriste-beauf.png);
-}
 
+<<<<<<< HEAD
 #Touriste3{
 	background-image: url(../pictures/Jeu2/touriste-bimbo.png);
 }
@@ -865,102 +919,10 @@ position: absolute;
 	height : 163px;
 	background-image: url(../pictures/Jeu2/homme_tronc.png);
 }
+=======
 
-#MH1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#MH5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#F4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre1{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre2{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#Huitre5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#P3{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#P4{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N5{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N6{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-#N7{
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
+>>>>>>> 40e518f449336594fca46479523df7f148a49fcb
+
 
 /*Jeu3*/
 
