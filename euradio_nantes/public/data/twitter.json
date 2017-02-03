@@ -1,27 +1,45 @@
 {
-	"audiencePourcentage":
-	{
-		"homme":52,
-		"femme":48
-	},
-	"abonnee":4791,
-	"visites":3475,
-	"mentions":118,
-	"retweet":264,
-	"jaime":262,
-	"interetAudiencePourcentage":
-	{
-		"affaireActu":85,
-		"musique":43
-	},
-	"langueAbonneesPourcentage":
-	{
-		"francais":84,
-		"anglais":47
-	},
-	"picImpression":
-	{
-		"jour":"Jeudi, Vendredi",
-		"horaire":"16-20"
-	}
+	"provenancePaysPourcentage":
+	[
+	  {
+	    "pays": "France",
+	    "pourcentage": "79"
+	  },
+		{
+	    "pays": "Belgique",
+	    "pourcentage": "6"
+	  },
+		{
+	    "pays": "Royaume-Uni",
+	    "pourcentage": "3"
+	  },
+		{
+	    "pays": "Italie",
+	    "pourcentage": "2"
+	  },
+		{
+	    "pays": "Espagne",
+	    "pourcentage": "1"
+	  },
+		{
+	    "pays": "Allemagne",
+	    "pourcentage": "1"
+	  },
+		{
+	    "pays": "Etats-Unis",
+	    "pourcentage": "1"
+	  },
+		{
+	    "pays": "Pays-Bas",
+	    "pourcentage": "1"
+	  },
+		{
+	    "pays": "Canada",
+	    "pourcentage": "1"
+	  },
+		{
+	    "pays": "Grèce",
+	    "pourcentage": "1"
+	  }
+	]
 }
