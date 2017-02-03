@@ -284,8 +284,8 @@ p{
   z-index: 10;
   position: absolute;
   background-color:transparent;
-  width:100px;
-  height:100px;
+  width: 10vh;
+  height: 10vh;
   border-radius:50px;
   left: 118vh;
   bottom: 26vh;
