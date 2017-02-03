@@ -19,4 +19,5 @@ $('.multi-item-carousel .item').each(function(){
   }
 });
 
+/* Caché parce que c'est moche*/
 $('.carousel-control').css("background-image", "none");

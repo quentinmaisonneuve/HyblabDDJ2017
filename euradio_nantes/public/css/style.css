@@ -491,7 +491,7 @@ center img {
 Carrousel
 */
 #theCarousel {
-    width: 50%;
+    width: 65%;
     margin: auto;
     margin-top: 20px;
 }
@@ -525,8 +525,5 @@ Carrousel
 }
 .multi-item-carousel .carouse-control.left,
 .multi-item-carousel .carouse-control.right {
-    background-image: none;
-}
-.carousel-control {
     background-image: none;
 }
