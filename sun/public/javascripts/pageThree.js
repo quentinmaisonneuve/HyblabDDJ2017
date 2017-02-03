@@ -1,19 +1,17 @@
 /* ######################## BUBBLE CHARTS ############################### */
-
-
 var diameter = 600, //max size of the bubbles
     color    = d3.scale.category20b(); //color category
 
 var bubble = d3.layout.pack()
     .sort(null)
     .size([diameter, diameter])
-    .padding(-15.5);
+    .padding(0);
 
 
 var svg = d3.select("#bubble3")
     .append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
+    .attr("width", 800)
+    .attr("height", 400)
     .attr("class", "bubble");
 
 
@@ -35,11 +33,9 @@ function initBubble(node)
         nodes.sort(function(a,b){
            return b.value-a.value;
         });
-        nodes.splice(3); // garder les 3 meilleurs !
-        nodes.sort(function(a,b){
-            return a.value-b.value;
-        });
-
+        nodes.splice(4); // garder les 3 meilleurs !
+        var total = nodes[0].value + nodes[1].value + nodes[2].value + nodes[3].value;
+        console.log("total1:"+total);
         // Define the div for the tooltip
         var div = d3.select("body").append("div")
             .attr("class", "tooltip")
@@ -55,11 +51,40 @@ function initBubble(node)
 
         //create the bubbles
         bubbles.append("svg:image")
-            .attr("xlink:href","./images/vynile-bleu.svg")
-            .attr("width", function(d){ return d.r; })
-            .attr("height", function(d){ return d.r; })
-            .attr("x", function(d){ return d.x; })
-            .attr("y", function(d){ return d.y; })
+            .attr("xlink:href", function(d){
+                if (d.id == nodes[0].id)
+                    return "./images/vynile-rouge.svg";
+                else if (d.id == nodes[1].id)
+                    return "./images/vynile-vert.svg";
+                else if (d.id == nodes[2].id)
+                    return "./images/vynile-bleu.svg";
+                else if (d.id == nodes[3].id)
+                    return "./images/vynile-bleu-gris.svg";
+            })
+            .attr("width", function(d){
+                console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800);
+                return d.value/total * 800 ; })
+            .attr("height", function(d){ return d.value/total * 800 ; })
+            .attr("x", function(d){
+                if (d.id == nodes[0].id)
+                    return 60;
+                else if (d.id == nodes[1].id)
+                    return 250;
+                else if (d.id == nodes[2].id)
+                    return 0;
+                else if (d.id == nodes[3].id)
+                    return 80;
+            })
+            .attr("y", function(d){
+                if (d.id == nodes[0].id)
+                    return 40;
+                else if (d.id == nodes[1].id)
+                    return 20;
+                else if (d.id == nodes[2].id)
+                    return 0;
+                else if (d.id == nodes[3].id)
+                    return 230;
+            })
             .attr("class", function(d) {return d.id})
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
@@ -84,15 +109,33 @@ function initBubble(node)
         //circle.append()
         //format the text for each bubble
         bubbles.append("text")
-            .attr("x", function(d){ return d.x; })
-            .attr("y", function(d){ return d.y + 5; })
+            .attr("x", function(d){
+                if (d.id == nodes[0].id)
+                    return 180;
+                else if (d.id == nodes[1].id)
+                    return 360;
+                else if (d.id == nodes[2].id)
+                    return 0;
+                else if (d.id == nodes[3].id)
+                    return 80;
+            })
+            .attr("y", function(d){
+                if (d.id == nodes[0].id)
+                    return 160;
+                else if (d.id == nodes[1].id)
+                    return 60;
+                else if (d.id == nodes[2].id)
+                    return 0;
+                else if (d.id == nodes[3].id)
+                    return 230;
+            })
             .attr("text-anchor", "middle")
             .text(function(d){ return d["id"]; })
             .attr("class", "bubbleCTxt")
             .style({
                 "fill":"white",
                 "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
-                "font-size": "12px"
+                "font-size": "25px",
             });
     });
 }
@@ -116,13 +159,11 @@ function changeBubble(node)
         nodes.sort(function(a,b){
             return b.value-a.value;
         });
-        nodes.splice(3); // garder les 3 meilleurs !
-        nodes.sort(function(a,b){
-            return a.value-b.value;
-        });
+        nodes.splice(4); // garder les 3 meilleurs !
+        var total = 0;
+        total = nodes[0].value + nodes[1].value + nodes[2].value + nodes[3].value;
 
-
-        d3.selectAll(".bubbleC").data(data);
+        d3.selectAll(".bubbleC").data(nodes);
 
         // SELECT THE SECTION
         var svg = d3.selectAll("#bubble3").transition();
@@ -131,8 +172,10 @@ function changeBubble(node)
         // MAKE THE CHANGE
         svg.selectAll(".bubbleC")   // change the bubble
             .duration(750)
-            .attr("width", function(d){ return d.r; })
+            .attr("width", function(d){console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800); return d.value/total * 800 ; })
+            .attr("height", function(d){ return d.value/total * 800 ; })
             .attr("class", "bubbleC")
+
     });
 
 }
@@ -173,7 +216,7 @@ function getRoad()
 {
     // Style
     var season = $('input[type=radio][name=season]:checked').attr('value');
-    return "./creneau/"+season+"/0/1/20";
+    return "./creneau/"+season+"/1/16/18";
 }
 
 initBubble(getRoad());
