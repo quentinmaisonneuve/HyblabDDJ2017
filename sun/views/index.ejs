@@ -118,11 +118,30 @@
 
 
       <div id="pageThree" class="section">
+
+        <audio id="Alternative">
+          <source src="/music/Alternative.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Rock">
+          <source src="/music/Rock.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Pop">
+          <source src="/music/Pop.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Jazz">
+          <source src="/music/Jazz.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Urban">
+          <source src="/music/Urban.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Electro">
+          <source src="/music/Electro.mp3" type="audio/mp3">
+        </audio>
         <div id="bubble3" width="400" height="200"></div>
-        <input type="radio" name="season" value="summer" onclick="initBubble(getRoad());">Été</input>
-        <input type="radio" name="season" value="spring" onclick="initBubble(getRoad());">Printemps</input>
-        <input type="radio" name="season" value="autumn" onclick="initBubble(getRoad());">Automne</input>
-        <input type="radio" name="season" value="winter" onclick="initBubble(getRoad());">Hiver</input>
+        <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
+        <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
+        <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
+        <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input>
       </div>
 
       <script src="./javascripts/pageOne.js"></script>

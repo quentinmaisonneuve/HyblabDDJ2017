@@ -1,23 +1,24 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
-// TODO: transition http://jsfiddle.net/CCRb5/
+
+var diameter = 400, //max size of the bubbles
+    color    = d3.scale.category20b(); //color category
+
+var bubble = d3.layout.pack()
+    .sort(null)
+    .size([diameter, diameter])
+    .padding(-20.5);
+
+
+var svg = d3.select("#bubble3")
+    .append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+    .attr("class", "bubble");
+
+
 function initBubble(node)
 {
-
-    var diameter = 400, //max size of the bubbles
-        color    = d3.scale.category20b(); //color category
-
-    var bubble = d3.layout.pack()
-        .sort(null)
-        .size([diameter, diameter])
-        .padding(-20.5);
-
-    var svg = d3.select("#bubble3")
-        .append("svg")
-        .attr("width", diameter)
-        .attr("height", diameter)
-        .attr("class", "bubble");
-
     //d3.csv("./csv/test.csv", function(error, data){
     d3.json(getRoad(), function(error, data){
         //convert numerical values from strings to numbers
@@ -57,6 +58,7 @@ function initBubble(node)
             .attr("cx", function(d){ return d.x; })
             .attr("cy", function(d){ return d.y; })
             .attr("class", function(d) {return d.id})
+            .attr("class", "bubbleC")
             .style("fill", function(d) { return color(d.value); })
             .on("mouseover", function(d) {
                 div.transition()
@@ -65,11 +67,13 @@ function initBubble(node)
                 div	.html(getTooltip(d.id))
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
+                musiqueCommence(d.id);
             })
             .on("mouseout", function(d) {
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
+                musiqueArrete(d.id);
             });
 
         //format the text for each bubble
@@ -86,7 +90,46 @@ function initBubble(node)
     });
 }
 
+function changeBubble(node)
+{
 
+    // GET DATA AGAIN
+    d3.json(getRoad(), function(error, data){
+        //convert numerical values from strings to numbers
+        data = data.map(function(d){
+            d.value = +d["value"];
+            return d;
+        });
+
+        //bubbles needs very specific format, convert data to this.
+        var nodes = bubble.nodes({children:data}).filter(function(d) {
+            return (!d.children && d.id != "");
+        });
+
+        nodes.sort(function(a,b){
+            return b.value-a.value;
+        });
+        nodes.splice(3); // garder les 3 meilleurs !
+        nodes.sort(function(a,b){
+            return a.value-b.value;
+        });
+
+
+        d3.selectAll(".bubbleC").data(data);
+
+        // SELECT THE SECTION
+        var svg = d3.select("#bubble3").transition();
+
+
+        // MAKE THE CHANGE
+        svg.selectAll(".bubbleC")   // change the bubble
+            .duration(750)
+            .attr("r", function(d){ return d.r; })
+            .attr("cx", function(d){ return d.x; })
+            .attr("cy", function(d){ return d.y; })
+    });
+
+}
 
 
 /*########################## TOOLTIP ##############################################" */
@@ -128,3 +171,60 @@ function getRoad()
 }
 
 initBubble(getRoad());
+
+
+var audio=null;
+var audioCourant = null;
+
+function musiqueCommence(genre){
+     switch (genre)
+    {
+        case "Alternative et punk":
+            if (audio==null || audioCourant!="Alternative"){
+                audio = document.getElementById("Alternative");
+                audioCourant = "Alternative";
+            }
+            audio.play();
+            break;
+        case "Rock":
+            if (audio==null||audioCourant!="Rock"){
+                audio = document.getElementById("Rock");
+                audioCourant = "Rock";
+            }
+            audio.play();
+            break;
+        case "Electronica":
+            if (audio==null||audioCourant!="Electronica"){
+                audio = document.getElementById("Electro");
+                audioCourant = "Electronica";
+            }
+            audio.play();
+            break;
+        case "Jazz":
+            if (audio==null||audioCourant!="Jazz"){
+                audio = document.getElementById("Jazz");
+                audioCourant = "Jazz";
+            }
+            audio.play();
+            break;
+        case "Pop":
+            if (audio==null||audioCourant!="Pop"){
+                audio = document.getElementById("Pop");
+                audioCourant = "Pop";
+            }
+            audio.play();
+            break;
+        case "Urban":
+            if (audio==null||audioCourant!="Urban"){
+                audio = document.getElementById("Urban");
+                audioCourant = "Urban";
+            }
+            audio.play();
+            break;
+    }
+
+}
+
+function musiqueArrete(genre){
+        audio.pause();
+}
