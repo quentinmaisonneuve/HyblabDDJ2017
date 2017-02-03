@@ -1,6 +1,13 @@
+<script src="js/motherboard.js" defer></script>
 <script>
-    var yCoordinate=getYCoordinate(25);
     var components = [];
+    var ge_small = $(".ge_small");
+    var ge_big = $(".ge_big");
+    var imagesBig = ["img/ge/ge_01.png", "img/ge/ge_02.png", "img/ge/ge_03.png"];
+    var imagesBigPositions = [{x: 23, y: 48}, {x:25, y: 43}, {x: 53, y: 40}];
+    var imagesSmallPositions = [{x: 23, y: 48}, {x:25, y: 43}, {x: 53, y: 40}];
+    var imagesSmall = ["img/me/micro_01.png", "img/me/micro_02.png", "img/me/micro_03.png", "img/me/micro_04.png", "img/me/micro_05.png",
+        "img/me/micro_06.png", "img/me/micro_07.png", "img/me/micro_08.png", "img/me/micro_09.png", "img/me/micro_10.png", "img/me/micro_11.png"];
     function getXCoordinate(xPourcentage){
         return xPourcentage/100*screen.width;
     }
@@ -8,14 +15,30 @@
         return yPourcentage/100*screen.height;
     }
 
-    function image(source) {
+    function completeMotherBoard(pourcentageSmall, pourcentageBig){
+        var numberOfSmall = pourcentageSmall/10;
+        var numberOfBig = pourcentageBig/10;
+        var i;
+        console.log("small comp: "+numberOfSmall);
+        console.log("big comp: "+numberOfBig);
+        for(i=0;i<numberOfSmall;i++){
+            if(i<imagesSmall.length&&i<imagesSmallPositions.length){
+                image(imagesSmall[i], imagesSmallPositions[i]);
+            }
+        }
+        for(i=0;i<numberOfBig;i++){
+            if(i<imagesBig.length&&i<imagesBigPositions.length){
+                image(imagesBig[i], imagesBigPositions[i]);
+            }
+        }
+    }
+
+    function image(source, position) {
         var img = document.createElement("IMG");
         img.src = source;
-        img.width=60;
-        img.height=60;
         img.style.position="absolute";
-        img.style.width="5%";
-        img.style.height="5%";
+        img.style.width="7%";
+        img.style.height="7%";
         img.style.bottom = window.innerHeight+'px';
         var imageId='comp'+components.length;
         var hashTagId='#'+imageId;
@@ -26,27 +49,29 @@
         $(hashTagId).hide();
         var obj = {
             image: $(hashTagId),
-            x: "300px",
-            y: yCoordinate
+            x: getXCoordinate(position.x),
+            y: getYCoordinate(position.y)
         };
-        yCoordinate+=100;
         components.push(obj);
     }
     function animateComponents(){
+        //$('.ge_small').slice(2).addClass('show');
+        $('.ge_big').addClass('show');
+        /*
         console.log("animateComponents");
         var i;
         for (i = 0; i < components.length; i++) {
             var image = components[i].image;
             image.show();
             image.animate({
-                left: components[i].x,
+                right: components[i].x,
                 bottom: components[i].y
             }, 'slow');
         }
-
+        */
     }
-    image("img/micro_01.png");
-    image("img/micro_02.png");
+    //image("img/micro_01.png");
+    //image("img/micro_02.png");
 </script>
 
 <script>
@@ -91,14 +116,49 @@
      */
 </script>
 <style>
-    #platform{
-        width: 60%;
-        height: 60%;
-        left: 0;
-        bottom: 10%;
-        position: absolute;
+    .platform{
+        display: inline-block;
+        height: 100%;
+        width: auto;
+        position: relative;
     }
+    .container_platform{
+        height: 100%;
+        overflow: hidden;
+    }
+    .platform-img{
+        /*
+            margin-top is (100 - height)/2
+         */
+        margin-top: 15%;
+        height: 70%;
+    }
+    .ge{
+        height: 20%;
+        position: absolute;
+        top: -3000px;
+        left: 0;
+        transition: all 2s ease;
+    }
+    .ge_01.show {
+        top:200px;
+        left: 100px;
+    }
+    .ge_02.show {
+        top:230px;
+        left: 500px;
+    }
+    .ge_03.show {
+        top:300px;
+        left: 600px;
+    }
+
 </style>
-<div id="container_platform">
-    <img id="platform" src="img/platforme.png"/>
+<div class="container_platform">
+    <div class="platform">
+        <img class="platform-img" src="img/platform.png"/>
+        <img class="ge ge_01 ge_big" src="img/ge/ge_01.png"/>
+        <img class="ge ge_02 ge_big" src="img/ge/ge_02.png"/>
+        <img class="ge ge_03 ge_big" src="img/ge/ge_03.png"/>
+    </div>
 </div>
