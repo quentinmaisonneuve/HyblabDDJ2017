@@ -122,9 +122,9 @@
 				<img id="2013chiffre6" class="2013chiffre chiffre" src="img/zero.svg"/>
         	</div>
        			
-					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					<div id="val_graph2013"></div>
-					
+				<div class="ct-chart .ct-golden-section" id="chart1"></div>
+				<div id="val_graph2013"></div>
+				<div id="img-nuitees-2013"><img src="img/picto_nuitees.svg"/></div>
 		
 	
 	    </div>
@@ -266,13 +266,13 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
 
-  drawChart();
+  
 	
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-  drawStackedBarChart();
+  
   switch(currentIndex){
     case 0 :
 
@@ -280,10 +280,11 @@ $myCarousel.on('slide.bs.carousel', function (e) {
     case 1 :
       break;
     case 2 :
-
+    	drawStackedBarChart();
       break;
     case 3 :
-
+    	drawChart();
+    break;
 
     case 4 :
     case 5 :

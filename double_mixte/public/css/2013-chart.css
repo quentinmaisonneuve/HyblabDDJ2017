@@ -104,7 +104,10 @@
 }
 
 #val_graph2013 {
-	font-family: Josefin Sans;
+    font-family: Josefin Sans;
+    position: absolute;
+    left: 45vw;
+    top: 69vh;
 }
 
 #chart1 {
@@ -112,4 +115,10 @@
     top: 30vh;
     left: 57vw;
     width: 30vw;
+}
+
+#img-nuitees-2013 {
+    position: absolute;
+    left: 47vw;
+    top: 55vh;
 }
