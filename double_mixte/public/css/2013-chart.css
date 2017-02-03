@@ -70,6 +70,7 @@
     line-height: 16px;
     color: #661600;
     font-family: Josefin Sans;
+    font-size: 1.5em;
 }
 
 .ct-legend li:before {
@@ -106,6 +107,9 @@
 	font-family: Josefin Sans;
 }
 
-#chart1 line {
-	stroke-width: 2vw !important;
+#chart1 {
+    position: absolute;
+    top: 30vh;
+    left: 57vw;
+    width: 30vw;
 }

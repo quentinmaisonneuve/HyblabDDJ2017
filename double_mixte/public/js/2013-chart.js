@@ -51,7 +51,6 @@ function toto(chart_annee, chart_aout, chart_octobre){
         ['screen and (max-width: 640px)', {
             seriesBarDistance: 30,
             showLine: false,
-            height: "10vh",
             axisX: {
                 labelInterpolationFnc: function (value) {
                     return value[0];
@@ -123,8 +122,7 @@ function titi() {
 
 
 $(function() {
-    //drawChart();
-    //$('p').css("color", "red");
+    
 });
 
 /*

@@ -1,7 +1,7 @@
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
-  background : url(../img/VAN/img/bg.svg);
+  background : url(../img/fond2.svg);
 	width:100%;
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
@@ -21,6 +21,13 @@
 }
 .slide2011 {
   width:100%;
+}
+.slide2013 {
+  width:100%;
+  background: url(../img/fond_2013.svg);
+  background-size:     cover;  
+  background-repeat:   no-repeat;
+    background-position: center center;          
 }
 
 .darkerskyblue .skyblue .deepskyblue {
