@@ -26,7 +26,7 @@ h2{
 h3{
     color: #C2DEBC;
 	font-size: 4vmin;
-	text-align: center;	
+	text-align: center;
 	top : 25vh;
 	width: 75vw;
     margin-left : auto;
@@ -143,4 +143,26 @@ h3{
     background-image: url("../img/fleche-droite-blanche.svg");
     float: right;
     margin-right: 8%;
+}
+
+#base1 {
+  position: absolute;
+  top: 0%;
+  width: auto;
+  height: 100%;
+}
+
+#base2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: auto;
+  height: 100%;
+}
+
+#base3 {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: auto;
 }
