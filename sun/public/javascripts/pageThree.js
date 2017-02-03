@@ -1,9 +1,6 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
 
-var audio=null;
-var audioCourant = null;
-
 var diameter = 400, //max size of the bubbles
     color    = d3.scale.category20b(); //color category
 
@@ -70,13 +67,11 @@ function initBubble(node)
                 div	.html(getTooltip(d.id))
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
-                musiqueCommence(d.id);
             })
             .on("mouseout", function(d) {
                 div.transition()
                     .duration(500)
                     .style("opacity", 0);
-                musiqueArrete(d.id); 
             });
 
         //format the text for each bubble
@@ -146,6 +141,9 @@ function getTooltip(genre)
         case "Rock":
             return "Ce qui vous fait vibrer quand vous entendez du rock, c’est de vous imaginer au milieu d’un bon vieux riff ! Veste en cuir sur le dos, vous êtes un accro du Hellfest.";
             break;
+        case "Classique":
+            return "La musique pour vous est avant tout un moyen de vous apaiser. Lorsque les accords s’entremêlent, des frissons traversent votre corps. Votre bonheur : passer de la musique de chambre à l’orchestre symphonique.";
+            break;
         case "Electronica":
             return "De la musique ? Oui mais surtout du son ! Pour s’éclater ou se détendre, des mixes qui vous ensorcellent et vous font vibrer.";
             break;
@@ -171,6 +169,10 @@ function getRoad()
 }
 
 initBubble(getRoad());
+
+
+var audio=null;
+var audioCourant = null;
 
 function musiqueCommence(genre){
      switch (genre)
@@ -222,5 +224,5 @@ function musiqueCommence(genre){
 }
 
 function musiqueArrete(genre){
-        audio.pause();      
+        audio.pause();
 }
