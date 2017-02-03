@@ -80,7 +80,7 @@ path {
 
 .arc {
   fill: none;
-  stroke: red;
+  stroke: #3FFF00;
   stroke-width: 0.5px;
   stroke-linecap: round;
 }
