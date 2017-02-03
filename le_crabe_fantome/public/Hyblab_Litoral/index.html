@@ -24,7 +24,7 @@
 			});
 		</script>
 
-		<script src="script_onload.js"></script>
+		<script src="./js/script_onload.js"></script>
 
 	</head>
 	<body>
@@ -52,6 +52,7 @@
 			</section>
 			<section class="section">
 				<section class="Page2">
+
 					<article class="Presentation"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
 					<article class="MouetteHorizontale" id="MouetteP2"></article>
 
@@ -66,10 +67,12 @@
 						<a class="ImageJeu2" href="#3rdPage/2">Lien Jeu2</a>
 						<a class="ImageJeu3" href="#3rdPage/3">Lien Jeu3</a>
 						<a class="ImageJeu4" href="#3rdPage/4">Lien Jeu4</a>
+						<a class="Credit" href="#lastPage/0">Crédit</a>
 
 					</div>
 				</div>
 				<div class="slide">
+					<article class="TitreJ1"></article>
 					<article class="TextJ1"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
 					<section class="InterfaceJ1">
 
@@ -79,7 +82,8 @@
 					<script src='script_actionJeu1.js'></script>
 				</div>
 				<div class="slide">
-					<article class="TextJ2"><p><span><span>Notre littoral est un écosystème fragile. Il existe de nombreux paramètres qui jouent sur son équilibre.<br/> Tu vas à présent incarner un citoyen de ce littoral qui cherche à comprendre les enjeux de son territoire.<br/> Pour t’aider dans ta quète, les scientifiques du projet COSELMAR seront là pour t’informer,<br/> grâce aux recherches qu’ils ont effectué pendant plusieurs années. <br/>Alors, prêt à faire cohabiter l’homme et l’océan ?</span></span></p></article>
+					<article class="TitreJ2">La pêche aux dilemmes</article>
+					<article class="TextJ2"><p><span><span>Les poissons sont nos amis … mais c’est quand même pas mal en papillote ou accompagné d’un beurre blanc.<br/> Choisis un type de bateau et projette toi en 2050 pour découvrir comment la biomasse et le butin de pêche auront évolué.</span></span></p></article>
 					<section class="InterfaceJ2">
 						<section class="FondJ2">
 							<img class="Merlu1" src="./pictures/Jeu2/merlupetit.png">
@@ -95,15 +99,20 @@
 							<img class="Homard3" src="./pictures/Jeu2/homardmoyen.png">
 							<img class="Homard4" src="./pictures/Jeu2/homardgrand.png">
 
-							<img class="SoleA" src="./pictures/Jeu2/solepetite.png">
-							<img class="HomardA" src="./pictures/Jeu2/homardpetit.png">
-							<img class="MerluA" src="./pictures/Jeu2/merlupetit.png">
+							<img class="SoleA" id="Sa" src="./pictures/Jeu2/solepetite.png">
+							<img class="HomardA" id="Ha" src="./pictures/Jeu2/homardpetit.png">
+							<img class="MerluA" id="Ma" src="./pictures/Jeu2/merlupetit.png">
 
 							<img class="BateauP1" src="./pictures/Jeu2/bateaupetit.png">
 							<img class="BateauP2" src="./pictures/Jeu2/bateaupetit.png">
 							<img class="BateauM1" src="./pictures/Jeu2/bateaumoyen.png">
 							<img class="BateauM2" src="./pictures/Jeu2/bateaumoyen.png">
 							<img class="BateauG1" src="./pictures/Jeu2/bateaugrand.png">
+							<img class="BateauG2" src="./pictures/Jeu2/bateaugrand.png">
+
+							<img class="Homme1" src="./pictures/Jeu2/.png">
+							<img class="Homme2" src="./pictures/Jeu2/.png">
+							<img class="Homme3" src="./pictures/Jeu2/.png">
 
 						</section>
 						<section class="EnsembleRadio">
@@ -123,35 +132,39 @@
 									<input type= "radio" name="scenar" checked="checked" id="scenar4" value="4"></input>
 									<label for="scenar4">Sénario 4</label>
 								</div>
-								<button id="Bouton2050">2050</button>
+								<button class = "Bouton" id="Bouton2050">2050</button>
+								<br/>
+								<button class = "Bouton" id="Reset2">2010</button>
+								
 							</section>
 
 					</section>
-					<a href="#lastPage/2" class="Data">Data</a>
+					<script src='./js/script_actionJeu1.js'></script>
+					<a href="#lastPage/2" class="Bouton" id="Data2">Data</a>
 					<a href="#3rdPage/0" class="Cross" id="CrossJ2"></a>
 				</div>
 				<div class="slide">
-					<section class="Jeu3">Jeu3</section>
+					<article class="TitreJ3"></article>
 					<a href="#lastPage/3" class="Data">Data</a>
 					<a class="Cross" href="#3rdPage/0" id="CrossJ3"></a>
 				</div>
 				<div class="slide">
-					<section class="Jeu4">Jeu4</section>
-
+					<article class="TitreJ4"></article>
 					<section class="InterfaceJ4">
-						<article class="MerJ4-1"></article>
-						<article class="MerJ4-2"></article>
-						<article class="MerJ4-3"></article>
-						<article class="MerJ4-4"></article>
-						<article class="SableJ4"></article>
-						<article class="MaisonJ4-1"></article>
-						<article class="MaisonJ4-2"></article>
-						<article class="MaisonJ4-3"></article>
-						<article class="MaisonJ4-4"></article>
-						<article class="DigueJ4-1"></article>
-						<article class="DigueJ4-2"></article>
-						<article class="DigueJ4-3"></article>
-						<article class="DigueJ4-4"></article>
+						<section class="FondJ4">
+							<img class="Sable" src="./pictures/Jeu4/sable.png">
+							<img class="Mer1" src="./pictures/Jeu4/mer1.png">
+							<img class="Mer2" src="./pictures/Jeu4/mer2.png">
+							<img class="Mer3" src="./pictures/Jeu4/mer3.png">
+							<img class="Mer4" src="./pictures/Jeu4/mer4.png">
+							<img class="Maison1" src="./pictures/Jeu4/maison1.png">
+							<img class="Maison2" src="./pictures/Jeu4/maison2.png">
+							<img class="Maison3" src="./pictures/Jeu4/maison4.png">
+							<img class="Digue1" src="./pictures/Jeu4/digue1.png">
+							<img class="Digue2" src="./pictures/Jeu4/digue2.png">
+							<img class="Digue3" src="./pictures/Jeu4/digue3.png">
+							<img class="Money" src="./pictures/Jeu4/digue3.png">
+						</section>
 					</section>
 
 
@@ -193,23 +206,42 @@
 				</div>
 				<div class="slide">
 					<section> Data liées 4</section>
+					<svg class="chart_habitat" width=400 height=400></svg>
+					<div class="list_annee" width=400 height=100></div>
 					<a href="#3rdPage/4"> Retour au jeu </a>
-					<svg class="chart_habitat2" width=400 height=400></svg>
+
 				</div>
 			</section>
 			<section class="Partenaires">
-				<article class="LogoEclaireur"></article>
-				<article class="LogoCoselmar"></article>
-				<article class="LogoAudencia"></article>
-				<article class="LogoPolytech"></article>
-				<article class="LogoAGR"></article>
-				<article class="LogoMediaLab"></article>
-				<article class="LogoPaysDeLaLoire"></article>
-				<article class="LogoNantes"></article>
-				<article class="LogoUnivNantes"></article>
-				<article class="LogoHyblab"></article>
-				<article class="LogoOpenSourceInitiative"></article>
-				<article class="LogoCC"></article>
+				<div id="bandeau">
+				  <!-- Logo Hyblab -->
+				    <a href="http://www.hyblab.fr/"><img id="hyblab" src="img/logo_hyblab.png" alt="Hyblab DataSport"></a>
+
+				    <!-- Les organisateurs -->
+				    <ul>
+				      <li><a href="http://www.ouestmedialab.fr/"><img src="img/logo_oml.png" alt="Ouest Médialab"></a></li>
+				      <li><a href="http://www.agrnantes.fr"><img src="img/ecoles/logo_agr.png" alt="AGR école de l'image"></a></li>
+				      <li><a href="http://www.univ-nantes.fr/"><img src="img/ecoles/logo_universitenantes.jpg" alt="Université de Nantes"></a></li>
+				      <li><a href="http://www.polytech.univ-nantes.fr/"><img src="img/ecoles/logo_polytech.png" alt="Polytech Nantes"></a></li>
+				      <li><a href="http://sciencescom.audencia.com/"><img src="img/ecoles/logo_sciencescom.jpg" alt="SciencesCom"></a></li>
+				    </ul>
+				    <!-- Les autres logos -->
+				    <ul>
+				      <!-- Logos CC et opensource -->
+				      <li>
+				      <ul>
+				        <li class="stacked"><img id="cc" src="img/logo_cc.png" alt="Creative commons"></li>
+				        <li class="stacked"><img id="opensource" src="img/logo_opensource.png" alt="Open source"></li>
+				      </ul>
+				      </li>
+				      <!-- Logo de votre partenaire -->
+				      <li><a href="http://www.auran.org"><img src="img/partenaires/logo_auran.png" alt="AURAN"></a></li>
+				      <!-- Partenaires institutionnels -->
+				      <li><a href="http://www.paysdelaloire.fr/"><img class="institutionnel" src="img/institutionnels/logo_pdl.png" alt="Pays de La Loire"></a></li>
+				      <li><a href="http://www.stereolux.fr"><img class="institutionnel" src="img/institutionnels/logo_stereolux.png" alt="Stereolux"></a></li>
+				      <li><a href="http://www.nantesmetropole.fr/"><img class="institutionnel" src="img/institutionnels/logo_nantesmetropole.png" alt="Nantes Métropole"></a></li>
+				    </ul>
+				  </div>
 			</section>
 		</section>
 	</body>
