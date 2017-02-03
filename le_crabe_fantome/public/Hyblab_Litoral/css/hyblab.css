@@ -108,216 +108,7 @@ body{
 }
 
 /*INTRO*/
-/*
-.AlgueIntro1{
-	position: absolute;
-	bottom: 185px;
-	left : 500px;
-	background-image: url(../pictures/Intro/algue_verte_petite.png);
-	width:40px;
-	height:129px;
-}
-.AlgueIntro2{
-	position: absolute;
-	bottom : 180px;
-	left : 540px;
-	background-image: url(../pictures/Intro/algue_verte_grande.png);
-	width:54px;
-	height:172px;
-}
-.AlgueIntro3{
-	position: absolute;
-	bottom : 180px;
-	left : 400px;
-	background-image: url(../pictures/Intro/algue_rouge_milieu.png);
-	width:87px;
-	height:251px;
-}
 
-.AlgueIntro4{
-	position: absolute;
-	bottom : 180px;
-	left : 270px;
-	width:108px;
-	height:223px;
-	background-image: url(../pictures/Intro/algue_verte_rocher.png);
-}
-.AlgueIntro5{
-	position: absolute;
-	bottom : 180px;
-	left : 150px;
-	background-image: url(../pictures/Intro/algue_rouge_gauche.png);
-	width:91px;
-	height:227px;
-}
-.AlgueIntro6{
-	position: absolute;
-	bottom: 180px;
-	left : 600px;
-	background-image: url(../pictures/Intro/algue_rouge_droite.png);
-	width:82px;
-	height:172px;
-}
-
-
-#MerluIntro{
-	position: absolute;
-	bottom: 250px;
-	left : 300px;
-	background-image: url(../pictures/Intro/merlu.png);
-	width:172px;
-	height:60px;
-}
-#ColinIntro1{
-	position: absolute;
-	bottom: 350px;
-	left : 550px;
-	background-image: url(../pictures/Intro/colin_lepetit.png);
-	width:136px;
-	height:46px;
-}
-#HomardIntro1{
-	position: absolute;
-	bottom: 130px;
-	left : 442px;
-	background-image: url(../pictures/Intro/homard.png);
-	width:202px;
-	height:63px;
-}
-.BullesGIntro{
-	background-image: url(../pictures/Intro/bubulles.png);
-	width:20px;
-	height:20px;
-}
-.BullesPIntro{
-	background-image: url(../pictures/Intro/bulles.png);
-	width:15px;
-	height:15px;
-}
-.BullesTGIntro{
-	position: absolute;
-	bottom: 430px;
-	left : 550px;
-	background-image: url(../pictures/Intro/bububulles.png);
-	width:32px;
-	height:32px;
-}
-#BullesIntro1{
-	position: absolute;
-	bottom: 470px;
-	left : 520px;
-
-}
-#BullesIntro2{
-	position: absolute;
-	bottom: 475px;
-	left : 604px;
-}
-#BullesIntro3{
-	position: absolute;
-	bottom: 400px;
-	left : 225px;
-}
-#BullesIntro4{
-	position: absolute;
-	bottom: 560px;
-	left : 600px;
-}
-#BullesIntro5{
-	position: absolute;
-	bottom: 500px;
-	left : 569px;
-}
-#BullesIntro6{
-	position: absolute;
-	bottom: 425px;
-	left : 240px;
-}
-.FumeeIntro{
-	position: absolute;
-	bottom: 288px;
-	right : 326px;
-	background-image: url(../pictures/Intro/fumee_cheminee.png);
-	width:20px;
-	height:59px;
-}
-
-.PoissonIntro{
-	position: absolute;
-	bottom: 345px;
-	left : 350px;
-	background-image: url(../pictures/Intro/poissons_fond.png);
-	width:183px;
-	height:92px;
-
-}
-#NuageIntro1{
-	background-image: url(../pictures/Intro/nuage_gros.png);
-	width:127px;
-	height:54px;
-	position: absolute;
-	top: 350px;
-	right : 700px;
-}
-.NuagePIntro{
-	background-image: url(../pictures/Intro/nuage_petit.png);
-	width:102px;
-	height:43px;
-
-}
-#NuageIntro2{
-	position: absolute;
-	top: 150px;
-	right : 300px;
-	position: absolute;
-	top: 400px;
-	right : 200px;
-}
-#NuageIntro3{
-	position: absolute;
-	top: 150px;
-	right : 300px;
-	position: absolute;
-	top: 490px;
-	right : 412px;
-}
-
-.ArbreIntro1{
-	position: absolute;
-	bottom: 150px;
-	right : 200px;
-	background-image: url(../pictures/Intro/arbre_rouge.png);
-	width:114px;
-	height:171px;
-}
-
-.ArbreIntro2{
-	position: absolute;
-	bottom: 150px;
-	right : 600px;
-	background-image: url(../pictures/Intro/arbre_rose.png);
-	width:114px;
-	height:206px;
-}
-
-.MaisonIntro1{
-	position: absolute;
-	bottom: 150px;
-	right : 300px;
-	background-image: url(../pictures/Intro/maison_bleue.png);
-	width:126px;
-	height:138px;
-}
-
-.HommeIntro1{
-	position: absolute;
-	bottom: 100px;
-	right : 475px;
-	background-image: url(../pictures/Intro/monsieur.png);
-	width:115px;
-	height:354px;
-}
-*/
 .GaucheIntro{
 	position: absolute;
 	bottom: 11%;
@@ -468,10 +259,32 @@ body{
 	font-size: 0;
 }
 
-.ImageJeu1:hover, .ImageJeu2:hover,.ImageJeu3:hover, .ImageJeu4:hover{
+.Credit{
+	margin-top :30px !important;
+	margin : auto;
+
+	font-size: 2vw;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 0 #86c6ca;
+	color : black;
+	padding-top: 10px; /*permet le centrage vertical*/
+	padding-bottom: 10px;
+
+	width:10vw;
+	height:3vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+.ImageJeu1:hover, .ImageJeu2:hover,.ImageJeu3:hover, .ImageJeu4:hover, .Credit:hover{
 	opacity: 0.7;
 
 }
+
 
 /*JEU 1*/
 
@@ -736,6 +549,11 @@ body{
     top: 5vw;
     left: 20vw;
     border : 0.5vw solid white;
+}
+
+.Sable
+{
+
 }
 .Mer1{
 	height : 0.1vw;
