@@ -116,6 +116,11 @@ a {
   background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
 }
 
+#homeLogo img {
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
 /*
 Timeline
 */

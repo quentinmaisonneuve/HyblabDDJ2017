@@ -192,7 +192,7 @@
     "NOM": "Monkman",
     "PRENOM": "Amy",
     "VILLE": "Ripon",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 3,
     "": ""
@@ -255,7 +255,7 @@
     "NOM": "Lord",
     "PRENOM": "Ellie",
     "VILLE": "Sheffield",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 4,
     "": ""
@@ -462,7 +462,7 @@
     "NOM": "Still",
     "PRENOM": "Victoria",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 6,
     "": ""
@@ -498,7 +498,7 @@
     "NOM": "Novotna",
     "PRENOM": "Hanka",
     "VILLE": "Vrchlabi",
-    "PAYS": "République Tchèque",
+    "PAYS": "République-Tchèque",
     "GENRE": "F",
     "TEAM": 6,
     "": ""
@@ -516,7 +516,7 @@
     "NOM": "Impay",
     "PRENOM": "Joanna",
     "VILLE": "Colchester",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 6,
     "": ""
@@ -552,7 +552,7 @@
     "NOM": "Roberts",
     "PRENOM": "Clare",
     "VILLE": "Retford",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 7,
     "": ""
@@ -714,7 +714,7 @@
     "NOM": "Navanayagam",
     "PRENOM": "Dhatri",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 9,
     "": ""
@@ -723,7 +723,7 @@
     "NOM": "Nield",
     "PRENOM": "Katie",
     "VILLE": "Wolverhampton",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 9,
     "": ""
@@ -732,7 +732,7 @@
     "NOM": "Osborne",
     "PRENOM": "Alexandra",
     "VILLE": "Doncaster",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 9,
     "": ""
@@ -750,7 +750,7 @@
     "NOM": "Alexander Webber",
     "PRENOM": "Miranda",
     "VILLE": "Kent",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 9,
     "": ""
@@ -768,7 +768,7 @@
     "NOM": "Oakes",
     "PRENOM": "Tara",
     "VILLE": "Southport",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 9,
     "": ""
@@ -804,7 +804,7 @@
     "NOM": "Gajic",
     "PRENOM": "Jovana",
     "VILLE": "Novi Sad",
-    "PAYS": "Serbia",
+    "PAYS": "Serbie",
     "GENRE": "F",
     "TEAM": 10,
     "": ""
@@ -813,7 +813,7 @@
     "NOM": "Cotton",
     "PRENOM": "Johnny",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 10,
     "": ""
@@ -849,7 +849,7 @@
     "NOM": "Gavrinevova",
     "PRENOM": "Kristyna",
     "VILLE": "Prague",
-    "PAYS": "République Tchèque",
+    "PAYS": "République-Tchèque",
     "GENRE": "F",
     "TEAM": 10,
     "": ""
@@ -858,7 +858,7 @@
     "NOM": "Gheerbrant",
     "PRENOM": "James",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 10,
     "": ""
@@ -885,7 +885,7 @@
     "NOM": "Wynn",
     "PRENOM": "Samantha",
     "VILLE": "Barnsley - Sheffield",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 11,
     "": ""
@@ -894,7 +894,7 @@
     "NOM": "Seddon",
     "PRENOM": "Paul",
     "VILLE": "Kettering",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 11,
     "": ""
@@ -948,7 +948,7 @@
     "NOM": "Feldman",
     "PRENOM": "Anna",
     "VILLE": "Oxford",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 12,
     "": ""
@@ -966,7 +966,7 @@
     "NOM": "O'Brien",
     "PRENOM": "Richard",
     "VILLE": "Peterborough",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 12,
     "": ""
@@ -1065,7 +1065,7 @@
     "NOM": "Black",
     "PRENOM": "Nina",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 14,
     "": ""
@@ -1074,7 +1074,7 @@
     "NOM": "Hall-Luke",
     "PRENOM": "Sophie",
     "VILLE": "",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 14,
     "": ""
@@ -1083,7 +1083,7 @@
     "NOM": "Hodgson",
     "PRENOM": "Kara",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 14,
     "": ""
@@ -1182,7 +1182,7 @@
     "NOM": "Bucklow",
     "PRENOM": "Harriet",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 15,
     "": ""
@@ -1236,7 +1236,7 @@
     "NOM": "Wright",
     "PRENOM": "Peter",
     "VILLE": "",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 16,
     "": ""
@@ -1272,7 +1272,7 @@
     "NOM": "Ellwood",
     "PRENOM": "Sophie",
     "VILLE": "Claverton Down",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 16,
     "": ""
@@ -1299,7 +1299,7 @@
     "NOM": "Campbell",
     "PRENOM": "Oliver",
     "VILLE": "Bristol",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 17,
     "": ""
@@ -1308,7 +1308,7 @@
     "NOM": "Lindsay",
     "PRENOM": "Annabel",
     "VILLE": "Londres",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 17,
     "": ""
@@ -1317,7 +1317,7 @@
     "NOM": "Hodgson",
     "PRENOM": "Leah",
     "VILLE": "",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 17,
     "": ""
@@ -1344,7 +1344,7 @@
     "NOM": "Davis",
     "PRENOM": "Leah",
     "VILLE": "",
-    "PAYS": "Egham,Royaume-Unis",
+    "PAYS": "Egham,Royaume-Uni",
     "GENRE": "F",
     "TEAM": 18,
     "": ""
@@ -1371,7 +1371,7 @@
     "NOM": "Turner",
     "PRENOM": "Oliver",
     "VILLE": "Rochester Kent",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 18,
     "": ""
@@ -1389,7 +1389,7 @@
     "NOM": "Smith",
     "PRENOM": "Austin",
     "VILLE": "Bristol",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 19,
     "": ""
@@ -1407,7 +1407,7 @@
     "NOM": "Jones",
     "PRENOM": "Bethan",
     "VILLE": "Oxford",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 19,
     "": ""
@@ -1452,7 +1452,7 @@
     "NOM": "Standish",
     "PRENOM": "Benjamin",
     "VILLE": "Nottingham",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 20,
     "": ""
@@ -1461,7 +1461,7 @@
     "NOM": "Ellis",
     "PRENOM": "George",
     "VILLE": "Bristol",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "H",
     "TEAM": 20,
     "": ""
@@ -1470,7 +1470,7 @@
     "NOM": "Ockenden",
     "PRENOM": "Jessica",
     "VILLE": "Oxford",
-    "PAYS": "Royaume-Unis",
+    "PAYS": "Royaume-Uni",
     "GENRE": "F",
     "TEAM": 20,
     "": ""
