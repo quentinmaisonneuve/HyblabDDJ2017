@@ -297,20 +297,29 @@ body{
 .InterfaceJ2 article{
 	display: inline-block;
 }
+.TitreJ2{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 47.5%;
+	font-size: 2.5vw;
+}
 
 .TextJ2{
 	display: block;
 	position: absolute;
 	top : 2%;
-	left : 43.5%;
+	left : 42.5%;
 }
 
 .TextJ2 p {
-	margin-top : 1vw;
 	margin-bottom: auto;
 	text-align: center;
 	line-height: 2vw;
 	font-size: 1.5vw;
+	position: relative;
+	top : 4vw;
+	height: 70vw;
 }
 
 /*Solution trouvée sur le net pour centrer correctement*/
@@ -553,7 +562,16 @@ body{
 	top : 28%;
 	width :3%;
 }
- #Bouton2050{
+ #Bouton2050,#Reset2,#Data2{
+ 	font-size: 1.5vw;
+}
+
+#Data2{
+	position: absolute;
+	bottom : 1vw;
+	left : 41%;
+	padding-top: 1vw;
+	padding-bottom: 0vw;
 }
 
 /*Jeu3*/
