@@ -30,6 +30,12 @@ function toto(chart_annee, chart_aout, chart_octobre){
     var options = {
         seriesBarDistance: 30,
         height: "20em",
+        plugins: [
+            Chartist.plugins.legend({
+                position: 'bottom',
+                legendNames: ['Aout', 'Octobre']
+            })
+        ]
     };
 
     var responsiveOptions = [
@@ -94,13 +100,10 @@ function toto(chart_annee, chart_aout, chart_octobre){
         $(this).attr('data-toggle', 'tooltip');
         $(this).attr('data-placement', 'top');
         $(this).attr('title', 'test');
-        $(this).popover('show');
+        $('#val_graph2013').html('<p>'+val+'</p>');
+
     });
-    $('.ct-bar').popover('show');
-    //callback();
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+    
 }
 
 

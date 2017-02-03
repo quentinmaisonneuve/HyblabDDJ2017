@@ -7,17 +7,17 @@
 }
 
 .ct-series-a > line {
-	stroke: #481C8C !important;
+	stroke: #f43f00 !important;
 }
 
 .ct-series-b > line {
-	stroke: #DE8948 !important;
+	stroke: #ffed43 !important;
 }
-
+/* Label années */
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
     font-size: 1.7em;
-    color: #481C8C;
-    font-family: fantasy;
+    color: #661600;
+    font-family: Josefin Sans;
 }
 
 #label-aout {
@@ -30,4 +30,61 @@
 
 .ct-grid {
     stroke: rgba(0, 0, 0, 0.0);
+}
+
+.ct-label.ct-vertical.ct-start {
+    display: none;
+}
+
+
+
+
+
+.ct-legend {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    text-align: center;
+}
+
+.ct-legend li {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 16px;
+    color: #661600;
+    font-family: Josefin Sans;
+}
+
+.ct-legend li:before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
+
+.ct-legend li.inactive:before {
+    background-color: transparent !important;
+}
+
+.ct-legend li.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ct-legend li.ct-series-0:before {
+    background-color: #f43f00;
+    border-color: #f43f00;
+}
+
+.ct-legend li.ct-series-1:before {
+    background-color: #ffed43;
+    border-color: #ffed43;
 }
