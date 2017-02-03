@@ -645,7 +645,7 @@ body{
 	background-image: url(../pictures/Jeu2/visu_jeu_peche.png);
 	background-size: contain;
 	height : 35vw;
-	width : 60vw;    
+	width : 60vw;
 	position: relative;
     top: 5vw;
     left: 20vw;
@@ -655,140 +655,140 @@ body{
 
 .Merlu1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Merlu2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Merlu3{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Merlu4{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Sole1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Sole2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Sole3{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Sole4{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Homard1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Homard2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Homard3{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .Homard4{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .SoleA{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .HomardA{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .MerluA{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .BateauP1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .BateauP2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .BateauM1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .BateauM2{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
 .BateauG1{
 	height : 0.1vw;
-	width : 1vw;    
+	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
@@ -1343,4 +1343,37 @@ html.fp-enabled,
 	height:80px;
 	display:block;
 	background-color:red;
+}
+
+#dataviz2_img{
+	display: block;
+	margin: auto;
+	width: 70vw;
+	height: 40vw;
+}
+
+#chart_bateau1{
+	position: absolute;
+	top: 9.5vw;
+	left: 235.75vw;
+	width: 32vw;
+	height: 26vw;
+}
+
+#chart_bateau1 .line{
+	fill: none;
+	stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.tick line{
+	display: none;
+}
+
+#text_age_bateau{
+	position: absolute;
+	top: 28vw;
+	left: 222vw;
+	font-size: 2.5vw;
+	color: white;
 }
