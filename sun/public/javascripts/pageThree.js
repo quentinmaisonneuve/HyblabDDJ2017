@@ -1,23 +1,24 @@
 /* ######################## BUBBLE CHARTS ############################### */
 
-// TODO: transition http://jsfiddle.net/CCRb5/
+
+var diameter = 400, //max size of the bubbles
+    color    = d3.scale.category20b(); //color category
+
+var bubble = d3.layout.pack()
+    .sort(null)
+    .size([diameter, diameter])
+    .padding(-20.5);
+
+
+var svg = d3.select("#bubble3")
+    .append("svg")
+    .attr("width", diameter)
+    .attr("height", diameter)
+    .attr("class", "bubble");
+
+
 function initBubble(node)
 {
-
-    var diameter = 400, //max size of the bubbles
-        color    = d3.scale.category20b(); //color category
-
-    var bubble = d3.layout.pack()
-        .sort(null)
-        .size([diameter, diameter])
-        .padding(-20.5);
-
-    var svg = d3.select("#bubble3")
-        .append("svg")
-        .attr("width", diameter)
-        .attr("height", diameter)
-        .attr("class", "bubble");
-
     //d3.csv("./csv/test.csv", function(error, data){
     d3.json(getRoad(), function(error, data){
         //convert numerical values from strings to numbers
@@ -57,6 +58,7 @@ function initBubble(node)
             .attr("cx", function(d){ return d.x; })
             .attr("cy", function(d){ return d.y; })
             .attr("class", function(d) {return d.id})
+            .attr("class", "bubbleC")
             .style("fill", function(d) { return color(d.value); })
             .on("mouseover", function(d) {
                 div.transition()
@@ -86,7 +88,46 @@ function initBubble(node)
     });
 }
 
+function changeBubble(node)
+{
 
+    // GET DATA AGAIN
+    d3.json(getRoad(), function(error, data){
+        //convert numerical values from strings to numbers
+        data = data.map(function(d){
+            d.value = +d["value"];
+            return d;
+        });
+
+        //bubbles needs very specific format, convert data to this.
+        var nodes = bubble.nodes({children:data}).filter(function(d) {
+            return (!d.children && d.id != "");
+        });
+
+        nodes.sort(function(a,b){
+            return b.value-a.value;
+        });
+        nodes.splice(3); // garder les 3 meilleurs !
+        nodes.sort(function(a,b){
+            return a.value-b.value;
+        });
+
+
+        d3.selectAll(".bubbleC").data(data);
+
+        // SELECT THE SECTION
+        var svg = d3.select("#bubble3").transition();
+
+
+        // MAKE THE CHANGE
+        svg.selectAll(".bubbleC")   // change the bubble
+            .duration(750)
+            .attr("r", function(d){ return d.r; })
+            .attr("cx", function(d){ return d.x; })
+            .attr("cy", function(d){ return d.y; })
+    });
+
+}
 
 
 /*########################## TOOLTIP ##############################################" */
