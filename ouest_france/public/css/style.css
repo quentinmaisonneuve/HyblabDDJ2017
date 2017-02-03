@@ -146,6 +146,7 @@ h3{
 }
 
 #base1 {
+  z-index:5;
   position: absolute;
   top: 0%;
   width: auto;
@@ -153,6 +154,7 @@ h3{
 }
 
 #base2 {
+  z-index: 5;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -161,8 +163,83 @@ h3{
 }
 
 #base3 {
+  z-index: 5;
   position: absolute;
   top: -0.4%;
   height: 100%;
   width: auto;
+}
+
+#container1 #encadre1 {
+  z-index: 0;
+  position: absolute;
+  top: 26px;
+  width: 600px;
+  left: 271px;
+}
+
+#container1 #buttonEncadre1
+{
+  position: absolute;
+  opacity: 0;
+  border-radius: 100%;
+  z-index: 11;
+  cursor: pointer;
+  background-color: #1f1c1c;
+  left: 822px;
+  bottom: 181px;
+  height: 76px;
+  width: 77px;
+}
+
+#container2 #encadre2 {
+  z-index: 0;
+  position: absolute;
+  bottom: 203px;
+  width: 600px;
+  left: 426px
+}
+
+#container2 #buttonEncadre2
+{
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0;
+  z-index: 11;
+  cursor: pointer;
+  background-color: #1f1c1c;
+  left: 398px;
+  bottom: 134px;
+  height: 77px;
+  width: 72px;
+}
+
+#drapeau {
+  z-index: 12;
+  position: absolute;
+  bottom: 253px;
+  left: 866px;
+  width: 91px;
+}
+
+#container3 #encadre3 {
+  z-index: 0;
+  position: absolute;
+  width: 600px;
+  bottom: 276px;
+  left: 323px;
+}
+
+#container3 #buttonEncadre3
+{
+  z-index: 13;
+  position: absolute;
+  opacity: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #1f1c1c;
+  height: 80px;
+  bottom: 264px;
+  left: 873px;
+  width: 79px;
 }

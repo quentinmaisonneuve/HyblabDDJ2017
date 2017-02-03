@@ -30,6 +30,7 @@
 
         <!-- Pour ne pas afficher la slide nav lors du "trajet" -->
         <script type="text/javascript" src="js/noSlideNav.js"></script>
+
         <!-- fullPage.js -->
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
         <script type="text/javascript">
@@ -39,6 +40,8 @@
                 });
             });
         </script>
+
+        <script type="text/javascript" src="js/datavizEvent.js" defer></script>
     </head>
 
     <body>
@@ -65,7 +68,6 @@
                 </h3>
                 <input type="button" id="enroute"  value="En Route !"/>
             </div>
-
             <div class="section" id="section1">
                 <div class="intro">
                     <h1>Scroll Down</h1>
@@ -82,24 +84,31 @@
                 <input type="button" class="middle" id="arrow_l"></input>
                 <input type="button" class="middle" id="arrow_d"></input>
 
-                <img class="footer" id="houses" src="img/Visuel-Footer.svg">                
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">
             </div>
 
             <div class="section" id="scenario1">
-                <div class="intro">
+                <div class="intro" id="container1">
                     <img class="base" id="base1" src="img/map-base-01.svg">
+                    <img class="info" id="encadre1" src="img/Volet-Infos.svg">
+                    <button type="button" class="openInfo" id="buttonEncadre1">
                 </div>
 
             </div>
             <div class="section" id="scenario2">
-                <div class="intro">
+                <div class="intro" id="container2">
                     <img class="base" id="base2" src="img/map-base-02.svg">
+                    <img class="info" id="encadre2" src="img/Volet-Infos.svg">
+                    <button type="button" class="openInfo" id="buttonEncadre2">
                 </div>
             </div>
 
             <div class="section" id="scenario3">
-                <div class="intro">
+                <div class="intro" id="container3">
                     <img class="base" id="base3" src="img/map-base-03.svg">
+                    <img class="info" id="encadre3" src="img/Volet-Infos.svg">
+                    <img class="logo_of" id="drapeau" src="img/Point-info.svg">
+                    <button type="button" class="openInfo" id="buttonEncadre3">
                 </div>
             </div>
 
