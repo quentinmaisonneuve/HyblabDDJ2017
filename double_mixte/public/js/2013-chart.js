@@ -38,7 +38,7 @@ function toto(chart_annee, chart_aout, chart_octobre){
             })
         ]
     };
-
+/*
     var responsiveOptions = [
         ['screen and (min-width: 641px) and (max-width: 1024px)', {
             seriesBarDistance: 30,
@@ -57,9 +57,9 @@ function toto(chart_annee, chart_aout, chart_octobre){
                 }
             }
         }]
-    ];
+    ];*/
 
-    var mychart = new Chartist.Bar('#chart1', data, options, responsiveOptions);
+    var mychart = new Chartist.Bar('#chart1', data, options);
 
     mychart.on('draw', function (data) {
         if (data.type === 'bar') {
@@ -122,7 +122,7 @@ function titi() {
 
 
 $(function() {
-    
+
 });
 
 /*
