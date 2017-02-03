@@ -3,6 +3,7 @@
 const LONGUEUR_MAX = 30000;
 const YEAR_BEGIN = 1989;
 const YEAR_END = 2016;
+const OBJETS = ["zone de conflit", "immigration", "terrorisme", "trafic", "inégalités"]
 
 var walls;
 d3.json("data/walls.json", function(error, data) {
@@ -67,8 +68,15 @@ svg.append("path")
     .attr("class", "line");
 
 window.onload = function() {
-    draw(generateDisplayData());
+    updateAnnee(document.getElementById("annee").value);
 }
+
+var ulObjets = document.getElementById("objets-separations");
+OBJETS.forEach(function(obj) {
+    var li = document.createElement("li");
+    li.id = "obj-" + obj;
+    ulObjets.append(li);
+});
 
 
 
@@ -77,7 +85,13 @@ window.onload = function() {
 function updateAnnee(val) {
     document.getElementById("affichage-annee").innerHTML = val;
     
-    draw(generateDisplayData());
+    var displayData = generateDisplayData();
+    draw(displayData.longueurs);
+    
+    OBJETS.forEach(function(obj) {
+        var li = document.getElementById("obj-" + obj);
+        li.innerText = obj + " : " + displayData.objets[obj];
+    });
 }
 
 // Traite les données du JSON pour générer les données à afficher
@@ -85,9 +99,13 @@ function generateDisplayData() {
 
     var annee = document.getElementById("annee").value;
     
-    var displayData = [];
+    var displayData = {'longueurs': [], 'objets': {}};
+    OBJETS.forEach(function(obj) {
+        displayData.objets[obj] = 0;
+    });
+    
     for(var y = YEAR_BEGIN ; y <= YEAR_END ; y++) {
-        displayData.push({'annee': y, 'longueur': 0});
+        displayData.longueurs.push({'annee': y, 'longueur': 0});
     }
 
     // Génération des données à afficher
@@ -95,14 +113,20 @@ function generateDisplayData() {
 	  
         if(d['Date annonce'] !== "" && d['Longueur (km)'] !== "" && d['Date annonce'] <= annee) {
 	        
-            displayData.forEach(function(elem) {
+            displayData.longueurs.forEach(function(elem) {
                 if(elem.annee >= d['Date annonce'] && elem.annee <= annee) {
                     elem.longueur += d['Longueur (km)'];
                 }
             });
+            
+            OBJETS.forEach(function(obj) {
+                if(d[obj] !== "") {
+                    displayData.objets[obj]++;
+                }
+            });
         }
     });
-    
+
     return displayData;
 }
 
