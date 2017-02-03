@@ -23,6 +23,9 @@ $("#scenar1").click(function(e){
 	$("#BateauRoseJ1").fadeOut("slow");
 	$("#BateauBleuFonceJ1").fadeIn("slow");
 	$("#BateauNoirJ1").fadeOut("slow");
+	
+	
+	
 
 });
 
