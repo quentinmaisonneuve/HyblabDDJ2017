@@ -126,6 +126,10 @@ a, a:active, a:focus {
     outline: none;
 }
 
+#mapsvg {
+    width: 66%;
+}
+
 /*
 Timeline
 */
