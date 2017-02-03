@@ -94,16 +94,17 @@ body{
 }
 
 .Cross{
-	width: 0.47%;
-	height: 4.6%;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: url(../pictures/Boutons/bouton_croix.png);
+	background-size: contain;
 	display: inline-block;
 }
 
 #CrossJ2{
 	position: absolute;
-	left : 43.8%;
-	top : 21%;
+	left : 41.8%;
+	top : 2vw;
 }
 
 /*INTRO*/
@@ -488,15 +489,15 @@ body{
 	display: block;
 	position: absolute;
 	top : 2%;
-	left : 45.5%;
+	left : 43.5%;
 }
 
 .TextJ2 p {
-	margin-top : 10px;
+	margin-top : 1vw;
 	margin-bottom: auto;
 	text-align: center;
-	line-height: 200px;
-	font-size: 20px;
+	line-height: 2vw;
+	font-size: 1.5vw;
 }
 
 /*Solution trouvée sur le net pour centrer correctement*/
@@ -508,7 +509,7 @@ body{
 	margin-left : auto;
 }
 .TextJ2>p>span>span {
-	line-height: 30px; /* on ajuste le "véritable" line-height du texte */
+	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
 }
 
 .barre{
