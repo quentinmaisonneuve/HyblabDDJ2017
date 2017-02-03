@@ -22,21 +22,19 @@
             </script>
         <![endif]-->
 
-
+        <!-- ajout des event listener "click" sur le choix du mode de transport -->
+        <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
         <!-- jQuery : librairie nécessaire pour fullPage.js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
         <!-- Pour ne pas afficher la slide nav lors du "trajet" -->
-        <script src="js/noSlideNav.js"></script>
-
+        <script type="text/javascript" src="js/noSlideNav.js"></script>
         <!-- fullPage.js -->
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
-                  //anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-                  //menu: '#menu',
                   afterLoad: updateSlideNav,
                 });
             });
@@ -52,7 +50,7 @@
                 <li><a><span></span></a></li>
                 <li style="display: none"><a><span></span></a></li>
                 <li style="display: none"><a><span></span></a></li>
-                <li><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
                 <li><a><span></span></a></li>
             </ul>
         </div>
@@ -81,10 +79,10 @@
                       <img class="middle" id="route" src="img/Route.svg">
                       <img class="img_car" id="car" src="img/Voiture.svg"></img>
                 </div>
-                <button type="button" class="middle" id="arrow_l" onclick="alert('Précèdent')"></button>
-                <button type="button" class="middle" id="arrow_d"></button>
+                <input type="button" class="middle" id="arrow_l"></input>
+                <input type="button" class="middle" id="arrow_d"></input>
 
-                <img class="footer" id="houses" src="img/Visuel-Footer.svg">
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">                
             </div>
 
             <div class="section" id="scenario1">
