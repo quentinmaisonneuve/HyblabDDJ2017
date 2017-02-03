@@ -96,7 +96,7 @@ body{
 .Cross{
 	width: 2.5vw;
 	height: 2.5vw;
-	background-image: url(../pictures/Boutons/bouton_croix.png);
+	background-image: url(../pictures/Boutons/bouton_maison.png);
 	background-size: contain;
 	display: inline-block;
 }
@@ -490,6 +490,19 @@ body{
     left: 73%;
 }
 
+.Homme1{
+
+}
+
+
+.Homme2{
+	
+}
+
+
+.Homme3{
+	
+}
 
 .radioJ2 label{
 	display: inline-block;
