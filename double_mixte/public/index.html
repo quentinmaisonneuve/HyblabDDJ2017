@@ -7,20 +7,26 @@
 
   	<!-- Chartists -->
 	<script src="lib/chartist.js"></script>
+	<script src="lib/chartist-plugin-legend.js"></script>
 	<link rel="stylesheet" type="text/css" href="lib/chartist.css" />
 
-	
-	
 	<!-- D3 -->
 	<script src='http://cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- Load d3.js and c3.js c3.css -->
+
+	<!-- Load d3.js and c3.js c3.css -->
 	<script src="lib/d3.v3.min.js" charset="utf-8"></script>
 	<script src="lib/c3.min.js" ></script>
 	<link href="lib/c3.css" rel="stylesheet" type="text/css">
+	
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
 	<!-- animate.css -->
 	<link rel="stylesheet" href="lib/animate.css">
+	
+	<!-- Font -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
 	
 	<!-- Nos fichiers CSS -->
 	<link rel="stylesheet" href="css/slide.css">
@@ -28,15 +34,14 @@
 	<link rel="stylesheet" href="css/2014-chart.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
 	<link rel="stylesheet" href="css/2011.css">
+	<link rel="stylesheet" href="css/accueil.css">
+
 
   	<!-- Nos fichiers Javascript -->
 	<script src="js/2012-chart.js" type="text/javascript"></script>
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
-  	<script src="js/2011.js"></script>
-  	<script src="js/2013.js"></script>
-  	<script src="js/2014.js"></script>
-  	<script src="js/2015.js"></script>
+  	<script src="js/tooltip-nuitees.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
 </head>
 
@@ -59,18 +64,15 @@
 
         <!-- First slide -->
         <div class="item active deepskyblue">
+        
+        <center><div id="img-accueil"><img src="img/accueil.svg"></div></center>
 
-        	<div class="carousel-caption">
-
-            	<h3 data-animation="animated bounceInLeft"></h3>
-            	<h3 data-animation="animated bounceInRight"></h3>
-            	<button class="btn btn-primary btn-lg" data-animation="animated zoomInUp"></button>
-          	</div>
         </div> 
 
         <!-- 2011 -->
         <div class="item slide2011">
         	<div class="nbnuitees">
+        		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2011chiffre0" class="2011chiffre chiffre" src="img/zero.svg"/>
 				<img id="2011chiffre1" class="2011chiffre chiffre" src="img/zero.svg"/>
 				<img id="2011chiffre2" class="2011chiffre chiffre" src="img/zero.svg"/>
@@ -83,7 +85,18 @@
 		
 		<!-- 2012 -->
         <div class="item slide2012">
-			<div class="chartandlegend">
+			
+        	<div class="nbnuitees">
+        		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
+        		<img id="2012chiffre0" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre1" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre2" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre3" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre4" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre5" class="2012chiffre chiffre" src="img/zero.svg"/>
+				<img id="2012chiffre6" class="2012chiffre chiffre" src="img/zero.svg"/>
+        	</div>
+        	<div class="chartandlegend">
 				<div id="stackedbartitle">Billeterie des Machines <div id="stackedbartitleunit">(nombre de visiteurs)</div></div>
 				<div id="stackedbarchart" ></div>
 				<div class="containerstacked"></div>
@@ -96,6 +109,7 @@
         <!-- 2013 -->
 	    <div class="item darkerskyblue">
 	    	<div class="nbnuitees">
+	    		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2013chiffre0" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre1" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre2" class="2013chiffre chiffre" src="img/zero.svg"/>
@@ -104,71 +118,85 @@
 				<img id="2013chiffre5" class="2013chiffre chiffre" src="img/zero.svg"/>
 				<img id="2013chiffre6" class="2013chiffre chiffre" src="img/zero.svg"/>
         	</div>
+        	<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="ct-chart .ct-golden-section" id="chart1"></div>
+					
+					<div id="val_graph2013"></div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
 	      	<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4">
 					<div class="ct-chart .ct-golden-section" id="chart1"></div>
-					<span id="label-aout" class="label label-default">Aout</span>
-					<span id="label-octobre" class="label label-default">Octobre</span>
+					
+					<div id="val_graph2013"></div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="ct-chart .ct-golden-section" id="chart1"></div>
+					
+					<div id="val_graph2013"></div>
 				</div>
 				<div class="col-md-4"></div>
 			</div>
 	    </div>
 
         <!-- 2014 -->
-        <div class="item skyblue">
-        	<div class="nbnuitees">
-        		<img id="2014chiffre0" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre1" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre2" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre3" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre4" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre5" class="2014chiffre chiffre" src="img/zero.svg"/>
-				<img id="2014chiffre6" class="2014chiffre chiffre" src="img/zero.svg"/>
-        	</div>
-        	<div class="carousel-caption">
-	            <svg version="1.1"
-	            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	            x="0px" y="0px" width="800px" height="450px"
-	            overflow="visible" xml:space="preserve">
-	            
-		            <!-- Web Circle Bar Chart -->
-		            <g id="circleBarCharts" >
-						<g id="circleBar-web-group" transform="translate(0,0)">
-							<image id="circleBar-web-icon" opacity="0" x="166" y="112" overflow="visible" width="98" height="77" xlink:href="" />
-							<text id="circleBar-web-text" opacity="0" x="200" y="155">Age</text>
-							<g id="circleBar-web-chart" transform="translate(215,150)"></g>
-							<clippath id="circleBar-web-clipPath">
-							<rect id="circleBar-web-clipLabels" x="205" y="215" width="180" height="0"></rect>
-							</clippath>
-						<g id="circleBar-web-legend" clip-path="url(#circleBar-web-clipPath)">
-						<text id="circleBar-web-values" transform="translate(222,225)"></text>
-						<text id="circleBar-web-labels" transform="translate(277,225)"></text>
-						</g>
-					</g>
-		            <!-- END: Web Circle Bar Chart -->
-		              
-		            <!-- Mobile Circle Bar Chart -->
-		            	<g id="circleBar-mobile-group" transform="translate(362,0)">
-		                	<image id="circleBar-mobile-icon" opacity="0" x="195" y="112" overflow="visible" width="40" height="77" xlink:href="" />
-		                	<text id="circleBar-mobile-text" opacity="0" x="187" y="155">Classes sociales</text>
-		                	<g id="circleBar-mobile-chart" transform="translate(215,150)"></g>
-		                	<clippath id="circleBar-mobile-clipPath">
-		                  		<rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
-		                	</clippath>
-		                	<g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
-		                		<text id="circleBar-mobile-values" transform="translate(222,268)"></text>
-		                  		<text id="circleBar-mobile-labels" transform="translate(277,268)"></text>
-		                	</g>
-		             	</g>
-		            </g> <!-- END: Mobile Circle Bar Chart -->
-	          	</svg>
-        	</div>
-    	</div>
+  <!-- 2014 -->
+        <div class="item slide2014">
+          <div class="nbnuitees">
+            <img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
+            <img id="2014chiffre0" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre1" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre2" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre3" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre4" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre5" class="2012chiffre chiffre" src="img/zero.svg"/>
+            <img id="2014chiffre6" class="2012chiffre chiffre" src="img/zero.svg"/>
+          </div>
+           <svg  id="mysvg" viewBox="0 0 800 400" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+            width="90%" height="75%"
+            overflow="visible" xml:space="preserve">
+              <g id="circleBar-web-group" transform="translate(250,0)">
+               <image id="circleBar-web-icon" opacity="0" x="166" y="100" overflow="visible" xlink:href="" />
+               <text id="circleBar-web-text" width="50%" opacity="0" x="200" y="155"></text>
+               <g id="circleBar-web-chart" transform="translate(215,150)"></g>
+               <clippath id="circleBar-web-clipPath">
+                 <rect id="circleBar-web-clipLabels" x="205" y="215" width="200" height="0"></rect>
+               </clippath>
+               <g id="circleBar-web-legend" width=1000px clip-path="url(#circleBar-web-clipPath)">
+                <text id="circleBar-web-values" transform="translate(210,225)"></text>
+                <!--<text id="circleBar-web-labels" transform="translate(220,225)"></text>-->
+              </g>
+            </g>
+
+            <g id="circleBar-mobile-group" transform="translate(0,0)">
+             <image id="circleBar-mobile-icon" opacity="0" x="125" y="48" overflow="visible" xlink:href="" />
+             <text id="circleBar-mobile-text" opacity="0"  x="150" y="155"></text>
+             <g id="circleBar-mobile-chart" width="100%" transform="translate(215,150)"></g>
+             <clippath id="circleBar-mobile-clipPath">
+              <rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
+            </clippath>
+
+            <g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
+              <text id="circleBar-mobile-values" transform="translate(200,268)"></text>
+              <!--<text id="circleBar-mobile-labels" transform="translate(220,268)"></text>-->
+            </g>
+        </g> <!-- END: Mobile Circle Bar Chart -->
+      </svg>
+      </div>
 
     	<!-- 2015 -->
 	    <div class="item darkerskyblue">
 	    	<div class="nbnuitees">
+	    		<img id="info-nuitees" src="img/zero.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2015chiffre0" class="2015chiffre chiffre" src="img/zero.svg"/>
 				<img id="2015chiffre1" class="2015chiffre chiffre" src="img/zero.svg"/>
 				<img id="2015chiffre2" class="2015chiffre chiffre" src="img/zero.svg"/>
@@ -196,23 +224,23 @@
 </div><!-- /.container -->
 
 <script type="text/javascript">
-  
+
 /* 
 Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Maria Antonietta Perna
 */
 (function( $ ) { 
-	// Function to animate slider captions 
-	function doAnimations( elems ) {
-		// Cache the animationend event in a variable
-		var animEndEv = 'webkitAnimationEnd animationend';
-		elems.each(function () {
-			var $this = $(this),
-			$animationType = $this.data('animation');
-			$this.addClass($animationType).one(animEndEv, function () {
-				$this.removeClass($animationType);
-			});
-		});
-  	}
+  // Function to animate slider captions 
+  function doAnimations( elems ) {
+    // Cache the animationend event in a variable
+    var animEndEv = 'webkitAnimationEnd animationend';
+    elems.each(function () {
+      var $this = $(this),
+      $animationType = $this.data('animation');
+      $this.addClass($animationType).one(animEndEv, function () {
+        $this.removeClass($animationType);
+      });
+    });
+  }
   
 // Variables on page load 
 var $myCarousel = $('#carousel-example-generic'),
@@ -228,15 +256,44 @@ doAnimations($firstAnimatingElems);
 $myCarousel.carousel('pause');
 
 $myCarousel.on('slide.bs.carousel', function (e) {
-	var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
-	doAnimations($animatingElems);
-	doGraphAnim2014();
-	drawChart();
-	drawStackedBarChart();
-	animateDigits2011();
-	animateDigits2013();
-	animateDigits2014();
-	animateDigits2015();
+  var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+  doAnimations($animatingElems);
+
+  drawChart();
+   var carouselData = $(this).data('bs.carousel');
+ 
+ var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+  drawStackedBarChart();
+  switch(currentIndex){
+    case 0 :
+
+      break;
+    case 1 :
+      break;
+    case 2 :
+
+      break;
+    case 3 :
+
+
+    case 4 :
+    case 5 :
+      doGraphAnimAge();
+      doGraphAnimCSP();
+      animateDigits(2014);
+      break;
+    case 2 :
+  }
+
+
+  animateDigits(2011);
+  animateDigits(2012);
+  animateDigits(2013);
+  animateDigits(2015);
+  /*animateDigits2012();
+  animateDigits2013();
+  animateDigits2014();
+  animateDigits2015();*/
 });  
 
 
@@ -244,4 +301,3 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 </script>
 </body>
 </html>
-

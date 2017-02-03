@@ -1,6 +1,6 @@
 function animateDigits2013() {
 	$.get("data/nuiteesannuelles.json", function(data) {
-    	var nbNuiteesPrecedentes = data[5].nbnuitees;
+    	var nbNuiteesPrecedentes = data[6].nbnuitees;
         var nbNuitees = data[7].nbnuitees;
         var array = nbNuitees.toString().split("").map(function(t){return parseInt(t)});
         var array2 = nbNuiteesPrecedentes.toString().split("").map(function(t){return parseInt(t)});

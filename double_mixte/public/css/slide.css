@@ -1,5 +1,6 @@
 .container-fluid {
-
+  padding-left: 0px;
+  padding-right: 0px;
   background : url(../img/VAN/img/bg.svg);
 	width:100%;
     background-size:     cover;                      /* <------ */
@@ -12,7 +13,7 @@
 .slide2012 {
   width:100%;
 }
-.deepskyblue {
+.page-accueil {
   width:100%;
 }
 .darkerskyblue {

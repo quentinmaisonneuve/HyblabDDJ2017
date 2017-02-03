@@ -1,14 +1,10 @@
 .nbnuitees {
 	display: inline-block;
-	margin-left: 1%;
+	margin-left: 16%;
+    margin-top: 2%;
 }
 
 .nbnuitees img {
 	width: 3%;
-	margin-left: -0.6%
-}
-
-.chiffre {
-	-vendor-animation-delay: 0s;
-	-webkit-animation-delay: 0s;
+	margin-left: -0.6%;
 }
