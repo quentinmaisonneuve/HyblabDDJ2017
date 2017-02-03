@@ -102,6 +102,10 @@ d3.json("data/world-110m.json", function(error, topology) {
 
 });
 
+const YEAR_BEGIN = 1989;
+const YEAR_END = 2016;
+
+var sliderValue = YEAR_BEGIN;
 var minDateUnix = 1980;
 var maxDateUnix = 2018;
 var secondsInDay = 1;
@@ -109,7 +113,10 @@ var newData;
 d3.select('#slider3').call(d3.slider()
   .axis(true).min(minDateUnix).max(maxDateUnix).step(secondsInDay)
   .on("slide", function(evt, value) {
-     console.log("year courant"+value);
+  
+    sliderValue = value;
+    updateAnnee(value); // pour le graphique
+    
      newData_construit = _(sites_data).filter(function(site) {
  
     	

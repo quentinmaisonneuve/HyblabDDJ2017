@@ -1,8 +1,6 @@
 'use strict';
 
 const LONGUEUR_MAX = 30000;
-const YEAR_BEGIN = 1989;
-const YEAR_END = 2016;
 const OBJETS = ["zone de conflit", "immigration", "terrorisme", "trafic", "inégalités"]
 
 var walls;
@@ -68,7 +66,7 @@ svg.append("path")
     .attr("class", "line");
 
 window.onload = function() {
-    updateAnnee(document.getElementById("annee").value);
+    updateAnnee(sliderValue);
 }
 
 var ulObjets = document.getElementById("objets-separations");
@@ -97,7 +95,7 @@ function updateAnnee(val) {
 // Traite les données du JSON pour générer les données à afficher
 function generateDisplayData() {
 
-    var annee = document.getElementById("annee").value;
+    var annee = sliderValue;
     
     var displayData = {'longueurs': [], 'objets': {}};
     OBJETS.forEach(function(obj) {
@@ -132,7 +130,7 @@ function generateDisplayData() {
 
 function draw(data) {
 
-    var annee = document.getElementById("annee").value;
+    var annee = sliderValue;
 
     // measure the domain
     // now the scales are finished and usable
