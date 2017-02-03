@@ -43,7 +43,7 @@ html, body{
 	width: 11%;
 	font-size: 1.7vh;
 	top:26.45%;
-	left:42.9%;
+	left:43%;
 	text-align: center;
 	font-family:quicksandBold;
 	color:white;
@@ -141,11 +141,30 @@ html, body{
 }
 
 #yeux{
+	z-index: -2;
 	position: absolute;
 	top:32%;
 	left:19.8%;
 	height: 8.5%;
 	width: 8.5%;
+}
+
+#paupieresHaut{
+	z-index: -1;
+	position: absolute;
+	top:23%;
+	left:16.5%;
+	height: 15%;
+	width: 15%;
+}
+
+#paupieresBas{
+	z-index: -1;
+	position: absolute;
+	top:34.7%;
+	left:17%;
+	height: 15%;
+	width: 14%;
 }
 
 #tableau{
@@ -177,10 +196,25 @@ video{
 	opacity:0;
 }
 
+#thumbnail{
+	z-index: 50;
+	position:absolute;
+	width:49.8%;
+	height: 45%;
+	top:33%;
+	right:11.4%;
+	opacity:0;
+}
+
+#thumbnail:hover{
+	cursor:pointer;
+}
+
 .node {
     cursor: pointer;
     stroke : #000040;
-    stroke-width : 2px;
+    stroke-width : 1.5px;
+    stroke-opacity : 0.6;
     margin: 1px;
 }
 
@@ -212,27 +246,135 @@ video{
   pointer-events: none;
 }
 
+li {
+	margin : -3%;
+	width : 108%;
+	list-style-type: none;
+}
+
+#divLegend{
+	bottom: 10%;
+    position: absolute;
+    display: inline-block;
+}
+
+
+.textLegend {
+	display: inline;
+	margin : 1%;
+}
+
+.mapLegend {
+	height : 26px; 
+	width : 20px;
+	margin: 1%;
+}
+
 /* DATAVIZ 1*/
 
 
 #graphe{
 	position: absolute;
 	width: 50%;
-	height: 50%;
 	margin:auto;
-	top:10%;
-	left:20%;
+	top:19%;
+	left:1%;
+	font-size: 85%
 }
 
 #radios{
-	width: 85px;
-
+	margin-left: 6.5%;
 }
 
 #imagePerso{
 	position: absolute;
-	top:15%;
+	top:50%;
 	width: 15%;
-	
+	left:62%;
 }
 
+#imageBullePerso{
+	position: absolute;
+	top:50%;
+	width: 20%;
+	height: 40%;
+	left:72%;
+}
+
+#topCreate{
+	position: absolute;
+	left:62%;
+	top:10%;
+	width: 15%; 
+	height: 18%;
+	border: 3px solid #A0A0A0; 
+	background: #C0C0C0;
+}
+
+#flopCreate{
+	position: absolute;
+	left:78%;
+	top:10%;
+	width: 15%; 
+	height: 18%;
+	border: 3px solid #A0A0A0; 
+	background: #C0C0C0;
+}
+
+#topUpdate{
+	position: absolute;
+	left:62%;
+	top:30%;
+	width: 15%; 
+	height: 18%;
+	border: 3px solid #A0A0A0; 
+	background: #C0C0C0;
+}
+
+#flopUpdate{
+	position: absolute;
+	left:78%;
+	top:30%;
+	width: 15%; 
+	height: 18%;
+	border: 3px solid #A0A0A0; 
+	background: #C0C0C0;
+}
+
+#topFlop p{
+	font-size:2vh;
+}
+
+#explicationAnnee{
+	position: absolute;
+	left:77%;
+	top:58%;
+	width: 15%; 
+	height: 23%;
+	/*border: 3px solid #000000; */
+}
+
+#explication2014,#explication2015,#explication2016,#explication2017{
+	display: none;
+}
+
+#explication2013 p, #explication2014 p,#explication2015 p,#explication2016 p,#explication2017 p{
+	opacity:0;
+}
+
+#outro-fond{
+	width: 100%;
+	height:100%;
+	top,bottom:0;
+	left,right: 0;
+}
+
+#remerciements{
+	position: absolute;
+	width: 80%;
+	height: 20%;
+	font-size: 2.30vh;
+	top:3%;
+	left:9.7%;
+	text-align: center;
+}

@@ -4,6 +4,12 @@ $(document).ready(function(){
 
    		animerIntro();
 
+   		$("#thumbnail").click(function(){
+   			$('video').animate({opacity:1});
+   			$("#thumbnail").animate({opacity:0},500);
+   			$('video').get(0).play();
+   		});
+
 });
 
 function animerIntro(){
@@ -37,7 +43,13 @@ function animerIntro(){
 	};
 
 	//Personnage écran accueil
-	$('#personnage').transition({opacity:1, delay:delai},2000);
+	$('#personnage').transition({opacity:1, delay:delai},1000);
+
+	//Thumbnail
+	for (var i = 0; i < 3; i++) {
+		$('#personnage').transition({opacity:0.7, delay:delai},1500);
+		$('#personnage').transition({opacity:1, delay:delai},1500);
+	};
 }
 
 function resetIntro(){
@@ -63,6 +75,29 @@ function resetIntro(){
 function animerMotion(){
 
 	for (var i = 0; i < 2; i++) {
+		//clignement des yeux
+			//Une fois
+		$('#paupieresHaut').transition({y:'25%',delay:3000},200);
+		$('#paupieresBas').transition({y:'-25%',delay:3000},200);	
+		$('#paupieresHaut').transition({y:'0%'},300);
+		$('#paupieresBas').transition({y:'-0%'},300);
+			//Deux fois
+		$('#paupieresHaut').transition({y:'25%',delay:2700},200);
+		$('#paupieresBas').transition({y:'-25%',delay:2700},200);	
+		$('#paupieresHaut').transition({y:'0%'},300);
+		$('#paupieresBas').transition({y:'-0%'},300);
+			//Trois fois
+		$('#paupieresHaut').transition({y:'25%',delay:4000},200);
+		$('#paupieresBas').transition({y:'-25%',delay:4000},200);	
+		$('#paupieresHaut').transition({y:'0%'},300);
+		$('#paupieresBas').transition({y:'-0%'},300);
+			//Quatre fois
+		$('#paupieresHaut').transition({y:'25%',delay:4000},200);
+		$('#paupieresBas').transition({y:'-25%',delay:4000},200);	
+		$('#paupieresHaut').transition({y:'0%'},300);
+		$('#paupieresBas').transition({y:'-0%'},300);
+
+		//mouvement des pupilles
 		$('#yeux').transition({x:'10%',delay:1500},700);
 		$('#yeux').transition({x:'0%'},700);
 		$('#yeux').transition({x:'-10%', y:'-5%',delay:1500},1000);
@@ -80,7 +115,7 @@ function animerMotion(){
 
 	$('#tableau').transition({y:'77%'},2000);
 
-	$('video').transition({opacity:1,delay:2000},1000);
+	$('#thumbnail').transition({opacity:1,delay:2000},1000);
 }
 
 function resetMotion(){
@@ -92,4 +127,6 @@ function resetMotion(){
 
 	$('#aiguilleMotion1').transition({ rotate: 0});
 	$('#aiguilleMotion2').transition({ rotate: 0});
+
+	$('#thumbnail').transition({opacity:0});
 }

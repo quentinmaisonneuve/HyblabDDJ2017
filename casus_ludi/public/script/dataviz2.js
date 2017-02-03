@@ -4,10 +4,10 @@
 // when loading our scripts
 setTimeout(function(){
     
-    var arrayColor = {"association" : "#9FD1FE","budget" : "#7FB0F9","couts-des-services" : "#5F8FF4","culture" : "#00047F","education" : "#4C53FF","election" : "#406EF0","Environnement" : "#0009FF","equipements" : "#26297F","marche-public" : "#204DEB","permis-de-construire" : "#2351EB","pv-deliberations" : "#123EE9","subventions" : "#002BE5","transport" : "#0007CC","urbanisme" : "#000044", "France" : "none"}; 
+    var arrayColor = {"association" : "#A5C0F5","budget" : "#698AF0","couts-des-services" : "#002CE6","culture" : "#87A5F2","education" : "#96B2F4","election" : "#7897F1","Environnement" : "#2D54EA","equipements" : "#5A7DEE","marche-public" : "#1E47E9","permis-de-construire" : "#4B6FED","pv-deliberations" : "#C3DBF8","subventions" : "#B4CDF6","transport" : "#3C62EB","urbanisme" : "#0F39E7", "France" : "none"}; 
     var regions = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comte","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d-Azur"]; 
-    var arrayRegionsX = {"Auvergne-Rhone-Alpes" : 107,"Bourgogne-Franche-Comte" : 29,"Bretagne" : -94,"Centre-Val-de-Loire" : -109,"Corse" : 239,"Grand-Est" : 348,"Hauts-de-France" : 131,"Ile-de-France" : 150,"Normandie" : -85,"Nouvelle-Aquitaine" : -189,"Occitanie" : -140,"Pays-de-la-Loire" : -329,"Provence-Alpes-Cote-d-Azur" : 44}
-    var arrayRegionsY = {"Auvergne-Rhone-Alpes" : -8,"Bourgogne-Franche-Comte" : 98,"Bretagne" : -287,"Centre-Val-de-Loire" : 49,"Corse" : 378,"Grand-Est" : -136,"Hauts-de-France" : -287,"Ile-de-France" : -13,"Normandie" : 41,"Nouvelle-Aquitaine" : -86,"Occitanie" : 119,"Pays-de-la-Loire" : 48,"Provence-Alpes-Cote-d-Azur" : 329}
+    var arrayRegionsX = {"Auvergne-Rhone-Alpes" : 107,"Bourgogne-Franche-Comte" : 29,"Bretagne" : -94,"Centre-Val-de-Loire" : -109,"Corse" : 239,"Grand-Est" : 348,"Hauts-de-France" : 131,"Ile-de-France" : 150,"Normandie" : -85,"Nouvelle-Aquitaine" : -189,"Occitanie" : -140,"Pays-de-la-Loire" : -329,"Provence-Alpes-Cote-d-Azur" : 72}
+    var arrayRegionsY = {"Auvergne-Rhone-Alpes" : -8,"Bourgogne-Franche-Comte" : 98,"Bretagne" : -287,"Centre-Val-de-Loire" : 49,"Corse" : 363,"Grand-Est" : -136,"Hauts-de-France" : -287,"Ile-de-France" : -13,"Normandie" : 41,"Nouvelle-Aquitaine" : -86,"Occitanie" : 119,"Pays-de-la-Loire" : 48,"Provence-Alpes-Cote-d-Azur" : 310}
 
     var svg = d3.select("#circleChart"),
     margin = 20,
@@ -27,7 +27,9 @@ setTimeout(function(){
       view;
 
     nodes.forEach(function(item){
+
         if(item.data.name in arrayRegionsX ){
+            item.r -= 0.5; 
             item.x += arrayRegionsX[item.data.name];
             item.y += arrayRegionsY[item.data.name];  
         }
@@ -36,6 +38,8 @@ setTimeout(function(){
             item.y += arrayRegionsY[item.parent.data.name]; 
         }
     }); 
+
+    console.log(nodes);
 
 /*
     nodes[1].x =  310; 
@@ -124,8 +128,8 @@ setTimeout(function(){
   svg
       //.style("background", "#FFFFFF")
       .style("background-image", "url(\"img/FULL.svg\")")
-      .style("background-position","center")
-      .style("background-size", "1145px")
+      .style("background-position","-324px -70px")
+      .style("background-size", "1100px")
       .on("click", function() { zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
@@ -157,6 +161,8 @@ setTimeout(function(){
     node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
     circle.attr("r", function(d) { return d.r * k; });
   }
+
+
 
 }, 3000);
 

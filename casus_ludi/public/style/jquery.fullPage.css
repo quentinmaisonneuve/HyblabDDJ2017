@@ -78,15 +78,14 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
-    width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    left: 3%;
+    border-width: 15px 14px 15px 0;
+    border-color: transparent #333 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right: 3%;
+    border-width: 15px 0 15px 14px;
+    border-color: transparent transparent transparent #333;
 }
 .fp-scrollable {
     overflow: hidden;

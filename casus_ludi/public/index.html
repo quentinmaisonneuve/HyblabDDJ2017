@@ -25,8 +25,8 @@
   -->
 
   <!--####################### LIBRAIRIES #######################-->
-  	<!-- D3 JS --> 
-   	<script src="https://d3js.org/d3.v4.min.js" defer></script>
+  <!-- D3 JS --> 
+  <script src="https://d3js.org/d3.v4.min.js" defer></script>
 	<!-- CHARTIST : -->
 	<link rel="stylesheet" href="dist/chartist.min.css">
 	<script src="dist/chartist.min.js"></script>
@@ -37,7 +37,6 @@
 	<script type="text/javascript" src="librairies/fullpage/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="script/fullpageconfig.js"></script>
 	<link rel="stylesheet" href="style/jquery.fullPage.css">
-
   <!-- JQUERY TRANSIT-->
   <script type="text/javascript" src="librairies/jquery.transit-master/jquery.transit.js"></script>
   <script type="text/javascript" src="script/animation.js"></script>
@@ -59,37 +58,32 @@
   <div id="fullpage">
     <section class="section">
       <span class="responsive_container">
-        <!-- Texte top -->
+        <!-- animé dans script/animation.js -->
         <text id="sous-titre">Panorama de la France à l’ère de la <br/>“République numérique”</text>
-        <!-- Bouton --> 
         <a href="#Intro"><text id="texte-bouton">Découvrir</text></a>
-        <!-- Image de fond -->
         <img id="image_fond" src="img/FOND.svg" alt="image accueil"/>
-        <!-- Nuages -->
         <img id="nuages" src="img/nuages.svg" alt="image nuages"/>
-        <!-- Aiguilles de l'horloge -->
         <img id="aiguille1" src="img/aiguille1.svg" alt="aiguille 1 horloge"/>
         <img id="aiguille2" src="img/aiguille2.svg" alt="aiguille 2 horloge"/>
-        <!-- Main Excel -->
         <img id="main" src="img/main.svg" alt="main"/>
-        <!-- Clé USB -->
         <img id="cle_USB" src="img/cle_usb.svg" alt="cle_usb"/>
-        <!-- Fleche droite -->
         <img id="fleche" src="img/fleche.svg" alt="fleche"/>
-        <!-- Personnage -->
         <img id="personnage" src="img/personnage.svg" alt="personnage"/>
       </span>
     </section>
     <section class="section">
       <span class="responsive_container">
         <!-- L'OPEN DATA EN BREF -->
-        <!-- Arrière-plan -->
+        <!-- Animé dans script/animation.js -->
         <img id="intro-fond" src="img/DATA2/MOTION.svg"/>
+        <img id="paupieresHaut" src="img/DATA2/paupieresHaut.svg"/>
+        <img id="paupieresBas" src="img/DATA2/paupieresBas.svg"/>
         <img id="yeux" src="img/DATA2/yeux.svg"/>
         <img id="tableau" src="img/DATA2/tableau.svg"/>
+        <img id="thumbnail" src="img/thumbnail_video.png"/>
         <img id="aiguilleMotion1" src="img/aiguille1.svg"/>
         <img id="aiguilleMotion2" src="img/aiguille2.svg"/>
-        <video controls="controls">
+        <video id="videoMotion" controls="controls">
           <source src="img/Motion/motion.mp4" type="video/mp4" />
         </video>
       </span>
@@ -97,10 +91,14 @@
     <section class="section">
       <span class="responsive_container responsive-container-exception">
         <!-- Personnage -->
-		<img id="imagePerso" src="img/personnageViz1.svg" alt="personnage 1"/>
+		<img id="imagePerso" src="img/PersonnageViz1.svg" alt="personnage 1"/>
+
+		<!-- Bulle Personnage -->
+		<img id="imageBullePerso" src="img/bulle.svg" alt="bulle"/>
 		<!-- Graphe -->
 		<div id="graphe">
-			<div id="chart1" class="ct-chart ct-golden-section ct-line" ></div>
+			<div id="chart1" class="ct-chart ct-golden-section ct-line ct-label" data-x-axis="My x-axis title" data-y-axis="My y-axis-title"></div>
+			
 			<!-- Curseur -->
 			<div id="radios">
 				<input id="2013" name="options" value="2013" type="radio" checked>
@@ -115,16 +113,96 @@
 				<label for="2017">Jan 2017</label>
 			</div>
 		</div>
+
+		<!-- Top-Flop -->
+		<div id="topFlop">
+			<div id="topCreate"> 
+				<ul>
+					<li>Centre-Val-de-Loire</li>
+				  	<li>Auvergne-Rhone-Alpes</li>
+				  	<li>Ile-de-France</li>
+				</ul> 
+			</div>
+			<div id="flopCreate">
+				<ul>
+					<li>Centre-Val-de-Loire</li>
+				  	<li>Auvergne-Rhone-Alpes</li>
+				  	<li>Ile-de-France</li>
+				</ul> 
+			</div>
+			<div id="topUpdate">
+				<ul>
+					<li>Centre-Val-de-Loire</li>
+				  	<li>Auvergne-Rhone-Alpes</li>
+				  	<li>Ile-de-France</li>
+				</ul>  
+			</div>
+			<div id="flopUpdate">
+				<ul>
+					<li>Centre-Val-de-Loire</li>
+				  	<li>Auvergne-Rhone-Alpes</li>
+				  	<li>Ile-de-France</li>
+				</ul> 
+			</div>
+		</div>
+
+		<!-- Texte explication/année -->
+		<div id="explicationAnnee">
+			<div id="explication2013">
+				<p>63% : part des données publiées par du top</p>
+				<p>1,3% : part des données du flop</p>
+				<p>Désert de données : Auvergne-Rhône-Alpe</p> 
+			</div>
+			<div id="explication2014">
+				<p>80,8% : part des données publiées par du top</p>
+				<p>3,6 : part des données publiées par du flop</p>
+				<p>Désert de données : Auvergne-Rhône-Alpe</p> 
+			</div>
+			<div id="explication2015">
+				<p>50% : part données publiées par du top</p>
+				<p>3,2% : part des données publiées par du flop</p>
+				<p>Désert de données : aucun</p>
+			</div>
+			<div id="explication2016">
+				<p>57% : part des données publiées par du top</p>
+				<p>0,5% : part des données publiées par du flop</p>
+				<p>Désert de donnée : Corse</p>
+			</div>
+			<div id="explication2017">
+				<p>Données relevées : Top/flop non représentatif</p>
+				<p>Désert de donnée : Corse, à ce stade</p>
+				<p>Publications : équivalentes aux années 2013 & 2014 cumulées</p>
+			</div>
+		</div>
       </span>
     </section>
+
     <section class="section">
       <span class="responsive_container">
         <h1> Quelle répartition entre les régions et les thématiques ? </h1>
         <!-- CODE ICI -->
         <p>Cliquez sur chaque région pour visualiser la part de chaque mot-clé et le nombre de téléchargements correspondant.</p> 
-        <span> 
+        <span>  
             <div style="display : inline-block" width="50%" "> <svg id="circleChart" width="500" height="500"></svg></div>
-            <!-- <div style="display : inline-block" width="50%"><div id="chart2"></div></div>-->
+            <div id="divLegend"  width="50%"> 
+            <ul>
+                <li><svg class="mapLegend" style="top: 39px; left: 29px"><circle cx="10" cy="10" r="10" fill="#002CE6" /></svg><p class="textLegend">Coûts des services</p></li>
+                <li><svg class="mapLegend" ><circle cx="10" cy="10" r="10" fill="#0F39E7" /></svg><p class="textLegend">Urbanisme </p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#1E42E9" /></svg><p class="textLegend">Marché public</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#2D54EA" /></svg><p class="textLegend">Environnement</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#3C62EB" /></svg><p class="textLegend">Transport</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#4B6FED" /></svg><p class="textLegend">Permis de construire</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#5A7DEE" /></svg><p class="textLegend">Equipements</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#698AF0" /></svg><p class="textLegend">Budget</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#7897F1" /></svg><p class="textLegend">Election</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#87A5F2" /></svg><p class="textLegend">Culture</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#96B2F4" /></svg><p class="textLegend">Education</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#A5C0F5" /></svg><p class="textLegend">Association</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#B4CDF6" /></svg><p class="textLegend">Subvention</p></li>
+                <li><svg class="mapLegend"><circle cx="10" cy="10" r="10" fill="#C3DBF8" /></svg><p class="textLegend">PV et délibérations</span></li>
+            </ul>
+
+            </div>
          </span>
 
         <!--<div display="inline-block"> <div id="chart2"> </div> </span>
@@ -139,7 +217,16 @@
     <section class="section">
       <span class="responsive_container">
         <!-- CODE ICI -->
-        Outro
+        Conclusion
+      </span>
+    </section>
+    <section class="section">
+      <span class="responsive_container">
+          <img id="outro-fond" src="img/remerciements.svg"/>
+          <text id="remerciements">
+            <h1>REMERCIEMENTS</h1>
+            Un projet riche et enrichissant, il a permis un véritable travail d’équipe et un mélange fou de compétences avec un groupe de jeunes dynamiques, créatifs et pleins de joie. On ne remerciera jamais assez Ouest Médialab ainsi que la participation d’Audencia SciencesCom, L’AGR école d’image et Polytech Nantes. Merci aussi à Casus Ludi pour nous avoir confié ce projet. Longue vie à John Cena, à bientôt !
+          </text>
       </span>
     </section>
   </div>

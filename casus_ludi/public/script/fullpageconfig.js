@@ -6,13 +6,13 @@ $(document).ready(function(){
         	//Navigation
                 menu: '#myMenu',
                 lockAnchors: false,
-        	anchors:['accueil', 'Intro', 'dataviz1', 'dataviz2', 'dataviz3', 'Outro'],
+        	anchors:['accueil', 'Intro', 'dataviz1', 'dataviz2', 'dataviz3', 'conclusion', 'Outro'],
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: [],
                 showActiveTooltip: false,
                 slidesNavigation: true,
-                slidesNavPosition: 'bottom',
+                slidesNavPosition: 'top',
 
                 //Scrolling
                 css3: true,
@@ -81,6 +81,8 @@ $(document).ready(function(){
                         }
                         else if(index == 2){
                                 animerMotion();
+                        }else if(index == 3){
+                                anime2013();
                         }
                 },
                 afterRender: function(){},
