@@ -7,6 +7,10 @@
   font-weight: bold;
   src: url("../fonts/Blogger_Sans-Bold.otf");
 }
+@font-face {
+  font-family: "Blogger Sans Bold";
+  src: url("../fonts/Blogger_Sans-Bold.otf");
+}
 
 /* just a sample css rule to show that everything works */
 footer p
@@ -128,6 +132,10 @@ a, a:active, a:focus {
 
 #mapsvg {
     width: 66%;
+}
+
+#debutconv {
+    width: 100%;
 }
 
 /*
