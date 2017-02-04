@@ -6,6 +6,27 @@ console.log( "loading data from server..." );
 	alert(data.keys(0));
 	console.log( "test..." );
 });*/
+$(window).resize(drawStackedBarChart);
+function vwTOpx(value) {
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    x = w.innerWidth || e.clientWidth || g.clientWidth;
+ 
+  var result = (x*value)/100;
+  return(result);
+}
+function vhTOpx(value) {
+  var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+ 
+  var result = (y*value)/100;
+  return(result);
+}
 var jsonObject;
 $.get("data/2012-data.json",function(data){
 	jsonObject=data;
@@ -17,15 +38,14 @@ function toggle(id) {
 	
 function drawStackedBarChart()
 {
-	//onReadystackedbar('#stackedbarchart', function() {
 		chart = c3.generate({
 			bindto: '#stackedbarchart',
 			size: {
-				width: 400,
-				height: 200
+				width: vwTOpx(30),
+				height: vhTOpx(30)
 			},
 			color: {
-				pattern: ['#f43f00','#443308','#89590b','#89590b','#dd9014','#66D18F','#708090','#000000','#F5F594','#66A69C','#DAA520','#8A2BE2', '#1f77b4', '#aec7e8', '#ff7f0e']
+				pattern: ['#c63442','#aa7809','#f43f00','#f43f00','#443308','#89590b','#89590b','#dd9014','#66D18F','#708090','#000000','#F5F594','#66A69C','#DAA520','#8A2BE2', '#1f77b4', '#aec7e8', '#ff7f0e']
 			},
 			interaction: {
 				enabled: true
@@ -43,20 +63,13 @@ function drawStackedBarChart()
 			},*/
 			data: {
 				json: jsonObject.machines,
-			//classes: 'dataa',
 				type: 'bar',
 				groups: [
 					jsonObject.elements
-				]/*,
-			colors: {
-				Eléphant: '#708090',
-				Galerie: '#DAA520',
-				Caroussel: '#8A2BE2'}*/,
+				],
 				selection: {
 					enabled: false
 				},
-			//order: 'desc' // stack order by sum of values descendantly. this is default.
-			//order: 'asc'  // stack order by sum of values ascendantly.
 				order: null   // stack order by data definition.
 			},
 			axis: {
@@ -68,7 +81,7 @@ function drawStackedBarChart()
 					label: {
 			
 						//text: 'Années',
-						position: 'outer-left'
+						position: 'outer-center'
 						// inner-right : default
 						// inner-center
 						// inner-left
@@ -78,16 +91,8 @@ function drawStackedBarChart()
 						}
 				},
 				y: {
-					//type: 'indexed',
-					show:false,
-						//count: 6,
-					tick: {
-							rotate: 50,
-							format: d3.format("d"),
-							multiline: false
-							},
-					height: 130
-					}
+					show:false
+				}
 			},
 			grid: {
 				y: {
@@ -101,43 +106,35 @@ function drawStackedBarChart()
 				show: true,
 				grouped:false,
 				contents: function (d, defaultTitleFormat, defaultValueFormat, color) {
-					return "<div class='stackedbartooltip' border='3' style='border-color:"+color(d[0])+"'><font color='"+color(d[0])+"'>" + d[0].value +"</font></div>";
-						//return "<font color='"+color(d[0])+"'>" + d[0].value +"</font>";
+					if(d[0].value==0) 
+						return "";
+					else
+					return "<div class='stackedbartooltip' style='border-color:"+color(d[0])+"'><font color='"+color(d[0])+"'>" + d[0].value +"</font></div>";
 						}
 				
 			},
 		legend: {
-			position: 'right',
 			show:false
-			//position: 'bottom'
-			//position: 'inset',
            },
 		zoom: {
 			enabled: false
 		}
-		})
-		//chart.groups(jsonObject.annees);
-		//chart.groups([jsonObject.elements]);
-		//.insert('div', '.chart').attr('class', 'legend')
-d3.select('.containerstacked').html("");
-   d3.select('.containerstacked').selectAll('div').insert('div', '.chart').attr('class', 'legend')
-  .data(["Eléphant", "Galerie", "Caroussel"])
+		});
+d3.select('.containerstacked2').html("");
+   d3.select('.containerstacked2').selectAll('div').insert('div', '.chart').attr('class', 'legend')
+  .data(jsonObject.elements)
   .enter().append('div')
-  .attr('data-id', function(id) {
-    return id;
-  }).attr('style','text-align: center')
+  .attr('id', 'legendline').attr('style','text-align: center')
   .html(function(id) {
 	  var img;
 	  if(id=="Eléphant")
 	  {img="img/billetterie/elephant.svg";}
 	  else if(id=="Galerie")
-	  {img="img/test.png";}
+	  {img="img/billetterie/galerie.svg";}
 		else if(id=="Caroussel")
-		{img="img/test.png";}
+		{img="img/billetterie/caroussel.svg";}
 		else{ img="img/test.png";}
-	 return '<div class="legend-machines"><img class="machine" src="'+img+'" style="(vertical-align: middle;margin:auto)" alt="Smiley face"  width="40px"/></div><br/><div class="legend-label">'+id+'</div>';
-
-   // return '<span></span>'+id;
+	 return '<div class="legend-machines"><div class="legend-image"><img class="machine" src="'+img+'" style="(vertical-align: middle;text-align:center)" alt="Smiley face"  width="100%" height="100%"/></div></div><br/><div class="legend-label">'+id+'</div>';
   })
   .each(function(id) {
     //d3.select(this).append('span').style
@@ -146,15 +143,19 @@ d3.select('.containerstacked').html("");
 	d3.select(this).select('.legend-machines').style('border-radius', '50%');
 	d3.select(this).select('.legend-machines').style('display','inline-block');
 	d3.select(this).select('.legend-machines').style('position','relative');
-	d3.select(this).select('.legend-machines').style('width','40px');
-	d3.select(this).select('.legend-machines').style('height','40px');
+	d3.select(this).select('.legend-machines').style('width','4vw');
+	d3.select(this).select('.legend-machines').style('height','6vh');
 	d3.select(this).select('.legend-machines').style('vertical-align','middle');
 	d3.select(this).select('.legend-machines').style('text-align','center');
-	d3.select(this).select('.legend-label').style('font', 'italic bold 15px Georgia, serif');
+	d3.select(this).select('.legend-image').style('width','3vw');
+	d3.select(this).select('.legend-image').style('height','5vh');
+	d3.select(this).select('.legend-image').style('vertical-align','middle');
+	d3.select(this).select('.legend-image').style('text-align','center');
+	d3.select(this).select('.legend-image').style('display','inline-block');
+	d3.select(this).select('.legend-image').style('position','relative');
+	d3.select(this).select('.legend-label').style('font', 'normal bold 1vw "Josefin Sans", serif');
 	d3.select(this).select('.legend-label').style('color', chart.color(id));
 	d3.select(this).select('#machine').style('margin', 'auto');
-
-
 	
   })
   .on('mouseover', function(id) {
@@ -167,19 +168,8 @@ d3.select('.containerstacked').html("");
   $(this).toggleClass("c3-legend-item-hidden")
     chart.toggle(id);
   });
-
-		
+  
+  var $boxOne = $('.legend-machines');
+    $boxOne.addClass('vibrateanimate');
 	
 }
-	
-	
-
-// Set a timeout so that we can ensure that the `chart` element is created.
-     /* function onReadystackedbar(selector, callback) {
-        var intervalID = window.setInterval(function() {
-          if (document.querySelector(selector) !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-          }
-        }, 500);
-      }*/

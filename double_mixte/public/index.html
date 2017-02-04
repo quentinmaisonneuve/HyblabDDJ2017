@@ -111,7 +111,9 @@
 				<div id="stackedbartitle">Billetterie des Machines <div id="stackedbartitleunit">(nombre de visiteurs)</div></div>
 				<div id="stackedbarchart2">
 					<div id="stackedbarchart" ></div>
-					<div class="containerstacked"></div>
+					<div class="containerstacked">
+						<div class="containerstacked2"></div>
+					</div>
 				</div>
 			</div>
 			<!--<div class="van-annees">
@@ -241,7 +243,6 @@
 </div><!-- /.container -->
 
 <script type="text/javascript">
-
 /* 
 Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Maria Antonietta Perna
 */
@@ -277,12 +278,12 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   doAnimations($animatingElems);
 
   drawChart();
-	
+drawStackedBarChart();
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-  drawStackedBarChart();
+  
   switch(currentIndex){
     case 0 :
 
@@ -293,6 +294,7 @@ $myCarousel.on('slide.bs.carousel', function (e) {
 
       break;
     case 3 :
+	break;
 
 
     case 4 :

@@ -3,7 +3,7 @@
   padding-right: 0px;
   background : url(../img/fond2.svg);
 	width:100%;
-    background-size:     cover;                      /* <------ */
+    background-size:     100%;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;  
 }
@@ -17,14 +17,14 @@
 .page-accueil {
   width:100%;
    background: url(../img/ligne_accueil.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;   
 }
 .page-intro {
     width:100%;
    background: url(../img/ligne_intro.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;   
 }
@@ -32,21 +32,21 @@
 .slide2011 {
   width:100%;
   background: url(../img/fond_2011.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;
 }
 .slide2012 {
   width:100%;
   background: url(../img/fond_2012.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;   
 }
 .slide2013 {
   width:100%;
   background: url(../img/fond_2013.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;          
 }
@@ -54,7 +54,7 @@
 .slide2014 {
   width:100%;
   background: url(../img/fond_2014.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;          
 }
@@ -62,7 +62,7 @@
 .slide2015 {
   width:100%;
   background: url(../img/fond_2015.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;          
 }
@@ -70,7 +70,7 @@
 .slide2016 {
   width:100%;
   background: url(../img/fond_2016.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;     
 }
@@ -78,7 +78,7 @@
 .slidebilan {
   width:100%;
   background: url(../img/fond_bilan.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;     
 }
@@ -86,7 +86,7 @@
 .slideremerciements {
   width:100%;
   background: url(../img/fond_remerciements.svg);
-  background-size:     cover;  
+  background-size:     100%;  
   background-repeat:   no-repeat;
     background-position: center center;
 }
