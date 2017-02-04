@@ -4,7 +4,7 @@
 //zone check box
 
 //check box famille
-$().click(function(){
+$("#cbtouriste").click(function(e){
 	$(".Touriste1").fadeIn("slow");
 	$(".Touriste2").fadeIn("slow");
 	$(".Touriste3").fadeIn("slow");
@@ -13,7 +13,10 @@ $().click(function(){
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
 	//caca
-	$(".").fadeOut("slow");
+	$(".Bouse1").fadeOut("slow");
+	$(".Bouse2").fadeOut("slow");
+	$(".Bouse3").fadeOut("slow");
+	$(".Bouse4").fadeOut("slow");
 
 	$(".Scientifique").fadeOut("slow");
 	$(".LogoScientifique1").fadeOut("slow");
@@ -24,11 +27,14 @@ $().click(function(){
 });
 
 //check box agriculteur
-$().click(function(){
+$("#cbagriculteur").click(function(e){
 	$(".Agriculteur").fadeIn("slow");
 	$(".PORC").fadeIn("slow");
 	//caca
-	$(".").fadeIn("slow");
+	$(".Bouse1").fadeIn("slow");
+	$(".Bouse2").fadeOut("slow");
+	$(".Bouse3").fadeOut("slow");
+	$(".Bouse4").fadeOut("slow");
 
 	$(".Touriste1").fadeOut("slow");
 	$(".Touriste2").fadeOut("slow");
@@ -44,7 +50,7 @@ $().click(function(){
 });
 
 //check box scientifique
-$().click(function(){
+$("#cbscientifique").click(function(e){
 	$(".Scientifique").fadeIn("slow");
 	$(".LogoScientifique1").fadeIn("slow");
 	$(".LogoScientifique2").fadeIn("slow");
@@ -60,10 +66,13 @@ $().click(function(){
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
 	//caca
-	$(".").fadeOut("slow");
+	$(".Bouse1").fadeOut("slow");
+	$(".Bouse2").fadeOut("slow");
+	$(".Bouse3").fadeOut("slow");
+	$(".Bouse4").fadeOut("slow");
 });
 
-$().click(function(){
+$("#AttaqueM").click(function(e){
 	//touriste
 	if(document.getElementById("cbtouriste").checked){
 		$(".Monstre4").fadeOut("slow");
@@ -79,9 +88,9 @@ $().click(function(){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre1").fadeIn("slow");
 		//3 caca
-		$(".").fadeIn("slow");
-		$(".").fadeIn("slow");
-		$(".").fadeIn("slow");
+		$(".Bouse2").fadeIn("slow");
+		$(".Bouse3").fadeIn("slow");
+		$(".Bouse4").fadeIn("slow");
 
 
 	}
@@ -92,7 +101,7 @@ $().click(function(){
 
 		$(".Scientifique").fadeOut("slow");
 		//Scientifique victoire
-		$(".Scientifique").fadeIn("slow");
+		//$(".Scientifique").fadeIn("slow");
 
 	}
 
