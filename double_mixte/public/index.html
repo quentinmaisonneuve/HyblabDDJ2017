@@ -145,21 +145,21 @@
 				
 
 			<div class="social">
-	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Facebook"/>
- 				<img id="2013facebook0" src="img/blanc.svg"/>
- 				<img id="2013facebook1" src="img/blanc.svg"/>
- 				<img id="2013facebook2" src="img/blanc.svg"/>
- 				<img id="2013facebook3" src="img/blanc.svg"/>
- 				<img id="2013facebook4" src="img/blanc.svg"/>
+	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
+ 				<img id="2013facebook0" class="2013facebook" src="img/blanc.svg"/>
+ 				<img id="2013facebook1" class="2013facebook" src="img/blanc.svg"/>
+ 				<img id="2013facebook2" class="2013facebook" src="img/blanc.svg"/>
+ 				<img id="2013facebook3" class="2013facebook" src="img/blanc.svg"/>
+ 				<img id="2013facebook4" class="2013facebook" src="img/blanc.svg"/>
 
- 				<img class="info-social" src="img/tweet.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Twitter"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
+ 				<img class="info-social" src="img/tweet.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Twitter"/>
+ 				<img id="2013twitter0" class="2013twitter" src="img/blanc.svg"/>
+ 				<img id="2013twitter1" class="2013twitter" src="img/blanc.svg"/>
+ 				<img id="2013twitter2" class="2013twitter" src="img/blanc.svg"/>
+ 				<img id="2013twitter3" class="2013twitter" src="img/blanc.svg"/>
+ 				<img id="2013twitter4" class="2013twitter" src="img/blanc.svg"/>
 
- 				<img class="info-social" src="img/insta.svg" data-toggle="tooltip" data-placement="top" title="Nombre de comptes créés sur Instagram"/>
+ 				<img class="info-social" src="img/insta.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Instagram"/>
  				<img src="img/blanc.svg"/>
  				<img src="img/blanc.svg"/>
  				<img src="img/blanc.svg"/>
@@ -330,7 +330,8 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   animateDigits(2012);
   animateDigits(2013);
   animateDigits(2015);
-  animateSocial(2013);
+  animateSocialFacebook(2013);
+  animateSocialTwitter(2013);
   /*animateDigits2012();
   animateDigits2013();
   animateDigits2014();
