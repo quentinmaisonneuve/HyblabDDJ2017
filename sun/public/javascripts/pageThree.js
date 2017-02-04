@@ -33,9 +33,8 @@ function initBubble(node)
         nodes.sort(function(a,b){
            return b.value-a.value;
         });
-        nodes.splice(4); // garder les 3 meilleurs !
+        nodes.splice(4); // garder les 4 meilleurs !
         var total = nodes[0].value + nodes[1].value + nodes[2].value + nodes[3].value;
-        console.log("total1:"+total);
         // Define the div for the tooltip
         var div = d3.select("body").append("div")
             .attr("class", "tooltip")
@@ -114,6 +113,11 @@ function initBubble(node)
                     .duration(500)
                     .style("opacity", 0);
                 musiqueArrete(d.id);
+            })
+            .style("transform-origin", function(d){
+                var xRotation = parseFloat(d3.select(this).attr("x"),10) + ( parseFloat(d3.select(this).attr("width"),10)/2);
+                var yRotation = parseFloat(d3.select(this).attr("y"),10) + ( parseFloat(d3.select(this).attr("height"),10)/2);
+                return xRotation + "px " + yRotation+ "px";
             });
 
         //circle.append()
@@ -138,6 +142,17 @@ function initBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
+            })
+            .attr("id", function(d)
+            {
+                if (d.id == nodes[0].id)
+                    return "bubbleRTxt";
+                else if (d.id == nodes[1].id)
+                    return "bubbleVTxt";
+                else if (d.id == nodes[2].id)
+                    return "bubbleBTxt";
+                else if (d.id == nodes[3].id)
+                    return "bubbleBGTxt";
             })
             .attr("text-anchor", "middle")
             .text(function(d){
@@ -192,17 +207,34 @@ function changeBubble(node)
             .attr("width", function(d){console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800); return d.value/total * 800 ; })
             .attr("height", function(d){ return d.value/total * 800 ; })
             .attr("class", "bubbleC")
-    });
+            .style("transform-origin", function(d){
+                var xRotation = parseFloat(d3.select(this).attr("x"),10) + ( parseFloat(d3.select(this).attr("width"),10)/2);
+                var yRotation = parseFloat(d3.select(this).attr("y"),10) + ( parseFloat(d3.select(this).attr("height"),10)/2);
+                return xRotation + "px " + yRotation+ "px";
+            });
+
         svg.selectAll(".bubbleCTxt")
+            .duration(750)
             .attr("x", function(d){
                 if (d.id == nodes[0].id)
+                {
+                    document.getElementsById("#bubbleRTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
+                }
                 else if (d.id == nodes[1].id)
+                {
+                    document.getElementsById("#bubbleVTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
-                else if (d.id == nodes[2].id)
-                    return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
+                }
+                else if (d.id == nodes[2].id) {
+                    document.getElementsById("#bubbleBTxt").innerHTML = d.id;
+                    return parseInt(d3.select("#bubbleB").attr("x"), 10) + parseInt(d3.select("#bubbleB").attr("width"), 10) / 2;
+                }
                 else if (d.id == nodes[3].id)
+                {
+                    document.getElementsById("#bubbleBGTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+                }
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
@@ -213,7 +245,10 @@ function changeBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
-            });
+            })
+            .style("font-size", function(d) { return (1+(d.value/total))*15 + "px" });
+
+    });
 
 }
 
