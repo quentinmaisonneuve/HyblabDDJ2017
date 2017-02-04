@@ -1,3 +1,8 @@
 .info-nuitees {
-	margin-right: 1vh;
+    margin-right: 0.6vw;
+}
+
+.info-social {
+    margin-right: 0.6vw;
+    margin-left: 1.3vw !important;
 }

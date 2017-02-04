@@ -1,9 +1,13 @@
 #color-series-a {
-	color: #f43f00;
+	color: black;
 }
 
 #color-series-b {
-	color: #89590b;
+	color: black;
+}
+
+#texte_nuitees {
+	color: black;
 }
 
 .ct-series-a > line:hover {
@@ -104,12 +108,29 @@
 }
 
 #val_graph2013 {
-	font-family: Josefin Sans;
+    font-family: Josefin Sans;
+    text-align: center;
 }
 
 #chart1 {
     position: absolute;
-    top: 30vh;
+    top: 27vh;
     left: 57vw;
     width: 30vw;
+}
+
+#img-nuitees-2013 {
+    position: absolute;
+	left: 63vw;
+    top: 62vh;
+    width: 20vw;
+}
+#img-nuitees-2013 img {
+    display: block;
+    margin: auto;
+    width: 6vw;
+}
+
+.ct-legend {
+	margin: 3% auto;
 }
