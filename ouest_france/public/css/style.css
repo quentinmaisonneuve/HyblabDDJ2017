@@ -43,19 +43,21 @@ p{
 }
 
 #enroute{
-    cursor: pointer;
-    display: block;
-    top: 25px;
-    margin-left : auto;
-    margin-right : auto;
-    font-size: 2.5em;
-    background-color: white;
-    border : none;
-    color: #35a8e0; /* font-color */
-    border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px;
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+  cursor: pointer;
+  display: block;
+  top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  background-color: white;
+  border: none;
+  color: #35a8e0;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 11vw;
+  height: 5vh;
 }
 
 #section1, #section2, #section6 {
