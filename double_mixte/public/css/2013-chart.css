@@ -15,7 +15,7 @@
 }
 
 .ct-series-b > line:hover {
-    stroke: #d48a11 !important;
+    stroke: #7de8c1 !important;
 }
 
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
@@ -26,12 +26,14 @@
 	font-size: 0.9em;
 }
 
+/* couleur barre a*/
 .ct-series-a > line {
 	stroke: #f43f00 !important;
 }
 
+/* couleur barre b */
 .ct-series-b > line {
-	stroke: #89590b !important;
+	stroke: #2cda9b !important;
 }
 /* Label années */
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
@@ -62,6 +64,7 @@
     z-index: 10;
     list-style: none;
     text-align: center;
+    margin: 1vh auto !important;
 }
 
 .ct-legend li {
@@ -103,8 +106,8 @@
 }
 
 .ct-legend li.ct-series-1:before {
-    background-color: #89590b;
-    border-color: #89590b;
+    background-color: #2cda9b;
+    border-color: #2cda9b;
 }
 
 #val_graph2013 {
