@@ -188,7 +188,297 @@ $.fn.extend({
 	    this.addClass('animated ' + animationName).one(animationEnd, function() {
 	        replaceDigitSocial(4, array, annee, label); 
     	});
+    },
+
+
+
+
+
+
+
+    animateFacebook20140: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(0, array, annee, label); 
+        });
+    },
+	animateFacebook20141: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(1, array, annee, label); 
+        });
+    },
+	animateFacebook20142: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateFacebook20143: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateFacebook20144: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateTwitter20140: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateTwitter20141: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateTwitter20142: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateTwitter20143: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateTwitter20144: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateInstagram20140: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateInstagram20141: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateInstagram20142: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateInstagram20143: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateInstagram20144: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+
+
+
+
+
+
+
+
+    animateFacebook20150: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(0, array, annee, label); 
+        });
+    },
+	animateFacebook20151: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(1, array, annee, label); 
+        });
+    },
+	animateFacebook20152: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateFacebook20153: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateFacebook20154: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateTwitter20150: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateTwitter20151: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateTwitter20152: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateTwitter20153: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateTwitter20154: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateInstagram20150: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateInstagram20151: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateInstagram20152: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateInstagram20153: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateInstagram20154: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+
+
+
+
+    animateFacebook20160: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(0, array, annee, label); 
+        });
+    },
+	animateFacebook20161: function (animationName, array, annee, label) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            replaceDigitSocial(1, array, annee, label); 
+        });
+    },
+	animateFacebook20162: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateFacebook20163: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateFacebook20164: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateTwitter20160: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateTwitter20161: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateTwitter20162: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateTwitter20163: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateTwitter20164: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
+    },
+    animateInstagram20160: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(0, array, annee, label); 
+    	});
+    },
+    animateInstagram20161: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(1, array, annee, label); 
+    	});
+    },
+    animateInstagram20162: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(2, array, annee, label); 
+    	});
+    },
+    animateInstagram20163: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(3, array, annee, label); 
+    	});
+    },
+    animateInstagram20164: function (animationName, array, annee, label) {
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    this.addClass('animated ' + animationName).one(animationEnd, function() {
+	        replaceDigitSocial(4, array, annee, label); 
+    	});
     }
+
 });
 
 function replaceDigitSocial(digit, array, annee, label) {
