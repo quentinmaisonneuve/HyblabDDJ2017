@@ -191,7 +191,7 @@ body{
 	color : black;
 
 	width:10vw;
-	height:2.5vw;
+	height:3vw;
 	display: block;
 
 	background-color: #6a9dae;
@@ -670,9 +670,11 @@ body{
 	bottom : 1vw;
 	left : 21%;
 	padding-top: 0.3vw;
+	height:3vw;
 }
 
 #Data2{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -681,6 +683,7 @@ body{
 }
 
 #Data3{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -689,6 +692,7 @@ body{
 }
 
 #Data4{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -1141,6 +1145,7 @@ body{
 #Crédit{
 	font-size: 1.5vw;
 	position: absolute;
+	height:2vw;
 	bottom : 1vw;
 	left : 1%;
 	padding-top: 0.3vw;
@@ -1152,9 +1157,11 @@ body{
 	top : 1vw;
 	left : 21%;
 	padding-top: 0.3vw;
+	height:3vw;
 }
 
 #RetourData2{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
@@ -1163,6 +1170,7 @@ body{
 }
 
 #RetourData3{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
@@ -1171,6 +1179,7 @@ body{
 }
 
 #RetourData4{
+	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
