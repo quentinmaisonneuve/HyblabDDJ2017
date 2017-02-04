@@ -1,6 +1,5 @@
 	'use strict'
 
-
 //zone check box
 
 //check box famille
@@ -12,7 +11,6 @@ $("#cbtouriste").click(function(e){
 
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
-	//caca
 	$(".Bouse1").fadeOut("slow");
 	$(".Bouse2").fadeOut("slow");
 	$(".Bouse3").fadeOut("slow");
@@ -24,13 +22,17 @@ $("#cbtouriste").click(function(e){
 	$(".LogoScientifique3").fadeOut("slow");
 	$(".LogoScientifique4").fadeOut("slow");
 	$(".LogoScientifique5").fadeOut("slow");
+
+	$(".Monstre4").fadeIn("slow");
+	$(".Monstre3").fadeOut("slow");
+	$(".Monstre2").fadeOut("slow");
+	$(".Monstre1").fadeOut("slow");
 });
 
 //check box agriculteur
 $("#cbagriculteur").click(function(e){
 	$(".Agriculteur").fadeIn("slow");
 	$(".PORC").fadeIn("slow");
-	//caca
 	$(".Bouse1").fadeIn("slow");
 	$(".Bouse2").fadeOut("slow");
 	$(".Bouse3").fadeOut("slow");
@@ -47,6 +49,11 @@ $("#cbagriculteur").click(function(e){
 	$(".LogoScientifique3").fadeOut("slow");
 	$(".LogoScientifique4").fadeOut("slow");
 	$(".LogoScientifique5").fadeOut("slow");
+
+	$(".Monstre4").fadeIn("slow");
+	$(".Monstre3").fadeOut("slow");
+	$(".Monstre2").fadeOut("slow");
+	$(".Monstre1").fadeOut("slow");
 });
 
 //check box scientifique
@@ -65,11 +72,15 @@ $("#cbscientifique").click(function(e){
 
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
-	//caca
 	$(".Bouse1").fadeOut("slow");
 	$(".Bouse2").fadeOut("slow");
 	$(".Bouse3").fadeOut("slow");
 	$(".Bouse4").fadeOut("slow");
+
+	$(".Monstre4").fadeIn("slow");
+	$(".Monstre3").fadeOut("slow");
+	$(".Monstre2").fadeOut("slow");
+	$(".Monstre1").fadeOut("slow");
 });
 
 $("#AttaqueM").click(function(e){
@@ -77,6 +88,9 @@ $("#AttaqueM").click(function(e){
 	if(document.getElementById("cbtouriste").checked){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre3").fadeIn("slow");
+		$(".Monstre2").fadeOut("slow");
+		$(".Monstre1").fadeOut("slow");
+
 		$(".Touriste1").fadeOut("slow");
 		$(".Touriste2").fadeOut("slow");
 		$(".Touriste3").fadeOut("slow");
@@ -87,7 +101,9 @@ $("#AttaqueM").click(function(e){
 	else if(document.getElementById("cbagriculteur").checked){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre1").fadeIn("slow");
-		//3 caca
+		$(".Monstre2").fadeOut("slow");
+		$(".Monstre3").fadeOut("slow");
+
 		$(".Bouse2").fadeIn("slow");
 		$(".Bouse3").fadeIn("slow");
 		$(".Bouse4").fadeIn("slow");
@@ -97,12 +113,12 @@ $("#AttaqueM").click(function(e){
 	//scientifique
 	else if(document.getElementById("cbscientifique").checked){
 		$(".Monstre4").fadeOut("slow");
-		$(".Monstre1").fadeIn("slow");
+		$(".Monstre2").fadeIn("slow");
+		$(".Monstre3").fadeOut("slow");
+		$(".Monstre1").fadeOut("slow");
 
-		$(".Scientifique").fadeOut("slow");
-		//Scientifique victoire
+		//$(".Scientifique").fadeOut("slow");
 		//$(".Scientifique").fadeIn("slow");
 
 	}
-
 });
