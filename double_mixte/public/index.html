@@ -51,7 +51,8 @@
   	<script src="js/chiffresenhautagauche.js"></script>
 	<script src="js/2016-chart_nuiteesannuelles.js"></script>
 	<script src="js/social.js"></script>
-
+	<script src="js/popover.js"></script>
+	<script src="js/animateReinit.js"></script>
 </head>
 
 <body>
@@ -65,11 +66,11 @@
 	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="6"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="7"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="8"></li>
-		<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="9"></li>
       	</ol>
 
       	<!-- Wrapper for slides -->
@@ -168,11 +169,10 @@
 				</div>
 				
 			<div class="popover-example">
-			    <div class="popover left">
+			    <div id="popover2013" class="popover left">
 			      <div class="arrow"></div>
-			      <h3 class="popover-title">Popover top</h3>
 			      <div class="popover-content">
-			        <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+			        <p>En août 2013, 70 000 personnes passent leur séjour à Nantes contre 60 0000 en 2012. C’est la première fois depuis deux ans, qu’il y a plus de monde en août qui passent une nuit à Nantes contrairement en octobre.</p>
 			      </div>
 			    </div>
 			  </div>
@@ -395,7 +395,9 @@ doAnimations($firstAnimatingElems);
 //Pause carousel  
 $myCarousel.carousel('pause');
 
-$myCarousel.on('slide.bs.carousel', function (e) {
+
+
+$myCarousel.on('slid.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
   drawChart();
@@ -404,60 +406,144 @@ drawStackedBarChart();
    var carouselData = $(this).data('bs.carousel');
  
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-  
+ // currentIndex = $('div.active').index() + 1;
+ //var currentIndex = carouselData.getItemIndex();
+
   switch(currentIndex){
     case 0 :
+    	break;
 
-      break;
     case 1 :
+    	animateChiffreReinit(2011);
       break;
+
     case 2 :
-      break;
+    	// animate
+		animateDigits(2011);
+
+		// reinit
+		animateChiffreReinit(2012);
+		animateFacebookReinit(2012);
+		animateTwitterReinit(2012);
+		animateInstagramReinit(2012);
+      	break;
+
+    // 2012
     case 3 :
-	break;
+    	// animate
+    	animateDigits(2012);
+		animateSocialFacebook(2012);
+		animateSocialTwitter(2012);
+		animateSocialInstagram(2012);
 
+		// reinit
+        animateChiffreReinit(2011);
+
+        animateChiffreReinit(2013);
+        animateFacebookReinit(2013);
+        animateTwitterReinit(2013);
+        animateInstagramReinit(2013);
+		break;
+
+	// 2013
     case 4 :
+    	showPopover2013();
+    	
+    	// animate
+    	animateDigits(2013);
+    	animateSocialFacebook(2013);
+		animateSocialTwitter(2013);
+		animateSocialInstagram(2013);
 
+		// reinit
+		animateChiffreReinit(2012);
+		animateFacebookReinit(2012);
+		animateTwitterReinit(2012);
+		animateInstagramReinit(2012);
+
+		animateChiffreReinit(2014);
+		animateFacebookReinit(2014);
+      	animateTwitterReinit(2014);
+		animateInstagramReinit(2014);
+
+		//graph
+		drawChart();
+    	break;
+
+    // 2014
     case 5 :
-      doGraphAnimAge();
-      doGraphAnimCSP();
+    	// animate
+    	animateDigits(2014);
+    	animateSocialFacebook(2014);
+  		animateSocialTwitter(2014);
+  		animateSocialInstagram(2014);
+		
 
-      break;
-    case 2 :
+      	// reinit
+      	animateChiffreReinit(2013);
+      	animateFacebookReinit(2013);
+      	animateTwitterReinit(2013);
+		animateInstagramReinit(2013);
+
+		animateChiffreReinit(2015);
+		animateFacebookReinit(2015);
+      	animateTwitterReinit(2015);
+		animateInstagramReinit(2015);
+
+      	// graph
+      	doGraphAnimAge();
+      	doGraphAnimCSP();
+
+      	break;
+
+    // 2015
+    case 6 :
+    	// animate
+    	animateDigits(2015);
+		animateSocialFacebook(2015);
+		animateSocialTwitter(2015);
+		animateSocialInstagram(2015);
+    	
+    	// reinit
+    	animateChiffreReinit(2014);
+    	animateFacebookReinit(2014);
+      	animateTwitterReinit(2014);
+		animateInstagramReinit(2014);
+
+		animateFacebookReinit(2016);
+      	animateTwitterReinit(2016);
+		animateInstagramReinit(2016);
+    	break;
+
+   	// 2016
+    case 7 :
+    	// animate
+		animateSocialFacebook(2016);
+		animateSocialTwitter(2016);
+		animateSocialInstagram(2016);
+
+    	// reinit
+    	animateChiffreReinit(2015);
+    	animateFacebookReinit(2015);
+      	animateTwitterReinit(2015);
+		animateInstagramReinit(2015);
+    	break;
+
+    // bilan
+    case 8 :
+    	animateFacebookReinit(2016);
+      	animateTwitterReinit(2016);
+		animateInstagramReinit(2016);
+    	break;
+
+    // remerciements
+    case 9:
+    	break;
+    default:
+    	console.log("default"+currentIndex);
   }
-	drawChart();
-
-  animateDigits(2011);
-  animateDigits(2012);
-  animateDigits(2013);
-  animateDigits(2014);
-  animateDigits(2015);
-  
-  animateSocialFacebook(2012);
-  animateSocialTwitter(2012);
-  animateSocialInstagram(2012);
-
-  animateSocialFacebook(2013);
-  animateSocialTwitter(2013);
-  animateSocialInstagram(2013);
-
-  animateSocialFacebook(2014);
-  animateSocialTwitter(2014);
-  animateSocialInstagram(2014);
 
 
-  animateSocialFacebook(2015);
-  animateSocialTwitter(2015);
-  animateSocialInstagram(2015);
-
-
-  animateSocialFacebook(2016);
-  animateSocialTwitter(2016);
-  animateSocialInstagram(2016);
-  /*animateDigits2012();
-  animateDigits2013();
-  animateDigits2014();
-  animateDigits2015();*/
 });  
 
 

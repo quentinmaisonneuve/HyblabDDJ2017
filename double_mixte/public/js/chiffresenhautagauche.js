@@ -280,20 +280,21 @@ function animateDigits(annee) {
     else if(annee === 2015) {
         indice = 9;
     }
-
+/*
     if(annee === 2011) {
         $('.2011chiffre').attr('src', 'img/zero.svg');
     }
-    
+*/    
     $.get("data/nuiteesannuelles.json", function(data) {
         var nbNuiteesPrecedentes = data[indice-1].nbnuitees;
         var nbNuitees = data[indice].nbnuitees;
         var array = nbNuitees.toString().split("").map(function(t){return parseInt(t)});
         var array2 = nbNuiteesPrecedentes.toString().split("").map(function(t){return parseInt(t)});
 
+        /*
         if(annee != 2011) {
             replaceAllDigits(array2, annee); 
-        }
+        }*/
        
         
         setTimeout(function(){ $('#'+annee+'chiffre0')['animateCss'+annee+0]('flipInX', array, annee); }, 1000);

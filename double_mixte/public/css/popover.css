@@ -1,7 +1,6 @@
 .popover-example .popover {
     position: absolute;
-    display: block;
-    /* margin: 20px; */
+    display: none;
     left: 42vw;
     top: 60vh;
     width: 20vw;

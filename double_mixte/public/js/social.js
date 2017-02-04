@@ -547,13 +547,13 @@ function animateSocialFacebook(annee) {
 	else {
 		indice = 4;
 	}
-
+	/*
 	 if(annee === 2012) {
         $('.2012insta').attr('src', 'img/blanc.svg');
         $('.2012facebook').attr('src', 'img/blanc.svg');
         $('.2012twitter').attr('src', 'img/blanc.svg');
     }
-
+	*/
 	$.get("data/data-facebook.json", function(data) {
 		if(annee != 2012) {
 			var nbFacebookPrecedents = data[indice-1].nombre;
@@ -564,14 +564,14 @@ function animateSocialFacebook(annee) {
 
 
 		// données de l'année précédente
-		if(annee != 2012) {
+		/*if(annee != 2012) {
 			if((5-array2.length)!=0) {
 				for(var i=0; i<(5-array2.length); i++) {
 					array2.unshift(-1);
 				}
 			}
 			replaceAllDigitsSocial(array2, annee, "facebook");
-		}
+		}*/
 		var l = array.length;
 		var e = 5-l;
 		if((5-l) != 0) {
@@ -619,14 +619,14 @@ function animateSocialTwitter(annee) {
 		var label = "twitter";
 
 		// données de l'année précédente
-		if(annee != 2012) {
+		/*if(annee != 2012) {
 			if((5-array2.length)!=0) {
 				for(var i=0; i<(5-array2.length); i++) {
 					array2.unshift(-1);
 				}
 			}
 			replaceAllDigitsSocial(array2, annee, label);
-		}
+		}*/
 		
 		var l = array.length;
 		var e = 5-l;
@@ -676,7 +676,7 @@ function animateSocialInstagram(annee) {
 		var label = "insta";
 		
 		// données de l'année précédente
-		if(annee != 2012) {
+		/*if(annee != 2012) {
 			if((array2.length)!=5) {
 				var e = 5-array2.length;
 				for(var i=0; i<e; i++) {
@@ -685,7 +685,7 @@ function animateSocialInstagram(annee) {
 			}
 
 			replaceAllDigitsSocial(array2, annee, label);
-		}
+		}*/
 		
 		var l = array.length;
 		var e = 5-l;
