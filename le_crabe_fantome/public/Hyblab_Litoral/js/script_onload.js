@@ -45,6 +45,9 @@ window.onload = function init (){
 		$(".").fadeOut("slow");
 
 		$(".Scientifique").fadeOut("slow");
+		//Scientifique victoire
+		$(".").fadeOut("slow");
+
 		$(".LogoScientifique1").fadeOut("slow");
 		$(".LogoScientifique2").fadeOut("slow");
 		$(".LogoScientifique3").fadeOut("slow");
@@ -55,5 +58,6 @@ window.onload = function init (){
 		$(".Monstre3").fadeOut("slow");
 		$(".Monstre2").fadeOut("slow");
 		$(".Monstre1").fadeOut("slow");
+		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}
