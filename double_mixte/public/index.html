@@ -169,10 +169,10 @@
 				</div>
 				
 			<div class="popover-example">
-			    <div id="popover2013" class="popover left">
+			    <div id="popover2013" class="popover left animated bounceIn">
 			      <div class="arrow"></div>
 			      <div class="popover-content">
-			        <p>En août 2013, 70 000 personnes passent leur séjour à Nantes contre 60 0000 en 2012. C’est la première fois depuis deux ans, qu’il y a plus de monde en août qui passent une nuit à Nantes contrairement en octobre.</p>
+			        <p>En août 2013, 70 000 personnes passent leur séjour à Nantes contre 60 000 en 2012. C’est la première fois depuis deux ans, qu’il y a plus de monde en août qui passent une nuit à Nantes contrairement en octobre.</p>
 			      </div>
 			    </div>
 			  </div>
@@ -401,7 +401,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
  // drawChart();
-drawStackedBarChart();
+
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
@@ -443,6 +443,11 @@ drawStackedBarChart();
         animateFacebookReinit(2013);
         animateTwitterReinit(2013);
         animateInstagramReinit(2013);
+
+        // graph
+        drawStackedBarChart();
+
+        hidePopover2013();
 		break;
 
 	// 2013
@@ -493,6 +498,8 @@ drawStackedBarChart();
       	// graph
       	doGraphAnimAge();
       	doGraphAnimCSP();
+
+      	hidePopover2013();
 
       	break;
 
