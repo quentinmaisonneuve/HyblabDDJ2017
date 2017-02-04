@@ -1,0 +1,10 @@
+.popover-example .popover {
+    position: absolute;
+    display: block;
+    /* margin: 20px; */
+    left: 42vw;
+    top: 60vh;
+    width: 20vw;
+    font-size: 0.9em;
+    font-family: Josefin Sans;
+}
