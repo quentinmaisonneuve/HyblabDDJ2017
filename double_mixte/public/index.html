@@ -28,6 +28,10 @@
 	<!-- animate.css -->
 	<link rel="stylesheet" href="lib/animate.css">
 	
+	<!-- Textillate-->
+	<script src="lib/jquery.lettering.js"></script>
+	<script src="lib/jquery.textillate.js"></script>
+
 	<!-- Font -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
 	
@@ -54,6 +58,7 @@
 	<script src="js/social.js"></script>
 	<script src="js/popover.js"></script>
 	<script src="js/animateReinit.js"></script>
+
 </head>
 
 <body>
@@ -165,14 +170,32 @@
 						</div>
 				</div>
 				
-			<div class="popover-example">
-			    <div id="popover2013" class="popover left">
-			      <div class="arrow"></div>
-			      <div class="popover-content">
-			        <p>En août 2013, 70 000 personnes passent leur séjour à Nantes contre 60 0000 en 2012. C’est la première fois depuis deux ans, qu’il y a plus de monde en août qui passent une nuit à Nantes contrairement en octobre.</p>
-			      </div>
-			    </div>
-			  </div>
+			<div id="funfact2013">
+			<p id="textefunfact2013" class="animated rollIn">
+			439 701 personnes<br/> viennent au jardin des<br/> plantes admirer le<br/> poussin de Claude<br/> Ponti.
+			</p>
+			</div>
+
+			<div id="presse2013" class="animated fadeIn">
+			<p id="textepresse2013">
+			&laquo; L'ensemble est une réussite tant artistique que touristique ! &raquo;
+			</p>
+			</div>
+
+			<div id="textehistoire2013" class="animated fadeIn">
+				<span class="textenum">Un an plus tard</span>,
+				<br/><br/><br/>
+				Nantes est désigné comme <span class="gras">la capitale verte</span>. Donatien suit la ligne désormais verte.
+				<br/>
+				Il peut aussi retrouver sa famille venue exprès de Bretagne<br/> et de Vendée à <span class="gras">la cantine du voyage</span>,<br/> un lieu convivial et chaleureux.
+			</div>
+
+			<div id="popover2013" class="animated bounceIn">
+			<p id="texte2013">
+			En août 2013, 70 000 personnes passent leur séjour à Nantes contre 60 000 en 2012. 
+			<br/>C’est la première fois depuis deux ans qu’il y a plus de monde en août qui passent une nuit à Nantes contrairement en octobre.
+			</p>
+			</div>
 
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -397,7 +420,7 @@ $myCarousel.carousel('pause');
 $myCarousel.on('slid.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
-  drawChart();
+ // drawChart();
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
@@ -441,12 +464,19 @@ drawStackedBarChart();
         animateFacebookReinit(2013);
         animateTwitterReinit(2013);
         animateInstagramReinit(2013);
+
+        // graph
+        drawStackedBarChart();
+
+        hidePopover2013();
+        hidePresse2013();
 		break;
 
 	// 2013
     case 4 :
     	showPopover2013();
-    	
+    	showPresse2013();
+
     	// animate
     	animateDigits(2013);
     	animateSocialFacebook(2013);
@@ -492,6 +522,8 @@ drawStackedBarChart();
       	doGraphAnimAge();
       	doGraphAnimCSP();
 
+      	hidePopover2013();
+      	hidePresse2013();
       	break;
 
     // 2015

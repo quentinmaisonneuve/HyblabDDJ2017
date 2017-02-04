@@ -1,9 +1,101 @@
-.popover-example .popover {
+#popover2013 {
     position: absolute;
     display: none;
-    left: 42vw;
+    left: 45vw;
     top: 60vh;
-    width: 20vw;
-    font-size: 0.9em;
+    width: 21vw;
+    font-size: 11pt;
     font-family: Josefin Sans;
+    color:white;
+    font-weight: bold;
+}
+
+#bulle2013 {
+	width: 20vw;
+}
+
+#texte2013 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#presse2013 {
+	position: absolute;
+    display: none;
+	left: 9vw;
+    top: 40vh;
+    width: 20vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #f43f00;
+    font-weight: bold;	
+    -vendor-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -khtml-animation-duration: 3s;
+}
+
+#textepresse2013 {
+	padding: 1em;
+    background-image: url(../img/presse2013_vide.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: right;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+}
+
+#textehistoire2013 {
+	position: absolute;
+    display: none;
+    left: 35vw;
+    top: 5vh;
+    width: 30vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+.textenum {
+	font-size: 13pt !important;
+}
+
+.gras {
+	color: #f43f00;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#funfact2013 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -1vh;
+    width: 16vw;
+    height: 6vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: white;
+    /* font-weight: 100; */
+}
+
+#textefunfact2013 {
+    /* padding: 1em; */
+    background-image: url(../img/fun_fact_vide.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: -webkit-center;
+    padding-bottom: 8vh;
+    padding-left: 0vw;
+    padding-right: 0.5vw;
 }
