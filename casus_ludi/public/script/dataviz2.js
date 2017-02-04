@@ -120,11 +120,7 @@ function initDataviz2() {
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
       .text(function(d) { return d.data.name; });
 
-  var node = g.selectAll("circle,text");
-
-    regions.forEach(function(region){
-        svg.style("background-image", "url(\"img/france/"+region+".svg\")"); 
-    });
+    var node = g.selectAll("circle,text");
 
     svg
       //.style("background", "#FFFFFF")
@@ -189,6 +185,16 @@ function initDataviz2() {
         total: data["all"]*2,
         showLabel: false
     });
+
+    regions.forEach(function(region){
+        fetch("img/france/"+region+".svg").then(function (response){
+                // if we could load the resource, parse it
+                if( response.ok )
+                    return true;
+                else // if not, send some error message as JSON data
+                    return false;
+        });
+    }); 
 }
 //}, 8000);
 
