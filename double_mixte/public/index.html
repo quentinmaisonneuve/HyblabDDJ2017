@@ -116,6 +116,29 @@
 					<div class="containerstacked"></div>
 				</div>
 			</div>
+
+			<div class="social">
+	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
+ 				<img id="2012facebook0" class="2012facebook" src="img/blanc.svg"/>
+ 				<img id="2012facebook1" class="2012facebook" src="img/blanc.svg"/>
+ 				<img id="2012facebook2" class="2012facebook" src="img/blanc.svg"/>
+ 				<img id="2012facebook3" class="2012facebook" src="img/blanc.svg"/>
+ 				<img id="2012facebook4" class="2012facebook" src="img/blanc.svg"/>
+
+ 				<img class="info-social" src="img/tweet.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Twitter"/>
+ 				<img id="2012twitter0" class="2012twitter" src="img/blanc.svg"/>
+ 				<img id="2012twitter1" class="2012twitter" src="img/blanc.svg"/>
+ 				<img id="2012twitter2" class="2012twitter" src="img/blanc.svg"/>
+ 				<img id="2012twitter3" class="2012twitter" src="img/blanc.svg"/>
+ 				<img id="2012twitter4" class="2012twitter" src="img/blanc.svg"/>
+
+ 				<img class="info-social" src="img/insta.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Instagram"/>
+ 				<img id="2012insta0" class="2012insta" src="img/blanc.svg"/>
+ 				<img id="2012insta1" class="2012insta" src="img/blanc.svg"/>
+ 				<img id="2012insta2" class="2012insta" src="img/blanc.svg"/>
+ 				<img id="2012insta3" class="2012insta" src="img/blanc.svg"/>
+ 				<img id="2012insta4" class="2012insta" src="img/blanc.svg"/>
+        	</div>
 			<!--<div class="van-annees">
 				<img src="img/van_annees/van_2012.svg" data-animation="animated bounceInLeft" width/>
           	</div>-->
@@ -160,11 +183,11 @@
  				<img id="2013twitter4" class="2013twitter" src="img/blanc.svg"/>
 
  				<img class="info-social" src="img/insta.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Instagram"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
- 				<img src="img/blanc.svg"/>
+ 				<img id="2013insta0" class="2013insta" src="img/blanc.svg"/>
+ 				<img id="2013insta1" class="2013insta" src="img/blanc.svg"/>
+ 				<img id="2013insta2" class="2013insta" src="img/blanc.svg"/>
+ 				<img id="2013insta3" class="2013insta" src="img/blanc.svg"/>
+ 				<img id="2013insta4" class="2013insta" src="img/blanc.svg"/>
         	</div>
 	    </div>
 
@@ -330,8 +353,13 @@ $myCarousel.on('slide.bs.carousel', function (e) {
   animateDigits(2012);
   animateDigits(2013);
   animateDigits(2015);
+    animateSocialFacebook(2012);
+  animateSocialTwitter(2012);
+  animateSocialInstagram(2012);
+  
   animateSocialFacebook(2013);
   animateSocialTwitter(2013);
+  animateSocialInstagram(2013);
   /*animateDigits2012();
   animateDigits2013();
   animateDigits2014();
