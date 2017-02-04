@@ -90,9 +90,39 @@
       }
     </script>
 
-<script type="text/javascript">
 
-</script>
+    <script type="text/javascript">
+          function changeImagePrintemps()
+          {
+          var img = document.getElementById("image");
+          img.src="/images/btn-saison1.png";
+          return false;
+          }
+    </script>
+    <script type="text/javascript">
+          function changeImageHiver()
+          {
+          var img = document.getElementById("image");
+          img.src="/images/btn-saison2.png";
+          return false;
+          }
+      </script>
+          <script type="text/javascript">
+          function changeImageAutomne()
+          {
+          var img = document.getElementById("image");
+          img.src="/images/btn-saison4.png";
+          return false;
+          }
+      </script>
+          <script type="text/javascript">
+          function changeImageEte()
+          {
+          var img = document.getElementById("image");
+          img.src="/images/btn-saison3.png";
+          return false;
+          }
+    </script>
 
   </head>
 
@@ -196,11 +226,25 @@
               <input type="image" src="/images/btn-semaine.svg" class="play" onclick="toggleThree(this);"/>
               <p>Week-end</p>
             </div>
-            <div id="boutonBubleBottomRight">
-                            
-              <form>
-                <button></button>
-              </form>
+            <div id="boutonBubleBottomRight" class="imageOne">
+
+
+
+            <form>
+              <div id="btnOne">
+                <input type="radio" name="parfum" value="vanille" id="saison_printemps" onclick="changeImagePrintemps();"/><label for="saison_printemps">Printemps</label>
+              </div>
+              <div id="btnTwo">
+                <input type="radio" name="parfum" value="chocolat" id="saison_hiver" onclick="changeImageHiver();"/><label for="saison_hiver">Hiver</label>
+              </div>
+              <img id="image" src="/images/btn-saison.png">
+              <div id="btnThree">
+                <input type="radio" name="parfum" value="automne" id="saison_automne" onclick="changeImageAutomne();"/><label for="saison_automne">Automne</label>
+              </div>
+              <div id="btnFour">
+                <input type="radio" name="parfum" value="ete" id="saison_ete" onclick="changeImageEte();"/><label for="saison_ete">Été</label>
+              </div>
+            </form>
 
             </div>
           </div>

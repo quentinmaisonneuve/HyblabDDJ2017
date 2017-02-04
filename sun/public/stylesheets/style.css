@@ -470,8 +470,9 @@ input:checked + .slider:before {
 #boutonBubleBottomRight {
 	width: 49%;
 	display: inline-block;
-	background-color: grey;
 }
+
+#boutonBubleBottomRight 
 
 /* Bubble vinyle Effect Animation*/
 .bubbleC:hover
@@ -564,6 +565,42 @@ input:checked + .slider:before {
 	color: #0F4A60;
 	font-weight: bold;
 	font-size: 1.3em;
+}
+
+#btnOne {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnTwo {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnThree {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnFour {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#boutonBubleBottomRight {
+	line-height: 3em;
+}
+
+#boutonBubleBottomRight input {
+	visibility: hidden;
+}
+
+#boutonBubleBottomRight img {
+	width: 25%;
 }
 
 /* ########### TOOLTIPS ########################*/
