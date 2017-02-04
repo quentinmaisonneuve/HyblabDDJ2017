@@ -33,18 +33,21 @@ window.onload = function init (){
 		$(".Sole2").fadeOut("slow");
 		$(".Sole3").fadeOut("slow");
 		$(".Sole4").fadeIn("slow");
-
+/*
 		$(".Touriste1").fadeOut("slow");
 		$(".Touriste2").fadeOut("slow");
 		$(".Touriste3").fadeOut("slow");
 		$(".Touriste4").fadeOut("slow");
-
+*/
 		$(".Agriculteur").fadeOut("slow");
 		$(".PORC").fadeOut("slow");
 		//caca
 		$(".").fadeOut("slow");
 
 		$(".Scientifique").fadeOut("slow");
+		//Scientifique victoire
+		$(".").fadeOut("slow");
+
 		$(".LogoScientifique1").fadeOut("slow");
 		$(".LogoScientifique2").fadeOut("slow");
 		$(".LogoScientifique3").fadeOut("slow");
@@ -55,5 +58,6 @@ window.onload = function init (){
 		$(".Monstre3").fadeOut("slow");
 		$(".Monstre2").fadeOut("slow");
 		$(".Monstre1").fadeOut("slow");
+		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}
