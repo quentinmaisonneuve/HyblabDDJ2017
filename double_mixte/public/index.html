@@ -99,6 +99,16 @@
 				<img id="2011chiffre5" class="2011chiffre chiffre" src="img/zero.svg"/>
 				<img id="2011chiffre6" class="2011chiffre chiffre" src="img/zero.svg"/>
         	</div>
+
+        		<div id="textehistoire2011" class="animated fadeIn">
+				<span class="textenum">Durant l'été 2011</span>,
+				<br/><br/><br/>
+				Donatien voit arriver le voyage à Nantes : un parcours gratuit qui via la culture et le territoire de la métropole renforce le tourisme. C'est le début d'une nouvelle aventure ! Nantes souhaite dynamiser la période estival grâce au VAN.
+				</div>
+
+				<div id="titre2011" class="animated bounceInDown">
+				&laquo; La ville contaminée par l'art &raquo;
+				</div>
         </div> 
 		
 		<!-- 2012 -->
@@ -438,9 +448,13 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     case 1 :
     	animateChiffreReinit(2011);
+    	hideText2011();
       break;
 
+    // 2011
     case 2 :
+    	showText2011();
+
     	// animate
 		animateDigits(2011);
 
@@ -472,6 +486,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
         hidePopover2013();
         hidePresse2013();
+        hideText2011();
 		break;
 
 	// 2013
