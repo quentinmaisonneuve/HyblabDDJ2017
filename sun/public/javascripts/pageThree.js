@@ -89,7 +89,7 @@ function initBubble(node)
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
             .on("mouseover", function(d) {
-                d3.select(this).classed("hover", true);
+                d3.select(this).classed("hover", true)
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
@@ -106,14 +106,12 @@ function initBubble(node)
                 musiqueArrete(d.id);
             });
 
-
-
         //circle.append()
         //format the text for each bubble
         bubbles.append("text")
             .attr("x", function(d){
                 if (d.id == nodes[0].id)
-                    return 180;
+                    return 190;
                 else if (d.id == nodes[1].id)
                     return 360;
                 else if (d.id == nodes[2].id)
@@ -123,7 +121,7 @@ function initBubble(node)
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
-                    return 160;
+                    return 175;
                 else if (d.id == nodes[1].id)
                     return 60;
                 else if (d.id == nodes[2].id)
