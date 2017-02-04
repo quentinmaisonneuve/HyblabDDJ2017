@@ -140,16 +140,17 @@ d3.select('.containerstacked2').html("");
     //d3.select(this).append('span').style
     d3.select(this).select('span').style('background-color', 'red');
 	d3.select(this).select('.legend-machines').style('background-color', chart.color(id));
-	d3.select(this).select('.legend-machines').style('border', 'solid 3px #000');
+	d3.select(this).select('.legend-machines').style('border', 'solid 0.3vh #000');
 	d3.select(this).select('.legend-machines').style('border-radius', '50%');
 	d3.select(this).select('.legend-machines').style('display','inline-block');
 	d3.select(this).select('.legend-machines').style('position','relative');
-	d3.select(this).select('.legend-machines').style('width','4vw');
-	d3.select(this).select('.legend-machines').style('height','4vw');
+	d3.select(this).select('.legend-machines').style('width','2.5vw');
+	d3.select(this).select('.legend-machines').style('height','2.5vw');
 	d3.select(this).select('.legend-machines').style('vertical-align','middle');
 	d3.select(this).select('.legend-machines').style('text-align','center');
-	d3.select(this).select('.legend-image').style('width','3vw');
-	d3.select(this).select('.legend-image').style('height','3vw');
+    d3.select(this).select('.legend-machines').style('opacity','0.8');
+	d3.select(this).select('.legend-image').style('width','1.9vw');
+	d3.select(this).select('.legend-image').style('height','1.9vw');
 	d3.select(this).select('.legend-image').style('vertical-align','middle');
 	d3.select(this).select('.legend-image').style('text-align','center');
 	d3.select(this).select('.legend-image').style('display','inline-block');
@@ -169,8 +170,9 @@ d3.select('.containerstacked2').html("");
   $(this).toggleClass("c3-legend-item-hidden")
     chart.toggle(id);
   });
-  
+  setTimeout(function(){
   var $boxOne = $('.legend-machines');
     $boxOne.addClass('vibrateanimate');
+  },800);
 	
 }
