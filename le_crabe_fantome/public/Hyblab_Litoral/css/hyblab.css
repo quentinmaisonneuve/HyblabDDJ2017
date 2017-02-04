@@ -612,7 +612,125 @@ body{
 }
 
 /*Jeu3*/
-
+.FondJ3{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;
+}
+.Monstre1{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;
+}
+.Monstre2{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Monstre3{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;
+}
+.Monstre4{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Touriste1{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Touriste2{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Touriste3{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Touriste4{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Agriculteur{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.PORC{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Bouse1{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Bouse2{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Bouse3{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Bouse4{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Bourse{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
+.Sceau{
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;	
+}
 
 /*Jeu4*/
 .FondJ4{
@@ -629,7 +747,11 @@ body{
 
 .Sable
 {
-
+	height : 8.1vw;
+	width : 39vw;
+	position: relative;
+    top: 26.9vw;
+    left: 21vw;
 }
 .Mer1{
 	height : 0.1vw;
@@ -638,21 +760,21 @@ body{
     top: 30vw;
     left: 45vw;
 }
-.Mer2"{
+.Mer2{
 	height : 0.1vw;
 	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
-.Mer3"{
+.Mer3{
 	height : 0.1vw;
 	width : 1vw;
 	position: relative;
     top: 30vw;
     left: 45vw;
 }
-.Mer4"{
+.Mer4{
 	height : 0.1vw;
 	width : 1vw;
 	position: relative;
