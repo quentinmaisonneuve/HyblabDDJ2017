@@ -648,28 +648,28 @@ body{
     left: 6vw;
 }
 .Touriste1{
-	width : 8vw;
+	width : 9vw;
 	position: absolute;
-    top: 19vw;
-    left: 34vw;	
+    top: 17vw;
+    left: 50vw;	
 }
 .Touriste2{
-	width : 8vw;
+	width : 9vw;
 	position: absolute;
-    top: 17.9vw;
-    left: 38vw;	
+    top: 21.5vw;
+    left: 42vw;	
 }
 .Touriste3{
-	width : 8vw;
+	width : 9vw;
 	position: absolute;
-    top: 16vw;
-    left: 30vw;	
+    top: 14vw;
+    left: 39vw;	
 }
 .Touriste4{
-	width : 7vw;
+	width : 12vw;
 	position: absolute;
-    top: 15vw;
-    left: 47vw;	
+    top: 10vw;
+    left: 27vw;	
 }
 .Agriculteur{
 	width : 16vw;
@@ -713,7 +713,12 @@ body{
     top: 26.9vw;
     left: 21vw;	
 }
-
+.Scientifique{
+	width : 10vw;
+	position: absolute;
+    top: 8vw;
+    left: 38vw;	
+}
 .LogoScientifique1{
 	width : 4vw;
 	position: absolute;
