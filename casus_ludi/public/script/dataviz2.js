@@ -2,8 +2,9 @@
 
 // No need for window.onload event here since we are using the def attribute
 // when loading our scripts
-setTimeout(function(){
-    
+//setTimeout(function(){
+
+function initDataviz2() {  
     var arrayColor = {"association" : "#96B2F4","budget" : "#5A7DEE","couts-des-services" : "#001DC3","culture" : "#00F365","education" : "#00F02B","election" : "#7897F1","Environnement" : "#00F7BE","equipements" : "#00F483","marche-public" : "#1E47E9","permis-de-construire" : "#3C62EB","pv-deliberations" : "#C3DBF8","subventions" : "#B4CDF6","transport" : "#00F6A0","urbanisme" : "#00F9DB", "France" : "none"}; 
     var regions = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comte","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d-Azur"]; 
     var arrayRegionsX = {"Auvergne-Rhone-Alpes" : 107,"Bourgogne-Franche-Comte" : 29,"Bretagne" : -94,"Centre-Val-de-Loire" : -109,"Corse" : 239,"Grand-Est" : 348,"Hauts-de-France" : 131,"Ile-de-France" : 150,"Normandie" : -85,"Nouvelle-Aquitaine" : -189,"Occitanie" : -140,"Pays-de-la-Loire" : -329,"Provence-Alpes-Cote-d-Azur" : 72}
@@ -121,7 +122,11 @@ setTimeout(function(){
 
   var node = g.selectAll("circle,text");
 
-  svg
+    regions.forEach(function(region){
+        svg.style("background-image", "url(\"img/france/"+region+".svg\")"); 
+    });
+
+    svg
       //.style("background", "#FFFFFF")
       .style("background-image", "url(\"img/france/france.svg\")")
       .style("background-position","-324px -70px")
@@ -184,8 +189,8 @@ setTimeout(function(){
         total: data["all"]*2,
         showLabel: false
     });
-
-}, 8000);
+}
+//}, 8000);
 
 function updateDownload(region, regionName){
     var data = datavizDownLoad(region);

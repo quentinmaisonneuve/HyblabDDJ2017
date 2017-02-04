@@ -131,6 +131,7 @@ fetch('data/data.json')
                 arraySerDemo[item.DemoServ][item.region] += item.value; 
             }
         }) 
+        initDataviz2();  
     });
 
 function dataCreateYear(year){
