@@ -90,6 +90,10 @@
       }
     </script>
 
+<script type="text/javascript">
+
+</script>
+
   </head>
 
 <body >
@@ -108,23 +112,31 @@
         <h1>"Dites nous quand vous m'écoutez, je vous dirais ce que vous aimez"</h1>
         <h2>La rédac' SUN</h2>
         <hr>
-        <div class="blocTwoOne">
-          <form>
-            <div class="cc-selector">
-
-              <input id="automne" type="radio" name="credit-card" value="automne" />
-              <label class="drinkcard-cc automne"for="automne"></label>
-              <input id="hiver" type="radio" name="credit-card" value="hiver" />
-              <label class="drinkcard-cc hiver"for="hiver"></label>
-              <input id="printemps" type="radio" name="credit-card" value="printemps" />
-              <label class="drinkcard-cc printemps" for="printemps"></label>
-              <input id="ete" type="radio" name="credit-card" value="ete" />
-              <label class="drinkcard-cc ete"for="ete"></label>
-            </div>
-          </form>
+        <div class="col span_12_of_12">  
+          <div class="blocTwoOne">
+            <form>
+              <div class="cc-selector">
+                <div class="col span_3_of_12"> 
+                  <input id="automne" type="radio" name="credit-card" value="automne" />
+                  <label class="drinkcard-cc automne"for="automne"></label>
+                </div>
+                <div class="col span_3_of_12">
+                  <input id="hiver" type="radio" name="credit-card" value="hiver" />
+                  <label class="drinkcard-cc hiver"for="hiver"></label>
+                </div>
+                <div class="col span_3_of_12">   
+                  <input id="printemps" type="radio" name="credit-card" value="printemps" />
+                  <label class="drinkcard-cc printemps" for="printemps"></label>
+                </div>
+                <div class="col span_3_of_12">   
+                  <input id="ete" type="radio" name="credit-card" value="ete" />
+                  <label class="drinkcard-cc ete"for="ete"></label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="blocTwoTwo">
-
           <p class="inlineBlocSE">SEMAINE</p>
               <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
           <p class="inlineBlocWE">WEEK-END</p>
@@ -185,17 +197,43 @@
               <p>Week-end</p>
             </div>
             <div id="boutonBubleBottomRight">
-              <form action="">
-                <input type="radio" name="gender" value="male"> <br>
-                <input type="radio" name="gender" value="female"> Female<br>
-                <input type="radio" name="gender" value="other"> Other
+                            
+              <form>
+                <button></button>
               </form>
+
             </div>
           </div>
         </div>
 
         <div id="BubleBottom">
           
+        </div>
+      </div>
+
+      <div id="pageFour">
+        <div id="pageFourTop">
+          <div id="pageFourTopLeft">
+            <img src="/images/page4_logo.png">
+          </div>
+          <div id="pageFourTopCenter">
+            <div id="pageFourTopCenterBarre">
+              <img src="/images/page4_tiret_haut_graphique.png">
+            </div>
+            <div id="pageFourTopCenterGraph">
+              
+            </div>
+          </div>
+          <div id="pageFourTopRight">
+            <p id="pageFourTopRight1">URBAN</p>
+            <p id="pageFourTopRight2">ALTERNATIVE</p>
+            <p id="pageFourTopRight3">ROCK</p>
+            <p id="pageFourTopRight4">POP</p>
+          </div>
+        </div>
+        <div id="pageFourBottom">
+          <img src="/images/page4_logo_sun.png">
+          <p>Dans vos oreilles ces dernières 24h...</p>
         </div>
       </div>
 
