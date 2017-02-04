@@ -62,9 +62,19 @@ function initBubble(node)
                     return "./images/vynile-bleu-gris.svg";
             })
             .attr("width", function(d){
-                console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800);
                 return d.value/total * 800 ; })
             .attr("height", function(d){ return d.value/total * 800 ; })
+            .attr("id", function(d)
+            {
+                if (d.id == nodes[0].id)
+                    return "bubbleR";
+                else if (d.id == nodes[1].id)
+                    return "bubbleV";
+                else if (d.id == nodes[2].id)
+                    return "bubbleB";
+                else if (d.id == nodes[3].id)
+                    return "bubbleBG";
+            })
             .attr("x", function(d){
                 if (d.id == nodes[0].id)
                     return 60;
@@ -85,11 +95,10 @@ function initBubble(node)
                 else if (d.id == nodes[3].id)
                     return 230;
             })
-            .attr("class", function(d) {return d.id})
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
             .on("mouseover", function(d) {
-                d3.select(this).classed("hover", true)
+                d3.select(this).classed("hover", true);
                 div.transition()
                     .duration(200)
                     .style("opacity", .9);
@@ -97,6 +106,7 @@ function initBubble(node)
                     .style("left", (d3.event.pageX) + "px")
                     .style("top", (d3.event.pageY - 28) + "px");
                 musiqueCommence(d.id);
+                //tourne(d3.select(this).attr("id"));
             })
             .on("mouseout", function(d) {
                 d3.select(this).classed("hover", false);
@@ -111,32 +121,39 @@ function initBubble(node)
         bubbles.append("text")
             .attr("x", function(d){
                 if (d.id == nodes[0].id)
-                    return 190;
+                    return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
                 else if (d.id == nodes[1].id)
-                    return 360;
+                    return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
                 else if (d.id == nodes[2].id)
-                    return 0;
+                    return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
                 else if (d.id == nodes[3].id)
-                    return 80;
+                    return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
-                    return 175;
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/2;
                 else if (d.id == nodes[1].id)
-                    return 60;
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/2;
                 else if (d.id == nodes[2].id)
-                    return 0;
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
                 else if (d.id == nodes[3].id)
-                    return 230;
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
             })
             .attr("text-anchor", "middle")
-            .text(function(d){ return d["id"]; })
+            .text(function(d){
+                if (d["id"] == "Pop")
+                    return "Chanson Pop";
+                else
+                    return d["id"];
+            })
+
             .attr("class", "bubbleCTxt")
+            .style("font-size", function(d) { return (1+(d.value/total))*15 + "px" })
             .style({
                 "fill":"white",
-                "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
-                "font-size": "25px",
+                "font-family":"Helvetica Neue, Helvetica, Arial, sans-serif"
             });
+
     });
 }
 
@@ -175,11 +192,41 @@ function changeBubble(node)
             .attr("width", function(d){console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800); return d.value/total * 800 ; })
             .attr("height", function(d){ return d.value/total * 800 ; })
             .attr("class", "bubbleC")
-
     });
+        svg.selectAll(".bubbleCTxt")
+            .attr("x", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+            })
+            .attr("y", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/2;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/2;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
+            });
 
 }
 
+
+function tourne(id)
+{
+    /*console.log("id: "+id);
+    var xOrigin = parseInt(document.getElementById(id).getAttribute("x")) + parseInt((document.getElementById(id).getAttribute("width")/2));
+    var yOrigin = parseInt(document.getElementById(id).getAttribute("y")) + parseInt((document.getElementById(id).getAttribute("height"))/2);
+    document.getElementById(id).style.transformOrigin =  xOrigin + " " + yOrigin;
+    document.getElementById(id).style.transform = "rotate(180)";
+    console.log("donc..." +  xOrigin + " " + yOrigin);*/
+}
 
 /*########################## TOOLTIP ##############################################" */
 function getTooltip(genre)

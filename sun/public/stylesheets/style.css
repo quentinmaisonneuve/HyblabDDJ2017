@@ -474,7 +474,7 @@ input:checked + .slider:before {
 }
 
 /* Bubble vinyle Effect Animation*/
-.bubbleC:hover
+.cbubbleC:hover
 {
 	animation:spin 4s linear infinite;
 }
@@ -487,6 +487,10 @@ input:checked + .slider:before {
 	}
 }
 
+.bubbleV
+{
+    transition-origin:250 20;
+}
 
 /* ################### pageFour ################### */
 
