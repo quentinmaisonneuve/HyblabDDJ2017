@@ -65,7 +65,7 @@ $().click(function(){
 
 $().click(function(){
 	//touriste
-	if(document.getElementById("").checked){
+	if(document.getElementById("cbtouriste").checked){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre3").fadeIn("slow");
 		$(".Touriste1").fadeOut("slow");
@@ -75,7 +75,7 @@ $().click(function(){
 
 	}
 	//agriculteur
-	else if(document.getElementById("").checked){
+	else if(document.getElementById("cbagriculteur").checked){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre1").fadeIn("slow");
 		//3 caca
@@ -86,7 +86,7 @@ $().click(function(){
 
 	}
 	//scientifique
-	else if(document.getElementById("").checked){
+	else if(document.getElementById("cbscientifique").checked){
 		$(".Monstre4").fadeOut("slow");
 		$(".Monstre1").fadeIn("slow");
 
