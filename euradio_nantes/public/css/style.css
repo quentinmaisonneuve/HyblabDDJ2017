@@ -121,8 +121,10 @@ a {
 }
 
 #homeLogo img {
-    margin-top: -50px;
-    margin-bottom: 20px;
+    margin-top: -30px;
+    margin-left: 35px;
+    padding-top: 20px;
+    margin-bottom: 0px;
     width: 33%;
 }
 
