@@ -613,124 +613,143 @@ body{
 
 /*Jeu3*/
 .FondJ3{
-	height : 8.1vw;
-	width : 39vw;
+	display: inline-block;
+	background-image: url(../pictures/Jeu3/FondJ3.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;
 	position: relative;
-    top: 26.9vw;
-    left: 21vw;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
 }
 .Monstre1{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;
+	width : 21vw;
+	position: absolute;
+    top: 7vw;
+    left: 6vw;
 }
 .Monstre2{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 18vw;
+	position: absolute;
+    top: 7vw;
+    left: 7.3vw;
 }
 .Monstre3{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;
+	width : 21vw;
+	position: absolute;
+    top: 7vw;
+    left: 6vw;
 }
 .Monstre4{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 21vw;
+	position: absolute;
+    top: 7vw;
+    left: 6vw;
 }
 .Touriste1{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 8vw;
+	position: absolute;
+    top: 19vw;
+    left: 34vw;	
 }
 .Touriste2{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 8vw;
+	position: absolute;
+    top: 17.9vw;
+    left: 38vw;	
 }
 .Touriste3{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 8vw;
+	position: absolute;
+    top: 16vw;
+    left: 30vw;	
 }
 .Touriste4{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 7vw;
+	position: absolute;
+    top: 15vw;
+    left: 47vw;	
 }
 .Agriculteur{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 16vw;
+	position: absolute;
+    top: 8vw;
+    left: 38vw;	
 }
 .PORC{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 7vw;
+	position: absolute;
+    top: 23vw;
+    left: 47vw;	
 }
 .Bouse1{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 3vw;
+	position: absolute;
+    top: 27vw;
+    left: 29vw;	
 }
 .Bouse2{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 3vw;
+	position: absolute;
+    top: 27vw;
+    left: 29vw;	
 }
 .Bouse3{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 3vw;
+	position: absolute;
+    top: 27vw;
+    left: 29vw;	
 }
 .Bouse4{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
-}
-.Bourse{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;	
+	width : 3vw;
+	position: absolute;
+    top: 27vw;
+    left: 29vw;	
 }
 .Sceau{
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
+	width : 7vw;
+	position: absolute;
     top: 26.9vw;
     left: 21vw;	
 }
+
+.LogoScientifique1{
+	width : 4vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;	
+}
+
+.LogoScientifique2{
+	width : 2vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;	
+}
+
+.LogoScientifique3{
+	width : 3vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;	
+}
+
+.LogoScientifique4{
+	width : 2vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;	
+}
+
+.LogoScientifique5{
+	width : 3vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;	
+}
+
+
 
 /*Jeu4*/
 .FondJ4{
