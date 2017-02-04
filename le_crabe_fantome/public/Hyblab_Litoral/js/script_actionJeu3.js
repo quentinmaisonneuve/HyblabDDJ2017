@@ -21,7 +21,7 @@ $("#cbtouriste").click(function(e){
 	$(".LogoScientifique2").fadeOut("slow");
 	$(".LogoScientifique3").fadeOut("slow");
 	$(".LogoScientifique4").fadeOut("slow");
-	$(".LogoScientifique5").fadeOut("slow");
+	$(".Scientifique-réussite").fadeOut("slow");
 
 	$(".Monstre4").fadeIn("slow");
 	$(".Monstre3").fadeOut("slow");
@@ -48,7 +48,7 @@ $("#cbagriculteur").click(function(e){
 	$(".LogoScientifique2").fadeOut("slow");
 	$(".LogoScientifique3").fadeOut("slow");
 	$(".LogoScientifique4").fadeOut("slow");
-	$(".LogoScientifique5").fadeOut("slow");
+	$(".Scientifique-réussite").fadeOut("slow");
 
 	$(".Monstre4").fadeIn("slow");
 	$(".Monstre3").fadeOut("slow");
@@ -59,11 +59,11 @@ $("#cbagriculteur").click(function(e){
 //check box scientifique
 $("#cbscientifique").click(function(e){
 	$(".Scientifique").fadeIn("slow");
-	$(".LogoScientifique1").fadeIn("slow");
-	$(".LogoScientifique2").fadeIn("slow");
-	$(".LogoScientifique3").fadeIn("slow");
-	$(".LogoScientifique4").fadeIn("slow");
-	$(".LogoScientifique5").fadeIn("slow");
+	$(".LogoScientifique1").fadeOut("slow");
+	$(".LogoScientifique2").fadeOut("slow");
+	$(".LogoScientifique3").fadeOut("slow");
+	$(".LogoScientifique4").fadeOut("slow");
+	$(".Scientifique-réussite").fadeOut("slow");
 
 	$(".Touriste1").fadeOut("slow");
 	$(".Touriste2").fadeOut("slow");
@@ -117,8 +117,13 @@ $("#AttaqueM").click(function(e){
 		$(".Monstre3").fadeOut("slow");
 		$(".Monstre1").fadeOut("slow");
 
-		//$(".Scientifique").fadeOut("slow");
-		//$(".Scientifique").fadeIn("slow");
+		$(".Scientifique").fadeOut("slow");
+		$(".Scientifique-réussite").fadeIn("slow");
+
+		$(".LogoScientifique1").fadeIn("slow");
+		$(".LogoScientifique2").fadeIn("slow");
+		$(".LogoScientifique3").fadeIn("slow");
+		$(".LogoScientifique4").fadeIn("slow");
 
 	}
 });

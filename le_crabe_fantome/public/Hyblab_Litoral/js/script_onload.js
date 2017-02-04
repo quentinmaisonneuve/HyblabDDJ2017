@@ -47,9 +47,9 @@ window.onload = function init (){
 		$(".Bouse3").fadeOut("slow");
 		$(".Bouse4").fadeOut("slow");
 
-		//$(".Scientifique").fadeOut("slow");
+		$(".Scientifique").fadeOut("slow");
 		//Scientifique victoire
-		//$(".").fadeOut("slow");
+		$(".Scientifique-réussite").fadeOut("slow");
 
 		$(".LogoScientifique1").fadeOut("slow");
 		$(".LogoScientifique2").fadeOut("slow");
