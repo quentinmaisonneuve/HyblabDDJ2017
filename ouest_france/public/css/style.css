@@ -96,16 +96,18 @@ p{
 #center
 {
   position: absolute;
-  bottom:47%;
-  left:51%;
+  bottom: 80vh;
+  left: 28.5vw;
 }
 
 #section2 #car
 {
     z-index: 2;
     position:absolute;
-    bottom: 147px;
-    left: 22px;
+    bottom: -19vh;
+    left: 25vw;
+    height: 21vh;
+    width: 16vw;
     animation:mymove 5s infinite;
     -moz-animation:mymove 5s infinite; /*Firefox*/
     -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
@@ -113,14 +115,10 @@ p{
 
 #section2 #route
 {
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 700px;
-    height: 550px;
-    margin-left: -350px;
-    margin-top: -350px;
+  z-index: 1;
+  position: absolute;
+  width: 43vw;
+  height: 60vh;
 }
 
 @keyframes mymove
