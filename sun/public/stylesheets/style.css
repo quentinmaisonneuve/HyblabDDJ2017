@@ -467,7 +467,7 @@ input:checked + .slider:before {
 	background-color: grey;
 }
 
-/* Bubble vinyle Effect Animation */
+/* Bubble vinyle Effect Animation
 .bubbleC:hover
 {
 	animation:spin 4s linear infinite;
@@ -480,6 +480,7 @@ input:checked + .slider:before {
 		transform:rotate(360deg);
 	}
 }
+*/
 
 /* ################### pageFour ################### */
 
