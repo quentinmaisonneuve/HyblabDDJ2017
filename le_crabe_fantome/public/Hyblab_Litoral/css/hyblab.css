@@ -732,88 +732,88 @@ body{
     border : 0.5vw solid white;
 }
 .Monstre1{
-	width : 21vw;
+	width : 23vw;
 	position: absolute;
     top: 7vw;
-    left: 6vw;
+    left: 5.5%;
 }
 .Monstre2{
 	width : 18vw;
 	position: absolute;
     top: 7vw;
-    left: 7.3vw;
-}
+    left: 5.5%;
+ }
 .Monstre3{
-	width : 21vw;
+	width : 23vw;
 	position: absolute;
     top: 7vw;
-    left: 6vw;
+    left: 5.5%;
 }
 .Monstre4{
 	width : 21vw;
 	position: absolute;
     top: 7vw;
-    left: 6vw;
+    left: 5.5%;
 }
 .Touriste1{
-	width : 9vw;
+	width : 7vw;
 	position: absolute;
-    top: 17vw;
-    left: 50vw;	
+    top: 15.5vw;
+    left: 82%;	
 }
 .Touriste2{
-	width : 9vw;
+	width : 10vw;
 	position: absolute;
     top: 21.5vw;
-    left: 42vw;	
+    left: 69%;	
 }
 .Touriste3{
-	width : 9vw;
+	width : 7vw;
 	position: absolute;
-    top: 14vw;
-    left: 39vw;	
+    top: 16vw;
+    left: 63%;	
 }
 .Touriste4{
-	width : 12vw;
+	width : 13vw;
 	position: absolute;
-    top: 10vw;
-    left: 27vw;	
+    top: 8.5vw;
+    left: 43%;	
 }
 .Agriculteur{
 	width : 16vw;
 	position: absolute;
     top: 8vw;
-    left: 38vw;	
+    left: 60%;	
 }
 .PORC{
 	width : 7vw;
 	position: absolute;
-    top: 23vw;
-    left: 47vw;	
+    top: 22.6vw;
+    left: 79%;	
 }
 .Bouse1{
 	width : 3vw;
 	position: absolute;
-    top: 27vw;
-    left: 29vw;	
+    top: 29vw;
+    left: 89%;	
 }
 .Bouse2{
 	width : 3vw;
 	position: absolute;
-    top: 27vw;
-    left: 29vw;	
+    top: 14vw;
+    left: 55%;	
 }
 .Bouse3{
 	width : 3vw;
 	position: absolute;
-    top: 27vw;
-    left: 29vw;	
+    top: 10vw;
+    left: 36%;	
 }
 .Bouse4{
 	width : 3vw;
 	position: absolute;
-    top: 27vw;
-    left: 29vw;	
+    top: 16vw;
+    left: 28%;	
 }
 .Sceau{
 	width : 7vw;
@@ -860,6 +860,10 @@ body{
 	position: absolute;
     top: 26.9vw;
     left: 21vw;	
+}
+
+.radioJ3{
+	
 }
 
 
