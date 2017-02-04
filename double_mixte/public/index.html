@@ -168,7 +168,7 @@
 						</div>
 				</div>
 				
-			<div id="presse2013">
+			<div id="presse2013" class="animated fadeIn">
 			<p id="textepresse2013">
 			&laquo; L'ensemble est une réussite tant artistique que touristique ! &raquo;
 			</p>
@@ -452,12 +452,14 @@ $myCarousel.on('slid.bs.carousel', function (e) {
         drawStackedBarChart();
 
         hidePopover2013();
+        hidePresse2013();
 		break;
 
 	// 2013
     case 4 :
     	showPopover2013();
-    	
+    	showPresse2013();
+
     	// animate
     	animateDigits(2013);
     	animateSocialFacebook(2013);
@@ -504,7 +506,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
       	doGraphAnimCSP();
 
       	hidePopover2013();
-
+      	hidePresse2013();
       	break;
 
     // 2015

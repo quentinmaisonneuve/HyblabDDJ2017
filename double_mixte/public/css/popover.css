@@ -23,7 +23,7 @@
 
 #presse2013 {
 	position: absolute;
-    display: block;
+    display: none;
 	left: 9vw;
     top: 40vh;
     width: 20vw;
@@ -32,6 +32,12 @@
     font-family: Josefin Sans;
     color: #f43f00;
     font-weight: bold;	
+    -vendor-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -khtml-animation-duration: 3s;
 }
 
 #textepresse2013 {
@@ -45,3 +51,4 @@
     padding-left: 5vw;
     padding-right: 1.5vw;
 }
+
