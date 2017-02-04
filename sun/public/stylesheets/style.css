@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+*
+{
+outline: none;
+}
+
+
 
 /* ################################ SOMMAIRE #########################*/
 /*
@@ -485,9 +491,79 @@ input:checked + .slider:before {
 /* ################### pageFour ################### */
 
 #pageFour {
-	background-color: #F5EED8;
-	min-height: 100%;
-	border-top: 1px solid black;
+	background-color: #FFCC00;
+	height: 100%;
+	text-align: center;
+	background-image: url("/images/page4_tiret.png");
+	background-size: 100% 100%;
+}
+
+#pageFourTop {
+	width: 95%;
+	height: 75%;
+	margin: 0 auto;
+	display: flex;
+}
+
+#pageFourTopLeft {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+}
+
+#pageFourTopLeft img{
+	max-width: 70%;
+	margin-top: 50%;
+}
+
+#pageFourTopCenter {
+	width: 50%;
+	display: inline-block;
+	height:100%;
+	padding-top: 4%;
+}
+
+#pageFourTopRight {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+	padding-top: 40%;
+	line-height: 1.7em;
+}
+
+#pageFourTopRight1 {
+	color: #3E634D;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight2 {
+	color: #134D64;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight3 {
+	color: #4A95B8;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight4 {
+	color: #D6515B;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#pageFourBottom img {
+	max-width: 70%;
+	padding-top: 1%;
+	padding-right: 10%;
+}
+
+#pageFourBottom p {
+	padding-right: 10%;
+	padding-top: 1%;
+	color: #0F4A60;
+	font-weight: bold;
+	font-size: 1.3em;
 }
 
 /* ########### TOOLTIPS ########################*/
@@ -732,5 +808,4 @@ div.tooltip {
 	padding-right: 2%;
 	margin-top: 15%;
 }
-
 }
