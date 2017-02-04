@@ -470,7 +470,6 @@ input:checked + .slider:before {
 #boutonBubleBottomRight {
 	width: 49%;
 	display: inline-block;
-	padding-top: 10%;
 }
 
 #boutonBubleBottomRight 
@@ -593,7 +592,7 @@ input:checked + .slider:before {
 }
 
 #boutonBubleBottomRight {
-	line-height: 3em;
+	line-height: 1.2em;
 }
 
 #boutonBubleBottomRight input {
