@@ -400,7 +400,7 @@ $myCarousel.carousel('pause');
 $myCarousel.on('slid.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
-  drawChart();
+ // drawChart();
 drawStackedBarChart();
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
