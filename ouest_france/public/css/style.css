@@ -1,5 +1,10 @@
 @CHARSET "UTF-8";
 
+@font-face {
+    font-family: 'Borg';
+    src: url("../font/Borg.ttf");
+}
+
 html,body {
     padding: 0;
     margin: 0;
@@ -96,21 +101,65 @@ p{
 #center
 {
   position: absolute;
-  bottom: 80vh;
+  bottom: 10vh;
   left: 28.5vw;
+  height: 67vh;
+}
+
+#center h2
+{
+  z-index: 3;
+  font-family: 'Borg';
+  position: absolute;
+  width: 23vw;
+  height: 23vh;
+  font-size: 8em;
+  text-align: -webkit-left;
+  color: white;
+  top: -15vh;
+  left: -6vh;
+}
+
+#center h5
+{
+  position: absolute;
+  color: white;
+  left: 9.2vw;
+  top: -20vh;
+  font-size: 1.3em;
+  width: 100vw;
+}
+
+#center #commencer
+{
+  z-index: 4;
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5em;
+  background-color: white;
+  border: none;
+  color: #216c99;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  width: 13vw;
+  height: 5vh;
+  bottom: 16vh;
+  left: 21vw;
 }
 
 #section2 #car
 {
-    z-index: 2;
-    position:absolute;
-    bottom: -19vh;
-    left: 25vw;
-    height: 21vh;
-    width: 16vw;
-    animation:mymove 5s infinite;
-    -moz-animation:mymove 5s infinite; /*Firefox*/
-    -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
+  z-index: 2;
+  position: absolute;
+  bottom: 49vh;
+  left: 25vw;
+  height: 21vh;
+  width: 16vw;
+  animation:mymove 5s infinite;
+  -moz-animation:mymove 5s infinite; /*Firefox*/
+  -webkit-animation:mymove 5s infinite; /*Safari and Chrome*/
 }
 
 #section2 #route
@@ -163,14 +212,14 @@ p{
 {
     background-image: url("../img/fleche-gauche-blanche.svg");
     float: left;
-    margin-left: 8%;
+    margin-left: 25vw;
 }
 
 #arrow_d
 {
     background-image: url("../img/fleche-droite-blanche.svg");
     float: right;
-    margin-right: 8%;
+    margin-right: 25vw;
 }
 
 #base1 {
