@@ -3,7 +3,7 @@
   padding-right: 0px;
   background : url(../img/fond2.svg);
 	width:100%;
-    background-size:     100%;                      /* <------ */
+    background-size:  cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;  
 }
