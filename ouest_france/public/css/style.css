@@ -250,11 +250,55 @@ p{
 }
 
 #container1 #encadre1 {
-    z-index: 0;
-    position: absolute;
-    top: 23vh;
-    width: 60.7vh;
-    left: 63.5vh;
+  z-index: 0;
+  position: absolute;
+  top: 23vh;
+  width: 60.7vh;
+  left: 64.1vh;
+}
+
+#container1 #encadre1 #info
+{
+  width: 60vh;
+}
+
+#container1 #encadre1 #paragraphe_encadre1
+{
+  position: absolute;
+  color: black;
+  text-align: justify;
+  font-size: 2em;
+  width: 19vh;
+  height: 18vh;
+  bottom: 1vh;
+  left: 38vh;
+}
+
+#container1 #encadre1 #number
+{
+  position: absolute;
+  color: red;
+  font-size: 3.5em;
+  width: 8vh;
+  height: 13vh;
+  bottom: 16vh;
+  left: 44vh;
+}
+
+#container1 #encadre1 #sol
+{
+  position: absolute;
+  left: 0vh;
+  bottom: 7vh;
+  width: 37vh;
+}
+
+#container1 #encadre1 #people
+{
+  position: absolute;
+  left: 0vh;
+  bottom: 7vh;
+  width: 37vh;
 }
 
 #container1 #buttonEncadre1
