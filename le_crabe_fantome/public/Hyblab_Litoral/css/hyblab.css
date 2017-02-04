@@ -1138,6 +1138,14 @@ body{
 	height: 42px;
 }
 
+#Crédit{
+	font-size: 1.5vw;
+	position: absolute;
+	bottom : 1vw;
+	left : 1%;
+	padding-top: 0.3vw;
+}
+
 #RetourData1{
 	font-size: 1.5vw;
 	position: absolute;
