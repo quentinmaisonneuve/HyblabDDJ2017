@@ -1138,6 +1138,49 @@ body{
 	height: 42px;
 }
 
+#RetourData1{
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 21%;
+	padding-top: 0.3vw;
+}
+
+#RetourData2{
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 41%;
+	padding-top: 0.3vw;
+}
+
+#RetourData3{
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 61%;
+	padding-top: 0.3vw;
+}
+
+#RetourData4{
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 81%;
+	padding-top: 0.3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Gestion en pages */
