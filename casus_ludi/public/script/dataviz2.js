@@ -28,18 +28,16 @@ setTimeout(function(){
 
     nodes.forEach(function(item){
 
-        if(item.data.name in arrayRegionsX ){
+        if(item.data.id in arrayRegionsX ){
             item.r -= 0.5; 
-            item.x += arrayRegionsX[item.data.name];
-            item.y += arrayRegionsY[item.data.name];  
+            item.x += arrayRegionsX[item.data.id];
+            item.y += arrayRegionsY[item.data.id];  
         }
-        if((item.data.name != "France") && (item.parent.data.name in arrayRegionsX)){
-            item.x += arrayRegionsX[item.parent.data.name];
-            item.y += arrayRegionsY[item.parent.data.name]; 
+        if((item.data.id != "France") && (item.parent.data.id in arrayRegionsX)){
+            item.x += arrayRegionsX[item.parent.data.id];
+            item.y += arrayRegionsY[item.parent.data.id]; 
         }
     }); 
-
-    console.log(nodes);
 
 /*
     nodes[1].x =  310; 
@@ -106,14 +104,12 @@ setTimeout(function(){
     .style("fill", function(d) { 
         if(d.data.id in arrayColor){
             return arrayColor[d.data.id];
-            //return "none";
         }
         else{
-            //return "none"
             return "#ffffff";
         }
     })
-    .on("click", function(d) { console.log(d); if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+    .on("click", function(d) { updateDownload(d.data.id, d.data.name); if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
   var text = g.selectAll("text")
     .data(nodes)
@@ -127,10 +123,11 @@ setTimeout(function(){
 
   svg
       //.style("background", "#FFFFFF")
-      .style("background-image", "url(\"img/FULL.svg\")")
+      .style("background-image", "url(\"img/france/france.svg\")")
       .style("background-position","-324px -70px")
       .style("background-size", "1100px")
-      .on("click", function() { zoom(root); });
+      .style("background-repeat", false)
+      .on("click", function() { updateDownload("france", "france");zoom(root); });
 
   zoomTo([root.x, root.y, root.r * 2 + margin]);
 
@@ -162,19 +159,88 @@ setTimeout(function(){
     circle.attr("r", function(d) { return d.r * k; });
   }
 
-    var dataDownload = datavizDownLoad();
+    var data = datavizDownLoad();
 
-    console.log(dataDownload);
-
-    new Chartist.Pie('.ct-chart', {
-      series: dataDownload
-    }, {
-      donut: true,
-      donutWidth: 60,
-      startAngle: 270,
-      total: 200,
-      showLabel: false
+    new Chartist.Pie('#downloadChart', {
+      series: [{value : data["couts-des-services"], className : "Cservices"},
+                {value : data["marche-public"], className : "Cmarche"},
+                {value : data["permis-de-construire"], className : "Cconstruire"}, 
+                {value : data["budget"], className : "Cbudget"}, 
+                {value : data["election"], className : "Celection"}, 
+                {value : data["association"], className : "Cassociation"}, 
+                {value : data["subventions"], className : "Csubventions"}, 
+                {value : data["pv-deliberations"], className : "Cpv"}, 
+                {value : data["urbanisme"], className : "Curbanisme"}, 
+                {value : data["Environnement"], className : "Cenvironnement"},
+                {value : data["transport"], className : "Ctransport"},
+                {value : data["equipements"], className : "Cequipements"},
+                {value : data["culture"], className : "Cculture"}, 
+                {value : data["education"], className : "Ceducation"}]}, 
+    {
+        chartPadding: 0,
+        donut: true,
+        donutWidth: 80,
+        startAngle: 270,
+        total: data["all"]*2,
+        showLabel: false
     });
 
-}, 5000);
+}, 8000);
 
+function updateDownload(region, regionName){
+    var data = datavizDownLoad(region);
+
+    new Chartist.Pie('#downloadChart', {
+      series: [{value : data["couts-des-services"], className : "Cservices"},
+                {value : data["marche-public"], className : "Cmarche"},
+                {value : data["permis-de-construire"], className : "Cconstruire"}, 
+                {value : data["budget"], className : "Cbudget"}, 
+                {value : data["election"], className : "Celection"}, 
+                {value : data["association"], className : "Cassociation"}, 
+                {value : data["subventions"], className : "Csubventions"}, 
+                {value : data["pv-deliberations"], className : "Cpv"}, 
+                {value : data["urbanisme"], className : "Curbanisme"}, 
+                {value : data["Environnement"], className : "Cenvironnement"},
+                {value : data["transport"], className : "Ctransport"},
+                {value : data["equipements"], className : "Cequipements"},
+                {value : data["culture"], className : "Cculture"}, 
+                {value : data["education"], className : "Ceducation"}]}, 
+    {
+        chartPadding: 0,
+        donut: true,
+        donutWidth: 80,
+        startAngle: 270,
+        total: data["all"]*2,
+        showLabel: false
+    });
+
+    var white = "";
+
+    if( Math.round(data["all"]) < 10 ){
+        white = "&nbsp;&nbsp;&nbsp;&nbsp;"; 
+    }
+    else if( Math.round(data["all"]) < 1000 ){
+        white = "&nbsp;&nbsp;&nbsp;"; 
+    }
+    else if (Math.round(data["all"]) < 10000 ){
+        white = "&nbsp;&nbsp;"; 
+    }
+    else if (Math.round(data["all"]) < 100000){
+        white = "&nbsp;"; 
+    } 
+
+    setTimeout(function(){
+            $("#textDownload").html(regionName.toUpperCase() + "<br>"+ white  +  Math.round(data["all"]) + " téléchargements de données")
+        if( region == "france"){
+            $("#circleChart").css("background-image", "url(\"img/france/"+region+".svg\")")
+                             .css("background-position","-324px -70px")
+                             .css("background-size", "1100px")
+        }
+        else {
+            $("#circleChart").css("background-image", "url(\"img/france/"+region+".svg\")")
+                             .css("background-position","0px 0px")
+                             .css("background-size", "100%")
+        }
+    },"500"); 
+    
+} 

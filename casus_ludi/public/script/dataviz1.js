@@ -1,6 +1,7 @@
 /****** CHART LINE + CURSOR ******/
 
 $(function(){
+	
 	// Création du curseur
 	$('#radios').radiosToSlider();
 	$('#radios').radiosToSlider({
@@ -88,6 +89,7 @@ function texte2017(){
 }
 
 setTimeout(function(){
+	console.log(classementCreationTop());
 	var data = {
 		labels: [, , , , , ],
 		series: [dataCreateYear('2013'),

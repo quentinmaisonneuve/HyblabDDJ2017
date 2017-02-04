@@ -6,6 +6,7 @@
 var years = [2013,2014,2015,2016,2017]; 
 var keywords = ["association","budget","couts-des-services","culture","education","election","Environnement","equipements","marche-public","permis-de-construire","pv-deliberations","subventions","transport","urbanisme"];
 var regions = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comte","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d-Azur"]; 
+var regionsName = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comté","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d'Azur"]; 
 var others = ["Autre","National","Europe","#N/A"]; 
 var types = ["service","democratique"]; 
 
@@ -16,6 +17,9 @@ var arrayKeywordRegion = {};
 var arrayRegionDownload = {}; 
 var arraySerDemo = {}; 
 
+arrayRegionDownload.france = {}; 
+arrayRegionDownload.france.all = 0; 
+
 for(var year in years){
     arrayYearRegionC[years[year]] = []; 
     arrayYearRegionC[years[year]].all = 0; 
@@ -25,14 +29,19 @@ for(var year in years){
 
 for(var keyword in keywords){
     arrayKeywordRegion[keywords[keyword]] = []; 
-    arrayKeywordRegion[keywords[keyword]].all = 0; 
+    arrayKeywordRegion[keywords[keyword]].all = 0;
+    arrayRegionDownload.france[keywords[keyword]] = 0; 
 }
+
 
 for(var region in regions){
     arrayRegionKeyword[regions[region]] = {}; 
     arrayRegionKeyword[regions[region]].all = 0; 
     arrayRegionDownload[regions[region]] = {}; 
     arrayRegionDownload[regions[region]].all = 0; 
+    for(var keyword in keywords){
+        arrayRegionDownload[regions[region]][keywords[keyword]] = 0; 
+    }
 }
 
 for(var other in others){
@@ -108,13 +117,10 @@ fetch('data/data.json')
 
             //init data about openData downloaded by region keyword
             arrayRegionDownload[item.region].all += item.downloadValue; 
+            arrayRegionDownload[item.region][item.keyword] += item.downloadValue; 
 
-            if(isNaN(arrayRegionDownload[item.region][item.keyword])){
-                arrayRegionDownload[item.region][item.keyword] = item.downloadValue; 
-            }
-            else {
-                arrayRegionDownload[item.region][item.keyword] += item.downloadValue; 
-            }
+            arrayRegionDownload.france[item.keyword] += item.downloadValue; 
+            arrayRegionDownload.france.all += item.downloadValue
 
             arraySerDemo[item.DemoServ].all += item.value; 
 
@@ -124,8 +130,7 @@ fetch('data/data.json')
             else {
                 arraySerDemo[item.DemoServ][item.region] += item.value; 
             }
-
-        })
+        }) 
     });
 
 function dataCreateYear(year){
@@ -192,12 +197,18 @@ function dataUpdateYear(year){
     return data; 
 }
 
-/*function classementCreationTop(){
-    arrayYearRegionC[2013]["Hauts-de-France"]
+
+function classementCreationTop(){
+    var tupleArray = arrayYearRegionC[2013];
+    var data = [];  
+    arrayYearRegionC[2013].forEach(function(item){
+        data.push(item);
+    })
+    return data; 
 }
 
 function classementCreationFlop(){
-
+    Object.values(arrayYearRegionC[2013]).sort(function(a,b){return a - b;});
 }
 
 function classementModificationTop(){
@@ -206,7 +217,7 @@ function classementModificationTop(){
 
 function classementModificationFlop(){
 
-}*/
+}
 
 function decimalAdjust(type, value, exp) {
     // Si la valeur de exp n'est pas définie ou vaut zéro...
@@ -229,7 +240,7 @@ function decimalAdjust(type, value, exp) {
 }
 
 function datavizCircle(){
-    var data = {"name":"France","children" : [] };  
+    var data = {"name":"France", "id":"France","children" : [] };  
     for(region in regions){
         var arraykeyword = []; 
         for(keyword in keywords){
@@ -238,15 +249,13 @@ function datavizCircle(){
             }
 
         } 
-        data.children.push({"name":regions[region],"children":arraykeyword});
+        data.children.push({"name":regionsName[region], "id" : regions[region],"children":arraykeyword});
     }
     return data; 
 }
 
-function datavizDownLoad(region = "all"){
-    if(region == "all"){
-        return arrayKeywordRegion[regions["all"]];
-    }
+function datavizDownLoad(region ="france"){
+    return arrayRegionDownload[region]; 
 }
 
 function getSerDemo(type, region){
