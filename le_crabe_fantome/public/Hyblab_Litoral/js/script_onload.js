@@ -33,12 +33,12 @@ window.onload = function init (){
 		$(".Sole2").fadeOut("slow");
 		$(".Sole3").fadeOut("slow");
 		$(".Sole4").fadeIn("slow");
-
+/*
 		$(".Touriste1").fadeOut("slow");
 		$(".Touriste2").fadeOut("slow");
 		$(".Touriste3").fadeOut("slow");
 		$(".Touriste4").fadeOut("slow");
-
+*/
 		$(".Agriculteur").fadeOut("slow");
 		$(".PORC").fadeOut("slow");
 		//caca
