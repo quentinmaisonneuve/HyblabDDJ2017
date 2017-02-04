@@ -64,4 +64,4 @@ function writeBricksChart(req, res, next) {
     });
 };
 
-app.get('/murs-frontieres', writeHeader, writeRegions, writeWallsMap, writeBricksChart, writeFooter);
+app.get('/', writeHeader, writeRegions, writeWallsMap, writeBricksChart, writeFooter);
