@@ -470,6 +470,7 @@ input:checked + .slider:before {
 #boutonBubleBottomRight {
 	width: 49%;
 	display: inline-block;
+	padding-top: 10%;
 }
 
 #boutonBubleBottomRight 
@@ -600,7 +601,12 @@ input:checked + .slider:before {
 }
 
 #boutonBubleBottomRight img {
-	width: 25%;
+	width: 50%;
+}
+
+#btnSaisonImg {
+	width: 50%;
+	margin: 0 auto;
 }
 
 /* ########### TOOLTIPS ########################*/
