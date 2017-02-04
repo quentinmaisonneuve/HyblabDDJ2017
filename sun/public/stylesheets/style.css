@@ -1,0 +1,857 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*
+{
+outline: none;
+}
+
+
+
+/* ################################ SOMMAIRE #########################*/
+/*
+	I - Initialisation
+	II - Début
+	III - Div Un
+	IV - Div Deux
+	V - Div Trois
+	VI - Div Quatre
+*/
+
+
+/*#################### Début #################### */
+html {
+	height: 100%;
+	width: 101%;
+}
+
+body {
+	height: 100%;
+	width: 101%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+
+/* ################### Div Un ################### */
+
+#pageOne{
+	background-color: #004266;
+	min-height: 100%;
+	text-align: center;
+	background-image: url("/images/tout_les_tirets.png");
+	background-size: 100% 100%;
+}
+
+#pageOne .pageOnePremierP {
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+	width: 35%;
+	margin: 0 auto;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+#pageOne .pageOneDeuxiemeP {
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 1%;
+}
+
+
+#pageOne button {
+	background-color: #004266;
+	width: 10%;
+	color: #FFD000;
+	font-weight: bold;
+	border: 3px #FFD000 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
+}
+
+/* ################### pageTwo ################### */
+
+#pageTwo {
+	background-color: #FFD000;
+	min-height: 100%;
+	background-image: url("/images/page2_tiret.png");
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+#pageTwo h1 {
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #004266;
+	width: 40%;
+	margin: 0 auto;
+}
+
+#pageTwo h2 {
+	font-size: 1.5em;
+	padding-top: 1%;
+	color: #004266;
+	font-style: italic;
+	text-align: center;
+}
+
+#pageTwo hr {
+	width: 10%;
+	border: 1px solid #004266;
+	margin-top: 1%;
+}
+
+#pageTwo .blocTwoOne {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 1%;
+	padding-top: 1%;
+}
+
+#pageTwo .blocTwoOne .Saison {
+	width: 24%;
+	display: inline-block;
+	color: #004266;
+	font-weight: bold;
+}
+
+#pageTwo .blocTwoTwo {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5%;
+	padding-bottom: 1%;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #004266;
+	display: flex;
+
+}
+
+#pageTwo .blocTwoTwo .inlineBloc {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+}
+
+.inlineBlocWE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-right: 20%;
+}
+
+.inlineBlocSE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-left: 20%;
+}
+
+#pageTwo {
+	min-height: 100%;
+}
+
+#pageTwo button {
+	background-color: #FFD000;
+	width: 10%;
+	color: #004266;
+	font-weight: bold;
+	border: 3px #004266 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
+}
+
+
+/* FORM */
+.printemps{background-image:url(/images/page2_feuille.png);}
+.ete{background-image:url(/images/page2_soleil.png);}
+.automne{background-image:url(/images/page2_automne.png);}
+.hiver{background-image:url(/images/page2_hiver.png);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:125px;height:90px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.9);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.9);
+            filter: brightness(1.8) grayscale(1) opacity(.9);
+}
+
+.cc-selector input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+.cc-selector input[type=radio] + label:before {
+    border: 2px solid #004266;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+.cc-selector input[type=radio]:checked + label:before {
+    background: #004266;
+    border-color: #004266;
+    box-shadow: inset 0px 0px 0px 2px #FFD000;
+}
+
+.cc-selector label.drinkcard-cc.printemps::before{
+	margin-top: 80%;
+	margin-right: 30%;
+}
+.cc-selector label.drinkcard-cc.ete::before{
+	margin-top: 80%;
+	margin-right: 55%;
+}
+.cc-selector label.drinkcard-cc.automne::before{
+	margin-top: 80%;
+	margin-right: 15%;
+}
+.cc-selector label.drinkcard-cc.hiver::before{
+	margin-top: 80%;
+	margin-right: 60%;
+}
+
+label.drinkcard-cc.ete {
+	margin-left: 10%;
+}
+.cc-selector label.drinkcard-cc.automne {
+	margin-left: 5%;
+}
+.cc-selector label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+label.drinkcard-cc.printemps {
+	margin-left: 7%;
+}
+
+/* TOGLE */
+/* The slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  max-width : 450px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+}
+
+input[type=range]::-ms-track { color: red; }
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #004266;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #004266;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.play, .pause {
+	width:75px;
+	height:75px;
+}
+
+.inlineBloc {
+
+	position: relative;
+	top: 32px;
+}
+
+/* ################### pageThree ################### */
+
+#pageThree {
+	background-color: #FECB2E;
+	min-height: 100%;
+}
+
+#bubleChart {
+	width: 50%;
+	height: 70%;
+	display: inline-block;
+  	margin:0;
+  	padding:0;
+  	background: url(/images/fond-matiere.png) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+  	margin-left: 1%;
+}
+
+#boutonBuble {
+	width: 45%;
+	height: 70%;
+	display: inline-block;
+	margin-top: 2%;
+}
+
+#boutonBubleTopLeft {
+	width: 49%;
+	display: inline-block;
+}
+
+#boutonBubleTopLeft img {
+	width: 50%;
+}
+
+#boutonBubleTopLeft {
+	text-align: center;
+}
+
+#boutonBubleTopRight {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleTopRight p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomLeft {
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleBottomLeft p{
+	margin-bottom: 3%;
+	margin-top: 3%; 
+}
+
+#boutonBubleBottomRight {
+	width: 49%;
+	display: inline-block;
+}
+
+
+/* Bubble vinyle Effect Animation*/
+.bubbleC:hover
+{
+	animation:spin 4s linear infinite;
+}
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
+
+#bubbleV
+{
+    /*transform-origin:206px 186px;*/
+}
+
+/* ################### pageFour ################### */
+
+#pageFour {
+	background-color: #FFCC00;
+	height: 100%;
+	text-align: center;
+	background-image: url("/images/page4_tiret.png");
+	background-size: 100% 100%;
+}
+
+#pageFourTop {
+	width: 95%;
+	height: 75%;
+	margin: 0 auto;
+	display: flex;
+}
+
+#pageFourTopLeft {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+}
+
+#pageFourTopLeft img{
+	max-width: 70%;
+	margin-top: 50%;
+}
+
+#pageFourTopCenter {
+	width: 50%;
+	display: inline-block;
+	height:100%;
+	padding-top: 4%;
+}
+
+#pageFourTopRight {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+	padding-top: 40%;
+	line-height: 1.7em;
+}
+
+#pageFourTopRight1 {
+	color: #3E634D;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight2 {
+	color: #134D64;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight3 {
+	color: #4A95B8;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight4 {
+	color: #D6515B;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#pageFourBottom img {
+	max-width: 70%;
+	padding-top: 1%;
+	padding-right: 10%;
+}
+
+#pageFourBottom p {
+	padding-right: 10%;
+	padding-top: 1%;
+	color: #0F4A60;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#btnOne {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnTwo {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnThree {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnFour {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#boutonBubleBottomRight {
+	line-height: 1.2em;
+}
+
+#boutonBubleBottomRight input {
+	visibility: hidden;
+}
+
+#boutonBubleBottomRight img {
+	width: 50%;
+}
+
+#btnSaisonImg {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* ########### TOOLTIPS ########################*/
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 200px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: lightsteelblue;
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+}
+
+
+/* ######################~~########################*/
+/* ########### Responsive ########################*/
+/* ##############################################*/
+ /**
+ * 3.5 - Responsive - Made with http://www.responsivegridsystem.com/calculator/
+ * 
+ * 12 col and 1.6% margin
+ *
+ */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_11_of_12 {
+  	width: 91.53%;
+}
+.span_10_of_12 {
+  	width: 83.06%;
+}
+
+.span_9_of_12 {
+  	width: 74.6%;
+}
+
+.span_8_of_12 {
+  	width: 66.13%;
+}
+
+.span_7_of_12 {
+  	width: 57.66%;
+}
+
+.span_6_of_12 {
+  	width: 49.2%;
+}
+
+.span_5_of_12 {
+  	width: 40.73%;
+}
+
+.span_4_of_12 {
+  	width: 32.26%;
+}
+
+.span_3_of_12 {
+  	width: 23.8%;
+}
+
+.span_2_of_12 {
+  	width: 15.33%;
+}
+
+.span_1_of_12 {
+  	width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*  Tablette */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 480px) {
+	.col {  
+        margin: 1% 0 1% 1.6%; 
+        flex-direction: column;
+    }
+    .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+	width: 100%; 
+	}
+}
+
+/*  Portable */
+@media only screen and (max-width: 480px) {
+    .col {  
+        margin: 1% 0 1% 0%; 
+        flex-direction: column;
+    }
+    
+    .span_1_of_12, .span_2_of_12 .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+       width: 100%;
+    }
+
+    .span_3_of_12{
+    	width: 25%;
+    }
+
+    #pageOne{background-image: none;}
+    #pageOne img{max-width: 60%;}
+    #pageOne .pageOnePremierP {
+	font-size: 1em;
+	width: 80%;
+	line-height: 140%;
+	}
+	#pageOne .pageOneDeuxiemeP {
+	padding-top: 5%;
+	font-size: 1em;
+	width: 80%;
+	}
+	#pageOne button {
+	margin-top: 10%;
+	width: 25%;
+	border: 2px #FFD000 solid;
+	font-size: 4vw;
+	padding-right: 2%;
+	}
+
+	#pageTwo {background-image: none;}
+	#pageTwo h1 {
+		font-size: 1em;
+		width: 80%;
+	}
+	#pageTwo h2 {
+		font-size: 0.8em;
+		padding-top: 3%;
+	}
+	#pageTwo hr {
+		width: 30%;
+		margin-top: 2%;
+	}
+
+
+	#pageTwo .blocTwoOne {
+		width: 80%;
+		margin-top: 1%;
+		padding-top: 1%;
+	}
+	#pageTwo .blocTwoOne .Saison {
+		width: 24%;
+		display: inline-block;
+	}
+	.printemps{width:85%;}
+	.ete{width:60%;}
+	.automne{width:85%;}
+	.hiver{width:50%;}
+
+	.cc-selector label.drinkcard-cc.printemps::before{
+	margin-top: 120%;
+	margin-right: 9%;
+	width:10%;
+	height:10%;
+	}
+	.cc-selector label.drinkcard-cc.ete::before{
+		margin-top: 170%;
+		margin-right: 5%;
+		width:15%;
+		height:9%;
+	}
+	.cc-selector label.drinkcard-cc.automne::before{
+		margin-top: 119%;
+		margin-right: 6%;
+		width:12%;
+		height:9%;
+	}
+	.cc-selector label.drinkcard-cc.hiver::before{
+		margin-top: 202%;
+		margin-right: 8%;
+		width:20%;
+		height:9%;
+	}
+
+	label.drinkcard-cc.ete {
+		margin-left: 10%;
+	}
+	.cc-selector label.drinkcard-cc.automne {
+		margin-left: 5%;
+	}
+	.cc-selector label.drinkcard-cc.hiver {
+		margin-left: 7%;
+	}
+	label.drinkcard-cc.printemps {
+		margin-left: 7%;
+	}
+
+	#pageTwo .blocTwoTwo {
+	width: 80%;
+	margin-top: 5%;
+	padding-bottom: 1%;
+	font-size: 0.8em;
+	margin-bottom: 7%;
+	}
+	#pageTwo .blocTwoTwo .inlineBloc {
+		width: 30%;
+	}
+	.inlineBlocWE {
+		width: 30%;
+		margin-right: 15%;
+		margin-left: 5%;
+	}
+	.inlineBlocSE {
+		width: 30%;
+		margin-left: 15%;
+		margin-right: 5%;
+	}
+	.play, .pause {
+	width:45px;
+	height:45px;
+	}
+	#pageTwo button {
+	width: 25%;
+	border: 2px #004266 solid;
+	padding: 15px;
+	margin-top: 2%;
+	font-size: 4vw;
+	padding-right: 2%;
+	margin-top: 15%;
+}
+}
