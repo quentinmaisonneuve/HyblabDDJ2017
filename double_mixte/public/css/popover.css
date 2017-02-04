@@ -99,3 +99,32 @@
     padding-left: 0vw;
     padding-right: 0.5vw;
 }
+
+
+#textehistoire2011 {
+	position: absolute;
+    display: none;
+    left: 35vw;
+    top: 5vh;
+    width: 50vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#titre2011 {
+    position: absolute;
+    display: block;
+    /* left: 22vw; */
+    top: 40vh;
+    width: 100vw;
+    height: 50vh;
+    font-size: 42pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}

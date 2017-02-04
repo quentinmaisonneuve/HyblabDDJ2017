@@ -18,3 +18,13 @@ function hidePresse2013() {
 	$("#presse2013").css("display", "none");
 }
 
+function showText2011() {
+	$("#textehistoire2011").css("display", "block");
+	$("#titre2011").css("display", "block");
+}
+
+function hideText2011() {
+	$("#textehistoire2011").css("display", "none");
+	$("#titre2011").css("display", "none");
+}
+
