@@ -4,9 +4,7 @@
 	left: 30vw;
 	top:20vh;
 	width:41vw;
-	height:35vh;
-	border-width:0px;
-	vertical-align: middle;	
+	vertical-align: middle;
 }
 /*-----------------------------------*/
 /*-----------------------------------*/
@@ -38,26 +36,30 @@
 	width:40vw;
 	height:30vh;
 	vertical-align:middle;
+	
+	border :solid 2px;
 	/*text-align:center;*/
 }
 /*-----------------------------------*/
 /*left*/
 #stackedbarchart{
+	position:relative;
 	display:inline-block;
-	width:30vw;
-	/*position: relative;*/
-	border-width:0px;
+	width:100%;
+	height: 30vh;
+	vertical-align:middle;
 	/*padding:5px;*/
 }
+.machine path {fill: #ffffff !important;}
 
 /*right*/
 .containerstacked {
-    position: absolute;
-	display: inline-block;
+    position: relative;
+	display:inline-block;
 	border-width:0px;
 	/*margin:2px;*/
-	width:8vw;
-	height:30vh;
+	width:100%;
+	height:6vh
 	vertical-align:middle;
 	text-align:center;
     /*border-style: solid;
@@ -67,19 +69,23 @@
 }
 #legendline{
 	position: relative;
-	display: inline-block;
+	/*display: inline-block;*/
 	width:100%;
 	vertical-align:middle;
 	text-align:center;
-	margin-top:1.2vh;
+	/*margin-top:1.vh;*/
+}
+#legend-machines{
+	position: relative;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
 }
 .containerstacked2 {
     position: relative;
-	display: table;
-	border-width:0px;
+	display: inline-flex;
 	/*margin:2px;*/
 	width:100%;
-	
 	vertical-align:middle;
 	text-align:center;
     /*border-style: solid;
@@ -87,15 +93,14 @@
 	/*padding:5px;
 	right:1px;*/
 }
-.vibrateanimate{
-  animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-}
 
 
-.containerstacked .c3-legend-item-hidden {
-  opacity: 0.3; }
+.containerstacked2 .c3-legend-item-hidden {
+  /*opacity: 0.3;*/
+fill:#000000;  }
+#legenline .c3-legend-item-hidden {
+  /*opacity: 0.3;*/
+fill:#000000;  }
 /*
 #stackedbarchart .c3-axis-y text {
    fill: red;
