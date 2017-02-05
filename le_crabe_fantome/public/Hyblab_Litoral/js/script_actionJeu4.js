@@ -7,7 +7,7 @@
 		if(echelle<0){
 			echelle=0;
 		}
-		//document.getElementById("div1").style.transform = 'scale(' + echelle/200000 + ')';
+		document.getElementById("bourse").style.transform = 'scale(' + echelle/200000 + ')';
 		if(document.getElementById("barreJ4-1").value==1){
 			$(".Maison1").fadeOut("slow");
 			$(".Maison2").fadeIn("slow");
@@ -32,7 +32,7 @@
 		if(echelle<0){
 			echelle=0;
 		}
-		//document.getElementById("div1").style.transform = 'scale(' + echelle/200000 + ')';
+		document.getElementById("bourse").style.transform = 'scale(' + echelle/200000 + ')';
 		if(document.getElementById("barreJ4-2").value==1){
 			$(".Digue1").fadeIn("slow");
 			$(".Digue2").fadeOut("slow");
