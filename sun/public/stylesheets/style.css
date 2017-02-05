@@ -472,6 +472,9 @@ input:checked + .slider:before {
 	display: inline-block;
 }
 
+#BubleBottom {
+	text-align: center;
+}
 
 /* Bubble vinyle Effect Animation*/
 .bubbleC:hover
