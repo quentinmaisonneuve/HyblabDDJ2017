@@ -83,6 +83,8 @@ function initBubble(node)
                     return 0;
                 else if (d.id == nodes[3].id)
                     return 80;
+                else
+                    return -2000;
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
@@ -93,6 +95,8 @@ function initBubble(node)
                     return 0;
                 else if (d.id == nodes[3].id)
                     return 230;
+                else
+                    return -2000;
             })
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
@@ -142,6 +146,8 @@ function initBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+                else
+                    return -200;
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
@@ -152,6 +158,8 @@ function initBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3;
+                else
+                    return -200;
             })
             .attr("id", function(d)
             {
@@ -173,7 +181,14 @@ function initBubble(node)
             })
 
             .attr("class", "bubbleCTxt")
-            .style("font-size", function(d) { return (1+(d.value/total))*12 + "px" })
+            .style("font-size", function(d) {
+                var taille = (1+(d.value/total))*13;
+                if (taille > 20)
+                    taille = 20;
+                else if (taille < 9)
+                    taille = 9;
+                return taille + "px"
+            })
             .style({
                 "fill":"white",
             });
@@ -236,6 +251,8 @@ function changeBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("x"), 10) + parseInt(d3.select("#bubbleB").attr("width"), 10) / 2;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+                else
+                    return -200;
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
@@ -246,21 +263,19 @@ function changeBubble(node)
                     return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3;
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3;
+                else
+                    return -200;
             })
-            .style("font-size", function(d) { return (1+(d.value/total))*13 + "px" });
+            .style("font-size", function(d) {
+                var taille = (1+(d.value/total))*13;
+                if (taille > 20)
+                    taille = 20;
+                else if (taille < 9)
+                    taille = 9;
+                return taille + "px"
+            });
     });
 
-}
-
-
-function tourne(id)
-{
-    /*console.log("id: "+id);
-    var xOrigin = parseInt(document.getElementById(id).getAttribute("x")) + parseInt((document.getElementById(id).getAttribute("width")/2));
-    var yOrigin = parseInt(document.getElementById(id).getAttribute("y")) + parseInt((document.getElementById(id).getAttribute("height"))/2);
-    document.getElementById(id).style.transformOrigin =  xOrigin + " " + yOrigin;
-    document.getElementById(id).style.transform = "rotate(180)";
-    console.log("donc..." +  xOrigin + " " + yOrigin);*/
 }
 
 /*########################## TOOLTIP ##############################################" */
@@ -325,8 +340,32 @@ function getTooltip(genre)
 function getRoad()
 {
     // Style
-    var season = $('input[type=radio][name=season]:checked').attr('value');
-    return "./creneau/"+season+"/1/16/18";
+    //var season = $('input[type=radio][name=season]:checked').attr('value');
+    var season;
+        switch ($("#slider").roundSlider("option", "value"))
+        {
+            case 0:
+            case 4:
+                season = "spring";
+                break;
+            case 1:
+                season = "summer";
+                break;
+            case 2:
+                season = "autumn";
+                break;
+            case 3:
+                season = "winter";
+                break;
+        }
+
+
+    var weekEnd;
+        if(document.getElementById("weekOrWeekEnd").className == "play")
+            weekEnd = 0;
+        else
+            weekEnd = 1;
+    return "./creneau/"+season+"/"+weekEnd+"/16/18";
 }
 
 initBubble(getRoad());

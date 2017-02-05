@@ -204,13 +204,6 @@
           <audio id="Electro">
             <source src="/music/Electro.mp3" type="audio/mp3">
           </audio>
-          <div id="bubble3" width="800" height="600"></div>
-          <input type="radio" name="season" value="summer" onclick="changeBubble(getRoad());" checked>Été</input>
-          <input type="radio" name="season" value="spring" onclick="changeBubble(getRoad());">Printemps</input>
-          <input type="radio" name="season" value="autumn" onclick="changeBubble(getRoad());">Automne</input>
-          <input type="radio" name="season" value="winter" onclick="changeBubble(getRoad());">Hiver</input>
-
-        </div>
 
         <div id="boutonBuble">
           <div id="boutonBubleTop">
@@ -219,14 +212,14 @@
             </div>
             <div id="boutonBubleTopRight">
               <p>Genre</p>
-              <input type="image" src="/images/ambiance_on.svg" name="moodVsGenre" class="play" onclick="toggleTwo(this);"/>
+              <input type="image" src="/images/ambiance_on.svg" id="moodVsGenre" class="play" onclick="toggleTwo(this); changeBubble(getRoad());"/>
               <p>Ambiance</p>
             </div>
           </div>
           <div id="boutonBubleBottom">
             <div id="boutonBubleBottomLeft">
               <p>Semaine</p>
-              <input type="image" src="/images/btn-semaine.svg" name="weekOrWeekEnd" class="play" onclick="toggleThree(this);"/>
+              <input type="image" src="/images/btn-semaine.svg" id="weekOrWeekEnd" class="play" onclick="toggleThree(this); changeBubble(getRoad());"/>
               <p>Week-end</p>
             </div>
             <div id="boutonBubleBottomRight">
@@ -250,8 +243,8 @@
                       startAngle: 45,
 
                       change: function (args) {
-                      // handle the change event here
                         setSaison(slider.getValue());
+                        changeBubble(getRoad());
                       }
                     });
                 </script>

@@ -14,6 +14,8 @@ var data = {
     getToday:function(callback) {
         return db.query("SELECT id FROM musique_auditeur_tbl WHERE DATE('2016-09-29 14:53:33') = DATE(date_heure_diffusion_reelle)", callback);
     },
+
+
     // Get occurency of each music genre during Winter
     getWinterGenre:function(callback)
     {
@@ -151,7 +153,44 @@ var data = {
         //return db.query("SELECT count(*), _genre4 FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE DAYOFYEAR(date_heure_diffusion_reelle) < DAYOFYEAR(NOW()) AND DAYOFYEAR(date_heure_diffusion_reelle) >= (DAYOFYEAR(NOW())-1) GROUP BY _genre4;", callback)
     },
 
-getMoodCreneau:function(mood,start, stop, callback)
+    getCreneauSeasonWeekHourMood:function(season, week, start, end, callback)
+    {
+        var intervalle = "";
+        switch(season)
+        {
+            case "winter":
+                intervalle = "DAYOFYEAR(date_heure_diffusion_reelle) < 80 OR DAYOFYEAR(date_heure_diffusion_reelle) >= 355";
+                break;
+            case "spring":
+                intervalle = "DAYOFYEAR(date_heure_diffusion_reelle) >= 80 AND DAYOFYEAR(date_heure_diffusion_reelle) < 172";
+                break;
+            case "summer":
+                intervalle = "DAYOFYEAR(date_heure_diffusion_reelle) >= 172 AND DAYOFYEAR(date_heure_diffusion_reelle) < 264";
+                break;
+            case "autumn":
+                intervalle = "DAYOFYEAR(date_heure_diffusion_reelle) >= 264 AND DAYOFYEAR(date_heure_diffusion_reelle) < 355";
+                break;
+            default:
+                throw "Bad season";
+                break;
+        }
+
+        if ( (!/\d/.test(week)) &&  (week.length!=1) )
+            throw "Bad week format";
+        else if (intervalle == "")
+            throw "Bad interval format";
+        else if(season > 6 && !/\D{6}/.test(season))
+            throw "Bad season format";
+        else
+        if (week == 0) // Week
+            return db.query("SELECT count(*) AS value, _mood1 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)<='4' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"'  GROUP BY _mood1;", callback)
+        else if (week == 1) // Week End
+            return db.query("SELECT count(*) AS value, _mood1 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE "+intervalle+" AND WEEKDAY(date_heure_diffusion_reelle)>='5' AND HOUR(date_heure_diffusion_reelle)>='"+start+"' AND HOUR(date_heure_diffusion_reelle)<='"+end+"' GROUP BY _mood1;", callback)
+        //return db.query("SELECT count(*), _genre4 FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE DAYOFYEAR(date_heure_diffusion_reelle) < DAYOFYEAR(NOW()) AND DAYOFYEAR(date_heure_diffusion_reelle) >= (DAYOFYEAR(NOW())-1) GROUP BY _genre4;", callback)
+    },
+
+
+    getMoodCreneau:function(mood,start, stop, callback)
     {
         if (!valideDate(start) || !valideDate(stop))
             throw "Bad SQL Date Format";
@@ -159,7 +198,6 @@ getMoodCreneau:function(mood,start, stop, callback)
         switch(mood)
         {
             case "Nostalgique":
-                
                 return db.query("SELECT count(*)as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE date_heure_diffusion_reelle >=  '"+ start+"' AND date_heure_diffusion_reelle <= '"+ stop +"' AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback);
                 break;
             case "Cool" :
