@@ -61,6 +61,8 @@ window.onload = function init (){
 		$(".Monstre3").fadeOut("slow");
 		$(".Monstre2").fadeOut("slow");
 		$(".Monstre1").fadeOut("slow");
+
+		$(".Sceau").fadeOut("slow");
 		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}

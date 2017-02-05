@@ -8,6 +8,7 @@ $("#cbtouriste").click(function(e){
 	$(".Touriste2").fadeIn("slow");
 	$(".Touriste3").fadeIn("slow");
 	$(".Touriste4").fadeIn("slow");
+	$(".Sceau").fadeOut("slow");
 
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
@@ -42,6 +43,7 @@ $("#cbagriculteur").click(function(e){
 	$(".Touriste2").fadeOut("slow");
 	$(".Touriste3").fadeOut("slow");
 	$(".Touriste4").fadeOut("slow");
+	$(".Sceau").fadeOut("slow");
 
 	$(".Scientifique").fadeOut("slow");
 	$(".LogoScientifique1").fadeOut("slow");
@@ -69,6 +71,7 @@ $("#cbscientifique").click(function(e){
 	$(".Touriste2").fadeOut("slow");
 	$(".Touriste3").fadeOut("slow");
 	$(".Touriste4").fadeOut("slow");
+	$(".Sceau").fadeOut("slow");
 
 	$(".Agriculteur").fadeOut("slow");
 	$(".PORC").fadeOut("slow");
@@ -95,6 +98,7 @@ $("#AttaqueM").click(function(e){
 		$(".Touriste2").fadeOut("slow");
 		$(".Touriste3").fadeOut("slow");
 		$(".Touriste4").fadeOut("slow");
+		$(".Sceau").fadeIn("slow");
 
 	}
 	//agriculteur
