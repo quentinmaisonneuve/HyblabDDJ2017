@@ -63,6 +63,14 @@ window.onload = function init (){
 		$(".Monstre1").fadeOut("slow");
 
 		$(".Sceau").fadeOut("slow");
+
+		$(".Maison1").fadeIn("slow");
+		$(".Maison2").fadeIn("slow");
+		$(".Maison3").fadeOut("slow");
+
+		$(".Digue1").fadeOut("slow");
+		$(".Digue2").fadeOut("slow");
+		$(".Digue3").fadeIn("slow");
 		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}
