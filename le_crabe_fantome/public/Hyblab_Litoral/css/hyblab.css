@@ -1080,6 +1080,7 @@ body{
 
 .Nous{
 	display: inline-block;
+	font-size: 1.5vw;
 }
 
 .NousAGR{
@@ -1103,77 +1104,58 @@ body{
 	left : 2vw;
 }
 
-.LogoEclaireur{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.AGR1{
+	position: absolute;
+	top : 15vw;
+	left : 12vw;
+
 }
-.LogoCoselmar{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.AGR2{
+	position: absolute;
+	top : 15vw;
+	left : 26vw;
+
 }
-.LogoAudencia{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.AGR3{
+	position: absolute;
+	top : 15vw;
+	left : 40vw;
+
 }
-.LogoPolytech{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech1{
+	position: absolute;
+	top : 21vw;
+	left : 12vw;
 }
-.LogoAGR{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech2{
+	position: absolute;
+	top : 21vw;
+	left : 26vw;
 }
-.LogoMediaLab{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech3{
+	position: absolute;
+	top : 21vw;
+	left : 40vw;
 }
-.LogoPaysDeLaLoire{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech4{
+	position: absolute;
+	top : 21vw;
+	left : 56vw;
 }
-.LogoNantes{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.ScienceCom1{
+	position: absolute;
+	top : 27vw;
+	left : 12vw;
 }
-.LogoUnivNantes{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.ScienceCom2{
+	position: absolute;
+	top : 27vw;
+	left: 26vw;
 }
-.LogoHyblab{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-.LogoOpenSourceInitiative{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
-}
-.LogoCC{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.ScienceCom3{
+	position: absolute;
+	top : 27vw;
+	left : 40vw;
 }
 
 #bandeau {
