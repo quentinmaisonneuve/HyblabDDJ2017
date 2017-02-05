@@ -216,12 +216,14 @@ p{
 
 #arrow_l, #arrow_d
 {
-    width: 40px;
-    height: 40px;
-    border: 0;
-    cursor: pointer;
-    background-size: 100%;
-    background-size: 40px auto;
+  width: 5vw;
+  height: 12vh;
+  border: 0;
+  cursor: pointer;
+  background-size: 100%;
+  background-size: 5vw;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 #arrow_l
