@@ -6,12 +6,17 @@
 }
 
 @font-face {
-  font-family: 'Bebasneue';
+  font-family: 'Bebasneue_B';
   src: url("../font/BEBASNEUE_BOLD.ttf");
 }
 
-.bebas {
+@font-face {
   font-family: 'Bebasneue';
+  src: url("../font/BebasNeue.otf");
+}
+
+.bebas {
+  font-family: 'Bebasneue_B';
 }
 
 html,body {
@@ -276,7 +281,7 @@ p{
   position: absolute;
   color: black;
   text-align: left;
-  font-size: 2em;
+  font-size: 59pt;
   width: 19vh;
   height: 18vh;
   bottom: 1vh;
@@ -325,11 +330,109 @@ p{
 }
 
 #container2 #encadre2 {
-    z-index: 0;
+  z-index: 0;
+  position: absolute;
+  width: 77vh;
+  height: 55vh;
+  bottom: 29vh;
+  left: 60vh;
+}
+
+#container2 #encadre2 #info2 {
     position: absolute;
-    bottom: 29vh;
-    width: 70vh;
-    left: 61vh;
+    bottom: 0vh;
+    width: 76vh;
+    left: 0.8vh;
+}
+
+#container2 #encadre2 #intro2 {
+  position: absolute;
+  color: black;
+  width: 32vh;
+  height: 4vh;
+  font-family: 'Bebasneue_B';
+  top: 5vh;
+  left: 39vh;
+}
+
+#container2 #encadre2 #txtvoiture {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 22vh;
+  top: 12vh;
+}
+
+#container2 #encadre2 #txtCommun {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 22vh;
+  top: 19vh;
+}
+
+#container2 #encadre2 #txtVelo {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 22vh;
+  top: 31vh;
+}
+
+#container2 #encadre2 #txtPied {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 22vh;
+  top: 40vh;
+}
+
+#container2 #encadre2 #pourcentVoiture {
+  position: absolute;
+  color: #d4584e;
+  width: 12vh;
+  height: 8vh;
+  top: 5vh;
+  left: 9vh;
+  font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentCommun {
+  position: absolute;
+  color: #29a7de;
+  width: 12vh;
+  height: 8vh;
+  top: 14vh;
+  left: 9vh;
+  font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentVelo {
+  position: absolute;
+  color: #e3ab04;
+  width: 12vh;
+  height: 8vh;
+  top: 24vh;
+  left: 9vh;
+  font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentPied {
+  position: absolute;
+  color: #177275;
+  width: 12vh;
+  height: 8vh;
+  top: 33vh;
+  left: 9vh;
+  font-family: 'Bebasneue_B';
 }
 
 #container2 #buttonEncadre2
