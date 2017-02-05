@@ -28,6 +28,22 @@ function hideText2011() {
 	$("#titre2011").css("display", "none");
 }
 
+function showAnimation2014() {
+	setTimeout(function(){ $("#funfact2014").css("display", "block"); }, 1000);
+}
+
+function hideAnimation2014() {
+	$("#funfact2014").css("display", "none");
+}
+
+function showAnimation2015() {
+	setTimeout(function(){ $("#funfact2015").css("display", "block"); }, 1000);
+}
+
+function hideAnimation2015() {
+	$("#funfact2015").css("display", "none");
+}
+
 
 
 

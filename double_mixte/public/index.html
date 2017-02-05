@@ -116,7 +116,7 @@
 
         		<div id="textehistoire2011" class="animated fadeIn">
 				<span class="textenum">Durant l'été 2011</span>,
-				<br/><br/><br/>
+				<br/><br/>
 				Donatien voit arriver le voyage à Nantes : un parcours gratuit qui via la culture et le territoire de la métropole renforce le tourisme. C'est le début d'une nouvelle aventure ! Nantes souhaite dynamiser la période estival grâce au VAN.
 				</div>
 
@@ -153,7 +153,7 @@
 			
 			<div id="textehistoire2012" class="animated fadeIn">
 				<span class="textenum">En 2012</span>,
-				<br/><br/><br/>
+				<br/><br/>
 				C'est la création du parcours qui s'organise. Donatien suit d'abord <span class="gras">la ligne rose</span>, conductrice du voyage qui s'étale sur 12km. Il commence à parler du voyage autour de lui et cela interpelle ses amis de France, d'Espagne, d'Allemagne et du Royaume-Uni qui viennent passer le weekend à Nantes chez lui.
 			</div>
 
@@ -218,10 +218,10 @@
 
 			<div id="textehistoire2013" class="animated fadeIn">
 				<span class="textenum">Un an plus tard</span>,
-				<br/><br/><br/>
+				<br/><br/>
 				Nantes est désigné comme <span class="gras">la capitale verte</span>. Donatien suit la ligne désormais verte.
 				<br/>
-				Il peut aussi retrouver sa famille venue exprès de Bretagne<br/> et de Vendée à <span class="gras">la cantine du voyage</span>,<br/> un lieu convivial et chaleureux.
+				Il peut aussi retrouver sa famille venue exprès de Bretagne<br/> et de Vendée à <span class="gras">la cantine du voyage</span>, un lieu convivial et chaleureux.
 			</div>
 
 			<div id="popover2013" class="animated bounceIn">
@@ -301,9 +301,14 @@
       </svg>
 
       		<div id="funfact2014">
-			<img id="textefunfact2014" class="animated rollIn" src="img/Saucisses_2014.svg"/>
+			<img id="textefunfact2014" class="animated rollIn" src="img/Saucisses_20142.svg"/>
 			</div>
 
+			<div id="textehistoire2014" class="animated fadeIn">
+				<span class="textenum">En 2014</span>,
+				<br/><br/>
+				les premières retombées économiques et analyses de la notoriété régionale, nationale et internationale tombent. Le <span class="gras"> carrousel des mondes marins</span> reçoit le prix de <span class="gras">l'attraction la plus originale du monde</span> par THEA awards à Los Angeles. Donatien est ravie : des blogueurs, influcenceurs et journalistes du monde entier s'intéressent à Nantes.
+			</div>
 
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -331,6 +336,11 @@
 
     	<!-- 2015 -->
 	    <div class="item slide2015">
+
+	    	<div id="funfact2015">
+			<img id="textefunfact2015" class="animated rollIn" src="img/Canard_2015.svg"/>
+			</div>
+
 	    	<div class="nbnuitees">
 	    		<img class="info-nuitees" src="img/picto_nuitees.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées total"/>
         		<img id="2015chiffre0" class="2015chiffre chiffre" src="img/zero.svg"/>
@@ -343,7 +353,11 @@
         	</div>
 
 
-
+        	<div id="textehistoire2015" class="animated fadeIn">
+				<span class="textenum">En 2015</span>,
+				<br/><br/>
+				Donatien &laquo; marche sur la lune &raquo;. Le VAN accroît sa notoriété d'années en années. Grâce aux retombées de la presse et des réseaux sociaux, nombreux sont ceux qui viennent découvrir le parcours du VAN.
+			</div>
 
         	<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -372,6 +386,12 @@
 	    
 		<!-- 2016 -->
 	      <div class="item slide2016">
+
+	      <div id="textehistoire2016" class="animated fadeIn">
+				<span class="textenum">Chaque été</span>,
+				<br/><br/>
+				Donatien participe aux attractions du VAN qui attirent de plus en plus de touristes. Le virus de la création est lancée : tout le monde s'y est mis, les commerçants
+			</div>
 		
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -546,10 +566,14 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		drawChart();
 		
 		hidePresse2012();
+
+		hideAnimation2014();
     	break;
 
     // 2014
     case 5 :
+    	showAnimation2014();
+
     	// animate
     	animateDigits(2014);
     	animateSocialFacebook(2014);
@@ -574,10 +598,14 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
       	hidePopover2013();
       	hidePresse2013();
+
+      	hideAnimation2015();
       	break;
 
     // 2015
     case 6 :
+    	showAnimation2015();
+
     	// animate
     	animateDigits(2015);
 		animateSocialFacebook(2015);
@@ -593,6 +621,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		animateFacebookReinit(2016);
       	animateTwitterReinit(2016);
 		animateInstagramReinit(2016);
+
+		hideAnimation2014();
     	break;
 
    	// 2016
@@ -607,6 +637,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
     	animateFacebookReinit(2015);
       	animateTwitterReinit(2015);
 		animateInstagramReinit(2015);
+
+		hideAnimation2015();
     	break;
 
     // bilan

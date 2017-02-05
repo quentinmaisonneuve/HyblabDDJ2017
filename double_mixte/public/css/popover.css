@@ -94,13 +94,28 @@
 
 #funfact2014 {
     position: absolute;
-    display: block;
+    display: none;
     left: 79vw;
     top: -6vh;
     width: 20vw;
 }
 
 #textefunfact2014 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#funfact2015 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2015 {
 	vertical-align: middle;
     margin-right: 0;
     padding-right: 0;
@@ -133,6 +148,44 @@
     font-weight: 600;
 }
 
+#textehistoire2014 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 5vh;
+    width: 43vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2015 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 5vh;
+    width: 44vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2016 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 5vh;
+    width: 50vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
 
 #titre2011 {
     position: absolute;
