@@ -488,11 +488,6 @@ input:checked + .slider:before {
 }
 
 
-#bubbleV
-{
-    /*transform-origin:206px 186px;*/
-}
-
 /* ################### pageFour ################### */
 
 #pageFour {
@@ -621,15 +616,41 @@ input:checked + .slider:before {
 
 /* ########### TOOLTIPS ########################*/
 div.tooltip {
+	/* placement & tailles */
+	left:50%;
+	top:15%;
 	position: absolute;
-	text-align: center;
-	width: 200px;
-	padding: 2px;
-	font: 12px sans-serif;
-	background: lightsteelblue;
+	width:15%;
+	min-height:40%;
+
+	/* Marges */
+	padding: 2%;
+
+	/* Textes */
+
 	border: 0px;
 	border-radius: 8px;
 	pointer-events: none;
+	color:#FEFEFE;
+	text-align: left;
+}
+
+div.tooltip h1
+{
+	font-size:16pt;
+	padding-bottom: 0.3em;
+}
+
+div.tooltip h2
+{
+	font-size:9pt;
+	padding-bottom: 2em;
+}
+
+div.tooltip p
+{
+	font-size: 11pt;
+	text-align: justify;
 }
 
 

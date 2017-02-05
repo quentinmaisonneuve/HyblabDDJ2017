@@ -102,8 +102,18 @@ function initBubble(node)
                     .duration(200)
                     .style("opacity", .9);
                 div	.html(getTooltip(d.id))
-                    .style("left", (d3.event.pageX) + "px")
-                    .style("top", (d3.event.pageY - 28) + "px");
+                    .style("background-color", function()
+                    {
+                        if (d.id == nodes[0].id)
+                            return "#BB5A53";
+                        else if (d.id == nodes[1].id)
+                            return "#507260";
+                        else if (d.id == nodes[2].id)
+                            return "#054365";
+                        else if (d.id == nodes[3].id)
+                            return "#90A5BB";
+                    });
+                    /*.style("top", (d3.event.pageY - 28) + "px");*/
                 musiqueCommence(d.id);
                 //tourne(d3.select(this).attr("id"));
             })
@@ -259,25 +269,38 @@ function getTooltip(genre)
     switch (genre)
     {
         case "Alternative et punk":
-            return "Vous et vos potes savez très bien que le punk n’est pas mort. Vous aimez cet esprit communautaire qui n’a pas besoin des autres pour exister, d’ailleurs s’ils ne sont pas contents, ça vous arrange bien.";
+            return "<h1>Alternative et punk</h1>" +
+                "<h2>Depeche Mode - <i>Enjoy The Silence</i></h2>" +
+                "<p>Vous et vos potes savez très bien que le punk n’est pas mort. Vous aimez cet esprit communautaire qui n’a pas besoin des autres pour exister, d’ailleurs s’ils ne sont pas contents, ça vous arrange bien.</p>";
             break;
         case "Rock":
-            return "Ce qui vous fait vibrer quand vous entendez du rock, c’est de vous imaginer au milieu d’un bon vieux riff ! Veste en cuir sur le dos, vous êtes un accro du Hellfest.";
+            return "<h1>Rock</h1>" +
+                "<h2>Iggy Pop - <i>The Passenger</i></h2>" +
+                "<p>Ce qui vous fait vibrer quand vous entendez du rock, c’est de vous imaginer au milieu d’un bon vieux riff ! Veste en cuir sur le dos, vous êtes un accro du Hellfest.</p>";
             break;
         case "Classique":
-            return "La musique pour vous est avant tout un moyen de vous apaiser. Lorsque les accords s’entremêlent, des frissons traversent votre corps. Votre bonheur : passer de la musique de chambre à l’orchestre symphonique.";
+            return "<h1>Musique</h1>" +
+                "<p>La musique pour vous est avant tout un moyen de vous apaiser. Lorsque les accords s’entremêlent, des frissons traversent votre corps. Votre bonheur : passer de la musique de chambre à l’orchestre symphonique.</p>";
             break;
         case "Electronica":
-            return "De la musique ? Oui mais surtout du son ! Pour s’éclater ou se détendre, des mixes qui vous ensorcellent et vous font vibrer.";
+            return "<h1>Musique Electronique</h1>" +
+                "<h2>Etienne De Crécy & Madeline Follin - <i>You (Less Hate Remix)</i></h2>" +
+                "<p>De la musique ? Oui mais surtout du son ! Pour s’éclater ou se détendre, des mixes qui vous ensorcellent et vous font vibrer.</p>";
             break;
         case "Jazz":
-            return "Quoi de mieux qu’un chorus de trompette pour égayer votre journée ? Lorsque le son d’un saxophone retentit, vous vous imaginez tout de suite dans un club de jazz pour un jam entre amis.";
+            return "<h1>Jazz</h1>" +
+                "<h2>Nina Simone - <i>My Baby Just Cares For Me</i></h2>" +
+                "<p>Quoi de mieux qu’un chorus de trompette pour égayer votre journée ? Lorsque le son d’un saxophone retentit, vous vous imaginez tout de suite dans un club de jazz pour un jam entre amis.</p>";
             break;
         case "Pop":
-            return "L’époque, le genre ou le chanteur...  rien n’a d’importance pour vous tant que la mélodie vous plait. Et, vous savez quoi ? Vous avez bien raison !";
+            return "<h1>Chanson Pop</h1>" +
+                "<h2>OutKast - <i>Hey Ya!</i></h2>" +
+                "<p>L’époque, le genre ou le chanteur...  rien n’a d’importance pour vous tant que la mélodie vous plait. Et, vous savez quoi ? Vous avez bien raison !</p>";
             break;
         case "Urban":
-            return "Que vous préfériez le Rap ou le R’n’B, que vous soyiez plus beatmaking que backpacker, vous êtes un poète dans l’âme. Et, au final, qu’il soit des nineties ou bien actuel, l’esprit hip-hop est resté intact et vous le savez bien.";
+            return "<h1>Urbain</h1>" +
+                "<h2>Shaggy - <i>It Wasn't Me</i></h2>" +
+                "<p>Que vous préfériez le Rap ou le R’n’B, que vous soyiez plus beatmaking que backpacker, vous êtes un poète dans l’âme. Et, au final, qu’il soit des nineties ou bien actuel, l’esprit hip-hop est resté intact et vous le savez bien.</p>";
             break;
         case "Sentimentale":
             return "Par votre grandeur d’âme, <br/> Vous déclarez votre flamme <br/> <br/>         Comme vous l’aurez compris, vous êtes une personne sentimentale. Avec MySun, trouvez votre âme-soeur musicale !";
