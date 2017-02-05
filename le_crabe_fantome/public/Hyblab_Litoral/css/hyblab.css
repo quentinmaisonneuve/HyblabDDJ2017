@@ -1232,35 +1232,35 @@ body{
 	position: absolute;
 	top : 1vw;
 	left : 21%;
-	padding-top: 0.3vw;
-	height:3vw;
+	padding-top: -0.7vw;
+	height:2vw;
 }
 
 #RetourData2{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
 	left : 41%;
-	padding-top: 0.3vw;
+	padding-top: -0.7vw;
 }
 
 #RetourData3{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
 	left : 61%;
-	padding-top: 0.3vw;
+	padding-top: -0.7vw;
 }
 
 #RetourData4{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
 	left : 81%;
-	padding-top: 0.3vw;
+	padding-top: -0.7vw;
 }
 
 
