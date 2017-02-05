@@ -377,11 +377,11 @@ function getRoad()
     var mood;
     if(document.getElementById("moodVsGenre").className == "play") {
         // GENRE
-        return "./creneau/" + season + "/" + weekEnd + "/16/18";
+        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
     }
     else{
         // MOOD
-        return "./creneauMood/" + season + "/" + weekEnd + "/16/18";
+        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
     }
 }
 
