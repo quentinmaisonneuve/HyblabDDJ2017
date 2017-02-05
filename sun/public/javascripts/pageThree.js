@@ -341,6 +341,9 @@ function getRoad()
 {
     // Style
     //var season = $('input[type=radio][name=season]:checked').attr('value');
+    var heure_min = getHeure() - 1;
+    var heure_max = getHeure() + 1;
+
     var season;
         switch ($("#slider").roundSlider("option", "value"))
         {
@@ -437,3 +440,22 @@ function musiqueArrete(genre){
 function setSaison(m_saison){
     saison = m_saison;
 }
+
+$("#slider").roundSlider({
+    handleShape: "circle",
+    handleSize: "34,10",
+    width: "44",
+    radius: "46",
+    value: 0,
+    animation: false,
+    showTooltip: false,
+    editableTooltip: false,
+    keyboardAction: false,
+    max: "4",
+    startAngle: 45,
+
+    change: function (args) {
+        setSaison(slider.getValue());
+        changeBubble(getRoad());
+    }
+});

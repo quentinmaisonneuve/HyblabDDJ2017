@@ -119,3 +119,22 @@ function putRandWeek()
     }
 }
 putRandWeek();
+
+
+
+
+$(document).ready(function() {
+    $('#fullpage').fullpage();
+    $.fn.fullpage.setAllowScrolling(true);
+    $.fn.fullpage.setKeyboardScrolling(true);
+});
+
+$(document).ready(function() {
+    $('.js-scrollTo').on('click', function() {
+        $.fn.fullpage.moveSectionDown();
+    }); 
+});
+
+$('input[type="range"]').rangeslider();
+$('input[type="range"]').rangeslider('destroy');
+$('input[type="range"]').rangeslider('update', true);

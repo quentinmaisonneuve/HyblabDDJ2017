@@ -11,7 +11,7 @@ $(document).on('input change', '#timeline', function() {
       $('#timeline_value').html((" " + ($('#timeline').val()*2) + "h " + " - " + ($('#timeline').val()*2+2) + "h "));
     });
 
-function toggle(el){
+function toggleOne(el){
     if(el.className!="pause")
     {
         el.src='/images/bouton_semaine_weekend_page2v2.png';
@@ -42,7 +42,7 @@ function toggleTwo(el){
 function toggleThree(el){
     if(el.className!="pause")
     {
-        el.src='/images/btn-weekend.svg';
+       el.src='/images/btn-weekend.svg';
        el.className="pause";
     }
     else if(el.className=="pause")

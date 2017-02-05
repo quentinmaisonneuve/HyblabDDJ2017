@@ -13,124 +13,9 @@
     <script src="https://cdn.jsdelivr.net/jquery.roundslider/1.3/roundslider.min.js"></script>
     <script type="text/javascript" src="javascripts/fullPage.js-master/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="javascripts/jQueryRotate.js"></script>
-    <script type="text/javascript">
-    	$(document).ready(function() {
-			 $('#fullpage').fullpage();
-			 $.fn.fullpage.setAllowScrolling(true);
-			 $.fn.fullpage.setKeyboardScrolling(true);
-       $('#timeline_value').html((" " + ($('#timeline').val()*2) + "h " + " " + ($('#timeline').val()*2+2) + "h "));
-      });
-	</script>
-
-  <script>
-    $(document).on('input change', '#timeline', function() {
-      $('#timeline_value').html((" " + ($(this).val()*2) + "h " + " " + ($(this).val()*2+2) + "h "));
-    });
-  </script>
-  <script>
-		$(document).ready(function() {
-    	    $('.js-scrollTo').on('click', function() {
-				$.fn.fullpage.moveSectionDown();
-			});	
-		});
-  </script>
-
-  <script>
-    $('input[type="range"]').rangeslider();
-    $('input[type="range"]').rangeslider('destroy');
-    $('input[type="range"]').rangeslider('update', true);
-  </script>
-
-    <script type="text/javascript">
-      function changer_image(image) {
-          $('.image').css('background-image', 'url("'+image+'")');
-      }
-    </script>
-
-    <script type="text/javascript">
-      function toggle(el){
-          if(el.className!="pause")
-          {
-              el.src='/images/bouton_semaine_weekend_page2v2.png';
-              el.className="pause";
-          }
-          else if(el.className=="pause")
-          {
-              el.src='/images/bouton_semaine_weekend_page2.png';
-              el.className="play";
-          }
-          return false;
-      }
-    </script>
-    <script type="text/javascript">
-      function toggleTwo(el){
-          if(el.className!="pause")
-          {
-              el.src='/images/ambiance_off.svg';
-              el.className="pause";
-          }
-          else if(el.className=="pause")
-          {
-              el.src='/images/ambiance_on.svg';
-              el.className="play";
-          }
-          return false;
-      }
-    </script>
-    <script type="text/javascript">
-      function toggleThree(el){
-          if(el.className!="pause")
-          {
-              el.src='/images/btn-weekend.svg';
-              el.className="pause";
-          }
-          else if(el.className=="pause")
-          {
-              el.src='/images/btn-semaine.svg';
-              el.className="play";
-          }
-          return false;
-      }
-    </script>
-
-
-    <script type="text/javascript">
-          function changeImagePrintemps()
-          {
-          var img = document.getElementById("image");
-          img.src="/images/btn-saison1.png";
-          return false;
-          }
-    </script>
-    <script type="text/javascript">
-          function changeImageHiver()
-          {
-          var img = document.getElementById("image");
-          img.src="/images/btn-saison2.png";
-          return false;
-          }
-      </script>
-          <script type="text/javascript">
-          function changeImageAutomne()
-          {
-          var img = document.getElementById("image");
-          img.src="/images/btn-saison4.png";
-          return false;
-          }
-      </script>
-          <script type="text/javascript">
-          function changeImageEte()
-          {
-          var img = document.getElementById("image");
-          img.src="/images/btn-saison3.png";
-          return false;
-          }
-    </script>
-
   </head>
 
-<body >
-  
+<body>
 <div id="container">
   <div id="fullpage">
       <div id="pageOne" class="section">
@@ -139,7 +24,6 @@
         <p class="pageOneDeuxiemeP"><span id="randomWeek2"></span></p>
         <a class="js-scrollTo"><button>START</button></a>
       </div>
-
 
       <div id="pageTwo" class="section">
         <h1>"Dites nous quand vous m'écoutez, je vous dirais ce que vous aimez"</h1>
@@ -171,7 +55,7 @@
         </div>
         <div class="blocTwoTwo">
           <p class="inlineBlocSE">SEMAINE</p>
-              <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggle(this);"/>
+              <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggleOne(this); changeBubble(getRoad());"/>
           <p class="inlineBlocWE">WEEK-END</p>
         </div>
         <div class="blocTwoThree">
@@ -183,7 +67,6 @@
       </div>
 
       <div id="pageThree" class="section">
-<a name="slider3"/>
         
         <div id="bubleChart">
           <audio id="Alternative">
@@ -227,48 +110,11 @@
             </div>
             <div id="boutonBubleBottomRight">
 
-                <label for="slider">Printemps</label>
-                <label for="slider">Été</label>
+                <span class="Printemps"><label for="slider" >Printemps</label></span>
+                <span class="Ete"><label for="slider" class="Ete">Été</label></span>
                 <div id="slider"></div>
-                <label for="slider">Hiver</label>
-                <label for="slider">Automne</label>
-                <script type="text/javascript">
-                    $("#slider").roundSlider({
-                      handleShape: "dot",
-                      handleSize: "34,10",
-                      width: "44",
-                      radius: "46",
-                      value: 45,
-                      animation: false,
-                      showTooltip: false,
-                      editableTooltip: false,
-                      keyboardAction: false,
-                      max: "4",
-                      startAngle: 45,
-
-                      change: function (args) {
-                        setSaison(slider.getValue());
-                        changeBubble(getRoad());
-                      }
-                    });
-                </script>
-            <!--<form>
-              <div id="btnOne">
-                <input type="radio" name="parfum" value="vanille" id="saison_printemps" onclick="changeImagePrintemps();"/><label for="saison_printemps">Printemps</label>
-              </div>
-              <div id="btnTwo">
-                <input type="radio" name="parfum" value="chocolat" id="saison_hiver" onclick="changeImageHiver();"/><label for="saison_hiver">Hiver</label>
-              </div>
-              <div id="btnSaisonImg">
-                <img id="image" src="/images/btn-saison.png">
-              </div>
-              <div id="btnThree">
-                <input type="radio" name="parfum" value="automne" id="saison_automne" onclick="changeImageAutomne();"/><label for="saison_automne">Automne</label>
-              </div>
-              <div id="btnFour">
-                <input type="radio" name="parfum" value="ete" id="saison_ete" onclick="changeImageEte();"/><label for="saison_ete">Été</label>
-              </div>
-            </form>-->
+                <span class="Hiver"><label for="slider" class="Hiver">Hiver</label></span>
+                <span class="Automne"><label for="slider" class="Automne">Automne</label></span>
 
             </div>
           </div>
@@ -279,7 +125,7 @@
         </div>
       </div>
 
-      <div id="pageFour">
+      <div id="pageFour" class="section">
         <div id="pageFourTop">
           <div id="pageFourTopLeft">
             <img src="/images/page4_logo.png">
@@ -306,8 +152,7 @@
       </div>
 
       <script src="./javascripts/pageOne.js"></script>
-          <script src="./javascripts/pageTwo.js"></script>
-
+      <script src="./javascripts/pageTwo.js"></script>
       <script src="./javascripts/pageThree.js"></script>
   </div>
 </div>
