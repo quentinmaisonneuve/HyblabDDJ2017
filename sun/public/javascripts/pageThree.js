@@ -30,6 +30,13 @@ function initBubble(node)
             return (!d.children && d.id != "");
         });
 
+        nodes.push({id:"Nostalgique", value:0});
+        nodes.push({id:"Cool", value:0});
+        nodes.push({id:"Stimulante", value:0});
+        nodes.push({id:"Agressive", value:0});
+        nodes.push({id:"Sentimentale", value:0});
+
+
         nodes.sort(function(a,b){
            return b.value-a.value;
         });
@@ -374,7 +381,7 @@ function getRoad()
     }
     else{
         // MOOD
-        return "./creneauM/" + season + "/" + weekEnd + "/16/18";
+        return "./creneauMood/" + season + "/" + weekEnd + "/16/18";
     }
 }
 

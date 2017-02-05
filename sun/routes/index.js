@@ -161,7 +161,7 @@ router.get('/creneauMood/:season/:week/:start/:end', function(req, res, next) {
     });
     data.getMoodSeasonWeekHour("Agressive",req.params.season, req.params.week, req.params.start, req.params.end, function(err, rows)
     {
-        json.push({id: "Aggressive", value: rows[0].value});
+        json.push({id: "Agressive", value: rows[0].value});
     });
     data.getMoodSeasonWeekHour("Sentimentale",req.params.season, req.params.week, req.params.start, req.params.end, function(err, rows)
     {
