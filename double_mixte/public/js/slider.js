@@ -5,4 +5,6 @@ $(document).ready(function() {
 		menu: '#menu',
 		scrollingSpeed: 1000
 	});
+
+	
 });
