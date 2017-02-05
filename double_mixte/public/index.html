@@ -442,6 +442,10 @@ $myCarousel.on('slid.bs.carousel', function (e) {
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
  // drawChart();
+ 
+ //effacer le stacked bar chart (pour resoudre pb de retard d'animation)
+ d3.select('#stackedbarchart').html("");
+ 
   drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
@@ -491,6 +495,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
         animateInstagramReinit(2013);
 
         // graph
+		d3.select('#stackedbarchart').html("");
         drawStackedBarChart();
 
         hidePopover2013();
