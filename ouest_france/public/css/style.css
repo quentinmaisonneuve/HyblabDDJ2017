@@ -69,10 +69,10 @@ p{
 }
 
 .footer {
-    position: absolute;
-    bottom: -18px;
-    left: -1.8%;
-    max-width: 105%;
+  position: absolute;
+  bottom: -5vh;
+  left: -2vw;
+  width: 104vw;
 }
 
 .content{
@@ -114,7 +114,7 @@ p{
   font-family: 'Borg';
   position: absolute;
   width: 23vw;
-  height: 23vh;
+  height: 36vh;
   font-size: 8em;
   text-align: -webkit-left;
   color: white;
@@ -129,7 +129,7 @@ p{
   left: 9.2vw;
   top: -24vh;
   font-size: 1.3em;
-  width: 100vw;
+  width: 23vw;
 }
 
 #center #commencer
