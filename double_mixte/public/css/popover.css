@@ -79,25 +79,15 @@
     position: absolute;
     display: none;
     left: 79vw;
-    top: -1vh;
-    width: 16vw;
-    height: 6vh;
-    font-size: 11pt;
-    font-family: Josefin Sans;
-    color: white;
-    /* font-weight: 100; */
+    top: -6vh;
+    width: 20vw;
 }
 
 #textefunfact2013 {
-    /* padding: 1em; */
-    background-image: url(../img/fun_fact_vide.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 11vh;
-    text-align: -webkit-center;
-    padding-bottom: 8vh;
-    padding-left: 0vw;
-    padding-right: 0.5vw;
+	    vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
 }
 
 
