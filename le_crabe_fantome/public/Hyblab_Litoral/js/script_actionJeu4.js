@@ -7,7 +7,7 @@
 		if(echelle<0){
 			echelle=0;
 		}
-		//document.getElementById("div1").style.transform = 'scale(' + echelle/200000 + ')';
+		document.getElementById("bourse").style.transform = 'scale(' + echelle/200000 + ')';
 		if(document.getElementById("barreJ4-1").value==1){
 			$(".Maison1").fadeOut("slow");
 			$(".Maison2").fadeIn("slow");
@@ -32,7 +32,7 @@
 		if(echelle<0){
 			echelle=0;
 		}
-		//document.getElementById("div1").style.transform = 'scale(' + echelle/200000 + ')';
+		document.getElementById("bourse").style.transform = 'scale(' + echelle/200000 + ')';
 		if(document.getElementById("barreJ4-2").value==1){
 			$(".Digue1").fadeIn("slow");
 			$(".Digue2").fadeOut("slow");
@@ -53,14 +53,79 @@
 	$("#vague").click(function(e){
 		var rand = Math.floor((Math.random() * 10) + 1);
 		if(rand<3){
-			alert("inf3");
+			if(document.getElementById("barreJ4-2").value==1){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeIn("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue1").fadeIn("slow");
+
+			}
+			else if(document.getElementById("barreJ4-2").value==2){
+				$(".Mer2").fadeIn("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue3").fadeIn("slow");
 			
+			}
+			else if(document.getElementById("barreJ4-2").value==3){
+				$(".Mer2").fadeIn("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue2").fadeIn("slow");
+			}
 		}
 		if(rand>=3 && rand<=6){
-			alert("3-6");
+			if(document.getElementById("barreJ4-2").value==1){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeIn("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue1").fadeIn("slow");
+
+			}
+			else if(document.getElementById("barreJ4-2").value==2){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeIn("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue3").fadeIn("slow");
+			
+			}
+			else if(document.getElementById("barreJ4-2").value==3){
+				$(".Mer2").fadeIn("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue2").fadeIn("slow");
+			}
 		}
 		if(rand>=7){
-			alert("sup6");
+			if(document.getElementById("barreJ4-2").value==1){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeIn("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue1").fadeIn("slow");
+
+			}
+			else if(document.getElementById("barreJ4-2").value==2){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeIn("slow");
+				$(".Mer4").fadeOut("slow");
+				$(".Digue3").fadeIn("slow");
+			
+			}
+			else if(document.getElementById("barreJ4-2").value==3){
+				$(".Mer2").fadeOut("slow");
+				$(".Mer1").fadeOut("slow");
+				$(".Mer3").fadeOut("slow");
+				$(".Mer4").fadeIn("slow");
+				$(".Digue2").fadeIn("slow");
+			}
 		}
 	});
 
