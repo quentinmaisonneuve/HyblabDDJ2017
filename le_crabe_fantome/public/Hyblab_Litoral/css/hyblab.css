@@ -577,7 +577,7 @@ body{
     left: 56.35%;
 }
 
-.radioJ2 label, .radioJ3 label {
+.radioJ2 label, .radioJ3 label{
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
@@ -613,7 +613,7 @@ body{
 }
 
 
-.radioJ2 input[type=radio]:checked + label:after, .radioJ3 input[type=radio]:checked + label:after {
+.radioJ2 input[type=radio]:checked + label:after, .radioJ3 input[type=radio]:checked + label:after{
 	opacity: 1;
 	transition: opacity 1s ease-out, transform 1s;
 	transform: rotate(315deg);
@@ -756,6 +756,8 @@ body{
     left: 20vw;
     border : 0.5vw solid white;
 }
+
+
 .Monstre1{
 	width : 23vw;
 	position: absolute;
@@ -900,7 +902,102 @@ body{
 	margin: 0;
 }
 
+/*data J3*/
 
+.ScientifiqueJ3-1{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2%;
+
+}
+.ScientifiqueJ3-2{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2%;
+}
+.ScientifiqueJ3-3{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2%;
+}
+.ScientifiqueJ3-4{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2%;
+}
+.DataJ3-1{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-2{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-3{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-4{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+
+
+.FondDJ3{
+	background-color: #CC9698;
+	height : 35vw;
+	width : 60vw;
+	display: inline-block;
+	position: relative;
+    top: 1vw;
+    left: 20vw;
+    border : 0.5vw solid white;
+}
+
+.EnsembleRadioDJ3{
+	position: absolute;
+	top: 8vw;
+	left: 20vw;
+}
+
+.radioDJ3 input{
+	display: none
+}
+
+.radioDJ3 label{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 0 #86c6ca;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+#BoutonUE label{
+	font-size: 0.7vw;
+}
 
 /*Jeu4*/
 .TitreJ4{
@@ -950,6 +1047,9 @@ body{
     left: 20vw;
     border : 0.5vw solid white;
 }
+
+
+
 
 .Sable
 {
@@ -1043,95 +1143,119 @@ body{
 }
 
 .Bdigue{
-	position: relative;
-	left : 1vw;
+	position: absolute;
+	right : -9vw;
 }
 
 .Bhabitation{
-	position: relative;
-	left :10vw;
-	top : -12.4vw;
+	height: 2vw;
+	position: absolute;
+	right: -1.5vw;
+}
+
+.Bhabitation p{
+	width : 8vw;
 }
 
 .Bbudget{
-	position: relative;
-	left :3vw;
-	top : -12.4vw;
+	position: absolute;
+	right: -2vw;
+	top : 20vw;
+}
+
+.boutonV{
+	font-size: 1.5vw;
+	position: absolute;
+	right: -4vw;
+	bottom: -28vw;
 }
 
 
 /*Logos*/
-.LogoEclaireur{
-	background-image: url(../pictures/Logo/.png);
+.Equipe{
 	position: relative;
-	top : 0px;
-	left : 0px;
+	top : 14vw;
+	left : -7vw;
 }
-.LogoCoselmar{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+
+.Nous{
+	display: inline-block;
+	font-size: 1.5vw;
 }
-.LogoAudencia{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+
+.NousAGR{
+	height : 5vw;
+	position: absolute;
+	top : 15vw;
+	left : 2vw;
 }
-.LogoPolytech{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+
+.NousPolytech{
+	height : 5vw;
+	position: absolute;
+	top : 21vw;
+	left : 2vw;
 }
-.LogoAGR{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+
+.NousScienceCom{
+	height : 5vw;
+	position: absolute;
+	top : 27vw;
+	left : 2vw;
 }
-.LogoMediaLab{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+
+.AGR1{
+	position: absolute;
+	top : 15vw;
+	left : 12vw;
+
 }
-.LogoPaysDeLaLoire{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.AGR2{
+	position: absolute;
+	top : 15vw;
+	left : 27vw;
+
 }
-.LogoNantes{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.AGR3{
+	position: absolute;
+	top : 15vw;
+	left : 41vw;
+
 }
-.LogoUnivNantes{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech1{
+	position: absolute;
+	top : 21vw;
+	left : 12vw;
 }
-.LogoHyblab{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech2{
+	position: absolute;
+	top : 21vw;
+	left : 27vw;
 }
-.LogoOpenSourceInitiative{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech3{
+	position: absolute;
+	top : 21vw;
+	left : 41vw;
 }
-.LogoCC{
-	background-image: url(../pictures/Logo/.png);
-	position: relative;
-	top : 0px;
-	left : 0px;
+.Polytech4{
+	position: absolute;
+	top : 21vw;
+	left : 57vw;
+}
+.ScienceCom1{
+	position: absolute;
+	top : 27vw;
+	left : 12vw;
+}
+.ScienceCom2{
+	position: absolute;
+	top : 27vw;
+	left: 27vw;
+}
+.ScienceCom3{
+	position: absolute;
+	top : 27vw;
+	left : 41vw;
 }
 
 #bandeau {
@@ -1147,22 +1271,31 @@ body{
 
 
 #bandeau img{
- 	height: 46px;
+ 	height: 4vw;
 }
 
 #bandeau #hyblab{
-	  margin: 46px 0;
-	  height: 50px;
-	  float: left;
+	  margin: 1vw;
+	  height: 3vw;
+	  position: absolute;
+	  top :3vw;
 }
 
-#bandeau #cc, #bandeau #opensource
-{
-  	height:16px;
-}
-
-#bandeau .stacked{
+#bandeau{
   	display:block;
+}
+
+.stacked{
+	display: block;
+	height : 2vw;
+	position: absolute;
+	top : 6vw;
+	left : 40vw;
+}
+
+#cc{
+	position: relative;
+	right : 5vw;
 }
 
 #bandeau ul{
@@ -1172,7 +1305,17 @@ body{
 
 #bandeau .institutionnel
 {
-	height: 42px;
+	height: 4vw;
+	position: relative;
+	top : -15vw;
+	left : 4vw;
+
+}
+
+.organisateurs{
+	position: absolute;
+	top: 0vw;
+	left : 35vw;
 }
 
 #Crédit{
@@ -1189,12 +1332,12 @@ body{
 	position: absolute;
 	top : 4vw;
 	left : 21%;
-	padding-top: 0.3vw;
-	height:3vw;
+	padding-top: -0.7vw;
+	height:2vw;
 }
 
 #RetourData2{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 4vw;
@@ -1203,21 +1346,21 @@ body{
 }
 
 #RetourData3{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
 	left : 61%;
-	padding-top: 0.3vw;
+	padding-top: -0.7vw;
 }
 
 #RetourData4{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	top : 1vw;
 	left : 81%;
-	padding-top: 0.3vw;
+	padding-top: -0.7vw;
 }
 
 

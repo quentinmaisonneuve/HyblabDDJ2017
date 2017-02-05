@@ -206,6 +206,9 @@
 					<article class="TextJ4"><p><span><span>Qui n’a pas déjà rêvé de tremper ses orteils dans l’océan directement depuis son jardin, tout en regardant le soleil rouge disparaître dans les flots ? <br/> Habiter en bord de mer n’est pas forcément de tout repos et peut même être dangereux dans certains cas.<br/> Ajuste les deux curseurs : Le premier pour régler la hauteur de la digue, et le second pour placer les habitations. <br/>Le budget n’est pas illimité, à toi de trouver le juste milieu pour que tout le monde puisse vivre sereinement. <br/> Une fois décidé, clique sur le bouton GO! et vois ce qu’il se passe. </span></span></p></article>
 					<section class="InterfaceJ4">
 						<section class="FondJ4">
+							<img class="Maison1" src="./pictures/Jeu4/maison1.png">
+							<img class="Maison2" src="./pictures/Jeu4/maison2.png">
+							<img class="Maison3" src="./pictures/Jeu4/maison4.png">
 							<img class="Mer1" src="./pictures/Jeu4/mer1.png">
 							<img class="Mer2" src="./pictures/Jeu4/mer2.png">
 							<img class="Mer3" src="./pictures/Jeu4/mer3.png">
@@ -213,10 +216,7 @@
 							<img class="Digue1" src="./pictures/Jeu4/digue1.png">
 							<img class="Digue2" src="./pictures/Jeu4/digue2.png">
 							<img class="Digue3" src="./pictures/Jeu4/digue3.png">
-							<img class="Money" src="./pictures/Jeu4/bourse.png">
-							<img class="Maison1" src="./pictures/Jeu4/maison1.png">
-							<img class="Maison2" src="./pictures/Jeu4/maison2.png">
-							<img class="Maison3" src="./pictures/Jeu4/maison4.png">
+							<img class="Money" id="bourse" src="./pictures/Jeu4/bourse.png">
 							<img class="Sable" src="./pictures/Jeu4/sable.png">
 						</section>
 					</section>
@@ -234,6 +234,9 @@
 							<p>Budget:</p>
 							<input type="text" name="Budget" id="Budget" value=""  readonly>
 						</section>
+						<section class="boutonV">
+							<button id="vague" class="Bouton">Vague</button>
+						</section>
 					</section>
 					<a href="#lastPage/4" class="Bouton" id="Data4">Data</a>
 					<a class="Cross" href="#3rdPage/0" id="CrossJ4"></a>
@@ -249,7 +252,7 @@
 						    <a href="http://www.hyblab.fr/"><img id="hyblab" src="img/logo_hyblab.png" alt="Hyblab DataSport"></a>
 
 						    <!-- Les organisateurs -->
-						    <ul>
+						    <ul class="organisateurs">
 						      <li><a href="http://www.ouestmedialab.fr/"><img src="img/logo_oml.png" alt="Ouest Médialab"></a></li>
 						      <li><a href="http://www.agrnantes.fr"><img src="img/ecoles/logo_agr.png" alt="AGR école de l'image"></a></li>
 						      <li><a href="http://www.univ-nantes.fr/"><img src="img/ecoles/logo_universitenantes.jpg" alt="Université de Nantes"></a></li>
@@ -266,19 +269,37 @@
 						      </ul>
 						      </li>
 						      <!-- Logo de votre partenaire -->
-						      <li><a href="http://www.auran.org"><img src="img/partenaires/logo_crabefantome.jpg" alt="AURAN"></a></li>
+						      <li><a href="#"><img class="Equipe" src="pictures/Logo.jpg"></a></li>
+						      <li><a href="#"><img class="Equipe" src="img/partenaires/logo_crabefantome.jpg"></a></li>
+						      <li><a href="#"><img class="Equipe" src="pictures/COSELMAR.png"></a></li>
+  						      <li><a href="#"><img class="Equipe" src="pictures/cyanea_logo.png"></a></li>
+
 						      <!-- Partenaires institutionnels -->
 						      <li><a href="http://www.paysdelaloire.fr/"><img class="institutionnel" src="img/institutionnels/logo_pdl.png" alt="Pays de La Loire"></a></li>
 						      <li><a href="http://www.stereolux.fr"><img class="institutionnel" src="img/institutionnels/logo_stereolux.png" alt="Stereolux"></a></li>
 						      <li><a href="http://www.nantesmetropole.fr/"><img class="institutionnel" src="img/institutionnels/logo_nantesmetropole.png" alt="Nantes Métropole"></a></li>
-						    </ul>
+						   	</ul>
 					  	</div>
+					</section>
+					<section class="Nous">
+						<img class="NousAGR" src="pictures/MOUETTES/les_mouettes_agr.png">
+						<p class="AGR1">Léa Chérel</p>
+						<p class="AGR2">Germain Durand</p>
+						<p class="AGR3">Yéléna Pasquier</p>
+						<img class="NousPolytech" src="pictures/MOUETTES/les_mouettes_polytech.png">
+						<p class="Polytech1">Thomas Depoorter</p>
+						<p class="Polytech2">Landry Descamps</p>
+						<p class="Polytech3">Tanguy Le Berre</p>
+						<p class="Polytech4">Jingsong Zhao</p>
+						<img class="NousScienceCom" src="pictures/MOUETTES/les_mouettes_sciencecom.png">
+						<p class="ScienceCom1">Louiz Grall-Vigneron</p>
+						<p class="ScienceCom2">Isabelle Perrot</p>
+						<p class="ScienceCom3">Victor Tesson</p>
 					</section>
 				</div>
 
 				<div class="slide">
-					<section> Data liées 1</section>
-					<a href="#3rdPage/1" class="Bouton" id="RetourData1"> Retour au jeu </a>
+				<a href="#3rdPage/1" class="Bouton" id="RetourData1"> Retour au jeu </a>
 				</div>
 
 				<div id="dataviz2" class="slide">
@@ -295,10 +316,42 @@
 					<section> Data liées 3</section>
 					<svg id="chart_algues" width=400 height=400></svg>
 					<a href="#3rdPage/3" class="Bouton" id="RetourData3"> Retour au jeu </a>
+					<div class="FondDJ3">
+						<img class="ScientifiqueJ3-1" src="pictures/Data3/monsieur_maceration.png"/>
+						<img class="ScientifiqueJ3-2" src="pictures/Data3/monsieur_ultrasons.png"/>
+						<img class="ScientifiqueJ3-3" src="pictures/Data3/monsieur_enzymes.png"/>
+						<img class="ScientifiqueJ3-4" src="pictures/Data3/monsieur_ultrasonsetenzymes.png"/>
+						<img class="DataJ3-1" src="pictures/Data3/data_maceration.png"/>
+						<img class="DataJ3-2" src="pictures/Data3/data_ultrasons.png"/>
+						<img class="DataJ3-3" src="pictures/Data3/data_enzymes.png"/>
+						<img class="DataJ3-4" src="pictures/Data3/data_ultrasons_enzymes.png"/>
+						<section class="EnsembleRadioDJ3">
+							<div class="radioDJ3">
+								<input type= "radio" name="data3" checked="checked" id="Macération" value="1"></input>
+								<label for="Macération">Macération</label>
+							</div>
+							<div class="radioDJ3">
+								<input type= "radio" name="data3" id="Ultrasons" value="2"></input>
+								<label for="Ultrasons">Ultrasons</label>
+							</div>
+							<div class="radioDJ3">
+								<input type= "radio" name="data3" id="Enzymes" value="3"></input>
+								<label for="Enzymes">Enzymes</label>
+							</div>
+							<div class="radioDJ3" id="BoutonUE">
+								<input type= "radio" name="data3" id="Ultrasons_Enzymes" value="4"></input>
+								<label for="Ultrasons_Enzymes">Ultrasons<br/>+Enzymes</label>
+							</div>
+					</section>
+					</div>
+
+						<script src="./js/Script_data3.js"></script>
+
+						<div style="width:80px;height:80px;display:none;color:#CC9698" id="fonddataJ3"></div>
+
 				</div>
 
 				<div class="slide">
-					<section> Data liées 4</section>
 					<svg class="chart_habitat" width=400 height=400></svg>
 					<div class="list_annee" width=400 height=100></div>
 					<a href="#3rdPage/4" class="Bouton" id="RetourData4"> Retour au jeu </a>

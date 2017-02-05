@@ -71,6 +71,22 @@ window.onload = function init (){
 		$(".Digue1").fadeOut("slow");
 		$(".Digue2").fadeOut("slow");
 		$(".Digue3").fadeIn("slow");
+
+		$(".Mer2").fadeIn("slow");
+		$(".Mer1").fadeOut("slow");
+		$(".Mer3").fadeOut("slow");
+		$(".Mer4").fadeOut("slow");
+
+
+		$(".ScientifiqueJ3-1").fadeIn("slow");
+		$(".ScientifiqueJ3-2").fadeOut("slow");
+		$(".ScientifiqueJ3-3").fadeOut("slow");
+		$(".ScientifiqueJ3-4").fadeOut("slow");
+
+		$(".DataJ3-1").fadeIn("slow");
+		$(".DataJ3-2").fadeOut("slow");
+		$(".DataJ3-3").fadeOut("slow");
+		$(".DataJ3-4").fadeOut("slow");
 		
 		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
 	}
