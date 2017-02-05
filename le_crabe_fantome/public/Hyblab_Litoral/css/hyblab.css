@@ -577,7 +577,7 @@ body{
     left: 56.35%;
 }
 
-.radioJ2 label, .radioJ3 label {
+.radioJ2 label, .radioJ3 label{
 	display: inline-block;
 	font-size: 0px;
 	cursor: pointer;
@@ -613,7 +613,7 @@ body{
 }
 
 
-.radioJ2 input[type=radio]:checked + label:after, .radioJ3 input[type=radio]:checked + label:after {
+.radioJ2 input[type=radio]:checked + label:after, .radioJ3 input[type=radio]:checked + label:after{
 	opacity: 1;
 	transition: opacity 1s ease-out, transform 1s;
 	transform: rotate(315deg);
@@ -756,6 +756,8 @@ body{
     left: 20vw;
     border : 0.5vw solid white;
 }
+
+
 .Monstre1{
 	width : 23vw;
 	position: absolute;
@@ -903,68 +905,99 @@ body{
 /*data J3*/
 
 .ScientifiqueJ3-1{
-	width: 15vw;
+	width: 17vw;
     position: absolute;
-    top: 10vw;
-    left: 65%;
+    top: 8.5vw;
+    left: 2%;
 
 }
 .ScientifiqueJ3-2{
-	width: 15vw;
+	width: 17vw;
     position: absolute;
-    top: 10vw;
-    left: 65%;
-
+    top: 8.5vw;
+    left: 2%;
 }
 .ScientifiqueJ3-3{
-	width: 15vw;
+	width: 17vw;
     position: absolute;
-    top: 10vw;
-    left: 65%;
+    top: 8.5vw;
+    left: 2%;
 }
 .ScientifiqueJ3-4{
-	width: 15vw;
+	width: 17vw;
     position: absolute;
-    top: 10vw;
-    left: 65%;
+    top: 8.5vw;
+    left: 2%;
 }
 .DataJ3-1{
-	width: 24vw;
+	width: 30vw;
     position: absolute;
-    top: 9.5vw;
-    left: 71%;
+    top: 5.5vw;
+    left: 49%;
 }
 .DataJ3-2{
-    width: 24vw;
+	width: 30vw;
     position: absolute;
-    top: 9.5vw;
-    left: 71%;
+    top: 5.5vw;
+    left: 49%;
 }
 .DataJ3-3{
-    width: 24vw;
+	width: 30vw;
     position: absolute;
-    top: 9.5vw;
-    left: 71%;
+    top: 5.5vw;
+    left: 49%;
 }
 .DataJ3-4{
-    width: 24vw;
+	width: 30vw;
     position: absolute;
-    top: 9.5vw;
-    left: 71%;
+    top: 5.5vw;
+    left: 49%;
 }
 
-#fonddate3{
-	display: inline-block;
-	background-size: contain;
+
+.FondDJ3{
+	background-color: #CC9698;
 	height : 35vw;
 	width : 60vw;
+	display: inline-block;
 	position: relative;
-    top: 5vw;
+    top: 1vw;
     left: 20vw;
     border : 0.5vw solid white;
 }
 
+.EnsembleRadioDJ3{
+	position: absolute;
+	top: 8vw;
+	left: 20vw;
+}
 
+.radioDJ3 input{
+	display: none
+}
+
+.radioDJ3 label{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 0 #86c6ca;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+#BoutonUE label{
+	font-size: 0.7vw;
+}
 
 /*Jeu4*/
 .TitreJ4{
@@ -1014,6 +1047,9 @@ body{
     left: 20vw;
     border : 0.5vw solid white;
 }
+
+
+
 
 .Sable
 {
@@ -1581,8 +1617,8 @@ html.fp-enabled,
 
 #chart_bateau1{
 	position: absolute;
-	top: 9.5vw;
-	left: 235.75vw;
+	top: 12.9vw;
+	left: 47.37%;
 	width: 32vw;
 	height: 26vw;
 }
@@ -1599,7 +1635,7 @@ html.fp-enabled,
 
 #text_age_bateau{
 	position: absolute;
-	top: 28vw;
+	top: 30vw;
 	left: 222vw;
 	font-size: 2.5vw;
 	color: white;
