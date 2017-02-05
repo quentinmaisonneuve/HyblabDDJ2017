@@ -201,3 +201,35 @@
     text-align: center;
     vertical-align: middle;
 }
+
+#texteintro {
+    position: absolute;
+    display: table-cell;
+    left: 40%;
+    top: 24vh;
+    width: 26vw;
+    /* height: 49vh; */
+    font-size: 21pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-top: 0vh; */
+    /* transform: translateY(-50%); */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#donatien {
+    position: absolute;
+    display: block;
+    left: 25vw;
+    /* top: 22vh; */
+    /* width: 20vw; */
+    bottom: 0;
+}
+
+#donatien img {
+	width: 9vw;
+}
