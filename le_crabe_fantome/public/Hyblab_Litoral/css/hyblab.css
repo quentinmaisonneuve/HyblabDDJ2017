@@ -904,7 +904,7 @@ body{
 .TextJ4{
 	display: block;
 	position: absolute;
-	top : 2%;
+	top : 4%;
 	left : 83.85%;
 }
 
@@ -927,7 +927,7 @@ body{
 	margin-left : auto;
 }
 .TextJ4>p>span>span {
-	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
+	line-height: 1.5vw; /* on ajuste le "véritable" line-height du texte */
 }
 .FondJ4{
 	display: inline-block;
@@ -1015,6 +1015,40 @@ body{
     top: 30vw;
     left: 45vw;
 }
+
+.BarreJ4{
+	position: absolute;
+	top : 20vw;
+}
+
+#barreJ4-1{
+	position: relative;
+	left : 2vw;
+}
+
+#barreJ4-2{
+	position: relative;
+	left : 2vw;
+}
+
+.Bdigue{
+	position: relative;
+	left : 1vw;
+}
+
+.Bhabitation{
+	position: relative;
+	left :10vw;
+	top : -12.4vw;
+}
+
+.Bbudget{
+	position: relative;
+	left :3vw;
+	top : -12.4vw;
+}
+
+
 /*Logos*/
 .LogoEclaireur{
 	background-image: url(../pictures/Logo/.png);
