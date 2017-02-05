@@ -1,7 +1,7 @@
 'use strict';
 
 const LONGUEUR_MAX = 30000;
-const OBJETS = ["zone de conflit", "immigration", "terrorisme", "trafic", "inégalités"]
+const OBJETS = ["immigration", "terrorisme", "trafic", "zone de conflit", "inégalités"]
 
 var walls;
 d3.json("data/walls.json", function(error, data) {
@@ -87,8 +87,9 @@ function updateAnnee(val) {
     draw(displayData.longueurs);
     
     OBJETS.forEach(function(obj) {
-        var li = document.getElementById("obj-" + obj.split(" ").join("-"));
-        li.innerHTML = '<span class="value">' + displayData.objets[obj] + '</span><span class="name">' + obj + '</span>';
+        var objFormatted = obj.split(" ").join("-");
+        var li = document.getElementById("obj-" + objFormatted);
+        li.innerHTML = '<span class="value">' + displayData.objets[obj] + '</span><img class="icone-objet-separation" src="img/icone-' + objFormatted + '.svg"/><span class="name">' + obj + '</span>';
     });
 }
 

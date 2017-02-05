@@ -121,71 +121,91 @@ path {
 }
 
 
-#objets-separations
+ul#objets-separations
 {
     list-style-type: none;
 }
 
-#objets-separations li
+ul#objets-separations li
 {
     margin-bottom: 20px;
+    display: table;
 }
 
-#objets-separations li span.value
+ul#objets-separations li span, ul#objets-separations li img
 {
-    color: #ffffff;
-    font-weight: bold;
-    padding: 5px;
+    display: table-cell;
+    vertical-align: middle;
     margin-right: 15px;
 }
 
-#objets-separations li#obj-zone-de-conflit span.value
+ul#objets-separations li img
 {
-    background-color: #ea563d;
+    margin-left: 15px;
 }
 
-#objets-separations li#obj-zone-de-conflit span.name
+ul#objets-separations li span.value
 {
-    color: #ea563d;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px;
+    width: 2em;
+    text-align: center;
 }
 
-#objets-separations li#obj-immigration span.value
-{
-    background-color: #d7ed35;
-}
-
-#objets-separations li#obj-immigration span.name
-{
-    color: #d7ed35;
-}
-
-#objets-separations li#obj-terrorisme span.value
-{
-    background-color: #5a9dff;
-}
-
-#objets-separations li#obj-terrorisme span.name
-{
-    color: #5a9dff;
-}
-
-#objets-separations li#obj-trafic span.value
+ul#objets-separations li#obj-zone-de-conflit span.value
 {
     background-color: #229aaa;
 }
 
-#objets-separations li#obj-trafic span.name
+ul#objets-separations li#obj-zone-de-conflit span.name
 {
     color: #229aaa;
 }
 
-#objets-separations li#obj-inégalités span.value
+ul#objets-separations li#obj-immigration span.value
+{
+    background-color: #ea563d;
+}
+
+ul#objets-separations li#obj-immigration span.name
+{
+    color: #ea563d;
+}
+
+ul#objets-separations li#obj-terrorisme span.value
+{
+    background-color: #d7ed35;
+}
+
+ul#objets-separations li#obj-terrorisme span.name
+{
+    color: #d7ed35;
+}
+
+ul#objets-separations li#obj-trafic span.value
+{
+    background-color: #5a9dff;
+}
+
+ul#objets-separations li#obj-trafic span.name
+{
+    color: #5a9dff;
+}
+
+ul#objets-separations li#obj-inégalités span.value
 {
     background-color: #ffce00;
 }
 
-#objets-separations li#obj-inégalités span.name
+ul#objets-separations li#obj-inégalités span.name
 {
     color: #ffce00;
+}
+
+.icone-objet-separation
+{
+    width: 40px;
+    height: 40px;
 }
 
