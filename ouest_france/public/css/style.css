@@ -5,6 +5,15 @@
     src: url("../font/Borg.ttf");
 }
 
+@font-face {
+  font-family: 'Bebasneue';
+  src: url("../font/BEBASNEUE_BOLD.ttf");
+}
+
+.bebas {
+  font-family: 'Bebasneue';
+}
+
 html,body {
     padding: 0;
     margin: 0;
@@ -266,7 +275,7 @@ p{
 {
   position: absolute;
   color: black;
-  text-align: justify;
+  text-align: left;
   font-size: 2em;
   width: 19vh;
   height: 18vh;
@@ -410,4 +419,16 @@ p{
   bottom: 38.2vh;
   box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
   -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+#conclusion {
+  position: absolute;
+  width: 63vw;
+  height: 39vh;
+  left: 18vw;
+  bottom: 37vh;
+}
+
+#conclu1, #conclu2 {
+  text-align: left;;
 }
