@@ -374,3 +374,14 @@ function musiqueCommence(genre){
 function musiqueArrete(genre){
         audio.pause();
 }
+
+
+/*
+    printemps: 0 ou 4
+    été: 1
+    autonme:2
+    hiver:3
+*/
+function setSaison(m_saison){
+    saison = m_saison;
+}
