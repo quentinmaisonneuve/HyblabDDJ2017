@@ -95,14 +95,12 @@ a {
   line-height: 1.6;
   width: 90%;
   max-width: 680px;
-  color: rgba(234, 242, 227, 0.6);
+  color: #584c5e;
+  font-size: 2rem;
 }
 
 .cd-section h1, .cd-section h2 {
   font-size: 3rem;
-}
-.cd-section p {
-  font-size: 2rem;
 }
 
 .cd-scroll-down {
@@ -137,7 +135,11 @@ a, a:active, a:focus {
 }
 
 .gifconv {
-    width: 100%;
+  width: 100%;
+}
+
+.persona {
+  height: 25%
 }
 
 /*
