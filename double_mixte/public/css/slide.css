@@ -14,19 +14,34 @@
 .darkerskyblue {
   width:100%;
 }
+#logo_van {
+min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+#logo_van img {
+    vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
 .page-accueil {
   width:100%;
    background: url(../img/ligne_accueil.svg);
   background-size:     100%;  
   background-repeat:   no-repeat;
-    background-position: center center;   
+    background-position: center center; 
+
 }
 .page-intro {
-    width:100%;
-   background: url(../img/ligne_intro.svg);
+  width:100%;
+  background: url(../img/ligne_intro.svg);
   background-size:     100%;  
   background-repeat:   no-repeat;
-    background-position: center center;   
+  background-position: center center;   
 }
 
 .slide2011 {
