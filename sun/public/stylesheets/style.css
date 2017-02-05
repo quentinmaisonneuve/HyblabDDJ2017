@@ -612,6 +612,18 @@ input:checked + .slider:before {
 	margin: 0 auto;
 }
 
+.rs-block {
+	background-image: url("/images/btn-saison-fonds.png");
+	background-size: 100% 100%;
+}
+
+.rs-handle {
+	height: 10px;
+	margin: 0px 0px 0px 1px;
+}
+
+/*, .rs-move */
+
 /* ########### TOOLTIPS ########################*/
 div.tooltip {
 	position: absolute;
