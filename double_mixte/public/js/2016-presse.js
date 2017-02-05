@@ -4,7 +4,7 @@ function showPresse2016() {
 		idtitre='titrepresse2016',
 		idtexte='textepresse2016',
 		iddate='datepresse2016';
-	var widthfond='20vw',
+	var widthfond='20.5vw',
 		heightfond='24vh',
 		widthcrayon='10%',
 		heightcrayon='10%',
