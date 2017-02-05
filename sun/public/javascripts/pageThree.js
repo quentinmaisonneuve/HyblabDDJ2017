@@ -116,6 +116,8 @@ function initBubble(node)
                             return "#054365";
                         else if (d.id == nodes[3].id)
                             return "#90A5BB";
+                        else
+                            return "#90A5BB";
                     });
                     /*.style("top", (d3.event.pageY - 28) + "px");*/
                 musiqueCommence(d.id);
@@ -359,13 +361,21 @@ function getRoad()
                 break;
         }
 
-
     var weekEnd;
         if(document.getElementById("weekOrWeekEnd").className == "play")
             weekEnd = 0;
         else
             weekEnd = 1;
-    return "./creneau/"+season+"/"+weekEnd+"/16/18";
+
+    var mood;
+    if(document.getElementById("moodVsGenre").className == "play") {
+        // GENRE
+        return "./creneau/" + season + "/" + weekEnd + "/16/18";
+    }
+    else{
+        // MOOD
+        return "./creneauM/" + season + "/" + weekEnd + "/16/18";
+    }
 }
 
 initBubble(getRoad());
