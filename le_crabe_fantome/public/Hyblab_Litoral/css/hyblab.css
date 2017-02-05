@@ -670,11 +670,11 @@ body{
 	bottom : 1vw;
 	left : 21%;
 	padding-top: 0.3vw;
-	height:3vw;
+	height:2vw;
 }
 
 #Data2{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -683,7 +683,7 @@ body{
 }
 
 #Data3{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -692,7 +692,7 @@ body{
 }
 
 #Data4{
-	height:3vw;
+	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
 	bottom : 1vw;
@@ -943,87 +943,75 @@ body{
 
 .Sable
 {
-	height : 8.1vw;
-	width : 39vw;
-	position: relative;
-    top: 26.9vw;
-    left: 21vw;
+	width : 60vw;
+	position: absolute;
+    top: 24.2vw;
+    left: 0vw;
 }
 .Mer1{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 38vw;
+	position: absolute;
+    top: 22vw;
+    left: 0vw;
 }
 .Mer2{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 29vw;
+	position: absolute;
+    top: 23vw;
+    left: 0vw;
 }
 .Mer3{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 60vw;
+	position: absolute;
+    top:20vw;
+    left: 0vw;
 }
 .Mer4{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 60vw;
+	position: absolute;
+    top: 17vw;
+    left: 0vw;
 }
 
 .Maison1 {
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
+	width : 6vw;
+	position: absolute;
+    top: 19vw;
     left: 45vw;
 }
 .Maison2{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 6vw;
+	position: absolute;
+    top: 18vw;
+    left: 52vw;
 }
 .Maison3{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 6vw;
+	position: absolute;
+    top: 19vw;
+    left: 38vw;
 }
 .Digue1{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 6vw;
+	position: absolute;
+    top: 25vw;
+    left: 27vw;
 }
 .Digue2{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 9vw;
+	position: absolute;
+    top: 21.9vw;
+    left: 26vw;
 }
 .Digue3{
-	height : 0.1vw;
-	width : 1vw;
-	position: relative;
-    top: 30vw;
-    left: 45vw;
+	width : 8vw;
+	position: absolute;
+    top: 23vw;
+    left: 26vw;
 }
 .Money{
-	height : 0.1vw;
 	width : 1vw;
-	position: relative;
+	position: absolute;
     top: 30vw;
     left: 45vw;
 }
