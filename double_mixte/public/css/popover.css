@@ -37,7 +37,7 @@
 #presse2013 {
 	display: none;
 	left: 9vw;
-    top: 40vh;
+    top: 35vh;
     width: 20vw;
     height: 10vh;
 }
@@ -59,7 +59,7 @@
     display: block;
     left: 35vw;
     top: 5vh;
-    width: 30vw;
+    width: 29vw;
     height: 10vh;
     font-size: 11pt;
     font-family: Josefin Sans;
@@ -207,7 +207,7 @@
     display: table-cell;
     left: 40%;
     top: 24vh;
-    width: 26vw;
+    width: 27vw;
     /* height: 49vh; */
     font-size: 21pt;
     font-family: Josefin Sans;
@@ -224,12 +224,25 @@
 #donatien {
     position: absolute;
     display: block;
-    left: 25vw;
-    /* top: 22vh; */
+    left: 23vw;
+    top: 16vh;
     /* width: 20vw; */
-    bottom: 0;
+    /*bottom: 0;*/
 }
 
 #donatien img {
 	width: 9vw;
+}
+
+#van_intro {
+    position: absolute;
+    display: block;
+    left: 71vw;
+    top: 32vh;
+    /* width: 20vw; */
+    /* bottom: 0; */
+}
+
+#van_intro img {
+	width: 19vw;
 }
