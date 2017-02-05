@@ -33,7 +33,7 @@ function initBubble(node)
         nodes.sort(function(a,b){
            return b.value-a.value;
         });
-        nodes.splice(4); // garder les 4 meilleurs !
+        //nodes.splice(4); // garder les 4 meilleurs !
         var total = nodes[0].value + nodes[1].value + nodes[2].value + nodes[3].value;
         // Define the div for the tooltip
         var div = d3.select("body").append("div")
@@ -135,13 +135,13 @@ function initBubble(node)
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
-                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/3;
                 else if (d.id == nodes[1].id)
-                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/3;
                 else if (d.id == nodes[2].id)
-                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3;
                 else if (d.id == nodes[3].id)
-                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3;
             })
             .attr("id", function(d)
             {
@@ -163,10 +163,9 @@ function initBubble(node)
             })
 
             .attr("class", "bubbleCTxt")
-            .style("font-size", function(d) { return (1+(d.value/total))*15 + "px" })
+            .style("font-size", function(d) { return (1+(d.value/total))*12 + "px" })
             .style({
                 "fill":"white",
-                "font-family":"Helvetica Neue, Helvetica, Arial, sans-serif"
             });
 
     });
@@ -200,6 +199,7 @@ function changeBubble(node)
         // SELECT THE SECTION
         var svg = d3.selectAll("#bubble3").transition();
 
+     //   svg.selectAll("text").data(nodes).append("text").text(function(d){return d.id;});
 
         // MAKE THE CHANGE
         svg.selectAll(".bubbleC")   // change the bubble
@@ -229,13 +229,13 @@ function changeBubble(node)
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
-                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/3;
                 else if (d.id == nodes[1].id)
-                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/3;
                 else if (d.id == nodes[2].id)
-                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3;
                 else if (d.id == nodes[3].id)
-                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3;
             })
             .style("font-size", function(d) { return (1+(d.value/total))*13 + "px" });
     });
