@@ -5,6 +5,12 @@
 
 	<link rel="stylesheet" type="text/css" href="lib/animate.css" />
 
+	<!--Jvqmap-->
+	<script type="text/javascript" src="lib/jquery.vmap.js"></script>
+	<script type="text/javascript" src="lib/jquery.vmap.europe.js" charset="utf-8"></script>
+	<script type="text/javascript" src="lib/jquery.vmap.europe.js" charset="utf-8"></script>
+
+	<link href="lib/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
   	<!-- Chartists -->
 	<script src="lib/chartist.js"></script>
 	<script src="lib/chartist-plugin-legend.js"></script>
@@ -56,6 +62,8 @@
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
 	<script src="js/2014-presse.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
+
+  	<script src="js/2015-chart.js"></script>
 	<script src="js/2015-presse.js" type="text/javascript"></script>
   	<script src="js/changecolorsvg.js"></script>
   	<script src="js/tooltip-nuitees.js"></script>
@@ -375,7 +383,7 @@
 			</div>
 			
 			<div id="presse2015" class="presse animated fadeIn"></div>
-
+<div id="vmap" style="width: 80vw; height: 90vh; float:right; margin-right:2%" data-animation="animated bounceIn" ></div>
         	<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2015facebook0" class="2015facebook" src="img/blanc.svg"/>
@@ -403,6 +411,10 @@
 	    
 		<!-- 2016 -->
 	      <div class="item slide2016">
+
+	      <div id="funfact2016">
+			<img id="textefunfact2016" class="animated rollIn" src="img/Boulette_2016.svg"/>
+			</div>
 
 	      <div id="textehistoire2016" class="animated fadeIn">
 				<span class="textenum">Chaque été</span>,
@@ -496,9 +508,28 @@ doAnimations($firstAnimatingElems);
 //Pause carousel  
 $myCarousel.carousel('pause');
 
+// pour masquer les flèches à gauche et à droite sur la première et dernière page
+/*$myCarousel.children('.left.carousel-control').hide();
+
+$myCarousel.on('slid.bs.carousel', function(e) {
+	var $this = $('#carousel-example-generic');
+  if($('.carousel-inner .item:first').hasClass('active')) {
+    $this.children('.left.carousel-control').hide();
+    $this.children('.right.carousel-control').show();
+  } else if($('.carousel-inner .item:last').hasClass('active')) {
+    $this.children('.left.carousel-control').show();
+    $this.children('.right.carousel-control').hide();
+  } else {
+    $this.children('.carousel-control').show();
+
+  } 
+});*/
 
 
 $myCarousel.on('slid.bs.carousel', function (e) {
+
+
+
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
  // drawChart();
@@ -649,10 +680,13 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
 		hidePresse2014();
 		hideAnimation2014();
+		hideAnimation2016();
     	break;
 
    	// 2016
     case 7 :
+
+    	showAnimation2016();
     	// animate
 		animateSocialFacebook(2016);
 		animateSocialTwitter(2016);
@@ -673,6 +707,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
     	animateFacebookReinit(2016);
       	animateTwitterReinit(2016);
 		animateInstagramReinit(2016);
+		hideAnimation2016();
     	break;
 
     // remerciements

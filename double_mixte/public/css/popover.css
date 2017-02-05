@@ -122,6 +122,21 @@
     width: 100%;
 }
 
+#funfact2016 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2016 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
 #textehistoire2011 {
 	position: absolute;
     display: block;

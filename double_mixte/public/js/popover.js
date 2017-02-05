@@ -44,7 +44,13 @@ function hideAnimation2015() {
 	$("#funfact2015").css("display", "none");
 }
 
+function showAnimation2016() {
+	setTimeout(function(){ $("#funfact2016").css("display", "block"); }, 1000);
+}
 
+function hideAnimation2016() {
+	$("#funfact2016").css("display", "none");
+}
 
 
 
