@@ -38,6 +38,7 @@
 	<!-- Nos fichiers CSS -->
 	<link rel="stylesheet" href="css/slide.css">
 	<link href="css/2012-chart.css" rel="stylesheet" type="text/css">
+	<link href="css/2012-presse.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/2014-chart.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
 	<link rel="stylesheet" href="css/2011.css">
@@ -49,6 +50,7 @@
 
   	<!-- Nos fichiers Javascript -->
 	<script src="js/2012-chart.js" type="text/javascript"></script>
+	<script src="js/2012-presse.js" type="text/javascript"></script>
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
   	<script src="js/changecolorsvg.js"></script>
@@ -142,7 +144,11 @@
 				<div class="containerstacked2"></div>
 			</div>
 			
-			
+			<div id="presse2012" class="presse animated fadeIn">
+			<p id="textepresse2012">
+			&laquo; Nantaise depuis 50 ans, je &laquo;découvre&raquo; ma ville grâce au voyage à Nantes. Très bonne initiative…&raquo;
+			</p>
+			</div>
 
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -476,10 +482,13 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		animateFacebookReinit(2012);
 		animateTwitterReinit(2012);
 		animateInstagramReinit(2012);
+		
+		hidePresse2012();
       	break;
 
     // 2012
     case 3 :
+    	showPresse2012();
     	// animate
     	animateDigits(2012);
 		animateSocialFacebook(2012);
@@ -526,6 +535,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
 		//graph
 		drawChart();
+		
+		hidePresse2012();
     	break;
 
     // 2014
