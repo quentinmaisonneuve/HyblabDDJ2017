@@ -229,13 +229,13 @@ function changeBubble(node)
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
-                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/3;
                 else if (d.id == nodes[1].id)
-                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/3;
                 else if (d.id == nodes[2].id)
-                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3;
                 else if (d.id == nodes[3].id)
-                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3;
             })
             .style("font-size", function(d) { return (1+(d.value/total))*13 + "px" });
     });
