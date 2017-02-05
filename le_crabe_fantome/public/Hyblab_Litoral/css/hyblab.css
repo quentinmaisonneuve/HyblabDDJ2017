@@ -302,6 +302,31 @@ body{
 
 }
 
+.ScientifiqueJ3-1{
+
+}
+.ScientifiqueJ3-2{
+
+}
+.ScientifiqueJ3-3{
+
+}
+.ScientifiqueJ3-4{
+
+}
+.DataJ3-1{
+
+}
+.DataJ3-2{
+
+}
+.DataJ3-3{
+
+}
+.DataJ3-4{
+
+}
+
 
 /*JEU 1*/
 
@@ -1113,13 +1138,13 @@ body{
 .AGR2{
 	position: absolute;
 	top : 15vw;
-	left : 26vw;
+	left : 27vw;
 
 }
 .AGR3{
 	position: absolute;
 	top : 15vw;
-	left : 40vw;
+	left : 41vw;
 
 }
 .Polytech1{
@@ -1130,17 +1155,17 @@ body{
 .Polytech2{
 	position: absolute;
 	top : 21vw;
-	left : 26vw;
+	left : 27vw;
 }
 .Polytech3{
 	position: absolute;
 	top : 21vw;
-	left : 40vw;
+	left : 41vw;
 }
 .Polytech4{
 	position: absolute;
 	top : 21vw;
-	left : 56vw;
+	left : 57vw;
 }
 .ScienceCom1{
 	position: absolute;
@@ -1150,12 +1175,12 @@ body{
 .ScienceCom2{
 	position: absolute;
 	top : 27vw;
-	left: 26vw;
+	left: 27vw;
 }
 .ScienceCom3{
 	position: absolute;
 	top : 27vw;
-	left : 40vw;
+	left : 41vw;
 }
 
 #bandeau {
