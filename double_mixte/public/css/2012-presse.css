@@ -1,0 +1,21 @@
+
+#presse2012{
+	display: none;
+	left: 9vw;
+    top: 35vh;
+    width: 20vw;
+    height: 10vh;
+}
+
+#textepresse2012 {
+	padding: 1em;
+	font-size:1vw;
+    background-image: url(../img/coupon_presse.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: right;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+}
