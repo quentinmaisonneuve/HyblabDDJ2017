@@ -180,16 +180,16 @@ d3.select('.containerstacked2').html("");
 	  if(legend1==1)
 	  {
 		  if(nombrezero<2){
-						d3.select(this).selectAll('#path-Eléphant').style('fill', '#808080');
-						d3.select(this).selectAll('.legend-label-eléphant').style('color', '#808080');
+						d3.select(this).selectAll('#path-Eléphant').style('opacity', '0.5');
+						d3.select(this).selectAll('.legend-label-eléphant').style('opacity', '0.5');
 						legend1=0;
 						chart.toggle(id);
 						}
 	  }
 	  else
 	  {
-		  d3.select(this).selectAll('#path-Eléphant').style('fill', chart.color(id));
-		  d3.select(this).selectAll('.legend-label-eléphant').style('color', chart.color(id));
+		  d3.select(this).selectAll('#path-Eléphant').style('opacity', '1');
+		  d3.select(this).selectAll('.legend-label-eléphant').style('opacity', '1');
 		  legend1=1;
 		  chart.toggle(id);
 	  }
@@ -200,16 +200,16 @@ d3.select('.containerstacked2').html("");
 			if(legend2==1)
 			{
 				if(nombrezero<2){
-						d3.select(this).selectAll('#path-Galerie').style('fill', '#808080');
-						d3.select(this).selectAll('.legend-label-galerie').style('color', '#808080');
+						d3.select(this).selectAll('#path-Galerie').style('opacity', '0.5');
+						d3.select(this).selectAll('.legend-label-galerie').style('opacity', '0.5');
 						legend2=0;
 						chart.toggle(id);
 				}
 			}
 			else
 			{
-				d3.select(this).selectAll('#path-Galerie').style('fill', chart.color(id));
-				d3.select(this).selectAll('.legend-label-galerie').style('color', chart.color(id));
+				d3.select(this).selectAll('#path-Galerie').style('opacity', '1');
+				d3.select(this).selectAll('.legend-label-galerie').style('opacity', '1');
 				legend2=1;
 				chart.toggle(id);
 			}
@@ -220,16 +220,16 @@ d3.select('.containerstacked2').html("");
 				if(legend3==1 )
 				{
 					if(nombrezero<2){
-						d3.select(this).selectAll('#path-Caroussel').style('fill', '#808080');
-						d3.select(this).selectAll('.legend-label-caroussel').style('color', '#808080');
+						d3.select(this).selectAll('#path-Caroussel').style('opacity', '0.5');
+						d3.select(this).selectAll('.legend-label-caroussel').style('opacity', '0.5');
 						legend3=0;
 						chart.toggle(id);
 					}
 				}
 				else
 				{
-					d3.select(this).selectAll('#path-Caroussel').style('fill', chart.color(id));
-					d3.select(this).selectAll('.legend-label-caroussel').style('color', chart.color(id));
+					d3.select(this).selectAll('#path-Caroussel').style('opacity', '1');
+					d3.select(this).selectAll('.legend-label-caroussel').style('opacity', '1');
 					legend3=1;
 					chart.toggle(id);
 				}
