@@ -1099,8 +1099,8 @@ body{
 /*Logos*/
 .Equipe{
 	position: relative;
-	top : -16vw;
-	left : -17vw;
+	top : 14vw;
+	left : -7vw;
 }
 
 .Nous{
@@ -1203,7 +1203,7 @@ body{
 	  margin: 1vw;
 	  height: 3vw;
 	  position: absolute;
-	  top :0vw;
+	  top :3vw;
 }
 
 #bandeau{
