@@ -286,31 +286,29 @@ html, body{
   background: #A3A3A3;
 }
 
-
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 36px;
-	width: 16px;
-	cursor: pointer;
-	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-
-}
-
 /* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-	height: 36px;
-	width: 16px;
-	border-radius: 3px;
- 	cursor: pointer;
+.blocTwoThree input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  background-color: #004266;
+  border: 0px solid transparent;
 }
 
 /* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  	height: 36px;
-  	width: 16px;
-  	cursor: pointer;
+.blocTwoThree input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #004266;
+  border: 0px solid transparent;
 }
+
 
 /* FORM */
 .printemps{background-image:url(/images/page2_feuille.png);}
@@ -415,9 +413,10 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 28px;
   width : 62px;
-  background-image: url("/images/btn_glissiere.png");
+  background-image: url("/images/btn_glissiere");
   background-size: cover;
-  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -426,6 +425,8 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 18px;
   background: url("/images/glissiere.png");
   background-size: cover;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
 }
 
 input[type=range]::-ms-track { color: red; }
@@ -483,12 +484,11 @@ input:checked + .slider:before {
 /* ################### pageThree ################### */
 
 #pageThree {
-	background-color: #FECB2E;
 	min-height: 100%;
-  	/*background: url(/images/page2_tiret.png) no-repeat center fixed; 
-  	-webkit-background-size: cover;  pour anciens Chrome et Safari 
-  	background-size: cover;  version standardisée */ 
+	background-image: url("/images/fond.png");
+	background-size: 100% 100%;
   	background-color: #FECB2E;
+  	z-index: 5;
 }
 
 #bubleChart {
@@ -501,7 +501,15 @@ input:checked + .slider:before {
   	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
   	background-size: cover; /* version standardisée */
   	margin-left: 1%;
+  	z-index: 10
 }
+
+#bubble3 {
+	margin-left: 12%;
+	margin-top: 7%;
+}
+
+/*.bubble*/
 
 #boutonBuble {
 	width: 45%;
@@ -613,6 +621,28 @@ input:checked + .slider:before {
   background: #A3A3A3;
 }
 
+/* All the same stuff for Firefox */
+#BubleBottom input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  border: 0px solid transparent;
+  background-color: #FECB2E;
+}
+
+/* All the same stuff for IE */
+#BubleBottom input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  border: 0px solid transparent;
+  background-color: #FECB2E;
+}
+
 #BubleBottomHeure {
 	margin-top: 1%;
 }
@@ -641,31 +671,6 @@ input:checked + .slider:before {
 	display: inline-block;
 }
 
-
-/* Special styling for WebKit/Blink */
-#BubleBottom input[type=range]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	height: 36px;
-	width: 16px;
-	cursor: pointer;
-	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-
-}
-
-/* All the same stuff for Firefox */
-#BubleBottom input[type=range]::-moz-range-thumb {
-	height: 36px;
-	width: 16px;
-	border-radius: 3px;
- 	cursor: pointer;
-}
-
-/* All the same stuff for IE */
-#BubleBottom input[type=range]::-ms-thumb {
-  	height: 36px;
-  	width: 16px;
-  	cursor: pointer;
-}
 
 
 /* Bubble vinyle Effect Animation*/
