@@ -130,3 +130,21 @@ function resetMotion(){
 
 	$('#thumbnail').transition({opacity:0});
 }
+
+function animerConclusion(){
+	$('#panneau-conclusion').transition({y:"100%"},3000);
+	$('#panneau-conclusion-ombre').transition({opacity:1,delay:3000},1500);
+	$('#titre-conclusion').transition({opacity:1,delay:3000},1500);
+	$('#texte-conclusion').transition({opacity:1,delay:3000},1500);
+}
+
+function resetConclusion(){
+	$('#panneau-conclusion').stop(true,true);
+	$('#panneau-conclusion-ombre').stop(true,true);
+	$('#titre-conclusion').stop(true,true);
+	$('#texte-conclusion').stop(true,true);
+	$('#panneau-conclusion').transition({y:"0%",delay:1000});
+	$('#panneau-conclusion-ombre').transition({opacity:0});
+	$('#titre-conclusion').transition({opacity:0});
+	$('#texte-conclusion').transition({opacity:0});
+}

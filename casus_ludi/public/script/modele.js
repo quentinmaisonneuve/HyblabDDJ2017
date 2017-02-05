@@ -21,9 +21,9 @@ arrayRegionDownload.france = {};
 arrayRegionDownload.france.all = 0; 
 
 for(var year in years){
-    arrayYearRegionC[years[year]] = []; 
+    arrayYearRegionC[years[year]] = {}; 
     arrayYearRegionC[years[year]].all = 0; 
-    arrayYearRegionU[years[year]] = [];
+    arrayYearRegionU[years[year]] = {};
     arrayYearRegionU[years[year]].all = 0; 
 }
 
@@ -131,6 +131,7 @@ fetch('data/data.json')
                 arraySerDemo[item.DemoServ][item.region] += item.value; 
             }
         }) 
+        initDataviz1();
         initDataviz2();  
     });
 
@@ -199,25 +200,70 @@ function dataUpdateYear(year){
 }
 
 
-function classementCreationTop(){
-    var tupleArray = arrayYearRegionC[2013];
-    var data = [];  
-    arrayYearRegionC[2013].forEach(function(item){
-        data.push(item);
-    })
-    return data; 
+function arrayValue(tupleArray){
+    var dataV = [];
+    $.each(tupleArray, function(index,item){
+        if(index != "all" && index != "National" && index != "Europe" && index != "#N/A" && index != "Autre"){
+            if(index == "Europe"){
+                console.log(item);
+            }
+            dataV.push(item);
+        }
+    });
+    return dataV;
 }
 
-function classementCreationFlop(){
-    Object.values(arrayYearRegionC[2013]).sort(function(a,b){return a - b;});
+function arrayClassement(tupleArray, data){
+    var classement = [];
+    $.each(tupleArray, function(index,item){
+        if(index != "all" && index != "National" && index != "Europe" && index != "#N/A" && index != "Autre"){
+            if(data[0] == item){
+                classement[0] = index;
+            }else if(data[1] == item){
+                classement[1] = index;
+            }else if(data[2] == item){
+                classement[2] = index;
+            }
+        }
+    });
+    if(classement.length == 0){
+        classement.push("###");
+        classement.push("###");
+        classement.push("###");
+    }else if(classement.length == 1){
+        classement.push("###");
+        classement.push("###");
+    }else if(classement.length == 2){
+        classement.push("###");
+    }
+    return classement;
+}
+function classementCreationTop(year){
+    var tupleArray = arrayYearRegionC[parseInt(year)];
+    var data = arrayValue(tupleArray);
+    data.sort(function(a,b){return b - a;});
+    return arrayClassement(tupleArray, data);
 }
 
-function classementModificationTop(){
-
+function classementCreationFlop(year){
+    var tupleArray = arrayYearRegionC[parseInt(year)];
+    var data = arrayValue(tupleArray);
+    data.sort(function(a,b){return a - b;});
+    return arrayClassement(tupleArray, data);
 }
 
-function classementModificationFlop(){
+function classementModificationTop(year){
+    var tupleArray = arrayYearRegionU[parseInt(year)];
+    var data = arrayValue(tupleArray);
+    data.sort(function(a,b){return b - a;});
+    return arrayClassement(tupleArray, data);
+}
 
+function classementModificationFlop(year){
+    var tupleArray = arrayYearRegionU[parseInt(year)];
+    var data = arrayValue(tupleArray);
+    data.sort(function(a,b){return a - b;});
+    return arrayClassement(tupleArray, data);
 }
 
 function decimalAdjust(type, value, exp) {

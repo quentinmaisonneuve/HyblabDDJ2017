@@ -1,13 +1,12 @@
 /****** CHART LINE + CURSOR ******/
 
 $(function(){
-	
 	// Création du curseur
 	$('#radios').radiosToSlider();
 	$('#radios').radiosToSlider({
 	  	animation: true
   	});
-
+	$("topCreateUl").append("<li>Here's 3</li>");
 	// Actualisation de la courbe selon l'année sélectionné
   	$('#radios').on("click", function(){
   		dataCreate = dataCreateYear($( "input:checked" ).val());
@@ -29,7 +28,7 @@ $(function(){
 				ticks: [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 			}
 		});
-		switch($( "input:checked" ).val()){
+		switch($("input:checked" ).val()){
 			case '2013':
        			texte2013();
             break;
@@ -46,7 +45,18 @@ $(function(){
        			texte2017();
             break;
 		}
-
+	    $("#topFlop #topCreate ul li").each(function(i) {
+	        $(this).text(classementCreationTop($("input:checked" ).val())[i]);
+	    });
+	    $("#topFlop #flopCreate ul li").each(function(i) {
+	        $(this).text(classementCreationFlop($("input:checked" ).val())[i]);
+	    });
+	    $("#topFlop #topUpdate ul li").each(function(i) {
+	        $(this).text(classementModificationTop($("input:checked" ).val())[i]);
+	    });
+	    $("#topFlop #flopUpdate ul li").each(function(i) {
+	        $(this).text(classementModificationFlop($("input:checked" ).val())[i]);
+	    });
 	});
 
 });
@@ -88,8 +98,26 @@ function texte2017(){
 	$('#explication2017').css('display', 'block');
 }
 
-setTimeout(function(){
-	console.log(classementCreationTop());
+//setTimeout(function(){
+	
+function initDataviz1(){
+	$("#topFlop #topCreate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #topCreate ul li").each(function(i) {
+        $(this).text(classementCreationTop('2013')[i]);
+    });
+    $("#topFlop #flopCreate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #flopCreate ul li").each(function(i) {
+        $(this).text(classementCreationFlop('2013')[i]);
+    });
+    $("#topFlop #topUpdate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #topUpdate ul li").each(function(i) {
+        $(this).text(classementModificationTop('2013')[i]);
+    });
+    $("#topFlop #flopUpdate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #flopUpdate ul li").each(function(i) {
+        $(this).text(classementModificationFlop('2013')[i]);
+    });
+	$("#2013").prop("checked", true);
 	var data = {
 		labels: [, , , , , ],
 		series: [dataCreateYear('2013'),
@@ -107,7 +135,8 @@ setTimeout(function(){
 			ticks: [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
 		}
 	});
-}, 2000);
+}
+//}, 2000);
 
 /* ANIMATION MAN */
 

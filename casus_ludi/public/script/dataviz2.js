@@ -12,7 +12,8 @@ function initDataviz2() {
 
     var svg = d3.select("#circleChart"),
     margin = 20,
-    diameter = +svg.attr("width"),
+    diameter = 500, 
+    //diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
     var pack = d3.pack()
@@ -125,8 +126,8 @@ function initDataviz2() {
     svg
       //.style("background", "#FFFFFF")
       .style("background-image", "url(\"img/france/france.svg\")")
-      .style("background-position","-324px -70px")
-      .style("background-size", "1100px")
+      //.style("background-position","-5% -3%")
+      .style("background-size", "100%")
       .style("background-repeat", false)
       .on("click", function() { updateDownload("france", "france");zoom(root); });
 
@@ -180,11 +181,13 @@ function initDataviz2() {
     {
         chartPadding: 0,
         donut: true,
-        donutWidth: 80,
+        donutWidth: 40,
         startAngle: 270,
         total: data["all"]*2,
         showLabel: false
     });
+
+     $("#textDownload").html("FRANCE <br>"+ Math.round(data["all"]) + " téléchargements de données"); 
 
     regions.forEach(function(region){
         fetch("img/france/"+region+".svg").then(function (response){
@@ -219,7 +222,7 @@ function updateDownload(region, regionName){
     {
         chartPadding: 0,
         donut: true,
-        donutWidth: 80,
+        donutWidth: 40,
         startAngle: 270,
         total: data["all"]*2,
         showLabel: false
@@ -242,16 +245,18 @@ function updateDownload(region, regionName){
 
     setTimeout(function(){
             $("#textDownload").html(regionName.toUpperCase() + "<br>"+ white  +  Math.round(data["all"]) + " téléchargements de données")
-        if( region == "france"){
-            $("#circleChart").css("background-image", "url(\"img/france/"+region+".svg\")")
-                             .css("background-position","-324px -70px")
-                             .css("background-size", "1100px")
-        }
-        else {
             $("#circleChart").css("background-image", "url(\"img/france/"+region+".svg\")")
                              .css("background-position","0px 0px")
                              .css("background-size", "100%")
-        }
     },"500"); 
     
 } 
+
+/*
+$(document).ready(function(){
+    window.addEventListener("resize", function () {
+        if (window.innerWidth() <= 1150) {
+             $('.').css({ fill: "#ff0000" });
+        };
+    });
+}*/

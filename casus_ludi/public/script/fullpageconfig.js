@@ -73,6 +73,9 @@ $(document).ready(function(){
                         else if((index == 2 && direction =='up')||(index == 2 && direction =='down')){
                                 resetMotion();
                         }
+                        else if((index == 6 && direction =='up')||(index == 6 && direction =='down')){
+                                resetConclusion();
+                        }
                 },
                 afterLoad: function(anchorLink, index){
                         //Une fois qu'on est remonté sur la première section
@@ -82,6 +85,10 @@ $(document).ready(function(){
                         else if(index == 2){
                                 animerMotion();
                         }
+                        else if(index == 6){
+                                animerConclusion();
+                        }
+                        
                 },
                 afterRender: function(){},
                 afterResize: function(){},

@@ -51,6 +51,16 @@ html, body{
 	padding-top:0.8%;
 }
 
+@media only screen and (max-width: 880px){
+	#sous-titre{
+		font-size: 1.8vmin;
+	}
+
+	#texte-bouton{
+		font-size: 1vmin;
+	}
+}
+
 #nuages{
 	position: absolute;
 	z-index: -2;
@@ -213,6 +223,25 @@ video{
 
 /* Dataviz2 */
 
+#dataviz2-section h1{
+	font-size: 4.5vmin;
+    -webkit-margin-after: 0.20em;
+}
+
+#dataviz2-sous-titre{
+	text-align: center;
+}
+
+@media only screen and (max-width: 860px){
+	#dataviz2-section h1{
+		font-size: 3vmin;
+	}
+
+	#dataviz2-sous-titre{
+		font-size: 1.8vmin;
+	}
+}
+
 .node {
     cursor: pointer;
     stroke : #000040;
@@ -250,6 +279,25 @@ video{
   pointer-events: none;
 }
 
+.svg-container {
+	display: inline-block;
+	position : absolute;
+	width : 46%;
+	height: 80%;
+	vertical-align : middle;
+	overflow: hidden;
+	/*border:#333 1px solid;*/
+	border-radius: 20%;
+	bottom: 1px;
+}
+
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left : 0;
+}
+
 .listLegend {
 	margin : -3%;
 	width : 108%;
@@ -257,13 +305,15 @@ video{
 }
 
 #divLegend{
-	bottom: 10%;
+	top: 22%;
+	left : 45%;
     position: absolute;
-    display: inline-block;
+    display: block;
+    width: 20%;
 }
 
 #divDownload{
-	display : inline-block;
+	display : block;
 	width : 40%;
 	height: 100%;
 	position : absolute;
@@ -276,12 +326,15 @@ video{
 	top : 24%;
 	left : 18%;
 	text-align: center; 
-	width : 66%;
+	width : 67%;
 }
 
 .textLegend {
+	position: relative;
+	bottom : 12px;
 	display: inline;
 	margin : 1%;
+	width: 100%;
 }
 
 .mapLegend {
@@ -348,6 +401,56 @@ video{
 }
 
 
+.ct-slice-donut{
+	stroke-width:40px;
+}
+
+@media only screen and (max-width: 1150px){
+	#divDownload{
+		width: 30%;
+	}
+
+	.textLegend{
+		font-size: 1.5vmin;
+	}
+}
+
+@media only screen and (max-width: 960px){
+	.listLegend{
+		height: 4vmin;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.textLegend{
+		font-size: 0.9vmin;
+	}
+	.listLegend{
+		height: 3vmin;
+	}
+}
+
+@media only screen and (max-width: 570px){
+	.textLegend{
+		font-size: 0.8vmin;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	#textDownload{
+		font-size: 1.5vmin;
+	}
+
+	#textDownload b{
+		font-size: 2vmin;
+	}
+
+	#dataviz2-sous-titre{
+		top:;
+	}
+}
+
+
 /* DATAVIZ 1*/
 
 /*#titre{
@@ -356,12 +459,23 @@ video{
 	height: 18%;
 	left:15%;
 }*/
-
 #datavizEvo h1{
 	position: absolute;
 	top:5%;
-	left:3%;
+	right:45%;
 	font-size:4.5vmin;
+}
+
+@media only screen and (max-width: 1150px){
+	#datavizEvo h1{
+		font-size: 3vmin;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	#datavizEvo h1{
+		font-size: 2vmin;
+	}
 }
 
 #graphe{
@@ -377,6 +491,37 @@ video{
 	margin-left: 6.5%;
 }
 
+@media only screen and (max-width: 850px){
+	#radios{
+		/*height: 3vmin;*/
+		margin-bottom: 5vmin;
+	}
+
+	#radios label{
+		font-size: 1.5vmin;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#legende p{
+		font-size:1.5vmin;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	#radios{
+		/*height: 3vmin;*/
+		margin-bottom: 1.5vmin;
+	}
+
+	#radios label{
+		top:8vmin;
+	}
+
+	#legende p{
+		font-size:1vmin;
+	}
+}
 
 #imagePerso{
 	position: absolute;
@@ -394,12 +539,18 @@ video{
 }
 #topCreate,#flopCreate,#topUpdate,#flopUpdate{
 	position: absolute;
-	width: 13%; 
-	height: 18%;
+	height:26%;
+	width:13%;
+	text-align: left;
+}
+#topCreate ul,#flopCreate ul,#topUpdate ul,#flopUpdate ul{
+	padding: 0;
+	padding-left: 15%;
+	margin:0;
 }
 
 #topCreate,#flopCreate{
-	top:10%;
+	top:8%;
 }
 
 #topUpdate,#flopUpdate{
@@ -407,21 +558,22 @@ video{
 }
 
 #topCreate,#topUpdate{
-	left:58%;
+	left:59%;
 }
 
 #flopCreate,#flopUpdate{
-	left:76%;
+	left:77%;
 }
 
 
 #topFlop p{
-	font-size:1.8vmin;
+	
 }
 
-li {
-  list-style-type: decimal;
-  color:#000033;
+#topFlop li {
+	list-style-type: decimal;
+	color:#000033;
+	font-size:2vmin;
 }
 
 
@@ -432,6 +584,10 @@ li {
 	width: 15%; 
 	height: 23%;
 	/*border: 3px solid #000000; */
+}
+
+#explicationAnnee p{
+	font-size:2vmin;
 }
 
 #explication2014,#explication2015,#explication2016,#explication2017{
@@ -491,13 +647,203 @@ li {
 	left:35%;
 }
 
+@media only screen and (max-width:1050px){
+	#topCreate ul li, #flopCreate ul li, #topUpdate ul li, #flopUpdate ul li{
+		font-size: 1.5vmin;
+	}
+
+	#explicationAnnee div p{
+		font-size: 1.5vmin;
+	}
+}
+
+@media only screen and (max-width:860px){
+	#explicationAnnee div p{
+		font-size: 1vmin;
+	}
+}
+
+/*** Conclusion****/
+#conclusion-fond{
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top,bottom:0;
+	left,right: 0;
+}
+
+#panneau-conclusion{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:-100%;
+	left,right: 0;
+}
+
+#panneau-conclusion-ombre{
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0%;
+	left,right: 0;
+	opacity: 0;
+}
+
+#titre-conclusion{
+	z-index: 2;
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	font-size: 4vmin;
+	left: 30%;
+	top:26%;
+	opacity: 0;
+}
+
+#texte-conclusion{
+	z-index: 2;
+	position: absolute;
+	width: 50%;
+	height: 10%;
+	font-size: 2.5vmin;
+	left: 25%;
+	top:42%;
+	text-align: center;
+	opacity: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	#titre-conclusion{
+		font-size: 3vmin;
+	}
+
+	#texte-conclusion{
+		font-size: 2vmin;
+	}
+}
+
+@media only screen and (max-width: 787px){
+	#titre-conclusion{
+		font-size: 2.5vmin;
+	}
+
+	#texte-conclusion{
+		font-size: 1.5vmin;
+	}
+}
+
+/*** Dataviz 3 ***/
+a{
+	text-decoration:none;
+	color:black
+}
+
+.choix{
+	background-color:white;
+	text-align:center;
+}
+
+tr.sousGauche{
+	border-width:1px;
+	border-style:solid;
+}
+
+tr.sousDroite{
+	border-width:1px;
+	border-style:solid;
+}
+
+#affiche_balance{
+	background-color:white;
+}
+
+h1{
+	background-color:white;
+	text-align:center;
+}
+
+p{
+	margin-top:0;
+	margin-bottom:10px;
+	margin-right:0;
+	margin-left:0;
+}
+
+p.sousGauche{
+	background-color:white;
+	height:5%;
+	text-align:right;
+	border-radius:10px;
+}
+
+p.sousDroite{
+	background-color:white;
+	height:5%;
+	text-align:left;
+	border-radius:10px;
+}
+
+caption{
+	caption-side:top;
+	text-align:center;
+}
+
+#aiguilleBalance{
+	transform: rotate(-45deg);
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	top: 29.5%;
+	right: 45.17%;
+}
+
+.textee{
+	margin-left:25px;
+	text-align:justify;
+}
+
+a.menu3{
+	text-align:center;
+	color:#002BE5;
+}
+
+#poids1{
+	visibility:hidden;
+	position:absolute;
+	right:35%;
+	top:33%;
+}
+
+#poids2{
+	visibility:hidden;
+	position:absolute;
+	right:55%;
+	top:33%;
+}
+
+img.bouton{
+	display: block;
+	margin: auto;
+}
+
+#source{
+	position:absolute;
+	bottom:0;
+}
+
 /*** Remerciement ***/
 #outro-fond{
+	position: absolute;
 	width: 100%;
 	height:100%;
 	top,bottom:0;
 	left,right: 0;
 }
+
+
 
 #remerciementsText{
 	position: absolute;
@@ -511,12 +857,18 @@ li {
 	color:#000044;
 }
 
+@media only screen and (max-width: 845px){
+	#remerciementsText{
+		font-size:1.4vmin;
+	}
+}
+
 #remerciements{
 	z-index: -3;
 	position: absolute;
 	width: 80%;
 	height: 20%;
-	font-size: 2.5vmin;
+	font-size: 3vmin;
 	top:2%;
 	left:9.7%;
 	text-align: center;
@@ -528,9 +880,94 @@ li {
 	position: absolute;
 	width: 80%;
 	height: 20%;
-	font-size: 1vw;
+	font-size: 3vmin;
 	top:79%;
 	left:9.2%;
 	text-align: center;
 	color:#000044;
+}
+
+@media only screen and (max-width: 845px){
+	#remerciements, #partenaires{
+		font-size:2vmin;
+	}
+}
+
+.photo{
+	position: absolute;
+	height: 11vmin;
+	width: 11vmin;
+	border-radius: 50%;
+	border: 1px #333 solid;
+	bottom:35%;
+}
+
+.photo-name{
+	position: absolute;
+	font-size: 2.5vmin;
+	width: 11vmin;
+	height: 5vmin;
+	text-align: center;
+	bottom:28%;
+}
+
+@media only screen and (max-width: 1150px){
+	.photo{
+		height:8vmin;
+		width: 8vmin;
+	}
+
+	.photo-name{
+		font-size: 1.9vmin;
+		width: 8vmin;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.photo{
+		height:6vmin;
+		width: 6vmin;
+	}
+
+	.photo-name{
+		bottom:25%;
+		font-size: 1.6vmin;
+		width: 6vmin;
+	}
+}
+
+#chris, #chris-txt{
+	left:13%;
+}
+
+#thibault, #thibault-txt{
+	left:21.5%;
+}
+
+#vincent, #vincent-txt{
+	left:30.5%;
+}
+
+#florent, #florent-txt{
+	left:42%;
+}
+
+#felix, #felix-txt{
+	left:50.5%;
+}
+
+#jeremy, #jeremy-txt{
+	left:62.8%;
+}
+
+#thomas, #thomas-txt{
+	left:70.3%;
+}
+
+#jordan, #jordan-txt{
+	left:77.8%;
+}
+
+#arthur, #arthur-txt{
+	left:85.3%;
 }
