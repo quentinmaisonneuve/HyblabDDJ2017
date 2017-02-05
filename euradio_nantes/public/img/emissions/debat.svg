@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="444.578px" height="426.506px" viewBox="0 0 444.578 426.506" enable-background="new 0 0 444.578 426.506"
+	 xml:space="preserve">
+<g id="EmissionDebat">
+	<g id="BlocDebat">
+		<path fill="#323B49" stroke="#323B49" stroke-width="2.871" stroke-miterlimit="10" d="M370.023,338.473
+			c-0.023,5.976-5.415,10.779-12.042,10.753l-255.998-0.997c-6.627-0.026-11.981-4.87-11.958-10.846l0.921-236.25
+			c0.023-5.976,5.416-11.198,12.044-11.172l255.998,0.997c6.627,0.026,11.979,5.29,11.956,11.266L370.023,338.473z"/>
+	</g>
+	<rect x="221.338" y="142.138" fill="none" width="144.025" height="41.734"/>
+	<text transform="matrix(1 0 0 1 254.8787 153.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">émission</text>
+	<text transform="matrix(1 0 0 1 267.7337 175.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">débat</text>
+	<rect x="225.395" y="191.031" fill="none" width="132.91" height="17.493"/>
+	<text transform="matrix(1 0 0 1 242.704 200.5217)" fill="#FFFFFF" font-family="'MetaPro-Normal'" font-size="13">15h / semaine</text>
+	<g id="DrapeauDebat">
+		<g>
+			<circle fill="#FFFFFF" stroke="#88C8CB" stroke-width="1.7224" stroke-miterlimit="10" cx="142.238" cy="282.792" r="34.823"/>
+			<g>
+				<g>
+					<defs>
+						<circle id="SVGID_1_" cx="142.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_2_">
+						<use xlink:href="#SVGID_1_"  overflow="visible"/>
+					</clipPath>
+					
+						<circle clip-path="url(#SVGID_2_)" fill="#FFFFFF" stroke="#88C8CB" stroke-width="1.5725" stroke-miterlimit="10" cx="142.578" cy="283.091" r="31.794"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_3_" cx="142.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_4_">
+						<use xlink:href="#SVGID_3_"  overflow="visible"/>
+					</clipPath>
+					<rect x="101.938" y="243.084" clip-path="url(#SVGID_4_)" fill="#88C8CB" width="28" height="76"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_5_" cx="142.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_6_">
+						<use xlink:href="#SVGID_5_"  overflow="visible"/>
+					</clipPath>
+					<rect x="129.938" y="243.084" clip-path="url(#SVGID_6_)" fill="#FFFFFF" width="28" height="76"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_7_" cx="142.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_8_">
+						<use xlink:href="#SVGID_7_"  overflow="visible"/>
+					</clipPath>
+					<rect x="157.938" y="243.084" clip-path="url(#SVGID_8_)" fill="#E54F7F" width="26" height="76"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<circle fill="#FFFFFF" stroke="#88C8CB" stroke-width="1.7224" stroke-miterlimit="10" cx="312.238" cy="282.792" r="34.823"/>
+			<g>
+				<g>
+					<defs>
+						<circle id="SVGID_9_" cx="312.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_10_">
+						<use xlink:href="#SVGID_9_"  overflow="visible"/>
+					</clipPath>
+					
+						<circle clip-path="url(#SVGID_10_)" fill="#FFFFFF" stroke="#88C8CB" stroke-width="1.5725" stroke-miterlimit="10" cx="312.578" cy="283.091" r="31.794"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_11_" cx="312.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_12_">
+						<use xlink:href="#SVGID_11_"  overflow="visible"/>
+					</clipPath>
+					<rect x="270.938" y="240.084" clip-path="url(#SVGID_12_)" fill="#323B49" width="85" height="30"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_13_" cx="312.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_14_">
+						<use xlink:href="#SVGID_13_"  overflow="visible"/>
+					</clipPath>
+					<rect x="270.938" y="269.084" clip-path="url(#SVGID_14_)" fill="#EFCE96" width="85" height="30"/>
+				</g>
+				<g>
+					<defs>
+						<circle id="SVGID_15_" cx="312.578" cy="283.091" r="31.794"/>
+					</defs>
+					<clipPath id="SVGID_16_">
+						<use xlink:href="#SVGID_15_"  overflow="visible"/>
+					</clipPath>
+					<rect x="270.938" y="297.084" clip-path="url(#SVGID_16_)" fill="#E54F7F" width="85" height="30"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<circle fill="#FFFFFF" stroke="#88C8CB" stroke-width="1.7224" stroke-miterlimit="10" cx="226.762" cy="282.792" r="34.823"/>
+			<g>
+				<g>
+					<defs>
+						<circle id="SVGID_17_" cx="227.269" cy="282.794" r="32.114"/>
+					</defs>
+					<clipPath id="SVGID_18_">
+						<use xlink:href="#SVGID_17_"  overflow="visible"/>
+					</clipPath>
+					<g clip-path="url(#SVGID_18_)">
+						
+							<rect x="193.241" y="238.314" transform="matrix(0.0044 1 -1 0.0044 509.1414 54.1008)" fill="#88C8CB" width="68.321" height="88.86"/>
+						<polygon fill="#FFFFFF" points="182.926,271.565 201.694,271.483 182.862,257.103 182.827,248.8 193.565,248.753 
+							219.905,268.735 219.817,248.637 234.602,248.572 234.689,268.671 260.855,248.457 271.683,248.409 271.72,256.713 
+							252.924,271.257 271.784,271.176 271.884,293.959 253.024,294.042 271.948,308.423 271.983,316.728 261.154,316.776 
+							234.813,296.79 234.9,316.891 220.118,316.956 220.027,296.856 193.865,317.071 183.126,317.119 183.09,308.813 
+							201.794,294.267 183.025,294.35 						"/>
+						<path fill="#E54F7F" d="M182.947,276.292l40.141-0.176l-0.12-27.492l8.686-0.039l0.121,27.493l40.028-0.176l0.06,13.342
+							l-40.03,0.177l0.12,27.484l-8.684,0.038l-0.122-27.484l-40.141,0.176L182.947,276.292L182.947,276.292z M264.699,248.441
+							l-29.559,22.911l7.1-0.031l29.442-22.911L264.699,248.441L264.699,248.441z M271.982,316.728l-0.024-5.428l-22.516-17.241
+							l-7.134,0.031L271.982,316.728L271.982,316.728z M212.641,271.451L182.827,248.8l0.023,5.44l22.631,17.243L212.641,271.451
+							L212.641,271.451z M212.682,294.218l-29.556,22.901l7.097-0.032l29.559-22.899L212.682,294.218z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="VisuelDebat1">
+		<g>
+			
+				<ellipse fill="#D3D3D3" stroke="#D3D3D3" stroke-width="0.8556" stroke-miterlimit="10" cx="152.762" cy="169.881" rx="41.507" ry="29.821"/>
+			<path fill="#D3D3D3" stroke="#D3D3D3" stroke-width="0.8556" stroke-miterlimit="10" d="M122.062,183.753
+				c2.654,7.431-4.969,16.363-8.684,22.202c7.431-1.592,18.768-6.433,21.422-13.864"/>
+		</g>
+		<g>
+			
+				<ellipse fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0811" stroke-miterlimit="10" cx="152.762" cy="166.881" rx="41.507" ry="29.821"/>
+			<path fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.0811" stroke-miterlimit="10" d="M122.062,180.753
+				c2.654,7.431-4.969,16.363-8.684,22.202c7.431-1.592,18.768-6.433,21.422-13.864"/>
+		</g>
+		<g>
+			<g>
+				<g>
+					<path fill="#323B49" d="M138.666,172.913c5.804,0,5.804-9,0-9S132.862,172.913,138.666,172.913L138.666,172.913z"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#323B49" d="M152.294,172.913c5.804,0,5.804-9,0-9C146.491,163.913,146.491,172.913,152.294,172.913
+						L152.294,172.913z"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#323B49" d="M166.076,172.913c5.804,0,5.804-9,0-9S160.272,172.913,166.076,172.913L166.076,172.913z"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			
+				<ellipse fill="#D3D3D3" stroke="#D3D3D3" stroke-width="0.8556" stroke-miterlimit="10" cx="182.074" cy="156.195" rx="32.848" ry="23.6"/>
+			<path fill="#D3D3D3" stroke="#D3D3D3" stroke-width="0.8556" stroke-miterlimit="10" d="M206.369,167.173
+				c-2.1,5.881,3.932,12.95,6.873,17.57c-5.881-1.26-14.853-5.091-16.953-10.972"/>
+		</g>
+		<g>
+			
+				<ellipse fill="#88C8CB" stroke="#88C8CB" stroke-width="0.8556" stroke-miterlimit="10" cx="183.155" cy="154.033" rx="32.848" ry="23.6"/>
+			<path fill="#88C8CB" stroke="#88C8CB" stroke-width="0.8556" stroke-miterlimit="10" d="M207.451,165.011
+				c-2.1,5.881,3.932,12.95,6.873,17.57c-5.881-1.26-14.853-5.091-16.953-10.972"/>
+		</g>
+		<g>
+			<g>
+				<g>
+					<path fill="#FFFFFF" d="M177.061,156.603c2.091,0,2.091-3.243,0-3.243S174.97,156.603,177.061,156.603L177.061,156.603z"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#FFFFFF" d="M183.707,156.603c2.091,0,2.091-3.243,0-3.243S181.615,156.603,183.707,156.603L183.707,156.603z"/>
+				</g>
+			</g>
+			<g>
+				<g>
+					<path fill="#FFFFFF" d="M190.427,156.603c2.091,0,2.091-3.243,0-3.243S188.335,156.603,190.427,156.603L190.427,156.603z"/>
+				</g>
+			</g>
+		</g>
+		
+			<path opacity="0.2" fill="none" stroke="#323B49" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new    " d="
+			M192.938,137.061c0,0,12,1.023,18.667,14.69"/>
+	</g>
+	<g id="VisuelDebat2">
+		<g>
+			<g>
+				<defs>
+					<circle id="SVGID_19_" cx="228.724" cy="196.415" r="5.569"/>
+				</defs>
+				<clipPath id="SVGID_20_">
+					<use xlink:href="#SVGID_19_"  overflow="visible"/>
+				</clipPath>
+				<polygon clip-path="url(#SVGID_20_)" fill="#FFFFFF" points="228.787,189.918 228.787,196.415 234.293,198.187 233.661,205.739 
+					223.999,204.684 219.358,198.904 219.611,192.871 223.999,190.382 				"/>
+			</g>
+		</g>
+		
+			<ellipse fill="none" stroke="#FFFFFF" stroke-width="1.9439" stroke-miterlimit="10" cx="228.64" cy="196.542" rx="7.637" ry="7.51"/>
+		<path fill="#FFFFFF" d="M230.813,186.88c0,0.373-0.302,0.675-0.675,0.675h-2.7c-0.373,0-0.675-0.302-0.675-0.675v-0.548
+			c0-0.373,0.302-0.675,0.675-0.675h2.7c0.373,0,0.675,0.302,0.675,0.675V186.88z"/>
+		<rect x="227.923" y="187.006" fill="#FFFFFF" width="1.73" height="1.434"/>
+	</g>
+</g>
+</svg>
