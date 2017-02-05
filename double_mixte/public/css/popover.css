@@ -246,3 +246,18 @@
 #van_intro img {
 	width: 19vw;
 }
+
+#texte2016 {
+position: absolute;
+    display: block;
+    left: 28vw;
+    top: 40vh;
+    width: 43vw;
+    height: 40vh;
+    font-size: 25pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
