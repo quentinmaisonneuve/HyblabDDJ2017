@@ -56,7 +56,7 @@
 
 #textehistoire2013 {
 	position: absolute;
-    display: none;
+    display: block;
     left: 35vw;
     top: 5vh;
     width: 30vw;
@@ -86,16 +86,30 @@
 }
 
 #textefunfact2013 {
-	    vertical-align: middle;
+	vertical-align: middle;
     margin-right: 0;
     padding-right: 0;
     width: 100%;
 }
 
+#funfact2014 {
+    position: absolute;
+    display: block;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2014 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
 
 #textehistoire2011 {
 	position: absolute;
-    display: none;
+    display: block;
     left: 35vw;
     top: 5vh;
     width: 50vw;
@@ -105,6 +119,20 @@
     color: #001526;
     font-weight: 600;
 }
+
+#textehistoire2012 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 5vh;
+    width: 50vw;
+    height: 10vh;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
 
 #titre2011 {
     position: absolute;
