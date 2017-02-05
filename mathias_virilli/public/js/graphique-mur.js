@@ -63,7 +63,8 @@ svg.append("g")
     
 // Add the line path.
 svg.append("path")
-    .attr("class", "line");
+    .attr("class", "line")
+    .style({'stroke-width': '2px'});
 
 window.onload = function() {
     updateAnnee(sliderValue);
