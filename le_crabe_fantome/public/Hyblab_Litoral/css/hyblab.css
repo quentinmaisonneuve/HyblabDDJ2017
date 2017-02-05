@@ -1043,20 +1043,31 @@ body{
 }
 
 .Bdigue{
-	position: relative;
-	left : 1vw;
+	position: absolute;
+	right : -9vw;
 }
 
 .Bhabitation{
-	position: relative;
-	left :10vw;
-	top : -12.4vw;
+	height: 2vw;
+	position: absolute;
+	right: -1.5vw;
+}
+
+.Bhabitation p{
+	width : 8vw;
 }
 
 .Bbudget{
-	position: relative;
-	left :3vw;
-	top : -12.4vw;
+	position: absolute;
+	right: -2vw;
+	top : 20vw;
+}
+
+.boutonV{
+	font-size: 1.5vw;
+	position: absolute;
+	right: -4vw;
+	bottom: -28vw;
 }
 
 
