@@ -144,6 +144,7 @@ html, body{
 	background-image: url("/images/page2_tiret.png");
 	background-size: 100% 100%;
 	text-align: center;
+	padding-top: 2%;
 }
 
 #pageTwo h1 {
@@ -171,8 +172,6 @@ html, body{
 #pageTwo .blocTwoOne {
 	width: 70%;
 	margin: 0 auto;
-	margin-top: 1%;
-	padding-top: 1%;
 }
 
 #pageTwo .blocTwoOne .Saison {
@@ -186,13 +185,11 @@ html, body{
 	width: 70%;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 5%;
-	padding-bottom: 1%;
+	margin-top: 13%;
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #004266;
 	display: flex;
-
 }
 
 #pageTwo .blocTwoTwo .inlineBloc {
@@ -227,6 +224,10 @@ html, body{
 	border: 3px #004266 solid;
 	border-radius: 15px;
 	padding: 15px;
+	margin-top: 2%;
+}
+
+.blocTwoThree {
 	margin-top: 2%;
 }
 
