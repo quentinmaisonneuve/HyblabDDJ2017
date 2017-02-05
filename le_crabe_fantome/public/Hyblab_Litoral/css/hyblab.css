@@ -302,57 +302,6 @@ body{
 
 }
 
-.ScientifiqueJ3-1{
-	width: 15vw;
-    position: absolute;
-    top: 10vw;
-    left: 65%;
-
-}
-.ScientifiqueJ3-2{
-	width: 15vw;
-    position: absolute;
-    top: 10vw;
-    left: 65%;
-
-}
-.ScientifiqueJ3-3{
-	width: 15vw;
-    position: absolute;
-    top: 10vw;
-    left: 65%;
-}
-.ScientifiqueJ3-4{
-	width: 15vw;
-    position: absolute;
-    top: 10vw;
-    left: 65%;
-}
-.DataJ3-1{
-	width: 24vw;
-    position: absolute;
-    top: 9.5vw;
-    left: 71%;
-}
-.DataJ3-2{
-    width: 24vw;
-    position: absolute;
-    top: 9.5vw;
-    left: 71%;
-}
-.DataJ3-3{
-    width: 24vw;
-    position: absolute;
-    top: 9.5vw;
-    left: 71%;
-}
-.DataJ3-4{
-    width: 24vw;
-    position: absolute;
-    top: 9.5vw;
-    left: 71%;
-}
-
 
 /*JEU 1*/
 
@@ -949,6 +898,70 @@ body{
 	top : -2.4vw;
 	left: 3vw;
 	margin: 0;
+}
+
+/*data J3*/
+
+.ScientifiqueJ3-1{
+	width: 15vw;
+    position: absolute;
+    top: 10vw;
+    left: 65%;
+
+}
+.ScientifiqueJ3-2{
+	width: 15vw;
+    position: absolute;
+    top: 10vw;
+    left: 65%;
+
+}
+.ScientifiqueJ3-3{
+	width: 15vw;
+    position: absolute;
+    top: 10vw;
+    left: 65%;
+}
+.ScientifiqueJ3-4{
+	width: 15vw;
+    position: absolute;
+    top: 10vw;
+    left: 65%;
+}
+.DataJ3-1{
+	width: 24vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 71%;
+}
+.DataJ3-2{
+    width: 24vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 71%;
+}
+.DataJ3-3{
+    width: 24vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 71%;
+}
+.DataJ3-4{
+    width: 24vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 71%;
+}
+
+#fonddate3{
+	display: inline-block;
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
 }
 
 
