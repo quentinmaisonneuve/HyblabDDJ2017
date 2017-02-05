@@ -398,6 +398,10 @@
 		<!-- 2016 -->
 	      <div class="item slide2016">
 
+	      <div id="funfact2016">
+			<img id="textefunfact2016" class="animated rollIn" src="img/Boulette_2016.svg"/>
+			</div>
+
 	      <div id="textehistoire2016" class="animated fadeIn">
 				<span class="textenum">Chaque été</span>,
 				<br/><br/>
@@ -490,9 +494,28 @@ doAnimations($firstAnimatingElems);
 //Pause carousel  
 $myCarousel.carousel('pause');
 
+// pour masquer les flèches à gauche et à droite sur la première et dernière page
+/*$myCarousel.children('.left.carousel-control').hide();
+
+$myCarousel.on('slid.bs.carousel', function(e) {
+	var $this = $('#carousel-example-generic');
+  if($('.carousel-inner .item:first').hasClass('active')) {
+    $this.children('.left.carousel-control').hide();
+    $this.children('.right.carousel-control').show();
+  } else if($('.carousel-inner .item:last').hasClass('active')) {
+    $this.children('.left.carousel-control').show();
+    $this.children('.right.carousel-control').hide();
+  } else {
+    $this.children('.carousel-control').show();
+
+  } 
+});*/
 
 
 $myCarousel.on('slid.bs.carousel', function (e) {
+
+
+
   var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
   doAnimations($animatingElems);
  // drawChart();
@@ -640,10 +663,13 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		animateInstagramReinit(2016);
 
 		hideAnimation2014();
+		hideAnimation2016();
     	break;
 
    	// 2016
     case 7 :
+
+    	showAnimation2016();
     	// animate
 		animateSocialFacebook(2016);
 		animateSocialTwitter(2016);
@@ -663,6 +689,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
     	animateFacebookReinit(2016);
       	animateTwitterReinit(2016);
 		animateInstagramReinit(2016);
+		hideAnimation2016();
     	break;
 
     // remerciements
