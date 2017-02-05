@@ -28,3 +28,7 @@ function hideText2011() {
 	$("#titre2011").css("display", "none");
 }
 
+
+
+
+
