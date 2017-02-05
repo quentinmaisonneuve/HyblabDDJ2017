@@ -20,14 +20,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#presse2013 {
+.presse {
 	position: absolute;
-    display: none;
-	left: 9vw;
-    top: 40vh;
-    width: 20vw;
-    height: 10vh;
+    
     font-size: 11pt;
     font-family: Josefin Sans;
     color: #f43f00;
@@ -38,6 +33,13 @@
     -webkit-animation-duration: 3s;
     -ms-animation-duration: 3s;
     -khtml-animation-duration: 3s;
+}
+#presse2013 {
+	display: none;
+	left: 9vw;
+    top: 40vh;
+    width: 20vw;
+    height: 10vh;
 }
 
 #textepresse2013 {

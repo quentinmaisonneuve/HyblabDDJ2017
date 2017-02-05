@@ -45,8 +45,8 @@ function drawStackedBarChart()
 		chart = c3.generate({
 			bindto: '#stackedbarchart',
 			size: {
-				width: vwTOpx(41),
-				height: vhTOpx(document.getElementById('stackedbarchart').getAttribute('height'))
+				width: vwTOpx(38),
+				height: vhTOpx(25)
 			},
 			color: {
 				pattern: ['#f43f00','#001526','#dd0707','#c63442','#aa7809','#f43f00','#f43f00','#443308','#89590b','#89590b','#dd9014','#66D18F','#708090','#000000','#F5F594','#66A69C','#DAA520','#8A2BE2', '#1f77b4', '#aec7e8', '#ff7f0e']
