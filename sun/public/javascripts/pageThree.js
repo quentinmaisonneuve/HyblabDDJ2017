@@ -211,30 +211,21 @@ function changeBubble(node)
                 var xRotation = parseFloat(d3.select(this).attr("x"),10) + ( parseFloat(d3.select(this).attr("width"),10)/2);
                 var yRotation = parseFloat(d3.select(this).attr("y"),10) + ( parseFloat(d3.select(this).attr("height"),10)/2);
                 return xRotation + "px " + yRotation+ "px";
-            });
+            })
+        ;
+
 
         svg.selectAll(".bubbleCTxt")
             .duration(750)
             .attr("x", function(d){
                 if (d.id == nodes[0].id)
-                {
-                    document.getElementsById("#bubbleRTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
-                }
                 else if (d.id == nodes[1].id)
-                {
-                    document.getElementsById("#bubbleVTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
-                }
-                else if (d.id == nodes[2].id) {
-                    document.getElementsById("#bubbleBTxt").innerHTML = d.id;
+                else if (d.id == nodes[2].id)
                     return parseInt(d3.select("#bubbleB").attr("x"), 10) + parseInt(d3.select("#bubbleB").attr("width"), 10) / 2;
-                }
                 else if (d.id == nodes[3].id)
-                {
-                    document.getElementsById("#bubbleBGTxt").innerHTML = d.id;
                     return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
-                }
             })
             .attr("y", function(d){
                 if (d.id == nodes[0].id)
@@ -246,8 +237,7 @@ function changeBubble(node)
                 else if (d.id == nodes[3].id)
                     return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/2;
             })
-            .style("font-size", function(d) { return (1+(d.value/total))*15 + "px" });
-
+            .style("font-size", function(d) { return (1+(d.value/total))*13 + "px" });
     });
 
 }
