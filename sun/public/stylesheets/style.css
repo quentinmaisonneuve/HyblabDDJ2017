@@ -611,7 +611,6 @@ input:checked + .slider:before {
 	background-image: url("/images/btn-saison-fonds.png");
 	background-size: 100% 100%;
 }
-
 /*, .rs-move */
 
 /* ########### TOOLTIPS ########################*/
