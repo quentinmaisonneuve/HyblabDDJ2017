@@ -395,6 +395,12 @@ p{
   top: 40vh;
 }
 
+#bar-demo {
+  position: absolute;
+  left: 47vh;
+  top: 11vh;
+}
+
 #container2 #encadre2 #pourcentVoiture {
   position: absolute;
   color: #d4584e;
@@ -458,11 +464,86 @@ p{
 }
 
 #container3 #encadre3 {
-    z-index: 0;
-    position: absolute;
-    width: 67vh;
-    bottom: 47vh;
-    left: 64.5vh;
+  z-index: 0;
+  position: absolute;
+  width: 77vh;
+  height: 55vh;
+  bottom: 45vh;
+  left: 60vh;
+}
+
+#container3 #encadre3 #info3 {
+  width: 71.6vh;
+}
+
+#container3 #encadre3 #intro3 {
+  position: absolute;
+  color: black;
+  width: 32vh;
+  height: 4vh;
+  font-family: 'Bebasneue_B';
+  top: 5vh;
+  left: 39vh;
+}
+
+#container3 #encadre3 #txtTravail {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 18vh;
+  top: 12vh;
+}
+
+#container3 #encadre3 #txtEtude {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 18vh;
+  top: 21.5vh;
+}
+
+#container3 #encadre3 #txtAutres {
+  position: absolute;
+  color: black;
+  font-family: 'Bebasneue_B';
+  width: 18vh;
+  height: 7vh;
+  left: 18vh;
+  top: 30.8vh;
+}
+
+#container3 #encadre3 #pourcentTravail {
+  position: absolute;
+  color: #d4584e;
+  width: 12vh;
+  height: 8vh;
+  top: 5vh;
+  left: 6vh;
+  font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #pourcentEtude {
+  position: absolute;
+  color: #29a7de;
+  width: 12vh;
+  height: 8vh;
+  top: 14vh;
+  left: 6vh;
+  font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #pourcentAutres {
+  position: absolute;
+  color: #e3ab04;
+  width: 12vh;
+  height: 8vh;
+  top: 24vh;
+  left: 6vh;
+  font-family: 'Bebasneue_B';
 }
 
 #container3 #buttonEncadre3
