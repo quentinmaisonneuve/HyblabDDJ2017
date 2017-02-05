@@ -553,7 +553,7 @@ body{
 
 .Homme1{
 	height : 7vw;
-	width : 6.5vw;    
+	width : 6.5vw;
 	position: absolute;
     top: 22.72vw;
     left:44%;
@@ -562,7 +562,7 @@ body{
 
 .Homme2{
 	height : 7vw;
-	width : 6.5vw;    
+	width : 6.5vw;
 	position: absolute;
     top: 22.72vw;
     left: 32.5%;
@@ -571,7 +571,7 @@ body{
 
 .Homme3{
 	height : 7vw;
-	width : 6.5vw;    
+	width : 6.5vw;
 	position: absolute;
     top: 22.72vw;
     left: 56.35%;
@@ -643,7 +643,7 @@ body{
 }
 
 
- #pb{  
+ #pb{
 	position: absolute;
     top: -0.8vw;
     left: 14%;
@@ -784,113 +784,113 @@ body{
 	width : 7vw;
 	position: absolute;
     top: 15.5vw;
-    left: 82%;	
+    left: 82%;
 }
 .Touriste2{
 	width : 10vw;
 	position: absolute;
     top: 21.5vw;
-    left: 69%;	
+    left: 69%;
 }
 .Touriste3{
 	width : 7vw;
 	position: absolute;
     top: 16vw;
-    left: 63%;	
+    left: 63%;
 }
 .Touriste4{
 	width : 13vw;
 	position: absolute;
     top: 8.5vw;
-    left: 43%;	
+    left: 43%;
 }
 .Agriculteur{
 	width : 16vw;
 	position: absolute;
     top: 8vw;
-    left: 60%;	
+    left: 60%;
 }
 .PORC{
 	width : 7vw;
 	position: absolute;
     top: 22.6vw;
-    left: 79%;	
+    left: 79%;
 }
 .Bouse1{
 	width : 3vw;
 	position: absolute;
     top: 29vw;
-    left: 89%;	
+    left: 89%;
 }
 .Bouse2{
 	width : 3vw;
 	position: absolute;
     top: 14vw;
-    left: 55%;	
+    left: 55%;
 }
 .Bouse3{
 	width : 3vw;
 	position: absolute;
     top: 10vw;
-    left: 36%;	
+    left: 36%;
 }
 .Bouse4{
 	width : 3vw;
 	position: absolute;
     top: 16vw;
-    left: 28%;	
+    left: 28%;
 }
 .Sceau{
 	width : 7vw;
 	position: absolute;
     top: 26.9vw;
-    left: 21vw;	
+    left: 21vw;
 }
 .Scientifique{
 	width : 10vw;
 	position: absolute;
     top: 8vw;
-    left: 38vw;	
+    left: 38vw;
 }
 .Scientifique-réussite{
 	width : 15.5vw;
 	position: absolute;
     top: 7vw;
-    left: 38vw;	
+    left: 38vw;
 }
 .LogoScientifique1{
 	width : 4vw;
 	position: absolute;
     top: 28vw;
-    left: 83%;	
+    left: 83%;
 }
 
 .LogoScientifique2{
 	width : 2vw;
 	position: absolute;
     top: 28vw;
-    left: 79%;	
+    left: 79%;
 }
 
 .LogoScientifique3{
 	width : 3vw;
 	position: absolute;
     top: 25vw;
-    left: 85%;	
+    left: 85%;
 }
 
 .LogoScientifique4{
 	width : 2vw;
 	position: absolute;
     top: 24.5vw;
-    left: 81.5%;	
+    left: 81.5%;
 }
 
 .LogoScientifique5{
 	width : 3vw;
 	position: absolute;
     top: 26.9vw;
-    left: 21vw;	
+    left: 21vw;
 }
 
 .LabelJ3{
@@ -1187,7 +1187,7 @@ body{
 #RetourData1{
 	font-size: 1.5vw;
 	position: absolute;
-	top : 1vw;
+	top : 4vw;
 	left : 21%;
 	padding-top: 0.3vw;
 	height:3vw;
@@ -1197,8 +1197,8 @@ body{
 	height:3vw;
 	font-size: 1.5vw;
 	position: absolute;
-	top : 1vw;
-	left : 41%;
+	top : 4vw;
+	left : 202vw;
 	padding-top: 0.3vw;
 }
 
@@ -1474,7 +1474,7 @@ html.fp-enabled,
 
 #chart_bateau1{
 	position: absolute;
-	top: 9.5vw;
+	top: 11vw;
 	left: 235.75vw;
 	width: 32vw;
 	height: 26vw;
@@ -1492,10 +1492,28 @@ html.fp-enabled,
 
 #text_age_bateau{
 	position: absolute;
-	top: 28vw;
+	top: 29vw;
 	left: 222vw;
 	font-size: 2.5vw;
 	color: white;
+}
+
+#textDataViz2{
+	top: 34vw;
+	left: 215.5vw;
+	width: 68vw;
+	padding: 0vw 0vw 0vw 1vw;
+	position: absolute;
+	line-height: 2vw;
+	font-size: 1.3vw;
+	background-color: white;
+	border-radius: 1vw;
+}
+
+#div_amount{
+	position: absolute;
+	color: #980b11;
+	font-size: 1.6vw;
 }
 
 .list_annee{

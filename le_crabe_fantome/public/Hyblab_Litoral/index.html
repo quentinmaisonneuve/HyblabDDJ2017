@@ -113,7 +113,7 @@
 							<img class="Homme1" id="H1C" src="./pictures/Jeu2/homme1souriant.png">
 							<img class="Homme2" id="H2C" src="./pictures/Jeu2/homme2souriant.png">
 							<img class="Homme3" id="H3C" src="./pictures/Jeu2/femmesouriante.png">
-							
+
 							<img class="Homme1" id="H1PC" src="./pictures/Jeu2/homme1mechant.png">
 							<img class="Homme2" id="H2PC" src="./pictures/Jeu2/homme2mechant.png">
 							<img class="Homme3" id="H3PC" src="./pictures/Jeu2/femmemechante.png">
@@ -143,7 +143,7 @@
 								<button class = "Bouton" id="Bouton2050">2050</button>
 								<br/>
 								<button class = "Bouton" id="Reset2">2010</button>
-								
+
 							</section>
 
 					</section>
@@ -162,7 +162,7 @@
 							<img class="Monstre4" src="./pictures/Jeu3/Monstre-perplexe.png">
 							<img class="Touriste2" src="./pictures/Jeu3/touriste-femme.png">
 							<img class="Touriste3" src="./pictures/Jeu3/touriste-plongeur.png">
-							<img class="Touriste1" src="./pictures/Jeu3/touriste-beauf.png">	
+							<img class="Touriste1" src="./pictures/Jeu3/touriste-beauf.png">
 							<img class="Touriste4" src="./pictures/Jeu3/enfants-sceau.png">
 							<img class="Agriculteur" src="./pictures/Jeu3/agriculteur.png">
 							<img class="PORC" src="./pictures/Jeu3/cochon-alias-rosette.png">
@@ -224,10 +224,10 @@
 					<section class="BarreJ4">
 						<section class="Bdigue">
 						<p>Gestion de la digue :</p>
-							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-2" />	
+							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-2" />
 						</section>
 						<section class="Bhabitation">
-						<p>Gestion habitation :</p> 
+						<p>Gestion habitation :</p>
 							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-1" />
 						</section>
 						<section class="Bbudget">
@@ -275,21 +275,28 @@
 					  	</div>
 					</section>
 				</div>
+
 				<div class="slide">
 					<section> Data liées 1</section>
 					<a href="#3rdPage/1" class="Bouton" id="RetourData1"> Retour au jeu </a>
 				</div>
+
 				<div id="dataviz2" class="slide">
 					<img id="dataviz2_img" src="./pictures/dataviz2/visu_jeu4.png">
-					<section> Data liées 2</section>
+					<p id="textDataViz2">Sale temps pour les pêcheurs … En 15 ans le nombre de chalutier a chuté de <b style="color: #980b11">41%</b> alors que l'âge moyen de la flottille est passé de <b style="color: #980b11">14 à 25 ans</b>. En parallèle les prévisions en 2050 sur la quantité de poissons (homards, merlus et soles) nous promettent un futur océan de plus en plus poissonneux. Or les prévisions de quantités de pêche sont à la baisse, à cause d’une flotte en déclin et d’une politique de préservations de la biomasse halieutique.</p>
 					<a href="#3rdPage/2"  class="Bouton" id="RetourData2"> Retour au jeu </a>
-					<svg id="chart_bateau1" width=600 height=400></svg>
+					<svg id="chart_bateau1" width=600 height=400>
+						<div id="div_amount"></div>
+					</svg>
 					<text id="text_age_bateau" width=100 height=50></text>
 				</div>
+
 				<div class="slide">
 					<section> Data liées 3</section>
+					<svg id="chart_algues" width=400 height=400></svg>
 					<a href="#3rdPage/3" class="Bouton" id="RetourData3"> Retour au jeu </a>
 				</div>
+
 				<div class="slide">
 					<section> Data liées 4</section>
 					<svg class="chart_habitat" width=400 height=400></svg>
@@ -298,7 +305,7 @@
 
 				</div>
 			</section>
-			
+
 		</section>
 	</body>
 	<script src="js/graph_habitat.js"></script>

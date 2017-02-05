@@ -1,0 +1,8 @@
+{
+    "bateau": [
+        {"methode": "Macération", "p1": 0.100, "p2": 0.042, "p3" : 0.858},
+        {"methode": "Ultrasons", "p1": 0.037, "p2": 0.105, "p3" : 0.858},
+        {"methode": "Enzymes", "p1": 0.042, "p2": 0.100, "p3" : 0.858},
+        {"methode": "Ultrasons+Enzymes", "p1": 0.018, "p2": 0.124, "p3" : 0.858},
+    ]
+}

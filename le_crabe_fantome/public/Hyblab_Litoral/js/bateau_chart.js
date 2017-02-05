@@ -4,7 +4,7 @@ d3.json("data/bateau.json", function(dataset){
   var padding = { top: 50, right: 50, bottom: 50, left: 50 };
 
   var svg = d3.select('#chart_bateau1');
-  var text = d3.select('#text_age_bateau').text('Age ');
+  var text = d3.select('#text_age_bateau').text('Age 00.00');
 
   var main = svg.append('g')
           .classed('main', true)
@@ -12,6 +12,8 @@ d3.json("data/bateau.json", function(dataset){
 
   var width = svg.node().getBoundingClientRect().width;
   var height = svg.node().getBoundingClientRect().height;
+  var x = svg.node().getBoundingClientRect().x;
+  var y = svg.node().getBoundingClientRect().y;
 
   // Créer  échelle linear d'axe X
   var xScale = d3.scale.linear()
@@ -90,8 +92,13 @@ d3.json("data/bateau.json", function(dataset){
       if (i === i2) return 10;
       else return 5;
     })
-    text.text('Age '+d3.round(d.m_age,2));
-  })
+    text.transition().text("Age "+d3.round(d.m_age,2));
+    d3.select("#div_amount").text(d.amount)
+      .transition()
+      .style("top",(y + yScale(d.amount) + 10)+"px")
+      .style("left",(x + xScale(d.date) + 50)+"px")
+      .style('opacity', 1);
+  });
 
   subCircles.on("mouseover", function(d,i){
     subCircles.transition().attr('r', function(d2,i2){
@@ -99,10 +106,18 @@ d3.json("data/bateau.json", function(dataset){
       else return 5;
     })
     text.text('Age '+d3.round(d.m_age,2));
-  })
+    d3.select("#div_amount").text(d.amount)
+      .transition()
+      .style("top",(y + yScale(d.amount) + 10)+"px")
+      .style("left",(x + xScale(d.date) + 50)+"px")
+      .style('opacity', 1);
+  });
 
    circles.on("mouseout", function(d,i){
      subCircles.transition().attr('r', 5);
-     text.text('Age ');
+     text.text('Age 00.00');
+     d3.select("#div_amount")
+     .transition()
+     .style('opacity', 0);
    })
  });

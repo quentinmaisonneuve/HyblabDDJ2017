@@ -1,23 +1,13 @@
-var svgContainer = d3.select(".chart_habitat");
+var svgContainer = d3.select("#chart_algues");
 var anneContainer=d3.select(".list_annee");
 var height=svgContainer.node().getBoundingClientRect().height;
 var width=svgContainer.node().getBoundingClientRect().width;
 
 
-$.getJSON("data/habitat.json",function(dataJson) {
+d3.json("data/habitat.json",function(data) {
 
+    console.log(data);
     var buttonData=[];
-    var data=[];
-    dataJson.vulnerability.forEach(
-        function(e){
-            buttonData.push(e.date);
-            var donne=[];
-            donne.push({value:e.zoneA});
-            donne.push({value:e.zoneB});
-            donne.push({value:e.zoneC});
-            donne.push({value:e.zoneD});
-            data.push(donne);
-        });
     var color=["#062a3a","#6a9dae","#b8e8f2","#ffffff"];
 
     var rect = svgContainer.selectAll("rect")
@@ -30,6 +20,7 @@ $.getJSON("data/habitat.json",function(dataJson) {
         .data(buttonData)
         .enter()
         .append("button");
+
     buttons.attr("type","button")
         .attr("class",function (d,i) {
             if(i==0){
@@ -39,6 +30,7 @@ $.getJSON("data/habitat.json",function(dataJson) {
         })
         .append("div")
         .text(function(d) { return d;});
+
     buttons.on("click",function (d,i) {
         console.log(i);
 
@@ -72,6 +64,7 @@ $.getJSON("data/habitat.json",function(dataJson) {
                 return color[i];
             })
             .attr("id", function(d,i){return i});
+
         tip.html(Math.floor(d.value*100)+"%").attr("x", (d3.event.pageX+30) )
             .attr("y", (d3.event.pageY-185) );
     });
@@ -97,7 +90,7 @@ $.getJSON("data/habitat.json",function(dataJson) {
         .attr("id", function(d,i){return i});
 
 
-    rect.on("mousemover", function(d, i){
+    rect.on("mousemove", function(d, i){
         rect.transition().style("fill-opacity", function(d2, i2){
             if (i === i2) return 1;
             else return 0.2;
