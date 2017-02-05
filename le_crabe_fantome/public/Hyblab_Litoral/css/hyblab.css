@@ -1061,6 +1061,37 @@ body{
 
 
 /*Logos*/
+.Equipe{
+	position: relative;
+	top : -16vw;
+	left : -17vw;
+}
+
+.Nous{
+	display: inline-block;
+}
+
+.NousAGR{
+	height : 5vw;
+	position: absolute;
+	top : 15vw;
+	left : 2vw;
+}
+
+.NousPolytech{
+	height : 5vw;
+	position: absolute;
+	top : 21vw;
+	left : 2vw;
+}
+
+.NousScienceCom{
+	height : 5vw;
+	position: absolute;
+	top : 27vw;
+	left : 2vw;
+}
+
 .LogoEclaireur{
 	background-image: url(../pictures/Logo/.png);
 	position: relative;
@@ -1147,22 +1178,31 @@ body{
 
 
 #bandeau img{
- 	height: 46px;
+ 	height: 4vw;
 }
 
 #bandeau #hyblab{
-	  margin: 46px 0;
-	  height: 50px;
-	  float: left;
+	  margin: 1vw;
+	  height: 3vw;
+	  position: absolute;
+	  top :0vw;
 }
 
-#bandeau #cc, #bandeau #opensource
-{
-  	height:16px;
-}
-
-#bandeau .stacked{
+#bandeau{
   	display:block;
+}
+
+.stacked{
+	display: block;
+	height : 2vw;
+	position: absolute;
+	top : 6vw;
+	left : 40vw;
+}
+
+#cc{
+	position: relative;
+	right : 5vw;
 }
 
 #bandeau ul{
@@ -1172,7 +1212,17 @@ body{
 
 #bandeau .institutionnel
 {
-	height: 42px;
+	height: 4vw;
+	position: relative;
+	top : -15vw;
+	left : 4vw;
+
+}
+
+.organisateurs{
+	position: absolute;
+	top: 0vw;	
+	left : 35vw;
 }
 
 #Crédit{
