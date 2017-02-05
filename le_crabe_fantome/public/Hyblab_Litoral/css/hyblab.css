@@ -619,6 +619,13 @@ body{
 	transform: rotate(315deg);
 }
 
+.LabelJ2{
+	position: relative;
+	top : -2.4vw;
+	left: 3vw;
+	margin: 0;
+}
+
 .EnsembleRadioJ2{
 	display: inline-block;
 	position: absolute;
@@ -886,8 +893,11 @@ body{
     left: 21vw;	
 }
 
-.radioJ3{
-	
+.LabelJ3{
+	position: relative;
+	top : -2.4vw;
+	left: 3vw;
+	margin: 0;
 }
 
 
@@ -1018,7 +1028,8 @@ body{
 
 .BarreJ4{
 	position: absolute;
-	top : 20vw;
+	top : 13vw;
+	right: 12vw;
 }
 
 #barreJ4-1{
