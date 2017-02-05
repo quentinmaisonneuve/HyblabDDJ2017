@@ -441,6 +441,20 @@ p{
   font-family: 'Bebasneue_B';
 }
 
+#container2 #encadre2 #sol2 {
+  position: absolute;
+  width: 38vh;
+  left: 39.7vh;
+  top: 26vh;
+}
+
+#container2 #encadre2 #transport {
+  position: absolute;
+  width: 20vh;
+  left: 54vh;
+  bottom: 9.7vh;
+}
+
 #container2 #buttonEncadre2
 {
     position: absolute;
@@ -544,6 +558,21 @@ p{
   top: 24vh;
   left: 6vh;
   font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #sol3 {
+  position: absolute;
+  width: 31vh;
+  top: 28vh;
+  left: 36vh;
+}
+
+#container3 #encadre3 #motif
+{
+  position: absolute;
+  width: 19vh;
+  top: 26vh;
+  left: 42vh
 }
 
 #container3 #buttonEncadre3
