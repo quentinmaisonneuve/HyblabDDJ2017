@@ -1,0 +1,32 @@
+[
+    {
+        "categorie": "débat",
+        "temps": "15h",
+        "img": "debat.svg"
+    },
+    {
+        "categorie": "infos",
+        "temps": "26h",
+        "img": "info.svg"
+    },
+    {
+        "categorie": "culturelle",
+        "temps": "1h",
+        "img": "culturelle.svg"
+    },
+    {
+        "categorie": "musicale",
+        "temps": "57h",
+        "img": "musical.svg"
+    },
+    {
+        "categorie": "politique",
+        "temps": "3h",
+        "img": "politique.svg"
+    },
+    {
+        "categorie": "société",
+        "temps": "2h",
+        "img": "societe.svg"
+    }
+]
