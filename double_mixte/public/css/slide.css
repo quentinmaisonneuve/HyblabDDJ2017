@@ -39,7 +39,7 @@ min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 }
 .page-intro {
   width:100%;
-  background: url(../img/ligne_intro.svg), url(../img/nuages/Slide_2c.svg);
+  background: url(../img/ligne_intro.svg), url(../img/nuages/Slide_2_co.svg);
   background-size:     100%;  
   background-repeat:   no-repeat;
   background-position: center center, center top;   
