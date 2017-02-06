@@ -104,9 +104,65 @@
         left: 30%;
     }
 
+    .texte-fond{
+        position: absolute;
+        object-fit: fill;
+        width:100%;
+        height: 100vh;
+    }
+
+    .entreprises-individuelles{
+        width:60%;
+        background-color: #342756;
+        float:left;
+        height: 100vh;
+    }
+
+    .entreprises-individuelles h1, .grandes-entreprises h1{
+        font-size: 5em;
+    }
+
+    .grandes-entreprises{
+        width:40%;
+        float:left;
+        height: 100vh;
+    }
+
+    .text-entreprises{
+        font-size:1.5em;
+        max-width: 70%;
+        text-transform: uppercase;
+    }
+
+    .right-text-entreprises{
+        float:right;
+        text-align: right;
+        margin-right: 2%;
+    }
+
 
 </style>
-<div class="container_platform">
+<div class="container_platform" id="carte-mere">
+    <div class="texte-fond">
+        <div class="entreprises-individuelles">
+            <h1>67%</h1>
+            <p class="text-entreprises">
+                Les entreprises individuelles représentent plus de deux tiers
+                des entreprises du numérique à Nantes Métropole.
+            </p>
+        </div>
+        <div class="grandes-entreprises">
+            <h1>33%</h1>
+            <p class="text-entreprises right-text-entreprises">
+                Une dynamique propre à Nantes en 2015 : des grandes entreprises beaucoup plus porteuses
+                d’emplois que les entreprises indépendantes, pourtant plus nombreuses.
+            </p>
+        </div>
+        <p>
+            Les secteurs porteurs d’emplois à Nantes en 2015 sont le conseil en
+            système et logiciels informatiques, la programmation informatique, et l’édition de logiciels d’applicatifs
+        </p>
+    </div>
     <div class="platform">
         <img class="platform-img" src="img/platform.png"/>
         <img class="ge ge_01 ge_big" src="img/ge/ge_01.png"/>
