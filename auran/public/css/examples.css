@@ -79,6 +79,9 @@ h3{
 	display: inline-block;
 }
 
+.section_band{
+    
+}
 .section-content {
 	text-align : justify;
 	margin-left: 10%;
@@ -141,6 +144,12 @@ p{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21, #140F21);
+}
+
+#section8 {
+	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#FFFFFF));
+	background: -webkit-linear-gradient(#140F21, #FFFFFF);
+	background: linear-gradient(#140F21, #FFFFFF);
 }
 
 /*Adding background for the slides
