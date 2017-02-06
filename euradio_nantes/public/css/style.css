@@ -60,9 +60,23 @@ a {
   text-decoration: none;
 }
 
+span{
+   font-size: 13px;
+  color:  #323B49;
+  line-height: 140%;
+}
+
+.newp{
+  font-size: 18px;
+  color:  #323B49;
+  text-align: justify;
+  line-height: 140%;
+  margin: 10px;
+}
+
 .roseTitre{
   color: #E44E7E;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .vertical-align{
