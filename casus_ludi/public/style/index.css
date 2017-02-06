@@ -309,7 +309,7 @@ video{
 	left : 45%;
     position: absolute;
     display: block;
-    width: 20%;
+    width: 25%;
 }
 
 #divDownload{
@@ -550,11 +550,11 @@ video{
 }
 
 #topCreate,#flopCreate{
-	top:8%;
+	top:7.5%;
 }
 
 #topUpdate,#flopUpdate{
-	top:40%;
+	top:38.5%;
 }
 
 #topCreate,#topUpdate{
@@ -736,12 +736,76 @@ video{
 }
 
 /*** Dataviz 3 ***/
-a{
-	text-decoration:none;
-	color:black
+#listeRegion2 {
+	font-size: 2vmin;
+	width : 90%;
+	text-align: left; 
+	background-color : #000040; 
+	color:white; 
+	border : solid 2px #000040; 
+	border-radius : 5px;
+} 
+
+#listeRegion1 {
+	font-size: 2vmin;
+	width : 90%;
+	text-align: left; 
+	background-color : #002CE6; 
+	color:white; 
+	border : solid 2px #002CE6; 
+	border-radius : 5px;
+} 
+
+.listeRegion:hover{
+	cursor:pointer;
 }
 
-.choix{
+.listeRegion{
+	color : white;
+	margin-top : 4%;
+	position : relative;
+	left : -28px;
+}
+
+#selectedRegion1{
+	background-color: white; 
+	color :black;  border : solid 4px white; border-radius : 10px;
+}
+
+#selectedRegion2{
+	background-color: white; 
+	color :black;  border : solid 4px white; border-radius : 10px;
+}
+
+#poids1{
+	position:absolute;
+	right:30%;
+	top:39%;}
+
+#poids2{
+	position:absolute;
+	right:60%;
+	top:39%;
+}
+
+#valeurPoids1{
+	color : white;
+	position:absolute;
+	right:33%;
+	top:44%;}
+
+#valeurPoids2{
+	color : white;
+	position:absolute;
+	right:63%;
+	top:44%;
+}
+
+a{
+	text-decoration:none;
+}
+
+/*.choix{
 	background-color:white;
 	text-align:center;
 }
@@ -754,7 +818,7 @@ tr.sousGauche{
 tr.sousDroite{
 	border-width:1px;
 	border-style:solid;
-}
+}*/
 
 #affiche_balance{
 	background-color:white;
@@ -765,7 +829,7 @@ h1{
 	text-align:center;
 }
 
-p{
+/*p{
 	margin-top:0;
 	margin-bottom:10px;
 	margin-right:0;
@@ -789,7 +853,7 @@ p.sousDroite{
 caption{
 	caption-side:top;
 	text-align:center;
-}
+}*/
 
 #aiguilleBalance{
 	transform: rotate(-45deg);
@@ -800,7 +864,7 @@ caption{
 	right: 45.17%;
 }
 
-.textee{
+/*.textee{
 	margin-left:25px;
 	text-align:justify;
 }
@@ -808,31 +872,23 @@ caption{
 a.menu3{
 	text-align:center;
 	color:#002BE5;
-}
-
-#poids1{
-	visibility:hidden;
-	position:absolute;
-	right:35%;
-	top:33%;
-}
-
-#poids2{
-	visibility:hidden;
-	position:absolute;
-	right:55%;
-	top:33%;
-}
+}*/
 
 img.bouton{
-	display: block;
-	margin: auto;
+	display : inline;
 }
 
-#source{
+.textType {
+	position : relative;
+	top : -13px;
+	display : inline;
+	font-size: 2.5vmin
+}
+
+/*#source{
 	position:absolute;
 	bottom:0;
-}
+}*/
 
 /*** Remerciement ***/
 #outro-fond{
@@ -970,4 +1026,97 @@ img.bouton{
 
 #arthur, #arthur-txt{
 	left:85.3%;
+}
+
+
+
+
+/* TEST */ 
+
+.custom-dropdown--large {
+    font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+    font-size: .7em;
+}
+
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown */
+    padding: .5em; /* add some space*/
+    margin: 0; /* remove default margins */
+}
+
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #444;    
+}
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 0;
+        border-radius: 3px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;    
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: .625em;
+        line-height: 1;
+        right: 1.2em;
+        top: 50%; margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        top: .5em; bottom: .5em;
+        background-color: #fff;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+
+    .custom-dropdown--white::after {
+        color: rgba(0,0,0,.9);
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select              { padding-right: .9em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+    }
 }

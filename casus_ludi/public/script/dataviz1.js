@@ -101,19 +101,19 @@ function texte2017(){
 //setTimeout(function(){
 	
 function initDataviz1(){
-	$("#topFlop #topCreate ul").append("<li></li><li></li><li></li>");
+	$("#topFlop #topCreate ul").append("<li></li></br><li></li></br><li></li>");
     $("#topFlop #topCreate ul li").each(function(i) {
         $(this).text(classementCreationTop('2013')[i]);
     });
-    $("#topFlop #flopCreate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #flopCreate ul").append("<li></li></br><li></li></br><li></li>");
     $("#topFlop #flopCreate ul li").each(function(i) {
-        $(this).text(classementCreationFlop('2013')[i]);
+    	$(this).text(classementCreationFlop('2013')[i]);
     });
-    $("#topFlop #topUpdate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #topUpdate ul").append("<li></li></br><li></li></br><li></li>");
     $("#topFlop #topUpdate ul li").each(function(i) {
         $(this).text(classementModificationTop('2013')[i]);
     });
-    $("#topFlop #flopUpdate ul").append("<li></li><li></li><li></li>");
+    $("#topFlop #flopUpdate ul").append("<li></li></br><li></li></br><li></li>");
     $("#topFlop #flopUpdate ul li").each(function(i) {
         $(this).text(classementModificationFlop('2013')[i]);
     });

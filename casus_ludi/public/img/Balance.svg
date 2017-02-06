@@ -4,18 +4,18 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="678.068px" height="495.049px" viewBox="0 0 678.068 495.049" enable-background="new 0 0 678.068 495.049"
 	 xml:space="preserve">
-<circle fill="none" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="334.323" cy="129.788" r="106.606"/>
-<polyline fill="none" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+<circle fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="334.323" cy="129.788" r="106.606"/>
+<polyline fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	392.684,219.717 372.428,361.203 304.157,361.203 283.786,224.769 "/>
-<circle fill="#002CE6" cx="99.72" cy="444.235" r="28.336"/>
-<circle fill="#002CE6" cx="568.956" cy="444.235" r="28.336"/>
-<path fill="#FFFFFF" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<circle fill="#000000" cx="99.72" cy="444.235" r="28.336"/>
+<circle fill="#000000" cx="568.956" cy="444.235" r="28.336"/>
+<path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M613.532,360.203h-47.316v-69h-40v69h-367v-69h-40v69H80.465c-18.305,0-34.249,10.69-34.249,24.45v10.381
 	c0,13.76,15.944,25.168,34.249,25.168h533.066c18.305,0,33.684-11.408,33.684-25.168v-10.381
 	C647.216,370.893,631.837,360.203,613.532,360.203z"/>
-<path fill="none" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M70.48,291.203h141.266c14.069,0,25.474-11,25.474-24H45.005C45.005,280.203,56.41,291.203,70.48,291.203z"/>
-<path fill="none" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path fill="none" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M475.48,291.203h141.266c14.069,0,25.474-11,25.474-24H450.005C450.005,280.203,461.41,291.203,475.48,291.203z"/>
 <line fill="none" stroke="#000045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="334.216" y1="35.203" x2="334.216" y2="47.203"/>
 <line fill="none" stroke="#000045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="334.216" y1="213.203" x2="334.216" y2="225.203"/>
@@ -33,6 +33,6 @@
 <line fill="none" stroke="#000045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="259.664" y1="98.129" x2="248.596" y2="93.492"/>
 <line fill="none" stroke="#000045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="372.213" y1="218.119" x2="367.666" y2="207.014"/>
 <line fill="none" stroke="#000045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="304.766" y1="53.393" x2="300.219" y2="42.288"/>
-<line fill="#FFFFFF" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="100.216" y1="360.203" x2="195.216" y2="360.203"/>
-<line fill="#FFFFFF" stroke="#002CE6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="474.216" y1="360.203" x2="590.216" y2="360.203"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="100.216" y1="360.203" x2="195.216" y2="360.203"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="474.216" y1="360.203" x2="590.216" y2="360.203"/>
 </svg>

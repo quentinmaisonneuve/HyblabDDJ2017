@@ -263,10 +263,83 @@
       <h1>Quelle proportion entre les données démocratiques et servicielles ?</h1>
     </div>
     <div>
-      <table width='100%'>
+        <table width="100%" style="text-align:center;">
+            <tr width="100%">
+                <td width="25%">
+                    <p class="textType"> Démocratique </p>
+                    <img id="button2" class='bouton' src='./img/bouton2.svg' width='50px' heigth='50px' onclick="changeType(this)">
+                    <p class="textType"> Servicielle </p>
+                </td>
+                <td width="50%">
+                </td>
+                <td width="25%">
+                    <p class="textType"> Démocratique </p>
+                    <img id="button1" class='bouton' src='./img/bouton.svg' width='50px' heigth='50px' onclick="changeType(this)">
+                    <p class="textType"> Servicielle </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" style="vertical-align: top">
+                    <br>
+                     <div id="listeRegion2">
+                        <ul style="list-style-type: none;" >
+                            <a onclick="changeRegion(this,2,'france')"><li class="listeRegion" id="selectedRegion2">France</li></a>
+                            <a onclick="changeRegion(this,2,'Auvergne-Rhone-Alpes')"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
+                            <a onclick="changeRegion(this,2,'Bourgogne-Franche-Comte')"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
+                            <a onclick="changeRegion(this,2,'Bretagne')"><li class="listeRegion">Bretagne</li></a>
+                            <a onclick="changeRegion(this,2,'Centre-Val-de-Loire')"><li class="listeRegion">Centre-Val-de-Loire</li></a>
+                            <a onclick="changeRegion(this,2,'Corse')"><li class="listeRegion">Corse</li></a>
+                            <a onclick="changeRegion(this,2,'Grand-Est')"><li class="listeRegion">Grand-Est</li></a>
+                            <a onclick="changeRegion(this,2,'Hauts-de-France')"><li class="listeRegion">Hauts-de-France</li></a>
+                            <a onclick="changeRegion(this,2,'Ile-de-France')"><li class="listeRegion">Île-de-France</li></a>
+                            <a onclick="changeRegion(this,2,'Normandie')"><li class="listeRegion">Normandie</li></a>
+                            <a onclick="changeRegion(this,2,'Nouvelle-Aquitaine')"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
+                            <a onclick="changeRegion(this,2,'Occitanie')"><li class="listeRegion">Occitanie</li></a>
+                            <a onclick="changeRegion(this,2,'Pays-de-la-Loire')"><li class="listeRegion">Pays-de-la-Loire</li></a>
+                            <a onclick="changeRegion(this,2,'Provence-Alpes-Cote-d-Azur')"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
+                        </ul>
+                     </div>
+                </td>
+                <td width="50%">
+                     <div id='affiche_balance'>
+                        <img id='poids1' src="./img/poids_clair.svg" width='10%' height='15%'>
+                        <p id="valeurPoids1">%</p>
+                        <img id='poids2' src="./img/poids.svg" width='10%' height='15%'>
+                        <p id="valeurPoids2">%</p>
+                        <object id='balance' data="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml">
+                            <embed id='balance_ie' src="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml" />
+                        </object>
+                        <img id='aiguilleBalance' src="./img/aiguilleBalance.svg" width="640px" height="360px">
+                      </div>
+                </td>
+                <td width="25%" style="vertical-align: top">
+                    <br>
+                    <div id="listeRegion1">
+                        <ul style="list-style-type: none;" >
+                            <a onclick="changeRegion(this,1,'france')"><li class="listeRegion" id="selectedRegion1">France</li></a>
+                            <a onclick="changeRegion(this,1,'Auvergne-Rhone-Alpes')"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
+                            <a onclick="changeRegion(this,1,'Bourgogne-Franche-Comte')"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
+                            <a onclick="changeRegion(this,1,'Bretagne')"><li class="listeRegion">Bretagne</li></a>
+                            <a onclick="changeRegion(this,1,'Centre-Val-de-Loire')"><li class="listeRegion">Centre-Val-de-Loire</li></a>
+                            <a onclick="changeRegion(this,1,'Corse')"><li class="listeRegion">Corse</li></a>
+                            <a onclick="changeRegion(this,1,'Grand-Est')"><li class="listeRegion">Grand-Est</li></a>
+                            <a onclick="changeRegion(this,1,'Hauts-de-France')"><li class="listeRegion">Hauts-de-France</li></a>
+                            <a onclick="changeRegion(this,1,'Ile-de-France')"><li class="listeRegion">Île-de-France</li></a>
+                            <a onclick="changeRegion(this,1,'Normandie')"><li class="listeRegion">Normandie</li></a>
+                            <a onclick="changeRegion(this,1,'Nouvelle-Aquitaine')"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
+                            <a onclick="changeRegion(this,1,'Occitanie')"><li class="listeRegion">Occitanie</li></a>
+                            <a onclick="changeRegion(this,1,'Pays-de-la-Loire')"><li class="listeRegion">Pays-de-la-Loire</li></a>
+                            <a onclick="changeRegion(this,1,'Provence-Alpes-Cote-d-Azur')"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+      <!--<table width='100%'>
         <tr width='100%'>
           <td width='33%'>
             <a class='menu3' id='democratique' href='#dataviz3'><img class='bouton' src='./img/bouton.svg' width='50px' heigth='50px'></br><p>Données démocratiques</p></a>
+            
           </td>
           <td width='33%'>
             <a class='menu3' id='tauxRegion' href='#dataviz3'><img class='bouton' src='./img/bouton3.svg' width='50px' height='50px'><p>Opposition sur une région</p></a>
@@ -280,10 +353,28 @@
     <table width='100%'>
       <tr width='100%'>
         <td width='33%' height='90%'>
+            <span class="custom-dropdown custom-dropdown--white">
+                <select class="custom-dropdown__select custom-dropdown__select--white">
+                    <option>Auvergne-Rhônes-Alpes</option>
+                    <option>Bourgogne-Franche-Comté</option>
+                    <option>Bretagne</option>
+                    <option>Centre-Val-de-Loire</option>
+                    <option>Corse</option>
+                    <option>Grand-Est</option>
+                    <option>Hauts-de-France</option>
+                    <option>Île-de-France</option>
+                    <option>Normandie</option>
+                    <option>Nouvelle-Aquitaine</option>
+                    <option>Occitanie</option>
+                    <option>Pays-de-la-Loire</option>
+                    <option>Provence-Alpes-Côtes-D'Azur</option>
+                </select>
+            </span>
+
           <table class='choix' id='gauche'>
             <tr><p class='sousGauche' id='Auvergne-Rhone-Alpes'><a href='#dataviz3'>Auvergne-Rhônes-Alpes</a></p></tr>
             <tr><p class='sousGauche' id='Bourgogne-Franche-Comte'><a href='#dataviz3'>Bourgogne-Franche-Comté</a></p></tr>
-            <tr><p class='sousGauche' id='Bretagne'><a href='#dataviz3'>Bretagne</a></p></tr>
+            <tr><p class='sousGauche' id='Bretagne'><a href='#dataviz3'></a></p></tr>
             <tr><p class='sousGauche' id='Centre-Val-de-Loire'><a href='#dataviz3'>Centre-Val-de-Loire</a></p></tr>
             <tr><p class='sousGauche' id='Corse'><a href='#dataviz3'>Corse</a></p></tr>
             <tr><p class='sousGauche' id='Grand-Est'><a href='#dataviz3'>Grand-Est</a></p></tr>
@@ -326,10 +417,10 @@
       </tr>
     </table>
     <table id='description'>
-      <!-- Tableau rempli par le js -->
+       Tableau rempli par le js 
     </table>
     </br>
-        <div id='source'>SOURCE : <a href='http://data.gouv.fr'>http://data.gouv.fr</a></div>
+        <div id='source'>SOURCE : <a href='http://data.gouv.fr'>http://data.gouv.fr</a></div> -->
       </span>
     </section>
     <section class="section">

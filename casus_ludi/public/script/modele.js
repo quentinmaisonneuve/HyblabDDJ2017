@@ -53,7 +53,7 @@ for(var other in others){
 
 for(var type in types){
     arraySerDemo[types[type]] = {}; 
-    arraySerDemo[types[type]].all = 0; 
+    arraySerDemo[types[type]].france = 0; 
 }
 
 fetch('data/data.json')
@@ -122,7 +122,7 @@ fetch('data/data.json')
             arrayRegionDownload.france[item.keyword] += item.downloadValue; 
             arrayRegionDownload.france.all += item.downloadValue
 
-            arraySerDemo[item.DemoServ].all += item.value; 
+            arraySerDemo[item.DemoServ].france += item.value; 
 
             if(isNaN(arraySerDemo[item.DemoServ][item.region])){
                 arraySerDemo[item.DemoServ][item.region] = item.value; 
@@ -133,6 +133,7 @@ fetch('data/data.json')
         }) 
         initDataviz1();
         initDataviz2();  
+        initDataviz3();
     });
 
 function dataCreateYear(year){
@@ -305,8 +306,7 @@ function datavizDownLoad(region ="france"){
     return arrayRegionDownload[region]; 
 }
 
-function getSerDemo(type, region){
-    //console.log("Hellllllo            ", arraySerDemo[type][region]);
+function getSerDemo(type, region = "france"){
     return arraySerDemo[type][region];
 };
 

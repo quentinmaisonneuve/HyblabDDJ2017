@@ -1,6 +1,6 @@
 /* Animations dataviz3 */
 
-democratique = true;
+/*democratique = true;
 service = false;
 taux = false;
 
@@ -229,10 +229,85 @@ function aiguillePosZero(){
 
 function animerAiguilleHoraire(){
     /* 1er -> type de mouvement ; 2ème -> temps en milli ; 3ème -> accélération */
-    $('#aiguilleBalance').transition({ rotate: 60 }, 1800).transition({ rotate: 35 }, 1000).transition({ rotate: 45 }, 3000);
+   /* $('#aiguilleBalance').transition({ rotate: 60 }, 1800).transition({ rotate: 35 }, 1000).transition({ rotate: 45 }, 3000);
 };
 
 function animerAiguilleAntiHoraire(){
     /* 1er -> type de mouvement ; 2ème -> temps en milli ; 3ème -> accélération */
-    $('#aiguilleBalance').transition({ rotate: -150 }, 1800).transition({ rotate: -115 }, 1000).transition({ rotate: -130 }, 3000);
+   /* $('#aiguilleBalance').transition({ rotate: -150 }, 1800).transition({ rotate: -115 }, 1000).transition({ rotate: -130 }, 3000);
 };
+*/
+
+
+// TEST
+
+var typep2 = "democratique"; 
+var typep1 = "service"; 
+var regionp2 = "france"; 
+var regionp1 = "france";
+
+function initDataviz3(){
+    
+    var p2 = getSerDemo("democratique"); 
+    var p1 = getSerDemo("service"); 
+
+    $("#valeurPoids2").html(Math.round((p2*100)/(p2 + p1))+"%");
+    $("#valeurPoids1").html(Math.round((p1*100)/(p2 + p1))+"%");
+
+}
+
+function changeType(elem, type){
+    if($(elem).attr("src") == "./img/bouton2.svg"){
+        $(elem).attr("src","./img/bouton.svg");
+        if($(elem).attr("id") == 'button1'){
+            $("#poids1").attr("src", "./img/poids_clair.svg"); 
+            $("#listeRegion1").css("background-color", "#002CE6");
+            $("#listeRegion1").css("border-color", "#002CE6");
+            typep1 = "service";
+        }
+        else {
+            $("#poids2").attr("src", "./img/poids_clair.svg"); 
+            $("#listeRegion2").css("background-color", "#002CE6"); 
+            $("#listeRegion2").css("border-color", "#002CE6");
+            typep2 = "service";
+        }
+    }
+    else{
+        $(elem).attr("src","./img/bouton2.svg");
+          if($(elem).attr("id") == 'button1'){
+            $("#poids1").attr("src", "./img/poids.svg"); 
+            $("#listeRegion1").css("background-color", "#000040"); 
+            $("#listeRegion1").css("border-color", "#000040");
+            typep1 = "democratique";
+        }
+        else {
+            $("#poids2").attr("src", "./img/poids.svg"); 
+            $("#listeRegion2").css("background-color", "#000040"); 
+            $("#listeRegion2").css("border-color", "#000040");
+            typep2 = "democratique";
+        }
+    }
+    calculPart()
+}
+
+function changeRegion(elem,i,region){
+    if(i == 2){
+        $("#selectedRegion2").attr("id",""); 
+        $(elem).find("li").attr("id", "selectedRegion2");
+        regionp2 = region;  
+    }
+    else {
+        $("#selectedRegion1").attr("id",""); 
+        $(elem).find("li").attr("id", "selectedRegion1");
+        regionp1 = region;
+    }
+    calculPart(); 
+}
+
+function calculPart(){
+    p2 = getSerDemo(typep2, regionp2); 
+    p1 = getSerDemo(typep1, regionp1); 
+
+    $("#valeurPoids2").html(Math.round((p2*100)/(p2 + p1))+"%");
+    $("#valeurPoids1").html(Math.round((p1*100)/(p2 + p1))+"%");
+}
