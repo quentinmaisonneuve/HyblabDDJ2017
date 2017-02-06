@@ -2,8 +2,8 @@
 	
 
 	$("#barreJ4-1").mouseup(function(e){
-		document.getElementById("Budget").value=200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
-		var echelle =200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
+		//document.getElementById("Budget").value=200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
+		var echelle =200000-document.getElementById("barreJ4-2").value*80000+document.getElementById("barreJ4-1").value*50000;
 		if(echelle<0){
 			echelle=0;
 		}
@@ -27,8 +27,8 @@
 	});
 	
 	$("#barreJ4-2").mouseup(function(e){
-		document.getElementById("Budget").value=200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
-		var echelle =200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
+		//document.getElementById("Budget").value=200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
+		var echelle =200000-document.getElementById("barreJ4-2").value*80000+document.getElementById("barreJ4-1").value*50000;
 		if(echelle<0){
 			echelle=0;
 		}

@@ -158,10 +158,10 @@ $("#Bouton2050").click(function(e){
 
 $("#scenar1").click(function(e){
 	$(".BateauG1").fadeOut("slow");
-	$(".BateauP1").fadeIn("slow");
-	$(".BateauM1").fadeOut("slow");
-	$(".BateauM2").fadeOut("slow");
-	$(".BateauP2").fadeIn("slow");
+	$(".BateauP1").fadeOut("slow");
+	$(".BateauM1").fadeIn("slow");
+	$(".BateauM2").fadeIn("slow");
+	$(".BateauP2").fadeOut("slow");
 	$(".BateauG2").fadeOut("slow");
 	
 
@@ -179,10 +179,10 @@ $("#scenar2").click(function(e){
 
 $("#scenar3").click(function(e){
 	$(".BateauG1").fadeIn("slow");
-	$(".BateauP1").fadeIn("slow");
-	$(".BateauM1").fadeOut("slow");
-	$(".BateauM2").fadeOut("slow");
-	$(".BateauP2").fadeIn("slow");
+	$(".BateauP1").fadeOut("slow");
+	$(".BateauM1").fadeIn("slow");
+	$(".BateauM2").fadeIn("slow");
+	$(".BateauP2").fadeOut("slow");
 	$(".BateauG2").fadeIn("slow");
 	
 });
