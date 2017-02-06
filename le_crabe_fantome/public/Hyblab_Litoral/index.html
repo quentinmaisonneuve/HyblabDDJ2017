@@ -302,9 +302,10 @@
 				<a href="#3rdPage/1" class="Bouton" id="RetourData1"> Retour au jeu </a>
 				</div>
 
+
 				<div id="dataviz2" class="slide">
 					<img id="dataviz2_img" src="./pictures/dataviz2/visu_jeu4.png">
-					<p id="textDataViz2">Sale temps pour les pêcheurs … En 15 ans le nombre de chalutier a chuté de <b style="color: #980b11">41%</b> alors que l'âge moyen de la flottille est passé de <b style="color: #980b11">14 à 25 ans</b>. En parallèle les prévisions en 2050 sur la quantité de poissons (homards, merlus et soles) nous promettent un futur océan de plus en plus poissonneux. Or les prévisions de quantités de pêche sont à la baisse, à cause d’une flotte en déclin et d’une politique de préservations de la biomasse halieutique.</p>
+					<p class="textData" id="textDataViz2">Sale temps pour les pêcheurs … En 15 ans le nombre de chalutier a chuté de <b style="color: #980b11">41%</b> alors que l'âge moyen de la flottille est passé de <b style="color: #980b11">14 à 25 ans</b>. En parallèle les prévisions en 2050 sur la quantité de poissons (homards, merlus et soles) nous promettent un futur océan de plus en plus poissonneux. Or les prévisions de quantités de pêche sont à la baisse, à cause d’une flotte en déclin et d’une politique de préservations de la biomasse halieutique.</p>
 					<a href="#3rdPage/2"  class="Bouton" id="RetourData2"> Retour au jeu </a>
 					<svg id="chart_bateau1" width=600 height=400>
 						<div id="div_amount"></div>
@@ -314,6 +315,7 @@
 
 				<div class="slide">
 					<a href="#3rdPage/3" class="Bouton" id="RetourData3"> Retour au jeu </a>
+					<p class="textData"></p>
 					<div class="FondDJ3">
 						<img class="ScientifiqueJ3-1" src="pictures/Data3/monsieur_maceration.png"/>
 						<img class="ScientifiqueJ3-2" src="pictures/Data3/monsieur_ultrasons.png"/>
@@ -349,13 +351,13 @@
 
 				</div>
 
-				<div class="slide"  style="text-align: center">
-					<div style="display:inline-block">
-						<svg id ="histogramme" width="400" height="500"></svg>
-					</div>
-					<div style="display:inline-block" width="50%" height="500">
-						<svg class="chart_habitat" width=400 height=400></svg>
-						<div class="list_annee" width=400 height=100></div>
+				<div id="dataviz4" class="slide"  style="text-align: center">
+					<h2>La vulnérabilité des Habitats</h2>
+					<p class="textData" id="textDataviz4">Au fil des années, l’augmentation de la population sur le littoral a accru les risques liés à la montée des eaux. Contrairement à ce que l’on peut croire, habiter près de la digue n’offre pas nécessairement une plus grande sécurité. Une vague peut toujours dépasser la digue quelle que soit sa taille et si les maisons se trouvent à proximité elles seront également submergées. C’est une des raisons pour lesquelles la tempête Xynthia de 2010 a fait autant de dégât</p>
+					<svg id ="histogramme"></svg>
+					<div id='graphHabitat' style="display:inline-block">
+						<svg id="chart_habitat"></svg>
+						<div id="list_annee"></div>
 					</div>
 
 					<a href="#3rdPage/4" class="Bouton" id="RetourData4"> Retour au jeu </a>
@@ -365,6 +367,8 @@
 
 		</section>
 	</body>
-	<script src="js/graph_habitat.js"></script>
 	<script src="js/bateau_chart.js"></script>
+
+	<script src="js/histogramme.js"></script>
+	<script src="js/graph_habitat.js"></script>
 </html>

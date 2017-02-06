@@ -1644,19 +1644,56 @@ html.fp-enabled,
 #textDataViz2{
 	top: 34vw;
 	left: 215.5vw;
-	width: 68vw;
-	padding: 0vw 0vw 0vw 1vw;
+	width: 67vw;
+}
+
+.textData{
 	position: absolute;
+	text-align: justify;
+	background-color: #cc9698;
+	border-radius: 1vw;
 	line-height: 2vw;
 	font-size: 1.3vw;
-	background-color: white;
-	border-radius: 1vw;
+	padding: 1vw 1vw 1vw 1vw;
+}
+
+#dataviz4 div h2{
+	position: absolute;
+	top: 0vw;
+	left: 440vw;
 }
 
 #div_amount{
 	position: absolute;
 	color: #980b11;
 	font-size: 1.6vw;
+}
+
+#textDataviz4{
+	position: absolute;
+	width: 80vw;
+	top: 35vw;
+	left: 408vw;
+}
+
+#histogramme{
+	position: absolute;
+	left: 408vw;
+	top: 6vw;
+	height: 30vw;
+	background-color: #cc9698;
+	width: 39vw;
+	border-radius: 1vw;
+}
+
+#graphHabitat{
+	position: absolute;
+	left: 447.3vw;
+	top: 6vw;
+	background-color: #cc9698;
+	height: 30vw;
+	width: 42.7vw;
+	border-radius: 1vw;
 }
 
 .list_annee{
