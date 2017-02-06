@@ -106,7 +106,7 @@ p
     position: absolute;
     bottom: -5vh;
     left: -2vw;
-    /*et on l'étend un peu plus que la largeur de la fenêtre*/
+    /*et on l'étend un peu plus que la largeur de la fenêtre pour pallier le fait que l'image se termine par du transparent*/
     width: 104vw;
 }
 
@@ -743,9 +743,14 @@ p
 #bandeau
 {
     padding: 8px;
-    width: 63vw;
+    width: 100vw;
     margin: 0 auto;
     background-color: white;
+    
+    /*pour pallier le fait que l'image débute par du transparent on la décale sur la gauche*/
+    position: absolute;
+    bottom: 0vh;
+    /*et on l'étend un peu plus que la largeur de la fenêtre pour pallier le fait que l'image se termine par du transparent*/
 }
 
 #bandeau li
