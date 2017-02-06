@@ -394,11 +394,11 @@ function getRoad()
     var mood;
     if(document.getElementById("moodVsGenre").className == "play") {
         // GENRE
-        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value*2+"/"+(parseInt(document.getElementById("timeline2").value,10)*2+2);
     }
     else{
         // MOOD
-        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value*2+"/"+(parseInt(document.getElementById("timeline2").value,10)*2+2);
     }
 }
 
@@ -465,7 +465,7 @@ function musiqueArrete(genre){
 /*
     printemps: 0 ou 4
     été: 1
-    autonme:2
+    automne:2
     hiver:3
 */
 function setSaison(m_saison){
@@ -486,6 +486,24 @@ $("#slider").roundSlider({
     startAngle: 45,
 
     change: function (args) {
+        var saison;
+        saison = slider.getValue();
+        if(saison == 0)
+        {
+            $( "input[value='printemps']" ).prop( "checked", true );
+        }
+        else if(saison == 1)
+        {
+            $( "input[value='ete']" ).prop( "checked", true );
+        }
+        else if(saison == 2)
+        {
+            $( "input[value='automne']" ).prop( "checked", true );
+        }
+        else if(saison == 3)
+        {
+            $( "input[value='hiver']" ).prop( "checked", true );
+        }
         setSaison(slider.getValue());
         changeBubble(getRoad());
     }
