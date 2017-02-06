@@ -543,11 +543,14 @@ center img {
     text-decoration: none;
 }
 
+.col-lg{
+  background-color: blue;
+}
+
 /*
 Carrousel
 */
-#theCarousel {
-    width: 65%;
+#theCarousel {/
     margin: auto;
     margin-top: 20px;
 }
