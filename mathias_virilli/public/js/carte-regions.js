@@ -1,15 +1,16 @@
 'use strict';
 
-const CIRCLES_FILL_COLOR = '#666666';
-const CIRCLES_MOUSE_OVER_FILL_COLOR = '#222222';
+const CIRCLES_FILL_COLOR = '#FFFFFF';
+const CIRCLES_MOUSE_OVER_FILL_COLOR = '#888888';
+const CIRCLES_MOUSE_OVER_FILL_OPACITY = 0.5;
 const CIRCLES_STROKE_OPACITY = 0;
-const CIRCLES_FILL_OPACITY = 0.5;
+const CIRCLES_FILL_OPACITY = 0.2;
 
 
 function drawCircles(json) {
 
     // Récupération de la carte et des cercles
-    var mapSVG = document.getElementById("map").getSVGDocument().children[0];
+    var mapSVG = document.getElementById("mapRegions").getSVGDocument().children[0];
     var circles = [];
     
     json.forEach(function(reg) {
@@ -32,16 +33,16 @@ function drawCircles(json) {
         
         circle.addEventListener('mouseover', function(evt) {
             evt.target.setAttribute('fill', CIRCLES_MOUSE_OVER_FILL_COLOR);
+            evt.target.setAttribute('fill-opacity', CIRCLES_MOUSE_OVER_FILL_OPACITY);
         });
         
         circle.addEventListener('mouseout', function(evt) {
             evt.target.setAttribute('fill', CIRCLES_FILL_COLOR);
+            evt.target.setAttribute('fill-opacity', CIRCLES_FILL_OPACITY);
         });
         
 		circle.addEventListener('click', function(evt) {
-			document.getElementById(evt.target.id).scrollIntoView({
-				behavior: 'smooth'
-			});
+			$(this).moveTo(evt.target.id);
 		});
 	});
 }
