@@ -191,16 +191,16 @@ body{
 	margin-top :30px !important;
 	margin : auto;
 
-	font-size: 2vw;
+	font-size: 1.5vw;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 2px 0 #86c6ca;
 	color : #faf7f5;
 
 	width:10vw;
-	height:3vw;
+	height:2vw;
 	display: block;
 
+	border: none;
 	background-color: #6a9dae;
 	border-radius: 10px;
 }
@@ -216,7 +216,11 @@ body{
 	right : 200px;
 }
 
-
+#ResetV{
+	position: absolute;
+	top : 28vw;
+	left : -6vw;
+}
 
 
 /*Carte*/
@@ -238,12 +242,12 @@ body{
 .ImageJeu2{
 	display: inline-block;
 	background-size: contain;
-	width: 11vw;
-	height: 6.2vw;
-	background-image: url(../pictures/Carte/bateau_carte.png);
+	width: 19vw;
+	height: 19vw;
+	background-image: url(../pictures/Carte/bouton-bateau-carte.png);
 	position: absolute;
-	bottom: 22%;
-	left : 3.5%;
+	bottom: 6.3%;
+	left : 2.62%;
 	font-size: 0;
 }
 
@@ -262,24 +266,24 @@ body{
 .ImageJeu3{
 	display: inline-block;
 	background-size: contain;
-	width: 6.7vw;
-	height: 7.8vw;
-	background-image: url(../pictures/Carte/algues_carte.png);
+	width: 14vw;
+	height: 14vw;
+	background-image: url(../pictures/Carte/bouton-algue-carte.png);
 	position: absolute;
-	bottom: 10%;
-	left :13.5%;
+	bottom: 4%;
+	left :14%;
 	font-size: 0;
 }
 
 .ImageJeu4{
 	display: inline-block;
 	background-size: contain;
-	width: 11.1vw;
-	height: 7.5vw;
-	background-image: url(../pictures/Carte/maison_carte.png);
+	width: 18vw;
+	height: 18vw;
+	background-image: url(../pictures/Carte/bouton-maison-carte.png);
 	position: absolute;
-	bottom: 42%;
-	left :12.5%;
+	bottom: 31%;
+	left :12%;
 	font-size: 0;
 }
 
@@ -628,7 +632,7 @@ body{
 
 .LabelJ2{
 	position: relative;
-	top : -2.4vw;
+	top : -2.8vw;
 	left: 3vw;
 	margin: 0;
 }
@@ -676,6 +680,8 @@ body{
 
  #Bouton2050,#Reset2, #AttaqueM{
  	font-size: 1.5vw;
+ 	position: relative;
+ 	left: -3vw;
 }
 
 #Data1{
@@ -719,7 +725,7 @@ body{
 	display: inline-block;
 	position: absolute;
 	top : 2%;
-	left : 67.5%;
+	left : 66.5%;
 	font-size: 2.5vw;
 }
 
@@ -983,14 +989,64 @@ body{
 	display: none
 }
 
-.radioDJ3 label{
+#Macération{
 	margin-top : 1.7vw !important ;
 	margin : auto;
 
 	font-size: 1.5vw;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 2px 0 #86c6ca;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Ultrasons{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Enzymes{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Ultrasons_Enzymes{
+		margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
 	color : black;
 
 	width:8vw;
@@ -1002,8 +1058,9 @@ body{
 }
 
 
+
 #BoutonUE label{
-	font-size: 0.7vw;
+	height: 4vw;
 }
 
 /*Jeu4*/
@@ -1011,8 +1068,8 @@ body{
 	display: inline-block;
 	position: absolute;
 	top : 2%;
-	left : 87.5%;
-	font-size: 2vw;
+	left : 89%;
+	font-size: 2.5vw;
 }
 
 .TextJ4{
@@ -1182,99 +1239,107 @@ body{
 /*Logos*/
 .Equipe{
 	position: relative;
-	top : 14vw;
-	left : -12vw;
+	top : 3.5vw;
+	left : 9.5vw;
 }
 
 .Nous{
 	display: inline-block;
 	font-size: 1.5vw;
+	background-color: #b8e8f2;
+	height : 50%;
+	width: 20%;
+	position: absolute;
+	top: 0vw;
 }
 
 .Crabe{
 	position: absolute;
-	top : 32vw;
-	left : 2vw;
+	text-align: center;
+	bottom: -5vw;
+	left: 41%;
+	font-size: 1.3vw;
 }
 .Paroles{
 	position: absolute;
-	bottom: 0vw;
-	left : 59vw;
+	bottom: -2vw;
+	left : 77vw;
+	font-size: 0.8vw
 }
 
 .NousAGR{
-	height : 5vw;
-	position: absolute;
-	top : 15vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 25.5%;
 }
 
 .NousPolytech{
-	height : 5vw;
-	position: absolute;
-	top : 21vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 38%;
 }
 
 .NousScienceCom{
-	height : 5vw;
-	position: absolute;
-	top : 27vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 53%;
 }
 
 .AGR1{
 	position: absolute;
-	top : 15vw;
-	left : 12vw;
+	top : 10vw;
+	left : 25.5%;
 
 }
 .AGR2{
 	position: absolute;
-	top : 15vw;
-	left : 27vw;
+	top : 13vw;
+	left : 23.5%;
 
 }
 .AGR3{
 	position: absolute;
-	top : 15vw;
-	left : 41vw;
+	top : 16vw;
+	left : 24%;
 
 }
 .Polytech1{
 	position: absolute;
-	top : 21vw;
-	left : 12vw;
+	top : 10vw;
+	left : 44%;
 }
 .Polytech2{
 	position: absolute;
-	top : 21vw;
-	left : 27vw;
+	top : 13vw;
+	left : 44.5%;
 }
 .Polytech3{
 	position: absolute;
-	top : 21vw;
-	left : 41vw;
+	top : 16vw;
+	left : 45%;
 }
 .Polytech4{
 	position: absolute;
-	top : 21vw;
-	left : 57vw;
+	top : 19vw;
+	left : 45.5%;
 }
 .ScienceCom1{
 	position: absolute;
-	top : 27vw;
-	left : 12vw;
+	top : 10vw;
+	left : 66%;
 }
 .ScienceCom2{
 	position: absolute;
-	top : 27vw;
-	left: 27vw;
+	top : 13vw;
+	left: 67%;
 }
 .ScienceCom3{
 	position: absolute;
-	top : 27vw;
-	left : 41vw;
+	top : 16vw;
+	left : 67.5%;
 }
 
 #bandeau {
@@ -1290,14 +1355,14 @@ body{
 
 
 #bandeau img{
- 	height: 4vw;
+ 	height: 3vw;
 }
 
 #bandeau #hyblab{
-	  margin: 1vw;
-	  height: 3vw;
-	  position: absolute;
-	  top :3vw;
+	  height: 2vw;
+	  position: relative;
+	  top :14vw;
+	  left: 45%;
 }
 
 #bandeau{
@@ -1306,15 +1371,10 @@ body{
 
 .stacked{
 	display: block;
-	height : 2vw;
-	position: absolute;
-	top : 6vw;
-	left : 40vw;
-}
-
-#cc{
+	height : 1vw;
 	position: relative;
-	right : 5vw;
+	top : 14vw;
+	left : 29vw;
 }
 
 #bandeau ul{
@@ -1324,17 +1384,16 @@ body{
 
 #bandeau .institutionnel
 {
-	height: 4vw;
+	height: 3vw;
 	position: relative;
-	top : -17vw;
-	left : -2vw;
+	top : 10vw;
 
 }
 
 .organisateurs{
-	position: absolute;
-	top: 0vw;
-	left : 35vw;
+	position: relative;
+	top: 14vw;
+	left : -17vw;
 }
 
 #Crédit{
@@ -1359,9 +1418,9 @@ body{
 	height:2vw;
 	font-size: 1.5vw;
 	position: absolute;
-	top : 4vw;
-	left : 202vw;
-	padding-top: 0.3vw;
+	top : 1vw;
+	left : 41%;
+	padding-top: -0.7vw;
 }
 
 #RetourData3{
@@ -1636,8 +1695,8 @@ html.fp-enabled,
 
 #chart_bateau1{
 	position: absolute;
-	top: 11vw;
-	left: 235.75vw;
+	top: 13vw;
+	left: 236.75vw;
 	width: 32vw;
 	height: 26vw;
 }
@@ -1654,7 +1713,7 @@ html.fp-enabled,
 
 #text_age_bateau{
 	position: absolute;
-	top: 29vw;
+	top: 30vw;
 	left: 222vw;
 	font-size: 2.5vw;
 	color: white;

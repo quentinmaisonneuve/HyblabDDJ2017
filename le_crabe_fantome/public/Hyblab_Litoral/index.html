@@ -123,12 +123,12 @@
 								<div class="radioJ2">
 									<input type= "radio" name="scenar" checked="checked" id="scenar1" value="1"></input>
 									<label for="scenar1">Sénario 1</label>
-									<p class="LabelJ2">Moyens bateaux (entre 12m et 18m)</p>
+									<p class="LabelJ2">Moyens bateaux <br/> (entre 12m et 18m)</p>
 								</div>
 								<div class="radioJ2">
 									<input type= "radio" name="scenar" checked="checked" id="scenar2" value="2"></input>
 									<label for="scenar2">Sénario 2</label>
-									<p class="LabelJ2">Grands bateaux (Plus de 18m)</p>
+									<p class="LabelJ2">Grands bateaux <br/> (Plus de 18m)</p>
 								</div>
 								<div class="radioJ2">
 									<input type= "radio" name="scenar" checked="checked" id="scenar3" value="3"></input>
@@ -157,9 +157,9 @@
 					<section class="InterfaceJ3">
 						<section class="FondJ3">
 							<img class="Monstre1" src="./pictures/Jeu3/Monstre-mechant.png">
-							<img class="Monstre2" src="./pictures/Jeu3/Monstre-gentil.png">
-							<img class="Monstre3" src="./pictures/Jeu3/Monstre-mange-enfant.png">
-							<img class="Monstre4" src="./pictures/Jeu3/Monstre-perplexe.png">
+							<img class="Monstre2" src="./pictures/Jeu3/monstre-gentil.png">
+							<img class="Monstre3" src="./pictures/Jeu3/monstre-mange-enfant.png">
+							<img class="Monstre4" src="./pictures/Jeu3/monstre-perplexe.png">
 							<img class="Touriste2" src="./pictures/Jeu3/touriste-femme.png">
 							<img class="Touriste3" src="./pictures/Jeu3/touriste-plongeur.png">
 							<img class="Touriste1" src="./pictures/Jeu3/touriste-beauf.png">
@@ -246,6 +246,25 @@
 			</section>
 			<section class="section">
 				<div class="slide">
+					<a href="#3rdPage/0" class="Cross" id="CrossCredit"></a>
+					<section class="Nous">
+
+						<img class="NousAGR" src="pictures/MOUETTES/les_mouettes_agr.png">
+						<p class="AGR1">Léa Chérel</p>
+						<p class="AGR2">Germain Durand</p>
+						<p class="AGR3">Yéléna Pasquier</p>
+						<img class="NousPolytech" src="pictures/MOUETTES/les_mouettes_polytech.png">
+						<p class="Polytech1">Thomas Depoorter</p>
+						<p class="Polytech2">Landry Descamps</p>
+						<p class="Polytech3">Tanguy Le Berre</p>
+						<p class="Polytech4">Jingsong Zhao</p>
+						<img class="NousScienceCom" src="pictures/MOUETTES/les_mouettes_sciencecom.png">
+						<p class="ScienceCom1">Louiz Grall-Vigneron</p>
+						<p class="ScienceCom2">Isabelle Perrot</p>
+						<p class="ScienceCom3">Victor Tesson</p>
+						<p class="Crabe">avec l'aide de Jérôme Fihey <br/> alias Monsieur Crabe</p>
+						<p class="Paroles">* paroles de la chanson de Renaud, Dès que le vent soufflera</p>
+					</section>
 					<section class="Partenaires">
 						<div id="bandeau">
 						  <!-- Logo Hyblab -->
@@ -281,21 +300,6 @@
 						   	</ul>
 					  	</div>
 					</section>
-					<section class="Nous">
-						<img class="NousAGR" src="pictures/MOUETTES/les_mouettes_agr.png">
-						<p class="AGR1">Léa Chérel</p>
-						<p class="AGR2">Germain Durand</p>
-						<p class="AGR3">Yéléna Pasquier</p>
-						<img class="NousPolytech" src="pictures/MOUETTES/les_mouettes_polytech.png">
-						<p class="Polytech1">Thomas Depoorter</p>
-						<p class="Polytech2">Landry Descamps</p>
-						<p class="Polytech3">Tanguy Le Berre</p>
-						<p class="Polytech4">Jingsong Zhao</p>
-						<img class="NousScienceCom" src="pictures/MOUETTES/les_mouettes_sciencecom.png">
-						<p class="ScienceCom1">Louiz Grall-Vigneron</p>
-						<p class="ScienceCom2">Isabelle Perrot</p>
-						<p class="ScienceCom3">Victor Tesson</p>
-					</section>
 				</div>
 
 				<div class="slide">
@@ -315,7 +319,6 @@
 
 				<div class="slide">
 					<a href="#3rdPage/3" class="Bouton" id="RetourData3"> Retour au jeu </a>
-					<p class="textData"></p>
 					<div class="FondDJ3">
 						<img class="ScientifiqueJ3-1" src="pictures/Data3/monsieur_maceration.png"/>
 						<img class="ScientifiqueJ3-2" src="pictures/Data3/monsieur_ultrasons.png"/>
@@ -326,21 +329,21 @@
 						<img class="DataJ3-3" src="pictures/Data3/data_enzymes.png"/>
 						<img class="DataJ3-4" src="pictures/Data3/data_ultrasons_enzymes.png"/>
 						<section class="EnsembleRadioDJ3">
-							<div class="radioDJ3">
-								<input type= "radio" name="data3" checked="checked" id="Macération" value="1"></input>
-								<label for="Macération">Macération</label>
+							<div class="radioDJ3" id="BoutonM">
+								<input type= "radio" name="data3" checked="checked" value="1"></input>
+								<label for="Macération" id="Macération">Macération</label>
 							</div>
-							<div class="radioDJ3">
-								<input type= "radio" name="data3" id="Ultrasons" value="2"></input>
-								<label for="Ultrasons">Ultrasons</label>
+							<div class="radioDJ3" id="BoutonU">
+								<input type= "radio" name="data3" value="2"></input>
+								<label for="Ultrasons" id="Ultrasons">Ultrasons</label>
 							</div>
-							<div class="radioDJ3">
-								<input type= "radio" name="data3" id="Enzymes" value="3"></input>
-								<label for="Enzymes">Enzymes</label>
+							<div class="radioDJ3" id="BoutonE">
+								<input type= "radio" name="data3" value="3"></input>
+								<label for="Enzymes" id="Enzymes">Enzymes</label>
 							</div>
 							<div class="radioDJ3" id="BoutonUE">
-								<input type= "radio" name="data3" id="Ultrasons_Enzymes" value="4"></input>
-								<label for="Ultrasons_Enzymes">Ultrasons<br/>+Enzymes</label>
+								<input type= "radio" name="data3" value="4"></input>
+								<label for="Ultrasons_Enzymes" id="Ultrasons_Enzymes" >Ultrasons<br/>+Enzymes</label>
 							</div>
 					</section>
 					</div>
