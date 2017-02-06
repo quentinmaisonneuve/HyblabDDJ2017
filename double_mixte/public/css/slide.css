@@ -165,3 +165,14 @@ min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   text-decoration: underline;
 }
 
+#logo1 {
+  display: block;
+}
+
+#logo2 {
+  display: none;
+}
+
+#logo3 {
+  display: none;
+}

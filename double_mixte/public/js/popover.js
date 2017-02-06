@@ -54,5 +54,20 @@ function hideAnimation2016() {
 	$("#funfact2016").css("display", "none");
 }
 
+function animateLogo() {
+	console.log("hi");
+	//setTimeout(function(){ $("#logo1").css("display", "none"); }, 1000);
+	
+	setTimeout(function(){ $("#logo1").addClass('animated flipOutX') }, 2000);
+	//setTimeout(function(){ $("#logo1").addClass('animated flipInX') }, 3000);
+	setTimeout(function(){ $("#logo1").css("display", "none"); }, 2000);
+	setTimeout(function(){ $("#logo2").css("display", "block"); }, 2000);
+	
+	setTimeout(function(){ $("#logo2").css("display", "none"); }, 6000);
+	setTimeout(function(){ $("#logo3").css("display", "block"); }, 6000);
+	setTimeout(function(){ $("#logo3").removeClass('animated flipInX'); }, 7000);
+
+
+}
 
 

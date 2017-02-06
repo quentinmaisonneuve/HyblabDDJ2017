@@ -103,7 +103,9 @@
         <div class="col-md-4"></div>
 		<div class="col-md-4">
 			<div id="logo_van">
-        		<img src="img/accueil.svg"/>
+        		<img id="logo1" src="img/accueil.svg"/>
+        		<img id="logo2" src="img/accueil-titre.svg" class="animated flipInX"/>
+        		<img id="logo3" src="img/accueil-pb.svg" class="animated flipInX"/>
         	</div>
 		</div>
         <div class="col-md-4"></div>
@@ -501,7 +503,7 @@ $myCarousel.on('slid.bs.carousel', function(e) {
 
   } 
 });*/
-
+  	animateLogo();
 
 $myCarousel.on('slid.bs.carousel', function (e) {
 
@@ -520,9 +522,10 @@ $myCarousel.on('slid.bs.carousel', function (e) {
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
  // currentIndex = $('div.active').index() + 1;
  //var currentIndex = carouselData.getItemIndex();
-
+  
   switch(currentIndex){
     case 0 :
+
     	break;
 
     case 1 :
