@@ -1,8 +1,3 @@
-function getHeure()
-{
-	return(document.getElementById("timeline").value);
-}
-
 $(document).ready(function() {
       $('#timeline_value1').html((" " + ($('#timeline1').val()*2) + "h " + " - " + ($('#timeline1').val()*2+2) + "h "));
       $('#timeline_value2').html((" " + ($('#timeline2').val()*2) + "h " + " - " + ($('#timeline2').val()*2+2) + "h "));

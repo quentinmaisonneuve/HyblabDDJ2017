@@ -30,6 +30,13 @@ function initBubble(node)
             return (!d.children && d.id != "");
         });
 
+        nodes.push({id:"Nostalgique", value:0});
+        nodes.push({id:"Cool", value:0});
+        nodes.push({id:"Stimulante", value:0});
+        nodes.push({id:"Agressive", value:0});
+        nodes.push({id:"Sentimentale", value:0});
+
+
         nodes.sort(function(a,b){
            return b.value-a.value;
         });
@@ -115,6 +122,8 @@ function initBubble(node)
                         else if (d.id == nodes[2].id)
                             return "#054365";
                         else if (d.id == nodes[3].id)
+                            return "#90A5BB";
+                        else
                             return "#90A5BB";
                     });
                     /*.style("top", (d3.event.pageY - 28) + "px");*/
@@ -341,8 +350,11 @@ function getRoad()
 {
     // Style
     //var season = $('input[type=radio][name=season]:checked').attr('value');
-    var heure_min = getHeure() - 1;
-    var heure_max = getHeure() + 1;
+    var heure_min;
+    var heure_max;
+
+    heure_min = $('#timeline2').val() - 1;
+    heure_max = $('#timeline2').val() + 1;
 
     var season;
         switch ($("#slider").roundSlider("option", "value"))
@@ -362,13 +374,21 @@ function getRoad()
                 break;
         }
 
-
     var weekEnd;
         if(document.getElementById("weekOrWeekEnd").className == "play")
             weekEnd = 0;
         else
             weekEnd = 1;
-    return "./creneau/"+season+"/"+weekEnd+"/16/18";
+
+    var mood;
+    if(document.getElementById("moodVsGenre").className == "play") {
+        // GENRE
+        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+    }
+    else{
+        // MOOD
+        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+    }
 }
 
 initBubble(getRoad());

@@ -370,6 +370,8 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 18px;
   background: url("/images/glissiere.png");
   background-size: cover;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
 }
 
 input[type=range]::-moz-range-track {
@@ -386,7 +388,7 @@ input[type=range]::-ms-track {
   background-size: cover;
 }
 
-#timeline1
+#timeline1, #timeline2
 {
 	position: relative;
 	left : 75px;
@@ -497,12 +499,11 @@ input:checked + .slider:before {
 /* ################### pageThree ################### */
 
 #pageThree {
-	background-color: #FECB2E;
 	min-height: 100%;
-  	/*background: url(/images/page2_tiret.png) no-repeat center fixed; 
-  	-webkit-background-size: cover;  pour anciens Chrome et Safari 
-  	background-size: cover;  version standardisée */ 
+	background-image: url("/images/fond.png");
+	background-size: 100% 100%;
   	background-color: #FECB2E;
+  	z-index: 5;
 }
 
 #bubleChart {
@@ -515,7 +516,15 @@ input:checked + .slider:before {
   	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
   	background-size: cover; /* version standardisée */
   	margin-left: 1%;
+  	z-index: 10
 }
+
+#bubble3 {
+	margin-left: 12%;
+	margin-top: 7%;
+}
+
+/*.bubble*/
 
 #boutonBuble {
 	width: 45%;
@@ -626,11 +635,6 @@ input:checked + .slider:before {
 	to {
 		transform:rotate(360deg);
 	}
-}
-
-#bubble3
-{
-	background: #000;
 }
 
 /* ################### pageFour ################### */
