@@ -245,7 +245,7 @@
     top: 24vh;
     width: 27vw;
     /* height: 49vh; */
-    font-size: 21pt;
+    font-size: 2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: bold;
@@ -255,6 +255,7 @@
     /* transform: translateY(-50%); */
     margin-left: auto;
     margin-right: auto;
+    font-weight: 600;
 }
 
 #donatien {
@@ -315,4 +316,20 @@ position: absolute;
     background-image: url(../img/bulle2013.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#pb {
+position: absolute;
+    display: block;
+    left: -32vw;
+    top: 74vh;
+    width: 100vw;
+    height: 50vh;
+    font-size: 2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
 }

@@ -24,10 +24,12 @@ min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 }
 
 #logo_van img {
-    vertical-align: middle;
+vertical-align: middle;
     margin-right: 0;
     padding-right: 0;
-    width: 100%;
+    width: 71%;
+    margin-left: 4vw;
+    margin-bottom: 31vh;
 }
 .page-accueil {
   width:100%;
