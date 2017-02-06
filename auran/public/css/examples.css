@@ -267,7 +267,9 @@ strong {
 .page2{
 	height: 100vh;
 }
-
+.page3{
+	height: 100vh;
+}
 #section0{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
