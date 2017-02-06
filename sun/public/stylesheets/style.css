@@ -509,7 +509,7 @@ input:checked + .slider:before {
 	min-height: 100%;
 	background-image: url("/images/fond.png");
 	background-size: 100% 100%;
-  	background-color: #FECB2E;
+  	background-color: white;
   	z-index: 5;
 }
 
@@ -678,6 +678,26 @@ input:checked + .slider:before {
 	height:100%;
 	padding-top: 4%;
 }
+
+#pageFourTopCenterBarre {
+	/* IMAGE */
+}
+
+
+/* ##################################################C3################################"*/
+.tick {
+	visibility: hidden;
+}
+.domain {
+	visibility: hidden;
+}
+
+.c3-legend-item-event {
+	x="380"
+}
+
+
+
 
 #pageFourTopRight {
 	width: 20%;
