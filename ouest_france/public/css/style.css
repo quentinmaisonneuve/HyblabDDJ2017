@@ -55,10 +55,6 @@ h3{
     margin-right : auto;
 }
 
-p{
-  color: white;
-}
-
 #enroute{
   cursor: pointer;
   display: block;
@@ -86,9 +82,12 @@ p{
 }
 
 .footer {
+  /*pour pallier le fait que l'image débute par du transparent
+  on la décale sur la gauche*/  
   position: absolute;
   bottom: -5vh;
   left: -2vw;
+  /*et on l'étend un peu plus que la largeur de la fenêtre*/
   width: 104vw;
 }
 
