@@ -173,15 +173,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1360"
-     inkscape:window-height="741"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
      id="namedview5450"
      showgrid="false"
      inkscape:zoom="1.1875"
-     inkscape:cx="262.30685"
-     inkscape:cy="174.64678"
-     inkscape:window-x="0"
-     inkscape:window-y="21"
+     inkscape:cx="457.55306"
+     inkscape:cy="476.12046"
+     inkscape:window-x="1280"
+     inkscape:window-y="29"
      inkscape:window-maximized="1"
      inkscape:current-layer="Calque_1" /><style
      type="text/css"
@@ -225,7 +225,7 @@
        x="0"
        y="0"
        class="st9 st10 st12"
-       id="tspan5391">TITRE LOREM IPSUM</tspan><tspan
+       id="tspan5391">La puissance des passeports</tspan><tspan
        x="0"
        y="25.2"
        class="st9 st10 st11"
@@ -233,7 +233,7 @@
        x="0"
        y="72"
        class="st9 st13 st14"
-       id="tspan5395">Vous venez de France et vous voulez aller en Corée du Nord. Dommage, vous êtes refusé !</tspan><tspan
+       id="tspan5395">Sélectionnez un pays d'origine sur la carte.</tspan><tspan
        x="0"
        y="93.6"
        class="st9 st13 st14"
@@ -11331,8 +11331,8 @@ stroke:#000;
          d="m 1688.1855,364.32474 c 0.6988,0.44334 3.052,-0.30379 1.8005,-0.59317 0.9422,-0.3539 1.163,-0.7078 -0.427,-1.0617 l -2.6321,1.14196 c -0.8217,0.50196 -0.6403,0.73644 1.2586,0.51291 z"
          id="path7142-1" /></g></g><script
      xlink:href="../js/visa.js"
-     id="script2719"
-     type="text/ecmascript" /><text
+     type="text/ecmascript"
+     id="script2719" /><text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="1150.7368"
@@ -11344,8 +11344,8 @@ stroke:#000;
        y="188.78537" /></text>
 <script
      xlink:href="../js/visa.js"
-     id="script2722"
-     type="text/ecmascript" /><rect
+     type="text/ecmascript"
+     id="script2722" /><rect
      x="158.41144"
      y="592.61737"
      class="st1"
