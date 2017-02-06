@@ -26,10 +26,12 @@
       <file leaf-file-name="pageThree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/pageThree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="330" column="20" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+            <state relative-caret-position="1245">
+              <caret line="358" column="0" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1486395102796" expanded="true" signature="11881:14428" ph="{...}" />
+                <marker date="1486395102796" expanded="true" signature="11906:14428" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -38,8 +40,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="105">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -71,10 +73,10 @@
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="940" column="19" selection-start-line="940" selection-start-column="19" selection-end-line="940" selection-end-column="19" />
+              <caret line="947" column="19" selection-start-line="947" selection-start-column="19" selection-end-line="947" selection-end-column="19" />
               <folding>
-                <marker date="1486377377067" expanded="true" signature="2418:2568" ph="{...}" />
-                <marker date="1486377377067" expanded="true" signature="12725:12728" ph="{...}" />
+                <marker date="1486395102796" expanded="true" signature="2418:2568" ph="{...}" />
+                <marker date="1486395102796" expanded="true" signature="12842:12845" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -93,7 +95,7 @@
       <file leaf-file-name="data.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/API/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="-240">
               <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
               <folding />
             </state>
@@ -342,12 +344,12 @@
       <workItem from="1486300217450" duration="20355000" />
       <workItem from="1486324246452" duration="8866000" />
       <workItem from="1486377326884" duration="3215000" />
-      <workItem from="1486388790188" duration="4291000" />
+      <workItem from="1486388790188" duration="5588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130892000" />
+    <option name="totallyTimeSpent" value="132189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,6 +433,8 @@
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486395102796" expanded="true" signature="11881:14428" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="11906:14428" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -456,8 +460,8 @@
         <state relative-caret-position="3450">
           <caret line="230" column="25" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="25" />
           <folding>
-            <marker date="1486377377067" expanded="true" signature="2418:2568" ph="{...}" />
-            <marker date="1486377377067" expanded="true" signature="12725:12728" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="2418:2568" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="12842:12845" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -505,8 +509,8 @@
         <state relative-caret-position="405">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
-            <marker date="1486377377067" expanded="true" signature="2418:2568" ph="{...}" />
-            <marker date="1486377377067" expanded="true" signature="12725:12728" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="2418:2568" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="12842:12845" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -547,6 +551,8 @@
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486395102796" expanded="true" signature="11881:14428" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="11906:14428" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -585,8 +591,8 @@
         <state relative-caret-position="30">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <marker date="1486377377067" expanded="true" signature="2418:2568" ph="{...}" />
-            <marker date="1486377377067" expanded="true" signature="12725:12728" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="2418:2568" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="12842:12845" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -626,6 +632,8 @@
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486395102796" expanded="true" signature="11881:14428" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="11906:14428" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -750,10 +758,10 @@
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="940" column="19" selection-start-line="940" selection-start-column="19" selection-end-line="940" selection-end-column="19" />
+          <caret line="947" column="19" selection-start-line="947" selection-start-column="19" selection-end-line="947" selection-end-column="19" />
           <folding>
-            <marker date="1486377377067" expanded="true" signature="2418:2568" ph="{...}" />
-            <marker date="1486377377067" expanded="true" signature="12725:12728" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="2418:2568" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="12842:12845" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -768,10 +776,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/pageThree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="330" column="20" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
+        <state relative-caret-position="1245">
+          <caret line="358" column="0" selection-start-line="358" selection-start-column="0" selection-end-line="358" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1486395102796" expanded="true" signature="11881:14428" ph="{...}" />
+            <marker date="1486395102796" expanded="true" signature="11906:14428" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -796,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -812,7 +822,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/API/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="-240">
           <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
           <folding />
         </state>
