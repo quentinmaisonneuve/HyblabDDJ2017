@@ -56,6 +56,7 @@ function toggleThree(el){
         el.src='/images/btn-semaine.svg';
         el.className="play";
     }
+    
     return false;
 }
 
