@@ -30,7 +30,7 @@
 	<!-- CHARTIST : -->
 	<link rel="stylesheet" href="dist/chartist.min.css">
 	<script src="dist/chartist.min.js"></script>
-	<script type="text/javascript" src="librairies/chartist-plugin-axistitle-master/dist/chartist-plugin-axistitle.js"></script>
+	<script type="text/javascript" src="librairies/chartist-plugin-pointlabels-master/dist/chartist-plugin-pointlabels.js"></script>
 	<!-- RADIO SLIDER : -->
 	<link rel="stylesheet" type="text/css" href="librairies/radios-to-slider-master/css/radios-to-slider.css">
 	<script type="text/javascript" src="librairies/radios-to-slider-master/js/jquery.radios-to-slider.js"></script>
@@ -105,6 +105,8 @@
 		<!-- Bulle Personnage -->
 		<img id="imageBullePerso" src="img/bulle.svg" alt="bulle"/>
 		<!-- Graphe -->
+		<!--  titre legende Y -->
+		<p id="title_axey">Nombre de donnée</p>
 		<div id="graphe">
 			<div id="chart1" class="ct-chart ct-golden-section ct-line ct-label ct-axis-title" data-x-axis="My x-axis title" data-y-axis="My y-axis-title"></div>
 			
@@ -128,7 +130,7 @@
 			<img id="legendC" src="img/Legendes/bouton-texte.svg" alt="lengende publication"/>
 			<p id="donneP">Données publiées</p>
 			<img id="legendU" src="img/Legendes/bouton-texte2.svg" alt="lengende modification"/>
-			<p id="donneM">Données modifiées</p>
+			<p id="donneM">Données actualisées</p>
 		</div>
 		
 		<!-- Donnée Top-Flop -->
@@ -154,29 +156,23 @@
 		<!-- Texte explication/année -->
 		<div id="explicationAnnee">
 			<div id="explication2013">
-				<p>63% : part des données publiées par du top</p>
-				<p>1,3% : part des données du flop</p>
-				<p>Désert de données : Auvergne-Rhône-Alpe</p> 
+				<p>Le top publie 63% des données tandis que le flop seulement 1,3%</p>
+				<p>L’Auvergne-Rhône-Alpe n’en publie aucune</p>
 			</div>
 			<div id="explication2014">
-				<p>80,8% : part des données publiées par du top</p>
-				<p>3,6 : part des données publiées par du flop</p>
-				<p>Désert de données : Auvergne-Rhône-Alpe</p> 
+				<p>Le top publie 80,8% des données tandis que le flop seulement 3,6%</p>
+				<p>L’Auvergne-Rhône-Alpes n’en publie aucune</p> 
 			</div>
 			<div id="explication2015">
-				<p>50% : part données publiées par du top</p>
-				<p>3,2% : part des données publiées par du flop</p>
-				<p>Désert de données : aucun</p>
+				<p>Toutes les régions ont publiées</p> 
+				<p>le top représente 50% des données et le flop seulement 3,2%</p>
 			</div>
 			<div id="explication2016">
-				<p>57% : part des données publiées par du top</p>
-				<p>0,5% : part des données publiées par du flop</p>
-				<p>Désert de donnée : Corse</p>
+				<p>Le top publie 57% des données et le flop seulement 0,5%, tandis que la Corse aucune</p>
+				<p>Forte hausse des données actualisées</p>
 			</div>
 			<div id="explication2017">
-				<p>Données relevées : Top/flop non représentatif</p>
-				<p>Désert de donnée : Corse, à ce stade</p>
-				<p>Publications : équivalentes aux années 2013 & 2014 cumulées</p>
+				<p>Tendance optimiste car les publications sont équivalentes aux années 2013 & 2014, mais pas représentative car limité au mois de janvier</p>
 			</div>
 		</div>
       </span>
@@ -269,6 +265,7 @@
       <span class="responsive_container">
     <div id='title'>
       <h1>Quelle proportion entre les données démocratiques et servicielles ?</h1>
+      <p id="dataviz3-sous-titre">Mesurez le poids des données servicielles et démocratiques, entre et au sein de chaque région.</p>
     </div>
     <div>
         <table width="100%" style="text-align:center;">
@@ -311,6 +308,11 @@
                 <td width="50%">
                      <div id='affiche_balance'>
                         <!--<span class="svg-container"><img id='poids1' class="svg-content" src="./img/poids_clair.svg" width='10%' height='15%'></span>-->
+                        <object id='balance' data="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml">
+                            <embed id='balance_ie' src="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml" />
+                        </object>
+                        <img id='aiguilleBalance' src="./img/aiguilleBalance.svg" width="640px" height="360px">
+                      </div>
                         <div id="svg-container-poids1">
                             <object type="image/svg+xml" id='poids1' data="./img/poids_clair.svg" width="100%" height="100%" class="svg-content"></object>    
                         </div>
@@ -319,11 +321,7 @@
                             <object type="image/svg+xml" id='poids2' data="./img/poids.svg" width="100%" height="100%" class="svg-content"></object>
                         </div>
                         <p id="valeurPoids2">%</p>
-                        <object id='balance' data="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml">
-                            <embed id='balance_ie' src="./img/Balance.svg" width="100%" height="100%" type="image/svg+xml" />
-                        </object>
-                        <img id='aiguilleBalance' src="./img/aiguilleBalance.svg" width="640px" height="360px">
-                      </div>
+                        
                 </td>
                 <td width="25%" style="vertical-align: top">
                     <br>
@@ -442,11 +440,11 @@
         <img id="panneau-conclusion" src="img/panneau-conclusion.svg" alt="panneau-conclusion"/>
         <img id="panneau-conclusion-ombre" src="img/panneau-conclusion-ombre.svg" alt="panneau-conclusion-ombre"/>
         <h1 id="titre-conclusion">Quel bilan pour l’open-data ?</h1>
-        <text id="texte-conclusion">Malgré un engagement en hausse en faveur de l’open data, de vraies disparités subsistent entre régions. Nous sommes donc face à un ensemble extrêmement polarisé, avec notamment la Corse et la Normandie qui se distinguent par leur très faible nombre de données publiées sur l’ensemble de la période. Il faudrait étudier en détails les raisons de telles inégalités et vérifier si elles se maintiennent à la fin de l’année avec l’application des dernières législations. Il faudrait donc réaliser un travail qualitatif et journalistique complémentaire pour déterminer si les jeux de données diffusés sont véritablement complets et réutilisables.</text>
+        <text id="texte-conclusion">Malgré un engagement croissant pour l’open data, de vraies disparités subsistent entre régions. Nous sommes donc face à un ensemble polarisé où quelques régions publient les deux tiers des données, tandis que d’autres n’en publient pas ou peu. On peut également constater le même ordre de grandeur sur la répartition entre démocratique et serviciel. Si il y a un réel effort en terme de publication, le nombre de téléchargement reste faible. Il faudrait en complément étudier en détail les raisons de telles disparités et vérifier si l’application des dernières législations atténue cet effet. En complément de ce travail, il serait intéressant de réaliser un travail qualitatif et journalistique pour déterminer si les jeux de données diffusés sont véritablement complets et réutilisables.</text>
       </span>
     </section>
     <section class="section">
-      <span id="page-remerciements" class="responsive_container">
+      <span class="responsive_container">
           <img id="outro-fond" src="img/remerciements.svg"/>
           <h1 id="remerciements">REMERCIEMENTS</h1>
           <text id="remerciementsText">
@@ -461,8 +459,8 @@
           <img class="photo" id="thomas" src="img/photos/thomas.png"/><text class="photo-name" id="thomas-txt">Thomas Picard</text>
           <img class="photo" id="jordan" src="img/photos/jordan.png"/><text class="photo-name" id="jordan-txt">Jordan Blouin</text>
           <img class="photo" id="arthur" src="img/photos/arthur.png"/><text class="photo-name" id="arthur-txt">Arthur Dailland</text>
-          <audio id="jc-song" >
-            <source src="img/photos/jc-song.mp3" type="audio/mpeg">
+          <audio id="jc-song">
+            <source src="img/jc/jc-song.mp3" type="audio/mpeg"></source>
           </audio>
           <h1 id="partenaires">PARTENAIRES</h1>
       </span>

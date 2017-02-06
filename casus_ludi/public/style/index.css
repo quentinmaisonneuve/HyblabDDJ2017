@@ -155,7 +155,7 @@ html, body{
 	width: 100vw; 
     height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
     max-height: 100vh;
-    max-width: 200vh; /* 16/7 */
+    max-width: 300vh; /* 16/7 */
     margin: auto;
     position: absolute;
     top:0;bottom:0; /* vertical center */
@@ -488,12 +488,11 @@ video{
 
 /* DATAVIZ 1*/
 
-/*#titre{
-	position: absolute;
-	width: 35%;
-	height: 18%;
-	left:15%;
-}*/
+.ct-label-title{
+	fill:rgb(0,0,0);
+	font-size:1rem;
+}
+
 #datavizEvo h1{
 	position: absolute;
 	top:5%;
@@ -501,15 +500,33 @@ video{
 	font-size:4.5vmin;
 }
 
+#title_axey{
+	position: absolute;
+	text-align: center;
+	top:45%;
+	right:92%;
+	font-size:1rem;
+	width: 10%;
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
 @media only screen and (max-width: 1150px){
 	#datavizEvo h1{
 		font-size: 3vmin;
+	}
+	#title_axey{
+		font-size:0.7rem;
 	}
 }
 
 @media only screen and (max-width: 850px){
 	#datavizEvo h1{
 		font-size: 2vmin;
+	}
+	#title_axey{
+		font-size:0.6rem;
 	}
 }
 
@@ -567,10 +584,9 @@ video{
 
 #imageBullePerso{
 	position: absolute;
-	top:58%;
-	width: 21%;
-	height: 40%;
-	left:65%;
+	top:62%;
+	height: 33%;
+	left:65.5%;
 }
 #topCreate,#flopCreate,#topUpdate,#flopUpdate{
 	position: absolute;
@@ -615,7 +631,7 @@ video{
 #explicationAnnee{
 	position: absolute;
 	left:70%;
-	top:65%;
+	top:67%;
 	width: 15%; 
 	height: 23%;
 	/*border: 3px solid #000000; */
@@ -659,7 +675,7 @@ video{
 
 #donneP,#donneM{
 	position:absolute;
-	top:92%;
+	top:90%;
 	font-size:2vmin;
 }
 #legendC,#legendU{
@@ -779,6 +795,7 @@ video{
 	color:white; 
 	border : solid 2px #000040; 
 	border-radius : 5px;
+	margin-left: 6%; 
 } 
 
 #listeRegion1 {
@@ -789,6 +806,7 @@ video{
 	color:white; 
 	border : solid 2px #002CE6; 
 	border-radius : 5px;
+	margin-left: 6%
 } 
 
 .listeRegion:hover{
@@ -824,6 +842,7 @@ video{
 }*/
 
 #svg-container-poids2{
+	visibility: hidden;
 	display: inline-block;
 	position : absolute;
 	width : 15%;
@@ -836,6 +855,7 @@ video{
 }
 
 #svg-container-poids1{
+	visibility: hidden;
 	display: inline-block;
 	position : absolute;
 	width : 15%;
@@ -843,21 +863,21 @@ video{
 	vertical-align : middle;
 	overflow: hidden;
 	/*border:#333 1px solid;*/
-	top: 16%;
-	left : 59%;
+	top: 16px;
+	left : 59px;
 }
 
 #valeurPoids1{
 	color : white;
 	position:absolute;
-	right:33%;
-	top:44%;}
+	left:64%;
+	top:46%;}
 
 #valeurPoids2{
 	color : white;
 	position:absolute;
-	right:63%;
-	top:44%;
+	right:63.5%;
+	top:50%%;
 }
 
 a{
@@ -886,6 +906,10 @@ tr.sousDroite{
 h1{
 	background-color:white;
 	text-align:center;
+}
+
+#dataviz3-sous-titre {
+    text-align: center;
 }
 
 /*p{
@@ -941,13 +965,63 @@ img.bouton{
 	position : relative;
 	top : -13px;
 	display : inline;
-	font-size: 2.5vmin
+	font-size: 2.5vmin;
 }
 
 /*#source{
 	position:absolute;
 	bottom:0;
 }*/
+
+/* Dataviz3 responsive */ 
+
+@media only screen and (max-width: 1100px){
+	#button2 {
+		width : 40px; 
+	}
+	#button1{
+		width : 40px; 
+	}
+}
+@media only screen and (max-width: 1000px){
+	.textType{
+		font-size: 2vmin;
+		top : -5px;
+	}
+	#button2 {
+		width : 30px; 
+	}
+	#button1{
+		width : 30px; 
+	}
+	#listeRegion2 {
+		font-size: 1.5vmin; 
+	}
+	#listeRegion1{
+		font-size: 1.5vmin; 
+	}
+}
+
+@media only screen and (max-width: 790px){
+	.textType{
+		font-size: 1.7vmin;
+		top : -5px;
+	}
+	#button2 {
+		width : 25px; 
+	}
+	#button1{
+		width : 25px; 
+	}
+	#listeRegion2 {
+		font-size: 1.2vmin; 
+	}
+	#listeRegion1{
+		font-size: 1.2vmin; 
+	}
+}
+
+
 
 /*** Remerciement ***/
 #outro-fond{
@@ -1179,3 +1253,4 @@ img.bouton{
         .custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
     }
 }
+

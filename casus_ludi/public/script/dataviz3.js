@@ -255,9 +255,20 @@ function initDataviz3(){
     var value1 = Math.round((p1*100)/(p2 + p1)); 
 
     $("#valeurPoids2").html(value2+"%");
+    $("#svg-container-poids2").css("width",4 + (value2 * 11 / 100) + "%"); 
+
+    $("#svg-container-poids2").css("visibility","visible"); 
+    $("#svg-container-poids2").css("top", 21 + ((100-value2)*26/100)+"%"); 
+    $("#svg-container-poids2").css("left", 28 + ((100-value2)*5/100)+"%");
+    $("#valeurPoids2").css("top", 41 + ((100-value2)*9/100)+"%");
+
     $("#valeurPoids1").html(value1+"%");
-    $("#svg-container-poids2").css("width",value2 * 15 / 100 + "%"); 
-    $("#svg-container-poids1").css("width",value1 * 15 / 100 + "%"); 
+    $("#svg-container-poids1").css("width",4 + (value1 * 11 / 100) + "%"); 
+
+    $("#svg-container-poids1").css("visibility","visible"); 
+    $("#svg-container-poids1").css("top", 21 + ((100-value1)*26/100)+"%"); 
+    $("#svg-container-poids1").css("left", 58 + ((100-value1)*5/100)+"%"); 
+    $("#valeurPoids1").css("top", 40 + ((100-value1)*9/100)+"%");
 
 }
 
@@ -317,7 +328,20 @@ function calculPart(){
     var value1 = Math.round((p1*100)/(p2 + p1)); 
 
     $("#valeurPoids2").html(value2+"%");
+    $("#svg-container-poids2").css("width",4 + (value2 * 11 / 100) + "%"); 
+
+    $("#svg-container-poids2").css("visibility","visible"); 
+    $("#svg-container-poids2").css("top", 21 + ((100-value2)*26/100)+"%"); 
+    $("#svg-container-poids2").css("left", 28 + ((100-value2)*5/100)+"%");
+    $("#valeurPoids2").css("top", 41 + ((100-value2)*9/100)+"%");
+
     $("#valeurPoids1").html(value1+"%");
-    $("#svg-container-poids2").css("width",value2 * 15 / 100 + "%"); 
-    $("#svg-container-poids1").css("width",value1 * 15 / 100 + "%"); 
+    $("#svg-container-poids1").css("width",4 + (value1 * 11 / 100) + "%"); 
+
+    $("#svg-container-poids1").css("visibility","visible"); 
+    $("#svg-container-poids1").css("top", 21 + ((100-value1)*26/100)+"%"); 
+    $("#svg-container-poids1").css("left", 58 + ((100-value1)*5/100)+"%"); 
+    $("#valeurPoids1").css("top", 40 + ((100-value1)*9/100)+"%");
+
+
 }

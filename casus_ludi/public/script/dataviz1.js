@@ -128,12 +128,13 @@ function initDataviz1(){
 		lineSmooth: Chartist.Interpolation.cardinal({
 			tension: 0
 		}),
-		axisY: {
-			type: Chartist.FixedScaleAxis,
-			low: 0,
-			high: 10000,
-			ticks: [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
-		}
+	  	axisY: {
+		    onlyInteger: true,
+		    type: Chartist.FixedScaleAxis,
+		    low: 0,
+		    high: 10000,
+		    ticks: [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
+	  	}
 	});
 }
 //}, 2000);
