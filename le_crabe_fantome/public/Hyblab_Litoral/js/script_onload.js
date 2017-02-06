@@ -87,6 +87,11 @@ window.onload = function init (){
 		$(".DataJ3-2").fadeOut("slow");
 		$(".DataJ3-3").fadeOut("slow");
 		$(".DataJ3-4").fadeOut("slow");
+
+		$("#Macération").css("background-color", "#faf7f5");
+		$("#Ultrasons").css("background-color", "#6a9dae");
+		$("#Enzymes").css("background-color", "#6a9dae");
+		$("#Ultrasons_Enzymes").css("background-color", "#6a9dae");
 		
 		var echelle =200000-document.getElementById("barreJ4-2").value*80000+document.getElementById("barreJ4-1").value*50000;
 		if(echelle<0){
