@@ -155,25 +155,14 @@ html, body{
 	color: #004266;
 	width: 40%;
 	margin: 0 auto;
-}
-
-#pageTwo h2 {
-	font-size: 1.5em;
-	padding-top: 1%;
-	color: #004266;
-	font-style: italic;
-	text-align: center;
-}
-
-#pageTwo hr {
-	width: 10%;
-	border: 1px solid #004266;
-	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-top: -5%;
 }
 
 #pageTwo .blocTwoOne {
 	width: 70%;
 	margin: 0 auto;
+	margin-bottom: 2%;
 }
 
 #pageTwo .blocTwoOne .Saison {
@@ -191,6 +180,8 @@ html, body{
 	font-weight: bold;
 	font-size: 1.5em;
 	color: #004266;
+	margin-top: 15%;
+	margin-bottom: 2%;
 	display: flex;
 }
 
@@ -382,10 +373,6 @@ input[type=range]::-ms-track {
   border: 0px solid transparent;
 }
 
-
-
-
-
 #pageThree input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 28px;
@@ -420,37 +407,34 @@ input[type=range]::-ms-track {
 
 #pageThree input[type=range]::-webkit-slider-runnable-track {
   
-	max-width : 450px;
-	height: 18px;
-
-
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
 }
 
 #pageThree input[type=range]::-moz-range-track {
-	max-width : 450px;
-	height: 18px;
+  max-width : 450px;
+  height: 18px;
 
 }
 
 #pageThree input[type=range]::-ms-track {
-	max-width : 450px;
-	height: 18px;
+  max-width : 450px;
+  height: 18px;
 
 }
 
-
-
-
-
-
-#pageTwo input[type=range]::-moz-range-track {
+input[type=range]::-moz-range-track {
   max-width : 450px;
   height: 18px;
   background: url("/images/glissiere.png");
   background-size: cover;
 }
 
-#pageTwo input[type=range]::-ms-track {
+input[type=range]::-ms-track {
   max-width : 450px;
   height: 18px;
   background: url("/images/glissiere.png");
@@ -595,6 +579,16 @@ input:checked + .slider:before {
   	z-index: 10
 }
 
+#aVousDeJouer {
+	text-align: center;
+}
+
+#aVousDeJouer p {
+	font-size: 1.2em;
+	color: #004266;
+	font-weight: bold;
+}
+
 #bubble3 {
 	margin-left: 12%;
 	margin-top: 7%;
@@ -603,9 +597,12 @@ input:checked + .slider:before {
 /*.bubble*/
 
 #boutonBuble {
+	position: absolute;
 	width: 45%;
 	height: 70%;
 	display: inline-block;
+	padding-top: 2%;
+
 }
 
 #boutonBubleTopLeft {
@@ -657,6 +654,7 @@ input:checked + .slider:before {
 
 #BubleBottom {
 	text-align: center;
+	margin-top: 3%;
 }
 
 #timeline2 {
@@ -1157,16 +1155,8 @@ div.tooltip p
 	#pageTwo h1 {
 		font-size: 1em;
 		width: 80%;
+		margin-bottom: 2%;
 	}
-	#pageTwo h2 {
-		font-size: 0.8em;
-		padding-top: 3%;
-	}
-	#pageTwo hr {
-		width: 30%;
-		margin-top: 2%;
-	}
-
 
 	#pageTwo .blocTwoOne {
 		width: 80%;
