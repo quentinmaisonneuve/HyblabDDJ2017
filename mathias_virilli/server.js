@@ -64,4 +64,4 @@ function writeBricksChart(req, res, next) {
     });
 };
 
-app.get('/', writeHeader, writeRegions, writeWallsMap, writeBricksChart, writeFooter);
+app.get('/dataviz', writeHeader, writeRegions, writeWallsMap, writeBricksChart, writeFooter);
