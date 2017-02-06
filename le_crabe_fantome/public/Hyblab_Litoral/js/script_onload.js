@@ -88,5 +88,9 @@ window.onload = function init (){
 		$(".DataJ3-3").fadeOut("slow");
 		$(".DataJ3-4").fadeOut("slow");
 		
-		document.getElementById("Budget").value = 200000-document.getElementById("barreJ4-1").value*80000+document.getElementById("barreJ4-2").value*50000;
+		var echelle =200000-document.getElementById("barreJ4-2").value*80000+document.getElementById("barreJ4-1").value*50000;
+		if(echelle<0){
+			echelle=0;
+		}
+		document.getElementById("bourse").style.transform = 'scale(' + echelle/200000 + ')';
 	}
