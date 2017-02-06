@@ -167,4 +167,12 @@ router.get('/ThisWeekSentimentale', function(req, res, next) {
     });
 });
 
+router.get('/GenreCreneau4H/:numberOfCreneau', function(req, res, next) {
+    data.getGenreCreneau4H(req.params.numberOfCreneau, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
 module.exports = router;
