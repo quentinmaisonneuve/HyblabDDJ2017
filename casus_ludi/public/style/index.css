@@ -57,7 +57,8 @@ html, body{
 	position: absolute;
 	bottom: 32.7%;
 	right: 23.85%;
-	cursor: pointer;
+	/*cursor: pointer; Trop facile*/
+	cursor: default;
 	opacity: 0;
 }
 
@@ -353,6 +354,15 @@ video{
 	width: 100%;
 }
 
+.textLegendTitre {
+	position: relative;
+	bottom : 12px;
+	display: inline;
+	width: 100%;
+	margin : 1%;
+	font : "quicksandBold";
+}
+
 .mapLegend {
 	height : 26px; 
 	width : 20px;
@@ -429,6 +439,9 @@ video{
 	.textLegend{
 		font-size: 1.5vmin;
 	}
+	#textLegend2{
+		top : -22px;
+	}
 }
 
 @media only screen and (max-width: 960px){
@@ -441,9 +454,15 @@ video{
 	.textLegend{
 		font-size: 0.9vmin;
 	}
+
 	.listLegend{
 		height: 3vmin;
 	}
+
+	#textLegend1{
+		top : 5px;
+	}
+
 }
 
 @media only screen and (max-width: 570px){
@@ -596,7 +615,7 @@ video{
 #explicationAnnee{
 	position: absolute;
 	left:70%;
-	top:68%;
+	top:65%;
 	width: 15%; 
 	height: 23%;
 	/*border: 3px solid #000000; */
@@ -793,7 +812,7 @@ video{
 	color :black;  border : solid 4px white; border-radius : 10px;
 }
 
-#poids1{
+/*#poids1{
 	position:absolute;
 	right:30%;
 	top:39%;}
@@ -802,6 +821,30 @@ video{
 	position:absolute;
 	right:60%;
 	top:39%;
+}*/
+
+#svg-container-poids2{
+	display: inline-block;
+	position : absolute;
+	width : 15%;
+	height: 50%;
+	vertical-align : middle;
+	overflow: hidden;
+	/*border:#333 1px solid;*/
+	top: 16%;
+	left : 28%;
+}
+
+#svg-container-poids1{
+	display: inline-block;
+	position : absolute;
+	width : 15%;
+	height: 50%;
+	vertical-align : middle;
+	overflow: hidden;
+	/*border:#333 1px solid;*/
+	top: 16%;
+	left : 59%;
 }
 
 #valeurPoids1{

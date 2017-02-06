@@ -154,10 +154,27 @@ function resetConclusion(){
 }
 
 function joCE(){
-	$('#page-remerciements').find('img').attr('src','img/photos/john.png');
+	$('.photo-name').attr('bottom','25%');
 	$.fn.fullpage.moveTo(7, 0);
 	$('#jc-song').get(0).play();
-	$('#remerciementsText').text("Bravo ! Vous avez trouvé John !");
+	$('#remerciementsText').text("Dieu bénisse John Cena");
 	$('#remerciementsText').css("color","red");
 	$('#remerciementsText').css("font-size","6vmin");
+	$('#partenaires').css("opacity","0");
+	$('#outro-fond').attr('src','img/photos/john.png');
+	$('#outro-fond').css("width","31vh");
+	$('#outro-fond').css("height","31vh");
+	$('#outro-fond').css("top","22%");
+	$('#outro-fond').css("left","40.5%");
+	$('#outro-fond').css("border","1px solid #333");
+	$('#outro-fond').css("border-radius","50%");
+	$('#thibault').attr("src","img/jc/jc-1.gif");
+	$('#chris').attr("src","img/jc/jc-2.gif");
+	$('#vincent').attr("src","img/jc/jc-3.gif");
+	$('#florent').attr("src","img/jc/jc-4.gif");
+	$('#felix').attr("src","img/jc/jc-5.gif");
+	$('#jeremy').attr("src","img/jc/jc-6.gif");
+	$('#thomas').attr("src","img/jc/jc-7.gif");
+	$('#jordan').attr("src","img/jc/jc-8.gif");
+	$('#arthur').attr("src","img/jc/jc-9.gif");
 }

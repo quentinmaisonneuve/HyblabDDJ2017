@@ -251,8 +251,13 @@ function initDataviz3(){
     var p2 = getSerDemo("democratique"); 
     var p1 = getSerDemo("service"); 
 
-    $("#valeurPoids2").html(Math.round((p2*100)/(p2 + p1))+"%");
-    $("#valeurPoids1").html(Math.round((p1*100)/(p2 + p1))+"%");
+    var value2 = Math.round((p2*100)/(p2 + p1)); 
+    var value1 = Math.round((p1*100)/(p2 + p1)); 
+
+    $("#valeurPoids2").html(value2+"%");
+    $("#valeurPoids1").html(value1+"%");
+    $("#svg-container-poids2").css("width",value2 * 15 / 100 + "%"); 
+    $("#svg-container-poids1").css("width",value1 * 15 / 100 + "%"); 
 
 }
 
@@ -260,13 +265,13 @@ function changeType(elem, type){
     if($(elem).attr("src") == "./img/bouton2.svg"){
         $(elem).attr("src","./img/bouton.svg");
         if($(elem).attr("id") == 'button1'){
-            $("#poids1").attr("src", "./img/poids_clair.svg"); 
+            $("#poids1").attr("data", "./img/poids_clair.svg"); 
             $("#listeRegion1").css("background-color", "#002CE6");
             $("#listeRegion1").css("border-color", "#002CE6");
             typep1 = "service";
         }
         else {
-            $("#poids2").attr("src", "./img/poids_clair.svg"); 
+            $("#poids2").attr("data", "./img/poids_clair.svg"); 
             $("#listeRegion2").css("background-color", "#002CE6"); 
             $("#listeRegion2").css("border-color", "#002CE6");
             typep2 = "service";
@@ -275,13 +280,13 @@ function changeType(elem, type){
     else{
         $(elem).attr("src","./img/bouton2.svg");
           if($(elem).attr("id") == 'button1'){
-            $("#poids1").attr("src", "./img/poids.svg"); 
+            $("#poids1").attr("data", "./img/poids.svg"); 
             $("#listeRegion1").css("background-color", "#000040"); 
             $("#listeRegion1").css("border-color", "#000040");
             typep1 = "democratique";
         }
         else {
-            $("#poids2").attr("src", "./img/poids.svg"); 
+            $("#poids2").attr("data", "./img/poids.svg"); 
             $("#listeRegion2").css("background-color", "#000040"); 
             $("#listeRegion2").css("border-color", "#000040");
             typep2 = "democratique";
@@ -308,6 +313,11 @@ function calculPart(){
     p2 = getSerDemo(typep2, regionp2); 
     p1 = getSerDemo(typep1, regionp1); 
 
-    $("#valeurPoids2").html(Math.round((p2*100)/(p2 + p1))+"%");
-    $("#valeurPoids1").html(Math.round((p1*100)/(p2 + p1))+"%");
+    var value2 = Math.round((p2*100)/(p2 + p1)); 
+    var value1 = Math.round((p1*100)/(p2 + p1)); 
+
+    $("#valeurPoids2").html(value2+"%");
+    $("#valeurPoids1").html(value1+"%");
+    $("#svg-container-poids2").css("width",value2 * 15 / 100 + "%"); 
+    $("#svg-container-poids1").css("width",value1 * 15 / 100 + "%"); 
 }
