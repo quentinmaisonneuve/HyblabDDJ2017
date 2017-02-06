@@ -12,7 +12,7 @@ Patricipants :
     - Pronier Arthur
     - Teyssandier Grégoire
 - Polytech :
-    - Zhang Xiquing
+    - Zhang Xiqing
     - Charretteur Romain
     - Lorillard Alban
     - Barraud Raphaël
