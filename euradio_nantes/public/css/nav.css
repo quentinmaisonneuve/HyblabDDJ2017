@@ -94,7 +94,7 @@
   transition: transform 0.4s, background-color 0.2s;
 }
 .cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
-  background-color: #7b9d6f;
+  background-color: #D6E39C;
 }
 .cd-vertical-nav .label {
   display: block;
