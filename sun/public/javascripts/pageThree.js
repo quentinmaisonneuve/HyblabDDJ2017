@@ -108,6 +108,7 @@ function initBubble(node)
             .attr("class", "bubbleC")
            /* .style("fill", function(d) { return color(d.value); })*/
             .on("mouseover", function(d) {
+                var myBubble = d3.select(this);
                 d3.select(this).classed("hover", true);
                 div.transition()
                     .duration(200)
@@ -115,13 +116,13 @@ function initBubble(node)
                 div	.html(getTooltip(d.id))
                     .style("background-color", function()
                     {
-                        if (d.id == nodes[0].id)
+                        if (myBubble.attr("id") == "bubbleR")
                             return "#BB5A53";
-                        else if (d.id == nodes[1].id)
+                        else if (myBubble.attr("id") == "bubbleV")
                             return "#507260";
-                        else if (d.id == nodes[2].id)
+                        else if (myBubble.attr("id") == "bubbleB")
                             return "#054365";
-                        else if (d.id == nodes[3].id)
+                        else if (myBubble.attr("id") == "bubbleBG")
                             return "#90A5BB";
                         else
                             return "#90A5BB";
@@ -238,7 +239,7 @@ function changeBubble(node)
         // MAKE THE CHANGE
         svg.selectAll(".bubbleC")   // change the bubble
             .duration(750)
-            .attr("width", function(d){console.log("pour :"+d.id+" d.value/total="+d.value+"/"+total+"*800="+d.value/total * 800); return d.value/total * 800 ; })
+            .attr("width", function(d){return d.value/total * 800 ; })
             .attr("height", function(d){ return d.value/total * 800 ; })
             .attr("class", "bubbleC")
             .style("transform-origin", function(d){
