@@ -10,14 +10,14 @@ window.onload = function init (){
 		$("#H1PC").fadeOut("slow");
 		$("#H2PC").fadeOut("slow");
 		$("#H3PC").fadeOut("slow");
-	
+		/*
 		$(".BateauG1").fadeOut("slow");
 		$(".BateauP1").fadeOut("slow");
 		$(".BateauM1").fadeOut("slow");
 		$(".BateauM2").fadeOut("slow");
 		$(".BateauP2").fadeOut("slow");
 		$(".BateauG2").fadeOut("slow");
-		
+		*/
 		
 		$(".Homard1").fadeIn("slow");
 		$(".Homard2").fadeOut("slow");
@@ -33,12 +33,12 @@ window.onload = function init (){
 		$(".Sole2").fadeOut("slow");
 		$(".Sole3").fadeOut("slow");
 		$(".Sole4").fadeIn("slow");
-
+/*
 		$(".Touriste1").fadeOut("slow");
 		$(".Touriste2").fadeOut("slow");
 		$(".Touriste3").fadeOut("slow");
 		$(".Touriste4").fadeOut("slow");
-
+*/
 		$(".Agriculteur").fadeOut("slow");
 		$(".PORC").fadeOut("slow");
 		//caca
