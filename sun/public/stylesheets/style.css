@@ -497,6 +497,13 @@ input:checked + .slider:before {
 }
 
 /* ################### pageThree ################### */
+#entetePageTrois{
+	color: #004266;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 1%;
+}
 
 #pageThree {
 	min-height: 100%;
