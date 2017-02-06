@@ -10,6 +10,10 @@ $(document).ready(function(){
    			$('video').get(0).play();
    		});
 
+   		$('#le-bon-link').click(function(){
+   			joCE();
+   		});
+
 });
 
 function animerIntro(){
@@ -147,4 +151,13 @@ function resetConclusion(){
 	$('#panneau-conclusion-ombre').transition({opacity:0});
 	$('#titre-conclusion').transition({opacity:0});
 	$('#texte-conclusion').transition({opacity:0});
+}
+
+function joCE(){
+	$('#page-remerciements').find('img').attr('src','img/photos/john.png');
+	$.fn.fullpage.moveTo(7, 0);
+	$('#jc-song').get(0).play();
+	$('#remerciementsText').text("Bravo ! Vous avez trouvé John !");
+	$('#remerciementsText').css("color","red");
+	$('#remerciementsText').css("font-size","6vmin");
 }

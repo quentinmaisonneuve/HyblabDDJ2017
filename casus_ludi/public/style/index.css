@@ -51,6 +51,22 @@ html, body{
 	padding-top:0.8%;
 }
 
+#le-bon-link{
+	z-index:50;
+	font-size: 2vmin;
+	position: absolute;
+	bottom: 32.7%;
+	right: 23.85%;
+	cursor: pointer;
+	opacity: 0;
+}
+
+@media only screen and (max-width: 750px){
+	#le-bon-link{
+		font-size:1vmin;
+	}
+}
+
 @media only screen and (max-width: 880px){
 	#sous-titre{
 		font-size: 1.8vmin;
