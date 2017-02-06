@@ -226,8 +226,8 @@ d3.json('data/map/edgt30.geo.json', function(error, mapData) {
 });
 
 // Get province name
-function nameFn(d){
-  return d && d.properties ? d.properties.name : null;
+function nameFn(d) {
+  return d && d.properties && index.loaded ? index.d30[d.properties.d30] : null;
 }
 
 // Get province name length
@@ -303,7 +303,7 @@ function unclicked1(d) {
   colorMap();
 }
 
-function mouseover(d){  
+function mouseover(d){
   // Highlight hovered province
   d3.select(this).style('fill', 'orange');
 
@@ -321,7 +321,6 @@ function mouseout(d){
 }
 
 function updateZoneText(d) {
-
   var text = nameFn(d);
   actualZone = text;
   actualId = d.d30;
@@ -395,6 +394,3 @@ function colorMap() {
     zone1.element.style('fill', zone1.color);
   }
 }
-
-
-
