@@ -26,8 +26,8 @@
         <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
 
         <!-- jQuery : librairie nécessaire pour fullPage.js -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery-ui.min.js"></script>
 
         <!-- FitText : Responsive text -->
         <script src="js/jquery.fittext.js" defer></script>
@@ -38,7 +38,10 @@
 
         <!-- fullPage.js -->
         <!-- d3js : librairie nécessaire pour animateUsingD3.js -->
-        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="lib/d3.v3.min.js"></script>
+
+        <!-- ajout de la carte -->
+        <script type="text/javascript" src="js/carte.js" defer></script> 
 
         <!-- ajout des animations sur la fullPage -->
 
@@ -75,7 +78,7 @@
             
             <div class="section" id="section0">
                 <div class="content">
-                  <img class="background" id="home" src="img/HOME-BASE-FINAL.svg">
+                  <img class="background" id="home" src="img/HOME-BASE-FINAL.svg"/>
                   <div id="textIntro">
                     <p class="bebas" id="text">
                       Voiture, bus, vélo, chaque jour vous effectuez plus de 5 millions de déplacements. Découvrez qui sont ces anonymes, parfois stressés, souvent pressées, malpolis ou bienveillants, que l’on croise chaque matin et chaque soir, sans même s’en rendre compte.
@@ -87,8 +90,7 @@
             
             <div class="section" id="section1">
                 <div class="intro">
-                    <h1>Scroll Down</h1>
-                    <p>And it will animate down to the first section</p>
+                    <svg id="carte"><svg>   
                 </div>
                 <img class="footer" id="houses1" src="img/Visuel-Footer.svg">
             </div>
