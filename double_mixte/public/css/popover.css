@@ -81,14 +81,14 @@
     top: 4vh;
     width: 29vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
 }
 
 .textenum {
-	font-size: 15pt !important;
+	font-size: 1.3vw !important;
 	font-weight: bold;
 }
 
@@ -165,7 +165,7 @@
     top: 4vh;
     width: 50vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
@@ -178,7 +178,7 @@
     top: 5vh;
     width: 50vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
@@ -191,7 +191,7 @@
     top: 4vh;
     width: 43vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
@@ -204,9 +204,9 @@
     top: 4vh;
     width: 44vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
-    color: #001526;http://127.0.0.1:8080/double_mixte/#carousel-example-generic
+    color: #001526;
     font-weight: 600;
 }
 
@@ -217,7 +217,7 @@
     top: 4vh;
     width: 43vw;
     height: 10vh;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
@@ -298,24 +298,3 @@ position: absolute;
     vertical-align: middle;
 }
 
-html {
-  font-size: 14px;
-}
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
-}
