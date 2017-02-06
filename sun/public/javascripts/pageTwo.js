@@ -4,12 +4,21 @@ function getHeure()
 }
 
 $(document).ready(function() {
-      $('#timeline_value').html((" " + ($('#timeline').val()*2) + "h " + " - " + ($('#timeline').val()*2+2) + "h "));
+      $('#timeline_value1').html((" " + ($('#timeline1').val()*2) + "h " + " - " + ($('#timeline1').val()*2+2) + "h "));
+      $('#timeline_value2').html((" " + ($('#timeline2').val()*2) + "h " + " - " + ($('#timeline2').val()*2+2) + "h "));
     });
 
-$(document).on('input change', '#timeline', function() {
-      $('#timeline_value').html((" " + ($('#timeline').val()*2) + "h " + " - " + ($('#timeline').val()*2+2) + "h "));
-    });
+$(document).on('input change', '#timeline1', function() {
+      $('#timeline2').val($('#timeline1').val());
+      $('#timeline_value1').html((" " + ($('#timeline1').val()*2) + "h " + " - " + ($('#timeline1').val()*2+2) + "h "));
+      $('#timeline_value2').html((" " + ($('#timeline1').val()*2) + "h " + " - " + ($('#timeline1').val()*2+2) + "h "));
+});
+
+$(document).on('input change', '#timeline2', function() {
+      $('#timeline1').val($('#timeline2').val());
+      $('#timeline_value1').html((" " + ($('#timeline2').val()*2) + "h " + " - " + ($('#timeline2').val()*2+2) + "h "));
+      $('#timeline_value2').html((" " + ($('#timeline2').val()*2) + "h " + " - " + ($('#timeline2').val()*2+2) + "h "));
+});
 
 function toggleOne(el){
     if(el.className!="pause")
