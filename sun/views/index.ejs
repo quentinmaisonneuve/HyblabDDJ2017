@@ -35,19 +35,19 @@
             <form>
               <div class="cc-selector">
                 <div class="col span_3_of_12">   
-                  <input id="printemps" type="radio" name="credit-card" value="printemps" />
+                  <input id="printemps" type="radio" name="credit-card" value="printemps" id="printemps"/>
                   <label class="drinkcard-cc printemps" for="printemps"></label>
                 </div>
                 <div class="col span_3_of_12">   
-                  <input id="ete" type="radio" name="credit-card" value="ete"/>
+                  <input id="ete" type="radio" name="credit-card" value="ete" id="ete"/>
                   <label class="drinkcard-cc ete" for="ete"></label>
                 </div>
                 <div class="col span_3_of_12"> 
-                  <input id="automne" type="radio" name="credit-card" value="automne"/>
+                  <input id="automne" type="radio" name="credit-card" value="automne" id="automne"/>
                   <label class="drinkcard-cc automne" for="automne"></label>
                 </div>
                 <div class="col span_3_of_12">
-                  <input id="hiver" type="radio" name="credit-card" value="hiver"/>
+                  <input id="hiver" type="radio" name="credit-card" value="hiver" id="hiver"/>
                   <label class="drinkcard-cc hiver" for="hiver"></label>
                 </div>
               </div> 
@@ -56,7 +56,7 @@
         </div>
         <div class="blocTwoTwo">
           <p class="inlineBlocSE">SEMAINE</p>
-              <input type="image" src="/images/bouton_semaine_weekend_page2.png" class="play" onclick="toggleOne(this); changeBubble(getRoad());"/>
+              <input type="image" src="/images/bouton_semaine_weekend_page2.png" id="semaineOuPas" class="play" onclick="toggleOne(this); changeBubble(getRoad());"/>
           <p class="inlineBlocWE">WEEK-END</p>
         </div>
         <div class="blocTwoThree">
@@ -69,7 +69,7 @@
 
       <div id="pageThree" class="section">
         <div id="entetePageTrois">
-          <p>Selon les indications temporelles que vous avez indiquez, voici ce que les auditeurs de Sun demande le plus via MySun</p>
+          <p>Vous êtes plutôt du genre...</p>
         </div>
         <div id="bubleChart">
           <audio id="Alternative">
