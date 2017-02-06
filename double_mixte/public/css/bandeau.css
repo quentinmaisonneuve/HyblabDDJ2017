@@ -54,3 +54,15 @@
     {
       height: 42px;
     }
+	
+	#texteremerciements{
+		position:relative;
+		width:80%;
+		top:10vh;
+		margin:auto;
+		text-align:center;
+		font-size: 16pt;
+		font-weight:600;
+		font-family: Josefin Sans;
+		color: #001526;
+	}
