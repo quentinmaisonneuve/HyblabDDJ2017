@@ -1,3 +1,11 @@
+function getDepart() {
+  return zone0.id;
+}
+
+function getArrivee() {
+  return zone1.id;
+}
+
 var mapWidth = 960.0,
     mapHeight = 500.0,
     centered;
@@ -95,12 +103,14 @@ var mapLayer = g.append('g')
   .classed('map-layer', true);
 
 var actualZone = "";
+var actualId = "";
 var zoneBackgroundSize = [80, 40];
 var iconCrossSize = [8, 8];
 var zoneState = 0;
 
 var zone0 = {
   text: "",
+  id : "",
   element: null,
   location: [100, 200],
   color: 'green',
@@ -117,6 +127,7 @@ zone0.textElement = g.append('text')
 
 var zone1 = {
   text: "",
+  id: "",
   element: null,
   location: [100, 230],
   color: 'red',
@@ -241,6 +252,7 @@ function clicked(d) {
   switch (zoneState) {
     case 0:
       zone0.text = actualZone;
+      zone0.id = actualId;
       zoneState++;
       cross0Image.classed('cross', true).classed('hiddenCross', false);
       cross0Image.on('click', unclicked0);
@@ -256,6 +268,7 @@ function clicked(d) {
       break;
     case 1:
       zone1.text = actualZone;
+      zone1.id = actualId;
       zoneState++;
 
       // Highlight clicked province
@@ -270,6 +283,7 @@ function clicked(d) {
 
 function unclicked0(d) {
   zone0.text = "";
+  zone0.id = "";
   zoneState = 0;
   zone0.element = null;
   zone0.textElement.text("");
@@ -280,6 +294,7 @@ function unclicked0(d) {
 
 function unclicked1(d) {
   zone1.text = "";
+  zone1.id = "";
   zoneState = (zoneState < 1) ? zoneState : 1;
   zone1.textElement.text("");
   zone1.element = null;
@@ -293,7 +308,7 @@ function mouseover(d){
   d3.select(this).style('fill', 'orange');
 
   // Draw effects
-  updateZoneText(nameFn(d));
+  updateZoneText(d);
 }
 
 function mouseout(d){
@@ -305,9 +320,12 @@ function mouseout(d){
   colorMap();
 }
 
-function updateZoneText(text) {
+function updateZoneText(d) {
 
+  var text = nameFn(d);
   actualZone = text;
+  actualId = d.d30;
+
   var myText, loc;
   switch (zoneState) {
     case 0:
