@@ -509,7 +509,7 @@ input:checked + .slider:before {
 	min-height: 100%;
 	background-image: url("/images/fond.png");
 	background-size: 100% 100%;
-  	background-color: white;
+  	background-color: #FECB2E;
   	z-index: 5;
 }
 
@@ -859,6 +859,102 @@ div.tooltip p
 	text-align: justify;
 }
 
+
+/* ########################## page 5 #################*/
+#pageFive {
+	background-color: #FFCC00;
+	min-height: 100%;
+	text-align: center;
+	position: relative;
+}
+
+#pageFive h1 {
+	color: #014165;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 3%;
+	margin-top: -10%;
+}
+
+#firstLine {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#firstLine #alban, #raph, #rom, #axel, #pingPong {
+	width: 19%;
+	display: inline-block;
+}
+
+#firstLine #alban img, #raph img, #rom img, #axel img, #pingPong img {
+	width: 50%;
+}
+
+#secondLine #Arthur, #Greg, #Clelia, #Jeanne, #Cheezy, #Elise {
+	width: 15%;
+	display: inline-block;
+}
+
+#secondLine #Arthur img, #Greg img, #Clelia img, #Cheezy img, #Elise img, #Jeanne img {
+	width: 50%;
+}
+
+.profilNom {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 2%;
+	color: #0C4153;
+}
+
+.profilCursus {
+	margin-top: 2%;
+	color: #0C4153;
+}
+
+#secondLine {
+	margin-top: 2%;
+}
+
+#sponsor {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 20%;
+}
+
+.logoSpons {
+	margin-top: 2%;
+	width: 8%;
+	display: inline-block;
+}
+
+.hyblab img {
+	width: 80%;
+}
+
+.stereolux img {
+	width: 80%;
+}
+
+.agr img {
+	width: 50%;
+}
+
+.popo {
+	margin-left: 2%;
+}
+
+.univ {
+	margin-left: 2%;
+}
+
+.hyblab {
+	margin-left: 2%;
+}
+.stereolux {
+	margin-left: 2%;
+}
 
 /* ######################~~########################*/
 /* ########### Responsive ########################*/
