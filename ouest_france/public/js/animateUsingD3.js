@@ -179,12 +179,12 @@ if (debugMode == 1) {
     d3.select("#fullpage").on("mousemove", moveCar)
         .on('mousedown', clicked);
 } else if (debugMode == 2) {
-    d3.select("#scenario1")
-        .on("click", function() { console.log("start"); startScene1(); });
-    d3.select("#scenario2")
-        .on("click", function() { startScene2(); });
-    d3.select("#scenario3")
-        .on("click", function() { startScene3(); });
+    d3.select("#scenario1")[0][0]
+      .addEventListener("click", function() { console.log("start"); startScene1(); }, false);
+    d3.select("#scenario2")[0][0]
+      .addEventListener("click", function() { startScene2(); }, false);
+    d3.select("#scenario3")[0][0]
+      .addEventListener("click", function() { startScene3(); }, false);
 
 }
 
