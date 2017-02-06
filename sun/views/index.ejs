@@ -35,19 +35,19 @@
             <form>
               <div class="cc-selector">
                 <div class="col span_3_of_12"> 
-                  <input id="automne" type="radio" name="credit-card" value="automne"  />
+                  <input id="automne" type="radio" name="credit-card" value="automne" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())"/>
                   <label class="drinkcard-cc automne"for="automne"></label>
                 </div>
                 <div class="col span_3_of_12">
-                  <input id="hiver" type="radio" name="credit-card" value="hiver" />
+                  <input id="hiver" type="radio" name="credit-card" value="hiver" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())" />
                   <label class="drinkcard-cc hiver"for="hiver"></label>
                 </div>
                 <div class="col span_3_of_12">   
-                  <input id="printemps" type="radio" name="credit-card" value="printemps" />
+                  <input id="printemps" type="radio" name="credit-card" value="printemps" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())" />
                   <label class="drinkcard-cc printemps" for="printemps"></label>
                 </div>
                 <div class="col span_3_of_12">   
-                  <input id="ete" type="radio" name="credit-card" value="ete" />
+                  <input id="ete" type="radio" name="credit-card" value="ete" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())" />
                   <label class="drinkcard-cc ete"for="ete"></label>
                 </div>
               </div>
@@ -60,7 +60,7 @@
           <p class="inlineBlocWE">WEEK-END</p>
         </div>
         <div class="blocTwoThree">
-          <input id="timeline1" type="range" value="6" max="11" min="0" step="1"/>
+          <input id="timeline1" type="range" value="6" max="11" min="0" step="1" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())"/>
           <span id="timeline_value1"></span>
         </div>
        
@@ -117,7 +117,7 @@
           </div>
         </div>
         <div id="BubleBottom">
-          <input id="timeline2" type="range" value="6" max="11" min="0" step="1" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())"npm/>
+          <input id="timeline2" type="range" value="6" max="11" min="0" step="1" onClick="changeBubble(getRoad())" onChange="changeBubble(getRoad())"/>
           <span id="timeline_value2"></span>
         </div>
       </div>
