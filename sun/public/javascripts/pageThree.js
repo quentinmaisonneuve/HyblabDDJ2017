@@ -394,11 +394,11 @@ function getRoad()
     var mood;
     if(document.getElementById("moodVsGenre").className == "play") {
         // GENRE
-        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+        return "./creneau/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value*2+"/"+(parseInt(document.getElementById("timeline2").value,10)*2+2);
     }
     else{
         // MOOD
-        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value+"/"+(parseInt(document.getElementById("timeline2").value,10)+2);
+        return "./creneauMood/" + season + "/" + weekEnd + "/"+document.getElementById("timeline2").value*2+"/"+(parseInt(document.getElementById("timeline2").value,10)*2+2);
     }
 }
 
