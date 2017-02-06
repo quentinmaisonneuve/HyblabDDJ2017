@@ -1,12 +1,12 @@
-var width = 960.0,
-    height = 500.0,
+var mapWidth = 960.0,
+    mapHeight = 500.0,
     centered;
 
 var debug_add_city = false;
 
-var myCenter = [-74.0, 1.5];
-var translation = [width / 2.0, height / 2.0];
-var scale = 1000.0;
+var myCenter = [-74.0, 2.5];
+var translation = [mapWidth / 2.0, mapHeight / 2.0];
+var scale = 2000.0;
 
 var BASE_FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 
@@ -78,14 +78,15 @@ var path = d3.geo.path()
 
 // Set svg width & height
 var svg = d3.select('#carte')
-  .attr('width', width)
-  .attr('height', height);
+  .attr('width', mapWidth)
+  .attr('height', mapHeight);
 
 // Add background
 svg.append('rect')
   .attr('class', 'background')
-  .attr('width', width)
-  .attr('height', height)
+  .attr('width', mapWidth)
+  .attr('height', mapHeight)
+  .attr('opacity', 0)
   .on('click', clicked);
 
 var g = svg.append('g');
@@ -339,8 +340,8 @@ function myTextArt(data) {
   var fontIndex = 0;
   var fontFamily = FONTS[fontIndex] + ', ' + BASE_FONT;
 
-  x = width / 2;
-  y = height - 20;
+  x = mapWidth / 2;
+  y = mapHeight - 20;
 
   var text = nameFn(data);
 
