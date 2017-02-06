@@ -31,18 +31,29 @@ modeDeTransport = document.getElementById("car").src; // chemin vers l'image (pa
 // s = s.split('/'); modeDeTransport = s[s.length - 1].split('.')[0]; // string parmi ["Voiture", "Bus-Transport-en-commun", "Velo", "Pieton"]
 
 // Dataviz#1
-// pourcentage = nb de personnes sur le même trajet
-// pourcentage_arrondi = (pourcentage)
-// pourcentage_img = "img/" + pourcentage_arrondi + ".svg"
-dataviz_1_img.src=pourcentage_img
-
-//
+pourcentage=80; // pourcentage = nb de personnes utilisant ce même trajet
+pourcentage_arrondi = 80; //=round(pourcentage);
+pourcentage_img = "img/p" + pourcentage_arrondi + ".svg"
+document.getElementById("people").src=pourcentage_img;//dataviz_1_img.src=pourcentage_img;
+document.getElementById("number").firstChild.nodeValue=pourcentage_arrondi;//dataviz_1_value=pourcentage_arrondi;
 
 //Dataviz#2
-//pourcentages pour chaque moyen de transport : pourcentage d'utilisation
-// => ça part dans le D3JS de Jinbo
+//pourcentages d'utilisation de ce trajet (depart/arrivee) pour chaque moyen de transport (cf. la var modeDeTransport, attention c'est un pathName!)
+// il me faudrait une var au format suivant :
+/*
+varBarChartByModeDeTransport =
+[{year: 2006, books: 54},
+{year: 2007, books: 43},
+{year: 2008, books: 41},
+{year: 2009, books: 44}];
+*/
+varBarChartByModeDeTransport = undefined;
+
+// draw BarChart in dedicated slot in #scenario2
 
 // Dataviz#3
-// pourcentage 
+// même format que datavi#2 mais avec les pourcentages d'utilisation de ce trajet pour chaque motif
+varBarChartByMotif = undefined;
 
+// draw BarChart in dedicated slot in #scenario3
 

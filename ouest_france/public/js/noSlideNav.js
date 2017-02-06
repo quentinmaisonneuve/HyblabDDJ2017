@@ -17,5 +17,3 @@ function updateSlideNav() {
         document.getElementById("fp-nav").setAttribute("style", "");
     }
 }
-
-addEventListener("leave", updateSlideNav, false);
