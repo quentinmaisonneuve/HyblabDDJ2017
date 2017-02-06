@@ -49,7 +49,6 @@
 	<link rel="stylesheet" href="css/2014-presse.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
 	<link rel="stylesheet" href="css/2011.css">
-	<link href="css/2015-presse.css" rel="stylesheet" type="text/css">
 	<link href="css/2016-presse.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/social.css">
 	<link rel="stylesheet" href="css/tooltip_nuitees.css">
@@ -65,7 +64,6 @@
   	<script src="js/2013-chart.js"></script>
 
   	<script src="js/2015-chart.js"></script>
-	<script src="js/2015-presse.js" type="text/javascript"></script>
 	<script src="js/2016-presse.js" type="text/javascript"></script>
   	<script src="js/changecolorsvg.js"></script>
   	<script src="js/tooltip-nuitees.js"></script>
@@ -355,7 +353,11 @@
 				En 2015, le VAN accroît encore sa notoriété. Grâce aux articles de la presse et des réseaux sociaux, nombreux sont ceux qui viennent découvrir le parcours du VAN.
 			</div>
 			
-			<div id="presse2015" class="presse animated fadeIn"></div>
+			<div id="presse2015" class="presse animated fadeIn">
+				<p id="textepresse2015">
+				&laquo; Les rues de la ville sont désormais ponctuées d’œuvres qui, après avoir été montées le temps d’un été, ont trouvé un point d’ancrage durable. &raquo;
+				</p>
+			</div>
 <div id="vmap" style="width: 64vw; height: 80vh;position: relative; float:right; margin-top: 5vh; overflow: hidden; " data-animation="animated fadeIn" ></div>
         	<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -626,14 +628,14 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
       	hidePopover2013();
       	hidePresse2013();
-		hidePresse2015();
+		//hidePresse2015();
       	hideAnimation2015();
       	break;
 
     // 2015
     case 6 :
     	showAnimation2015();
-		showPresse2015();
+		//showPresse2015();
 
     	// animate
     	animateDigits(2015);
@@ -672,7 +674,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
       	animateTwitterReinit(2015);
 		animateInstagramReinit(2015);
 
-		hidePresse2015();
+		//hidePresse2015();
 		hideAnimation2015();
     	break;
 

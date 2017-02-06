@@ -54,6 +54,26 @@
     padding-right: 1.5vw;
 }
 
+#presse2015 {
+	display: none;
+    left: 9vw;
+    top: 20vh;
+    width: 22vw;
+    height: 10vh;
+}
+
+#textepresse2015 {
+	padding: 1em;
+    background-image: url(../img/presse2013_vide.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: right;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+}
+
 #textehistoire2013 {
 	position: absolute;
     display: block;

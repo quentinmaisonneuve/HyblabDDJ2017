@@ -38,10 +38,12 @@ function hideAnimation2014() {
 
 function showAnimation2015() {
 	setTimeout(function(){ $("#funfact2015").css("display", "block"); }, 1000);
+	setTimeout(function(){ $("#presse2015").css("display", "block"); }, 1000);
 }
 
 function hideAnimation2015() {
 	$("#funfact2015").css("display", "none");
+	$("#presse2015").css("display", "none");
 }
 
 function showAnimation2016() {
