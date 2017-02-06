@@ -1779,6 +1779,12 @@ html.fp-enabled,
 	border-radius: 1vw;
 }
 
+#text_graphe_habitat{
+	position: absolute;
+	left : 5vw;
+	top : 13vw;
+}
+
 .chart_habitat{
 	position: absolute;
 }
