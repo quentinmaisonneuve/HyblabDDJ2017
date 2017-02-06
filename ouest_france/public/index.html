@@ -24,7 +24,7 @@
 
         <!-- ajout des event listener "click" sur le choix du mode de transport -->
         <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
-        
+
         <!-- jQuery : librairie nécessaire pour fullPage.js -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -124,7 +124,52 @@
             <div class="section" id="scenario2">
                 <div class="intro" id="container2">
                     <img class="base" id="base2" src="img/map-base-02.svg">
-                    <img class="info" id="encadre2" src="img/Volet-Infos.svg">
+                    <div id="encadre2">
+                      <img id="info2" src="img/Volet-Infos.svg">
+                      <p id="intro2">COMME VOUS ILS FONT CE TRAJET...</p>
+                      <p id="txtvoiture">EN VOITURE</p>
+                      <p id="pourcentVoiture"><span>N</span>%</p>
+                      <p id="txtCommun">EN TRANSPORT EN COMMUN</p>
+                      <p id="pourcentCommun"><span>N</span>%</p>
+                      <p id="txtVelo">À VELO</p>
+                      <p id="pourcentVelo"><span>N</span>%</p>
+                      <p id="txtPied">À PIED</p>
+                      <p id="pourcentPied"><span>N</span>%</p>
+                      <img id="sol2" src="img/route2.svg">
+                      <img id="transport" src="img/Voiture-Gauche.svg">
+                      <div id="bar-demo">
+                      </div>
+                      <script type="text/javascript">
+                        var data = [{year: 2006, books: 54},
+                          {year: 2007, books: 43},
+                          {year: 2008, books: 41},
+                          {year: 2009, books: 44}];
+
+                        var barWidth = 40;
+                        var width = (barWidth + 10) * data.length;
+                        var height = 200;
+
+                        var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
+                        var y = d3.scale.linear().domain([0, d3.max(data, function(datum) { return datum.books; })]).
+                          rangeRound([0, height]);
+
+                        // add the canvas to the DOM
+                        var barDemo = d3.select("#bar-demo").
+                          append("svg:svg").
+                          attr("width", width).
+                          attr("height", height);
+
+                        barDemo.selectAll("rect").
+                          data(data).
+                          enter().
+                          append("svg:rect").
+                          attr("x", function(datum, index) { return x(index); }).
+                          attr("y", function(datum) { return height - y(datum.books); }).
+                          attr("height", function(datum) { return y(datum.books); }).
+                          attr("width", barWidth).
+                          attr("fill", "#d4584e");
+                      </script>
+                    </div>
                     <input type="button" class="openInfo" id="buttonEncadre2">
                     <div class="effect2"></div>
                 </div>
@@ -133,7 +178,18 @@
             <div class="section" id="scenario3">
                 <div class="intro" id="container3">
                     <img class="base" id="base3" src="img/map-base-03.svg">
-                    <img class="info" id="encadre3" src="img/Volet-Infos.svg">
+                    <div id="encadre3">
+                      <img id="info3" src="img/Volet-Infos.svg">
+                      <p id="intro3">SUR LES TRAJETS DEPUIS OU VERS LE DOMICILE</p>
+                      <p id="txtTravail">POUR LE TRAVAIL</p>
+                      <p id="pourcentTravail"><span>N</span>%</p>
+                      <p id="txtEtude">POUR LES ÉTUDES</p>
+                      <p id="pourcentEtude"><span>N</span>%</p>
+                      <p id="txtAutres">POUR LES ACTIVITÉS PERSONNELLES (LOISIRS, ACHATS, SOCIALES)</p>
+                      <p id="pourcentAutres"><span>N</span>%</p>
+                      <img id="sol3" src="img/plateforme.svg">
+                      <img id="motif" src="img/usine.svg">
+                    </div>
                     <img class="logo_of" id="drapeau" src="img/Point-info.svg">
                     <input type="button" class="openInfo" id="buttonEncadre3">
                     <div class="effect3"></div>
@@ -154,7 +210,6 @@
                 <img class="footer" id="houses" src="img/Visuel-Footer.svg">
             </div>
         </div>
-
         <!-- Notre pied de page -->
         <footer>
             <p>Copyright © Hyblab team 2017</p>
