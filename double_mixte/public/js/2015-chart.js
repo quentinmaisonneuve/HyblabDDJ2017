@@ -1,12 +1,12 @@
 var activeNations = new Array('it', 'de', 'gb', 'be', 'es', 'fr', 'ch');
     var highlighted_countries = {
-      fr: '#001526',
-      gb: '#2cda9b',
-      de: '#dd0707',
-      be: '#8cc63f',
-      es: '#1e8c62',
-      it: '#f43f00',
-      ch: '#e58c4a',
+      fr: '#f43f00',
+      gb: '#041e37',
+      de: '#2a4d6e',
+      be: '#81aeda',
+      es: '#133353',
+      it: '#51799f',
+      ch: '#728CA6',
   }
 $.get("data/2015-data.json",function(data){
 
@@ -18,13 +18,15 @@ $.get("data/2015-data.json",function(data){
             codePays.push(json_data[i].codePays);
             nomPays.push(json_data[i].nomPays);
             nombreVisiteurs.push(json_data[i].nombreVisiteurs);
+
         }
+
         jQuery('#vmap').vectorMap({
 
           map: 'europe_en',
           enableZoom: false,
           showTooltip: true,
-          hoverColor : "#aedbdf",
+          hoverColor : "#e58c4a",
           backgroundColor: null,
           color : "white",
           scaleColors: ['#b6d6ff', '#005ace'],
@@ -32,14 +34,13 @@ $.get("data/2015-data.json",function(data){
             if (activeNations.indexOf(code) === -1) {
                 event.preventDefault();
             }
+            if(code=="fr"){
+              event.preventDefault();
+            }
+
           },
-          onRegionClick: function (element, code, region) {
-              if (activeNations.indexOf(code) > -1) {
-                  // dom interaction outside the map
-                  // ...
-              } else {
-                  element.preventDefault();
-              }
+ onRegionClick: function(event, code, region){
+            event.preventDefault();
           },
           colors: highlighted_countries, 
           onLabelShow: function (event, label, code)
@@ -48,6 +49,9 @@ $.get("data/2015-data.json",function(data){
               if(code != "fr"){
                 label[0].innerHTML = nomPays[codePays.indexOf(code)]+ " - " +nombreVisiteurs[codePays.indexOf(code)]+ " visiteurs";
               }        
+              if(code == 'fr'){
+                event.preventDefault();
+              }
             }
            else {
                 event.preventDefault();
