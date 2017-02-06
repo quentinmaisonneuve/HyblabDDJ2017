@@ -989,7 +989,7 @@ body{
 	display: none
 }
 
-.radioDJ3 label{
+#Macération{
 	margin-top : 1.7vw !important ;
 	margin : auto;
 
@@ -1006,20 +1006,55 @@ body{
 	border-radius: 10px;
 }
 
-#Macération{
-
-}
-
 #Ultrasons{
+	margin-top : 1.7vw !important ;
+	margin : auto;
 
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
 }
 
 #Enzymes{
+	margin-top : 1.7vw !important ;
+	margin : auto;
 
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
 }
 
 #Ultrasons_Enzymes{
-	
+		margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
 }
 
 
