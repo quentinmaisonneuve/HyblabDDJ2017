@@ -242,12 +242,12 @@ body{
 .ImageJeu2{
 	display: inline-block;
 	background-size: contain;
-	width: 11vw;
-	height: 6.2vw;
-	background-image: url(../pictures/Carte/bateau_carte.png);
+	width: 19vw;
+	height: 19vw;
+	background-image: url(../pictures/Carte/bouton-bateau-carte.png);
 	position: absolute;
-	bottom: 22%;
-	left : 3.5%;
+	bottom: 6.3%;
+	left : 2.62%;
 	font-size: 0;
 }
 
@@ -266,24 +266,24 @@ body{
 .ImageJeu3{
 	display: inline-block;
 	background-size: contain;
-	width: 6.7vw;
-	height: 7.8vw;
-	background-image: url(../pictures/Carte/algues_carte.png);
+	width: 14vw;
+	height: 14vw;
+	background-image: url(../pictures/Carte/bouton-algue-carte.png);
 	position: absolute;
-	bottom: 10%;
-	left :13.5%;
+	bottom: 4%;
+	left :14%;
 	font-size: 0;
 }
 
 .ImageJeu4{
 	display: inline-block;
 	background-size: contain;
-	width: 11.1vw;
-	height: 7.5vw;
-	background-image: url(../pictures/Carte/maison_carte.png);
+	width: 18vw;
+	height: 18vw;
+	background-image: url(../pictures/Carte/bouton-maison-carte.png);
 	position: absolute;
-	bottom: 42%;
-	left :12.5%;
+	bottom: 31%;
+	left :12%;
 	font-size: 0;
 }
 
@@ -1196,7 +1196,7 @@ body{
 	font-size: 1.5vw;
 	background-color: #b8e8f2;
 	height : 50%;
-	width: 100%;
+	width: 20%;
 	position: absolute;
 	top: 0vw;
 }
@@ -1205,7 +1205,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: -5vw;
-	left: 8.2%;
+	left: 41%;
 	font-size: 1.3vw;
 }
 .Paroles{
@@ -1219,75 +1219,75 @@ body{
 	height : 8vw;
 	position: relative;
 	top : 2vw;
-	left : 6%;
+	left : 25.5%;
 }
 
 .NousPolytech{
 	height : 8vw;
 	position: relative;
 	top : 2vw;
-	left : 7.5%;
+	left : 38%;
 }
 
 .NousScienceCom{
 	height : 8vw;
 	position: relative;
 	top : 2vw;
-	left : 9%;
+	left : 53%;
 }
 
 .AGR1{
 	position: absolute;
 	top : 10vw;
-	left : 6%;
+	left : 25.5%;
 
 }
 .AGR2{
 	position: absolute;
 	top : 13vw;
-	left : 5.7%;
+	left : 23.5%;
 
 }
 .AGR3{
 	position: absolute;
 	top : 16vw;
-	left : 5.8%;
+	left : 24%;
 
 }
 .Polytech1{
 	position: absolute;
 	top : 10vw;
-	left : 8.5%;
+	left : 44%;
 }
 .Polytech2{
 	position: absolute;
 	top : 13vw;
-	left : 8.6%;
+	left : 44.5%;
 }
 .Polytech3{
 	position: absolute;
 	top : 16vw;
-	left : 8.7%;
+	left : 45%;
 }
 .Polytech4{
 	position: absolute;
 	top : 19vw;
-	left : 8.8%;
+	left : 45.5%;
 }
 .ScienceCom1{
 	position: absolute;
 	top : 10vw;
-	left : 11.4%;
+	left : 66%;
 }
 .ScienceCom2{
 	position: absolute;
 	top : 13vw;
-	left: 11.7%;
+	left: 67%;
 }
 .ScienceCom3{
 	position: absolute;
 	top : 16vw;
-	left : 11.8%;
+	left : 67.5%;
 }
 
 #bandeau {
