@@ -1,14 +1,14 @@
 'use strict';
 
-document.getElementById('enroute').onclick = function() {
+document.getElementById('enroute').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
-}
+}, false);
 
 document.getElementById('commencer').onclick = function() {
   $.fn.fullpage.moveSectionDown();
 }
 
-document.getElementById('buttonEncadre1').onclick = function() {
+document.getElementById('buttonEncadre1').addEventListener("click", function() {
   var value = document.getElementById('encadre1').style["z-index"];
   if (value != 0) {
       value = 0;
@@ -17,9 +17,9 @@ document.getElementById('buttonEncadre1').onclick = function() {
     value = 11;
   }
   document.getElementById('encadre1').style["z-index"] = value;
-}
+}, false);
 
-document.getElementById('buttonEncadre2').onclick = function() {
+document.getElementById('buttonEncadre2').addEventListener("click", function() {
   var value2 = document.getElementById('encadre2').style["z-index"];
   if (value2 != 0) {
       value2 = 0;
@@ -28,9 +28,9 @@ document.getElementById('buttonEncadre2').onclick = function() {
     value2 = 11;
   }
   document.getElementById('encadre2').style["z-index"] = value2;
-}
+}, false);
 
-document.getElementById('buttonEncadre3').onclick = function() {
+document.getElementById('buttonEncadre3').addEventListener("click", function() {
   var value2 = document.getElementById('encadre3').style["z-index"];
   if (value2 != 0) {
       value2 = 0;
@@ -39,4 +39,4 @@ document.getElementById('buttonEncadre3').onclick = function() {
     value2 = 11;
   }
   document.getElementById('encadre3').style["z-index"] = value2;
-}
+}, false);
