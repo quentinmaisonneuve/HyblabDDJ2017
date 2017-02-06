@@ -419,6 +419,31 @@
 
       });
     }
+    $(document).ready(function() {
+        function linkLink( className, page ) {
+            var elems = document.getElementsByClassName( className );
+
+            console.log(elems)
+
+            for( i = 0 ; i < elems.length ; i++) {
+                e = elems[i]
+                link = e.getElementsByTagName('a')[0];
+                console.log(e);
+                link.setAttribute('href', '#' + String(page) );
+                link.setAttribute('data-index', String(page) );
+                link.addEventListener("click", function() { el.moveTo( page ); }, false);
+            }
+        }
+
+        linkLink('btn-conclu', '8');
+        linkLink('btn-visas', '2');
+        linkLink('btn-murs' , '3');
+        linkLink('btn-usa' , '4');
+        linkLink('btn-asie' , '5');
+        linkLink('btn-europe' , '6');
+        linkLink('btn-moyenO ' , '7');
+    })
+
     return false;
   }
 
