@@ -191,6 +191,9 @@ h3{
 	display: block;
 }
 
+.section_band{
+    
+}
 .section-content {
 	width : 90%;
 	text-align : justify;
@@ -267,7 +270,9 @@ strong {
 .page2{
 	height: 100vh;
 }
-
+.page3{
+	height: 100vh;
+}
 #section0{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
@@ -302,6 +307,12 @@ strong {
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21, #140F21);
+}
+
+#section8 {
+	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#FFFFFF));
+	background: -webkit-linear-gradient(#140F21, #FFFFFF);
+	background: linear-gradient(#140F21, #FFFFFF);
 }
 
 /*Adding background for the slides
