@@ -478,13 +478,13 @@ html {
       text-align: center;
     }
     .main section.page1 {
-      background:url(http://hl.ache.one/mur_berlin.jpg) ;
+      background:url(../img/mur_berlin.jpg) ;
       background-size:100%;
     }
     
     .main section.page8 {
       background-color: #adbad8;
-        background:url(http://hl.ache.one/Statue_of_Liberty_frontal_213.jpg) ;
+        background:url(../img/Statue_of_Liberty_frontal_213.jpg) ;
       background-size:100%;
     }
  
