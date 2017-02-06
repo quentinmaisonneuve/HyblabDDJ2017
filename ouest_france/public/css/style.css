@@ -55,6 +55,10 @@ h3{
     margin-right : auto;
 }
 
+p{
+  color: white;
+}
+
 #enroute{
   cursor: pointer;
   display: block;
@@ -635,7 +639,7 @@ h3{
 }
 
 .effect3 {
-  z-index: 12;
+  z-index: 12;  
   position: absolute;
   background-color:transparent;
   width: 10.5vh;
