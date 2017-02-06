@@ -710,3 +710,52 @@ p{
 #copyright {
     text-align: center;
 }
+
+
+.background {
+  fill:#f2f2f2;
+  pointer-events: all;
+}
+
+.map-layer {
+  fill: #fff;
+  stroke: #aaa;
+  cursor: pointer; 
+  cursor: hand; 
+}
+
+text{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+text.big-text{
+  font-size: 30px;
+  font-weight: 400;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+
+  pointer-events: none;
+}
+
+.notSelectable{
+  pointer-events: none;
+}
+
+.hiddenCross {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.cross { 
+  pointer-events: all;
+  cursor: pointer; 
+  cursor: hand;
+  opacity: 1;
+}
