@@ -42,26 +42,28 @@ var div = d3.select("#pieChart").append("div").attr("id", "toolTip");
 svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 var colorRange = d3.scale.category20();
-var color = d3.scale.ordinal()
-    .range(["#e58c4a", "#f43f00", "#8cc63f", "#2cda9b", "#1e8c62", "#ff8c00"]);
+var color = d3.scale.ordinal() .range(["#042037", "#123552", "#496C89", "#AF2D00", "#CC3400", "#FF5A21", "#FF6F3E"]);
 
 
 datasetTotal = [
-        {label:"Category 1", value:19}, 
-        {label:"Category 2", value:5}, 
-        {label:"Category 3", value:13},
-        {label:"Category 4", value:17},
-        {label:"Category 5", value:19},
-        {label:"Category 6", value:27}
+        {label:"18 - 24 ans", value:10}, 
+        {label:"25 - 34 ans", value:16}, 
+        {label:"35 - 49 ans", value:36},
+        {label:"50 - 62 ans", value:24},
+        {label:"63 - 75 ans", value:10},
+        {label:"plus de 75 ans", value:1}
         ];
 
 datasetOption1 = [
-        {label:"Category 1", value:22}, 
-        {label:"Category 2", value:33}, 
-        {label:"Category 3", value:4},
-        {label:"Category 4", value:15},
-        {label:"Category 5", value:36},
-        {label:"Category 6", value:0}
+        {label:"Category 1", value:26}, 
+        {label:"Category 2", value:15.3}, 
+        {label:"Category 3", value:21.4},
+        {label:"Category 4", value:14.2},
+        {label:"Category 5", value:8.9},
+        {label:"Category 6", value:6.4},
+        {label:"Category 7", value:4.4},
+        {label:"Category 8", value:2.1},
+        {label:"Category 9", value:0.4}
         ];
 
 change(datasetTotal);
