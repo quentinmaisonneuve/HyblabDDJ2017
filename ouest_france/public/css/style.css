@@ -9,6 +9,9 @@
   font-family: 'Bebasneue';
   src: url("../font/BEBASNEUE_BOLD.ttf");
 }
+.sectio {
+  display: none;
+}
 
 .bebas {
   font-family: 'Bebasneue';
@@ -264,6 +267,15 @@ p{
   top: 23vh;
   width: 60.7vh;
   left: 64.1vh;
+}
+
+#container1 #car {
+  z-index: 6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform-origin: 0 0; 
+  transform: matrix(-0.4, 0.0, 0.0, 0.40, 0, 0); */
 }
 
 #container1 #encadre1 #info

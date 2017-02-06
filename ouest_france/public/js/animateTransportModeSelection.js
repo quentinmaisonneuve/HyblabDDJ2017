@@ -10,7 +10,7 @@ document.getElementById('arrow_d').onclick = function () {
     if (iterator > 3) {
       iterator = 0;
     }
-    document.getElementById('car').src = listeSVG[iterator];
+    d3.selectAll('#car').attr("src", listeSVG[iterator]);
 
   };
 document.getElementById('arrow_l').onclick = function () {
@@ -18,5 +18,5 @@ document.getElementById('arrow_l').onclick = function () {
       if (iterator < 0) {
         iterator = 3;
       }
-       document.getElementById('car').src = listeSVG[iterator];
+      d3.selectAll('#car').attr("src", listeSVG[iterator])
     };

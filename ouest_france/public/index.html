@@ -41,9 +41,10 @@
         <script src="https://d3js.org/d3.v3.min.js"></script>
 
         <!-- ajout des animations sur la fullPage -->
-        <script type="text/javascript" src="js/animateUsingD3.js"></script>
 
+        <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
         <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
@@ -51,8 +52,9 @@
                 });
             });
         </script>
-
+    
         <script type="text/javascript" src="js/datavizEvent.js" defer></script>
+
     </head>
 
     <body>
@@ -70,7 +72,8 @@
         </div>
 
         <div id="fullpage">
-            <div class="section " id="section0">
+            
+            <div class="section" id="section0">
                 <div class="content">
                   <img class="background" id="home" src="img/HOME-BASE-FINAL.svg">
                   <div id="textIntro">
@@ -94,7 +97,7 @@
                       <h5 class="bebas">CHOISISSEZ VOTRE</h5>
                       <h2>MODE DE TRANSPORT</h2>
                       <img class="middle" id="route" src="img/Route.svg">
-                      <img class="img_car" id="car" src="img/Voiture.svg">
+                      <img class="img_car" id="car" src="img/Voiture.svg"
                       <input class="bebas" type="button" id="commencer" value="COMMENCER">
                 </div>
                 <input type="button" class="middle" id="arrow_l">
@@ -102,19 +105,19 @@
 
                 <img class="footer" id="houses2" src="img/Visuel-Footer.svg">
             </div>
-
             <div class="section" id="scenario1">
                 <div class="intro" id="container1">
                     <img class="base" id="base1" src="img/map-base-01.svg">
                     <div id="encadre1">
-                      <img id="info" src="img/Volet-Infos.svg">
-                      <p class="bebas" id="number"><span>N</span></p>
-                      <p class="bebas" id="paragraphe_encadre1">PERSONNES PARTAGENT LA ROUTE AVEC VOUS</p>
-                      <img id="sol" src="img/carre_perso.svg">
-                      <img id="people" src="img/p80.svg">
+                    <img id="info" src="img/Volet-Infos.svg">
+                    <p class="bebas" id="number"><span>N</span></p>
+                    <p class="bebas" id="paragraphe_encadre1">PERSONNES PARTAGENT LA ROUTE AVEC VOUS</p>
+                    <img id="sol" src="img/carre_perso.svg">
+                    <img id="people" src="img/p80.svg">
                     </div>
                     <input type="button" class="openInfo" id="buttonEncadre1">
                     <div class="effect1"></div>
+                    <img class="img_myCar" id="car" src="img/Voiture.svg">
                 </div>
 
             </div>
@@ -136,7 +139,6 @@
                     <div class="effect3"></div>
                 </div>
             </div>
-
             <div class="section" id="section6">
                 <div class="intro" id="conclusion">
                     <p class="bebas" id="conclu1">
