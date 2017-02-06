@@ -1,4 +1,4 @@
-var debugMode = 2;
+var debugMode = 0;
 
 function Point(arr) {
     this.x = arr[0];
