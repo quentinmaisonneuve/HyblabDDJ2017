@@ -1,0 +1,92 @@
+﻿{
+    "age": {
+        "A1": {
+            "nom": "Moins de 11 ans",
+            "min": 0,
+            "max": 10
+        },
+        "A2": {
+            "nom": "11 à 17 ans",
+            "min": 11,
+            "max": 17
+        },
+        "A3": {
+            "nom": "18 à 24 ans",
+            "min": 18,
+            "max": 24
+        },
+        "A4": {
+            "nom": "25 à 34 ans",
+            "min": 25,
+            "max": 34
+        },
+        "A5": {
+            "nom": "35 à 49 ans",
+            "min": 35,
+            "max": 49
+        },
+        "A6": {
+            "nom": "50 à 64 ans",
+            "min": 50,
+            "max": 64
+        },
+        "A7": {
+            "nom": "65 ans et plus",
+            "min": 65,
+            "max": 110
+        }
+    },
+    "matrix": {
+        "d30": {
+            "D30-01": "Nantes Centre",
+            "D30-02": "Intérieur Périphérique Nantes Nord",
+            "D30-03": "Intérieur Périphérique Nantes Sud",
+            "D30-04": "Nord Est de l'agglomération nantaise",
+            "D30-05": "Nord Ouest de l'agglomération nantaise",
+            "D30-06": "Sud Est de l'agglomération nantaise",
+            "D30-07": "Sud Ouest de l'agglomération nantaise",
+            "D30-08": "Herbignac/Piriac-sur-Mer",
+            "D30-09": "La Baule/Le Croisic",
+            "D30-10": "CARENE hors Saint-Nazaire",
+            "D30-11": "Saint-Nazaire",
+            "D30-12": "Pays de Pont-Château, Saint-Gildas-des-Bois",
+            "D30-13": "Loire et Sillon",
+            "D30-14": "Pays de Retz Ouest",
+            "D30-15": "Coeur d'Estuaire, Région de Blain",
+            "D30-16": "Erdre et Gesvres",
+            "D30-17": "Pays de Redon et Vilaine",
+            "D30-18": "Pays de Chateaubriant",
+            "D30-19": "Pays d'Ancenis",
+            "D30-20": "Vignoble nantais",
+            "D30-21": "Pays de Retz Est",
+            "D30-22": "Communes du Maine-et-Loire (49)",
+            "D30-EXT1": "Redon",
+            "D30-EXT2": "Reste de la France",
+            "D30-EXT3": "Reste du Monde",
+            "D30-Ind": "Indéterminé"
+        }
+    },
+    "occupation": {
+        "O1": "Travail à plein temps",
+        "O2": "Travail à temps partiel",
+        "O3": "Apprentissage, formation , stage",
+        "O4": "Étudiant",
+        "O5": "Élève",
+        "O6": "Recherche d'emploi",
+        "O7": "Retraite",
+        "O8": "Personne au foyer",
+        "O9": "Autre"
+    },
+    "pcs": {
+        "P1": "Indéterminé",
+        "P2": "Agriculteur",
+        "P3": "Artisan, commerçant, chef d'entreprise",
+        "P4": "Cadre, profession intellectuelle supérieure",
+        "P5": "Profession intermédiaire",
+        "P6": "Employé",
+        "P7": "Ouvrier",
+        "P8": "Élève, étudiant",
+        "P9": "Chômeur n'ayant jamais travaillé",
+        "P10": "Autre inactif n'ayant jamais travaillé"
+    }
+}

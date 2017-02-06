@@ -1,40 +1,218 @@
 <!DOCTYPE html>
-<html lang="fr"> <!-- Notre page est en français -->
-  <head>
-    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-    <meta charset="utf-8">
-    <title>Hyblab 2016</title>
-		<!-- Basic viewport setting for mobile friendly page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Déclaration de la feuille de style du document-->
-    <link rel="stylesheet" href="css/style.css">
-		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/example.js" defer></script>
-  </head>
-  <body>
-    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- l'entête de la page: titre, barre de recherche -->
-    <header>
-			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
-      <h1>Hyblab Datajournalism 2017</h1>
-    </header>
+        <title>En route !</title> <!-- Transport Urbain - Hyblab 2017 -->
 
-    <!-- Le contenu du site -->
-    <p>Replace this content by your web app !</p>
+        <meta name="author" content="Matthew Howell" />
+        <meta name="description" content="fullPage continuous scrolling demo." />
+        <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+        <meta name="Resource-type" content="Document" />
 
-		<p>Here is some data from a json file : <span id="data"></span><p>
+        <!-- Basic viewport setting for mobile friendly page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Notre pied de page -->
-    <footer>
-      <p>Copyright Hyblab team 2017</p>
-    </footer>
-    </div>
-  </body>
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <!--[if IE]>
+            <script type="text/javascript">
+                 var console = { log: function() {} };
+            </script>
+        <![endif]-->
+
+        <!-- ajout des event listener "click" sur le choix du mode de transport -->
+        <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
+
+        <!-- jQuery : librairie nécessaire pour fullPage.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+        <!-- FitText : Responsive text -->
+        <script src="js/jquery.fittext.js" defer></script>
+        <script src="js/responsive-text.js" defer></script>
+
+        <!-- Pour ne pas afficher la slide nav lors du "trajet" -->
+        <script type="text/javascript" src="js/noSlideNav.js"></script>
+
+        <!-- fullPage.js -->
+        <!-- d3js : librairie nécessaire pour animateUsingD3.js -->
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+
+        <!-- ajout des animations sur la fullPage -->
+
+        <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                  afterLoad: updateSlideNav,
+                });
+            });
+        </script>
+    
+        <script type="text/javascript" src="js/datavizEvent.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <div id="fp-nav" class="right">
+            <ul>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li><a><span></span></a></li>
+            </ul>
+        </div>
+
+        <div id="fullpage">
+            
+            <div class="section" id="section0">
+                <div class="content">
+                  <img class="background" id="home" src="img/HOME-BASE-FINAL.svg">
+                  <div id="textIntro">
+                    <p class="bebas" id="text">
+                      Voiture, bus, vélo, chaque jour vous effectuez plus de 5 millions de déplacements. Découvrez qui sont ces anonymes, parfois stressés, souvent pressées, malpolis ou bienveillants, que l’on croise chaque matin et chaque soir, sans même s’en rendre compte.
+                    </p>
+                    <input class="bebas" type="button" id="enroute"  value="EN ROUTE !"/>
+                  </div>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <div class="intro">
+                    <h1>Scroll Down</h1>
+                    <p>And it will animate down to the first section</p>
+                </div>
+                <img class="footer" id="houses1" src="img/Visuel-Footer.svg">
+            </div>
+
+            <div class="section" id="section2">
+                <div classe="middle" id="center">
+                      <h5 class="bebas">CHOISISSEZ VOTRE</h5>
+                      <h2>MODE DE TRANSPORT</h2>
+                      <img class="middle" id="route" src="img/Route.svg">
+                      <img class="img_car" id="car" src="img/Voiture.svg"
+                      <input class="bebas" type="button" id="commencer" value="COMMENCER">
+                </div>
+                <input type="button" class="middle" id="arrow_l">
+                <input type="button" class="middle" id="arrow_d">
+
+                <img class="footer" id="houses2" src="img/Visuel-Footer.svg">
+            </div>
+            <div class="section" id="scenario1">
+                <div class="intro" id="container1">
+                    <img class="base" id="base1" src="img/map-base-01.svg">
+                    <div id="encadre1">
+                    <img id="info" src="img/Volet-Infos.svg">
+                    <p class="bebas" id="number"><span>N</span></p>
+                    <p class="bebas" id="paragraphe_encadre1">PERSONNES PARTAGENT LA ROUTE AVEC VOUS</p>
+                    <img id="sol" src="img/carre_perso.svg">
+                    <img id="people" src="img/p80.svg">
+                    </div>
+                    <input type="button" class="openInfo" id="buttonEncadre1">
+                    <div class="effect1"></div>
+                    <img class="img_myCar" id="car" src="img/Voiture.svg">
+                </div>
+
+            </div>
+            <div class="section" id="scenario2">
+                <div class="intro" id="container2">
+                    <img class="base" id="base2" src="img/map-base-02.svg">
+                    <div id="encadre2">
+                      <img id="info2" src="img/Volet-Infos.svg">
+                      <p id="intro2">COMME VOUS ILS FONT CE TRAJET...</p>
+                      <p id="txtvoiture">EN VOITURE</p>
+                      <p id="pourcentVoiture"><span>N</span>%</p>
+                      <p id="txtCommun">EN TRANSPORT EN COMMUN</p>
+                      <p id="pourcentCommun"><span>N</span>%</p>
+                      <p id="txtVelo">À VELO</p>
+                      <p id="pourcentVelo"><span>N</span>%</p>
+                      <p id="txtPied">À PIED</p>
+                      <p id="pourcentPied"><span>N</span>%</p>
+                      <img id="sol2" src="img/route2.svg">
+                      <img id="transport" src="img/Voiture-Gauche.svg">
+                      <div id="bar-demo">
+                      </div>
+                      <script type="text/javascript">
+                        var data = [{year: 2006, books: 54},
+                          {year: 2007, books: 43},
+                          {year: 2008, books: 41},
+                          {year: 2009, books: 44}];
+
+                        var barWidth = 40;
+                        var width = (barWidth + 10) * data.length;
+                        var height = 200;
+
+                        var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
+                        var y = d3.scale.linear().domain([0, d3.max(data, function(datum) { return datum.books; })]).
+                          rangeRound([0, height]);
+
+                        // add the canvas to the DOM
+                        var barDemo = d3.select("#bar-demo").
+                          append("svg:svg").
+                          attr("width", width).
+                          attr("height", height);
+
+                        barDemo.selectAll("rect").
+                          data(data).
+                          enter().
+                          append("svg:rect").
+                          attr("x", function(datum, index) { return x(index); }).
+                          attr("y", function(datum) { return height - y(datum.books); }).
+                          attr("height", function(datum) { return y(datum.books); }).
+                          attr("width", barWidth).
+                          attr("fill", "#d4584e");
+                      </script>
+                    </div>
+                    <input type="button" class="openInfo" id="buttonEncadre2">
+                    <div class="effect2"></div>
+                </div>
+            </div>
+
+            <div class="section" id="scenario3">
+                <div class="intro" id="container3">
+                    <img class="base" id="base3" src="img/map-base-03.svg">
+                    <div id="encadre3">
+                      <img id="info3" src="img/Volet-Infos.svg">
+                      <p id="intro3">SUR LES TRAJETS DEPUIS OU VERS LE DOMICILE</p>
+                      <p id="txtTravail">POUR LE TRAVAIL</p>
+                      <p id="pourcentTravail"><span>N</span>%</p>
+                      <p id="txtEtude">POUR LES ÉTUDES</p>
+                      <p id="pourcentEtude"><span>N</span>%</p>
+                      <p id="txtAutres">POUR LES ACTIVITÉS PERSONNELLES (LOISIRS, ACHATS, SOCIALES)</p>
+                      <p id="pourcentAutres"><span>N</span>%</p>
+                      <img id="sol3" src="img/plateforme.svg">
+                      <img id="motif" src="img/usine.svg">
+                    </div>
+                    <img class="logo_of" id="drapeau" src="img/Point-info.svg">
+                    <input type="button" class="openInfo" id="buttonEncadre3">
+                    <div class="effect3"></div>
+                </div>
+            </div>
+            <div class="section" id="section6">
+                <div class="intro" id="conclusion">
+                    <p class="bebas" id="conclu1">
+                      NOUS PASSONS EN MOYENNE DAVANTAGE DE TEMPS SUR NOS TRAJETS QUE LA PLUPART DES FRANÇAIS, MALGRÉ
+                      DES TRAJETS ÉQUIVALENT. NOUS SOMMES MOBILES, MAIS SUR DE COURTES DISTANCES. NOUS RESTONS PRÈS DE CHEZ NOUS,
+                      MAIS NOUS CIRCULONS EN VOITURE.
+                    </p>
+                    <p class="bebas" id="conclu2">
+                      "EN ROUTE !" NOUS PROPOSE ALORS DE RÉFLECHIR SUR NOS CHOIX EN TERMES DE MODES DE TRANSPORTS, POUR NOUS FACILITER LA
+                      VIE ET CELLE TOUS CES ANONYMES QUE NOUS CROISONS.
+                    </p>
+                </div>
+                <img class="footer" id="houses" src="img/Visuel-Footer.svg">
+            </div>
+        </div>
+        <!-- Notre pied de page -->
+        <footer>
+            <p>Copyright © Hyblab team 2017</p>
+        </footer>
+    </body>
 </html>
