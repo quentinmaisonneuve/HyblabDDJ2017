@@ -9,70 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GETTERS FOR RESTFUL API DB */
-router.get('/allData', function(req, res, next){
-  data.getAllData(function(err,rows){
-    if(err){res.json(err);}
-    else{res.json(rows);}
-  });
-});
 
-router.get('/genreSeason/:name', function(req, res, next){
-    switch (req.params.name)
-    {
-        case "autumn":
-            data.getAutumnGenre(function(err,rows){
-                if(err){res.json(err);}
-                else{res.json(rows);}
-            });
-            break;
-        case "summer":
-            data.getSummerGenre(function(err,rows){
-                if(err){res.json(err);}
-                else{res.json(rows);}
-            });
-            break;
-        case "spring":
-            data.getSpringGenre(function(err,rows){
-                if(err){res.json(err);}
-                else{res.json(rows);}
-            });
-            break;
-        case "winter":
-            data.getWinterGenre(function(err,rows){
-                if(err){res.json(err);}
-                else{res.json(rows);}
-            });
-            break;
-        default:
-            var resp="";
-            data.getAutumnGenre(function(err, rows)
-            {
-                if(err){res.json(err);}
-                else{resp = rows;}
-            });
-            console.log("resp="+resp);
-            data.getWinterGenre(function(err, rows)
-            {
-                if(err){res.json(err);}
-                else{resp.concat(resp, rows);}
-            });
-            console.log("resp="+resp);
-            data.getSpringGenre(function(err, rows)
-            {
-                if(err){res.json(err);}
-                else{resp.concat(resp, rows);}
-            });
-            console.log("resp="+resp);
-            data.getSummerGenre(function(err, rows)
-            {
-                if(err){res.json(err);}
-                else{resp.concat(resp, rows);}
-            });
-            console.log("resp="+resp);
-            res.json(resp);
-            break;
-    }
-});
 
 router.get('/creneau/:start/:stop', function(req, res, next) {
     data.getCreneau(req.params.start, req.params.stop, function(err, rows)
@@ -82,22 +19,6 @@ router.get('/creneau/:start/:stop', function(req, res, next) {
     });
 });
 
-router.get('/creneauSeason/:season/:day', function(req, res, next) {
-    data.getCreneauSeasonDay(req.params.season, req.params.day, function(err, rows)
-    {
-        if(err){res.json(err);}
-        else{res.json(rows);}
-    });
-});
-
-// week : 0 semaine / 1 week end
-router.get('/creneauSeasonWeek/:season/:week', function(req, res, next) {
-    data.getCreneauSeasonWeek(req.params.season, req.params.week, function(err, rows)
-    {
-        if(err){res.json(err);}
-        else{res.json(rows);}
-    });
-});
 
 // season : winter, spring, summer, autumn
 // week : 0 week - 1 weekend
@@ -124,13 +45,6 @@ router.get('/creneauM/:season/:week/:start/:end', function(req, res, next) {
 
 router.get('/today', function(req, res, next) {
     data.getToday(function(err, rows)
-    {
-        if(err){res.json(err);}
-        else{res.json(rows);}
-    });
-});
-router.get('/Mood/:mood/:start/:end', function(req, res, next) {
-    data.getMoodCreneau(req.params.mood, req.params.start, req.params.end, function(err, rows)
     {
         if(err){res.json(err);}
         else{res.json(rows);}
@@ -225,7 +139,7 @@ router.get('/ThisWeekNostalgique', function(req, res, next) {
 });
 
 router.get('/ThisWeekCool', function(req, res, next) {
-    data.getThisWeekPop( function(err, rows)
+    data.getThisWeekCool( function(err, rows)
     {
         if(err){res.json(err);}
         else{res.json(rows);}
