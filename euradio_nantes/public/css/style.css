@@ -55,6 +55,16 @@ a {
   text-decoration: none;
 }
 
+.roseTitre{
+  color: #E44E7E;
+  padding-bottom: 25px;
+}
+
+.vertical-align{
+  display: flex;
+  align-items: center;
+}
+
 .cd-image-replace {
   /* replace text with image */
   display: inline-block;
@@ -71,6 +81,7 @@ a {
   height: 100vh;
   background: #ffffff;
 }
+
 .cd-section:nth-of-type(even) {
   background-color: #ffffff;
 }
@@ -123,7 +134,7 @@ a {
     margin-left: 35px;
     padding-top: 20px;
     margin-bottom: 0px;
-    width: 33%;
+    width: 60%;
 }
 
 a, a:active, a:focus {
@@ -131,7 +142,7 @@ a, a:active, a:focus {
 }
 
 #mapsvg {
-    width: 66%;
+    width: 100%;
 }
 
 .gifconv {
