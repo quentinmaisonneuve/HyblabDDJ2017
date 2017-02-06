@@ -16,6 +16,10 @@
     font-family: "MetaPro-Book";
     src: url("../fonts/MetaPro-Book.otf");
 }
+@font-face {
+    font-family: "MetaPro-Black";
+    src: url("../fonts/MetaPro-Black.otf");
+}
 
 /* just a sample css rule to show that everything works */
 footer p
@@ -72,6 +76,24 @@ span{
   text-align: justify;
   line-height: 140%;
   margin: 10px;
+  font-family: "MetaPro-Normal";
+}
+
+.newp.bold {
+    font-family: "Blogger Sans";
+    font-weight: bold;
+}
+
+.newp.center {
+    text-align: center;
+}
+
+.newp b {
+    font-family: "MetaPro-Black";
+}
+
+#section5 div {
+    text-align: left;
 }
 
 .roseTitre{

@@ -46,7 +46,7 @@ function creatFacebook(){
                     toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
 
                     indexLabelPlacement: "inside",
-                    indexLabelFontColor: "#FF6666",
+                    indexLabelFontColor: "#ffffff",
                     indexLabelFontWeight: 600,
                     indexLabelFontFamily: "Verdana",
                     color: "#3b5998",
@@ -95,7 +95,7 @@ function creatTwitter(){
                     toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
 
                     indexLabelPlacement: "inside",
-                    indexLabelFontColor: "#FF6666",
+                    indexLabelFontColor: "#FFFFFF",
                     indexLabelFontWeight: 600,
                     indexLabelFontFamily: "Verdana",
                     color: "#00acee",
