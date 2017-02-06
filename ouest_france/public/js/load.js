@@ -1,23 +1,32 @@
 'use strict';
 
-var loaded = false;
+var index = {
+    loaded: false,
+    is_loaded: function () { return loaded; }
+};
 
-var counter = (function () {
-    var count = 1;
+var data = {
+    loaded: false,
+    is_loaded: function () { return loaded; },
+    files: {
+        count: 0,
+        counter: (function () {
+            var count = 0;
 
-    return function () {
-        return count++;
+            return function () {
+                return ++count;
+            }
+        })()
     }
-})();
-
-var index = {};
-var data = {};
-var files = 0;
+};
 
 // Load index file
 fetch_json("data/index.json", function (json) {
-    index = json;
-    ready();
+    Object.keys(json).map(function (key) {
+        index[key] = json[key];
+    });
+
+    index.loaded = true;
 });
 
 // Load csv data files
@@ -25,7 +34,6 @@ fetch_json("data/data.json", function (json) {
     load_files(json)
 });
 
-// Functions
 function fetch_json(filename, callback) {
     fetch(filename)
     .then(function (response) {
@@ -44,6 +52,7 @@ function load_files(json) {
     json.map(function (f) {
         data[f.area] = {};
 
+        // Initialize data content and count files before loading everything
         f.data.map(function (d) {
             var current = data[f.area];
 
@@ -57,11 +66,13 @@ function load_files(json) {
                 current[d.subtype] = {};
             }
 
+            // Count files
             d.docs.map(function (doc) {
-                files += doc.files.length;
+                data.files.count += doc.files.length;
             });
         });
 
+        // Load files
         f.data.map(function (d) {
             var current = data[f.area][d.type];
 
@@ -78,17 +89,21 @@ function load_files(json) {
     });
 }
 
-function load(data, filename, content) {
+function load(current_data, filename, content) {
     d3.text(filename, function (file) {
         var rows = [];
 
-        d3.dsvFormat(";").parseRows(file, function (row) {
+        // d3.js v4.x
+        //d3.dsvFormat(";").parseRows(file, function (row) {
+
+        // d3.js v3.x
+        d3.dsv(";").parseRows(file, function (row) {
             rows.push(row);
         });
 
-        data[content] = {};
+        current_data[content] = {};
 
-        var current = data[content];
+        var current = current_data[content];
 
         for (var i = 1; i < rows.length; ++i) {
             current[rows[i][0]] = {};
@@ -97,12 +112,8 @@ function load(data, filename, content) {
             }
         }
 
-        ready();
+        if (data.files.counter() === data.files.count) {
+            data.loaded = true;
+        }
     });
-}
-
-function ready() {
-    if (counter() === files) {
-        loaded = true;
-    }
 }

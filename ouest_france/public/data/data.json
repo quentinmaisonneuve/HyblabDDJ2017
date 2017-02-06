@@ -68,31 +68,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "type": "per",
-                "docs": [
-                    {
-                        "path": "data/csv",
-                        "files": [
-                            {
-                                "name": "PER_D30_Age",
-                                "ext": "csv",
-                                "content": "age"
-                            },
-                            {
-                                "name": "PER_D30_Occupation",
-                                "ext": "csv",
-                                "content": "occupation"
-                            },
-                            {
-                                "name": "PER_D30_Pcs",
-                                "ext": "csv",
-                                "content": "pcs"
-                            }
-                        ]
-                    }
-                ]
             }
         ]
     }

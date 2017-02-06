@@ -220,8 +220,8 @@ d3.json('data/map/edgt30.geo.json', function(error, mapData) {
 });
 
 // Get province name
-function nameFn(d){
-  return d && d.properties ? d.properties.name : null;
+function nameFn(d) {
+  return d && d.properties && index.loaded ? index.d30[d.properties.d30] : null;
 }
 
 function idFn(d) {
@@ -245,7 +245,8 @@ function mapClicked(d) {
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
-  if (actualZone != null && actualZone.localeCompare("") == 0)
+
+  if (!actualZone || actualZone.localeCompare("") == 0)
     return;
 
   switch (zoneState) {
@@ -319,7 +320,6 @@ function mouseOutMap(d){
 }
 
 function updateZoneText(d) {
-
   var text = nameFn(d);
   actualZone = text;
   actualId = idFn(d);
@@ -393,6 +393,3 @@ function colorMap() {
     zone1.element.style('fill', zone1.color);
   }
 }
-
-
-
