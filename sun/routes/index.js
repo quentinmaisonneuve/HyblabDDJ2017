@@ -174,4 +174,11 @@ router.get('/GenreCreneau4H/:numberOfCreneau', function(req, res, next) {
         else{res.json(rows);}
     });
 });
+router.get('/MoodCreneau4H/:numberOfCreneau/:mood', function(req, res, next) {
+    data.getMoodCreneau4H(req.params.numberOfCreneau,req.params.mood, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
 module.exports = router;
