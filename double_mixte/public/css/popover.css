@@ -319,14 +319,14 @@ position: absolute;
 }
 
 #pb {
-position: absolute;
+    position: absolute;
     display: block;
-    left: -32vw;
-    top: 74vh;
-    width: 100vw;
+    left: -7vw;
+    top: 65vh;
+    width: 48vw;
     height: 50vh;
-    font-size: 2vw;
-    font-family: Josefin Sans;
+    font-size: 2.5vw;
+    ont-family: Josefin Sans;
     color: #001526;
     font-weight: bold;
     text-align: center;
