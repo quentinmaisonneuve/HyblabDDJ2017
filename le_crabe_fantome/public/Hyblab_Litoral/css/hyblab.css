@@ -191,14 +191,13 @@ body{
 	margin-top :30px !important;
 	margin : auto;
 
-	font-size: 2vw;
+	font-size: 1.5vw;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 2px 0 #86c6ca;
 	color : #faf7f5;
 
 	width:10vw;
-	height:3vw;
+	height:2vw;
 	display: block;
 
 	background-color: #6a9dae;
@@ -216,7 +215,11 @@ body{
 	right : 200px;
 }
 
-
+#ResetV{
+	position: absolute;
+	top : 28vw;
+	left : -6vw;
+}
 
 
 /*Carte*/
@@ -628,7 +631,7 @@ body{
 
 .LabelJ2{
 	position: relative;
-	top : -2.4vw;
+	top : -2.8vw;
 	left: 3vw;
 	margin: 0;
 }
@@ -676,6 +679,8 @@ body{
 
  #Bouton2050,#Reset2, #AttaqueM{
  	font-size: 1.5vw;
+ 	position: relative;
+ 	left: -3vw;
 }
 
 #Data1{
@@ -990,7 +995,6 @@ body{
 	font-size: 1.5vw;
 	text-decoration: none;
 	text-align: center;
-	text-shadow: 2px 0 #86c6ca;
 	color : black;
 
 	width:8vw;
@@ -1003,7 +1007,7 @@ body{
 
 
 #BoutonUE label{
-	font-size: 0.7vw;
+	height: 4vw;
 }
 
 /*Jeu4*/
@@ -1182,99 +1186,107 @@ body{
 /*Logos*/
 .Equipe{
 	position: relative;
-	top : 14vw;
-	left : -12vw;
+	top : 3.5vw;
+	left : 9.5vw;
 }
 
 .Nous{
 	display: inline-block;
 	font-size: 1.5vw;
+	background-color: #b8e8f2;
+	height : 50%;
+	width: 100%;
+	position: absolute;
+	top: 0vw;
 }
 
 .Crabe{
 	position: absolute;
-	top : 32vw;
-	left : 2vw;
+	text-align: center;
+	bottom: -5vw;
+	left: 8.2%;
+	font-size: 1.3vw;
 }
 .Paroles{
 	position: absolute;
-	bottom: 0vw;
-	left : 59vw;
+	bottom: -2vw;
+	left : 77vw;
+	font-size: 0.8vw
 }
 
 .NousAGR{
-	height : 5vw;
-	position: absolute;
-	top : 15vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 6%;
 }
 
 .NousPolytech{
-	height : 5vw;
-	position: absolute;
-	top : 21vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 7.5%;
 }
 
 .NousScienceCom{
-	height : 5vw;
-	position: absolute;
-	top : 27vw;
-	left : 2vw;
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 9%;
 }
 
 .AGR1{
 	position: absolute;
-	top : 15vw;
-	left : 12vw;
+	top : 10vw;
+	left : 6%;
 
 }
 .AGR2{
 	position: absolute;
-	top : 15vw;
-	left : 27vw;
+	top : 13vw;
+	left : 5.7%;
 
 }
 .AGR3{
 	position: absolute;
-	top : 15vw;
-	left : 41vw;
+	top : 16vw;
+	left : 5.8%;
 
 }
 .Polytech1{
 	position: absolute;
-	top : 21vw;
-	left : 12vw;
+	top : 10vw;
+	left : 8.5%;
 }
 .Polytech2{
 	position: absolute;
-	top : 21vw;
-	left : 27vw;
+	top : 13vw;
+	left : 8.6%;
 }
 .Polytech3{
 	position: absolute;
-	top : 21vw;
-	left : 41vw;
+	top : 16vw;
+	left : 8.7%;
 }
 .Polytech4{
 	position: absolute;
-	top : 21vw;
-	left : 57vw;
+	top : 19vw;
+	left : 8.8%;
 }
 .ScienceCom1{
 	position: absolute;
-	top : 27vw;
-	left : 12vw;
+	top : 10vw;
+	left : 11.4%;
 }
 .ScienceCom2{
 	position: absolute;
-	top : 27vw;
-	left: 27vw;
+	top : 13vw;
+	left: 11.7%;
 }
 .ScienceCom3{
 	position: absolute;
-	top : 27vw;
-	left : 41vw;
+	top : 16vw;
+	left : 11.8%;
 }
 
 #bandeau {
@@ -1290,14 +1302,14 @@ body{
 
 
 #bandeau img{
- 	height: 4vw;
+ 	height: 3vw;
 }
 
 #bandeau #hyblab{
-	  margin: 1vw;
-	  height: 3vw;
-	  position: absolute;
-	  top :3vw;
+	  height: 2vw;
+	  position: relative;
+	  top :14vw;
+	  left: 45%;
 }
 
 #bandeau{
@@ -1306,15 +1318,10 @@ body{
 
 .stacked{
 	display: block;
-	height : 2vw;
-	position: absolute;
-	top : 6vw;
-	left : 40vw;
-}
-
-#cc{
+	height : 1vw;
 	position: relative;
-	right : 5vw;
+	top : 14vw;
+	left : 29vw;
 }
 
 #bandeau ul{
@@ -1324,17 +1331,16 @@ body{
 
 #bandeau .institutionnel
 {
-	height: 4vw;
+	height: 3vw;
 	position: relative;
-	top : -17vw;
-	left : -2vw;
+	top : 10vw;
 
 }
 
 .organisateurs{
-	position: absolute;
-	top: 0vw;
-	left : 35vw;
+	position: relative;
+	top: 14vw;
+	left : -17vw;
 }
 
 #Crédit{
