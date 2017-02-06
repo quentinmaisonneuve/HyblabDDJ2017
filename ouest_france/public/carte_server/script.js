@@ -2,9 +2,11 @@ var width = 960.0,
     height = 500.0,
     centered;
 
+var debug_add_city = false;
+
 var myCenter = [-74.0, 1.5];
 var translation = [width / 2.0, height / 2.0];
-var scale = 2000.0;
+var scale = 1000.0;
 
 var BASE_FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
 
@@ -229,7 +231,8 @@ function fillFn(d){
 
 function clicked(d) {
   // Create city from cliced location 
-  // console.log(invertTransformation(d3.mouse(this)));
+  if (debug_add_city)
+    console.log(invertTransformation(d3.mouse(this)));
 
   if (actualZone.localeCompare("") == 0)
     return;
