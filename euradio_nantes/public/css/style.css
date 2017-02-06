@@ -194,6 +194,22 @@ a, a:active, a:focus {
   height: 25%
 }
 
+#section6 td {
+  width: 25%;
+}
+
+#section6 ul {
+  margin : 10px;
+}
+
+#section6 li {
+  text-align: left;
+  margin : 5px;
+}
+.list_pays {
+  background-color: #87C8CB;
+}
+
 /*
 Timeline
 */
