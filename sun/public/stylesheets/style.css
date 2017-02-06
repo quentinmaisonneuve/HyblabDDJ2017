@@ -52,7 +52,9 @@ table {
 outline: none;
 }
 
-
+a {
+	text-decoration: none;
+}
 
 /* ################################ SOMMAIRE #########################*/
 /*
@@ -338,33 +340,39 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 
-input[type=range]::-webkit-slider-thumb {
+#pageTwo input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 28px;
   width : 62px;
   background-image: url("/images/btn_glissiere.png");
   background-size: cover;
   margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
 }
 
-input[type=range]::-moz-range-thumb {
+#pageTwo input[type=range]::-moz-range-thumb {
   -moz-appearance: none;
   height: 28px;
   width : 62px;
   background-image: url("/images/btn_glissiere.png");
   background-size: cover;
   margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
 }
 
-input[type=range]::-ms-thumb {
+#pageTwo input[type=range]::-ms-thumb {
   height: 28px;
   width : 62px;
   background-image: url("/images/btn_glissiere.png");
   background-size: cover;
   margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
+#pageTwo input[type=range]::-webkit-slider-runnable-track {
   
   max-width : 450px;
   height: 18px;
@@ -374,14 +382,75 @@ input[type=range]::-webkit-slider-runnable-track {
   border: 0px solid transparent;
 }
 
-input[type=range]::-moz-range-track {
+
+
+
+
+#pageThree input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-ms-thumb {
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-webkit-slider-runnable-track {
+  
+	max-width : 450px;
+	height: 18px;
+
+
+}
+
+#pageThree input[type=range]::-moz-range-track {
+	max-width : 450px;
+	height: 18px;
+
+}
+
+#pageThree input[type=range]::-ms-track {
+	max-width : 450px;
+	height: 18px;
+
+}
+
+
+
+
+
+
+#pageTwo input[type=range]::-moz-range-track {
   max-width : 450px;
   height: 18px;
   background: url("/images/glissiere.png");
   background-size: cover;
 }
 
-input[type=range]::-ms-track {
+#pageTwo input[type=range]::-ms-track {
   max-width : 450px;
   height: 18px;
   background: url("/images/glissiere.png");
