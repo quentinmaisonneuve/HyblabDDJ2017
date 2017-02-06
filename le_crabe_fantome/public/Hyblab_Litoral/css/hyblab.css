@@ -1695,8 +1695,8 @@ html.fp-enabled,
 
 #chart_bateau1{
 	position: absolute;
-	top: 11vw;
-	left: 235.75vw;
+	top: 13vw;
+	left: 236.75vw;
 	width: 32vw;
 	height: 26vw;
 }
@@ -1713,7 +1713,7 @@ html.fp-enabled,
 
 #text_age_bateau{
 	position: absolute;
-	top: 29vw;
+	top: 30vw;
 	left: 222vw;
 	font-size: 2.5vw;
 	color: white;
