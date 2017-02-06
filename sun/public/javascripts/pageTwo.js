@@ -15,6 +15,8 @@ $(document).on('input change', '#timeline2', function() {
       $('#timeline_value2').html((" " + ($('#timeline2').val()*2) + "h " + " - " + ($('#timeline2').val()*2+2) + "h "));
 });
 
+$(document).on('click change','#')
+
 function toggleOne(el){
     if(el.className!="pause")
     {
@@ -57,6 +59,12 @@ function toggleThree(el){
     return false;
 }
 
+function synchroRadio()
+{
+    var saison;
+    saison = $("input[name=credit-card]:checked").val();
+}
+
 function changeImagePrintemps()
 {
     var img = document.getElementById("image");
@@ -85,11 +93,33 @@ function changeImageEte()
     return false;
 }
 
-
-
 function changer_image(image) {
    $('.image').css('background-image', 'url("'+image+'")');
 }
+
+
+$('input[name=credit-card]').on('change', function() {
+    var saison;
+    saison = $('input[name=credit-card]:checked').val();
+    if(saison == 'printemps')
+    {
+        val_saison = 0;
+    }
+    else if(saison == 'ete')
+    {
+        val_saison = 1;
+    }
+    else if(saison == 'automne')
+    {
+        val_saison = 2;
+    }
+    else if(saison == 'hiver')
+    {
+        val_saison = 3;
+    }
+    $('#slider').roundSlider("option", "value", val_saison);
+    changeBubble(getRoad());
+});
 
 changer_image();
 toggle();
