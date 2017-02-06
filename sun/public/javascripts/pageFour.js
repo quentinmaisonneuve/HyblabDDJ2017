@@ -1,19 +1,26 @@
 /* ################# CHART ###################### */
-var chart = c3.generate({
-    bindto:'#chart',
-    data: {
-        columns: [
-            ['data1', 300, 350, 300, 0, 0, 120],
-            ['data2', 130, 100, 140, 200, 150, 50]
-        ],
-        types: {
-            data1: 'area-spline',
-            data2: 'area-spline'
-            // 'line', 'spline', 'step', 'area', 'area-step' are also available to stack
-        },
-        groups: [['data1', 'data2']]
-    }
+
+
+d3.json("./getLast24", function(data) {
+    var chart = c3.generate({
+        bindto: '#chart',
+        data: {
+            /*columns: [["Alternative et punk",0,0,0,0,4,5],["Electronica",0,0,0,0,1,3],["Pop",0,0,0,0,2,1],["Rock",0,0,0,0,2,4],["Urban",0,0,0,0,0,6],["Jazz",0,0,0,0,0,0]],*/
+            columns: data,
+
+            types: {
+                "Alternative et punk": 'area-spline',
+                "Electronica":'area-spline',
+                "Pop":'area-spline',
+                "Rock":'area-spline',
+                "Urban":'area-spline',
+                "Jazz":'area-spline'
+            },
+            groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
+        }
+    });
 });
+
 /*var chart = c3.generate({
     bindto: '#chart',
     data: {
