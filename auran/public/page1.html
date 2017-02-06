@@ -2,7 +2,7 @@
 <script>
     function animateBuildings(){
 
-        fetch('data/dummy.json')
+        fetch('data/sector.json')
         // this promise will be fulfilled when the json fill will be
             .then(function (response){
                 // if we could load the resource, parse it
@@ -14,30 +14,60 @@
             })
             // in case of invalid JSON (parse error) send some error message as JSON data
             .catch( function (error){
+                console.log("error: "+error);
                 return {data: "Invalid JSON"};
             })
             // this promise will be fulfilled when the json will be parsed
             .then(function (json) {
-                document.querySelector('#data')
-                    .textContent = json.data;
+                var sectorList = [];
+                for (var i = 0; i < json.numeric.length; i++) {
+                    sectorList.push(json.numeric[i]);
+                    sectorList.sort(function(a, b) {
+                        return b["company_count"] - a["company_count"];
+                    });
+                }
+                var i=0;
+                var buildings = $('.building');
+                buildings.addClass('show');
+                sectorList.forEach(function(sector){
+                    console.log("sector:" +sector["company_count"]);
+                    var building = buildings[i];
+                    console.log("image:"+building);
+                    building.addEventListener("mouseover", function(){
+                        var image = building.src;
+                        image = image.replace("off", "on");
+                        console.log("over: "+sector["name"]);
+                        building.src=image;
+                    });
+                    building.addEventListener("mouseout", function(){
+                        var image = building.src;
+                        image = image.replace("on", "off");
+                        console.log("out: "+sector["name"]);
+                        building.src=image;
+                    });
+                    i++;
+                });
+                /*
+                var buildings = $('.building');
+                buildings.addClass('show');
+                buildings.each(function(i, building) {
+                    console.log("image:"+building);
+                    building.addEventListener("mouseover", function(){
+                        var image = building.src;
+                        image = image.replace("off", "on");
+                        console.log("over: image="+image);
+                        building.src=image;
+                    });
+                    building.addEventListener("mouseout", function(){
+                        var image = building.src;
+                        image = image.replace("on", "off");
+                        console.log("out: image="+image);
+                        building.src=image;
+                    });
+                });
+                */
             });
-        var buildings = $('.building');
-        buildings.addClass('show');
-        buildings.each(function(i, building) {
-            console.log("image:"+building);
-            building.addEventListener("mouseover", function(){
-                var image = building.src;
-                image = image.replace("off", "on");
-                console.log("over: image="+image);
-                building.src=image;
-            });
-            building.addEventListener("mouseout", function(){
-                var image = building.src;
-                image = image.replace("on", "off");
-                console.log("out: image="+image);
-                building.src=image;
-            });
-        });
+
 
         /*
         var time=0;
