@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var data = require('../API/data.js');
-
+var request = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -196,4 +196,19 @@ router.get('/getLast24', function(req, res, next)
     });
 });
 
+
+router.get('/Test', function(req, res, next)
+{
+ var url = "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=b5763b483c7b63572a59804b2d18f9bc&artist=Gorillaz&track=Feel%20Good%20inc&format=json"
+request({
+    url: url,
+    json: true
+}, function (error, res2, body) {
+
+    if (!error && res2.statusCode === 200) {
+        res.json(body.track.album.image[2]['#text']) // Print the json response
+    }
+})
+
+ });
 module.exports = router;
