@@ -289,41 +289,10 @@
             <img id="2014chiffre5" class="2014chiffre chiffre" src="img/zero.svg"/>
             <img id="2014chiffre6" class="2014chiffre chiffre" src="img/zero.svg"/>
           </div>
-		  
+ 
 		  <div id="presse2014" class="presse animated fadeIn"></div>
 		  
-		  
-           <svg  id="mysvg" viewBox="0 0 800 400" version="1.1"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-            width="90%" height="75%"
-            overflow="visible" xml:space="preserve">
-              <g id="circleBar-web-group" transform="translate(250,0)">
-               <image id="circleBar-web-icon" opacity="0" x="166" y="100" overflow="visible" xlink:href="" />
-               <text id="circleBar-web-text" width="50%" opacity="0" x="200" y="155"></text>
-               <g id="circleBar-web-chart" transform="translate(215,150)"></g>
-               <clippath id="circleBar-web-clipPath">
-                 <rect id="circleBar-web-clipLabels" x="205" y="215" width="200" height="0"></rect>
-               </clippath>
-               <g id="circleBar-web-legend" width=1000px clip-path="url(#circleBar-web-clipPath)">
-                <text id="circleBar-web-values" transform="translate(210,225)"></text>
-                <!--<text id="circleBar-web-labels" transform="translate(220,225)"></text>-->
-              </g>
-            </g>
 
-            <g id="circleBar-mobile-group" transform="translate(0,0)">
-             <image id="circleBar-mobile-icon" opacity="0" x="125" y="48" overflow="visible" xlink:href="" />
-             <text id="circleBar-mobile-text" opacity="0"  x="150" y="155"></text>
-             <g id="circleBar-mobile-chart" width="100%" transform="translate(215,150)"></g>
-             <clippath id="circleBar-mobile-clipPath">
-              <rect id="circleBar-mobile-clipLabels" x="205" y="215" width="150" height="0"></rect>
-            </clippath>
-
-            <g id="circleBar-mobile-legend" clip-path="url(#circleBar-mobile-clipPath)">
-              <text id="circleBar-mobile-values" transform="translate(200,268)"></text>
-              <!--<text id="circleBar-mobile-labels" transform="translate(220,268)"></text>-->
-            </g>
-        </g> <!-- END: Mobile Circle Bar Chart -->
-      </svg>
 
       		<div id="funfact2014">
 			<img id="textefunfact2014" class="animated rollIn" src="img/Saucisses_20142.svg"/>
@@ -334,6 +303,8 @@
 				<br/><br/>
 				les premières retombées économiques et analyses de la notoriété régionale, nationale et internationale tombent. Le <span class="gras"> carrousel des mondes marins</span> reçoit le prix de <span class="gras">l'attraction la plus originale du monde</span> par THEA awards à Los Angeles. Donatien est ravie : des blogueurs, influcenceurs et journalistes du monde entier s'intéressent à Nantes.
 			</div>
+
+			
 
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -385,7 +356,7 @@
 			</div>
 			
 			<div id="presse2015" class="presse animated fadeIn"></div>
-<div id="vmap" style="width: 80vw; height: 90vh; float:right; margin-right:2%" data-animation="animated bounceIn" ></div>
+<div id="vmap" style="width: 60vw; height: 80vh;position: absolute; float:right; margin-top: 10%; " data-animation="animated fadeIn" ></div>
         	<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2015facebook0" class="2015facebook" src="img/blanc.svg"/>
@@ -652,8 +623,6 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		animateInstagramReinit(2015);
 
       	// graph
-      	doGraphAnimAge();
-      	doGraphAnimCSP();
 
       	hidePopover2013();
       	hidePresse2013();
