@@ -19,3 +19,6 @@ function showPresse2012() {
 function hidePresse2012() {
 	$("#presse2012").css("display", "none");
 }
+
+
+

@@ -46,9 +46,11 @@
 	<link href="css/2012-chart.css" rel="stylesheet" type="text/css">
 	<link href="css/2012-presse.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/2014-chart.css">
+	<link rel="stylesheet" href="css/2014-presse.css">
 	<link rel="stylesheet" href="css/2013-chart.css">
 	<link rel="stylesheet" href="css/2011.css">
 	<link href="css/2015-presse.css" rel="stylesheet" type="text/css">
+	<link href="css/2016-presse.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/social.css">
 	<link rel="stylesheet" href="css/tooltip_nuitees.css">
 	<link rel="stylesheet" href="css/popover.css">
@@ -59,10 +61,12 @@
 	<script src="js/2012-chart.js" type="text/javascript"></script>
 	<script src="js/2012-presse.js" type="text/javascript"></script>
 	<script src="js/2014-chart_age.js"  charset="utf-8"></script>
+	<script src="js/2014-presse.js"  charset="utf-8"></script>
   	<script src="js/2013-chart.js"></script>
 
   	<script src="js/2015-chart.js"></script>
 	<script src="js/2015-presse.js" type="text/javascript"></script>
+	<script src="js/2016-presse.js" type="text/javascript"></script>
   	<script src="js/changecolorsvg.js"></script>
   	<script src="js/tooltip-nuitees.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
@@ -285,6 +289,10 @@
             <img id="2014chiffre5" class="2014chiffre chiffre" src="img/zero.svg"/>
             <img id="2014chiffre6" class="2014chiffre chiffre" src="img/zero.svg"/>
           </div>
+		  
+		  <div id="presse2014" class="presse animated fadeIn"></div>
+		  
+		  
            <svg  id="mysvg" viewBox="0 0 800 400" version="1.1"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
             width="90%" height="75%"
@@ -421,6 +429,8 @@
 				<br/><br/>
 				L'aventure est loin d'être terminé, le musée d'arts ouvrira ses portes en juin 2017.
 			</div>
+			
+			<div id="presse2016" class="presse animated fadeIn"></div>
 
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
@@ -614,13 +624,14 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 		drawChart();
 		
 		hidePresse2012();
-
+		hidePresse2014();
 		hideAnimation2014();
     	break;
 
     // 2014
     case 5 :
     	showAnimation2014();
+		showPresse2014();
 
     	// animate
     	animateDigits(2014);
@@ -671,14 +682,16 @@ $myCarousel.on('slid.bs.carousel', function (e) {
       	animateTwitterReinit(2016);
 		animateInstagramReinit(2016);
 
+		hidePresse2014();
 		hideAnimation2014();
 		hideAnimation2016();
+		hidePresse2016();
     	break;
 
    	// 2016
     case 7 :
-
     	showAnimation2016();
+		showPresse2016();
     	// animate
 		animateSocialFacebook(2016);
 		animateSocialTwitter(2016);
@@ -696,6 +709,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     // bilan
     case 8 :
+		hidePresse2016();
+		
     	animateFacebookReinit(2016);
       	animateTwitterReinit(2016);
 		animateInstagramReinit(2016);
