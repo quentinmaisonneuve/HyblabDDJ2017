@@ -174,11 +174,26 @@ router.get('/GenreCreneau4H/:numberOfCreneau', function(req, res, next) {
         else{res.json(rows);}
     });
 });
+
+
 router.get('/MoodCreneau4H/:numberOfCreneau/:mood', function(req, res, next) {
-    data.getMoodCreneau4H(req.params.numberOfCreneau,req.params.mood, function(err, rows)
+    data.getMoodCreneau4H(req.params.mood, req.params.numberOfCreneau, function(err, rows)
     {
         if(err){res.json(err);}
         else{res.json(rows);}
     });
 });
+
+
+
+router.get('/getLast24', function(req, res, next)
+{
+    var truc;
+    data.getGenreCreneau4H(req.params.numberOfCreneau, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
 module.exports = router;

@@ -163,18 +163,19 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
     },
     getGenreCreneau4H:function(numberOfCreneau,callback){
         number = 4*numberOfCreneau
-        return db.query("SELECT count(*) as value,  _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -"+number+" -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-"+number+" -4 +24) group by _genre4;",callback)
+
+        return db.query("SELECT count(*) as value,  _genre4 AS id FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -"+number+" -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-"+number+" -4 +24) group by _genre4;",callback)
     },
-    getMoodCreneau4H:function(mood,numberOfCreneau,callback){
-        number = 4*numberOfCreneau
-        switch(mood)
-        {
+    getMoodCreneau4H:function(mood,numberOfCreneau,callback) {
+        number = 4 * numberOfCreneau
+        switch (mood) {
             case "Nostalgique":
-                return db.query("SELECT count(*) as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -"+number+" -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-"+number+"-4 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-"+number+" -4 +24) AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');",callback)
+                return db.query("SELECT count(*) as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-" + number + " and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -" + number + " -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-" + number + " +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-" + number + " -4 +24) AND (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée');", callback)
 
                 break;
             case "Cool" :
-                return db.query("SELECT count(*) as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -"+number+" -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-"+number+"-4 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-"+number+" -4 +24) AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');",callback)
+                return db.query("SELECT count(*) as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-" + number + " and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -" + number + " -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-1 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-" + number + " +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-" + number + " -4 +24) AND (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible');", callback)
+
 
                 break;
             case "Stimulante":
@@ -189,9 +190,12 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
                return db.query("SELECT count(*) as value FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 <>''AND _genre4<>'Classique' AND _genre4<>'Bande originale' AND _genre4<>'Musique traditionnelle' AND _genre4 <>'Autres' AND year(date_heure_diffusion_reelle) = year('2016-09-29 14:53:33') AND ((dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33') and  0 < hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33') -"+number+" -4 ) or (dayofyear(date_heure_diffusion_reelle) = dayofyear('2016-09-29 14:53:33')-1)  and    0 > hour('2016-09-29 14:53:33')-"+number+"-4 and hour(date_heure_diffusion_reelle) <=  hour('2016-09-29 14:53:33')-"+number+" +24 and hour(date_heure_diffusion_reelle) >=  hour('2016-09-29 14:53:33')-"+number+" -4 +24) AND (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre');",callback)
 
                break;
+
             default:
                 throw "Bad mood";
-                break;    }
+                break;
+        }
+    }
 };
 
 

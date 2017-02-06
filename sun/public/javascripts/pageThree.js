@@ -453,6 +453,41 @@ function musiqueCommence(genre){
             }
             audio.play();
             break;
+        case "Sentimentale":
+            if (audio==null||audioCourant!="Sentimentale"){
+                audio = document.getElementById("Sentimentale");
+                audioCourant = "Sentimentale";
+            }
+            audio.play();
+            break;
+        case "Cool":
+            if (audio==null||audioCourant!="Cool"){
+                audio = document.getElementById("Cool");
+                audioCourant = "Cool";
+            }
+            audio.play();
+            break;
+        case "Stimulante":
+            if (audio==null||audioCourant!="Stimulante"){
+                audio = document.getElementById("Stimulante");
+                audioCourant = "Stimulante";
+            }
+            audio.play();
+            break;
+        case "Agressive":
+            if (audio==null||audioCourant!="Agressive"){
+                audio = document.getElementById("Agressive");
+                audioCourant = "Agressive";
+            }
+            audio.play();
+            break;
+        case "Nostalgique":
+            if (audio==null||audioCourant!="Nostalgique"){
+                audio = document.getElementById("Nostalgique");
+                audioCourant = "Nostalgique";
+            }
+            audio.play();
+            break;
     }
 
 }
