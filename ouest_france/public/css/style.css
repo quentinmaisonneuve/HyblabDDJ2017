@@ -170,7 +170,7 @@ p
     width: 23vw;
 }
 
-#center #commencer
+#commencer
 {
     z-index: 4;
     position: absolute;
@@ -795,7 +795,40 @@ p
     text-align: center;
 }
 
+/* selection transport */
+#modeTransport
+{
+    position: absolute;
+    top: 0%;
+    margin-left: 3%;
+}
 
+.texth2
+{
+    z-index: 3;
+    font-family: 'Borg';
+    font-size: 5em;
+    fill: white;
+    font-weight: bold;
+}
+
+.route
+{
+    z-index: 1;
+    width: 100%;
+}
+
+.car
+{
+    z-index: 2;
+    position: absolute;
+    bottom: 49vh;
+    left: 25vw;
+    height: 21vh;
+    width: 16vw;
+}
+
+/* map */
 .background
 {
     fill: #f2f2f2;

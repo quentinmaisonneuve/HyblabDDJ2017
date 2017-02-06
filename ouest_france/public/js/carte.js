@@ -1,11 +1,11 @@
-var width = 960.0,
-    height = 500.0,
+var mapWidth = 960.0,
+    mapHeight = 500.0,
     centered;
 
 var debug_add_city = false;
 
 var myCenter = [-74.0, 1.5];
-var translation = [width / 2.0, height / 2.0];
+var translation = [mapWidth / 2.0, mapHeight / 2.0];
 var scale = 1000.0;
 
 var BASE_FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
@@ -76,16 +76,16 @@ var color = d3.scale.linear()
 var path = d3.geo.path()
   .projection(projection);
 
-// Set svg width & height
+// Set svg mapWidth & mapHeight
 var svg = d3.select('#carte')
-  .attr('width', width)
-  .attr('height', height);
+  .attr('mapWidth', mapWidth)
+  .attr('mapHeight', mapHeight);
 
 // Add background
 svg.append('rect')
   .attr('class', 'background')
-  .attr('width', width)
-  .attr('height', height)
+  .attr('mapWidth', mapWidth)
+  .attr('mapHeight', mapHeight)
   .on('click', clicked);
 
 var g = svg.append('g');
@@ -135,16 +135,16 @@ var cross0Image = svg.append("svg:image")
       .classed('hiddenCross', true)
       .attr('x', zone0.location[0] + zoneBackgroundSize[0] - iconCrossSize[0]/2)
       .attr('y', zone0.location[1] - iconCrossSize[1])
-      .attr('width', iconCrossSize[0])
-      .attr('height', iconCrossSize[1])
+      .attr('mapWidth', iconCrossSize[0])
+      .attr('mapHeight', iconCrossSize[1])
       .attr("xlink:href", "img/map/cross.png");
 
 var cross1Image = svg.append("svg:image")
       .classed('hiddenCross', true)
       .attr('x', zone1.location[0] + zoneBackgroundSize[0] - iconCrossSize[0]/2)
       .attr('y', zone1.location[1] - iconCrossSize[1])
-      .attr('width', iconCrossSize[0])
-      .attr('height', iconCrossSize[1])
+      .attr('mapWidth', iconCrossSize[0])
+      .attr('mapHeight', iconCrossSize[1])
       .attr("xlink:href", "img/map/cross.png");
 
 var bigText = g.append('text')
@@ -158,8 +158,8 @@ function displayCities() {
   var fontFamily = FONTS[0] + ', ' + BASE_FONT;
   for (var i=0; i<cities.length; i++) {
 
-    var icon_width = 8;
-    var icon_height = 8;
+    var icon_mapWidth = 8;
+    var icon_mapHeight = 8;
 
     var text = cities[i][0];
     var city_x = cities[i][1];
@@ -167,10 +167,10 @@ function displayCities() {
     
     svg.append("svg:image")
       .classed('notSelectable', true)
-      .attr('x', city_x - icon_width/2)
-      .attr('y', city_y - icon_height)
-      .attr('width', icon_width)
-      .attr('height', icon_height)
+      .attr('x', city_x - icon_mapWidth/2)
+      .attr('y', city_y - icon_mapHeight)
+      .attr('mapWidth', icon_mapWidth)
+      .attr('mapHeight', icon_mapHeight)
       .attr("xlink:href", "img/map/dot.png");
 
     var text = g.append('text')
@@ -183,11 +183,11 @@ function displayCities() {
     // determine text size
     var bbox = text.node().getBBox();
     
-    var textWidth = bbox.width;
-    var textHeight = bbox.height;
+    var textmapWidth = bbox.mapWidth;
+    var textmapHeight = bbox.mapHeight;
 
-    text.attr('x', city_x - textWidth/2)
-      .attr('y', city_y + textHeight)
+    text.attr('x', city_x - textmapWidth/2)
+      .attr('y', city_y + textmapHeight)
   }
 }
 
@@ -328,10 +328,10 @@ function updateZoneText(text) {
 
   // Compute text size
   var bbox = myText.node().getBBox();
-  var textWidth = bbox.width;
+  var textmapWidth = bbox.mapWidth;
 
   // Update text to center
-  myText.attr('x', loc[0] - textWidth/2);
+  myText.attr('x', loc[0] - textmapWidth/2);
 }
 
 function myTextArt(data) {
@@ -339,8 +339,8 @@ function myTextArt(data) {
   var fontIndex = 0;
   var fontFamily = FONTS[fontIndex] + ', ' + BASE_FONT;
 
-  x = width / 2;
-  y = height - 20;
+  x = mapWidth / 2;
+  y = mapHeight - 20;
 
   var text = nameFn(data);
 
@@ -351,10 +351,10 @@ function myTextArt(data) {
   
   var bbox = bigText.node().getBBox();
   
-  var textWidth = bbox.width;
-  var textHeight = bbox.height;
+  var textmapWidth = bbox.mapWidth;
+  var textmapHeight = bbox.mapHeight;
 
-  bigText.attr('x', x - textWidth/2)
+  bigText.attr('x', x - textmapWidth/2)
     .attr('y', y);
 
   bigText.transition()
