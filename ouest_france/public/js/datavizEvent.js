@@ -4,9 +4,9 @@ document.getElementById('enroute').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
 }, false);
 
-document.getElementById('commencer').onclick = function() {
+document.getElementById('commencer').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
-}
+}, false);
 
 document.getElementById('buttonEncadre1').addEventListener("click", function() {
   var value = document.getElementById('encadre1').style["z-index"];
