@@ -1,104 +1,127 @@
+<script src="js/motherboard.js" defer></script>
 <script>
-    var yCoordinate=getYCoordinate(25);
-    var components = [];
-    function getXCoordinate(xPourcentage){
-        return xPourcentage/100*screen.width;
-    }
-    function getYCoordinate(yPourcentage){
-        return yPourcentage/100*screen.height;
-    }
-
-    function image(source) {
-        var img = document.createElement("IMG");
-        img.src = source;
-        img.width=60;
-        img.height=60;
-        img.style.position="absolute";
-        img.style.width="5%";
-        img.style.height="5%";
-        img.style.bottom = window.innerHeight+'px';
-        var imageId='comp'+components.length;
-        var hashTagId='#'+imageId;
-        console.log("comp_id="+imageId);
-        console.log("hashTagId="+hashTagId);
-        img.id=imageId;
-        $('#container_platform').append(img);
-        $(hashTagId).hide();
-        var obj = {
-            image: $(hashTagId),
-            x: "300px",
-            y: yCoordinate
-        };
-        yCoordinate+=100;
-        components.push(obj);
-    }
     function animateComponents(){
-        console.log("animateComponents");
-        var i;
-        for (i = 0; i < components.length; i++) {
-            var image = components[i].image;
-            image.show();
-            image.animate({
-                left: components[i].x,
-                bottom: components[i].y
-            }, 'slow');
-        }
-
+        setTimeout(
+            function()
+            {
+                //do something special
+                $('.ge_big').addClass('show');
+            }, 3000);
+        $('.ge_small').addClass('show');
     }
-    image("img/micro_01.png");
-    image("img/micro_02.png");
+
 </script>
 
-<script>
-    /*
-     var canvas = document.getElementById("myCanvas");
-     var container = document.getElementById("container");
-     var town = document.getElementById("town");
-     canvas.width  = window.innerWidth;
-     canvas.height = window.innerHeight;
-     container.width  = window.innerWidth;
-     container.height = window.innerHeight;
-     town.width  = window.innerWidth;
-     town.height = window.innerHeight;
-     function getXCoordinate(xPourcentage){
-     return xPourcentage/100*screen.width;
-     }
-     function getYCoordinate(yPourcentage){
-     return yPourcentage/100*screen.height;
-     }
-     var myRect={x:getXCoordinate(50), y:getYCoordinate(50), w:100, h:100, color:"red"};
-     var ctx = canvas.getContext("2d");
-     ctx.fillStyle = myRect.color;
-     ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
-     canvas.addEventListener("mousemove", function(e){
-     var rect = canvas.getBoundingClientRect();
-     var xPosition=e.clientX - rect.left;
-     var yPosition = e.clientY - rect.top
-     console.log("canvas:mousemove: ("+xPosition+";"+yPosition+") and rect: ("+myRect.x+";"+myRect.y+";"+myRect.w+";"+myRect.h);
-     if ((xPosition>=myRect.x)&&(xPosition<=myRect.x+myRect.w)&&(yPosition>=myRect.y)&&(yPosition<=myRect.y+myRect.h)){
-     console.log("rect -> green");
-     myRect.color = "green";}
-     else{
-     console.log("rect -> red");
-     myRect.color = "red";}
-     updateCanvas();
-     }, false);
-
-     function updateCanvas(){
-     ctx.fillStyle = myRect.color;
-     ctx.fillRect(myRect.x, myRect.y, myRect.w, myRect.h);
-     }
-     */
-</script>
 <style>
-    #platform{
-        width: 60%;
-        height: 60%;
-        left: 0;
-        bottom: 10%;
-        position: absolute;
+    .platform{
+        display: inline-block;
+        height: 100%;
+        width: auto;
+        position: relative;
     }
+    .container_platform{
+        height: 100%;
+        overflow: hidden;
+    }
+    .platform-img{
+        /*
+            margin-top is (100 - height)/2
+         */
+        margin-top: 15%;
+        height: 70%;
+    }
+    .ge{
+        height: 30%;
+        position: absolute;
+        top: -3000px;
+        left: 0;
+        transition: all 2s ease;
+    }
+    .ge_small{
+        height: 10%;
+        position: absolute;
+        top: -3000px;
+        left: 0;
+        transition: all 2s ease;
+    }
+    .ge_01.show {
+        top:16%;
+        left: 60%;
+        z-index: 10;
+    }
+    .ge_02.show {
+        top:30%;
+        left: 5%;
+        z-index: 10;
+    }
+    .ge_03.show {
+        top:40%;
+        left: 40%;
+        z-index: 10;
+    }
+    .ge_04.show {
+        top:57%;
+        left: 62%;
+    }
+    .ge_05.show {
+        top:35%;
+        left: 20%;
+    }
+    .ge_06.show {
+        top:26%;
+        left: 42%;
+    }
+    .ge_07.show {
+        top:60%;
+        left: 25%;
+    }
+    .ge_08.show {
+        top:45%;
+        left: 80%;
+    }
+    .ge_09.show {
+        top:16%;
+        left: 45%;
+    }
+    .ge_10.show {
+        top:33%;
+        left: 55%;
+    }
+    .ge_11.show {
+        top:30%;
+        left: 36.5%;
+    }
+    .ge_12.show {
+        top:53%;
+        left: 70%;
+    }
+    .ge_13.show {
+        top:38%;
+        left: 35%;
+    }
+    .ge_14.show {
+        top:50%;
+        left: 30%;
+    }
+
+
 </style>
-<div id="container_platform">
-    <img id="platform" src="img/platforme.png"/>
+<div class="container_platform">
+    <div class="platform">
+        <img class="platform-img" src="img/platform.png"/>
+        <img class="ge ge_01 ge_big" src="img/ge/ge_01.png"/>
+        <img class="ge ge_02 ge_big" src="img/ge/ge_02.png"/>
+        <img class="ge ge_03 ge_big" src="img/ge/ge_03.png"/>
+        <img class="ge ge_04 ge_small" src="img/me/micro_01.png"/>
+        <img class="ge ge_05 ge_small" src="img/me/micro_02.png"/>
+        <img class="ge ge_06 ge_small" src="img/me/micro_03.png"/>
+        <img class="ge ge_07 ge_small" src="img/me/micro_04.png"/>
+        <img class="ge ge_08 ge_small" src="img/me/micro_05.png"/>
+        <img class="ge ge_09 ge_small" src="img/me/micro_06.png"/>
+        <img class="ge ge_10 ge_small" src="img/me/micro_07.png"/>
+        <img class="ge ge_11 ge_small" src="img/me/micro_08.png"/>
+        <img class="ge ge_12 ge_small" src="img/me/micro_09.png"/>
+        <img class="ge ge_13 ge_small" src="img/me/micro_10.png"/>
+        <img class="ge ge_14 ge_small" src="img/me/micro_11.png"/>
+    </div>
 </div>
