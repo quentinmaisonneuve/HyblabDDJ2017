@@ -243,8 +243,8 @@ function changeBubble(node)
             .attr("height", function(d){ return d.value/total * 800 ; })
             .attr("class", "bubbleC")
             .style("transform-origin", function(d){
-                var xRotation = parseFloat(d3.select(this).attr("x"),10) + ( parseFloat(d3.select(this).attr("width"),10)/2);
-                var yRotation = parseFloat(d3.select(this).attr("y"),10) + ( parseFloat(d3.select(this).attr("height"),10)/2);
+                var xRotation = parseFloat(d3.select(this).attr("x"),10) + ( parseFloat(d.value/total * 800,10)/2);
+                var yRotation = parseFloat(d3.select(this).attr("y"),10) + ( parseFloat(d.value/total * 800,10)/2);
                 return xRotation + "px " + yRotation+ "px";
             })
         ;
