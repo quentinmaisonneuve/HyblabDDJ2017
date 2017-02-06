@@ -7,9 +7,14 @@
   font-weight: bold;
   src: url("../fonts/Blogger_Sans-Bold.otf");
 }
+
 @font-face {
-  font-family: "Blogger Sans Bold";
-  src: url("../fonts/Blogger_Sans-Bold.otf");
+    font-family: "MetaPro-Normal";
+    src: url("../fonts/MetaPro-Normal.otf");
+}
+@font-face {
+    font-family: "MetaPro-Book";
+    src: url("../fonts/MetaPro-Book.otf");
 }
 
 /* just a sample css rule to show that everything works */
@@ -550,7 +555,7 @@ center img {
 /*
 Carrousel
 */
-#theCarousel {/
+#theCarousel {
     margin: auto;
     margin-top: 20px;
 }
