@@ -680,7 +680,15 @@ input:checked + .slider:before {
 }
 
 #pageFourTopCenterBarre {
-	/* IMAGE */
+	background-image: url("/images/page4_tiret_haut_graphique.png");
+	background-size: 100% 100%;
+	width: 93%;
+	margin-left: 6.5%;
+	margin-bottom: -2%;
+}
+
+#pageFourTopCenterBarre p {
+	visibility: hidden;
 }
 
 
@@ -692,10 +700,28 @@ input:checked + .slider:before {
 	visibility: hidden;
 }
 
-.c3-legend-item-event {
-	x="380"
+#player1 {
+	width: 50%;
+	margin-left: 28%;
 }
 
+.aplayer-controller {
+	visibility: hidden;
+}
+
+.aplayer-music {
+	padding-top: 7%;
+	padding-right: 27%;
+}
+
+#DirectLive {
+	width: 50%;
+	font-size: 0.9em;
+	position: absolute; 
+	margin: 0 auto;
+	margin-top: 1%;
+	font-weight: bold;
+}
 
 
 

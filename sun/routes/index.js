@@ -175,7 +175,18 @@ router.get('/GenreCreneau4H/:numberOfCreneau', function(req, res, next) {
     });
 });
 
-router.get('/getGenreLast24', function(req, res, next)
+
+router.get('/MoodCreneau4H/:numberOfCreneau/:mood', function(req, res, next) {
+    data.getMoodCreneau4H(req.params.mood, req.params.numberOfCreneau, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
+
+
+
+router.get('/getLast24', function(req, res, next)
 {
     var alternatif = ['Alternative et punk'];
     var electro = ['Electronica'];
@@ -341,6 +352,5 @@ router.get('/getGenreLast24', function(req, res, next)
         .then(function() { res.json(retour);});
 
 });
-
 
 module.exports = router;
