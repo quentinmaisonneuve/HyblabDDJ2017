@@ -54,9 +54,49 @@ function hideAnimation2016() {
 	$("#funfact2016").css("display", "none");
 }
 
-function animateLogo() {
-	
+function test() {
+	$("#btn2011").on("click", function() {
+		$("#pola2012").css("display", "none");
+		$("#pola2013").css("display", "none");
+		$("#pola2014").css("display", "none");
+		$("#pola2015").css("display", "none");
 
+		$("#pola2011").css("display", "block");
+	});
+
+	$("#btn2012").on("click", function() {
+		$("#pola2011").css("display", "none");
+		$("#pola2013").css("display", "none");
+		$("#pola2014").css("display", "none");
+		$("#pola2015").css("display", "none");
+		
+		$("#pola2012").css("display", "block");
+	});
+
+	$("#btn2013").on("click", function() {
+		$("#pola2011").css("display", "none");
+		$("#pola2012").css("display", "none");
+		$("#pola2014").css("display", "none");
+		$("#pola2015").css("display", "none");
+		
+		$("#pola2013").css("display", "block");
+	});
+
+	$("#btn2014").on("click", function() {
+		$("#pola2011").css("display", "none");
+		$("#pola2012").css("display", "none");
+		$("#pola2013").css("display", "none");
+		$("#pola2015").css("display", "none");
+		
+		$("#pola2014").css("display", "block");
+	});
+
+	$("#btn2015").on("click", function() {
+		$("#pola2011").css("display", "none");
+		$("#pola2012").css("display", "none");
+		$("#pola2013").css("display", "none");
+		$("#pola2014").css("display", "none");
+		
+		$("#pola2015").css("display", "block");
+	});
 }
-
-

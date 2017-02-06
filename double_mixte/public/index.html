@@ -40,7 +40,8 @@
 
 	<!-- Font -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Sans" />
-	
+
+
 	<!-- Nos fichiers CSS -->
 	<link rel="stylesheet" href="css/slide.css">
 	<link href="css/2012-chart.css" rel="stylesheet" type="text/css">
@@ -69,7 +70,6 @@
   	<script src="js/changecolorsvg.js"></script>
   	<script src="js/tooltip-nuitees.js"></script>
   	<script src="js/chiffresenhautagauche.js"></script>
-	<script src="js/2016-chart_nuiteesannuelles.js"></script>
 	<script src="js/social.js"></script>
 	<script src="js/popover.js"></script>
 	<script src="js/animateReinit.js"></script>
@@ -438,11 +438,27 @@
 
 
 	    <div class="item slidebilan">
-	    	<div class="graphenbnuitees">
-		  <div class="ct-chart .ct-golden-section" id="chart2"></div>
-		</div>
-	   	</div>
 
+	    	<div id="selfie">
+	    		<img src="img/selfie.svg"/>
+	    	</div>
+	    	<div id="photo">
+	    	<img id="pola2011" class="animated fadeIn" src="img/Pola_2011.png"/>
+	    	<img id="pola2012" class="animated fadeIn" src="img/Pola_2012.png"/>
+	    	<img id="pola2013" class="animated fadeIn" src="img/Pola_2013.png"/>
+	    	<img id="pola2014" class="animated fadeIn" src="img/Pola_2014.png"/>
+	    	<img id="pola2015" class="animated fadeIn" src="img/Pola_2015.png"/>
+	    	</div>
+
+	    	<div id="timeline" class="btn-group" role="group" aria-label="...">
+			  <button id="btn2011" autofocus="autofocus" type="button" class="btn btn-default">2011</button>
+			  <button id="btn2012" type="button" class="btn btn-default">2012</button>
+			  <button id="btn2013" type="button" class="btn btn-default">2013</button>
+			  <button id="btn2014" type="button" class="btn btn-default">2014</button>
+			  <button id="btn2015" type="button" class="btn btn-default">2015</button>
+			</div>
+		</div>
+	
 	   	<div class="item slideremerciements">
 			<div id="bandeauposition">
 			<div id="bandeau">
@@ -540,7 +556,7 @@ $myCarousel.on('slid.bs.carousel', function(e) {
 
   } 
 });*/
-  	animateLogo();
+
 
 $myCarousel.on('slid.bs.carousel', function (e) {
 
@@ -553,7 +569,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
  //effacer le stacked bar chart (pour resoudre pb de retard d'animation)
  d3.select('#stackedbarchart').html("");
  
-  drawChart_2016();
+  //drawChart_2016();
    var carouselData = $(this).data('bs.carousel');
  
  var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
@@ -720,6 +736,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     // bilan
     case 8 :
+    	test();
 		hidePresse2016();
 		
     	animateFacebookReinit(2016);

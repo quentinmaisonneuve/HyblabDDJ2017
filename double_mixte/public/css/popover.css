@@ -333,3 +333,84 @@ position: absolute;
     vertical-align: middle;
     font-weight: 600;
 }
+
+#timeline {
+	position: absolute;
+    left: 23vw;
+    top: 88vh;
+}
+
+#pola2011 {
+	width: 25vw;
+}
+
+#pola2012 {
+	width: 25vw;
+	display: none;
+    -vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+
+}
+#pola2013 {
+	width: 25vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+#pola2014 {
+	width: 25vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+#pola2015 {
+width: 25vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+
+#btn2011 {
+	font-family: Josefin Sans;
+}
+#btn2012 {
+	font-family: Josefin Sans;
+}
+#btn2013 {
+	font-family: Josefin Sans;
+}
+#btn2014 {
+	font-family: Josefin Sans;
+}
+#btn2015 {
+	font-family: Josefin Sans;
+}
+
+#selfie {
+    position: absolute;
+    left: 53vw;
+    bottom: 0;
+    width: 50%;
+}
+
+#perso {
+	width: 66%;
+}
+#photo {
+    position: absolute;
+    /* top: 14vh; */
+    left: 20vw;
+    bottom: 29vh;
+}
