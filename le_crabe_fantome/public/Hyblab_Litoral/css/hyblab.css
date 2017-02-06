@@ -759,21 +759,21 @@ body{
 
 
 .Monstre1{
-	width : 23vw;
+	width : 26vw;
 	position: absolute;
-    top: 7vw;
+    top: 3.5vw;
     left: 5.5%;
 }
 .Monstre2{
-	width : 18vw;
+	width : 15vw;
 	position: absolute;
-    top: 7vw;
-    left: 5.5%;
+    top: 13vw;
+    left: 10.5%;
  }
 .Monstre3{
-	width : 23vw;
+	width : 26vw;
 	position: absolute;
-    top: 7vw;
+    top: 3.5vw;
     left: 5.5%;
 }
 .Monstre4{
