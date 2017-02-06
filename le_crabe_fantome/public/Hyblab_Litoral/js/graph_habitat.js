@@ -3,11 +3,22 @@ var anneContainer=d3.select(".list_annee");
 var width = parseInt(d3.select("#graphHabitat").style("width"));
 var height = parseInt(d3.select("#graphHabitat").style("height"));
 
-console.log(width);
+var barHeight = height*0.8;
+var barWidth = width*0.6;
 
 $.getJSON("data/habitat.json",function(dataJson) {
-    svgContainer.attr('height', height*0.8)
-      .attr('width', width*0.9);
+
+
+    svgContainer.attr('height', barHeight)
+      .attr('width', barWidth)
+      .style('left', width - barWidth - 20+"px")
+      .style('top', 20+"px");
+
+
+
+    anneContainer.attr('width',barWidth)
+      .style('left', width - barWidth - 20+"px")
+      .style('top', (barHeight+30)+"px");
 
     var buttonData=[];
     var data=[];
@@ -29,22 +40,21 @@ $.getJSON("data/habitat.json",function(dataJson) {
         .append("rect");
     //<text x="100" y="100" alignment-baseline="middle" text-anchor="middle">AAAA</text>
     var tip=svgContainer.append("text").attr("alignment-baseline","middle").attr("text-anchor","middle");
+
     var buttons = anneContainer.selectAll("button")
         .data(buttonData)
         .enter()
         .append("button");
+
     buttons.attr("type","button")
         .attr("class",function (d,i) {
-            if(i==0){
-                return "button_anne_selected"
-            }else
-                return "button_anne"
-        })
+            if(i==0) return "button_anne_selected"
+            else return "button_anne"})
+        .style("width", barWidth/4)
         .append("div")
         .text(function(d) { return d;});
-    buttons.on("click",function (d,i) {
-        console.log(i);
 
+    buttons.on("click",function (d,i) {
         buttons.transition().attr("class",function (d2,i2){
             if(i==i2){
                 return "button_anne_selected"
@@ -62,14 +72,14 @@ $.getJSON("data/habitat.json",function(dataJson) {
                 for(var k=0;k<i2;k++){
                     sum+=data[i][k].value;
                 }
-                return (sum*height)  ;
+                return (sum*barHeight)  ;
             })
             .attr("id",function(d,i){
                 return i;
             })
             .attr("width",width)
             .attr("height",function(d){
-                return d.value*height;
+                return d.value*barHeight;
             })
             .attr("fill",function(d,i){
                 return color[i];
@@ -85,14 +95,14 @@ $.getJSON("data/habitat.json",function(dataJson) {
             for(var k=0;k<i;k++){
                 sum+=data[0][k].value;
             }
-            return (sum*height)  ;
+            return (sum*barHeight)  ;
         })
         .attr("id",function(d,i){
             return i;
         })
         .attr("width",width)
         .attr("height",function(d){
-            return d.value*height;
+            return d.value*barHeight;
         })
         .attr("fill",function(d,i){
             return color[i];
@@ -114,6 +124,4 @@ $.getJSON("data/habitat.json",function(dataJson) {
             .style("fill-opacity",1);
         tip.html("");
     })
-
-
 });

@@ -32,12 +32,12 @@
 			<section class="section">
 				<header class="Localhead">
 					<!--<article class="Logo">Les Eclaireurs</article>-->
-					<!--<section class="ReseauSociaux">
+					<section class="ReseauSociaux">
 						<ul>
 							<li><a class="Facebook" href="#">Facebook</a></li>
 							<li><a class="Twitter" href="#">Twitter</a></li>
 						</ul>
-					</section> -->
+					</section>
 					<section class="Intro">
 
 						<article class="Titre"></article>
@@ -63,13 +63,11 @@
 				<div class="slide">
 					<div class="CarteJeu">
 						<img class="CoteCarte" src="./pictures/Carte/carte_fond.png">
-
-						<!--<a class="ImageJeu1" href="#3rdPage/1">Lien Jeu1</a> -->
+						<a class="ImageJeu1" href="#3rdPage/1">Lien Jeu1</a>
 						<a class="ImageJeu2" href="#3rdPage/2">Lien Jeu2</a>
 						<a class="ImageJeu3" href="#3rdPage/3">Lien Jeu3</a>
 						<a class="ImageJeu4" href="#3rdPage/4">Lien Jeu4</a>
-						<a class="Bouton" id="Crédit" href="#lastPage/0">Crédits</a>
-						<article class="ImageJeu1"/>
+						<a class="Bouton" id="Crédit" href="#lastPage/0">Crédit</a>
 
 					</div>
 				</div>
@@ -79,7 +77,7 @@
 					<section class="InterfaceJ1">
 
 					</section>
-					<a href="#lastPage/1" class="Bouton" id="Data1">Plus d'infos</a>
+					<a href="#lastPage/1" class="Bouton" id="Data1">Data</a>
 					<a href="#3rdPage/0" class="Cross" id="CrossJ1"></a>
 					<script src='script_actionJeu1.js'></script>
 				</div>
@@ -150,12 +148,12 @@
 
 					</section>
 					<script src='./js/script_actionJeu1.js'></script>
-					<a href="#lastPage/2" class="Bouton" id="Data2">Plus d'infos</a>
+					<a href="#lastPage/2" class="Bouton" id="Data2">Data</a>
 					<a href="#3rdPage/0" class="Cross" id="CrossJ2"></a>
 				</div>
 				<div class="slide">
-					<article class="TitreJ3"> La légende du Gratelupia turuturu</article>
-					<article class="TextJ3"><p><span><span>Panique à la plage ! Un monstre d’algues puantes et radioactives est en train d’envahir toute la côte.<br/> Choisis entre la famille de touristes, l’agriculteur et le scientifique pour voir comment vont ils interagir avec le monstre d’algues</span></span></p></article>
+					<article class="TitreJ3">Terreur sur le littoral</article>
+					<article class="TextJ3"><p><span><span>Panique à la plage ! Un monstre d’algues puantes et radioactives est en train d’envahir toute la côte.<br/> Choisis entre la famille de touriste, l’agriculteur et le scientifique pour voir comment vont ils interagir avec le monstre d’algues</span></span></p></article>
 					<section class="InterfaceJ3">
 						<section class="FondJ3">
 							<img class="Monstre1" src="./pictures/Jeu3/Monstre-mechant.png">
@@ -200,11 +198,11 @@
 						</section>
 					</section>
 					<script src='./js/script_actionJeu3.js'></script>
-					<a href="#lastPage/3" class="Bouton" id="Data3">Plus d'infos</a>
+					<a href="#lastPage/3" class="Bouton" id="Data3">Data</a>
 					<a class="Cross" href="#3rdPage/0" id="CrossJ3"></a>
 				</div>
 				<div class="slide">
-					<article class="TitreJ4">Avis de tempête</article>
+					<article class="TitreJ4">Recherche maison en bord de mer</article>
 					<article class="TextJ4"><p><span><span>Qui n’a pas déjà rêvé de tremper ses orteils dans l’océan directement depuis son jardin, tout en regardant le soleil rouge disparaître dans les flots ? <br/> Habiter en bord de mer n’est pas forcément de tout repos et peut même être dangereux dans certains cas.<br/> Ajuste les deux curseurs : Le premier pour régler la hauteur de la digue, et le second pour placer les habitations. <br/>Le budget n’est pas illimité, à toi de trouver le juste milieu pour que tout le monde puisse vivre sereinement. <br/> Une fois décidé, clique sur le bouton GO! et vois ce qu’il se passe. </span></span></p></article>
 					<section class="InterfaceJ4">
 						<section class="FondJ4">
@@ -218,30 +216,29 @@
 							<img class="Digue1" src="./pictures/Jeu4/digue1.png">
 							<img class="Digue2" src="./pictures/Jeu4/digue2.png">
 							<img class="Digue3" src="./pictures/Jeu4/digue3.png">
+							<img class="Money" id="bourse" src="./pictures/Jeu4/bourse.png">
 							<img class="Sable" src="./pictures/Jeu4/sable.png">
 						</section>
 					</section>
 
 					<section class="BarreJ4">
 						<section class="Bdigue">
-						<p>Hauteur de la digue</p>
-							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-2" />	
+						<p>Gestion de la digue :</p>
+							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-2" />
 						</section>
 						<section class="Bhabitation">
-						<p>Nombre d'habitant</p> 
+						<p>Gestion habitation :</p>
 							<input type="range" orient="vertical" min="1" max="3" value=2 class = "barre" id="barreJ4-1" />
 						</section>
 						<section class="Bbudget">
-							<img class="Money" id="bourse" src="./pictures/Jeu4/bourse.png">
+							<p>Budget:</p>
+							<input type="text" name="Budget" id="Budget" value=""  readonly>
 						</section>
 						<section class="boutonV">
 							<button id="vague" class="Bouton">Vague</button>
 						</section>
-						<section class="boutonRV">
-							<button id="ResetV" class="Bouton">Retour</button>
-						</section>
 					</section>
-					<a href="#lastPage/4" class="Bouton" id="Data4">Plus d'infos</a>
+					<a href="#lastPage/4" class="Bouton" id="Data4">Data</a>
 					<a class="Cross" href="#3rdPage/0" id="CrossJ4"></a>
 
 					<script src='./js/script_actionJeu4.js'></script>
@@ -249,10 +246,8 @@
 			</section>
 			<section class="section">
 				<div class="slide">
-					<a href="#3rdPage/0" class="Cross" id="CrossCredit"></a>
 					<section class="Partenaires">
 						<div id="bandeau">
-
 						  <!-- Logo Hyblab -->
 						    <a href="http://www.hyblab.fr/"><img id="hyblab" src="img/logo_hyblab.png" alt="Hyblab DataSport"></a>
 
@@ -275,7 +270,7 @@
 						      </li>
 						      <!-- Logo de votre partenaire -->
 						      <li><a href="#"><img class="Equipe" src="pictures/Logo.jpg"></a></li>
-						      <!--<li><a href="#"><img class="Equipe" src="img/partenaires/logo_crabefantome.jpg"></a></li> -->
+						      <li><a href="#"><img class="Equipe" src="img/partenaires/logo_crabefantome.jpg"></a></li>
 						      <li><a href="#"><img class="Equipe" src="pictures/COSELMAR.png"></a></li>
   						      <li><a href="#"><img class="Equipe" src="pictures/cyanea_logo.png"></a></li>
 
@@ -287,7 +282,6 @@
 					  	</div>
 					</section>
 					<section class="Nous">
-						
 						<img class="NousAGR" src="pictures/MOUETTES/les_mouettes_agr.png">
 						<p class="AGR1">Léa Chérel</p>
 						<p class="AGR2">Germain Durand</p>
@@ -301,8 +295,6 @@
 						<p class="ScienceCom1">Louiz Grall-Vigneron</p>
 						<p class="ScienceCom2">Isabelle Perrot</p>
 						<p class="ScienceCom3">Victor Tesson</p>
-						<p class="Crabe">avec l'aide de Jérôme Fiy alias Monsieur Crabe</p>
-						<p class="Paroles">* : paroles de la chanson de Renaud, Dès que le vent soufflera</p>
 					</section>
 				</div>
 
@@ -364,8 +356,8 @@
 					<p class="textData" id="textDataviz4">Au fil des années, l’augmentation de la population sur le littoral a accru les risques liés à la montée des eaux. Contrairement à ce que l’on peut croire, habiter près de la digue n’offre pas nécessairement une plus grande sécurité. Une vague peut toujours dépasser la digue quelle que soit sa taille et si les maisons se trouvent à proximité elles seront également submergées. C’est une des raisons pour lesquelles la tempête Xynthia de 2010 a fait autant de dégât</p>
 					<svg id ="histogramme"></svg>
 					<div id='graphHabitat' style="display:inline-block">
-						<svg id="chart_habitat"></svg>
-						<div id="list_annee"></div>
+						<svg class="chart_habitat"></svg>
+						<div class="list_annee"></div>
 					</div>
 
 					<a href="#3rdPage/4" class="Bouton" id="RetourData4"> Retour au jeu </a>

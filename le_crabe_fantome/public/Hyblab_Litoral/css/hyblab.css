@@ -1715,40 +1715,37 @@ html.fp-enabled,
 	border-radius: 1vw;
 }
 
-.list_annee{
-	margin-left:10px;
-	margin－top:30px;
-	margin-bottom: 30px;
+.chart_habitat{
+	position: absolute;
 }
+
+.list_annee{
+	position: absolute;
+}
+
 .button_anne{
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	background-color: #; /* Green */
 	border: none;
 	color: white;
-	display: inline-block;
-	width: 98px;
-	margin: auto;
-	padding: auto;
-
 }
+
 .button_anne_selected{
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	background-color: #4CAF50; /* Green */
 	border: none;
 	color: white;
 	display: inline-block;
-	width: 98px;
-	margin: auto;
-	padding: auto;
-
 }
 
 .bar {
-	fill: steelblue;
+	fill: #6a9dae;
+}
+
+.textHisto{
+	color: white;
 }
 
 .bar:hover {
