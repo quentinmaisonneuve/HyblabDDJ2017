@@ -39,18 +39,18 @@ var endMode = {
 // Creation du svg
 var svg = d3.select('#modeTransport')
             .attr('width', modeWidth)
-            .attr('height', modeHeight);
+            .attr('height', modeHeight)
+            .style('top', 0);
 
 svg.append('rect')
-  .attr('width', width)
-  .attr('height', height)
+  .attr('width', modeWidth)
+  .attr('height', modeHeight)
   .attr('opacity', 0);
 
 var g = svg.append('g');
 
 // Creation du text
-var textG = g.append('g')
-  .style('trasform', 'translate(200px, 0)');
+var textG = g.append('g');
 textG.append('text')
   .attr('class', 'bebas')
   .attr('x', '50px')

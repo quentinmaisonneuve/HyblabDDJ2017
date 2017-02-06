@@ -4,6 +4,10 @@ document.getElementById('enroute').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
 }, false);
 
+document.getElementById('continuer').addEventListener("click", function() {
+  $.fn.fullpage.moveSectionDown();
+}, false);
+
 document.getElementById('commencer').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
 }, false);
