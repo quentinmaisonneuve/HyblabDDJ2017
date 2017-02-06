@@ -49,7 +49,7 @@ function creatFacebook(){
                     indexLabelFontColor: "#ffffff",
                     indexLabelFontWeight: 600,
                     indexLabelFontFamily: "Verdana",
-                    color: "#3b5998",
+                    color: "#D6E39C",
                     type: "bar",
                     dataPoints: data.provenancePaysPourcentage.reverse()
                 }
@@ -98,7 +98,7 @@ function creatTwitter(){
                     indexLabelFontColor: "#FFFFFF",
                     indexLabelFontWeight: 600,
                     indexLabelFontFamily: "Verdana",
-                    color: "#00acee",
+                    color: "#87C8CB",
                     type: "bar",
                     dataPoints: data.reverse()
                 }
