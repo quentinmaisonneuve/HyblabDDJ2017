@@ -185,8 +185,27 @@ p
     border-top-right-radius: 14px;
     width: 13vw;
     height: 5vh;
-    bottom: 16vh;
+    bottom: 10%;
     left: 21vw;
+}
+
+#continuer
+{
+    z-index: 4;
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    color: #216c99;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 13vw;
+    height: 5vh;
+    bottom: 10%;
+    left: 3%;
 }
 
 #section2 #car

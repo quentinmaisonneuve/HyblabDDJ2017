@@ -108,8 +108,19 @@ function startScene3() {
         .duration(key3.duration);
 }
 
+function enableCarScene() {
+    carImg.enabled = 1;
+    carImg.el.style('opacity', carImg.enabled);
+}
+
+function disableCarScene() {
+    carImg.enabled = 0;
+    carImg.el.style('opacity', carImg.enabled);
+}
+
 function updateCar() {
-    carImg.el.style('transform', 'matrix' + carImg.matrix());
+    carImg.el.style('transform', 'matrix' + carImg.matrix())
+    .style('opacity', carImg.enabled);
 }
 
 function clicked(e) {
@@ -131,6 +142,7 @@ function moveCar() {
 
 // Object
 var carImg = {
+   enabled: 0,
    el: d3.select("#container1").select("#car"),
    scale: 0.4,
    translate: new Point([0, 0]),
