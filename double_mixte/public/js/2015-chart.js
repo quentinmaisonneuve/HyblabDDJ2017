@@ -19,7 +19,6 @@ $.get("data/2015-data.json",function(data){
             nomPays.push(json_data[i].nomPays);
             nombreVisiteurs.push(json_data[i].nombreVisiteurs);
         }
-        jQuery(document).ready(function () {
         jQuery('#vmap').vectorMap({
 
           map: 'europe_en',
@@ -57,6 +56,5 @@ $.get("data/2015-data.json",function(data){
         },
 
       });
-  });
 
   })
