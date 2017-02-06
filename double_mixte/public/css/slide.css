@@ -5,7 +5,8 @@
 	width:100%;
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;  
+    background-position: center center; 
+    background-color:#eaf0f2; 
 }
 
 .skyblue {
@@ -164,3 +165,14 @@ min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   text-decoration: underline;
 }
 
+#logo1 {
+  display: block;
+}
+
+#logo2 {
+  display: none;
+}
+
+#logo3 {
+  display: none;
+}
