@@ -2,6 +2,7 @@ var svgContainer = d3.select(".chart_habitat");
 var anneContainer=d3.select(".list_annee");
 var width = parseInt(d3.select("#graphHabitat").style("width"));
 var height = parseInt(d3.select("#graphHabitat").style("height"));
+var text = d3.select("#text_graphe_habitat").style("position", "absolute");
 
 var barHeight = height*0.8;
 var barWidth = width*0.6;
@@ -110,13 +111,14 @@ $.getJSON("data/habitat.json",function(dataJson) {
         .attr("id", function(d,i){return i});
 
 
-    rect.on("mousemover", function(d, i){
+    rect.on("mouseover", function(d, i){
         rect.transition().style("fill-opacity", function(d2, i2){
             if (i === i2) return 1;
             else return 0.2;
         })
-        tip.html(Math.floor(d.value*100)+"%").attr("x", (d3.event.pageX+30) )
-            .attr("y", (d3.event.pageY-185) );
+        text.text(d.value*100+"%")
+          .style("left", (this.attr('x') + this.attr('width')/2)+"px")
+          .style("top", (this.attr('y') + this.attr('height')/2)+"px");
     });
 
     rect.on("mouseout", function(){
