@@ -246,7 +246,7 @@ function clicked(d) {
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
-  if (actualZone.localeCompare("") == 0)
+  if (!actualZone || actualZone.localeCompare("") == 0)
     return;
 
   switch (zoneState) {
