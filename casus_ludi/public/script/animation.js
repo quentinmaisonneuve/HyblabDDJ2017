@@ -22,8 +22,8 @@ function animerIntro(){
 	$('#cle_USB').transition({ x:'12%' },2000);
 
     //Horloge de la page d'accueil
-	$('#aiguille1').transition({ rotate: (360/12)*60, delay : delai},60000);
-	$('#aiguille2').transition({ rotate: 360*60,  delay : delai},60000);
+	$('#aiguille1').transition({ rotate: (360/12)*60, delay : delai},600000);
+	$('#aiguille2').transition({ rotate: 360*60,  delay : delai},600000);
 
 	//Main de la page d'accueil
 	$('#main').transition({x:'10px',delay:delai},1000,'linear');
@@ -67,13 +67,13 @@ function resetIntro(){
 	$('personnage').stop(true,true);
 
 	//Remise à zéro
-	$('#aiguille1').transition({ rotate: 0});
+	/*$('#aiguille1').transition({ rotate: 0});
 	$('#aiguille2').transition({ rotate: 0});
 	$('#main').transition({x:0});
 	$('#nuages').transition({x:0,y:0});
 	$('#cle_USB').transition({ x:0});
 	$('#fleche').transition({ y:0});
-	$('#personnage').transition({opacity:0});
+	$('#personnage').transition({opacity:0});*/
 }
 
 function animerMotion(){
@@ -135,6 +135,33 @@ function resetMotion(){
 	$('#thumbnail').transition({opacity:0});
 }
 
+function animerMotionDataViz1(){
+
+	for (var i = 0; i < 100; i++) {
+		//clignement des yeux
+			//Une fois
+		$('#paupieresHautViz1').transition({y:'28%',delay:3000},200);
+		$('#paupieresBasViz1').transition({y:'-28%',delay:3000},200);	
+		$('#paupieresHautViz1').transition({y:'0%'},300);
+		$('#paupieresBasViz1').transition({y:'-0%'},300);
+			//Deux fois
+		$('#paupieresHautViz1').transition({y:'28%',delay:2700},200);
+		$('#paupieresBasViz1').transition({y:'-28%',delay:2700},200);	
+		$('#paupieresHautViz1').transition({y:'0%'},300);
+		$('#paupieresBasViz1').transition({y:'-0%'},300);
+			//Trois fois
+		$('#paupieresHautViz1').transition({y:'28%',delay:4000},200);
+		$('#paupieresBasViz1').transition({y:'-28%',delay:4000},200);	
+		$('#paupieresHautViz1').transition({y:'0%'},300);
+		$('#paupieresBasViz1').transition({y:'-0%'},300);
+			//Quatre fois
+		$('#paupieresHautViz1').transition({y:'28%',delay:4000},200);
+		$('#paupieresBasViz1').transition({y:'-28%',delay:4000},200);	
+		$('#paupieresHautViz1').transition({y:'0%'},300);
+		$('#paupieresBasViz1').transition({y:'-0%'},300);
+	}
+}
+
 function animerConclusion(){
 	$('#panneau-conclusion').transition({y:"100%"},3000);
 	$('#panneau-conclusion-ombre').transition({opacity:1,delay:3000},1500);
@@ -177,4 +204,22 @@ function joCE(){
 	$('#thomas').attr("src","img/jc/jc-7.gif");
 	$('#jordan').attr("src","img/jc/jc-8.gif");
 	$('#arthur').attr("src","img/jc/jc-9.gif");
+}
+
+function animerAiguilleDroite(){
+	$('#aiguilleBalance').transition({rotate:45},100);
+	$('#aiguilleBalance').transition({rotate:-20},300);
+	$('#aiguilleBalance').transition({rotate:5},600);
+	$('#aiguilleBalance').transition({rotate:0},600);
+}
+
+function animerAiguilleGauche(){
+	$('#aiguilleBalance').transition({rotate:-135},100);
+	$('#aiguilleBalance').transition({rotate:-77},300);
+	$('#aiguilleBalance').transition({rotate:-95},600);
+	$('#aiguilleBalance').transition({rotate:-90},600);
+}
+
+function animerAiguilleMilieu(){
+	$('#aiguilleBalance').transition({rotate:-45},700);
 }

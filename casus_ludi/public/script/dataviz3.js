@@ -343,5 +343,15 @@ function calculPart(){
     $("#svg-container-poids1").css("left", 58 + ((100-value1)*5/100)+"%"); 
     $("#valeurPoids1").css("top", 40 + ((100-value1)*9/100)+"%");
 
+    if(value1 > value2){
+        animerAiguilleDroite();
+    }
+    else if(value1 < value2){
+        animerAiguilleGauche();
+    }
+    else{
+        animerAiguilleMilieu();
+    }
+
 
 }

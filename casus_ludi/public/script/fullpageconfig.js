@@ -85,6 +85,12 @@ $(document).ready(function(){
                         else if(index == 2){
                                 animerMotion();
                         }
+                        else if(index == 3){
+                                animerMotionDataViz1();
+                        }
+                        else if(index == 5){
+                                animerAiguilleDroite();
+                        }
                         else if(index == 6){
                                 animerConclusion();
                         }

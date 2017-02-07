@@ -238,7 +238,10 @@ video{
 	cursor:pointer;
 }
 
-/* Dataviz2 */
+
+/************************************************************************/
+/**************************** Dataviz 2 *********************************/
+/************************************************************************/
 
 #dataviz2-section h1{
 	font-size: 4.5vmin;
@@ -486,7 +489,10 @@ video{
 }
 
 
-/* DATAVIZ 1*/
+
+/************************************************************************/
+/**************************** Dataviz 1 *********************************/
+/************************************************************************/
 
 .ct-label-title{
 	fill:rgb(0,0,0);
@@ -576,10 +582,37 @@ video{
 }
 
 #imagePerso{
+	z-index: 0;
 	position: absolute;
 	top:58%;
 	width: 15%;
 	left:55%;
+}
+
+#imagePersoYeux{
+	z-index: -2;
+	position: absolute;
+	top:64.1%;
+	width: 4%;
+	left:60.6%;
+}
+
+#paupieresHautViz1{
+	z-index: -1;
+	position: absolute;
+	top:59.2%;
+	left:59.7%;
+	height: 6.8%;
+	width: 5.8%;
+}
+
+#paupieresBasViz1{
+	z-index: -1;
+	position: absolute;
+	top:65%;
+	left:59.7%;
+	height: 6.8%;
+	width: 5.8%;
 }
 
 #imageBullePerso{
@@ -591,7 +624,7 @@ video{
 #topCreate,#flopCreate,#topUpdate,#flopUpdate{
 	position: absolute;
 	height:26%;
-	width:13%;
+	width:11%;
 	text-align: left;
 }
 #topCreate ul,#flopCreate ul,#topUpdate ul,#flopUpdate ul{
@@ -601,19 +634,19 @@ video{
 }
 
 #topCreate,#flopCreate{
-	top:7.5%;
+	top:8%;
 }
 
 #topUpdate,#flopUpdate{
-	top:38.5%;
+	top:37.5%;
 }
 
 #topCreate,#topUpdate{
-	left:59%;
+	left:58.5%;
 }
 
 #flopCreate,#flopUpdate{
-	left:77%;
+	left:74.5%;
 }
 
 
@@ -625,6 +658,7 @@ video{
 	list-style-type: decimal;
 	color:#000033;
 	font-size:2vmin;
+	margin-bottom:3vmin;
 }
 
 
@@ -648,8 +682,8 @@ video{
 
 #imageTopC,#imageFlopC,#imageTopU,#imageFlopU{
 	position: absolute;
-	height:26%;
-	width:15%;
+	height:27.5%;
+	width:12.5%;
 }
 
 #imageTopC,#imageTopU{
@@ -657,7 +691,7 @@ video{
 }
 
 #imageFlopC,#imageFlopU{
-	left:76%;
+	left:74%;
 }
 
 #imageTopC,#imageFlopC{
@@ -665,7 +699,7 @@ video{
 }
 
 #imageTopU,#imageFlopU{
-	top:33%; 
+	top:31%; 
 }
 
 #legendC,#legendU{
@@ -714,7 +748,9 @@ video{
 	}
 }
 
-/*** Conclusion****/
+/************************************************************************/
+/**************************** Conclusion ********************************/
+/************************************************************************/
 #conclusion-fond{
 	z-index: -1;
 	position: absolute;
@@ -786,27 +822,131 @@ video{
 	}
 }
 
-/*** Dataviz 3 ***/
+/************************************************************************/
+/**************************** Dataviz 3 *********************************/
+/************************************************************************/
+
+#dataviz-3-title{
+	height: 20%;
+}
+
+#dataviz-3-title h1, #dataviz-3-title p{
+	padding: 0;
+	margin:0;
+}
+
+#dataviz-3-title p{
+	margin-top:0.5%;
+}
+
+#button1, #button2{
+	width: 3vmin;
+}
+
+#topMenuGauche, #topMenuDroite{
+	position: absolute;
+	width: 25%;
+	top:14.5%;
+	font-size: 3vmin;
+	text-align: center;
+	vertical-align: center;
+	height: 5%;
+}
+
+#topMenuGauche p, #topMenuDroite p{
+	display:inline;
+}
+
+#topMenuGauche .textType, #topMenuDroite .textType{
+	margin:0;
+}
+
+#topMenuGauche{
+	left:0;
+}
+
+#topMenuDroite{
+	right:0;
+}
+
+/* Dataviz3 responsive */ 
+@media only screen and (max-width: 1100px){
+	#topMenuGauche, #topMenuDroite{
+		font-size: 2.5vmin;
+	}
+	#button1, #button2{
+		width: 2.5vmin;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#topMenuGauche, #topMenuDroite{
+		font-size: 2vmin;
+	}
+	#listeRegion2 {
+		font-size: 1.5vmin; 
+	}
+	#listeRegion1{
+		font-size: 1.5vmin; 
+	}
+}
+
+@media only screen and (max-width: 820px){
+	#topMenuGauche .textType, #topMenuDroite .textType{
+		font-size: 1.4vmin;
+	}
+	#listeRegion2 ul a li {
+		font-size: 1.4vmin; 
+	}
+	#listeRegion1 ul a li {
+		font-size: 1.4vmin; 
+	}
+
+	#dataviz-3-title{
+		font-size: 2vmin;
+	}
+
+	#dataviz3-sous-titre{
+		font-size: 2vmin;
+	}
+}
+
+@media only screen and (max-width: 660px){
+
+	#dataviz-3-title{
+		font-size: 1.5vmin;
+	}
+
+	#dataviz3-sous-titre{
+		font-size: 1.5vmin;
+	}
+}
+
+
 #listeRegion2 {
+	position: absolute;
 	font-size: 2vmin;
-	width : 90%;
+	width : 25%;
 	text-align: left; 
 	background-color : #000040; 
 	color:white; 
 	border : solid 2px #000040; 
-	border-radius : 5px;
-	margin-left: 6%; 
+	border-radius : 5px; 
+	left: 0;
+	top:20%;
 } 
 
 #listeRegion1 {
+	position: absolute;
 	font-size: 2vmin;
-	width : 90%;
+	width : 25%;
 	text-align: left; 
 	background-color : #002CE6; 
 	color:white; 
 	border : solid 2px #002CE6; 
 	border-radius : 5px;
-	margin-left: 6%
+	top:20%;
+	right: 0;
 } 
 
 .listeRegion:hover{
@@ -830,16 +970,21 @@ video{
 	color :black;  border : solid 4px white; border-radius : 10px;
 }
 
-/*#poids1{
+#balance-fond{
 	position:absolute;
-	right:30%;
-	top:39%;}
+	left: 19%;
+	width: 62%;
+	height:62%;
+}
 
-#poids2{
-	position:absolute;
-	right:60%;
-	top:39%;
-}*/
+#aiguilleBalance{
+	transform: rotate(-45deg);
+	width: 8%;
+	height: 8%;
+	position: absolute;
+	top: 32.5%;
+	right: 46.3%;
+}
 
 #svg-container-poids2{
 	visibility: hidden;
@@ -884,27 +1029,8 @@ a{
 	text-decoration:none;
 }
 
-/*.choix{
-	background-color:white;
-	text-align:center;
-}
 
-tr.sousGauche{
-	border-width:1px;
-	border-style:solid;
-}
-
-tr.sousDroite{
-	border-width:1px;
-	border-style:solid;
-}*/
-
-#affiche_balance{
-	background-color:white;
-}
-
-h1{
-	background-color:white;
+#dataviz-3-title h1{
 	text-align:center;
 }
 
@@ -912,118 +1038,9 @@ h1{
     text-align: center;
 }
 
-/*p{
-	margin-top:0;
-	margin-bottom:10px;
-	margin-right:0;
-	margin-left:0;
-}
-
-p.sousGauche{
-	background-color:white;
-	height:5%;
-	text-align:right;
-	border-radius:10px;
-}
-
-p.sousDroite{
-	background-color:white;
-	height:5%;
-	text-align:left;
-	border-radius:10px;
-}
-
-caption{
-	caption-side:top;
-	text-align:center;
-}*/
-
-#aiguilleBalance{
-	transform: rotate(-45deg);
-	width: 10%;
-	height: 10%;
-	position: absolute;
-	top: 29.5%;
-	right: 45.17%;
-}
-
-/*.textee{
-	margin-left:25px;
-	text-align:justify;
-}
-
-a.menu3{
-	text-align:center;
-	color:#002BE5;
-}*/
-
-img.bouton{
-	display : inline;
-}
-
-.textType {
-	position : relative;
-	top : -13px;
-	display : inline;
-	font-size: 2.5vmin;
-}
-
-/*#source{
-	position:absolute;
-	bottom:0;
-}*/
-
-/* Dataviz3 responsive */ 
-
-@media only screen and (max-width: 1100px){
-	#button2 {
-		width : 40px; 
-	}
-	#button1{
-		width : 40px; 
-	}
-}
-@media only screen and (max-width: 1000px){
-	.textType{
-		font-size: 2vmin;
-		top : -5px;
-	}
-	#button2 {
-		width : 30px; 
-	}
-	#button1{
-		width : 30px; 
-	}
-	#listeRegion2 {
-		font-size: 1.5vmin; 
-	}
-	#listeRegion1{
-		font-size: 1.5vmin; 
-	}
-}
-
-@media only screen and (max-width: 790px){
-	.textType{
-		font-size: 1.7vmin;
-		top : -5px;
-	}
-	#button2 {
-		width : 25px; 
-	}
-	#button1{
-		width : 25px; 
-	}
-	#listeRegion2 {
-		font-size: 1.2vmin; 
-	}
-	#listeRegion1{
-		font-size: 1.2vmin; 
-	}
-}
-
-
-
-/*** Remerciement ***/
+/************************************************************************/
+/**************************** Rmerciements ******************************/
+/************************************************************************/
 #outro-fond{
 	position: absolute;
 	width: 100%;
