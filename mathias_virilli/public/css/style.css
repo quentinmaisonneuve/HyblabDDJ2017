@@ -494,6 +494,7 @@ html {
       background-color: #adbad8;
         background:url(../img/Statue_of_Liberty_frontal_213.jpg) ;
       background-size:100%;
+      background-position: 0px -150px;
     }
  
     .main section.page2 {
