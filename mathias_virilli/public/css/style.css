@@ -501,6 +501,14 @@ html {
       line-height: 30%;
       padding-bottom: 30px;
     }
+    .main section.page8 h1 {
+      padding: 0;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+      margin-top: 5%;
+    }
     .main section .page_container .btns {
       clear: both;
       float: left;
@@ -519,6 +527,7 @@ html {
       background-color: #adbad8;
         background:url(../img/Statue_of_Liberty_frontal_213.jpg) ;
       background-size:100%;
+      background-position: 0px -150px;
     }
  
     .main section.page2 {
@@ -895,3 +904,79 @@ html {
   }
 }
 
+#bandeau-logos {
+  padding: 8px;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 10%;
+}
+
+#bandeau-logos li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+
+#bandeau-logos img{
+  height: 46px;
+}
+
+#bandeau-logos #hyblab{
+  margin: 46px 0;
+  height: 50px;
+  float: left;
+}
+
+#bandeau-logos #cc, #bandeau-logos #opensource
+{
+  height:16px;
+}
+
+#bandeau-logos .stacked{
+  display:block;
+}
+
+#bandeau-logos ul{
+  text-align: center;
+  padding: 0 0;
+}
+
+#bandeau-logos .institutionnel
+{
+  height: 42px;
+}
+
+#titre-credits
+{
+    color: black;
+    padding: 0;
+    margin-top: 100px;
+}
+
+#credits ul
+{
+    list-style: none;
+    display: table;
+    padding-top: 20px;
+    margin: auto;
+}
+
+#credits ul li
+{
+    display: table-cell;
+    padding: 10px;
+}
+
+#credits a
+{   
+    color: black;
+}
+
+#credits ul li img
+{
+    width: 80px;
+    height: 80px;
+}
