@@ -254,35 +254,26 @@ function initDataviz3(){
     var value2 = Math.round((p2*100)/(p2 + p1)); 
     var value1 = Math.round((p1*100)/(p2 + p1)); 
 
-    $("#valeurPoids2").html(value2+"%");
-    $("#svg-container-poids2").css("width",4 + (value2 * 11 / 100) + "%"); 
+    $("#valeurPoidsGauche").html(value2+"%");
 
-    $("#svg-container-poids2").css("visibility","visible"); 
-    $("#svg-container-poids2").css("top", 21 + ((100-value2)*26/100)+"%"); 
-    $("#svg-container-poids2").css("left", 28 + ((100-value2)*5/100)+"%");
-    $("#valeurPoids2").css("top", 41 + ((100-value2)*9/100)+"%");
+    $("#valeurPoidsDroite").html(value1+"%");
 
-    $("#valeurPoids1").html(value1+"%");
-    $("#svg-container-poids1").css("width",4 + (value1 * 11 / 100) + "%"); 
-
-    $("#svg-container-poids1").css("visibility","visible"); 
-    $("#svg-container-poids1").css("top", 21 + ((100-value1)*26/100)+"%"); 
-    $("#svg-container-poids1").css("left", 58 + ((100-value1)*5/100)+"%"); 
-    $("#valeurPoids1").css("top", 40 + ((100-value1)*9/100)+"%");
-
+    calculPart();
 }
 
 function changeType(elem, type){
     if($(elem).attr("src") == "./img/bouton2.svg"){
         $(elem).attr("src","./img/bouton.svg");
         if($(elem).attr("id") == 'button1'){
-            $("#poids1").attr("data", "./img/poids_clair.svg"); 
+            $("#poidsDroite").attr("src", "./img/balance/poidsClair.svg"); 
+            $("#cableDroite").attr("src", "./img/balance/cable_clair.svg"); 
             $("#listeRegion1").css("background-color", "#002CE6");
             $("#listeRegion1").css("border-color", "#002CE6");
             typep1 = "service";
         }
         else {
-            $("#poids2").attr("data", "./img/poids_clair.svg"); 
+            $("#poidsGauche").attr("src", "./img/balance/poidsClair.svg"); 
+            $("#cableGauche").attr("src", "./img/balance/cable_clair.svg"); 
             $("#listeRegion2").css("background-color", "#002CE6"); 
             $("#listeRegion2").css("border-color", "#002CE6");
             typep2 = "service";
@@ -291,13 +282,15 @@ function changeType(elem, type){
     else{
         $(elem).attr("src","./img/bouton2.svg");
           if($(elem).attr("id") == 'button1'){
-            $("#poids1").attr("data", "./img/poids.svg"); 
+            $("#poidsDroite").attr("src", "./img/balance/poidsFonce.svg"); 
+            $("#cableDroite").attr("src", "./img/balance/cable_fonce.svg"); 
             $("#listeRegion1").css("background-color", "#000040"); 
             $("#listeRegion1").css("border-color", "#000040");
             typep1 = "democratique";
         }
         else {
-            $("#poids2").attr("data", "./img/poids.svg"); 
+            $("#poidsGauche").attr("src", "./img/balance/poidsFonce.svg"); 
+            $("#cableGauche").attr("src", "./img/balance/cable_fonce.svg"); 
             $("#listeRegion2").css("background-color", "#000040"); 
             $("#listeRegion2").css("border-color", "#000040");
             typep2 = "democratique";
@@ -327,29 +320,20 @@ function calculPart(){
     var value2 = Math.round((p2*100)/(p2 + p1)); 
     var value1 = Math.round((p1*100)/(p2 + p1)); 
 
-    $("#valeurPoids2").html(value2+"%");
-    $("#svg-container-poids2").css("width",4 + (value2 * 11 / 100) + "%"); 
+    $("#valeurPoidsGauche").html(value2+"%");
 
-    $("#svg-container-poids2").css("visibility","visible"); 
-    $("#svg-container-poids2").css("top", 21 + ((100-value2)*26/100)+"%"); 
-    $("#svg-container-poids2").css("left", 28 + ((100-value2)*5/100)+"%");
-    $("#valeurPoids2").css("top", 41 + ((100-value2)*9/100)+"%");
-
-    $("#valeurPoids1").html(value1+"%");
-    $("#svg-container-poids1").css("width",4 + (value1 * 11 / 100) + "%"); 
-
-    $("#svg-container-poids1").css("visibility","visible"); 
-    $("#svg-container-poids1").css("top", 21 + ((100-value1)*26/100)+"%"); 
-    $("#svg-container-poids1").css("left", 58 + ((100-value1)*5/100)+"%"); 
-    $("#valeurPoids1").css("top", 40 + ((100-value1)*9/100)+"%");
+    $("#valeurPoidsDroite").html(value1+"%");
 
     if(value1 > value2){
-        
+        animerCableGauche(-(10-(value2/10))+'vmin');
+        animerCableDroite((value1/10)+'vmin');
     }
     else if(value1 < value2){
-        
+        animerCableGauche((value2/10)+'vmin');
+        animerCableDroite(-(10-(value1/10))+'vmin');
     }
     else{
+        animerCablesMilieu();
     }
 
 

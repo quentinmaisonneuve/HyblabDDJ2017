@@ -262,11 +262,23 @@ function animerDataviz3(){
 	}
 }
 
-function animerAiguilleDroite(){
+function animerCableGauche(value){
+	$('#cableGauche').transition({y:value},500);
+	$('#poidsGauche').transition({y:value},500);
+	$('#valeurPoidsGauche').transition({y:value},500);
 }
 
-function animerAiguilleGauche(){
+function animerCableDroite(value){
+	$('#cableDroite').transition({y:value},500);
+	$('#poidsDroite').transition({y:value},500);
+	$('#valeurPoidsDroite').transition({y:value},500);
 }
 
-function animerAiguilleMilieu(){
+function animerCablesMilieu(){
+	$('#cableGauche').transition({y:0},500);
+	$('#poidsGauche').transition({y:0},500);
+	$('#cableDroite').transition({y:0},500);
+	$('#poidsDroite').transition({y:0},500);
+	$('#valeurPoidsGauche').transition({y:0},500);
+	$('#valeurPoidsDroite').transition({y:0},500);
 }
