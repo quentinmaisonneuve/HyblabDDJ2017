@@ -1781,8 +1781,10 @@ html.fp-enabled,
 
 #text_graphe_habitat{
 	position: absolute;
-	left : 5vw;
-	top : 13vw;
+	left : 1vw;
+	top : 20vw;
+	font: 3vw sans-serif;
+	color: white;
 }
 
 .chart_habitat{
@@ -1791,6 +1793,38 @@ html.fp-enabled,
 
 .list_annee{
 	position: absolute;
+}
+
+.legendeHisto{
+	width: 3vw;
+	height: 3vw;
+	display: inline-block;
+}
+
+#legende{
+	position: absolute;
+	top: 5vw;
+	left: 1vw;
+	text-align: left;
+}
+
+.textLegende{
+	fill: #eff2f4;
+	font: 1.5vw sans-serif;
+	display: inline-block;
+}
+
+#legende1{
+	background-color: #062a3a;
+}
+#legende2{
+	background-color: #6a9dae;
+}
+#legende3{
+	background-color: #b8e8f2;
+}
+#legende4{
+	background-color: #ffffff;
 }
 
 .button_anne{
@@ -1815,7 +1849,13 @@ html.fp-enabled,
 }
 
 .textHisto{
-	color: white;
+	fill: #eff2f4;
+	font: 2vw sans-serif;
+}
+
+.dateHisto{
+	fill: #980b11;
+	font: 2vw sans-serif;
 }
 
 .bar:hover {

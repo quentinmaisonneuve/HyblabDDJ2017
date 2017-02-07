@@ -37,12 +37,31 @@ var createGraph = function(data){
 
   var bar = g.selectAll(".bar")
       .data(data)
-      .enter().append("rect")
+      .enter()
+      .append("g");
+
+  bar.append("rect")
       .attr("class", "bar")
       .attr("x", function(d) { return x(d.letter); })
       .attr("y", function(d) { return y(d.frequency); })
       .attr("width", x.rangeBand())
       .attr("height", function(d) { return height - y(d.frequency) - margin.bottom - margin.top; });
+
+  bar.append("text")
+      .attr("class", "textHisto")
+      .attr("x", function(d) { return x(d.letter)})
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("dx", ".35em")
+      .attr("dy", "1.2em")
+      .text(function(d) {return (d.frequency*100)+"%";});
+
+  bar.append("text")
+      .attr("class", "dateHisto")
+      .attr("x", function(d) { return x(d.letter)})
+      .attr("y", function(d) { return height - margin.bottom - margin.top; })
+      .attr("dx", ".35em")
+      .attr("dy", "-.35em")
+      .text(function(d) {return (d.letter);});
 }
 
 d3.tsv("data/data.tsv", function(d) {
