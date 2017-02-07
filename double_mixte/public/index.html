@@ -184,9 +184,7 @@
 				<br/><br/>
 				Une ligne rose longue de 12 km apparaît sur le sol de Nantes. Elle serpente à travers la ville et conduit les visiteurs dans la découverte des oeuvres du Voyage à Nantes. L'occasion pour Donatien de guider ses amis et sa famille jusqu'aux <span class=gras>Machines de l'île</span> où l'offre se développe avec l'ouverture du <span class="gras">Carrousel des mondes marins</span>.
 			</div>
-					<div id="busVan12"  class="busVan">
-						<img src="img/busVan/VAN2012.svg"/>
-					</div>
+					
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2012facebook0" class="2012facebook" src="img/blanc.svg"/>
@@ -212,6 +210,9 @@
 			<!--<div class="van-annees">
 				<img src="img/van_annees/van_2012.svg" data-animation="animated bounceInLeft" width/>
           	</div>-->
+          	<div id="busVan12"  class="busVan">
+						<img src="img/busVan/VAN2012.svg"/>
+					</div>
         </div>
 
         <!-- 2013 -->
@@ -257,9 +258,7 @@
 			Le mois d'août devient le 2e meilleur mois de l'année en termes de fréquentation touristique (après juin). Ce phénomène est révélateur d'un rééquilibrage du tourisme à Nantes qui accueille de plus en plus de vacanciers.
 			</p>
 			</div>
-			<div id="busVan13" class="busVan">
-				<img src="img/busVan/VAN2013.svg"/>
-			</div>
+
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2013facebook0" class="2013facebook" src="img/blanc.svg"/>
@@ -282,6 +281,9 @@
  				<img id="2013insta3" class="2013insta" src="img/blanc.svg"/>
  				<img id="2013insta4" class="2013insta" src="img/blanc.svg"/>
         	</div>
+        				<div id="busVan13" class="busVan">
+				<img src="img/busVan/VAN2013.svg"/>
+			</div>
 	    </div>
 
         <!-- 2014 -->
@@ -752,8 +754,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
    	// 2016
     case 7 :
-
-   	animateBus("busVan16");
+animateLastBus();
     	showAnimation2016();
 		showPresse2016();
     	// animate
@@ -774,6 +775,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
     // bilan
     case 8 :
     	test();
+
 		hidePresse2016();
 		
     	animateFacebookReinit(2016);
