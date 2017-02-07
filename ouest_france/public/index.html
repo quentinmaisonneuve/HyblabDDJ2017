@@ -54,7 +54,7 @@
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
-                  afterLoad: updateSlideNav,
+                  afterLoad: updateSlideNav, <!-- pour qu'après chaque chargement de slide, fullPage lance la fonction updateSlideNav() du modules noSlideNav.js -->
                 });
             });
         </script>
