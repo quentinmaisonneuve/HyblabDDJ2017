@@ -301,7 +301,7 @@ position: absolute;
 
 #popover2015 {
     position: absolute;
-    display: block;
+    display: none;
     left: 75vw;
     top: 60vh;
     width: 21vw;
