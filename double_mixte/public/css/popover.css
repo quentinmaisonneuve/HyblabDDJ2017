@@ -20,6 +20,42 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#pieForm{
+      margin-top: 10%;
+}
+
+.radio label {
+    display:inline-block;
+    width: 270px;
+    padding:8px;
+    font-family:Josefin Sans;
+    font-size:13pt;
+    background-color: #f43f00;
+    font-weight: bold;
+}
+
+#ageLabel{
+    color:white;
+}
+#csLabel:{
+    color:#001526;
+}
+#ageLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+}
+#csLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+
+}
+.radio input[type="radio"]:checked + label { 
+    background-color:#bbb;
+}
+
 .presse {
 	position: absolute;
     
@@ -33,6 +69,10 @@
     -webkit-animation-duration: 3s;
     -ms-animation-duration: 3s;
     -khtml-animation-duration: 3s;
+}
+input {
+    display: block;
+    box-sizing: border-box;
 }
 #presse2013 {
 	display: none;
@@ -324,6 +364,15 @@ position: absolute;
     background-image: url(../img/bulle2013.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    color:#001526;
+}
+
+#labelValue14 {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#001526;
 }
 #pb {
     position: absolute;
@@ -452,8 +501,8 @@ width: 32vw;
 #popover2014 {
 position: absolute;
     display: block;
-    left: 14vw;
-    top: 20vh;
+    right: 43vw;
+    top: 45vh;
     width: 12vw;
     font-size: 1.2vw;
     font-family: Josefin Sans;
