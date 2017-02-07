@@ -8,8 +8,8 @@ var ap1 = new APlayer({
     preload: 'metadata',
     mode: 'circulation',
     music: {
-        title: 'Miss Camping',
-        author: 'Boris',
+        title: 'Le petit prince',
+        author: 'Hanz Zimmer',
         url: 'http://devtest.qiniudn.com/Preparation.mp3',
         pic: 'http://devtest.qiniudn.com/Preparation.jpg'
     }
