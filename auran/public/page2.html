@@ -19,6 +19,44 @@
         return rgb;
     }
 
+    function smallCompaniesAnimation(pourcentageSmall, pourcentageBig){
+        var entreprisesIndividuelles = $('.entreprises-individuelles');
+        var small_companies_share = document.querySelector('#small_companies_share');
+        $('.ge_small').slice(0, pourcentageSmall/10).addClass('show');
+
+        for(i=0;i<=pourcentageSmall;i++){
+            console.log("next time: "+(i*1000));
+            setTimeout(
+                function(index) {
+                    console.log("display: "+index);
+                    small_companies_share.textContent = index;
+                    if(index==pourcentageSmall){
+                        bigCompaniesAnimation(pourcentageBig);
+                    }
+                }, i*50, i);
+            setTimeout(function(index) {
+                entreprisesIndividuelles.css("background-color", ColorLuminance("#342756", -index/150));
+            }, i*10, i);
+        }
+    }
+
+    function bigCompaniesAnimation(pourcentageBig){
+        var grandesEntreprises = $('.grandes-entreprises');
+        var big_companies_share = document.querySelector('#big_companies_share');
+        $('.ge_big').slice(0, pourcentageBig/10).addClass('show');
+        for(i=0;i<=pourcentageBig;i++){
+            console.log("next time: "+(i*1000));
+            setTimeout(function(index) {
+                console.log("display: "+index);
+                big_companies_share.textContent = index;
+            }, i*100, i);
+
+            setTimeout(function(index) {
+                grandesEntreprises.css("background-color", ColorLuminance("#140F21", -index/150));
+            }, i*10, i);
+        }
+    }
+
     function animateComponents(){
         fetch('data/numeric_shares.json')
         // this promise will be fulfilled when the json fill will be
@@ -37,49 +75,31 @@
             })
             // this promise will be fulfilled when the json will be parsed
             .then(function (json) {
-                var pourcentageSmall=json["pourcentage_small"];
                 var pourcentageBig=json["pourcentage_big"];
-
+                var pourcentageSmall=json["pourcentage_small"];
                 var big_companies_share = document.querySelector('#big_companies_share');
-                var small_companies_share = document.querySelector('#small_companies_share');
                 var i;
-                var entreprisesIndividuelles = $('.entreprises-individuelles');
                 var grandesEntreprises = $('.grandes-entreprises');
+                smallCompaniesAnimation(pourcentageSmall, pourcentageBig);
+                /*
                 console.log("pourcentageBig="+pourcentageBig);
+                $('.ge_big').slice(0, pourcentageSmall/10).addClass('show');
                 for(i=0;i<=pourcentageBig;i++){
                     console.log("next time: "+(i*1000));
                     setTimeout(function(index) {
                             console.log("display: "+index);
                             big_companies_share.textContent = index;
+                            if(index==pourcentageBig){
+                                smallCompaniesAnimation(pourcentageSmall);
+                            }
                         }, i*100, i);
 
                     setTimeout(function(index) {
                         grandesEntreprises.css("background-color", ColorLuminance("#140F21", -index/150));
                     }, i*10, i);
                 }
-
-                for(i=0;i<=pourcentageSmall;i++){
-                    console.log("next time: "+(i*1000));
-                    setTimeout(
-                        function(index) {
-                            console.log("display: "+index);
-                            small_companies_share.textContent = index;
-                        }, i*50, i);
-                    setTimeout(function(index) {
-                        entreprisesIndividuelles.css("background-color", ColorLuminance("#342756", -index/150));
-                    }, i*10, i);
-                }
-
-                setTimeout(
-                    function()
-                    {
-                        //do something special
-                        //$('.ge_big').addClass('show');
-                        $('.ge_big').slice(0, pourcentageBig/10).addClass('show');
-                    }, 3000);
-                $('.ge_small').slice(0, pourcentageSmall/10).addClass('show');
+                */
             });
-
     }
 
 </script>
