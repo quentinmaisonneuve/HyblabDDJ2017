@@ -70,9 +70,35 @@ a {
 }
 
 span{
-   font-size: 13px;
+  font-size: 13px;
   color:  #323B49;
   line-height: 140%;
+}
+
+#media{
+  background-image: none;
+  background-color: #E44E7E;
+}
+
+#etude{
+  background-image: none;
+  background-color: #F1B593;
+}
+
+#nope{
+  background-image: none;
+  background-color: #87C8CB;
+}
+
+.progress{
+height:40px;
+text-align:center;
+margin-bottom: 0px;
+margin-top: 20px;
+}
+
+.progress-bar {
+  padding:12px;
 }
 
 .newp {
