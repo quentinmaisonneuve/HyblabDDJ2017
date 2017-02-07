@@ -69,11 +69,15 @@ for (var i=0; i<cities.length; i++) {
   cities[i][2] = pos[1]; 
 }
 
+var backGroundColor = '#e5e5e5';
+var selectColor = '#cbc9c9';
+
+
 // Define color scale
 var color = d3.scale.linear()
   .domain([1, 20])
   .clamp(true)
-  .range(['#6666ff', '#6666ff']);
+  .range([backGroundColor, backGroundColor]);
 
 var path = d3.geo.path()
   .projection(projection);
@@ -98,7 +102,7 @@ var mapLayer = g.append('g')
 
 var actualZone = "";
 var actualId = "";
-var zoneBackgroundSize = [120, 40];
+var zoneBackgroundSize = [150, 40];
 var iconCrossSize = [8, 8];
 var zoneState = 0;
 
@@ -106,46 +110,136 @@ var zone0 = {
   text: "",
   id : "",
   element: null,
-  location: [100, 200],
-  color: 'green',
+  location: [200, 270],
+  color: '#d8584e',
   
 };
 
+var zone1 = {
+  text: "",
+  id: "",
+  element: null,
+  location: [200, 330],
+  color: '#eab521',
+};
+
+// Ajout du texte decoratif
+var decoG = g.append('g');
+var decoTextG = decoG.append('g');
+
+decoTextG.append("svg:foreignObject")
+  .attr("class", "texth2")
+  .style('font-family', 'Borg')
+  .attr('x', '39px')
+  .attr('y', '0px')
+  .attr('width', 300)
+  .attr('height', 300)
+  .style('color', 'white')
+  .text('OÙ ALLLONS NOUS?');
+
+decoTextG.append("svg:foreignObject")
+  .attr("class", "bebas")
+  .style('font-family', 'ArialR')
+  .style('font-family', '14px')
+  .attr('x', '43px')
+  .attr('y', '158px')
+  .attr('width', 200)
+  .attr('height', 300)
+  .style('color', 'white')
+  .text('Un clic sur le départ, un sur l\'arrivée et c\'est parti !');
+
+
+
+var rectG = decoG.append('g');
+
+var startX = 40;
+var rectWidth = 340;
+var smallRectHeight = 30; 
+
+d3.select("#continuer")
+  .style("bottom", "25%")
+  .style("left", (startX + rectWidth/2 - 90) + "px");
+
+rectG.append("rect")
+    .attr("x", startX)       
+    .attr("y", 220)          
+    .attr("width", rectWidth)
+    .attr("height", 150)   
+    .style("fill", "white")    
+    .attr("rx", 20)       
+    .attr("ry", 20);
+
+rectG.append("rect")
+    .attr("x", startX + 10)       
+    .attr("y", zone0.location[1] - 20)          
+    .attr("width", rectWidth - 20)
+    .attr("height", smallRectHeight)   
+    .style("fill", zone0.color)    
+    .attr("rx", 20)       
+    .attr("ry", 20);
+
+rectG.append("rect")
+    .attr("x", startX + 10)       
+    .attr("y", zone1.location[1] - 20)          
+    .attr("width", rectWidth - 20)
+    .attr("height", smallRectHeight)   
+    .style("fill", zone1.color)    
+    .attr("rx", 20)       
+    .attr("ry", 20);
+
+rectG.append("text")
+  .attr("class", "bebas")
+  .style('font-family', 'ArialR')
+  .style('font-family', '14px')
+  .attr('x', zone0.location[0] - (rectWidth - 20)/2 + 25)
+  .attr('y', zone0.location[1] - smallRectHeight/2 - 10)
+  .attr('width', 200)
+  .attr('height', 300)
+  .style('color', '#1f546e')
+  .text('DÉPART:');
+
+rectG.append("text")
+  .attr("class", "bebas")
+  .style('font-family', 'ArialR')
+  .style('font-family', '14px')
+  .attr('x', zone1.location[0] - (rectWidth - 20)/2 + 25)
+  .attr('y', zone1.location[1] - smallRectHeight/2 - 10)
+  .attr('width', 200)
+  .attr('height', 300)
+  .style('color', '#1f546e')
+  .text('ARRIVÉE:');
+
+// Ajout des éléments
 zone0.textElement = g.append('text')
       .classed('big-text', true)
       .style('font-family', defaultFontFamily)
       .style("font-size", "14px")
       .attr('x', zone0.location[0])
       .attr('y', zone0.location[1])
+      .style('fill', 'white')
       .attr("unselectable", "on");
 
-var zone1 = {
-  text: "",
-  id: "",
-  element: null,
-  location: [100, 230],
-  color: 'red',
-};
-
-zone1.textElement = g.append('text')
+zone1.textElement = rectG.append('text')
       .classed('big-text', true)
       .style('font-family', defaultFontFamily)
       .style("font-size", "14px")
       .attr('x', zone1.location[0])
       .attr('y', zone1.location[1])
+      .style('fill', 'white')
       .attr("unselectable", "on");
 
 var defaultFontFamily = FONTS[0] + ', ' + BASE_FONT;
 
-var cross0Image = svg.append("svg:image")
+var cross0Image = rectG.append("svg:image")
       .classed('hiddenCross', true)
       .attr('x', zone0.location[0] + zoneBackgroundSize[0] - iconCrossSize[0]/2)
       .attr('y', zone0.location[1] - iconCrossSize[1])
       .attr('width', iconCrossSize[0])
       .attr('height', iconCrossSize[1])
+      .style('fill', 'white')
       .attr("xlink:href", "img/map/cross.png");
 
-var cross1Image = svg.append("svg:image")
+var cross1Image = rectG.append("svg:image")
       .classed('hiddenCross', true)
       .attr('x', zone1.location[0] + zoneBackgroundSize[0] - iconCrossSize[0]/2)
       .attr('y', zone1.location[1] - iconCrossSize[1])
@@ -153,7 +247,7 @@ var cross1Image = svg.append("svg:image")
       .attr('height', iconCrossSize[1])
       .attr("xlink:href", "img/map/cross.png");
 
-var bigText = g.append('text')
+var bigText = rectG.append('text')
   .classed('big-text', true)
   .attr('x', 20)
   .attr('y', 45)
@@ -304,7 +398,7 @@ function unclickedMap1(d) {
 
 function mouseOverMap(d){  
   // Highlight hovered province
-  d3.select(this).style('fill', 'orange');
+  d3.select(this).style('fill', selectColor);
 
   // Draw effects
   updateZoneText(d);
@@ -393,3 +487,4 @@ function colorMap() {
     zone1.element.style('fill', zone1.color);
   }
 }
+
