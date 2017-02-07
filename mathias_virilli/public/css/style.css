@@ -54,6 +54,8 @@ path {
     background-color: white;
 }
 
+
+
 #affichage-annee
 {
 	bottom: 45%;
@@ -69,6 +71,13 @@ path {
 	left : 70%;
 	position : absolute;
 	margin : 20px;
+}
+
+.page2 h2{
+	top: 100px;
+	color : black;
+	position:absolute;
+	font-size: 24px
 }
 
 .arc {
@@ -553,13 +562,15 @@ html {
       margin-bottom: 15px;
       font-size: 50px;
       letter-spacing: -1px;
-      color: white;
+      color: black;
     }
     .main section.page2 h2 {
-      color: rgba(255,255,255,0.85);
+      color: rgba(0,0,0,0.85);
       text-align: center;
       line-height: 160%;
-      font-weight: 100;
+      font-weight: bold;
+	  font-size : 24px;
+	  
     }
     .viewing-page-2 .back{
       background: rgba(0, 0, 0, 0.25);
