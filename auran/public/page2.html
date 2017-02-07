@@ -1,13 +1,85 @@
 <script src="js/motherboard.js" defer></script>
 <script>
+    function ColorLuminance(hex, lum) {
+        // validate hex string
+        hex = String(hex).replace(/[^0-9a-f]/gi, '');
+        if (hex.length < 6) {
+            hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+        }
+        lum = lum || 0;
+
+        // convert to decimal and change luminosity
+        var rgb = "#", c, i;
+        for (i = 0; i < 3; i++) {
+            c = parseInt(hex.substr(i*2,2), 16);
+            c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+            rgb += ("00"+c).substr(c.length);
+        }
+
+        return rgb;
+    }
+
     function animateComponents(){
-        setTimeout(
-            function()
-            {
-                //do something special
-                $('.ge_big').addClass('show');
-            }, 3000);
-        $('.ge_small').addClass('show');
+        fetch('data/numeric_shares.json')
+        // this promise will be fulfilled when the json fill will be
+            .then(function (response){
+                // if we could load the resource, parse it
+                if( response.ok )
+                    return response.json();
+                else // if not, send some error message as JSON data
+                    return {data: "JSON file not found"};
+
+            })
+            // in case of invalid JSON (parse error) send some error message as JSON data
+            .catch( function (error){
+                console.log("error: "+error);
+                return {data: "Invalid JSON"};
+            })
+            // this promise will be fulfilled when the json will be parsed
+            .then(function (json) {
+                var pourcentageSmall=json["pourcentage_small"];
+                var pourcentageBig=json["pourcentage_big"];
+
+                var big_companies_share = document.querySelector('#big_companies_share');
+                var small_companies_share = document.querySelector('#small_companies_share');
+                var i;
+                var entreprisesIndividuelles = $('.entreprises-individuelles');
+                var grandesEntreprises = $('.grandes-entreprises');
+                console.log("pourcentageBig="+pourcentageBig);
+                for(i=0;i<=pourcentageBig;i++){
+                    console.log("next time: "+(i*1000));
+                    setTimeout(function(index) {
+                            console.log("display: "+index);
+                            big_companies_share.textContent = index;
+                        }, i*100, i);
+
+                    setTimeout(function(index) {
+                        grandesEntreprises.css("background-color", ColorLuminance("#140F21", -index/150));
+                    }, i*10, i);
+                }
+
+                for(i=0;i<=pourcentageSmall;i++){
+                    console.log("next time: "+(i*1000));
+                    setTimeout(
+                        function(index) {
+                            console.log("display: "+index);
+                            small_companies_share.textContent = index;
+                        }, i*50, i);
+                    setTimeout(function(index) {
+                        entreprisesIndividuelles.css("background-color", ColorLuminance("#342756", -index/150));
+                    }, i*10, i);
+                }
+
+                setTimeout(
+                    function()
+                    {
+                        //do something special
+                        //$('.ge_big').addClass('show');
+                        $('.ge_big').slice(0, pourcentageBig/10).addClass('show');
+                    }, 3000);
+                $('.ge_small').slice(0, pourcentageSmall/10).addClass('show');
+            });
+
     }
 
 </script>
@@ -133,6 +205,7 @@
         width:40%;
         float:left;
         height: 100vh;
+        background-color: #140F21;
     }
 
     .text-entreprises-bottom{
@@ -168,7 +241,7 @@
 <div class="container_platform" id="carte-mere">
     <div class="text-fond">
         <div class="entreprises-individuelles">
-            <h1>67%</h1>
+            <h1 id="small_companies_share">_</h1>
             <h2>des entreprises du numériques sont individuelles.</h2>
             <p class="text-entreprises-left text-entreprises-decor">
                 Sur le territoire nantais, l’écosystème numérique se caractérise par des
@@ -192,7 +265,7 @@
             </div>
         </div>
         <div class="grandes-entreprises">
-            <h1>33%</h1>
+            <h1 id="big_companies_share">_</h1>
             <h2>sont des entreprises avec des salariés.</h2>
             <div class="text-entreprises-bottom text-entreprises-right">
                 <p>Sources : AURAN, Nantes Tech, Acoss 2016 et INSEE Sirene 2016</p>
