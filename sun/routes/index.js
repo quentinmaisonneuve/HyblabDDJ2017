@@ -333,6 +333,7 @@ router.get('/getLast24', function(req, res, next)
             if(err){res.json(err);}
             else{
                 proceed(rows);
+                retour.push(['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'])
                 retour.push(alternatif);
                 retour.push(electro);
                 retour.push(pop);

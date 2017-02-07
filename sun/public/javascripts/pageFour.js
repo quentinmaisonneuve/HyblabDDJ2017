@@ -5,6 +5,7 @@ d3.json("./getLast24", function(data) {
     var chart = c3.generate({
         bindto: '#chart',
         data: {
+            x:'x',
             /*columns: [["Alternative et punk",0,0,0,0,4,5],["Electronica",0,0,0,0,1,3],["Pop",0,0,0,0,2,1],["Rock",0,0,0,0,2,4],["Urban",0,0,0,0,0,6],["Jazz",0,0,0,0,0,0]],*/
             columns: data,
 
@@ -18,14 +19,11 @@ d3.json("./getLast24", function(data) {
             },
             groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
         },
-        legend: {
-            // amount of padding to put between each legend element
-            padding: 5,
-            // define custom height and width for the legend item tile
-            item: {
-                tile: {
-                    width: 15,
-                    height: 2
+        axis: {
+            x: {
+                type: 'timeseries',
+                tick: {
+                    format: '%Y-%m-%d'
                 }
             }
         }
