@@ -53,10 +53,10 @@ var textG = gT.append('g')
   .style('trasform', 'translate(200px, 0)');
 textG.append('text')
   .attr('class', 'bebas')
-  .attr('x', '50px')
+  .attr('x', '40px')
   .attr('y', '50px')
   .style('fill', 'white')
-  .text('CHOISISSEZ VOTRE');
+  .text('CHOISISSEZ VOTRE').style('font-family','ArialR');
 
 textG.append("svg:foreignObject")
   .attr("class", "texth2")

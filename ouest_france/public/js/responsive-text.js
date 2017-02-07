@@ -1,7 +1,7 @@
 'use-strict'
 
 $("#enroute").fitText(0.6);
-$("#text").fitText(2);
+$("#text").fitText(2.33);
 $("#commencer").fitText(0.6);
 $("#continuer").fitText(0.6);
 $("#center h2").fitText(0.25);
