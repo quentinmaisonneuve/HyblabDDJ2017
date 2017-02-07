@@ -17,7 +17,7 @@
    width="1280px"
    height="800px"
    viewBox="0 0 1280 800"
-   onload="hideBulle(['g1284', 'g258', 'g316', 'g332', 'g350', 'g366', 'g506', 'g634']);"
+   onload="hideBulle(['g1284', 'g258', 'g316', 'g332', 'g350', 'g366', 'g506', 'g634']);intialize(this, ['_x32_004_1_', '_x31_989-2012_1_', '_x32_003_4_', '_x32_006-2012_1_', '_x31_977_1_', 'Annonc�e_1_', '_x32_015_8_', 'polyline198', '_x32_009_2_']);"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
    sodipodi:docname="Asie.svg"
@@ -2891,8 +2891,20 @@
                r="0.11"
                id="circle1274"
                fill="#DE705F" /></g></g></g></g></g>
+
+     <text
+       x="100"
+       y="200"
+       fill="#000"
+       id="textFrontiere"
+       font-family="'Roboto-Bold'"
+       font-size="16">Essayez de tracer une frontière</text>
+
+
+
+
          <script xlink:href="../js/rare.js" type="text/ecmascript" />
-                         
+         <script xlink:href="../js/trace.js" type="text/ecmascript" />
 
 
                </svg>
