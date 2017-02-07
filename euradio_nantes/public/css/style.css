@@ -12,6 +12,10 @@
   font-family: "BloggerSans-Medium";
   src: url("../fonts/blogger-sans/Blogger_Sans-Medium.otf");
 }
+@font-face {
+  font-family: "BloggerSans-Bold";
+  src: url("../fonts/blogger-sans/Blogger_Sans-Bold.otf");
+}
 
 @font-face {
     font-family: "MetaPro-Normal";
@@ -94,6 +98,38 @@ span{
 #nope{
   background-image: none;
   background-color: #87C8CB;
+}
+
+.spanbleu {
+    font-family: "BloggerSans-Bold";
+    font-size: 1.5em;
+    color: rgb(92, 173, 231)
+}
+
+.spannoir {
+    font-size: 1em;
+}
+
+.divhaut {
+    margin-bottom: 30px;
+}
+
+.divhaut img, .divbas img {
+    margin-bottom: 10px;
+}
+
+#section3 .palma {
+    background-color: #d6d8db;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }
 
 .progress{
