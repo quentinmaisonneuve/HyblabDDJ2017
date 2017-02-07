@@ -246,7 +246,7 @@ position: absolute;
     top: 24vh;
     width: 28vw;
     /* height: 49vh; */
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: bold;
@@ -342,9 +342,6 @@ position: absolute;
     font-weight: 600;
 }
 
-#espace {
-	padding-bottom:1vh;
-}
 
 #timeline {
 	position: absolute;
