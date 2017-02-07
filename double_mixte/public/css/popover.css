@@ -440,3 +440,23 @@ width: 32vw;
     font-weight: 600;
     font-family: Josefin Sans;
 }
+
+
+#popover2014 {
+    position: absolute;
+    display: block;
+    left: 45vw;
+    top: 60vh;
+    width: 21vw;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color:white;
+    font-weight: bold;
+}
+
+#texte2014 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
