@@ -19,6 +19,7 @@
    viewBox="0 0 1280 800"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
+   onload="hideBulle(['g1029', 'g1163', 'g1287', 'g1423', 'g1481', 'g1539', 'g1607', 'g1675', 'g1733', 'g273', 'g287', 'g303', 'g321', 'g335', 'g349', 'g365', 'g379', 'g393', 'g409', 'g533', 'g657', 'g781', 'g905']);"
    sodipodi:docname="MoyenOrient.svg"
    inkscape:version="0.92.0 r15299"><metadata
      id="metadata1956"><rdf:RDF><cc:Work

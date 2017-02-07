@@ -17,6 +17,7 @@
    width="1280px"
    height="800px"
    viewBox="0 0 1280 800"
+   onload="hideBulle(['g1047', 'g1123', 'g1199', 'g1275', 'g1351', 'g1837', 'g511', 'g597', 'g671', 'g747', 'g823', 'g899', 'g975']);"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
    sodipodi:docname="Europe.svg"

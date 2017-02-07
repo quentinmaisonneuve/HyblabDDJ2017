@@ -17,6 +17,7 @@
    width="1280px"
    height="800px"
    viewBox="0 0 1280 800"
+   onload="hideBulle(['g1284', 'g258', 'g316', 'g332', 'g350', 'g366', 'g506', 'g634']);"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
    sodipodi:docname="Asie.svg"

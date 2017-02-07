@@ -18,6 +18,7 @@
    height="800px"
    viewBox="0 0 1280 800"
    enable-background="new 0 0 1280 800"
+   onload="hideBulle(['littleWallID', 'theWallID']);"
    xml:space="preserve"
    sodipodi:docname="Amérique.svg"
    inkscape:version="0.92.0 r15299"><metadata
