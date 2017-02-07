@@ -28,6 +28,7 @@
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="./js/examples.js"></script>
     <script type="text/javascript" src="./js/animation.js"></script>
+    <script type="text/javascript" src="./js/numeric_sector.js"></script>
 
     <script>
         $(function(){
@@ -35,13 +36,16 @@
             $(".page1").load("page1.html");
             $(".page2").load("page2.html");
             $(".page3").load("page3.html");
-            $("#thankyou").load("bandeau.html")
+            $("#thankyou").load("bandeau.html");
         });
     </script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 afterLoad: function(anchorLink, index){
+                    if(index==1){
+                        fillInformationsOnSector();
+                    }
                     if(index==7){
                         animateBuildings();
                     }
@@ -84,7 +88,25 @@
     </div>
     <div class="section" id="section1">
         <h3>L'économie numérique à Nantes, c'est quoi ?</h3>
-        <img src="./img/picto.png" height="80%">
+        <div class="section-content" id="def">
+            <div class="line1">
+                <div class="data1"><p id="data1"></p></div>
+                <div class="data2"><p id="data2"></p></div>
+                <div class="data3"><p id="data3"></p></div>
+            </div>
+            <div class="line2">
+                <div class="data4"><p id="data4"></p></div>
+                <div class="data5" id="data5">
+                    <p id="sector_count"></p>
+                    <ul id="sectors_ul">
+
+                    </ul>
+                </div>
+            </div>
+            <p class="source">Sources : AURAN, Nantes Tech</p>
+
+        </div>
+        <!--<img src="./img/picto.png" height="80%">-->
     </div>
     <div class="section" id="section2">
         <h3>Qui fait réellement vivre l'économie numérique à Nantes ?</h3>
