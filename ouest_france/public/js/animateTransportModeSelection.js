@@ -54,14 +54,14 @@ var textG = gT.append('g')
 textG.append('text')
   .attr('class', 'bebas')
   .attr('x', '50px')
-  .attr('y', '25px')
+  .attr('y', '50px')
   .style('fill', 'white')
   .text('CHOISISSEZ VOTRE');
 
 textG.append("svg:foreignObject")
   .attr("class", "texth2")
   .attr('x', '39px')
-  .attr('y', '23px')
+  .attr('y', '50px')
   .attr('width', 200)
   .style('color', 'white')
   .text('MODE DE TRANSPORT');
