@@ -869,3 +869,47 @@ html {
   }
 }
 
+#bandeau-logos {
+  padding: 8px;
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  left: 10%;
+}
+
+#bandeau-logos li{
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+
+#bandeau-logos img{
+  height: 46px;
+}
+
+#bandeau-logos #hyblab{
+  margin: 46px 0;
+  height: 50px;
+  float: left;
+}
+
+#bandeau-logos #cc, #bandeau-logos #opensource
+{
+  height:16px;
+}
+
+#bandeau-logos .stacked{
+  display:block;
+}
+
+#bandeau-logos ul{
+  text-align: center;
+  padding: 0 0;
+}
+
+#bandeau-logos .institutionnel
+{
+  height: 42px;
+}
