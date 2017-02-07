@@ -343,7 +343,7 @@ function getTooltip(genre)
             break;
         case "Cool":
             return  "<h1>Cool</h1>" +
-                "<h2>UB40 - Imagine - <i>Red red wine </i></h2>" +
+                "<h2>UB40  - <i>Red red wine </i></h2>" +
                 "<p>Des fleurs sur tous vos habits, <br/> Bob Marley est votre sonnerie, <br/> Bref, vous êtes cool ! <br/> Peace and Love, pas de prises de tête. Avec MySun, partagez votre bonne humeur.<p>";
             break;
         case "Nostalgique":
