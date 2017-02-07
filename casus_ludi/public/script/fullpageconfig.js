@@ -89,7 +89,7 @@ $(document).ready(function(){
                                 animerMotionDataViz1();
                         }
                         else if(index == 5){
-                                animerAiguilleDroite();
+                                animerDataviz3();
                         }
                         else if(index == 6){
                                 animerConclusion();

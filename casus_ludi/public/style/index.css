@@ -502,7 +502,7 @@ video{
 #datavizEvo h1{
 	position: absolute;
 	top:5%;
-	right:45%;
+	left:5%;
 	font-size:4.5vmin;
 }
 
@@ -520,7 +520,7 @@ video{
 
 @media only screen and (max-width: 1150px){
 	#datavizEvo h1{
-		font-size: 3vmin;
+		font-size: 2.5vmin;
 	}
 	#title_axey{
 		font-size:0.7rem;
@@ -529,7 +529,7 @@ video{
 
 @media only screen and (max-width: 850px){
 	#datavizEvo h1{
-		font-size: 2vmin;
+		font-size: 1.5vmin;
 	}
 	#title_axey{
 		font-size:0.6rem;
@@ -615,6 +615,32 @@ video{
 	width: 5.8%;
 }
 
+@media only screen and (max-width: 750px){
+	#imagePersoYeux{
+		/*height: 3vmin;*/
+		top:62%;
+		height: 5%;
+		width: 4%;
+		left:60.6%;
+	}
+	#paupieresHautViz1{
+		z-index: -1;
+		position: absolute;
+		top:58.6%;
+		left:59.7%;
+		height: 6.8%;
+		width: 5.8%;
+	}
+	#paupieresBasViz1{
+		z-index: -1;
+		position: absolute;
+		top:63.8%;
+		left:59.7%;
+		height: 6.8%;
+		width: 5.8%;
+	}
+}
+
 #imageBullePerso{
 	position: absolute;
 	top:62%;
@@ -650,10 +676,6 @@ video{
 }
 
 
-#topFlop p{
-	
-}
-
 #topFlop li {
 	list-style-type: decimal;
 	color:#000033;
@@ -664,15 +686,15 @@ video{
 
 #explicationAnnee{
 	position: absolute;
-	left:70%;
-	top:67%;
+	left:70.2%;
+	top:63.5%;
 	width: 15%; 
 	height: 23%;
 	/*border: 3px solid #000000; */
 }
 
 #explicationAnnee p{
-	font-size:2vmin;
+	font-size:2.7vmin;
 }
 
 #explication2014,#explication2015,#explication2016,#explication2017{
@@ -734,17 +756,19 @@ video{
 
 @media only screen and (max-width:1050px){
 	#topCreate ul li, #flopCreate ul li, #topUpdate ul li, #flopUpdate ul li{
-		font-size: 1.5vmin;
+		font-size: 1.3vmin;
+		margin-bottom:1.5vmin;
 	}
 
 	#explicationAnnee div p{
-		font-size: 1.5vmin;
+		font-size: 2vmin;
 	}
 }
 
 @media only screen and (max-width:860px){
 	#explicationAnnee div p{
-		font-size: 1vmin;
+		font-size: 1.5vmin;
+		margin-bottom:0;
 	}
 }
 
@@ -752,7 +776,7 @@ video{
 /**************************** Conclusion ********************************/
 /************************************************************************/
 #conclusion-fond{
-	z-index: -1;
+	z-index: -2;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -779,13 +803,53 @@ video{
 	opacity: 0;
 }
 
+#moitie_tete{
+	z-index: -1;
+	position: absolute;
+	width: 30.5%;
+	height: 30.5%;
+	left: 34.8%;
+	top:2%;
+	opacity: 0;
+}
+
+#moitie_tete_yeux{
+	z-index: -3;
+	position: absolute;
+	width: 9%;
+	height: 9%;
+	left: 44.2%;
+	top:11.2%;
+	opacity: 0;
+}
+
+#paupieresHautConclu{
+	z-index: -2;
+	position: absolute;
+	width: 12%;
+	height: 12%;
+	left: 43.64%;
+	top:2.8%;  /*6.5*/
+	opacity: 0;
+}
+
+#paupieresBasConclu{
+	z-index: -2;
+	position: absolute;
+	width: 12%;
+	height: 12%;
+	left: 43.7%;
+	top:14%;  /*6.5*/
+	opacity: 0;
+}
+
 #titre-conclusion{
 	z-index: 2;
 	position: absolute;
 	width: 40%;
 	height: 10%;
 	font-size: 4vmin;
-	left: 30%;
+	left: 33.5%;
 	top:26%;
 	opacity: 0;
 }
@@ -827,6 +891,7 @@ video{
 /************************************************************************/
 
 #dataviz-3-title{
+	margin-top: 2%;
 	height: 20%;
 }
 
@@ -840,14 +905,16 @@ video{
 }
 
 #button1, #button2{
-	width: 3vmin;
+	width: 2.5vmin;
+	cursor: pointer;
 }
 
 #topMenuGauche, #topMenuDroite{
+	z-index: 1;
 	position: absolute;
-	width: 25%;
-	top:14.5%;
-	font-size: 3vmin;
+	width: 20%;
+	top:19.5%;
+	font-size: 2.5vmin;
 	text-align: center;
 	vertical-align: center;
 	height: 5%;
@@ -869,84 +936,29 @@ video{
 	right:0;
 }
 
-/* Dataviz3 responsive */ 
-@media only screen and (max-width: 1100px){
-	#topMenuGauche, #topMenuDroite{
-		font-size: 2.5vmin;
-	}
-	#button1, #button2{
-		width: 2.5vmin;
-	}
-}
 
-@media only screen and (max-width: 1000px){
-	#topMenuGauche, #topMenuDroite{
-		font-size: 2vmin;
-	}
-	#listeRegion2 {
-		font-size: 1.5vmin; 
-	}
-	#listeRegion1{
-		font-size: 1.5vmin; 
-	}
-}
 
-@media only screen and (max-width: 820px){
-	#topMenuGauche .textType, #topMenuDroite .textType{
-		font-size: 1.4vmin;
-	}
-	#listeRegion2 ul a li {
-		font-size: 1.4vmin; 
-	}
-	#listeRegion1 ul a li {
-		font-size: 1.4vmin; 
-	}
-
-	#dataviz-3-title{
-		font-size: 2vmin;
-	}
-
-	#dataviz3-sous-titre{
-		font-size: 2vmin;
-	}
-}
-
-@media only screen and (max-width: 660px){
-
-	#dataviz-3-title{
-		font-size: 1.5vmin;
-	}
-
-	#dataviz3-sous-titre{
-		font-size: 1.5vmin;
-	}
-}
+#listeRegion1 {
+	right: 0;
+} 
 
 
 #listeRegion2 {
-	position: absolute;
-	font-size: 2vmin;
-	width : 25%;
-	text-align: left; 
-	background-color : #000040; 
-	color:white; 
-	border : solid 2px #000040; 
-	border-radius : 5px; 
 	left: 0;
-	top:20%;
 } 
 
-#listeRegion1 {
+#listeRegion1, #listeRegion2{
+	top:25%;
+	z-index: 1;
 	position: absolute;
 	font-size: 2vmin;
-	width : 25%;
-	text-align: left; 
+	width : 20%;
+	height : 52%;
+	text-align: center; 
 	background-color : #002CE6; 
 	color:white; 
 	border : solid 2px #002CE6; 
 	border-radius : 5px;
-	top:20%;
-	right: 0;
 } 
 
 .listeRegion:hover{
@@ -970,11 +982,114 @@ video{
 	color :black;  border : solid 4px white; border-radius : 10px;
 }
 
+/* Dataviz3 responsive */ 
+@media only screen and (max-width: 1150px){
+	#topMenuGauche, #topMenuDroite{
+		font-size: 2vmin;
+	}
+	#button1, #button2{
+		width: 2vmin;
+	}
+
+	#listeRegion1, #listeRegion2{
+		font-size: 1.8vmin;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	#topMenuGauche, #topMenuDroite{
+		font-size: 1.8vmin;
+	}
+	#listeRegion2 {
+		font-size: 1.5vmin; 
+	}
+	#listeRegion1{
+		font-size: 1.5vmin; 
+	}
+}
+
+@media only screen and (max-width: 820px){
+	#topMenuGauche .textType, #topMenuDroite .textType{
+		font-size: 1.4vmin;
+	}
+	#listeRegion2{
+		font-size: 1.2vmin; 
+	}
+	#listeRegion1{
+		font-size: 1.2vmin; 
+	}
+
+	#dataviz-3-title{
+		font-size: 2vmin;
+	}
+
+	#dataviz3-sous-titre{
+		font-size: 2vmin;
+	}
+}
+
+
+@media only screen and (max-width: 700px){
+
+	#topMenuGauche, #topMenuDroite{
+		font-size: 1.1vmin;
+	}
+	#button1, #button2{
+		width: 1.1vmin;
+	}
+
+	#listeRegion2{
+		font-size: 1vmin; 
+	}
+	#listeRegion1{
+		font-size: 1vmin; 
+	}
+}
+
+@media only screen and (max-width: 660px){
+
+	#dataviz-3-title{
+		font-size: 1.5vmin;
+	}
+
+	#dataviz3-sous-titre{
+		font-size: 1.5vmin;
+	}
+}
+
+
 #balance-fond{
+	z-index: 0;
 	position:absolute;
-	left: 19%;
-	width: 62%;
-	height:62%;
+	left: 1.5%;
+	top: 0;
+	width: 100%;
+	height:100%;
+}
+
+#yeux-dataviz3{
+	z-index: -2;
+	position: absolute;
+	height: 8%;
+	width: 8%;
+	top:24.8%;
+	left: 46%;
+}
+
+#paupieres-haut-dataviz3, #paupieres-bas-dataviz3{
+	z-index: -2;
+	position: absolute;
+	height: 12%;
+	width: 12%;
+	left: 44%;
+}
+
+#paupieres-haut-dataviz3{
+	top:17%;
+}
+
+#paupieres-bas-dataviz3{
+	top:29%;
 }
 
 #aiguilleBalance{

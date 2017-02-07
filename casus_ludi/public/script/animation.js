@@ -26,10 +26,10 @@ function animerIntro(){
 	$('#aiguille2').transition({ rotate: 360*60,  delay : delai},600000);
 
 	//Main de la page d'accueil
-	$('#main').transition({x:'10px',delay:delai},1000,'linear');
+	$('#main').transition({x:'10px',delay:delai},2000,'linear');
 	for (var i = 0; i < 50; i++) {
-		$('#main').transition({x:'0px'},1000,'linear');
-		$('#main').transition({x:'10px'},1000,'linear');
+		$('#main').transition({x:'0px'},2000,'linear');
+		$('#main').transition({x:'10px'},2000,'linear');
 	};
 
 	//Nuages de la page d'accueil
@@ -167,6 +167,22 @@ function animerConclusion(){
 	$('#panneau-conclusion-ombre').transition({opacity:1,delay:3000},1500);
 	$('#titre-conclusion').transition({opacity:1,delay:3000},1500);
 	$('#texte-conclusion').transition({opacity:1,delay:3000},1500);
+	$('#moitie_tete').transition({opacity:1,delay:3000},1500);
+	$('#moitie_tete_yeux').transition({opacity:1,delay:3000},1500);
+	$('#paupieresHautConclu').transition({opacity:1,delay:3500},3000);
+	$('#paupieresBasConclu').transition({opacity:1,delay:3500},3000);
+
+	for (var i = 0; i < 100; i++) {
+		//clignement des yeux
+			//Une fois
+		$('#paupieresHautConclu').transition({y:'31%',delay:4000},200);
+		$('#paupieresBasConclu').transition({y:'-32%',delay:4000},200);	
+		$('#paupieresHautConclu').transition({y:'0%'},300);
+		$('#paupieresBasConclu').transition({y:'-0%'},300);
+
+		$('#moitie_tete_yeux').transition({x:'17%',delay:2000},2000);
+		$('#moitie_tete_yeux').transition({x:'0%',delay:2000},2000);
+	}
 }
 
 function resetConclusion(){
@@ -174,10 +190,24 @@ function resetConclusion(){
 	$('#panneau-conclusion-ombre').stop(true,true);
 	$('#titre-conclusion').stop(true,true);
 	$('#texte-conclusion').stop(true,true);
+	$('#moitie_tete').stop(true,true);
+	$('#moitie_tete_yeux').stop(true,true);
+	$('#paupieresHautConclu').stop(true,true);
+	$('#paupieresBasConclu').stop(true,true);
+
+	$('#paupieresHautConclu').transition({y:'0%'});
+	$('#paupieresBasConclu').transition({y:'-0%'});
+
+	$('#moitie_tete_yeux').transition({x:'0%'});
+	
 	$('#panneau-conclusion').transition({y:"0%",delay:1000});
 	$('#panneau-conclusion-ombre').transition({opacity:0});
 	$('#titre-conclusion').transition({opacity:0});
 	$('#texte-conclusion').transition({opacity:0});
+	$('#moitie_tete').transition({opacity:0});
+	$('#moitie_tete_yeux').transition({opacity:0});
+	$('#paupieresHautConclu').transition({opacity:0});
+	$('#paupieresBasConclu').transition({opacity:0});
 }
 
 function joCE(){
@@ -206,20 +236,37 @@ function joCE(){
 	$('#arthur').attr("src","img/jc/jc-9.gif");
 }
 
+function animerDataviz3(){
+	for (var i = 0; i < 100; i++) {
+		//clignement des yeux
+			//Une fois
+		$('#paupieres-haut-dataviz3').transition({y:'34%',delay:3000},200);
+		$('#paupieres-bas-dataviz3').transition({y:'-34%',delay:3000},200);	
+		$('#paupieres-haut-dataviz3').transition({y:'0%'},300);
+		$('#paupieres-bas-dataviz3').transition({y:'-0%'},300);
+			//Deux fois
+		$('#paupieres-haut-dataviz3').transition({y:'34%',delay:2700},200);
+		$('#paupieres-bas-dataviz3').transition({y:'-34%',delay:2700},200);	
+		$('#paupieres-haut-dataviz3').transition({y:'0%'},300);
+		$('#paupieres-bas-dataviz3').transition({y:'-0%'},300);
+			//Trois fois
+		$('#paupieres-haut-dataviz3').transition({y:'34%',delay:4000},200);
+		$('#paupieres-bas-dataviz3').transition({y:'-34%',delay:4000},200);	
+		$('#paupieres-haut-dataviz3').transition({y:'0%'},300);
+		$('#paupieres-bas-dataviz3').transition({y:'-0%'},300);
+			//Quatre fois
+		$('#paupieres-haut-dataviz3').transition({y:'34%',delay:4000},200);
+		$('#paupieres-bas-dataviz3').transition({y:'-34%',delay:4000},200);	
+		$('#paupieres-haut-dataviz3').transition({y:'0%'},300);
+		$('#paupieres-bas-dataviz3').transition({y:'-0%'},300);
+	}
+}
+
 function animerAiguilleDroite(){
-	$('#aiguilleBalance').transition({rotate:45},100);
-	$('#aiguilleBalance').transition({rotate:-20},300);
-	$('#aiguilleBalance').transition({rotate:5},600);
-	$('#aiguilleBalance').transition({rotate:0},600);
 }
 
 function animerAiguilleGauche(){
-	$('#aiguilleBalance').transition({rotate:-135},100);
-	$('#aiguilleBalance').transition({rotate:-77},300);
-	$('#aiguilleBalance').transition({rotate:-95},600);
-	$('#aiguilleBalance').transition({rotate:-90},600);
 }
 
 function animerAiguilleMilieu(){
-	$('#aiguilleBalance').transition({rotate:-45},700);
 }
