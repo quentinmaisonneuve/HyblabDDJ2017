@@ -341,6 +341,7 @@ position: absolute;
 }
 
 #pola2011 {
+	display: block;
 	width: 25vw;
 }
 
@@ -414,3 +415,4 @@ width: 25vw;
     left: 20vw;
     bottom: 29vh;
 }
+

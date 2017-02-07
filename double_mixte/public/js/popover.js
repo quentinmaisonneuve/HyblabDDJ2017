@@ -57,6 +57,7 @@ function hideAnimation2016() {
 }
 
 function test() {
+	$("#btn2011").focus();
 	$("#btn2011").on("click", function() {
 		$("#pola2012").css("display", "none");
 		$("#pola2013").css("display", "none");
