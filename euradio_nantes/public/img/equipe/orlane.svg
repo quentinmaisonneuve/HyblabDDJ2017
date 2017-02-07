@@ -5,7 +5,7 @@
 	 width="293.976px" height="339.759px" viewBox="0 0 293.976 339.759" enable-background="new 0 0 293.976 339.759"
 	 xml:space="preserve">
 <polygon fill="none" points="370.124,307.639 105.064,307.639 103.064,253.422 368.124,253.422 "/>
-<text transform="matrix(1 0 0 1 103.6506 269.3284)" font-family="'BloggerSans-Medium'" font-size="22">ORLANE</text>
+<text transform="matrix(1 0 0 1 103.6506 269.3284)" font-family="'BloggerSans-Medium'" font-size="22">Orlane</text>
 <path fill="#323B49" stroke="#323B49" stroke-width="3.2711" stroke-miterlimit="10" d="M184.711,128.015
 	c8.482,58.849-2.295,53.942-42.976,52.089c-42.645-1.942-57.834,16.763-46.33-51.22c4.736-27.984,18.865-46.447,44.003-46.447
 	S180.675,100.01,184.711,128.015z"/>
@@ -148,7 +148,7 @@
 		<clipPath id="SVGID_2_">
 			<use xlink:href="#SVGID_1_"  overflow="visible"/>
 		</clipPath>
-		
+
 			<path opacity="0.2" clip-path="url(#SVGID_2_)" fill="#323B49" stroke="#323B49" stroke-width="2.9153" stroke-miterlimit="10" enable-background="new    " d="
 			M94.25,230.375c0,0-2.25-32.282,19.25-47.266c0,0-32.25,17.141-33.625,18.266s-5.5,12.875-5,15.125s2.25,17.5,3,17.5
 			S94.25,230.375,94.25,230.375z"/>

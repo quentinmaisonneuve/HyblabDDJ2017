@@ -5,7 +5,7 @@
 	 width="293.976px" height="339.759px" viewBox="0 0 293.976 339.759" enable-background="new 0 0 293.976 339.759"
 	 xml:space="preserve">
 <polygon fill="none" points="368.747,307.639 103.687,307.639 101.687,253.422 366.747,253.422 "/>
-<text transform="matrix(1 0 0 1 102.2732 269.3284)" font-family="'BloggerSans-Medium'" font-size="22">CORENTIN</text>
+<text transform="matrix(1 0 0 1 102.2732 269.3284)" font-family="'BloggerSans-Medium'" font-size="22">Corentin</text>
 <g>
 	<path fill="#9ED1BC" stroke="#9ED1BC" stroke-width="2.4759" stroke-miterlimit="10" d="M147.349,184.083
 		c-33.251,0-60.207,18.848-60.207,42.099h120.414C207.556,202.931,180.6,184.083,147.349,184.083z"/>
@@ -620,11 +620,11 @@
 		<rect x="123.024" y="120.867" fill="#FFFFFF" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" width="22" height="10"/>
 		<rect x="152.024" y="120.867" fill="#FFFFFF" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" width="21" height="10"/>
 		<path fill="none" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" d="M123,124"/>
-		<polyline fill="none" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" points="112.632,120.457 120.374,123.867 
+		<polyline fill="none" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" points="112.632,120.457 120.374,123.867
 			123.024,123.867 		"/>
-		
+
 			<line fill="none" stroke="#323B49" stroke-width="2" stroke-miterlimit="10" x1="174.024" y1="123.867" x2="179.024" y2="123.867"/>
-		
+
 			<line fill="none" stroke="#323B49" stroke-width="1.7353" stroke-miterlimit="10" x1="178.451" y1="124.289" x2="184.289" y2="120.834"/>
 		<g>
 			<g>
@@ -637,11 +637,11 @@
 		<rect x="122.024" y="119.867" fill="#FFFFFF" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" width="22" height="10"/>
 		<rect x="151.024" y="119.867" fill="#FFFFFF" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" width="21" height="10"/>
 		<path fill="none" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" d="M122,123"/>
-		<polyline fill="none" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" points="111.632,119.457 119.374,122.867 
+		<polyline fill="none" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" points="111.632,119.457 119.374,122.867
 			122.024,122.867 		"/>
-		
+
 			<line fill="none" stroke="#E54F7F" stroke-width="2" stroke-miterlimit="10" x1="173.024" y1="122.867" x2="178.024" y2="122.867"/>
-		
+
 			<line fill="none" stroke="#E54F7F" stroke-width="1.7353" stroke-miterlimit="10" x1="177.451" y1="123.289" x2="183.289" y2="119.834"/>
 		<g>
 			<g>
@@ -672,7 +672,7 @@
 		<clipPath id="SVGID_2_">
 			<use xlink:href="#SVGID_1_"  overflow="visible"/>
 		</clipPath>
-		
+
 			<path opacity="0.2" clip-path="url(#SVGID_2_)" fill="#323B49" stroke="#323B49" stroke-width="0.7211" stroke-miterlimit="10" d="
 			M103.5,230.75c0,0-1.205-35.336,26.534-48.402c0,0-17.574-1.924-21.554-2.011C104.5,180.25,73.5,207.25,73.5,207.25L76.75,223
 			L83,234.874L103.5,230.75z"/>

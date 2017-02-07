@@ -9,6 +9,13 @@
 }
 
 @font-face {
+  font-family: "BloggerSans-Medium";
+  src: url("../fonts/blogger-sans/Blogger_Sans-Medium.otf");
+}
+
+BloggerSans-Medium
+
+@font-face {
     font-family: "MetaPro-Normal";
     src: url("../fonts/MetaPro-Normal.otf");
 }
