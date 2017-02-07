@@ -57,6 +57,7 @@
         </script>
     
         <script type="text/javascript" src="js/datavizEvent.js" defer></script>
+        <script type="text/javascript" src="js/dataviz.js" defer></script>
 
     </head>
 
@@ -113,8 +114,8 @@
                     <img id="info" src="img/Volet-Infos.svg">
                     <p class="bebas" id="number"><span>N</span></p>
                     <p class="bebas" id="paragraphe_encadre1">PERSONNES PARTAGENT LA ROUTE AVEC VOUS</p>
-                    <img id="sol" src="img/carre_perso.svg">
-                    <img id="people" src="img/p80.svg">
+                    <img id="sol" src="img/dataviz1/carre_perso.svg">
+                    <img id="people" src="">
                     </div>
                     <input type="button" class="openInfo" id="buttonEncadre1">
                     <div class="effect1"></div>
@@ -139,37 +140,7 @@
                       <img id="sol2" src="img/route2.svg">
                       <img id="transport" src="img/Voiture-Gauche.svg">
                       <div id="bar-demo">
-                      </div>
-                      <script type="text/javascript">
-                        var data = [{year: 2006, books: 54},
-                          {year: 2007, books: 43},
-                          {year: 2008, books: 41},
-                          {year: 2009, books: 44}];
-
-                        var barWidth = 40;
-                        var width = (barWidth + 10) * data.length;
-                        var height = 200;
-
-                        var x = d3.scale.linear().domain([0, data.length]).range([0, width]);
-                        var y = d3.scale.linear().domain([0, d3.max(data, function(datum) { return datum.books; })]).
-                          rangeRound([0, height]);
-
-                        // add the canvas to the DOM
-                        var barDemo = d3.select("#bar-demo").
-                          append("svg:svg").
-                          attr("width", width).
-                          attr("height", height);
-
-                        barDemo.selectAll("rect").
-                          data(data).
-                          enter().
-                          append("svg:rect").
-                          attr("x", function(datum, index) { return x(index); }).
-                          attr("y", function(datum) { return height - y(datum.books); }).
-                          attr("height", function(datum) { return y(datum.books); }).
-                          attr("width", barWidth).
-                          attr("fill", "#d4584e");
-                      </script>
+                      </div>                      
                     </div>
                     <input type="button" class="openInfo" id="buttonEncadre2">
                     <div class="effect2"></div>
