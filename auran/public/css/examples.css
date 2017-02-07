@@ -72,6 +72,20 @@ body{
 	margin-bottom : 10%;
 }
 
+#section-content2 {
+	width: 60%;
+	margin : auto;
+}
+
+#section-content2 p {
+	margin-bottom: 2%;
+}
+
+#section-content2 strong{
+	font-size: 1em;
+	color: #D60055;
+}
+
 /*-----------------------*/
 @-moz-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {
@@ -246,10 +260,6 @@ ul {
 
 ul li {
 	width : 70%;
-}
-
-strong {
-	color: #5e3c58;
 }
 
 .intro p{
