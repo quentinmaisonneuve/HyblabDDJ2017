@@ -10,7 +10,7 @@ const CIRCLES_FILL_OPACITY = 0.2;
 function drawCircles(json) {
 
     // Récupération de la carte et des cercles
-    var mapSVG = document.getElementById("mapRegions").getSVGDocument().children[0];
+    var mapSVG = document.getElementById("mapRegions").contentDocument.children[0];
     var circles = [];
     
     json.forEach(function(reg) {
