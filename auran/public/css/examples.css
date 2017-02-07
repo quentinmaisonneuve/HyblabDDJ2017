@@ -151,9 +151,11 @@ h1 {
 }
 
 h3{
-	font-size: 2em;
-	font-family: arial,helvetica;
-	color: #fff;
+	color: #92FCFF;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 25pt;
+	margin-bottom : 2%;
 }
 
 .social-media {
@@ -274,15 +276,17 @@ strong {
 	height: 100vh;
 }
 #section0{
-	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
-	background: -webkit-linear-gradient(#140F21, #140F21);
-	background: linear-gradient(#140F21,#140F21);
+	background: -webkit-gradient(linear, top left, bottom left, from(#1F1F3F), to(#1F1F3F));
+	background: -webkit-linear-gradient(#1F1F3F, #1F1F3F);
+	background: linear-gradient(#1F1F3F,#1F1F3F);
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 #section1{
-	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
-	background: -webkit-linear-gradient(#140F21, #140F21);
-	background: linear-gradient(#140F21,#140F21);
+	background: -webkit-gradient(linear, top left, bottom left, from(#1F1F3F), to(#140F21));
+	background: -webkit-linear-gradient(#1F1F3F, #140F21);
+	background: linear-gradient(#1F1F3F,#140F21);
 }
 
 #section2{
@@ -303,16 +307,10 @@ strong {
 	background: linear-gradient(#140F21,#140F21);
 }
 
-#section6, #section7, #section8{
+#section6, #section7, #section8,section9{
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21, #140F21);
-}
-
-#section8 {
-	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#FFFFFF));
-	background: -webkit-linear-gradient(#140F21, #FFFFFF);
-	background: linear-gradient(#140F21, #FFFFFF);
 }
 
 /*Adding background for the slides
