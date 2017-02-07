@@ -57,6 +57,7 @@ path {
 	bottom : 15%;
 	left : 70%;
 	position : absolute;
+	margin : 20px;
 }
 
 #slider3 {
@@ -86,16 +87,14 @@ path {
 }
 
 .tooltip{
-	font-family:simsun;
+	font-family:roboto;
 	font-size:16px;
 	width:120;
 	height:auto;
 	position:absolute; 
 	text-align:center;
-	border-style:solid;
-	border-width:1px;
 	background-color:white;
-	border-radius:5px;	
+	padding : 10px;
 }
 
 
