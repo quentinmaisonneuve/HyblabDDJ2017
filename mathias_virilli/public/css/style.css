@@ -47,9 +47,19 @@ path {
 
 #slider3{
 	bottom: 35%;
-	margin-bottom: 10%;
 	position: relative;
-	left : 23%
+	left : 25%;
+    margin: 20px 0 10px 20px;
+    width: 50%;
+}
+
+#affichage-annee
+{
+	bottom: 45%;
+	position: relative;
+	left : 25%;
+	width: 50%;
+	font-size: 24px;
 }
 
 #graphique-mur{
@@ -60,21 +70,11 @@ path {
 	margin : 20px;
 }
 
-#slider3 {
-  margin: 20px 0 10px 20px;
-  width: 900px;
-}
-
 .arc {
   fill: none;
   stroke: red;
   stroke-width: 2.5px;
   stroke-linecap: round;
-}
-
-#slider3 {
-  margin: 20px 0 10px 20px;
-  width: 900px;
 }
 
 .site {
