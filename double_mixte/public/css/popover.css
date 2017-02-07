@@ -243,7 +243,7 @@ position: absolute;
     display: table-cell;
     left: 40%;
     top: 24vh;
-    width: 27vw;
+    width: 28vw;
     /* height: 49vh; */
     font-size: 2vw;
     font-family: Josefin Sans;
@@ -450,14 +450,14 @@ width: 32vw;
 
 
 #popover2014 {
-    position: absolute;
+position: absolute;
     display: block;
-    left: 45vw;
-    top: 60vh;
-    width: 21vw;
-    font-size: 11pt;
+    left: 14vw;
+    top: 20vh;
+    width: 12vw;
+    font-size: 1.2vw;
     font-family: Josefin Sans;
-    color:white;
+    color: white;
     font-weight: bold;
 }
 
