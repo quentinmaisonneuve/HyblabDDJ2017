@@ -21,6 +21,8 @@ function addCountryEvents(svgDoc,stringPays,pourcentage,Zone,ZoneParent,nombreSt
         nomPays.children[1].style.fontFamily = "helvetica,sans-serif";
         nomPays.children[1].style.fontSize = "15px";
         nomPays.children[1].style.fontWeight = "bold";
+        nomPays.children[1].style.textAlign = "center";
+
         Paysparent.append(PaysN);
         ZoneParent.append(Zone);
         ZoneParent.append(nombreStag);
