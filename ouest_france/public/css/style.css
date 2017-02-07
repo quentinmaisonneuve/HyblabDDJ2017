@@ -28,6 +28,16 @@
     font-family: 'Bebasneue_B';
 }
 
+@font-face {
+  font-family: 'ArialR';
+  src: url('../font/Arial-Regular.ttf');
+}
+
+.ArialR
+{
+  font-family: 'ArialR';
+}
+
 html, body
 {
     padding: 0;
