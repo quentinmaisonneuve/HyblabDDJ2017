@@ -49,7 +49,7 @@ function create_dataviz_2() {
         ];
     }
 
-    drawBarChart(bar, "#bar-demo", ["pourcentVoiture", "pourcentCommun", "pourcentVelo", "pourcentPied"], ["#d4584e", "", "", ""]);
+    drawChart(varBarChartByModeDeTransport, "#bar-demo", ["pourcentVoiture", "pourcentCommun", "pourcentVelo", "pourcentPied"], ["#d4584e", "#29a7de", "#e3ab04", "#177275"]);
 }
 
 function create_dataviz_3() {
@@ -66,7 +66,7 @@ function create_dataviz_3() {
         ];
     }
 
-    drawBarChart(bar, "#bar-demo-3", ["pourcentTravail", "pourcentEtude", "pourcentAutres"], ["#d4584e", "", ""]);
+    drawChart(varBarChartByMotif, "#bar-demo-3", ["pourcentTravail", "pourcentEtude", "pourcentAutres"], ["#d4584e", "#29a7de", "#e3ab04"]);
 }
 
 function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
@@ -93,8 +93,7 @@ function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
       attr("y", function (value) { return barHeight - y(value); }).
       attr("height", function (value) { return y(value); }).
       attr("width", barWidth).
-      attr("fill", "#d4584e");
-    //colorsSet
+      attr("fill", function(datum, index) {return colorsSet[index];});
 
     idsForValues.forEach(function (s, i) {
         document.getElementById(s).firstChild.nodeValue = dataset[i];
