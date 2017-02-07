@@ -42,10 +42,10 @@
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 afterLoad: function(anchorLink, index){
-                    if(index==7){
+                    if(index==6){
                         animateBuildings();
                     }
-                    else if(index==8){
+                    else if(index==7){
                         animateComponents();
                     }
                 }
@@ -80,7 +80,7 @@
 <div id="fullpage">
     <div class="section" id="section0">
         <img src="./img/titrefinalhyblab.svg" alt=""/>
-        <div class="arrow bounce"></div>
+        <div class="arrow bounce" onclick="location.href='http://hyblab.sauray.com/auran/#section1';" ></div>
     </div>
     <div class="section" id="section1">
         <h3>L'économie numérique à Nantes, c'est quoi ?</h3>
@@ -118,14 +118,6 @@
         <video class="video-graphique" muted data-autoplay>
             <source src="data/mov_bbb.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="section" id="section5">
-        <!-- A fusionner avec la section7 -->
-        <h3>L'écosystème numérique et ses interactions</h3>
-        <div class="section-content">
-            <p class="before">Que retenir de l’économie numérique à Nantes ? L’écosystème se caractérise par des disparités fortes (en taille et en structure de l’emploi, notamment), mais avant tout par des interactions denses entre les nombreux acteurs.</p>
-            <p class="source">Sources : AURAN, Nantes Tech, Acoss 2016 et INSEE Sirene 2016</p>
-        </div>
     </div>
    <div class="section" id="section6">
        <div class="page1"></div>
