@@ -199,3 +199,7 @@ vertical-align: middle;
      width: 100vw;
   object-fit: cover;
 }
+
+#fleche_droite {
+  color : #001526;
+}
