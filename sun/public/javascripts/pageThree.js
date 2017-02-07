@@ -200,7 +200,62 @@ function initBubble(node)
                 return taille + "px"
             })
             .style({
-                "fill":"white",
+                "fill":"white"
+            });
+
+
+        bubbles.append("text")
+            .attr("x", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+                else
+                    return -200;
+            })
+            .attr("y", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/3 + 40;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/3 + 40 ;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3 + 40;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3 + 40;
+                else
+                    return -200;
+            })
+            .attr("id", function(d)
+            {
+                if (d.id == nodes[0].id)
+                    return "bubbleRTxt2";
+                else if (d.id == nodes[1].id)
+                    return "bubbleVTxt2";
+                else if (d.id == nodes[2].id)
+                    return "bubbleBTxt2";
+                else if (d.id == nodes[3].id)
+                    return "bubbleBGTxt2";
+            })
+            .attr("text-anchor", "middle")
+            .text(function(d){
+                return parseInt(d.value/total * 100,10) + "%"
+            })
+
+            .attr("class", "bubbleCTxt2")
+            .style("font-size", function(d) {
+                var taille = (1+(d.value/total))*15;
+                if (taille > 23)
+                    taille = 23;
+                else if (taille < 9)
+                    taille = 9;
+                return taille + "px"
+            })
+            .style({
+                "fill":"white"
             });
 
     });
@@ -284,6 +339,44 @@ function changeBubble(node)
                     taille = 9;
                 return taille + "px"
             });
+
+        svg.selectAll(".bubbleCTxt2")
+            .duration(750)
+            .attr("x", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("x"),10) + parseInt(d3.select("#bubbleR").attr("width"),10)/2;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("x"),10) + parseInt(d3.select("#bubbleV").attr("width"),10)/2;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("x"),10) + parseInt(d3.select("#bubbleB").attr("width"),10)/2;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("x"),10) + parseInt(d3.select("#bubbleBG").attr("width"),10)/2;
+                else
+                    return -200;
+            })
+            .attr("y", function(d){
+                if (d.id == nodes[0].id)
+                    return parseInt(d3.select("#bubbleR").attr("y"),10) + parseInt(d3.select("#bubbleR").attr("height"),10)/3 + 40;
+                else if (d.id == nodes[1].id)
+                    return parseInt(d3.select("#bubbleV").attr("y"),10) + parseInt(d3.select("#bubbleV").attr("height"),10)/3 + 40 ;
+                else if (d.id == nodes[2].id)
+                    return parseInt(d3.select("#bubbleB").attr("y"),10) + parseInt(d3.select("#bubbleB").attr("height"),10)/3 + 40;
+                else if (d.id == nodes[3].id)
+                    return parseInt(d3.select("#bubbleBG").attr("y"),10) + parseInt(d3.select("#bubbleBG").attr("height"),10)/3 + 40;
+                else
+                    return -200;
+            })
+            .text(function(d){
+                return parseInt(d.value/total * 100,10) + "%"
+            })
+            .style("font-size", function(d) {
+                var taille = (1+(d.value/total))*15;
+                if (taille > 23)
+                    taille = 23;
+                else if (taille < 9)
+                    taille = 9;
+                return taille + "px"
+            })
     });
 
 }
@@ -329,27 +422,27 @@ function getTooltip(genre)
             break;
         case "Sentimentale":
             return "<h1>Sentimentale</h1>" +
-                "<h2>Michel berger - <i>Je t’envoie comme un papillon à une étoile quelques mots d’amour</i></h2>" +
+                "<h2>Rolling Stones - <i>Angie</i></h2>" +
                 "<p>Par votre grandeur d’âme, <br/> Vous déclarez votre flamme <br/> <br/>         Comme vous l’aurez compris, vous êtes une personne sentimentale. Avec MySun, trouvez votre âme-soeur musicale !<p>";
             break;
         case "Agressive":
             return "<h1>Enervée</h1>" +
-                "<h2>AC/DC - <i>I'M ON THE HIGHWAY TO HELL !</i></h2>" +
+                "<h2>The Offspring - <i>Self Esteem</i></h2>" +
                 "<p>LA MAJUSCULE DE VOTRE CLAVIER EST VOTRE TOUCHE PRÉFÉRÉE. <br/> Et ouais, vous aimez les bons riffs, les mélodies accrocheuses ou encore les berceuses à base de Metallica. Avouez, le Hellfest est votre terrain de jeu ! <p>";
             break;
         case "Stimulante":
             return "<h1>Energique</h1>" +
-                "<h2>Queen - <i>Don’t stop me now ! </i></h2>" +
+                "<h2>Caravan palace - <i>Jolie coquine </i></h2>" +
                 "<p>En soirée, vous êtes une pile électrique, <br/> Suivre le tempo est votre technique ! <br/> Vous ne vous arrêtez jamais. Continuez à nous ambiancer avec MySun !<p>";
             break;
         case "Cool":
             return  "<h1>Cool</h1>" +
-                "<h2>John Lennon - Imagine - <i>Imagine all the people, livin’ life in peace </i></h2>" +
+                "<h2>UB40 - Imagine - <i>Red red wine </i></h2>" +
                 "<p>Des fleurs sur tous vos habits, <br/> Bob Marley est votre sonnerie, <br/> Bref, vous êtes cool ! <br/> Peace and Love, pas de prises de tête. Avec MySun, partagez votre bonne humeur.<p>";
             break;
         case "Nostalgique":
             return"<h1>Nostalgique</h1>" +
-                "<h2>Alain Souchon - Imagine - <i>Laissez-moi rêver que j'ai dix ans</i></h2>" + 
+                "<h2>Supertramp - Imagine - <i>School </i></h2>" + 
                 "<p>Vous re-penserez à votre jeunesse, <br/> Telle est notre promesse ! <br/> Vous êtes nostalgique et ça nous plait ! A chaque souvenir sa chanson, partagez les avec MySun !<p>";
             break;
     }

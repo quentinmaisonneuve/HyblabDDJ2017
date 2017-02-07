@@ -18,6 +18,7 @@ d3.json("./getLast24", function(data) {
             groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
         },
             legend: {
+
             // amount of padding to put between each legend element
             padding: 5,
             // define custom height and width for the legend item tile
