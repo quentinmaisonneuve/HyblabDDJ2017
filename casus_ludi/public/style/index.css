@@ -1218,8 +1218,26 @@ a{
 	}
 }
 
+#democratique-def, #serviciel-def{
+	text-align: center; 
+	position: absolute;
+	top:83%;
+	font-size: 2.5vmin;
+	height: 10%;
+	width: 35%;
+}
+
+#democratique-def{
+	left:0;
+}
+
+#serviciel-def{
+	right: 0;
+	text-align: center;
+}
+
 /************************************************************************/
-/**************************** Rmerciements ******************************/
+/**************************** Remerciements ******************************/
 /************************************************************************/
 #outro-fond{
 	position: absolute;
