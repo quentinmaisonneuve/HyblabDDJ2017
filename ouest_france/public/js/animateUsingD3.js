@@ -92,19 +92,19 @@ function startScene3() {
     var key3 = scene3.key2;
 
     carImg.el.transition()
-            .style('left', key0.p_x())
-            .style('top', key0.p_y())
+            .attr('x', key0.p_x())
+            .attr('y', key0.p_y())
             .duration(0)
     .transition().delay(2000)
-        .style('left', key1.p_x())
-        .style('top', key1.p_y())
+        .attr('x', key1.p_x())
+        .attr('y', key1.p_y())
         .duration(key1.duration)
         .ease("linear")
-        .each("end", function () { carImg.el.style('left', key2.p_x())
-            .style('top', key2.p_y()); carImg.symX = 1.0; updateCar(); })
+        .each("end", function () { carImg.el.attr('x', key2.p_x())
+            .attr('y', key2.p_y()); carImg.symX = 1.0; updateCar(); })
     .transition()
-        .style('left', key3.p_x())
-        .style('top', key3.p_y())
+        .attr('x', key3.p_x())
+        .attr('y', key3.p_y())
         .duration(key3.duration);
 }
 
@@ -184,7 +184,7 @@ var scene2 = {
 };
 
 var scene3 = {
-    key0: new MyKey([1034, 1552], 6000),
+    key0: new MyKey([-1034, 1552], 6000),
     key1: new MyKey([1041, 1573], 0),
     key2: new MyKey([767, 1730], 3000)
 };
