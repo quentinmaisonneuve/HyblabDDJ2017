@@ -760,12 +760,7 @@ input:checked + .slider:before {
 
 
 /* ##################################################C3################################"*/
-.tick {
-	visibility: hidden;
-}
-.domain {
-	visibility: hidden;
-}
+
 
 #player1 {
 	width: 50%;

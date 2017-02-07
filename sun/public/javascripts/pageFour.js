@@ -1,14 +1,33 @@
 /* ################# CHART ###################### */
 
+function parseDate(number)
+{
+    if (number < 10)
+        return "0"+number;
+}
 
 d3.json("./getLast24", function(data) {
+
+
+    var today = new Date();
+
+    var time = ["times"];
+    time.push(today.getFullYear()+"-"+parseDate(today.getMonth())+"-"+parseDate(today.getDay())+" "+today.getHours()+":"+today.getMinutes());
+    console.log(today.getFullYear()+"-"+parseDate(today.getMonth())+"-"+parseDate(today.getDay())+" "+today.getHours()+":"+today.getMinutes());
+    for (var i=5; i>0 ;i--)
+    {
+        today.setHours(today.getHours()-4);
+        time.push(today.getFullYear()+"-"+parseDate(today.getMonth())+"-"+parseDate(today.getDay())+" "+today.getHours()+":"+today.getMinutes());
+    }
+
+    data.push(time);
+    console.log(data);
     var chart = c3.generate({
         bindto: '#chart',
         data: {
-            x:'x',
-            /*columns: [["Alternative et punk",0,0,0,0,4,5],["Electronica",0,0,0,0,1,3],["Pop",0,0,0,0,2,1],["Rock",0,0,0,0,2,4],["Urban",0,0,0,0,0,6],["Jazz",0,0,0,0,0,0]],*/
+            x: 'times',
+            xFormat: '%Y-%m-%d %H:%M', // how the date is parsed
             columns: data,
-
             types: {
                 "Alternative et punk": 'area-spline',
                 "Electronica":'area-spline',
@@ -17,13 +36,13 @@ d3.json("./getLast24", function(data) {
                 "Urban":'area-spline',
                 "Jazz":'area-spline'
             },
-            groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
+            groups: [['Alternative et punk', 'Electronica', 'Pop','Rock', 'Urban', 'Jazz']]
         },
         axis: {
             x: {
                 type: 'timeseries',
                 tick: {
-                    format: '%Y-%m-%d'
+                    format: '%H:%M' // how the date is displayed
                 }
             }
         }

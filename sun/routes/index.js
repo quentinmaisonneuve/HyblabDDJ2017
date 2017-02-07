@@ -266,7 +266,7 @@ router.get('/getLast24', function(req, res, next)
 
     var p = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(5, function(err, rows)
+        data.getGenreCreneau4H(0, function(err, rows)
         {
             if(err){res.json(err);}
             else{
@@ -279,7 +279,7 @@ router.get('/getLast24', function(req, res, next)
 
     var p1 = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(4, function(err, rows)
+        data.getGenreCreneau4H(1, function(err, rows)
         {
             if(err){res.json(err);}
             else{
@@ -291,7 +291,7 @@ router.get('/getLast24', function(req, res, next)
 
     var p2 = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(3, function(err, rows)
+        data.getGenreCreneau4H(2, function(err, rows)
         {
             if(err){res.json(err);}
             else{
@@ -303,7 +303,7 @@ router.get('/getLast24', function(req, res, next)
 
     var p3 = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(2, function(err, rows)
+        data.getGenreCreneau4H(3, function(err, rows)
         {
             if(err){res.json(err);}
             else{
@@ -316,7 +316,7 @@ router.get('/getLast24', function(req, res, next)
 
     var p4 = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(1, function(err, rows)
+        data.getGenreCreneau4H(4, function(err, rows)
         {
             if(err){res.json(err);}
             else{
@@ -328,12 +328,11 @@ router.get('/getLast24', function(req, res, next)
 
     var p5 = new Promise(function(resolve, reject)
     {
-        data.getGenreCreneau4H(0, function(err, rows)
+        data.getGenreCreneau4H(5, function(err, rows)
         {
             if(err){res.json(err);}
             else{
                 proceed(rows);
-                retour.push(['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'])
                 retour.push(alternatif);
                 retour.push(electro);
                 retour.push(pop);
