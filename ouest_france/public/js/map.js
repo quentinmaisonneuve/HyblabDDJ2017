@@ -13,7 +13,7 @@ var mapWidth = 960.0,
 var debug_add_city = false;
 
 var myCenter = [-74.0, 2.5];
-var translation = [mapWidth / 2.0, mapHeight / 2.0];
+var translation = [2 * mapWidth / 3, mapHeight / 2.0];
 var scale = 2000.0;
 
 var BASE_FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
@@ -44,13 +44,7 @@ var FONTS = [
   "Bitter",
   "Varela Round"
 ];
-var cities = [
-  ["Nantes", 546, 241],
-  ["Pornic", 402, 272],
-  ["Guérande", 325, 205],
-  ["Ancenis", 661, 177],
-  ["Chateaubriant", 585, 39]
-];
+
 var cities = [
   ["Nantes", -72.10923927606828, 1.757726606443621],
   ["Pornic", -76.2345354010102, 0.8698843815074411],
@@ -94,8 +88,8 @@ svg.append('rect')
   .attr('class', 'background')
   .attr('width', mapWidth)
   .attr('height', mapHeight)
-  .attr('opacity', 0)
-  .on('click', clicked);
+  .attr('opacity', 0);
+ 
 
 var g = svg.append('g');
 
@@ -104,7 +98,7 @@ var mapLayer = g.append('g')
 
 var actualZone = "";
 var actualId = "";
-var zoneBackgroundSize = [80, 40];
+var zoneBackgroundSize = [120, 40];
 var iconCrossSize = [8, 8];
 var zoneState = 0;
 
@@ -220,14 +214,18 @@ d3.json('data/map/edgt30.geo.json', function(error, mapData) {
       .attr('d', path)
       .attr('vector-effect', 'non-scaling-stroke')
       .style('fill', fillFn)
-      .on('mouseover', mouseover)
-      .on('mouseout', mouseout)
-      .on('click', clicked);
+      .on('mouseover', mouseOverMap)
+      .on('mouseout', mouseOutMap)
+      .on('click', mapClicked);
 });
 
 // Get province name
-function nameFn(d){
-  return d && d.properties ? d.properties.name : null;
+function nameFn(d) {
+  return d && d.properties && index.loaded ? index.d30[d.properties.d30] : null;
+}
+
+function idFn(d) {
+  return d && d.properties ? d.properties.d30 : null;
 }
 
 // Get province name length
@@ -241,12 +239,14 @@ function fillFn(d){
   return color(nameLength(d));
 }
 
-function clicked(d) {
+function mapClicked(d) {
+  updateZoneText(d);
   // Create city from cliced location 
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
-  if (actualZone.localeCompare("") == 0)
+
+  if (!actualZone || actualZone.localeCompare("") == 0)
     return;
 
   switch (zoneState) {
@@ -255,12 +255,11 @@ function clicked(d) {
       zone0.id = actualId;
       zoneState++;
       cross0Image.classed('cross', true).classed('hiddenCross', false);
-      cross0Image.on('click', unclicked0);
+      cross0Image.on('click', unclickedMap0);
       
       // Highlight clicked province
       zone0.element = d3.select(this);
       zone0.element.style('fill', zone0.color);
-      
       
       if (zone1.text.localeCompare("") != 0) {
         zoneState++;
@@ -276,12 +275,12 @@ function clicked(d) {
       zone1.element.style('fill', zone1.color);
 
       cross1Image.classed('cross', true).classed('hiddenCross', false);;
-      cross1Image.on('click', unclicked1)
+      cross1Image.on('click', unclickedMap1)
       break;
   }
 }
 
-function unclicked0(d) {
+function unclickedMap0(d) {
   zone0.text = "";
   zone0.id = "";
   zoneState = 0;
@@ -292,7 +291,7 @@ function unclicked0(d) {
   colorMap();
 }
 
-function unclicked1(d) {
+function unclickedMap1(d) {
   zone1.text = "";
   zone1.id = "";
   zoneState = (zoneState < 1) ? zoneState : 1;
@@ -303,7 +302,7 @@ function unclicked1(d) {
   colorMap();
 }
 
-function mouseover(d){  
+function mouseOverMap(d){  
   // Highlight hovered province
   d3.select(this).style('fill', 'orange');
 
@@ -311,7 +310,7 @@ function mouseover(d){
   updateZoneText(d);
 }
 
-function mouseout(d){
+function mouseOutMap(d){
 
   d3.select(this).style('fill', function(d) {return centered && d===centered ? '#D5708B' : fillFn(d);});
   
@@ -321,10 +320,9 @@ function mouseout(d){
 }
 
 function updateZoneText(d) {
-
   var text = nameFn(d);
   actualZone = text;
-  actualId = d.d30;
+  actualId = idFn(d);
 
   var myText, loc;
   switch (zoneState) {
@@ -395,6 +393,3 @@ function colorMap() {
     zone1.element.style('fill', zone1.color);
   }
 }
-
-
-

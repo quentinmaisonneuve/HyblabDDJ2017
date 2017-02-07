@@ -1,13 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <title>En route !</title> <!-- Transport Urbain - Hyblab 2017 -->
+        <!-- Transports Urbains - Hyblab 2017 -->
+        <title>En route !</title>
 
-        <meta name="author" content="Matthew Howell" />
-        <meta name="description" content="fullPage continuous scrolling demo." />
-        <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+        <meta name="author" content="Guillaume DOUSSET, Ronan JAMET, Corentin MARIE, Tudal LE BOT, Jinbo LIU" />
+        <meta name="description" content="Hyblab 2017 - Data journalisme. ScienceCom, AGR, Polytech Nantes. Transports urbains" />
+        <meta name="keywords"  content="hyblab,loire-atlantique,transports" />
         <meta name="Resource-type" content="Document" />
 
         <!-- Basic viewport setting for mobile friendly page -->
@@ -22,32 +23,34 @@
             </script>
         <![endif]-->
 
-        <!-- ajout des event listener "click" sur le choix du mode de transport -->
-        <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
-
-        <!-- jQuery : librairie nécessaire pour fullPage.js -->
-        <script src="lib/jquery.min.js"></script>
-        <script src="lib/jquery-ui.min.js"></script>
-
-        <!-- FitText : Responsive text -->
-        <script src="js/jquery.fittext.js" defer></script>
-        <script src="js/responsive-text.js" defer></script>
-
-        <!-- Pour ne pas afficher la slide nav lors du "trajet" -->
-        <script type="text/javascript" src="js/noSlideNav.js"></script>
-
-        <!-- fullPage.js -->
-        <!-- d3js : librairie nécessaire pour animateUsingD3.js -->
+        <!-- Libraries -->
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-ui.min.js" defer></script>
+        <script type="text/javascript" src="lib/jquery.fullPage.min.js" defer></script>
+        <script type="text/javascript" src="lib/jquery.fittext.js" defer></script>
         <script type="text/javascript" src="lib/d3.v3.min.js"></script>
 
-        <!-- ajout de la carte -->
-        <script type="text/javascript" src="js/carte.js" defer></script> 
+        <!-- Load index and data -->
+        <script type="text/javascript" src="js/load.js" defer></script>
 
-        <!-- ajout des animations sur la fullPage -->
+        <!-- Load map -->
+        <script type="text/javascript" src="js/map.js" defer></script>
 
+        <script type="text/javascript" src="js/datavizEvent.js" defer></script>
+
+        <!-- Add event listener to transport mode choice -->
+        <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
+
+        <!-- Responsive text -->
+        <script type="text/javascript" src="js/responsive-text.js" defer></script>
+
+        <!-- Hide nav slide during story -->
+        <script type="text/javascript" src="js/noSlideNav.js" defer></script>
+
+        <!-- Add animations -->
         <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
-        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-        
+
+        <!-- Configuration de fullPage.js -->
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#fullpage').fullpage({
@@ -58,7 +61,6 @@
     
         <script type="text/javascript" src="js/datavizEvent.js" defer></script>
         <script type="text/javascript" src="js/dataviz.js" defer></script>
-
     </head>
 
     <body>
@@ -92,7 +94,7 @@
             <div class="section" id="section1">
                 <input class="bebas" type="button" id="continuer" value="CONTINUER"/>
                 <div class="intro">
-                    <svg id="carte"><svg> 
+                    <svg id="carte"></svg>
                 </div>
                 <img class="footer" id="houses1" src="img/Visuel-Footer.svg">
             </div>
@@ -119,7 +121,7 @@
                     </div>
                     <input type="button" class="openInfo" id="buttonEncadre1">
                     <div class="effect1"></div>
-                    <img class="img_myCar" id="car" src="img/Voiture.svg">
+                    <svg id="carScene"></svg>
                 </div>
             </div>
             
