@@ -2,7 +2,7 @@
 function hideWall( bulle ) {
         for( i=0 ; i < bulle.length ; i++) {
             e = document.getElementById(bulle[i]);
-            e.setAttribute('visibility', 'hidden');
+            if(e) e.setAttribute('visibility', 'hidden');
         }
 }
 function showWall( bulle ) {
@@ -32,6 +32,8 @@ function intialize(svg, listMur) {
     createPolyline();
     var polyline = document.querySelector("#polyDraw");
     hideWall(listMur)
+    var pos   = polyline.getBoundingClientRect();
+    var elPos = { X:pos.x , Y:pos.y };
 
     function drawLine(evt) {
 
@@ -55,14 +57,13 @@ function intialize(svg, listMur) {
         }
         startDraw = true
         point = svg.createSVGPoint();
-        point.x = evt.clientX;
-        point.y = evt.clientY;
+        point.x = evt.clientX-elPos.X;
+        point.y = evt.clientY-elPos.Y;
         // console.log(point);
         if( lastPoint === 0 ) {
             polyline.points.appendItem(point);
             lastPoint = point;
         } else {
-            console.log((lastPoint.x - point.x)*(lastPoint.x - point.x) + (lastPoint.y - point.y)*(lastPoint.y - point.y) );
             if( (lastPoint.x - point.x)*(lastPoint.x - point.x) + (lastPoint.y - point.y)*(lastPoint.y - point.y) > 100 ) {
                 polyline.points.appendItem(point);
                 lastPoint = point;
