@@ -107,7 +107,8 @@
 		<div class="col-md-4">
 			<div id="logo_van">
         		<img id="logo1" src="img/accueil-titre.svg"/>
-        		<p id="pb">Tourisme à Nantes : Dans quelle mesure la création du Voyage à Nantes a changé la donne ?</p>
+        		<p id="pb">Tourisme à Nantes :
+        		<br/>Dans quelle mesure la création <br/>du Voyage à Nantes a changé la donne ?</p>
 
         	</div>
 		</div>
@@ -621,7 +622,7 @@ $myCarousel.on('slid.bs.carousel', function(e) {
     $this.children('.left.carousel-control').show();
     $this.children('.right.carousel-control').hide();
   } 
-  	else if(currentIndex != 1 && currentIndex != 7 && currentIndex != 9) {
+  	else if(currentIndex != 1 && currentIndex != 7 && currentIndex != 8 && currentIndex != 9) {
   		$this.children('.right.carousel-control').hide();
     setTimeout(function(){ $this.children('.right.carousel-control').show(); }, 8000);
   	}
