@@ -20,11 +20,10 @@ function putRandWeek()
   				var title=data2[i].title;
   				var artist=data2[i].artist;	
     				$.getJSON('/Cover/artist/title/', function(data3) {
-	    				if (data3 =! undefined && data3.track =! undefined && data3.track.album =! undefined)
+	    				if ( (data3 =! undefined) && (data3.track =! undefined) && (data3.track.album =! undefined))
 	    				{
-							//Cover=data2.track.album.image[2]['#text'];
-							//CoverList+= "<img src="+Cover+"/>";
-							CoverList += "a ";
+							Cover=data2.track.album.image[2]['#text'];
+							CoverList+= "<img src="+Cover+"/>";
 						}
 						//else throw 'errordejugement'
     				});//end first get json
