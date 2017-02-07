@@ -354,18 +354,26 @@ router.get('/getLast24', function(req, res, next)
 });
 
 
-router.get('/Test', function(req, res, next)
+router.get('/Cover/:artist/:titre', function(req, res, next)
 {
- var url = "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=b5763b483c7b63572a59804b2d18f9bc&artist=Gorillaz&track=Feel%20Good%20inc&format=json"
+ var url = "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=b5763b483c7b63572a59804b2d18f9bc&artist="+req.params.artist+"&track="+req.params.titre+"&format=json"
 request({
     url: url,
     json: true
 }, function (error, res2, body) {
 
     if (!error && res2.statusCode === 200) {
-        res.json(body.track.album.image[2]['#text']) // Print the json response
+        res.json(body) // Print the json response
     }
 })
 
+
  });
+router.get('/5LastGenre/:genre', function(req, res, next) {
+    data.get5LastGenre(req.params.genre, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
 module.exports = router;
