@@ -1240,7 +1240,7 @@ body{
 .Equipe{
 	position: relative;
 	top : 3.5vw;
-	left : 9.5vw;
+	left : 10vw;
 }
 
 .Nous{
@@ -1257,7 +1257,7 @@ body{
 	position: absolute;
 	text-align: center;
 	bottom: -5vw;
-	left: 41%;
+	left: 42.5%;
 	font-size: 1.3vw;
 }
 .Paroles{
