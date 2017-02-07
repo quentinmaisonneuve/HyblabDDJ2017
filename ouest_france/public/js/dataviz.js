@@ -23,7 +23,10 @@ function create_dataviz() {
 function create_dataviz_1() {
     var value = data.d30.matrix.mode.total[getDepart()][getArrivee()];
     var total = data.d30.matrix.mode.total[getDepart()].total;
-    var rounded = Math.ceil(value / total * 10) * 10;
+    var rounded = 0;
+    if (total > 0) {
+        rounded = Math.ceil(value / total * 10) * 10;
+    }
 
     if (rounded > 0) {
         document.getElementById("people").src = "img/dataviz1/" + rounded + ".svg";
@@ -35,12 +38,16 @@ function create_dataviz_1() {
 function create_dataviz_2() {
     var total = data.d30.matrix.mode.total[getDepart()][getArrivee()];
 
-    var bar = [
-        (data.d30.matrix.mode.voiture[getDepart()][getArrivee()] / total * 100).toFixed(0),
-        (data.d30.matrix.mode.tc     [getDepart()][getArrivee()] / total * 100).toFixed(0),
-        (data.d30.matrix.mode.velo   [getDepart()][getArrivee()] / total * 100).toFixed(0),
-        (data.d30.matrix.mode.marche [getDepart()][getArrivee()] / total * 100).toFixed(0)
-    ];
+    var bar = [0, 0, 0, 0];
+
+    if (total > 0) {
+        bar = [
+            (data.d30.matrix.mode.voiture[getDepart()][getArrivee()] / total * 100).toFixed(0),
+            (data.d30.matrix.mode.tc     [getDepart()][getArrivee()] / total * 100).toFixed(0),
+            (data.d30.matrix.mode.velo   [getDepart()][getArrivee()] / total * 100).toFixed(0),
+            (data.d30.matrix.mode.marche [getDepart()][getArrivee()] / total * 100).toFixed(0)
+        ];
+    }
 
     drawBarChart(bar, "#bar-demo", ["pourcentVoiture", "pourcentCommun", "pourcentVelo", "pourcentPied"], ["#d4584e", "", "", ""]);
 }
@@ -49,11 +56,15 @@ function create_dataviz_3() {
 
     var total = data.d30.matrix.motif.total[getDepart()][getArrivee()];
 
-    var bar = [
+    var bar = [0, 0, 0];
+
+    if (total > 0) {
+        bar = [
         (data.d30.matrix.motif.travail[getDepart()][getArrivee()] / total * 100).toFixed(0),
-        (data.d30.matrix.motif.etudes [getDepart()][getArrivee()] / total * 100).toFixed(0),
-        (data.d30.matrix.motif.autre  [getDepart()][getArrivee()] / total * 100).toFixed(0)
-    ];
+        (data.d30.matrix.motif.etudes[getDepart()][getArrivee()] / total * 100).toFixed(0),
+        (data.d30.matrix.motif.autre[getDepart()][getArrivee()] / total * 100).toFixed(0)
+        ];
+    }
 
     drawBarChart(bar, "#bar-demo-3", ["pourcentTravail", "pourcentEtude", "pourcentAutres"], ["#d4584e", "", ""]);
 }
@@ -70,8 +81,6 @@ function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
 
     // add the canvas to the DOM
     var barDemo = d3.select(idForDrawing).
-        style("border-top", "1px solid black").
-
         append("svg:svg").
         attr("width", barFullWidth).
         attr("height", barHeight);
