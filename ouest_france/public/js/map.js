@@ -91,9 +91,7 @@ var path = d3.geo.path()
 var svg = d3.select('#carte')
   .attr("viewBox", "0 0 960 500");
 
-d3.select("#intro")
-  .attr("width", "95vw")
-  .attr("height", "85vh");
+
 
 // Add background
 svg.append('rect')
