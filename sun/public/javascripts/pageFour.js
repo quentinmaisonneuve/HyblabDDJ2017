@@ -17,6 +17,17 @@ d3.json("./getLast24", function(data) {
                 "Jazz":'area-spline'
             },
             groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
+        },
+        legend: {
+            // amount of padding to put between each legend element
+            padding: 5,
+            // define custom height and width for the legend item tile
+            item: {
+                tile: {
+                    width: 15,
+                    height: 2
+                }
+            }
         }
     });
 });
