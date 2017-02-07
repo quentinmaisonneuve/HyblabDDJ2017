@@ -73,6 +73,8 @@
 	<script src="js/social.js"></script>
 	<script src="js/popover.js"></script>
 	<script src="js/animateReinit.js"></script>
+	<script src="js/animateBus.js"></script>
+
 
 </head>
 
@@ -150,6 +152,9 @@
 				Donatien voit arriver le Voyage à Nantes : un parcours gratuit qui via la culture et le territoire de la métropole renforce le tourisme. C'est le début d'une nouvelle aventure ! 
 				<br/>Nantes souhaite dynamiser la période estivale grâce au VAN. C'est en 2011 que la structure est créée. Elle rassemble <span class="orange">le Château des Ducs de Bretagne, les Machines de l'Ile, Estuaire Nantes St-Nazaire et l'office de tourisme Nantes Métropole</span>. De nouveaux lieux sont créés comme la HAB Galerie dédiée à l'art contemporain et la fabrique du Stéréolux installées en automne de cette même année.
 				</div>
+		<div id="busVan11" class="busVan">
+						<img src="img/busVan/VAN2011.svg"/>
+					</div>
         </div> 
 		
 		<!-- 2012 -->
@@ -179,7 +184,9 @@
 				<br/><br/>
 				Une ligne rose longue de 12 km apparaît sur le sol de Nantes. Elle serpente à travers la ville et conduit les visiteurs dans la découverte des oeuvres du Voyage à Nantes. L'occasion pour Donatien de guider ses amis et sa famille jusqu'aux <span class=gras>Machines de l'île</span> où l'offre se développe avec l'ouverture du <span class="gras">Carrousel des mondes marins</span>.
 			</div>
-
+					<div id="busVan12"  class="busVan">
+						<img src="img/busVan/VAN2012.svg"/>
+					</div>
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2012facebook0" class="2012facebook" src="img/blanc.svg"/>
@@ -250,7 +257,9 @@
 			Le mois d'août devient le 2e meilleur mois de l'année en termes de fréquentation touristique (après juin). Ce phénomène est révélateur d'un rééquilibrage du tourisme à Nantes qui accueille de plus en plus de vacanciers.
 			</p>
 			</div>
-
+			<div id="busVan13" class="busVan">
+				<img src="img/busVan/VAN2013.svg"/>
+			</div>
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2013facebook0" class="2013facebook" src="img/blanc.svg"/>
@@ -334,6 +343,9 @@
  				<img id="2014insta3" class="2014insta" src="img/blanc.svg"/>
  				<img id="2014insta4" class="2014insta" src="img/blanc.svg"/>
         	</div>
+        				<div id="busVan14" class="busVan">
+				<img src="img/busVan/VAN2014.svg"/>
+			</div>
       </div>
 
     	<!-- 2015 -->
@@ -356,9 +368,11 @@
 
         	<div id="popover2015" class="animated bounceIn">
 
-			<p id="texte2015">
-			
-			</p>
+				<p id="texte2015">
+					Top 6 des nationnalités Européennes selon le nombre de nuitées hôtelières
+				</p>
+				<p id="labelValue" id="texte2015">Survolez un pays sur la map pour plus d'informations</p>
+
 			</div>
 
         	<div id="textehistoire2015" class="animated fadeIn">
@@ -372,7 +386,7 @@
 				&laquo; Les rues de la ville sont désormais ponctuées d’œuvres qui, après avoir été montées le temps d’un été, ont trouvé un point d’ancrage durable. &raquo;
 				</p>
 			</div>
-<div id="vmap" style="width: 64vw; height: 80vh;position: relative; float:right; margin-top: 5vh; overflow: hidden; " data-animation="animated fadeIn" ></div>
+<div id="vmap" style="width: 64vw; height: 80vh;position: relative; float:right; margin-top: 10vh; overflow: hidden; " data-animation="animated fadeIn" ></div>
         	<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
  				<img id="2015facebook0" class="2015facebook" src="img/blanc.svg"/>
@@ -395,6 +409,10 @@
  				<img id="2015insta3" class="2015insta" src="img/blanc.svg"/>
  				<img id="2015insta4" class="2015insta" src="img/blanc.svg"/>
         	</div>
+
+			<div id="busVan15" class="busVan">
+				<img src="img/busVan/VAN2015.svg"/>
+			</div>
 	      	
 	    </div>
 	    
@@ -441,6 +459,9 @@
  				<img id="2016insta3" class="2016insta" src="img/blanc.svg"/>
  				<img id="2016insta4" class="2016insta" src="img/blanc.svg"/>
         	</div>
+        					<div id="busVan16" class="busVan">
+					<img src="img/busVan/VAN2016.svg"/>
+				</div>
 	      </div>
 
 
@@ -555,7 +576,7 @@ doAnimations($firstAnimatingElems);
 $myCarousel.carousel('pause');
 
 // pour masquer les flèches à gauche et à droite sur la première et dernière page
-/*$myCarousel.children('.left.carousel-control').hide();
+$myCarousel.children('.left.carousel-control').hide();
 
 $myCarousel.on('slid.bs.carousel', function(e) {
 	var $this = $('#carousel-example-generic');
@@ -569,7 +590,7 @@ $myCarousel.on('slid.bs.carousel', function(e) {
     $this.children('.carousel-control').show();
 
   } 
-});*/
+});
 
 
 $myCarousel.on('slid.bs.carousel', function (e) {
@@ -603,7 +624,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
     // 2011
     case 2 :
     	//showText2011();
-
+    	animateFirstBus();
     	// animate
 		animateDigits(2011);
 
@@ -618,6 +639,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     // 2012
     case 3 :
+    
+    animateBus("busVan12");
     	showPresse2012();
     	// animate
     	animateDigits(2012);
@@ -643,6 +666,7 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
 	// 2013
     case 4 :
+	animateBus("busVan13");
     	showPopover2013();
     	showPresse2013();
 
@@ -673,6 +697,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     // 2014
     case 5 :
+
+    animateBus("busVan14");
     	showAnimation2014();
 		showPresse2014();
 
@@ -704,6 +730,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
     // 2015
     case 6 :
+
+    animateBus("busVan15");
     	showAnimation2015();
 		//showPresse2015();
 
@@ -731,6 +759,8 @@ $myCarousel.on('slid.bs.carousel', function (e) {
 
    	// 2016
     case 7 :
+
+   	animateBus("busVan16");
     	showAnimation2016();
 		showPresse2016();
     	// animate
