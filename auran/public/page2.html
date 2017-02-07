@@ -16,7 +16,7 @@
     .platform{
         display: inline-block;
         height: 100%;
-        margin-left: 30%;
+        margin-left: 20%;
         width: auto;
         position: relative;
     }
@@ -105,7 +105,7 @@
         left: 30%;
     }
 
-    .texte-fond{
+    .text-fond{
         position: absolute;
         object-fit: fill;
         width:100%;
@@ -120,7 +120,13 @@
     }
 
     .entreprises-individuelles h1, .grandes-entreprises h1{
+        margin-top: 0.1em;
         font-size: 5em;
+    }
+
+    .entreprises-individuelles h2, .grandes-entreprises h2{
+        font-size: 1.5em;
+        text-transform: uppercase;
     }
 
     .grandes-entreprises{
@@ -129,40 +135,70 @@
         height: 100vh;
     }
 
-    .text-entreprises{
-        font-size:1.5em;
-        max-width: 70%;
-        text-transform: uppercase;
+    .text-entreprises-bottom{
+        position:absolute;
+        bottom:0;
     }
 
-    .right-text-entreprises{
-        float:right;
+    .text-entreprises-left{
+        text-align: left;
+        max-width:45vw;
+        margin-left: 4vw;
+    }
+
+    .text-entreprises-right {
         text-align: right;
-        margin-right: 2%;
+        max-width: 20vw;
+        margin-right: 4vw;
+        position: absolute;
+        right:0;
     }
 
+    .text-entreprises-bottom p {
+        font-family: 'Raleway', sans-serif;
+        border-top: solid 1px #ade2e7;
+        font-size: 1.2em;
+    }
 
+    .text-entreprises-decor{
+        font-size: 1.5em;
+        font-family: 'Raleway', sans-serif;
+    }
 </style>
 <div class="container_platform" id="carte-mere">
-    <div class="texte-fond">
+    <div class="text-fond">
         <div class="entreprises-individuelles">
             <h1>67%</h1>
-            <p class="text-entreprises">
-                Les entreprises individuelles représentent plus de deux tiers
-                des entreprises du numérique à Nantes Métropole.
+            <h2>des entreprises du numériques sont individuelles.</h2>
+            <p class="text-entreprises-left text-entreprises-decor">
+                Sur le territoire nantais, l’écosystème numérique se caractérise par des
+                disparités fortes (en taille et en structure de l’emploi, notamment), mais
+                avant tout par des interactions denses entre les nombreux acteurs.
             </p>
+            <div class="text-entreprises-bottom text-entreprises-left">
+                <p>
+                    Les entreprises individuelles représentent plus de <b>deux tiers</b>
+                    des entreprises du <b>numérique</b> à Nantes Métropole.
+                </p>
+                <p>
+                    Les <b>secteurs porteurs d’emplois</b> à Nantes en 2015 sont <i>le conseil en
+                    système et logiciels informatiques</i>, <i>la programmation informatique</i>
+                    et <i>l’édition de logiciels d’applicatifs</i>.
+                </p>
+                <p>
+                    Une dynamique propre à Nantes en 2015 : des grandes entreprises beaucoup plus <b>porteuses
+                    d’emplois</b> que les entreprises indépendantes, <b>pourtant plus nombreuses</b>.
+                </p>
+            </div>
         </div>
         <div class="grandes-entreprises">
             <h1>33%</h1>
-            <p class="text-entreprises right-text-entreprises">
-                Une dynamique propre à Nantes en 2015 : des grandes entreprises beaucoup plus porteuses
-                d’emplois que les entreprises indépendantes, pourtant plus nombreuses.
-            </p>
+            <h2>sont des entreprises avec des salariés.</h2>
+            <div class="text-entreprises-bottom text-entreprises-right">
+                <p>Sources : AURAN, Nantes Tech, Acoss 2016 et INSEE Sirene 2016</p>
+            </div>
         </div>
-        <p>
-            Les secteurs porteurs d’emplois à Nantes en 2015 sont le conseil en
-            système et logiciels informatiques, la programmation informatique, et l’édition de logiciels d’applicatifs
-        </p>
+
     </div>
     <div class="platform">
         <img class="platform-img" src="img/platform.png"/>
