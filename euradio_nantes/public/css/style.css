@@ -13,8 +13,6 @@
   src: url("../fonts/blogger-sans/Blogger_Sans-Medium.otf");
 }
 
-BloggerSans-Medium
-
 @font-face {
     font-family: "MetaPro-Normal";
     src: url("../fonts/MetaPro-Normal.otf");
@@ -77,7 +75,7 @@ span{
   line-height: 140%;
 }
 
-.newp{
+.newp {
   font-size: 18px;
   color:  #323B49;
   text-align: justify;
