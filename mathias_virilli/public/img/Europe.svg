@@ -17,7 +17,7 @@
    width="1280px"
    height="800px"
    viewBox="0 0 1280 800"
-   onload="hideBulle(['g1047', 'g1123', 'g1199', 'g1275', 'g1351', 'g1837', 'g511', 'g597', 'g671', 'g747', 'g823', 'g899', 'g975']);"
+   onload="hideBulle(['g1047', 'g1123', 'g1199', 'g1275', 'g1351', 'g1837', 'g511', 'g597', 'g671', 'g747', 'g823', 'g899', 'g975']);intialize(this,['_x32_016_10_', 'circle1761', 'circle1839', 'polyline1893', 'polyline269', '_x32_015_20_', 'polyline271', 'planifié_2_', '_x32_015_18_', '_x32_016_7_', '_x32_018_2_', '_x32_014_8_', '_x32_011_2_', 'polyline273']);"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
    sodipodi:docname="Europe.svg"
@@ -5348,7 +5348,15 @@
      stroke-miterlimit="10"
      points="  642.965,127.374 629.65,130.263 639.696,128.283 656.28,121.239 "
      id="polyline1893" />
-     
+     <text
+       x="100"
+       y="200"
+       fill="#000"
+       id="textFrontiere"
+       font-family="'Roboto-Bold'"
+       font-size="16">Essayez de tracer une frontière</text>
+
      
          <script xlink:href="../js/rare.js" type="text/ecmascript" />
+         <script xlink:href="../js/trace.js" type="text/ecmascript" />
      </svg>
