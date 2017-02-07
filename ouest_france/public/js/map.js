@@ -6,6 +6,11 @@ function getArrivee() {
   return zone1.id;
 }
 
+function hasSelectedPoints() {
+  return getDepart().localeCompare("") != 0 &&
+    getArrivee().localeCompare("") != 0; 
+}
+
 var mapWidth = 960.0,
     mapHeight = 500.0,
     centered;
