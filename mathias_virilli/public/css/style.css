@@ -65,14 +65,6 @@ path {
   width: 900px;
 }
 
-#objets-separations{
-	display: inline-block;
-	bottom: 45%;
-	position: absolute;
-	left: 70%;
-	margin : 10px;
-}
-
 .arc {
   fill: none;
   stroke: red;
@@ -150,11 +142,15 @@ path {
 ul#objets-separations
 {
     list-style-type: none;
+	display: inline-block;
+	top: 13%;
+	position: absolute;
+	left: 70%;
 }
 
 ul#objets-separations li
 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: table;
 }
 
@@ -217,16 +213,7 @@ ul#objets-separations li#obj-trafic span.value
 ul#objets-separations li#obj-trafic span.name
 {
     color: #5a9dff;
-}
-
-ul#objets-separations li#obj-inégalités span.value
-{
-    background-color: #ffce00;
-}
-
-ul#objets-separations li#obj-inégalités span.name
-{
-    color: #ffce00;
+}color: #ffce00;
 }
 
 .icone-objet-separation
