@@ -318,6 +318,13 @@ position: absolute;
     background-size: cover;
 }
 
+
+#labelValue {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #pb {
     position: absolute;
     display: block;

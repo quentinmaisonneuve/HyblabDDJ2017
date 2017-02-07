@@ -47,13 +47,15 @@ $.get("data/2015-data.json",function(data){
           {
             if (activeNations.indexOf(code) > -1) {
               if(code != "fr"){
-                label[0].innerHTML = nomPays[codePays.indexOf(code)]+ " - " +nombreVisiteurs[codePays.indexOf(code)]+ " visiteurs";
+                document.getElementById("labelValue").innerHTML = nomPays[codePays.indexOf(code)]+ " - " +nombreVisiteurs[codePays.indexOf(code)]+ " nuitées";
               }        
               if(code == 'fr'){
                 event.preventDefault();
               }
             }
            else {
+                document.getElementById("labelValue").innerHTML = "Survolez un pays sur la map pour plus d'informations";
+            
                 event.preventDefault();
             }
 

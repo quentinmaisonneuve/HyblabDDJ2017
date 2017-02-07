@@ -23,6 +23,12 @@ min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   align-items: center;
 }
 
+.busVan{
+    position: absolute;
+    bottom: 20;
+    margin-bottom: : 10px;
+    
+}
 #logo_van img {
 vertical-align: middle;
     margin-right: 0;
