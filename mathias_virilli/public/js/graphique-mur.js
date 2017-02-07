@@ -41,17 +41,17 @@ var line = d3.svg.line()
 // add a "g" element (think "group")
 // annoying d3 gotcha - the 'svg' variable here is a 'g' element
 // the final line sets the transform on <g>, not on <svg>
-var svg = d3.select("#graphique-mur").append("svg")
+var svgGraphique = d3.select("#graphique-mur").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-svg.append("g")
+svgGraphique.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
 
-svg.append("g")
+svgGraphique.append("g")
     .attr("class", "y axis")
   .append("text") // just for the title (ticks are automatic)
     //.attr("transform", "rotate(-90)") // rotate the text!
@@ -62,7 +62,7 @@ svg.append("g")
     .text("Longueur cumulée des murs (km)");
     
 // Add the line path.
-svg.append("path")
+svgGraphique.append("path")
     .attr("class", "line")
     .style({'stroke-width': '2px'});
 	
@@ -136,13 +136,14 @@ function draw(data) {
     xAxis.tickValues(x.domain().filter(function(d, i) { return !(i % 4); }));
 
     // Select the section we want to apply our changes to
-    var svg = d3.select("#graphique-mur");
+    var svgGraphique = d3.select("#graphique-mur");
 
     // Make the changes
-    svg.select(".line")   // change the line
-        .attr("d", line(data));
-    svg.select(".x.axis") // change the x axis
+    svgGraphique.select(".line")   // change the line
+        .attr("d", line(data))
+        .style({'fill': 'none', 'stroke': '#7693A3'});
+    svgGraphique.select(".x.axis") // change the x axis
         .call(xAxis);
-    svg.select(".y.axis") // change the y axis
+    svgGraphique.select(".y.axis") // change the y axis
         .call(yAxis);
 }
