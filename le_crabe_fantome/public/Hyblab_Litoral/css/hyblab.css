@@ -1445,9 +1445,9 @@ body{
 
 .LegendeD4{
 	height: 3vw;
-	position: relative;
-	bottom: -9vw;
-	left: 27vw;
+	position: absolute;
+	top: 33vw;
+	left: 93.5%;
 }
 
 
