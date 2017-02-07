@@ -243,7 +243,7 @@ position: absolute;
     display: table-cell;
     left: 40%;
     top: 24vh;
-    width: 27vw;
+    width: 28vw;
     /* height: 49vh; */
     font-size: 2vw;
     font-family: Josefin Sans;
@@ -446,4 +446,35 @@ width: 32vw;
     font-size: 2vw;
     font-weight: 600;
     font-family: Josefin Sans;
+}
+
+
+#popover2014 {
+position: absolute;
+    display: block;
+    left: 14vw;
+    top: 20vh;
+    width: 12vw;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: white;
+    font-weight: bold;
+}
+
+#texte2014 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#age {
+    position: absolute;
+    top: 25vh;
+    left: 53vw;
+}
+
+#classe {
+    position: absolute;
+    top: 25vh;
+    left: 63vw;
 }
