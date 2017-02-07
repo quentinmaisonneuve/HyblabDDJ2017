@@ -83,7 +83,19 @@
     
     <div id="carousel-example-generic" class="carousel slide">
     	<!-- Indicators -->
-    
+    	<ol class="carousel-indicators">
+	        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+	        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+      	</ol>
+
       	<!-- Wrapper for slides -->
       	<div class="carousel-inner" role="listbox">
 
@@ -294,11 +306,9 @@
 		  
 		  <div id="popover2014" class="animated bounceIn">
         	
-<p id="texte2014">
-					Qui voyage à Nantes ?
-				</p>
-
-				<p id="labelValue14" id="texte2015">Survolez le graphique pour plus d'informations </p>
+			<p id="texte2014">
+			 Ages et classes sociales des visiteurs
+			</p>
 			</div>
 
       		<div id="funfact2014">
@@ -311,18 +321,15 @@
 				En 2014, le carrousel des mondes marins reçoit le prix de l’attraction la plus originale du monde par THEA awards à Los Angeles. Dorénavant, des blogueurs, influenceurs et journalistes du monde entier s'intéressent à Nantes.
 			</div>
 					
-						
-					<div id="pieChart" style="float:left; width: 75vw; margin-top: 10vh;">
+					<div id="age">
+					<img src="img/Age.svg"/>
+					</div>
 
-  					<div  class="radio" style="float:right; display:block;    /* Add this property*/
-   width: 20%; " id="pieForm">
-  					
-				<label id="ageLabel"><input class="radioB" type="radio" name="dataset" id="dataset" value="total" checked>Répartition par âge</label>
-					<label id="csLabel"><input class="radioB" type="radio" name="dataset" id="dataset" value="option1">Répartition par classe sociale</label>
-  					</div>
-  						
-  </div>
-			
+					<div id="classe">
+					<img src="img/Classe.svg"/>
+					</div>
+						<div id="pieChart" style="float:left; position: absolute; margin-top: 10vh;  width: 960px;
+  height: 500px;"></div>
 			
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>

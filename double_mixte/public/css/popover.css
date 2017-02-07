@@ -20,43 +20,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-#pieForm{
-      margin-top: 10%;
-}
-
-.radio label {
-    display:inline-block;
-    width: 270px;
-    padding:8px;
-    font-family:Josefin Sans;
-    font-size:13pt;
-    background-color: #f43f00;
-    color: white;
-    font-weight: bold;
-}
-
-#ageLabel{
-    color:#001526;
-}
-#csLabel:{
-    color:#001526;
-}
-#ageLabel:hover{
-        background-color: #001526;
-        color: #f43f00;
-    font-weight: bold;
-}
-#csLabel:hover{
-        background-color: #001526;
-        color: #f43f00;
-    font-weight: bold;
-
-}
-.radio input[type="radio"]:checked + label { 
-    background-color:#bbb;
-}
-
 .presse {
 	position: absolute;
     
@@ -70,10 +33,6 @@
     -webkit-animation-duration: 3s;
     -ms-animation-duration: 3s;
     -khtml-animation-duration: 3s;
-}
-input {
-    display: block;
-    box-sizing: border-box;
 }
 #presse2013 {
 	display: none;
@@ -129,8 +88,9 @@ input {
 }
 
 .textenum {
-	font-size: 1.5vw !important;
-	font-weight: bold;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
 }
 
 .gras {
@@ -216,7 +176,7 @@ input {
 	position: absolute;
     display: block;
     left: 35vw;
-    top: 5vh;
+    top: 4vh;
     width: 50vw;
     height: 10vh;
     font-size: 1.2vw;
@@ -269,9 +229,9 @@ position: absolute;
     display: block;
     left: 22vw;
     top: 26vh;
-    width: 60vw;
+    width: 61vw;
     height: 50vh;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
@@ -280,9 +240,9 @@ position: absolute;
 }
 
 #texteintro {
-    position: absolute;
+   position: absolute;
     display: table-cell;
-    left: 40%;
+    left: 36%;
     top: 24vh;
     width: 28vw;
     /* height: 49vh; */
@@ -300,12 +260,12 @@ position: absolute;
 }
 
 #donatien {
-    position: absolute;
+       position: absolute;
     display: block;
-    left: 23vw;
+    left: 12vw;
     top: 16vh;
     /* width: 20vw; */
-    /*bottom: 0;*/
+    /* bottom: 0; */
 }
 
 #donatien img {
@@ -365,31 +325,23 @@ position: absolute;
     background-image: url(../img/bulle2013.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    color:#001526;
-}
-
-#labelValue14 {
-    padding: 1em;
-    background-image: url(../img/bulle2013.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#001526;
 }
 #pb {
     position: absolute;
     display: block;
     left: -7vw;
     top: 65vh;
-    width: 48vw;
+    width: 51vw;
     height: 50vh;
     font-size: 2.5vw;
-    ont-family: Josefin Sans;
+    font-family: Josefin Sans;
     color: #001526;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
     font-weight: 600;
 }
+
 
 #timeline {
 	position: absolute;
@@ -490,20 +442,23 @@ width: 32vw;
 }
 
 #titrepola {
-    position: absolute;
+position: absolute;
     top: 10vh;
     left: 56vw;
     font-size: 2vw;
     font-weight: 600;
     font-family: Josefin Sans;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
 }
 
 
 #popover2014 {
 position: absolute;
     display: block;
-    right: 43vw;
-    top: 45vh;
+    left: 14vw;
+    top: 20vh;
     width: 12vw;
     font-size: 1.2vw;
     font-family: Josefin Sans;

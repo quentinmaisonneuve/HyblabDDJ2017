@@ -3,8 +3,8 @@
 d3.select("input[value=\"total\"]").property("checked", true);
 var svg = d3.select("#pieChart")
     .append("svg")
-    .attr("height", "600px")
-    .attr("width", "700px")
+    .attr("height", "100%")
+    .attr("width", "100%")
     .append("g")
 
 svg.append("g")
@@ -38,7 +38,6 @@ var legendSpacing = radius * 0.02;
 
 
 var div = d3.select("#pieChart").append("div").attr("id", "toolTip");
-var too = d3.select("labelValue14");
 
 svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
@@ -56,15 +55,15 @@ datasetTotal = [
         ];
 
 datasetOption1 = [
-        {label:"Cadres de la fonction publique", value:26}, 
-        {label:"Retraités", value:15.3}, 
-        {label:"Professions intermédiaires", value:21.4},
-        {label:"Employés", value:14.2},
-        {label:"Etudiants", value:8.9},
-        {label:"Artisants, commerçants, Chefts d'entreprises", value:6.4},
-        {label:"Inactifs", value:4.4},
-        {label:"Ouvriers", value:2.1},
-        {label:"Agriculteurs exploitants", value:0.4}
+        {label:"Category 1", value:26}, 
+        {label:"Category 2", value:15.3}, 
+        {label:"Category 3", value:21.4},
+        {label:"Category 4", value:14.2},
+        {label:"Category 5", value:8.9},
+        {label:"Category 6", value:6.4},
+        {label:"Category 7", value:4.4},
+        {label:"Category 8", value:2.1},
+        {label:"Category 9", value:0.4}
         ];
 
 change(datasetTotal);
@@ -112,8 +111,7 @@ function change(data) {
         .on("mousemove", function(d){
             div.attr("width","100%");
             div.style("display", "inline-block");
-            document.getElementById("labelValue14").innerHTML =""+ (d.data.label)+" - " +(d.data.value)+ "%";
-               
+            div.html((d.data.label)+"<br>"+(d.data.value)+"%");
         });
     slice
         .on("mouseout", function(d){
