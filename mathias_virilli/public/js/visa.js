@@ -49,9 +49,12 @@ var listCode = ["AB"
     ,"VN" ,"VU" ,"WS" ,"YE"
         ,"ZA" ,"ZM" ,"ZW"]
 
+var canVisa = {}
+
 function putColor( id ) {
     var txtFile = new XMLHttpRequest();
     txtFile.open("GET", "../data/visa_data/" + id.toUpperCase() + ".csv", true);
+    txtFile.onloadend = function() { if(next) { next(); } }
     txtFile.onreadystatechange = function() {
       if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
         if (txtFile.status === 200) {  // Makes sure it's found the file.
@@ -63,6 +66,8 @@ function putColor( id ) {
             code = sp[1]
             status = sp[2]
             statusCode = sp[3]
+            canVisa[code.toLowerCase()] = sp
+
             //console.log(name, code, status, statusCode)
             comment = sp[4]
             /* Code :
@@ -89,6 +94,9 @@ function putColor( id ) {
     }
     txtFile.send();
 }
+var nbClick = 0
+var lastCode = ""
+
 function colorCountry(id, c="#000") {
     if( typeof(id) == "string" ) {
         root = document.getElementById(id);
@@ -107,9 +115,35 @@ function colorCountry(id, c="#000") {
 }
 
 function clickHandler( code ) {
-    return function() {
-        putColor( code.toLowerCase() );
-        colorCountry( code, '#d7f7ff' );
+   return function() {
+        nbClick+=1;
+
+        if(nbClick == 1) {
+            text = document.getElementById('tspan5395');
+            text.innerHTML = "Sélectionner un pays où vous pensez pouvoir allez sans visa"
+            colorCountry( code, '#d7f7ff' );
+        }else if(nbClick == 2) {
+            putColor( lastCode.toLowerCase(), function() {
+                text = document.getElementById('tspan5395');
+                if( canVisa[lastCode] ) {
+                    sp = canVisa[code];
+                    if( sp[3] == '0' ) {
+                        text.innerHTML = "Bravo ! Vous pouvez effectivement y allez sans visa"
+                    }else if( sp[3] == '1' ) {
+                        text.innerHTML = "Et non ! Vous avez absolument besoin d'un visa"
+                    }else{
+                        text.innerHTML = "La situation est un peu compliquée"
+                    }
+
+                }else{
+                    text.innerHTML = "Oups"
+                }
+            });
+        } else {
+            colorCountry( code, '#d7f7ff' );
+            putColor( code.toLowerCase() );
+        }
+        lastCode = code
     };
 };
 
