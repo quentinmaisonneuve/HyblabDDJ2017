@@ -21,8 +21,8 @@ function creatFacebook(){
         chartFacebook = new CanvasJS.Chart("chartContainer", {
                 title: {
                     text: "Facebook",
-                    fontFamily: "Verdana",
-                    fontColor: "Peru",
+                    fontFamily: "MetaPro-Normal",
+                    fontColor: "#323B49",
                     fontSize: 28
 
                 },
@@ -37,7 +37,7 @@ function creatFacebook(){
                     tickThickness: 0,
                     lineThickness: 0,
                     labelFontSize: 18,
-                    labelFontColor: "Peru"
+                    labelFontColor: "#323B49"
 
                 },
                 data: [
@@ -46,9 +46,9 @@ function creatFacebook(){
                     toolTipContent: "<span style='\"'color: {color};'\"'><strong>{indexLabel}</strong></span><span style='\"'font-size: 20px; color:peru '\"'><strong>{y}</strong></span>",
 
                     indexLabelPlacement: "inside",
-                    indexLabelFontColor: "#ffffff",
+                    indexLabelFontColor: "#E44E7E",
                     indexLabelFontWeight: 600,
-                    indexLabelFontFamily: "Verdana",
+                    indexLabelFontFamily: "MetaPro-Normal",
                     color: "#D6E39C",
                     type: "bar",
                     dataPoints: data.provenancePaysPourcentage.reverse()
@@ -70,8 +70,8 @@ function creatTwitter(){
         chartTwitter = new CanvasJS.Chart("chartContainer", {
                 title: {
                     text: "Twitter",
-                    fontFamily: "Verdana",
-                    fontColor: "Peru",
+                    fontFamily: "MetaPro-Normal",
+                    fontColor: "#323B49",
                     fontSize: 28
 
                 },
@@ -86,7 +86,7 @@ function creatTwitter(){
                     tickThickness: 0,
                     lineThickness: 0,
                     labelFontSize: 18,
-                    labelFontColor: "Peru"
+                    labelFontColor: "#323B49"
 
                 },
                 data: [
@@ -97,7 +97,7 @@ function creatTwitter(){
                     indexLabelPlacement: "inside",
                     indexLabelFontColor: "#FFFFFF",
                     indexLabelFontWeight: 600,
-                    indexLabelFontFamily: "Verdana",
+                    indexLabelFontFamily: "MetaPro-Normal",
                     color: "#87C8CB",
                     type: "bar",
                     dataPoints: data.reverse()
