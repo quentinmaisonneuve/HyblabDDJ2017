@@ -39,11 +39,13 @@ function hideAnimation2014() {
 function showAnimation2015() {
 	setTimeout(function(){ $("#funfact2015").css("display", "block"); }, 1000);
 	setTimeout(function(){ $("#presse2015").css("display", "block"); }, 1000);
+	setTimeout(function(){ $("#popover2015").css("display", "block"); }, 1000);
 }
 
 function hideAnimation2015() {
 	$("#funfact2015").css("display", "none");
 	$("#presse2015").css("display", "none");
+	$("#popover2015").css("display", "none");
 }
 
 function showAnimation2016() {
@@ -55,6 +57,7 @@ function hideAnimation2016() {
 }
 
 function test() {
+	$("#btn2011").focus();
 	$("#btn2011").on("click", function() {
 		$("#pola2012").css("display", "none");
 		$("#pola2013").css("display", "none");
