@@ -51,7 +51,7 @@ var listCode = ["AB"
 
 var canVisa = {}
 
-function putColor( id ) {
+function putColor( id, next ) {
     var txtFile = new XMLHttpRequest();
     txtFile.open("GET", "../data/visa_data/" + id.toUpperCase() + ".csv", true);
     txtFile.onloadend = function() { if(next) { next(); } }
