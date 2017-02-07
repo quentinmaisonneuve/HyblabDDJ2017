@@ -9,8 +9,8 @@
 		c0,7.705-5.373,13.685-12,13.685h-256c-6.627,0-12-5.98-12-13.685V61.5c0-7.704,5.373-14.735,12-14.735h256
 		c6.627,0,12,7.031,12,14.735V366.08z"/>
 	<rect x="181.228" y="97.588" fill="none" width="144.025" height="41.734"/>
-	<text transform="matrix(1 0 0 1 214.7695 109.1402)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">émission</text>
-	<text transform="matrix(1 0 0 1 229.5845 131.1402)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">INFOS</text>
+	<text transform="matrix(1 0 0 1 214.7695 109.1402)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">Emission</text>
+	<text transform="matrix(1 0 0 1 229.5845 131.1402)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">infos</text>
 	<rect x="165.249" y="147.481" fill="none" width="177.949" height="17.493"/>
 	<text transform="matrix(1 0 0 1 203.6144 156.9716)" fill="#FFFFFF" font-family="'MetaPro-Normal'" font-size="13">26h / semaine</text>
 	<g>
