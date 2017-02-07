@@ -1,6 +1,36 @@
 'use strict';
 // charset: utf-8
 
+function create_dataviz() {
+    create_dataviz_1();
+    create_dataviz_2();
+    create_dataviz_3();
+}
+
+function create_dataviz_1() {
+    var value = data.d30.matrix.mode.total[getDepart()][getArrivee()];
+    var total = data.d30.matrix.mode.total[getDepart()].total;
+    var rounded = Math.ceil(value / total * 10) * 10;
+
+    if (rounded > 0) {
+        document.getElementById("people").src = "img/dataviz1/" + rounded + ".svg";
+    }
+
+    document.getElementById("number").replaceChild(document.createTextNode(value));
+}
+
+function create_dataviz_2() {
+    var total = data.d30.matrix.mode.total[getDepart()].total;
+
+    alert((data.d30.matrix.mode.voiture[getDepart()][getArrivee()] / total).toFixed(2) * 100 + "%");
+    alert((data.d30.matrix.mode.tc[getDepart()][getArrivee()] / total).toFixed(2) * 100 + "%");
+    alert((data.d30.matrix.mode.velo[getDepart()][getArrivee()] / total).toFixed(2) * 100 + "%");
+    alert((data.d30.matrix.mode.marche[getDepart()][getArrivee()] / total).toFixed(2) * 100 + "%");
+}
+
+function create_dataviz_3() {
+}
+
 // JS for dataviz
 
 // données 
@@ -24,7 +54,7 @@ function getMapFirstData() {
 
     makeDataviz2();
     makeDataviz3();
-}    
+}
 
 function getMapData() {
     depart = getDepart();
@@ -52,6 +82,28 @@ function makeDataviz1 () {
     
     document.getElementById("people").src = pourcentage_img; //dataviz_1_img.src = pourcentage_img;
     document.getElementById("number").firstChild.nodeValue = nbPersonnesFaisantLeMemeTrajet; //dataviz_1_value = nbPersonnesFaisantLeMemeTrajet;
+dataviz_2_img.src=modeDeTransport;
+}
+
+// Dataviz #1
+function makeDataviz1() {
+    var value = data.d30.matrix.mode.total[getDepart()][getArrivee()];
+    var total = data.d30.matrix.mode.total[getDepart()].total;
+    var percent = value / total;
+
+    alert(value);
+    alert(total);
+    alert(percent);
+
+
+
+var nbPersonnesFaisantLeMemeTrajet = 5000; // nbPersonnesFaisantLeMemeTrajet = nb de personnes utilisant ce même trajet
+var pourcentage = 80; // pourcentage = nb de personnes utilisant ce même trajet mais sur une échelle de 0 à 100
+var pourcentage_arrondi = 80; // pourcentage_arrondi = nb de personnes utilisant ce même trajet mais sur une échelle de 0 à 100 de 10 en 10
+var pourcentage_img = "";
+if (pourcentage_arrondi !== 0) pourcentage_img = "img/dataviz1/" + pourcentage_arrondi + ".svg";
+document.getElementById("people").src = pourcentage_img;//dataviz_1_img.src = pourcentage_img;
+document.getElementById("number").firstChild.nodeValue = value;//dataviz_1_value = nbPersonnesFaisantLeMemeTrajet;
 }
 
 function drawChart(dataset, idForDrawing, idsForValues, colorsSet) {

@@ -66,7 +66,7 @@ function invertTransformation(n) {
 for (var i=0; i<cities.length; i++) {
   pos = projection([cities[i][1], cities[i][2]])
   cities[i][1] = pos[0];
-  cities[i][2] = pos[1]; 
+  cities[i][2] = pos[1];
 }
 
 // Define color scale
@@ -241,7 +241,7 @@ function fillFn(d){
 
 function mapClicked(d) {
   updateZoneText(d);
-  // Create city from cliced location 
+  // Create city from clicked location 
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
@@ -274,8 +274,11 @@ function mapClicked(d) {
       zone1.element = d3.select(this);
       zone1.element.style('fill', zone1.color);
 
-      cross1Image.classed('cross', true).classed('hiddenCross', false);;
-      cross1Image.on('click', unclickedMap1)
+      cross1Image.classed('cross', true).classed('hiddenCross', false);
+      cross1Image.on('click', unclickedMap1);
+      
+      create_dataviz(); // Auto creation of dataviz, scroll without usin buttons
+
       break;
   }
 }
