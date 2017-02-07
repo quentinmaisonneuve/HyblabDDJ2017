@@ -88,8 +88,9 @@
 }
 
 .textenum {
-	font-size: 1.5vw !important;
-	font-weight: bold;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
 }
 
 .gras {
@@ -175,7 +176,7 @@
 	position: absolute;
     display: block;
     left: 35vw;
-    top: 5vh;
+    top: 4vh;
     width: 50vw;
     height: 10vh;
     font-size: 1.2vw;
@@ -228,9 +229,9 @@ position: absolute;
     display: block;
     left: 22vw;
     top: 26vh;
-    width: 60vw;
+    width: 61vw;
     height: 50vh;
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-family: Josefin Sans;
     color: #001526;
     font-weight: 600;
