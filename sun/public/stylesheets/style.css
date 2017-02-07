@@ -760,7 +760,7 @@ input:checked + .slider:before {
 #pageFourTopCenterBarre {
 	background-image: url("/images/page4_tiret_haut_graphique.png");
 	background-size: 100% 100%;
-	width: 76.5%;
+	width: 73.8%;
 	margin-left: 4.5%;
 	margin-bottom: 0%;
 }
