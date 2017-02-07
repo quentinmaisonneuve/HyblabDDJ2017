@@ -43,7 +43,7 @@ alert(arrivee);
 */
 
 makeDataviz2();
-alert("make barchart#2");
+//alert("make barchart#2");
 makeDataviz3();
 }
 
@@ -62,7 +62,7 @@ var nbPersonnesFaisantLeMemeTrajet = 5000; // nbPersonnesFaisantLeMemeTrajet = n
 var pourcentage = 80; // pourcentage = nb de personnes utilisant ce même trajet mais sur une échelle de 0 à 100
 var pourcentage_arrondi = 80; // pourcentage_arrondi = nb de personnes utilisant ce même trajet mais sur une échelle de 0 à 100 de 10 en 10
 var pourcentage_img = "";
-if (pourcentage_arrondi !== 0) pourcentage_img = "img/dataviz1/" + pourcentage_arrondi + "%.svg";
+if (pourcentage_arrondi !== 0) pourcentage_img = "img/dataviz1/" + pourcentage_arrondi + ".svg";
 document.getElementById("people").src = pourcentage_img;//dataviz_1_img.src = pourcentage_img;
 document.getElementById("number").firstChild.nodeValue = nbPersonnesFaisantLeMemeTrajet;//dataviz_1_value = nbPersonnesFaisantLeMemeTrajet;
 }
@@ -115,7 +115,7 @@ barDemo.selectAll("rect").
 }
 
 function cleanLastBarChart() {
-    alert("remove BarChart");
+    //alert("remove BarChart");
     d3.select("#bar-demo").select("svg").remove();
     getMapData();
 }
