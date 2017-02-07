@@ -108,3 +108,7 @@ function test() {
 		$("#pola2016").css("display", "block");
 	});
 }
+
+function showTooltip2011() {
+	$('#mytooltip').tooltip('show');
+}
