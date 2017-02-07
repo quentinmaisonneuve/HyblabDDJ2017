@@ -151,10 +151,11 @@ h1 {
 }
 
 h3{
-	color: #30378C;
+	color: #89FFFF;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 200;
-	font-size: 20pt;
+	font-weight: 400;
+	font-size: 25pt;
+	margin-bottom : 2%;
 }
 
 .social-media {
@@ -275,15 +276,15 @@ strong {
 	height: 100vh;
 }
 #section0{
-	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
-	background: -webkit-linear-gradient(#140F21, #140F21);
-	background: linear-gradient(#140F21,#140F21);
+	background: -webkit-gradient(linear, top left, bottom left, from(#1F1F3F), to(#1F1F3F));
+	background: -webkit-linear-gradient(#1F1F3F, #1F1F3F);
+	background: linear-gradient(#1F1F3F,#1F1F3F);
 }
 
 #section1{
-	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
-	background: -webkit-linear-gradient(#140F21, #140F21);
-	background: linear-gradient(#140F21,#140F21);
+	background: -webkit-gradient(linear, top left, bottom left, from(#1F1F3F), to(#140F21));
+	background: -webkit-linear-gradient(#1F1F3F, #140F21);
+	background: linear-gradient(#1F1F3F,#140F21);
 }
 
 #section2{
