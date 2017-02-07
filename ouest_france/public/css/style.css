@@ -332,11 +332,20 @@ p
     width: auto;
 }
 
+#drapeau1
+{
+  z-index: 11;
+  position: absolute;
+  bottom: 24vh;
+  left: 116.3vh;
+  width: 13vh;
+}
+
 #container1 #encadre1
 {
     z-index: 0;
     position: absolute;
-    top: 23vh;
+    top: 27vh;
     width: 60.7vh;
     left: 64.1vh;
 }
@@ -376,7 +385,7 @@ p
     width: 8vh;
     height: 13vh;
     bottom: 16vh;
-    left: 44vh;
+    left: 37vh;
 }
 
 #container1 #encadre1 #sol
@@ -400,7 +409,7 @@ p
     position: absolute;
     opacity: 0;
     border-radius: 100%;
-    z-index: 11;
+    z-index: 12;
     cursor: pointer;
     background-color: #1f1c1c;
     left: 118vh;
@@ -411,12 +420,12 @@ p
 
 #container2 #encadre2
 {
-    z-index: 0;
-    position: absolute;
-    width: 77vh;
-    height: 55vh;
-    bottom: 29vh;
-    left: 60vh;
+  z-index: 0;
+  position: absolute;
+  width: 77vh;
+  height: 55vh;
+  bottom: 22vh;
+  left: 60vh;
 }
 
 #container2 #encadre2 #info2
@@ -489,6 +498,15 @@ p
     top: 11vh;
 }
 
+#drapeau2
+{
+  z-index: 11;
+  position: absolute;
+  bottom: 17.4vh;
+  left: 55vh;
+  width: 13vh;
+}
+
 #container2 #encadre2 #pourcentVoiture
 {
     position: absolute;
@@ -496,7 +514,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 5vh;
-    left: 9vh;
+    left: 6vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -507,7 +525,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 14vh;
-    left: 9vh;
+    left: 6vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -518,7 +536,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 24vh;
-    left: 9vh;
+    left: 6vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -529,7 +547,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 33vh;
-    left: 9vh;
+    left: 6vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -554,7 +572,7 @@ p
     position: absolute;
     border-radius: 100%;
     opacity: 0;
-    z-index: 11;
+    z-index: 12;
     cursor: pointer;
     background-color: #1f1c1c;
     left: 56.7vh;
@@ -578,7 +596,7 @@ p
     position: absolute;
     width: 77vh;
     height: 55vh;
-    bottom: 45vh;
+    bottom: 38vh;
     left: 60vh;
 }
 
@@ -638,7 +656,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 5vh;
-    left: 6vh;
+    left: 3vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -649,7 +667,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 14vh;
-    left: 6vh;
+    left: 3vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -660,7 +678,7 @@ p
     width: 12vh;
     height: 8vh;
     top: 24vh;
-    left: 6vh;
+    left: 3vh;
     font-family: 'Bebasneue_B';
 }
 
@@ -714,7 +732,7 @@ p
 
 .effect1
 {
-    z-index: 10;
+    z-index: 11;
     position: absolute;
     background-color: transparent;
     width: 10vh;
@@ -728,7 +746,7 @@ p
 
 .effect2
 {
-    z-index: 10;
+    z-index: 11;
     position: absolute;
     background-color: transparent;
     width: 10vh;
