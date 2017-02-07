@@ -165,6 +165,8 @@ ul#objets-separations li span, ul#objets-separations li img
 ul#objets-separations li img
 {
     margin-left: 15px;
+    width: 30px;
+    height: 30px;
 }
 
 ul#objets-separations li span.value
