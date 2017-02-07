@@ -32,11 +32,12 @@
     font-family:Josefin Sans;
     font-size:13pt;
     background-color: #f43f00;
+    color: white;
     font-weight: bold;
 }
 
 #ageLabel{
-    color:white;
+    color:#001526;
 }
 #csLabel:{
     color:#001526;
