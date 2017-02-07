@@ -491,10 +491,10 @@ p
     top: 40vh;
 }
 
-#bar-demo
+#bar-demo, #bar-demo-3
 {
     position: absolute;
-    left: 47vh;
+    left: 40vh;
     top: 11vh;
 }
 
