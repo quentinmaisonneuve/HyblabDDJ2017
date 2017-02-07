@@ -1,6 +1,6 @@
 function putRandWeek()
 {
-	rand = 2;//Math.floor(Math.random() * 11) + 1; 
+	rand = Math.floor(Math.random() * 11) + 1;
     switch (rand) {
     	case 1 :
     		$.getJSON('/ThisWeekRock/', function(data) 
@@ -19,11 +19,17 @@ function putRandWeek()
     			for (var i = 0, len = data2.length; i < len; i++) {
   				var title=data2[i].title;
   				var artist=data2[i].artist;	
-    				$.getJSON('/Cover/artist/title/', function(data3) {
-	    				if ( (data3 =! undefined) && (data3.track =! undefined) && (data3.track.album =! undefined))
-	    				{
-							Cover=data2.track.album.image[2]['#text'];
-							CoverList+= "<img src="+Cover+"/>";
+    				$.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
+    					if (data3)
+						{
+							if (data3.track)
+							{
+								if (data3.track.album)
+								{
+									Cover=data3.track.album.image[2]['#text'];
+									CoverList+= "<img src="+Cover+"/>";
+								}
+							}
 						}
 						//else throw 'errordejugement'
     				});//end first get json
