@@ -61,9 +61,9 @@ function MouseOverFunction(d,i) {
 		"stroke-width", "5px"
 		
 	);
+	tooltip.style("display","inline");
 
-
-     tooltip.html(d.properties["Pays financeur"]+'<br />'+d.properties["Pays frontalier"]+'<br />'+d.properties["Longueur (km)"]+" km")
+    tooltip.html(d.properties["Pays financeur"]+'<br />'+d.properties["Pays frontalier"]+'<br />'+d.properties["Longueur (km)"]+" km")
      					.style("left",(d3.event.pageX)+"px")
     					.style("top",(d3.event.pageY+20)+"px")
     					.style("opacity",1.0);
@@ -76,7 +76,7 @@ function MouseOutFunction(d,i) {
 		
 	);
 	tooltip.style("opacity",0.0);
-	
+	tooltip.style("display","none");
 	
 }
 
