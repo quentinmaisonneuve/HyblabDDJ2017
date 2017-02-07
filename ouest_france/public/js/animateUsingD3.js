@@ -206,14 +206,15 @@ if (debugMode == 1) {
 var svgScene = d3.select("#carScene")
     .attr('width', "100%")
     .attr('height', "300%")
+    /*.attr('width', "960")
+    .attr('height', "500")
+  .attr('viewBox',"0 0 960 500")*/
     .style('top', '0')
     .style('left', '0')
     .style('position', 'absolute')
     .style('z-index', '6');
 
-scene1.g = svgScene.append("g")
-            .attr("class", "section")
-            .attr("id", "scenario1");
+scene1.g = svgScene.append("g");
 
 // Ajout des images
 /*var backG = scene1.g.append("g");
