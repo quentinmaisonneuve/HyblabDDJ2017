@@ -17,18 +17,15 @@ d3.json("./getLast24", function(data) {
             },
             groups: [['Alternative et punk', 'Electronica', 'Pop', 'Rock', 'Urban', 'Jazz']]
         },
-            legend: {
-            position: 'right',
-            // amount of padding to put between each legend element
-            padding: 5,
-            // define custom height and width for the legend item tile
-            item: {
-                tile: {
-                    width: 15,
-                    height: 2,
-                    }
-                },
+        legend: {
+        position: 'right',
+        item: {
+            tile: {
+                width: 15,
+                height: 2,
+                }
             },
+        },
     });
 });
 
