@@ -579,7 +579,7 @@ input:checked + .slider:before {
 
 #bubleChart {
 	width: 50%;
-	height: 70%;
+	height: 80%;
 	display: inline-block;
   	margin:0;
   	padding:0;
@@ -596,6 +596,30 @@ input:checked + .slider:before {
 
 #aVousDeJouer p {
 	font-size: 1.2em;
+	color: #004266;
+	font-weight: bold;
+}
+
+#ExplicationBoulles {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#ExplicationBoulles p {
+	font-size: 0.8em;
+	color: #004266;
+	font-weight: bold;
+	text-align: center;
+}
+
+#vousGenre {
+	width: 50%;
+	margin: 0 auto;
+	margin-left: 30%;
+	padding-top: 1%;
+}
+
+#vousGenre p {
 	color: #004266;
 	font-weight: bold;
 }
