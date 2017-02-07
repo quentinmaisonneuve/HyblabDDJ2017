@@ -226,6 +226,6 @@ carImg.el = carG.append("svg:image")
         .attr("xlink:href", listesvgTransport[iterator]);
 
 // init car position 
-enableCarScene();
-startScene2();
+//enableCarScene();
+//startScene2();
 updateCar();
