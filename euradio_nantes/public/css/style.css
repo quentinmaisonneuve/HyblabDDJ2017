@@ -102,12 +102,12 @@ span{
 
 .spanbleu {
     font-family: "BloggerSans-Bold";
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: rgb(92, 173, 231)
 }
 
 .spannoir {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .divhaut {
@@ -115,7 +115,7 @@ span{
 }
 
 .divhaut img, .divbas img {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #section3 .palma {
