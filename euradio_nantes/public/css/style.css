@@ -239,6 +239,9 @@ a, a:active, a:focus {
 }
 .list_pays {
   background-color: #87C8CB;
+  border-radius:20px;
+  vertical-align: top;
+  margin: 20px;
 }
 
 #section8 .row img {
