@@ -342,11 +342,11 @@ position: absolute;
 
 #pola2011 {
 	display: block;
-	width: 25vw;
+	width: 27vw;
 }
 
 #pola2012 {
-	width: 25vw;
+	width: 27vw;
 	display: none;
     -vendor-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -356,7 +356,7 @@ position: absolute;
 
 }
 #pola2013 {
-	width: 25vw;
+	width: 31vw;
 	display: none;
 	-vendor-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -365,7 +365,7 @@ position: absolute;
     -khtml-animation-duration: 2s;
 }
 #pola2014 {
-	width: 25vw;
+	width: 32vw;
 	display: none;
 	-vendor-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -374,7 +374,7 @@ position: absolute;
     -khtml-animation-duration: 2s;
 }
 #pola2015 {
-width: 25vw;
+width: 32vw;
 	display: none;
 	-vendor-animation-duration: 2s;
     -o-animation-duration: 2s;
@@ -384,7 +384,7 @@ width: 25vw;
 }
 
 #pola2016 {
-width: 25vw;
+width: 32vw;
 	display: none;
 	-vendor-animation-duration: 2s;
     -o-animation-duration: 2s;
