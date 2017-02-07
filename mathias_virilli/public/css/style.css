@@ -937,6 +937,11 @@ html {
     padding: 10px;
 }
 
+#credits a
+{   
+    color: black;
+}
+
 #credits ul li img
 {
     width: 80px;
