@@ -204,28 +204,42 @@ if (debugMode == 1) {
 }
 
 var svgScene = d3.select("#carScene")
-    .style('width', "100%")
-    .style('height', "300%")
+    .attr('width', "100%")
+    .attr('height', "300%")
     .style('top', '0')
     .style('left', '0')
     .style('position', 'absolute')
-    .style('z-index', '10');
+    .style('z-index', '6');
 
-carG = svgScene.append("g");
+scene1.g = svgScene.append("g")
+            .attr("class", "section")
+            .attr("id", "scenario1");
+
+// Ajout des images
+/*var backG = scene1.g.append("g");
+scene1.g.append("svg:image")
+    .attr('x', 0)
+    .attr('y', 0)
+    .attr('width', "100%")
+    .attr('height', '34%')
+    .attr("xlink:href", "img/map-base-01.svg");*/
+
+var carG = scene1.g.append("g");
 carImg.width = 170;
 carImg.height = 110;
 
-carImg.center = new Point([carImg.width/6, carImg.height/4]);
+carImg.center = new Point([carImg.width/2, carImg.height/2]);
 //carImg.center = new Point([carImg.el.node().getBoundingClientRect().width/2, carImg.el.node().getBoundingClientRect().height/2]);
 carImg.el = carG.append("svg:image")
         .attr("id", "myCar")
-        .attr('x', 20)
-        .attr('y', 20)
+        .attr('x', scene1.key0.p_x())
+        .attr('y', scene1.key0.p_y())
         .attr('width', carImg.width + 'px')
         .attr('height', carImg.height + 'px')
         .attr("xlink:href", listesvgTransport[iterator]);
 
 // init car position 
-//enableCarScene();
+enableCarScene();
+
 //startScene2();
 updateCar();
