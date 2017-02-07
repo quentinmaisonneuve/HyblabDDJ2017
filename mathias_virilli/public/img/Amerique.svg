@@ -18,7 +18,7 @@
    height="800px"
    viewBox="0 0 1280 800"
    enable-background="new 0 0 1280 800"
-   onload="hideBulle(['littleWallID', 'theWallID']);"
+   onload="hideBulle(['littleWallID', 'theWallID']);intialize(this,['theWall', 'littleWall']);"
    xml:space="preserve"
    sodipodi:docname="Amérique.svg"
    inkscape:version="0.92.0 r15299"><metadata
@@ -1790,6 +1790,16 @@
        y2="584"
        id="line4374" /></g>
        
+     <text
+       x="100"
+       y="200"
+       fill="#000"
+       id="textFrontiere"
+       font-family="'Roboto-Bold'"
+       font-size="16">Essayez de tracer une frontière</text>
+
+
        
          <script xlink:href="../js/rare.js" type="text/ecmascript" />
+         <script xlink:href="../js/trace.js" type="text/ecmascript" />
        </svg>

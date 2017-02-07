@@ -19,7 +19,7 @@
    viewBox="0 0 1280 800"
    enable-background="new 0 0 1280 800"
    xml:space="preserve"
-   onload="hideBulle(['g1029', 'g1163', 'g1287', 'g1423', 'g1481', 'g1539', 'g1607', 'g1675', 'g1733', 'g273', 'g287', 'g303', 'g321', 'g335', 'g349', 'g365', 'g379', 'g393', 'g409', 'g533', 'g657', 'g781', 'g905']);"
+   onload="hideBulle(['g1029', 'g1163', 'g1287', 'g1423', 'g1481', 'g1539', 'g1607', 'g1675', 'g1733', 'g273', 'g287', 'g303', 'g321', 'g335', 'g349', 'g365', 'g379', 'g393', 'g409', 'g533', 'g657', 'g781', 'g905']);intialize(this,['_x32_014_11_', '_x32_011_3_', '_x31_974_2_', '_x32_014_10_', '_x32_013_4_', 'proposition_6_', '_x32_015_9_', '_x32_014_9_', 'line305', 'polyline127', 'proposition_5_', '_x32_010_3_', '_x32_008_3_', '_x32_013_5_', '_x32_002_6_', '_x32_012_16_', '_x32_012_17_', '_x32_007_6_', '_x31_991_3_', '_x32_003_5_', '_x32_012_13_', '_x32_002_5_', '_x32_012_15_', '_x32_007_5_', 'Futur_1_', '_x32_004_3_', '_x31_999_7_', '_x32_006_4_', '_x32_001_2_', '_x31_999_6_']);"
    sodipodi:docname="MoyenOrient.svg"
    inkscape:version="0.92.0 r15299"><metadata
      id="metadata1956"><rdf:RDF><cc:Work
@@ -3443,7 +3443,19 @@
        x2="111"
        y2="662"
        id="line1873" /></g>
-       
+
+
+     <text
+       x="100"
+       y="200"
+       fill="#000"
+       id="textFrontiere"
+       font-family="'Roboto-Bold'"
+       font-size="16">Essayez de tracer une frontière</text>
+
+
+
        
          <script xlink:href="../js/rare.js" type="text/ecmascript" />
+         <script xlink:href="../js/trace.js" type="text/ecmascript" />
        </svg>

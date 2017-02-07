@@ -433,12 +433,12 @@
         }
 
         linkLink('btn-conclu', '8');
-        linkLink('btn-visas', '2');
-        linkLink('btn-murs' , '3');
-        linkLink('btn-usa' , '4');
-        linkLink('btn-asie' , '5');
-        linkLink('btn-europe' , '6');
-        linkLink('btn-moyenO ' , '7');
+        linkLink('btn-visas', '7');
+        linkLink('btn-murs' , '2');
+        linkLink('btn-usa' , '3');
+        linkLink('btn-asie' , '4');
+        linkLink('btn-europe' , '5');
+        linkLink('btn-moyenO ' , '6');
     })
 
     return false;
