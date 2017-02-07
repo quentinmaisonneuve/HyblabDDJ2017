@@ -248,6 +248,10 @@ a, a:active, a:focus {
     width: 100%;
 }
 
+.rowSpace{
+  margin-top: 60px;
+}
+
 /*
 Timeline
 */
