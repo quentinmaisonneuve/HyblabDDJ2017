@@ -277,6 +277,8 @@ strong {
 	background: -webkit-gradient(linear, top left, bottom left, from(#140F21), to(#140F21));
 	background: -webkit-linear-gradient(#140F21, #140F21);
 	background: linear-gradient(#140F21,#140F21);
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 #section1{
