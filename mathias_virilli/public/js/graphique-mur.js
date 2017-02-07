@@ -1,7 +1,7 @@
 'use strict';
 
 const LONGUEUR_MAX = 30000;
-const OBJETS = ["immigration", "terrorisme", "trafic", "zone de conflit", "inégalités"]
+const OBJETS = ["immigration", "terrorisme", "trafic", "zone de conflit"]
 
 var walls;
 d3.json("data/walls.json", function(error, data) {
