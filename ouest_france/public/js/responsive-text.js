@@ -1,8 +1,9 @@
 'use-strict'
 
-$("#enroute").fitText();
-$("#text").fitText(2.3);
-$("#commencer").fitText();
+$("#enroute").fitText(0.6);
+$("#text").fitText(2);
+$("#commencer").fitText(0.6);
+$("#continuer").fitText(0.6);
 $("#center h2").fitText(0.25);
 $("#center h5").fitText(1.5);
 $("#paragraphe_encadre1").fitText(0.4);

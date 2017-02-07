@@ -133,9 +133,9 @@ p
 {
     z-index: 1;
     position: absolute;
-    width: 28vw;
+    width: 31vw;
     bottom: 2vw;
-    left: 63vw;
+    left: 64vw;
 }
 
 #center
@@ -337,7 +337,7 @@ p
     position: absolute;
     top: 0;
     left: 0;
-    /* transform-origin: 0 0; 
+    /* transform-origin: 0 0;
   transform: matrix(-0.4, 0.0, 0.0, 0.40, 0, 0); */
 }
 
@@ -765,7 +765,7 @@ p
     width: 100vw;
     margin: 0 auto;
     background-color: white;
-    
+
     /*pour pallier le fait que l'image débute par du transparent on la décale sur la gauche*/
     position: absolute;
     bottom: 0vh;
