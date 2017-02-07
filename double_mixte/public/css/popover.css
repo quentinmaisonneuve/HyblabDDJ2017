@@ -240,9 +240,9 @@ position: absolute;
 }
 
 #texteintro {
-    position: absolute;
+   position: absolute;
     display: table-cell;
-    left: 40%;
+    left: 36%;
     top: 24vh;
     width: 28vw;
     /* height: 49vh; */
@@ -260,12 +260,12 @@ position: absolute;
 }
 
 #donatien {
-    position: absolute;
+       position: absolute;
     display: block;
-    left: 23vw;
+    left: 12vw;
     top: 16vh;
     /* width: 20vw; */
-    /*bottom: 0;*/
+    /* bottom: 0; */
 }
 
 #donatien img {
