@@ -1,7 +1,6 @@
 #bandeauposition{
-	position:absolute;
-	display:absolute;
-	bottom:10px;
+	position:relative;
+	top:1vh;
 	width:100%;
 	text-align:center;
 	vertical-align:middle;
@@ -12,7 +11,7 @@
 	 display:inline-block;
 	 width:75vw;
 	 margin:auto;
-	 padding:8px;
+	 padding:1vh;
 	 background-color:#ffffff;
 	vertical-align:middle;
 	text-align:center;
@@ -22,17 +21,17 @@
       list-style-type: none;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 12px;
+      margin: 0 2vh;
     }
 
 
     #bandeau img{
-      height: 30px;
+      height: 4vh;
     }
 
     #bandeau #hyblab{
       
-      height: 30px;
+      height: 4vh;
       /*float: left;
 	  margin: 46px 0;
 	  */
@@ -40,7 +39,7 @@
 
     #bandeau #cc, #bandeau #opensource
     {
-      height:16px;
+      height:1.5vh;
     }
 
     #bandeau .stacked{
@@ -54,22 +53,22 @@
 
     #bandeau .institutionnel
     {
-      height: 30px;
+      height: 4vh;
     }
 	
 	#texteremerciements{
 		position:relative;
 		width:80%;
-		top:9px;
+		top:3vh;
 		margin:auto;
 		text-align:center;
-		font-size: 13pt;
+		font-size: 2.5vh;
 		font-weight:600;
 		font-family: Josefin Sans;
 		color: #001526;
 	}
 	#srcdonnees{
-		font-size: 11pt;
+		font-size: 2vh;
 		font-weight:400;
 	}
 	
@@ -78,7 +77,7 @@
 	#etudiantsposition{
 	position:relative;
 	display:absolute;
-	top:20px;
+	top:2vh;
 	width:100%;
 	text-align:center;
 	vertical-align:middle;
@@ -90,7 +89,7 @@
 	 display:inline-block;
 	 width:75vw;
 	 margin:auto;
-	 padding:8px;
+	 padding:1vh;
 	vertical-align:middle;
 	text-align:center;
     }
@@ -99,38 +98,21 @@
       list-style-type: none;
       display: inline-block;
       vertical-align: middle;
-      margin: 0 12px;
+      margin: 0 2vh;
     }
 
 
     #etudiants img{
-      height: 100px;
+      height: 15vh;
     }
 
-    #etudiants #hyblab{
-      margin: 46px 0;
-      height: 50px;
-      float: left;
-    }
 
-    #etudiants #cc, #etudiants #opensource
-    {
-      height:16px;
-    }
-
-    #etudiants .stacked{
-      display:block;
-    }
 
     #etudiants ul{
       text-align: center;
       padding: 0 0;
     }
 
-    #etudiants .institutionnel
-    {
-      height: 42px;
-    }
 	
 	#etudiants a:link, a:visited  {
     text-decoration: none;
