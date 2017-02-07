@@ -468,6 +468,13 @@ html {
       line-height: 30%;
       padding-bottom: 30px;
     }
+    .main section.page8 h1 {
+      padding: 0;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+    }
     .main section .page_container .btns {
       clear: both;
       float: left;
