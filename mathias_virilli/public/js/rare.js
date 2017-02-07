@@ -1,3 +1,12 @@
+ 
+
+function hideBulle( bulle ) {
+        for( i=0 ; i < bulle.length ; i++) {
+            e = document.getElementById(bulle[i]);
+            e.setAttribute('visibility', 'hidden');
+        }
+}
+
 
 
 function lineUp( elem, w = 10.492) {
@@ -14,3 +23,4 @@ function lineUp( elem, w = 10.492) {
         elem.style.strokeWidth = w;
     }
 }
+function lineDown( elem ){lineUp(elem);}
