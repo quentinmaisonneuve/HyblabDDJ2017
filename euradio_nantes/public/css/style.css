@@ -241,6 +241,10 @@ a, a:active, a:focus {
   background-color: #87C8CB;
 }
 
+#section8 .row img {
+    width: 100%;
+}
+
 /*
 Timeline
 */
