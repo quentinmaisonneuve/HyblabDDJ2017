@@ -29,7 +29,7 @@
             setTimeout(
                 function(index) {
                     console.log("display: "+index);
-                    small_companies_share.textContent = index;
+                    small_companies_share.textContent = index+"%";
                     if(index==pourcentageSmall){
                         bigCompaniesAnimation(pourcentageBig);
                     }
@@ -48,7 +48,7 @@
             console.log("next time: "+(i*1000));
             setTimeout(function(index) {
                 console.log("display: "+index);
-                big_companies_share.textContent = index;
+                big_companies_share.textContent = index+"%";
             }, i*100, i);
 
             setTimeout(function(index) {
