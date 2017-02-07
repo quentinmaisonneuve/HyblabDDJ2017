@@ -1,6 +1,8 @@
 'use strict';
 // charset: utf-8
 
+window.addEventListener("resize", create_dataviz, false)
+
 var dataviz = {
     done: false
 }
@@ -57,15 +59,19 @@ function create_dataviz_3() {
 }
 
 function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
-    var barWidth = 40;
+    //var barWidth = 40;
+    //var barHeight = 200 screen.width;
+    var barWidth = 0.02 * window.innerWidth;
+    var barHeight = 0.18 * window.innerHeight;
     var barFullWidth = (barWidth + 10) * dataset.length;
-    var barHeight = 200;
 
     var x = d3.scale.linear().domain([0, dataset.length]).range([0, barFullWidth]);
-    var y = d3.scale.linear().domain([0, 100]).rangeRound([0, barHeight]);
+    var y = d3.scale.linear().domain([-1, 100]).rangeRound([0, barHeight]);
 
     // add the canvas to the DOM
     var barDemo = d3.select(idForDrawing).
+        style("border-top", "1px solid black").
+
         append("svg:svg").
         attr("width", barFullWidth).
         attr("height", barHeight);
