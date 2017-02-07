@@ -441,12 +441,15 @@ width: 32vw;
 }
 
 #titrepola {
-    position: absolute;
+position: absolute;
     top: 10vh;
     left: 56vw;
     font-size: 2vw;
     font-weight: 600;
     font-family: Josefin Sans;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
 }
 
 
