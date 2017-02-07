@@ -97,8 +97,8 @@ const YEAR_BEGIN = 1989;
 const YEAR_END = 2016;
 
 var sliderValue = YEAR_BEGIN;
-var minDateUnix = 1980;
-var maxDateUnix = 2018;
+var minDateUnix = 1989;
+var maxDateUnix = 2017;
 var secondsInDay = 1;
 var newData;
 d3.select('#slider3').call(d3.slider()
@@ -108,7 +108,7 @@ d3.select('#slider3').call(d3.slider()
     sliderValue = value;
     updateAnnee(value); // pour le graphique
     
-     var newData_construit = _(sites_data).filter(function(site) {
+     var newData_construit = sites_data.filter(function(site) {
  
     	
      return(site.properties["Fin construction"]!='' && site.properties["Fin construction"]<= value) || (site.properties["Construction"]!='' && site.properties["Construction"] <= value );
@@ -119,7 +119,7 @@ d3.select('#slider3').call(d3.slider()
 	
 	    
 
-    var newData_annonce = _(sites_data).filter(function(site) {
+    var newData_annonce = sites_data.filter(function(site) {
  
     	
       return site.properties["Date annonce"] != ''&& site.properties["Date annonce"] <= value;

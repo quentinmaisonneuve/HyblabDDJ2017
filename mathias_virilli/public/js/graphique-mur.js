@@ -11,7 +11,7 @@ d3.json("data/walls.json", function(error, data) {
 // Mike Bostock "margin conventions"
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
     width = 400 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+    height = 250 - margin.top - margin.bottom;
 
 // D3 scales = just math
 // x is a function that transforms from "domain" (data) into "range" (usual pixels)
@@ -65,19 +65,13 @@ svg.append("g")
 svg.append("path")
     .attr("class", "line")
     .style({'stroke-width': '2px'});
-
-window.onload = function() {
-    updateAnnee(sliderValue);
-}
-
+	
 var ulObjets = document.getElementById("objets-separations");
 OBJETS.forEach(function(obj) {
     var li = document.createElement("li");
     li.id = "obj-" + obj.split(" ").join("-");
     ulObjets.append(li);
 });
-
-
 
 
 // Met à jour la page en fonction de l'année indiquée par le slider

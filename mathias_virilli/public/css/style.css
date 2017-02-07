@@ -33,9 +33,42 @@ svg
 }
 
 path {
-  fill: none;
-  stroke: blue;
+  fill: #7693A3;
+  stroke: black;
   stroke-width: .5px;
+}
+
+#carte-murs{
+	width:70%;
+	height:100%;
+	margin-top: 10%;
+	position: relative;
+}
+
+#slider3{
+	bottom: 35%;
+	margin-bottom: 10%;
+	position: relative;
+	left : 23%
+}
+
+#graphique-mur{
+	display:inline-block;
+	bottom : 15%;
+	left : 70%;
+	position : absolute;
+}
+
+#slider3 {
+  margin: 20px 0 10px 20px;
+  width: 900px;
+}
+
+#objets-separations{
+	display: inline-block;
+	bottom: 45%;
+	position: absolute;
+	left: 70%
 }
 
 .arc {
