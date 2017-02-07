@@ -30,8 +30,9 @@
 	<!-- Footer -->
 	<script src="js/modernizr.js"></script>
 	<!-- Modernizr -->
+	<!-- scrollmagic -->
 
-	<title>Euradionantes</title>
+	<title>Euradio</title>
 </head>
 
 <body>
@@ -53,18 +54,21 @@
 	<div class="row">
 	<section id="section1" class="cd-section">
 		<div class="content-wrapper">
-			<h1 class="roseTitre">Euradionantes</h1>
-			<a href="#section2" id="homeLogo"><img src="img/home.gif" alt="Bienvenue"/></a>
 			<h1>L'Europe au micro: un écho d'ici et d'ailleurs</h1>
-			<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
+			<a href="#debutconv" id="homeLogo"><img src="img/home.gif" alt="Bienvenue"/></a>
+			<a href="#debutconv" class="cd-scroll-down cd-image-replace">scroll down</a>
 		</div>
 	</section>
 	</div>
 	<!-- cd-section -->
+
+	<section>
+		<img id="debutconv" class="gifconv" src="img/conv/debutconversation.gif" />
+	</section>
+
 	<div class="row">
 	<section id="section2" class="cd-section">
 		<div class="content-wrapper">
-			<img class="gifconv" src="img/conv/debutconversation.gif" />
 			<section class="cd-horizontal-timeline">
 				<div class="timeline">
 					<div class="events-wrapper">
@@ -163,7 +167,7 @@
 
 	<section id="section4" class="cd-section">
 		<div class="content-wrapper">
-			<h2 class="roseTitre">IL SE PASSE QUOI SUR EURADIO ?</h2>	
+			<h2 class="roseTitre">IL SE PASSE QUOI SUR EURADIO ?</h2>
 			<div class="row">
 				<div class="col-lg-1 col-md-2 col-xs-2"></div>
 				<div class="col-lg-5 col-md-5 col-xs-5">
@@ -173,19 +177,18 @@
 					dans le quotidien de ses auditeurs</div>
 				</div>
 				<div class="col-lg-5 col-md-5 col-xs-5">
-				<div class="newp">Depuis la fréquence 101.3 fm et le web
+				<div class="newp">Depuis la fréquence <b>101.3 fm</b> et le web
 					player, Euradio décrypte l’actualité
-					locale-européenne sous une variété
+					<b>locale-européenne</b> sous une variété
 					d’angles et de formats.</div>
 				</div>
 				<div class="col-lg-1 col-md-2 col-xs-2"></div>
 			</div>
 
 			<div class="row">
-				<div class="newp">Culture, débats, politique, émissions musicales, sujets de société, tout y passe ! </div>
-					<div class="newp">Grâce aux bénévoles qui animent émissions et chroniques, les langues parlées à l’antenne sont plurielles.
-				Que serait une radio sans musique ?L’éclectisme et la découverte sont également de mise
-				avec une programmation alternative, qui met à l’honneur des artistes européens</div>
+				<div class="newp bold center">Culture, débats, politique, émissions musicales, sujets de société, tout y passe ! </div>
+				<div class="newp center">Grâce aux bénévoles qui animent émissions et chroniques, les langues parlées à l’antenne sont plurielles.</div>
+				<div class="newp bold center">Que serait une radio sans musique ? L’éclectisme et la découverte sont également de mise avec une programmation alternative, qui met à l’honneur des artistes européens</div>
 			</div>
 			<div class="carousel slide multi-item-carousel" id="theCarousel">
 				<div class="carousel-inner">
@@ -196,7 +199,7 @@
 			</div>
 			<div class="row vertical-align" >
 				<div class="col-lg-6 col-md-6 col-xs-6">
-					<div class="newp">L’Europe vue d’une autre oreille ! Clique sur les flèches
+					<div class="newp bold">L’Europe vue d’une autre oreille ! Clique sur les flèches
 		pour faire apparaître les datas relatives aux programmes de la radio ! </div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-6">
@@ -220,7 +223,7 @@
 	vivre une radio à leur image, multiculturelle. Venus
 	des 4 coins de l’Europe, ils font désormais parti
 	intégrante de la famille Euradio.</div>
-					<div class="newp">Survolez la carte et découvrez les nationalités
+					<div class="newp bold">Survolez la carte et découvrez les nationalités
 	les plus représentées par les stagiaires. </div>
 					<p>Une fois l’expérience Euradio passée,
 	que sont-ils devenus ?</p>
@@ -234,14 +237,13 @@
 	</section>
 
 	<!-- cd-section -->
-
 	<div class="row">
 	<section id="section6" class="cd-section">
 		<div class="content-wrapper">
 			<h2 class="roseTitre">PERSONAS - AUDIENCE</h2>
-			<div class="newp">Qui sont les auditeurs ? Qui écoute la radio ? Quels sont les profils types des auditeurs ?</div>
+			<div class="newp center">Qui sont les auditeurs ? Qui écoute la radio ? Quels sont les profils types des auditeurs ?</div>
 			<div class="row">
-				<div class="col-lg-8 col-md-8 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-xs-12">
 					<table>
 						<tr>
 							<td>
@@ -262,11 +264,21 @@
 								<p><b>Étudiante en langues étrangères.</b></p>
 								<span>Écoute Euradio pour la musique éclectique, les émissions bilingues et l’ouverture culturelle.</span>
 							</td>
-							<td>
-						</td>
-					</tr>
-			</table>	
-				</div>
+							<td class="list_pays" style="vertical-align: top; border-radius:20px;">
+								<div class="newp" style=" color: white; font-family: Blogger Sans; font-size:1.5em;">Ils écoutent la radio depuis:
+									<ul>
+										<li>France</li>
+										<li>Royaume-Uni</li>
+										<li>Allemagne</li>
+										<li>Belgique</li>
+										<li>Espagne</li>
+										<li>Italie</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div><!--
 				<div class="col-lg-4 col-md-4 col-xs-12">
 					<p>Ils écoutent la radio depuis:
 						France
@@ -275,8 +287,7 @@
 						Belgique
 						Espagne
 						Italie</p>
-				</div>
-
+				</div>-->
 			</div>
 		</div>
 	</section>
@@ -288,9 +299,9 @@
 		<div class="content-wrapper">
 			<div class="row">
 				<h2 class="roseTitre">Et si on communiquait tous ?</h2>
-				<div class="newp">L’idée est de créer un endroit dans lequel se retrouve les citoyens du monde, autour d’un thème commun :
+				<div class="newp center">L’idée est de créer un endroit dans lequel se retrouve les citoyens du monde, autour d’un thème commun :
 l’Europe. L’Europe oui, sans frontière ni barrière !</div>
-				<div class="newp">En réponse aux récents évenements qui agitent le globe, Euradio se veut être un espace de partage, d’échange, autrement dit : réunir “pour mieux
+				<div class="newp center">En réponse aux récents évenements qui agitent le globe, Euradio se veut être un espace de partage, d’échange, autrement dit : réunir “pour mieux
 régner”. Les réseaux sociaux apparaissent alors comme une évidence pour rassembler une communauté qui a soif de diversité et d’information.
 Quel meilleur moyen qu’internet pour échanger avec des personnes du monde entier ? Apprendre de la différence, découvrir des perles musicales,
 vivre l’actualité... Ces auditeurs ont choisi de suivre Euradio sur les réseaux, et qui sait, peut-être en faites vous partie ?</div>
@@ -307,7 +318,7 @@ vivre l’actualité... Ces auditeurs ont choisi de suivre Euradio sur les rése
 					</div>
 				</div>
 			</div>
-			
+
 	</section>
 	</div>
 	<!-- cd-section -->
@@ -316,6 +327,43 @@ vivre l’actualité... Ces auditeurs ont choisi de suivre Euradio sur les rése
 	<section id="section8" class="cd-section" style="margin-top: 400px;">
 		<div class="content-wrapper">
 			<img class="gifconv" src="img/conv/conversationfin.gif" />
+			<h2 style="margin-top: 50px;">EURADIO VOUS REMERCIE ET VOUS DONNE RENDEZ-VOUS SUR LES ONDES - 101.3 FM OU SUR EURADIONANTES.EU</h2>
+			<img src="img/illu_finale.svg"/>
+			<h2>L'EQUIPE DU HYBLAB:</h2>
+			<div class="row" style="margin-left: 4em">
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<a target="_blank" href="https://www.cakeresume.com/arnaud-chesnay-en"><img src="img/equipe/arnaud.svg"/></a>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/alexis.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/corentin.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/siyuan li.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/manon.svg"/>
+				</div>
+			</div>
+			<div class="row" style="margin-left: 4em">
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/charlotte.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/orlane.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/marie.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/chloe.svg"/>
+				</div>
+				<div class="col-lg-2 col-md-2 col-xs-2">
+					<img src="img/equipe/manonr.svg"/>
+				</div>
+			</div>
 		</div>
 	</section>
 	</div>
@@ -341,8 +389,8 @@ vivre l’actualité... Ces auditeurs ont choisi de suivre Euradio sur les rése
 
 	</div>
 	<footer>
-		
-		<div id="bandeau">	
+
+		<div id="bandeau">
 			<!-- Logo Hyblab -->
 			<a href="http://www.hyblab.fr/"><img id="hyblab" src="img/footer/logo_hyblab.png" alt="Hyblab DataSport"></a>
 

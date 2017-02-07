@@ -9,12 +9,21 @@
 }
 
 @font-face {
+  font-family: "BloggerSans-Medium";
+  src: url("../fonts/blogger-sans/Blogger_Sans-Medium.otf");
+}
+
+@font-face {
     font-family: "MetaPro-Normal";
     src: url("../fonts/MetaPro-Normal.otf");
 }
 @font-face {
     font-family: "MetaPro-Book";
     src: url("../fonts/MetaPro-Book.otf");
+}
+@font-face {
+    font-family: "MetaPro-Black";
+    src: url("../fonts/MetaPro-Black.otf");
 }
 
 /* just a sample css rule to show that everything works */
@@ -66,12 +75,30 @@ span{
   line-height: 140%;
 }
 
-.newp{
+.newp {
   font-size: 18px;
   color:  #323B49;
   text-align: justify;
   line-height: 140%;
   margin: 10px;
+  font-family: "MetaPro-Normal";
+}
+
+.newp.bold {
+    font-family: "Blogger Sans";
+    font-weight: bold;
+}
+
+.newp.center {
+    text-align: center;
+}
+
+.newp b {
+    font-family: "MetaPro-Black";
+}
+
+#section5 div {
+    text-align: left;
 }
 
 .roseTitre{
@@ -170,6 +197,22 @@ a, a:active, a:focus {
 
 .persona {
   height: 25%
+}
+
+#section6 td {
+  width: 25%;
+}
+
+#section6 ul {
+  margin : 10px;
+}
+
+#section6 li {
+  text-align: left;
+  margin : 5px;
+}
+.list_pays {
+  background-color: #87C8CB;
 }
 
 /*
