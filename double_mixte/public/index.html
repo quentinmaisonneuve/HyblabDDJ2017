@@ -611,15 +611,22 @@ $myCarousel.children('.left.carousel-control').hide();
 
 $myCarousel.on('slid.bs.carousel', function(e) {
 	var $this = $('#carousel-example-generic');
+	var carouselData = $(this).data('bs.carousel');
+	 var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+	 console.log(currentIndex);
   if($('.carousel-inner .item:first').hasClass('active')) {
     $this.children('.left.carousel-control').hide();
     $this.children('.right.carousel-control').show();
   } else if($('.carousel-inner .item:last').hasClass('active')) {
     $this.children('.left.carousel-control').show();
     $this.children('.right.carousel-control').hide();
-  } else {
+  } 
+  	else if(currentIndex != 1 && currentIndex != 7 && currentIndex != 9) {
+  		$this.children('.right.carousel-control').hide();
+    setTimeout(function(){ $this.children('.right.carousel-control').show(); }, 8000);
+  	}
+  else {
     $this.children('.carousel-control').show();
-
   } 
 });
 
