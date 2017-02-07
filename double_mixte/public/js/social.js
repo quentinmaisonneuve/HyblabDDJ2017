@@ -586,7 +586,7 @@ function animateSocialFacebook(annee) {
         setTimeout(function(){ $('#'+annee+'facebook3')['animateFacebook'+annee+3]('flipInX', array, annee, label);}, 1300);
         setTimeout(function(){ $('#'+annee+'facebook4')['animateFacebook'+annee+4]('flipInX', array, annee, label);}, 1400);
 
-       	$('.'+annee+'facebook').removeClass('animated flipInX')
+       	$('.'+annee+'facebook').removeClass('animated flipInX');
 	});
 
 }
@@ -642,7 +642,7 @@ function animateSocialTwitter(annee) {
         setTimeout(function(){ $('#'+annee+'twitter3')['animateTwitter'+annee+3]('flipInX', array, annee, label);}, 1300);
         setTimeout(function(){ $('#'+annee+'twitter4')['animateTwitter'+annee+4]('flipInX', array, annee, label);}, 1400);
 
-       	$('.'+annee+'twitter').removeClass('animated flipInX')
+       	$('.'+annee+'twitter').removeClass('animated flipInX');
 	});
 }
 
@@ -701,6 +701,6 @@ function animateSocialInstagram(annee) {
         setTimeout(function(){ $('#'+annee+'insta3')['animateInstagram'+annee+3]('flipInX', array, annee, label);}, 1300);
         setTimeout(function(){ $('#'+annee+'insta4')['animateInstagram'+annee+4]('flipInX', array, annee, label);}, 1400);
 
-       	$('.'+annee+'insta').removeClass('animated flipInX')
+       	$('.'+annee+'insta').removeClass('animated flipInX');
 	});
 }

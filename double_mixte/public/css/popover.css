@@ -88,7 +88,7 @@
 }
 
 .textenum {
-	font-size: 1.3vw !important;
+	font-size: 1.5vw !important;
 	font-weight: bold;
 }
 
@@ -224,16 +224,16 @@
 }
 
 #titre2011 {
-    position: absolute;
+position: absolute;
     display: block;
-    /* left: 22vw; */
-    top: 40vh;
-    width: 100vw;
+    left: 22vw;
+    top: 26vh;
+    width: 60vw;
     height: 50vh;
-    font-size: 42pt;
+    font-size: 2vw;
     font-family: Josefin Sans;
     color: #001526;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
@@ -291,10 +291,10 @@ position: absolute;
     top: 40vh;
     width: 43vw;
     height: 40vh;
-    font-size: 25pt;
+    font-size: 2.5vw;
     font-family: Josefin Sans;
     color: #001526;
-    font-weight: normal;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
@@ -390,6 +390,16 @@ width: 25vw;
     -khtml-animation-duration: 2s;
 }
 
+#pola2016 {
+width: 25vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+
 #btn2011 {
 	font-family: Josefin Sans;
 }
@@ -405,7 +415,9 @@ width: 25vw;
 #btn2015 {
 	font-family: Josefin Sans;
 }
-
+#btn2016 {
+	font-family: Josefin Sans;
+}
 #selfie {
     position: absolute;
     left: 53vw;
@@ -423,3 +435,15 @@ width: 25vw;
     bottom: 29vh;
 }
 
+.orange {
+	color: #f43f00;
+}
+
+#titrepola {
+    position: absolute;
+    top: 10vh;
+    left: 56vw;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: Josefin Sans;
+}

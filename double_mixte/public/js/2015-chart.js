@@ -48,6 +48,7 @@ $.get("data/2015-data.json",function(data){
             if (activeNations.indexOf(code) > -1) {
               if(code != "fr"){
                 document.getElementById("labelValue").innerHTML = nomPays[codePays.indexOf(code)]+ " - " +nombreVisiteurs[codePays.indexOf(code)]+ " nuitées";
+                event.preventDefault();
               }        
               if(code == 'fr'){
                 event.preventDefault();
