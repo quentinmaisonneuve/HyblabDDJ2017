@@ -483,3 +483,59 @@ position: absolute;
     top: 25vh;
     left: 63vw;
 }
+
+
+#pieForm{
+      margin-top: 10%;
+}
+
+.radio label {
+    display:inline-block;
+    width: 270px;
+    padding:8px;
+    font-family:Josefin Sans;
+    font-size:13pt;
+    background-color: #f43f00;
+    color: white;
+    font-weight: bold;
+}
+
+#ageLabel{
+    color:#001526;
+}
+#csLabel:{
+    color:#001526;
+}
+#ageLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+}
+#csLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+
+}
+.radio input[type="radio"]:checked + label { 
+    background-color:#bbb;
+}
+input {
+    display: block;
+    box-sizing: border-box;
+}
+#labelValue {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#001526;
+}
+
+#labelValue14 {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#001526;
+}

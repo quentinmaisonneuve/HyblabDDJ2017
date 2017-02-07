@@ -203,3 +203,7 @@ vertical-align: middle;
 #fleche_droite {
   color : #001526;
 }
+
+input[type=radio] {
+    display: none;
+  }

@@ -290,7 +290,7 @@
 
         <!-- 2014 -->
   <!-- 2014 -->
-        <div class="item slide2014">
+  <div class="item slide2014">
           <div class="nbnuitees">
             <img class="info-nuitees" src="img/picto_nuitees.svg" data-toggle="tooltip" data-placement="bottom" title="Nombre de nuitées marchandes à Nantes pendant toute l'année"/>
             <img id="2014chiffre0" class="2014chiffre chiffre" src="img/zero.svg"/>
@@ -306,9 +306,11 @@
 		  
 		  <div id="popover2014" class="animated bounceIn">
         	
-			<p id="texte2014">
-			 Ages et classes sociales des visiteurs
-			</p>
+<p id="texte2014">
+					Qui voyage à Nantes ?
+				</p>
+
+				<p id="labelValue14" id="texte2015">Survolez le graphique pour plus d'informations </p>
 			</div>
 
       		<div id="funfact2014">
@@ -321,15 +323,18 @@
 				En 2014, le carrousel des mondes marins reçoit le prix de l’attraction la plus originale du monde par THEA awards à Los Angeles. Dorénavant, des blogueurs, influenceurs et journalistes du monde entier s'intéressent à Nantes.
 			</div>
 					
-					<div id="age">
-					<img src="img/Age.svg"/>
-					</div>
+						
+					<div id="pieChart" style="float:left; width: 75vw; margin-top: 10vh;">
 
-					<div id="classe">
-					<img src="img/Classe.svg"/>
-					</div>
-						<div id="pieChart" style="float:left; position: absolute; margin-top: 10vh;  width: 960px;
-  height: 500px;"></div>
+  					<div  class="radio" style="float:right; display:block;    /* Add this property*/
+   width: 20%; " id="pieForm">
+  					
+				<label id="ageLabel"><input class="radioB" type="radio" name="dataset" id="dataset" value="total" checked>Répartition par âge</label>
+					<label id="csLabel"><input class="radioB" type="radio" name="dataset" id="dataset" value="option1">Répartition par classe sociale</label>
+  					</div>
+  						
+  </div>
+			
 			
 			<div class="social">
 	    		<img class="info-social" src="img/like.svg" data-toggle="tooltip" data-placement="top" title="Nombre d'abonnés sur Facebook"/>
