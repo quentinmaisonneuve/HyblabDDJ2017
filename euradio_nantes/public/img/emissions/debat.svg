@@ -11,8 +11,8 @@
 			c0.023-5.976,5.416-11.198,12.044-11.172l255.998,0.997c6.627,0.026,11.979,5.29,11.956,11.266L370.023,332.473z"/>
 	</g>
 	<rect x="221.338" y="136.138" fill="none" width="144.025" height="41.734"/>
-	<text transform="matrix(1 0 0 1 254.8787 147.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">émission</text>
-	<text transform="matrix(1 0 0 1 267.7337 169.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">débat</text>
+	<text transform="matrix(1 0 0 1 254.8787 147.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">Emissions</text>
+	<text transform="matrix(1 0 0 1 267.7337 169.6904)" fill="#FFFFFF" font-family="'BloggerSans-Bold'" font-size="16">débats</text>
 	<rect x="225.395" y="185.031" fill="none" width="132.91" height="17.493"/>
 	<text transform="matrix(1 0 0 1 242.704 194.5217)" fill="#FFFFFF" font-family="'MetaPro-Normal'" font-size="13">15h / semaine</text>
 	<g id="DrapeauDebat">
