@@ -49,7 +49,7 @@ function create_dataviz_2() {
         ];
     }
 
-    drawChart(varBarChartByModeDeTransport, "#bar-demo", ["pourcentVoiture", "pourcentCommun", "pourcentVelo", "pourcentPied"], ["#d4584e", "#29a7de", "#e3ab04", "#177275"]);
+    drawBarChart(varBarChartByModeDeTransport, "#bar-demo", ["pourcentVoiture", "pourcentCommun", "pourcentVelo", "pourcentPied"], ["#d4584e", "#29a7de", "#e3ab04", "#177275"]);
 }
 
 function create_dataviz_3() {
@@ -66,7 +66,7 @@ function create_dataviz_3() {
         ];
     }
 
-    drawChart(varBarChartByMotif, "#bar-demo-3", ["pourcentTravail", "pourcentEtude", "pourcentAutres"], ["#d4584e", "#29a7de", "#e3ab04"]);
+    drawBarChart(varBarChartByMotif, "#bar-demo-3", ["pourcentTravail", "pourcentEtude", "pourcentAutres"], ["#d4584e", "#29a7de", "#e3ab04"]);
 }
 
 function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
