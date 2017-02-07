@@ -1,4 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,600,700" rel="stylesheet">
+<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'fr'}</script>
 <script src="js/motherboard.js" defer></script>
 <script>
     function animateBuildings(){
@@ -103,18 +104,26 @@
         margin: 5%;
     }
     .container_town{
+        position: absolute;
         height: 100%;
         width: 60%;
         overflow: hidden;
         float:left;
+        z-index: 5;
     }
     .sector_info{
-        float:right;
+        float: right;
+        position: relative;
         color:red;
-        width: 40%;
-        margin-top: 5%;
-        text-align: left;
+        width: 100%;
+        margin: 5% 5% 0 0;
+        text-align: justify;
     }
+
+    .sector_info .source {
+        margin : 2% 5% 0% 65%;
+    }
+
     .town-img{
         /*
             margin-top is (100 - height)/2
@@ -206,46 +215,64 @@
     .sector_info_1{
         color: #30378C;
         font-family: 'Raleway', sans-serif;
-        font-weight: 100;
-        font-size: 33pt;
+        font-weight: 200;
+        font-size: 20pt;
+        margin: 2% 20% 0 45%;
     }
     .sector_info_2{
         color: #3F3FAF;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
+        margin: 2% 15% 0 50%;
     }
     .sector_info_3{
         color: #3F3FAF;
         font-family: 'Raleway', sans-serif;
-        font-weight: 100;
-        font-size: 23pt;
+        font-weight: 200;
+        font-size: 15pt;
+        width : 30%;
+        margin-left : 65%
     }
     #sector_name{
         color: #92FCFF;
         text-align: left;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
-        font-size: 35pt;
+        font-size: 25pt;
+        position: relative;
+        float : left;
+        width : 100%;
+        min-height: 120px;
     }
+
+    .sector_name_div {
+        margin : 2% 5% 0 65%;
+    }
+
+    #sector_img {
+        position : absolute;
+        margin-left : -5%;
+    }
+
     .sector_number{
         color: #92FCFF;
         text-align: left;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-        font-size: 36pt;
+        font-size: 26pt;
     }
     .sector_number_subtitle{
         color: #69E2D9;
         text-align: left;
         font-family: 'Raleway', sans-serif;
         font-weight: 100;
-        font-size: 25pt;
+        font-size: 15pt;
     }
 
 </style>
 <div class="container_town">
     <div class="town">
-        <img class="town-img" src="img/plateau.svg"/>
+        <img class="town-img" src="img/plateau.svg" />
         <img id="b1" class="building b1" src="img/quartier/bat/bat1/off.png"/>
         <img id="b2" class="building b2" src="img/quartier/bat/bat2/off.png"/>
         <img id="b3" class="building b3" src="img/quartier/bat/bat3/off.png"/>
@@ -267,16 +294,21 @@
     <p class="sector_info_1">Vous l'aurez compris, ce sont les grandes entreprises qui représentent une part très majoritaire de l'emploi numérique à Nantes</p>
     <p class="sector_info_2">Découvrez les secteurs les plus porteurs d'emplois en 2015 parmi ces 612 entreprises Nantaises</p>
     <div class="sector_name_div">
-        <img src="img/light.png"/>
-        <span id="sector_name"></span>
+        <img id="sector_img" src="img/light.png" width="60" height="60"/>
+        <span id="sector_name">Survolez les immeubles du quartier numérique pour plus d'infos !</span>
     </div>
     <div class="sector_name_div">
-        <span class="sector_number" id="sector_companies"></span>
+        <span class="sector_number" id="sector_companies">0</span>
         <p class="sector_number_subtitle">entreprises</p>
-        <span class="sector_number" id="sector_jobs"></span>
+        <span class="sector_number" id="sector_jobs">0</span>
         <p class="sector_number_subtitle">emplois</p>
     </div>
-    <p class="sector_info_3">Donc les secteurs d'avenir du numérique à Nantes en 2015 sont le conseil en système et logiciels informaitque, la programmation informatique et l'édition de logiciels applicatifs.</p>
+    <p class="sector_info_3">Donc les secteurs d'avenir du numérique à Nantes en 2015 sont le conseil en système et logiciels informatique, la programmation informatique et l'édition de logiciels applicatifs.</p>
+    <p class="source">Sources : Acoss 2016 et INSEE Sirene 2016</p>
+    <div class="social-media">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="SpokaLab" data-hashtags="Hyblab"></a>
+        <div class="fb-share-button" data-href="http://bit.ly/2kYNp2S" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A63342%2FHyblabDDJ2017%2Fauran%2Fpublic%2Findex.html%3F_ijt%3D6p03dv4a4rev7ssu3nn169u84v%23section3&amp;src=sdkpreparse">Partager</a></div>
+        <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://bit.ly/2kYNp2S"></div>
+    </div>
 
 </div>
-
