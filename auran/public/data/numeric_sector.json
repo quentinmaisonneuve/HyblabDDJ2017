@@ -1,0 +1,18 @@
+{
+  "city": "Nantes",
+  "rank": 5,
+  "company_count": 1863,
+  "sector": [
+    "Informatique",
+    "Télécomunications",
+    "Edition logiciel"
+  ],
+  "french_tech": true,
+  "yearly_events_counts": 500,
+  "events":[
+    "Web2Day",
+    "Nantes Digital Week",
+    "Dev Fest",
+    "Scopitone"
+  ]
+}
