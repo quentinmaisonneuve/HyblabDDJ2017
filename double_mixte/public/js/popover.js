@@ -63,6 +63,7 @@ function test() {
 		$("#pola2013").css("display", "none");
 		$("#pola2014").css("display", "none");
 		$("#pola2015").css("display", "none");
+		$("#pola2016").css("display", "none");
 
 		$("#pola2011").css("display", "block");
 	});
@@ -72,7 +73,8 @@ function test() {
 		$("#pola2013").css("display", "none");
 		$("#pola2014").css("display", "none");
 		$("#pola2015").css("display", "none");
-		
+		$("#pola2016").css("display", "none");
+
 		$("#pola2012").css("display", "block");
 	});
 
@@ -81,7 +83,8 @@ function test() {
 		$("#pola2012").css("display", "none");
 		$("#pola2014").css("display", "none");
 		$("#pola2015").css("display", "none");
-		
+		$("#pola2016").css("display", "none");
+
 		$("#pola2013").css("display", "block");
 	});
 
@@ -90,6 +93,7 @@ function test() {
 		$("#pola2012").css("display", "none");
 		$("#pola2013").css("display", "none");
 		$("#pola2015").css("display", "none");
+		$("#pola2016").css("display", "none");
 		
 		$("#pola2014").css("display", "block");
 	});
@@ -99,7 +103,18 @@ function test() {
 		$("#pola2012").css("display", "none");
 		$("#pola2013").css("display", "none");
 		$("#pola2014").css("display", "none");
-		
+		$("#pola2016").css("display", "none");
+
 		$("#pola2015").css("display", "block");
+	});
+
+	$("#btn2016").on("click", function() {
+		$("#pola2011").css("display", "none");
+		$("#pola2012").css("display", "none");
+		$("#pola2013").css("display", "none");
+		$("#pola2014").css("display", "none");
+		$("#pola2015").css("display", "none");
+		
+		$("#pola2016").css("display", "block");
 	});
 }

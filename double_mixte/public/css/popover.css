@@ -383,6 +383,16 @@ width: 25vw;
     -khtml-animation-duration: 2s;
 }
 
+#pola2016 {
+width: 25vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+
 #btn2011 {
 	font-family: Josefin Sans;
 }
@@ -398,7 +408,9 @@ width: 25vw;
 #btn2015 {
 	font-family: Josefin Sans;
 }
-
+#btn2016 {
+	font-family: Josefin Sans;
+}
 #selfie {
     position: absolute;
     left: 53vw;
@@ -418,4 +430,13 @@ width: 25vw;
 
 .orange {
 	color: #f43f00;
+}
+
+#titrepola {
+    position: absolute;
+    top: 10vh;
+    left: 56vw;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: Josefin Sans;
 }
