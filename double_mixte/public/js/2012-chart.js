@@ -1,7 +1,7 @@
 "use strict";
 // Ask server to load data from Nantes opendata and send it to us
 // then we add some of this data into our app
-console.log( "loading data from server..." );
+//console.log( "loading data from server..." );
 /*d3.json('data/2012-data.json', function(error,data) {
 	alert(data.keys(0));
 	console.log( "test..." );
