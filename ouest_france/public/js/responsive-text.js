@@ -7,7 +7,7 @@ $("#continuer").fitText(0.6);
 $("#center h2").fitText(0.25);
 $("#center h5").fitText(1.5);
 $("#paragraphe_encadre1").fitText(0.4);
-$("#number").fitText(0.2);
+$("#number").fitText(0.15);
 $("#intro2").fitText(1.5);
 $("#txtvoiture").fitText(0.5);
 $("#txtCommun").fitText(0.5);
