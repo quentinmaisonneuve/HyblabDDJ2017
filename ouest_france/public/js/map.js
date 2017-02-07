@@ -156,8 +156,6 @@ decoTextG.append("svg:foreignObject")
   .style('color', 'white')
   .text('Un clic sur le départ, un sur l\'arrivée et c\'est parti !');
 
-
-
 var rectG = decoG.append('g');
 
 var startX = 40;
@@ -165,8 +163,8 @@ var rectWidth = 340;
 var smallRectHeight = 30; 
 
 d3.select("#continuer")
-  .style("bottom", "25%")
-  .style("left", (startX + rectWidth/2 - 90) + "px");
+  .style("bottom", "100px")
+  .style("left", (startX + rectWidth/2 - 70) + "px");
 
 rectG.append("rect")
     .attr("x", startX)       

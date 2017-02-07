@@ -12,7 +12,9 @@ document.getElementById('continuer').addEventListener("click", function() {
 
 document.getElementById('commencer').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
-  enableCarScene();
+  //carImg.center.x = 
+  //carImg.center.y =
+  //enableCarScene()
   startScene1();
 }, false);
 
