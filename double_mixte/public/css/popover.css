@@ -467,3 +467,14 @@ position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#age {
+    position: absolute;
+    top: 25vh;
+    left: 53vw;
+}
+
+#classe {
+    position: absolute;
+    top: 25vh;
+    left: 63vw;
+}
