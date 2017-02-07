@@ -45,6 +45,15 @@ d3.json("./getLast24", function(data) {
                     format: '%H:%M' // how the date is displayed
                 }
             }
+        },
+        legend: {
+        position: 'right',
+        item: {
+            tile: {
+                width: 15,
+                height: 2
+                }
+            }
         }
     });
 });
