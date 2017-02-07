@@ -5,7 +5,9 @@ document.getElementById('enroute').addEventListener("click", function() {
 }, false);
 
 document.getElementById('continuer').addEventListener("click", function() {
-  $.fn.fullpage.moveSectionDown();
+  if (hasSelectedPoints()) {
+    $.fn.fullpage.moveSectionDown();
+  }
 }, false);
 
 document.getElementById('commencer').addEventListener("click", function() {
