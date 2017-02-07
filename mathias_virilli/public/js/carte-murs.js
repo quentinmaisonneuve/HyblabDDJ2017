@@ -129,7 +129,7 @@ d3.select('#slider3').call(d3.slider()
     
     
     	 
-    display(newData_annonce, newData_construit);
+    document.onload = display(newData_annonce, newData_construit);
   
   })
 );
