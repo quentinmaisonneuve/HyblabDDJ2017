@@ -4,7 +4,6 @@ jQuery(document).ready(function($){
 		verticalNavigation = $('.cd-vertical-nav'),
 		navigationItems = verticalNavigation.find('a'),
 		navTrigger = $('.cd-nav-trigger'),
-		scrollArrow = $('.cd-scroll-down');
 		homeLogo = $('#homeLogo');
 
 	$(window).on('scroll', checkScroll);
@@ -17,10 +16,6 @@ jQuery(document).ready(function($){
     });
 
     //smooth scroll to the second section
-	scrollArrow.on('click', function(event){
-    	event.preventDefault();
-        smoothScroll($(this.hash));
-    });
 	homeLogo.on('click', function(event){
     	event.preventDefault();
         smoothScroll($(this.hash));
