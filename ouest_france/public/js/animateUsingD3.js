@@ -28,7 +28,7 @@ function startScene1() {
    
    // Reset the car sym
    carImg.symX = -1.0;
-   
+ 
 
    var key0 = scene1.key0;
    var key1 = scene1.key1;
@@ -38,19 +38,19 @@ function startScene1() {
    updateCar();
    // Create transition
     carImg.el.transition()
-            .style('left', key0.p_x())
-            .style('top', key0.p_y())
+            .attr('x', key0.p_x())
+            .attr('y', key0.p_y())
             .duration(0)
     .transition().delay(2000)
-        .style('left', key1.p_x())
-        .style('top', key1.p_y())
+        .attr('x', key1.p_x())
+        .attr('y', key1.p_y())
         .duration(key1.duration)
         .ease("linear")
-        .each("end", function () { carImg.el.style('left', key2.p_x())
-            .style('top', key2.p_y()); carImg.symX = 1.0; updateCar(); })
+        .each("end", function () { carImg.el.attr('x', key2.p_x())
+            .attr('y', key2.p_y()); carImg.symX = 1.0; updateCar(); })
     .transition()
-        .style('left', key3.p_x())
-        .style('top', key3.p_y())
+        .attr('x', key3.p_x())
+        .attr('y', key3.p_y())
         .duration(key3.duration)
 }
 
@@ -64,19 +64,19 @@ function startScene2() {
     var key3 = scene2.key2;
 
     carImg.el.transition()
-            .style('left', key0.p_x())
-            .style('top', key0.p_y())
+            .attr('x', key0.p_x())
+            .attr('y', key0.p_y())
             .duration(0)
     .transition().delay(2000)
-        .style('left', key1.p_x())
-        .style('top', key1.p_y())
+        .attr('x', key1.p_x())
+        .attr('y', key1.p_y())
         .duration(key1.duration)
         .ease("linear")
-        .each("end", function () { carImg.el.style('left', key2.p_x())
-            .style('top', key2.p_y()); carImg.symX = -1.0; updateCar(); })
+        .each("end", function () { carImg.el.attr('x', key2.p_x())
+            .attr('y', key2.p_y()); carImg.symX = -1.0; updateCar(); })
     .transition()
-        .style('left', key3.p_x())
-        .style('top', key3.p_y())
+        .attr('x', key3.p_x())
+        .attr('y', key3.p_y())
         .duration(key3.duration);
 }
 
@@ -119,8 +119,11 @@ function disableCarScene() {
 }
 
 function updateCar() {
-    carImg.el.style('transform', 'matrix' + carImg.matrix())
-    .style('opacity', carImg.enabled);
+    carImg.el.style('opacity', carImg.enabled)
+        .style('transform', 'matrix' + carImg.matrix()); 
+
+        //.attr("transform", "scale("+ carImg.scale+ ", " +carImg.scale +")"
+        //+ "translate(" + (-carImg.width/2) + ", " + (-carImg.height/2) + ")");
 }
 
 function clicked(e) {
@@ -135,8 +138,8 @@ function clicked(e) {
 
 function moveCar() {
     var coor = d3.mouse(this);
-    carImg.el.style('left', coor[0] + "px")
-            .style('top', coor[1] + "px");
+    carImg.el.attr('x', coor[0] + "px")
+            .attr('y', coor[1] + "px");
 }
 
 
@@ -144,30 +147,31 @@ function moveCar() {
 var carImg = {
    enabled: 0,
    el: d3.select("#container1").select("#car"),
-   scale: 0.4,
+   scale: 1.0,
    translate: new Point([0, 0]),
    symX: 1.0,
    symY: 1.0,
    matrix: function () {
        //return "(" + this.scale ;
+        var dx = (this.symX == -1.0) ? this.width : 0;
+        var dy = (this.symY == -1.0) ? this.height : 0;
         return "(" + (this.scale * this.symX) + ", 0, 0, " 
         + (this.scale * this.symY) + ", "
-        + (this.translate.x - this.center.x) + ", " 
-        + (this.translate.y - this.center.y) + ")";   
+        + (this.translate.x - this.center.x + dx) + ", " 
+        + (this.translate.y - this.center.y + dy) + ")";   
    },
    reset : function () {
-        this.scale = 0.4;
+        this.scale = 1.0;
         this.translate.x = 0;
         this.translate.y = 0;
         this.symX = 1.0;
         this.symY = 1.0;    
    },
 };
-carImg.center = new Point([carImg.el.node().getBoundingClientRect().width/2, carImg.el.node().getBoundingClientRect().height/2]);
 
 var scene1 = {
-     key0: new MyKey([281, 19], 0),
-     key1: new MyKey([1072, 470], 6000),
+     key0: new MyKey([-281, 19], 0),
+     key1: new MyKey([-1072, 470], 6000),
      key2: new MyKey([1078, 492], 0),
      key3: new MyKey([888, 602], 3000)
 
@@ -175,8 +179,8 @@ var scene1 = {
 
 var scene2 = {
     key0: new MyKey([148, 1022], 6000),
-    key1: new MyKey([149, 1046], 0),
-    key2: new MyKey([467, 1230], 3000)
+    key1: new MyKey([-149, 1046], 0),
+    key2: new MyKey([-467, 1230], 3000)
 };
 
 var scene3 = {
@@ -197,37 +201,31 @@ if (debugMode == 1) {
       .addEventListener("click", function() { startScene2(); }, false);
     d3.select("#scenario3")[0][0]
       .addEventListener("click", function() { startScene3(); }, false);
-
 }
 
-// Change start pos
-//carImg.symX = -1.0;
+var svgScene = d3.select("#carScene")
+    .style('width', "100%")
+    .style('height', "300%")
+    .style('top', '0')
+    .style('left', '0')
+    .style('position', 'absolute')
+    .style('z-index', '10');
+
+carG = svgScene.append("g");
+carImg.width = 170;
+carImg.height = 110;
+
+carImg.center = new Point([carImg.width/6, carImg.height/4]);
+//carImg.center = new Point([carImg.el.node().getBoundingClientRect().width/2, carImg.el.node().getBoundingClientRect().height/2]);
+carImg.el = carG.append("svg:image")
+        .attr("id", "myCar")
+        .attr('x', 20)
+        .attr('y', 20)
+        .attr('width', carImg.width + 'px')
+        .attr('height', carImg.height + 'px')
+        .attr("xlink:href", listesvgTransport[iterator]);
 
 // init car position 
+enableCarScene();
+startScene2();
 updateCar();
-
-// start animation
-//startScene1();
-//startScene2();
-//startScene3();
-
-
-// power2: d3.scalePow().exponent(2),
-// linear: d3.scaleLinear(),
-// sqrt:   d3.scalePow().exponent(0.5),
-// log2:   d3.scaleLog().base(2),
-// log10:  d3.scaleLog().base(10)
-
-
-// Create animation
-// var simpleAnim = new SimpleAnim([0, 100], [0, 200], 120, element, image);
-// var anim = new AnimationD3([0, 100], [0, 200], 120, element, null);
-
-// Not using linear animation:
-// .attr("y", function(d) { return y(d.y0 + d.y); })
-// So var = new simpleAnim([function(d) { return y(d.y0 + d.y)])
-
-// To chained translation
-// mysquare.transition().attr("x",320).each("end",function() { d3.select(this).transition().attr("y",180); });
-
-// Register transition

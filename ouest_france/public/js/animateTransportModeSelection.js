@@ -3,7 +3,7 @@
 // No need for window.onload event here since we are using the def attribute
 // when loading our scripts
 
-var listeSVG = ["img/Voiture.svg","img/Bus-Transport-en-commun.svg","img/Velo.svg","img/Pieton.svg"];
+var listesvgTransport = ["img/Voiture.svg","img/Bus-Transport-en-commun.svg","img/Velo.svg","img/Pieton.svg"];
 var iterator = 0;
 document.getElementById('arrow_d').onclick = function () {
     iterator = iterator + 1;
@@ -11,14 +11,14 @@ document.getElementById('arrow_d').onclick = function () {
       iterator = 0;
     }
    d3.selectAll('#myCar')
-      .attr("xlink:href", listeSVG[iterator]);
+      .attr("xlink:href", listesvgTransport[iterator]);
 };
 document.getElementById('arrow_l').onclick = function () {
       iterator = iterator - 1;
       if (iterator < 0) {
         iterator = 3;
       }
-      d3.selectAll('#myCar').attr("xlink:href", listeSVG[iterator])
+      d3.selectAll('#myCar').attr("xlink:href", listesvgTransport[iterator])
 };
 
 
@@ -36,21 +36,21 @@ var endMode = {
   y: 300
 };
 
-// Creation du svg
-var svg = d3.select('#modeTransport')
+// Creation du svgTransport
+var svgTransport = d3.select('#modeTransport')
             .attr('width', modeWidth)
-            .attr('height', modeHeight)
-            .style('top', 0);
+            .attr('height', modeHeight);
 
-svg.append('rect')
+svgTransport.append('rect')
   .attr('width', modeWidth)
   .attr('height', modeHeight)
   .attr('opacity', 0);
 
-var g = svg.append('g');
+var gT = svgTransport.append('g');
 
 // Creation du text
-var textG = g.append('g');
+var textG = gT.append('g')
+  .style('trasform', 'translate(200px, 0)');
 textG.append('text')
   .attr('class', 'bebas')
   .attr('x', '50px')
@@ -67,7 +67,7 @@ textG.append("svg:foreignObject")
   .text('MODE DE TRANSPORT');
 
 // Ajout des images
-var imagesG = g.append('g');
+var imagesG = gT.append('g');
 imagesG.append("svg:image")
         .classed("route", true)
         .attr('x', '0px')
@@ -80,7 +80,7 @@ var myCarMode = imagesG.append("svg:image")
         .attr('y', 20)
         .attr('width', '40%')
         .attr('height', '40%')
-        .attr("xlink:href", listeSVG[iterator]);
+        .attr("xlink:href", listesvgTransport[iterator]);
 //
 imagesG.append("input")
     .attr("class", "bebas")
@@ -108,14 +108,3 @@ function startModeScene() {
 
 resetCar(0, function() {});
 resetCar(2000, function() { startModeScene(); });
-
-
-
-/*
-var cross0Image = svg.append("svg:image")
-      .classed('hiddenCross', true)
-      .attr('x', zone0.location[0] + zoneBackgroundSize[0] - iconCrossSize[0]/2)
-      .attr('y', zone0.location[1] - iconCrossSize[1])
-      .attr('mapWidth', iconCrossSize[0])
-      .attr('mapHeight', iconCrossSize[1])
-      .attr("xlink:href", "img/map/cross.png");*/
