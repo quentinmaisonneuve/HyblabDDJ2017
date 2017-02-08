@@ -761,6 +761,23 @@ input:checked + .slider:before {
 }
 
 /* ################### pageFour ################### */
+#Cover2 {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -10%;
+	margin-bottom: 2%;
+}
+
+#Cover2 .CoverFind {
+	display: inline-block;
+	width: 10%;
+}
+
+#Cover2 .CoverNonTrouve {
+	display: inline-block;
+	width: 10%;
+}
+
 
 #pageFour {
 	background-color: #FFCC00;
@@ -798,7 +815,7 @@ input:checked + .slider:before {
 #pageFourTopCenterBarre {
 	background-image: url("/images/page4_tiret_haut_graphique.png");
 	background-size: 100% 100%;
-	width: 73.8%;
+	width: 76.7%;
 	margin-left: 4.5%;
 	margin-bottom: 0%;
 }
