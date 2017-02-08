@@ -111,6 +111,20 @@ html, body{
 	width:20%;
 }
 
+#MySunLogo {
+	margin-top: 2%;
+}
+
+#MySunLogo img {
+	width: 7%;
+}
+
+#Fleche {
+	width: 20%;
+	margin: 0 auto;
+}
+
+
 #pageOne #pochette{
 	width: 75%;
 	margin: 0 auto;
@@ -463,7 +477,7 @@ input[type=range]::-ms-track {
 	display: inline-block;
 	width: 130px;
 	font-weight: bold;
-	font-size: 150%;
+	font-size: 1.3em;
 	color : #004266;
 	margin: 10px;
 	position: relative;
@@ -689,7 +703,7 @@ input:checked + .slider:before {
 
 #BubleBottom {
 	text-align: center;
-	margin-top: 3%;
+	margin-top: 2%;
 }
 
 #timeline2 {
