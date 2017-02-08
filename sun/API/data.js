@@ -12,7 +12,7 @@ var data = {
 
     //TODO: CHANGE With DATE('2016-09-29 14:53:33') with DATE(NOW())
     getToday:function(callback) {
-        return db.query("SELECT id FROM musique_auditeur_tbl WHERE DATE('2016-09-29 14:53:33') = DATE(date_heure_diffusion_reelle)", callback);
+        return db.query("SELECT performer AS artist, W.title, album, year, genre, prenom FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id ORDER BY date_heure_diffusion_reelle DESC LIMIT 10", callback);
     },
 
     // Get occurency of each music genre between a day & the season

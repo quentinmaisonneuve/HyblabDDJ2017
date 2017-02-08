@@ -165,9 +165,9 @@ $(function() {
     //Présélection week / weekend
 
     if (today.getDay() == 0 || today.getDay() == 6 )
-        document.getElementById("semaineOuPas").className == "pause";
+        document.getElementById("weekOrWeekEnd1").className == "pause";
     else
-        document.getElementById("semaineOuPas").className == "play";
+        document.getElementById("weekOrWeekEnd1").className == "play";
 
     // Présélection des heures
     if (today.getHours() < 2)
@@ -201,11 +201,11 @@ $(function() {
 });
 
 
-changer_image();
-toggle();
-toggleTwo();
-toggleThree();
-changeImagePrintemps();
+//changer_image();
+//toggle();
+/*toggleTwo();
+toggleThree();*/
+/*changeImagePrintemps();
 changeImageHiver();
 changeImageAutomne();
-changeImageEte();
+changeImageEte();*/

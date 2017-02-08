@@ -249,7 +249,6 @@ router.get('/getLast24', function(req, res, next)
                         break;
                     case "Pop":
                         pop.push(rows[el].value);
-                        console.log("pop"+pop)
                         break;
                     case "Rock":
                         rock.push(rows[el].value);
@@ -270,7 +269,6 @@ router.get('/getLast24', function(req, res, next)
         {
             if(err){res.json(err);}
             else{
-                console.log("p");
                 proceed(rows);
                 resolve();
             }

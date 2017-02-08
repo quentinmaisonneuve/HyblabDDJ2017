@@ -13,7 +13,6 @@ d3.json("./getLast24", function(data) {
 
     var time = ["times"];
     time.push(today.getFullYear()+"-"+parseDate(today.getMonth())+"-"+parseDate(today.getDay())+" "+today.getHours()+":"+today.getMinutes());
-    console.log(today.getFullYear()+"-"+parseDate(today.getMonth())+"-"+parseDate(today.getDay())+" "+today.getHours()+":"+today.getMinutes());
     for (var i=5; i>0 ;i--)
     {
         today.setHours(today.getHours()-4);
@@ -21,7 +20,6 @@ d3.json("./getLast24", function(data) {
     }
 
     data.push(time);
-    console.log(data);
     var chart = c3.generate({
         bindto: '#chart',
         data: {
@@ -58,12 +56,33 @@ d3.json("./getLast24", function(data) {
     });
 });
 
-/*var chart = c3.generate({
-    bindto: '#chart',
-    data: {
-        columns: [
-            ['data1', 30, 200, 100, 400, 150, 250],
-            ['data2', 50, 20, 10, 40, 15, 25]
-        ]
-    }
-});*/
+
+/* ################# COVERS ########################## */
+
+function giveCovers2()
+{
+    $.getJSON('/today', function(data2)
+    {
+        var CoverList = "";
+        for (var i = 0, len = data2.length; i < len; i++) {
+            var title=data2[i].title;
+            var artist=data2[i].artist;
+
+                $.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
+                    if (data3 && data3.track && data3.track.album && data3.track.album.image)
+                    {
+                        Cover=data3.track.album.image[2]['#text'];
+                        CoverList+= "<img src=\""+Cover+"\"/>";
+                    }
+                    else
+                    {
+                        CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
+                    }
+
+                    document.getElementById("Cover2").innerHTML = CoverList;
+                    //else throw 'errordejugement'
+                });//end first get json
+        }//end for each
+    });
+}
+giveCovers2();

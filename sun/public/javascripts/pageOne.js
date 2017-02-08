@@ -8,13 +8,10 @@ function giveCovers(genre)
 			var title=data2[i].title;
 			var artist=data2[i].artist;
 
-
-			var p1 = new Promise(function(resolve, reject){
-				var j=i;
 				$.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
 					if (data3 && data3.track && data3.track.album && data3.track.album.image)
 					{
-						Cover=data3.track.album.image[1]['#text'];
+						Cover=data3.track.album.image[2]['#text'];
 						CoverList+= "<img src=\""+Cover+"\"/>";
 					}
 					else
@@ -25,10 +22,8 @@ function giveCovers(genre)
 					document.getElementById("Cover").innerHTML = CoverList;
 					//else throw 'errordejugement'
 				});//end first get json
-			});
 		}//end for each
 	});
-
 }
 
 function putRandWeek()
