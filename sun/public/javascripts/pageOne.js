@@ -1,3 +1,36 @@
+
+function giveCovers(genre)
+{
+	$.getJSON('/5LastGenre/'+genre+'/', function(data2)
+	{
+		var CoverList = "";
+		for (var i = 0, len = data2.length; i < len; i++) {
+			var title=data2[i].title;
+			var artist=data2[i].artist;
+
+
+			var p1 = new Promise(function(resolve, reject){
+				var j=i;
+				$.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
+					if (data3 && data3.track && data3.track.album && data3.track.album.image)
+					{
+						Cover=data3.track.album.image[1]['#text'];
+						CoverList+= "<img src=\""+Cover+"\"/>";
+					}
+					else
+					{
+						CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
+					}
+
+					document.getElementById("Cover").innerHTML = CoverList;
+					//else throw 'errordejugement'
+				});//end first get json
+			});
+		}//end for each
+	});
+
+}
+
 function putRandWeek()
 {
 	rand = Math.floor(Math.random() * 11) + 1;
@@ -10,32 +43,9 @@ function putRandWeek()
     				document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeurs ont voulu écouter du rock."
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a voulu écouter du rock."
-    			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
+    			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?";
 
-
-    			$.getJSON('/5LastGenre/Rock/', function(data2) 
-    		{ 
-    			var CoverList = "";
-    			for (var i = 0, len = data2.length; i < len; i++) {
-  				var title=data2[i].title;
-  				var artist=data2[i].artist;	
-    				$.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
-    					if (data3)
-						{
-							if (data3.track)
-							{
-								if (data3.track.album)
-								{
-									Cover=data3.track.album.image[2]['#text'];
-									CoverList+= "<img src="+Cover+"/>";
-								}
-							}
-						}
-						//else throw 'errordejugement'
-    				});//end first get json
-    			}//end for each
-    			document.getElementById("Cover").innerHTML = CoverList;
-    			});
+				giveCovers("Rock");
     		});
     		
     		
@@ -48,7 +58,10 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a partagé des musiques alternatives et punks."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
-    		});
+
+				giveCovers("Alternative et punk");
+
+			});
     		break;
     	case 3 :
     		$.getJSON('/ThisWeekUrban/', function(data) {
@@ -57,7 +70,10 @@ function putRandWeek()
     				document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeurs ont choisi de vous faire découvrir des musiques urbaines."
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a choisi de vous faire découvrir des musiques urbaines."
-    			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"});
+    			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
+
+				giveCovers("Urban");
+    		});
     		break;
     	case 4 :
     		$.getJSON('/ThisWeekElectronica/', function(data) { 
@@ -67,6 +83,8 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a décidé de danser sur de la musique électronique."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
+
+				giveCovers("Electronica");
     	});
     		break;
     	
@@ -78,6 +96,8 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a partagé sa musique de jazz préférée."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
+
+				giveCovers("Jazz");
     		});
     		break;
     	
@@ -89,6 +109,8 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a choisi de danser sur des chansons pop."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, vous écoutez quoi ?"
+
+				giveCovers("Pop");
     		});
     		break;
     	case 7 :
@@ -162,6 +184,6 @@ $(document).ready(function() {
     }); 
 });
 
-$('input[type="range"]').rangeslider();
+/*$('input[type="range"]').rangeslider();
 $('input[type="range"]').rangeslider('destroy');
-$('input[type="range"]').rangeslider('update', true);
+$('input[type="range"]').rangeslider('update', true);*/

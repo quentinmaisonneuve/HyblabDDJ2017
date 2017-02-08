@@ -196,6 +196,8 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
                 break;
         }
     },
+
+    //todo: date par now()
     get5LastGenre:function(genre,callback) {
 
         return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 ='"+genre+"' AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
