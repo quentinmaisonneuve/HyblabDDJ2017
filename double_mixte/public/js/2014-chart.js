@@ -4,7 +4,7 @@ d3.select("input[value=\"total\"]").property("checked", true);
 var svg = d3.select("#pieChart")
     .append("svg")
     .attr("height", "100%")
-    .attr("width", "100%")
+    .attr("width", "80%")
     .append("g")
 
 svg.append("g")
@@ -111,7 +111,8 @@ function change(data) {
         .on("mousemove", function(d){
             div.attr("width","100%");
             div.style("display", "inline-block");
-            div.html((d.data.label)+"<br>"+(d.data.value)+"%");
+
+            document.getElementById("labelValue14").innerHTML = (d.data.label)+ " - " +(d.data.value)+ " %";
         });
     slice
         .on("mouseout", function(d){
