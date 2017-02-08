@@ -72,11 +72,11 @@ function giveCovers2()
                     if (data3 && data3.track && data3.track.album && data3.track.album.image)
                     {
                         Cover=data3.track.album.image[2]['#text'];
-                        CoverList+= "<div class=\"CoverFind\"><img src=\""+Cover+"\"/></div>";
+                        CoverList+= "<img src=\""+Cover+"\"/>";
                     }
                     else
                     {
-                        CoverList+= "<div class=\"CoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
+                        CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
                     }
 
                     document.getElementById("Cover2").innerHTML = CoverList;
