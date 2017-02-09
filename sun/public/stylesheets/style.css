@@ -113,6 +113,25 @@ html, body{
 	max-width: 10%;
 }
 
+#pochette:hover {
+	color: white;
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+#pochette {
+	color: #004266;
+}
+#pochette2:hover {
+	color: black;
+	font-weight: bold;
+	margin-bottom: 1%;
+}
+
+#pochette2 {
+	color: #FFCC00;
+}
+
 #Cover2 {
 	margin-top: 7%;
 }
