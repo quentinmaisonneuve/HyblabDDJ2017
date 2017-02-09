@@ -58,7 +58,7 @@ function giveCoversMood(genre)
 
 function putRandWeek()
 {
-	rand = 11;//Math.floor(Math.random() * 11) + 1;
+	rand = Math.floor(Math.random() * 11) + 1;
     switch (rand) {
     	case 1 :
     		$.getJSON('/ThisWeekRock/', function(data) 
