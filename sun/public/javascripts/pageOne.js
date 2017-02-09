@@ -17,7 +17,7 @@ function giveCovers(genre)
 					}
 					else
 					{
-						CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
+						CoverList+= "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'/>";
 // CoverList+= "<div class=\"pageOneCoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
 					}
 
@@ -193,8 +193,6 @@ function putRandWeek()
                 giveCoversMood("Sentimentale");
     		});
     		break;
-    	
-    	
     }
 }
 putRandWeek();
