@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageOne.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pageOne.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/pageOne.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="202">
+              <caret line="224" column="55" selection-start-line="224" selection-start-column="55" selection-end-line="224" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -77,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pageFour.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pageFour.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/pageFour.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="71">
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/public/javascripts/pageOne.js" />
         <option value="$PROJECT_DIR$/public/javascripts/pageFour.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/pageOne.js" />
       </list>
     </option>
   </component>
@@ -393,12 +393,12 @@
       <workItem from="1486388790188" duration="19638000" />
       <workItem from="1486418578758" duration="7008000" />
       <workItem from="1486474471941" duration="23685000" />
-      <workItem from="1486651631673" duration="11148000" />
+      <workItem from="1486651631673" duration="11245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188080000" />
+    <option name="totallyTimeSpent" value="188177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -826,14 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/pageOne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/pageFour.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -841,6 +833,14 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/pageOne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="224" column="55" selection-start-line="224" selection-start-column="55" selection-end-line="224" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
