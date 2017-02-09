@@ -443,7 +443,7 @@ p
     width: 32vh;
     height: 4vh;
     font-family: 'Bebasneue_B';
-    top: 5vh;
+    top: 3vh;
     left: 39vh;
 }
 
@@ -494,8 +494,8 @@ p
 #bar-demo, #bar-demo-3
 {
     position: absolute;
-    left: 40vh;
-    top: 11vh;
+    left: 47vh;
+    top: 8vh;
 }
 
 #drapeau2
@@ -612,7 +612,7 @@ p
     width: 32vh;
     height: 4vh;
     font-family: 'Bebasneue_B';
-    top: 5vh;
+    top: 2vh;
     left: 39vh;
 }
 
@@ -776,9 +776,9 @@ p
 {
     position: absolute;
     width: 63vw;
-    height: 39vh;
+    height: 58vh;
     left: 18vw;
-    bottom: 37vh;
+    bottom: 28vh;
 }
 
 #conclu1, #conclu2
@@ -844,7 +844,10 @@ p
 
 #copyright
 {
-    text-align: center;
+  position: absolute;
+  bottom: 22vh;
+  left: 42vw;
+  width: 30vw;
 }
 
 /* selection transport */
@@ -946,4 +949,36 @@ text.big-text
 {
     width: 100%;
     height: 100%
+}
+
+#ePolytech, #eAGR, #eSciencecom {
+  display: inline-block;
+  width: 17vw;
+  font-family: 'Bebasneue';
+  text-align: center;
+  vertical-align: middle;
+}
+
+#credits {
+  position: absolute;
+  left: 6vw;
+  bottom: 0vh;
+}
+
+.noms .ec{
+  font-family: 'Bebasneue';
+  margin: 0;
+}
+
+.ecole {
+  position: absolute;
+  left: 6vw;
+  bottom: 23vh;
+}
+
+#Polytech, #AGR, #Sciencecom {
+  display: inline-block;
+  width: 17vw;
+  font-family: 'Bebasneue';
+  text-align: center;
 }
