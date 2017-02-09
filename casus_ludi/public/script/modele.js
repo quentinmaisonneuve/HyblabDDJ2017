@@ -56,7 +56,7 @@ for(var type in types){
     arraySerDemo[types[type]].france = 0; 
 }
 
-fetch('data/data.json')
+fetch('data/dataLight.json')
     // this promise will be fulfilled when the json fill will be
     .then(function (response){
         // if we could load the resource, parse it
@@ -75,6 +75,8 @@ fetch('data/data.json')
         var first = true; 
         json.forEach(function(item){
             // init data about openData created by Year
+
+           // console.log(item);
 
             arrayYearRegionC[item.created_year].all += item.value; 
 
