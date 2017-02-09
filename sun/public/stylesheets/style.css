@@ -1324,4 +1324,86 @@ div.tooltip p
 	padding-right: 2%;
 	margin-top: 15%;
 }
+#pageTwo input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-ms-thumb {
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-webkit-slider-runnable-track {
+  max-width : 450px;
+  height: 18px;
+}
+
+#timeline1 {
+	width: 70%;
+	position: absolute;
+	margin-left: -20%;
+	background-color: #004266;
+	padding-right: 5%;
+}
+
+#timeline_value1 {
+	position: absolute;
+	visibility: hidden;
+}
+
+#vousGenre {
+	visibility: hidden;
+}
+#pageThree {background-image: none;}
+#bubleChart {background-image: none;}
+#ExplicationBoulles{visibility: hidden;}
+#boutonBuble {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 30%;
+}
+#bubleChart {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+#Cover2 {
+	visibility: hidden;
+	position: absolute;
+}
+
+#pageFourTopLeft {
+	visibility: hidden;
+	position: absolute;
+}
+#pageFourBottom {
+	margin-top: -30%;
+}
+
+#pageFourTopCenterGraph {
+	width: 100%;
+	display: block;
+}
+
+#pageFourTopCenterBarre {
+	visibility: hidden;
+	background-image: none;
+	position: absolute;
+}
+#pageFour {
+	background-image: none;
+}
 }
