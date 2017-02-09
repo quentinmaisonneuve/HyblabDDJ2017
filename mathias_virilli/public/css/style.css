@@ -79,14 +79,14 @@ path {
 	position:absolute;
 	font-size: 24px
 }
-
+/*
 .arc {
   fill: none;
   stroke: red;
   stroke-width: 2.5px;
   stroke-linecap: round;
 }
-
+*/
 .site {
 
   fill: none;
@@ -1004,4 +1004,11 @@ html {
     bottom: 0;
     left: 10px;
     font-size: small;
+}
+
+#legende-carte-murs
+{
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
 }
