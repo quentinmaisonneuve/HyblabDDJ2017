@@ -940,6 +940,7 @@ text.big-text
 #ePolytech, #eAGR, #eSciencecom {
   display: inline-block;
   width: 17vw;
+  font-family: 'Bebasneue';
   text-align: center;
   vertical-align: middle;
 }
@@ -951,7 +952,7 @@ text.big-text
 }
 
 .noms .ec{
-  font-family: 'ArialR';
+  font-family: 'Bebasneue';
   margin: 0;
 }
 
@@ -964,5 +965,6 @@ text.big-text
 #Polytech, #AGR, #Sciencecom {
   display: inline-block;
   width: 17vw;
+  font-family: 'Bebasneue';
   text-align: center;
 }
