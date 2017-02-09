@@ -539,3 +539,8 @@ input {
     background-size: cover;
     color:#001526;
 }
+
+#leftbtn {
+	display: none !important;
+}
+
