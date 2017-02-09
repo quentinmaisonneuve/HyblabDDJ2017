@@ -98,6 +98,14 @@ html, body{
 
 
 /* ################### Div Un ################### */
+#chart {
+	padding-bottom: 15%;
+}
+
+#pageFourBottom {
+	padding-top: 2%;
+}
+
 #Cover {
 	width: 85%;
 	margin: 0 auto;
