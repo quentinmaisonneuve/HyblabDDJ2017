@@ -68,7 +68,7 @@ function getPourcentageStudents(country){
       async: false,
       //data: mydata,
       success: function(data) {
-        TotStagiaires = data.length;
+        var TotStagiaires = data.length;
         for (var i = TotStagiaires - 1; i >= 0; i--) {
             if(data[i].PAYS === country){
                 nbStagiaires = nbStagiaires +1;
