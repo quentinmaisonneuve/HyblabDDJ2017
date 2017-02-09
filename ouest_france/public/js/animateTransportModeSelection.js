@@ -37,7 +37,9 @@ var endMode = {
 };
 
 // Creation du svgTransport
-var svgTransport = d3.select('#modeTransport');
+var svgTransport = d3.select('#modeTransport')
+  .style("width", "36vw")
+  .style("height", "100vh");
 
 svgTransport.append('rect')
   .attr('width', modeWidth)
@@ -58,12 +60,14 @@ textG.append('text')
 
 textG.append("svg:foreignObject")
   .attr("class", "texth2")
+  .style('font-family', 'Borg')
   .attr('x', '39px')
   .attr('y', '50px')
-  .attr('width', "500")
-  .style('color', 'white')
   .style('font-size', '9em')
-  .text('MODE DE TRANSPORT');
+  .attr('width', 500)
+  .attr('height', 300)
+  .style('color', 'white')
+  .text('MODE DE TRANSPORT')
 
 // Ajout des images
 var imagesG = gT.append('g');
@@ -71,14 +75,17 @@ imagesG.append("svg:image")
         .classed("route", true)
         .attr('x', '0px')
         .attr('y', '100px')
+        .attr('width', '770px')
+        .attr('height', '900px')
         .attr("xlink:href", "img/Route.svg");
 
 var myCarMode = imagesG.append("svg:image")
         .attr("id", "myCar")
         .attr('x', 20)
         .attr('y', 20)
-        .attr('width', '40%')
-        .attr('height', '40%')
+        .attr('width', '320px')
+        .attr('height', '320px')
+        .style('transform', "translate(70px, 70px)")
         .attr("xlink:href", listesvgTransport[iterator]);
 
 imagesG.append("input")

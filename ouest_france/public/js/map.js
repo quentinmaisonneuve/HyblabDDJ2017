@@ -296,6 +296,9 @@ function displayCities() {
   }
 }
 
+var continuerButton = d3.select("#continuer");
+updateContinuer();
+
 displayCities();
 
 // Load map data
@@ -344,7 +347,6 @@ function mapClicked(d) {
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
-
   if (!actualZone || actualZone.localeCompare("") == 0)
     return;
 
@@ -377,8 +379,20 @@ function mapClicked(d) {
       cross1Image.on('click', unclickedMap1);
 
       create_dataviz(); // Auto creation of dataviz, scroll without usin buttons
-
+      
       break;
+  }
+  updateContinuer();
+}
+
+function updateContinuer() {
+  if (zoneState < 2) {
+    continuerButton.style("opacity", "0")
+        .style("pointer-events", "none");
+
+  } else {
+    continuerButton.style("opacity", "1")
+        .style("pointer-events", null);
   }
 }
 
@@ -390,6 +404,8 @@ function unclickedMap0(d) {
   zone0.textElement.text("");
   cross0Image.classed('cross', false).classed('hiddenCross', true);
   cross0Image.on('click', null);
+  
+  updateContinuer();
   colorMap();
 }
 
@@ -401,15 +417,20 @@ function unclickedMap1(d) {
   zone1.element = null;
   cross1Image.classed('cross', false).classed('hiddenCross', true);
   cross1Image.on('click', null);
+
+  updateContinuer();
   colorMap();
 }
 
-function mouseOverMap(d){
-  // Highlight hovered province
-  d3.select(this).style('fill', selectColor);
+function mouseOverMap(d) {
+  if (zoneState < 2) {
+    // Highlight hovered province
+    d3.select(this).style('fill', selectColor);
 
-  // Draw effects
-  updateZoneText(d);
+    // Draw effects
+    updateZoneText(d);
+
+  }
 }
 
 function mouseOutMap(d){

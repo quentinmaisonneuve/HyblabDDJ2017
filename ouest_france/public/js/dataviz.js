@@ -2,6 +2,14 @@
 // charset: utf-8
 
 window.addEventListener("resize", create_dataviz, false)
+document.getElementById("commencer").addEventListener(
+                                                      "click", 
+                                                      function () 
+                                                      {
+                                                          document.getElementById("transport").src = document.getElementById("myCar").href.baseVal;
+                                                      }, 
+                                                      false
+                                                      );
 
 var dataviz = {
     done: false
