@@ -22,7 +22,7 @@ document.getElementById('arrow_l').onclick = function () {
 };
 
 
-var modeWidth = 450.0;
+var modeWidth = 400.0;
 var modeHeight = 600.0;
 
 var startMode = {
@@ -37,9 +37,7 @@ var endMode = {
 };
 
 // Creation du svgTransport
-var svgTransport = d3.select('#modeTransport')
-            .attr('width', modeWidth)
-            .attr('height', '80%');
+var svgTransport = d3.select('#modeTransport');
 
 svgTransport.append('rect')
   .attr('width', modeWidth)
@@ -55,14 +53,16 @@ textG.append('text')
   .attr('x', '40px')
   .attr('y', '50px')
   .style('fill', 'white')
+  .style('font-size', "2em")
   .text('CHOISISSEZ VOTRE').style('font-family','ArialR');
 
 textG.append("svg:foreignObject")
   .attr("class", "texth2")
   .attr('x', '39px')
   .attr('y', '50px')
-  .attr('width', 200)
+  .attr('width', "500")
   .style('color', 'white')
+  .style('font-size', '9em')
   .text('MODE DE TRANSPORT');
 
 // Ajout des images
@@ -80,7 +80,7 @@ var myCarMode = imagesG.append("svg:image")
         .attr('width', '40%')
         .attr('height', '40%')
         .attr("xlink:href", listesvgTransport[iterator]);
-//
+
 imagesG.append("input")
     .attr("class", "bebas")
     .attr("type", "button")
