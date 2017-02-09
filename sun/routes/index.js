@@ -374,4 +374,11 @@ router.get('/5LastGenre/:genre', function(req, res, next) {
         else{res.json(rows);}
     });
 });
+router.get('/5LastMood/:mood', function(req, res, next) {
+    data.get5LastMood(req.params.mood, function(err, rows)
+    {
+        if(err){res.json(err);}
+        else{res.json(rows);}
+    });
+});
 module.exports = router;

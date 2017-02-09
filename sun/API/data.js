@@ -201,6 +201,35 @@ getMoodSeasonWeekHour:function(mood,season, week, start, end, callback)
     get5LastGenre:function(genre,callback) {
 
         return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE _genre4 ='"+genre+"' AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+    },
+    get5LastMood:function(mood,callback){
+        switch (mood) {
+            case "Nostalgique":
+                return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE (_mood1='Grisante' OR _mood1='Mélancolique' OR _mood1='Nostalgique' OR _mood1='Tourmentée') AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+  
+                break;
+            case "Cool" :
+                return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE (_mood1='Brûlante' OR _mood1='Cool' OR _mood1='Enflammée' OR _mood1='Insouciante' OR _mood1='Paisible') AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+  
+
+                break;
+            case "Stimulante":
+                return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id Where (_mood1='Stimulante' OR _mood1='Vigoureuse' OR _mood1='Exaltante' OR _mood1='Sensuelle' OR _mood1='Enjouée' OR _mood1='Agitée' ) AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+  
+                break;
+            case "Agressive": 
+                return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE (_mood1='Chahuteuse' OR _mood1='Provocante' OR _mood1='Agressive' OR _mood1='Ténébreuse') AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+  
+                break;
+            case "Sentimentale":
+               return db.query("SELECT  W.title, artiste_diffuser as artist FROM winmedia_media W LEFT JOIN musique_auditeur_tbl M ON M.id_musique = W._jazler_id WHERE (_mood1='Sentimentale' OR _mood1='Romantique' OR _mood1='Réaliste' OR _mood1='Sophistiquée'  OR _mood1='Sérieuse' OR _mood1='Tendre') AND year(date_heure_diffusion_reelle)= year('2016-09-29 14:53:33') AND dayofyear(date_heure_diffusion_reelle)<=dayofyear('2016-09-29 14:53:33') ANd dayofyear(date_heure_diffusion_reelle)>=dayofyear('2016-09-29 14:53:33')-6 order by date_heure_diffusion_reelle desc limit 5;",callback)
+  
+               break;
+
+            default:
+                throw "Bad mood";
+                break;
+        }
     }
 
 };

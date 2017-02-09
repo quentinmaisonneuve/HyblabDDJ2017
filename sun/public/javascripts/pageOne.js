@@ -27,6 +27,34 @@ function giveCovers(genre)
 		}//end for each
 	});
 }
+function giveCoversMood(genre)
+{
+    $.getJSON('/5LastMood/'+genre+'/', function(data2)
+    {
+        var CoverList = "";
+        for (var i = 0, len = data2.length; i < len; i++) {
+            var title=data2[i].title;
+            var artist=data2[i].artist;
+
+                $.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
+                    if (data3 && data3.track && data3.track.album && data3.track.album.image)
+                    {
+                        Cover=data3.track.album.image[2]['#text'];
+                        CoverList+= "<img src=\""+Cover+"\"/>";
+// CoverList+= "<div class=\"pageOneCoverFind\"><img src=\""+Cover+"\"/></div>";
+                    }
+                    else
+                    {
+                        CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
+// CoverList+= "<div class=\"pageOneCoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
+                    }
+
+                    document.getElementById("Cover").innerHTML = CoverList;
+                    //else throw 'errordejugement'
+                });//end first get json
+        }//end for each
+    });
+}
 
 function putRandWeek()
 {
@@ -118,6 +146,7 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur se sentait nostalgique."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
+                giveCoversMood("Nostalgique");
     		});
     		break;
     	case 8 :
@@ -128,6 +157,7 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur était d’humeur cool."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
+                giveCoversMood("Cool");
     		});
     		break;
     	case 9 :
@@ -138,6 +168,7 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a voulu vous transmettre son énergie."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
+                giveCoversMood("Stimulante");
     		});
     		break;
     	case 10 :
@@ -148,6 +179,7 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a partagé des musiques énervées."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
+                giveCoversMood("Agressive");
     		});
     		break;
     	case 11 :
@@ -158,6 +190,7 @@ function putRandWeek()
 				else
 					document.getElementById("randomWeek").innerHTML ="Cette semaine, " + number + " auditeur a choisi de partager ses sentiments."
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
+                giveCoversMood("Sentimentale");
     		});
     		break;
     	
