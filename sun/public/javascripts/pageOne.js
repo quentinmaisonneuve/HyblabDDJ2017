@@ -1,29 +1,41 @@
 
+function esc_quot(text)
+{
+	return text.replace("'", " ");
+}
+
+function coverToolTipOn(artist, title)
+{
+	document.getElementById("toolTipCover").innerHTML = artist + " - " + title ;
+}
+
+function coverToolTipOff()
+{
+
+}
+
+
 function giveCovers(genre)
 {
 	$.getJSON('/5LastGenre/'+genre+'/', function(data2)
 	{
 		var CoverList = "";
 		for (var i = 0, len = data2.length; i < len; i++) {
-			var title=data2[i].title;
-			var artist=data2[i].artist;
-
-				$.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
-					if (data3 && data3.track && data3.track.album && data3.track.album.image)
-					{
-						Cover=data3.track.album.image[2]['#text'];
-						CoverList+= "<img src=\""+Cover+"\"/>";
-// CoverList+= "<div class=\"pageOneCoverFind\"><img src=\""+Cover+"\"/></div>";
+			(function(i) {
+				var title=data2[i].title;
+				var artist=data2[i].artist;
+				$.getJSON('/Cover/' + artist + '/' + title + '/', function (data3) {
+					if (data3 && data3.track && data3.track.album && data3.track.album.image && (data3.track.album.image[2]['#text'] != "")) {
+						Cover = data3.track.album.image[2]['#text'];
+						CoverList += "<img src=\"" + Cover + "\"  onMouseOver=' coverToolTipOn(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff();'/>";
 					}
-					else
-					{
-						CoverList+= "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'/>";
-// CoverList+= "<div class=\"pageOneCoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
+					else {
+						CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver='coverToolTipOn(\"" + esc_quot(artist) + "\", '" + esc_quot(title) + "');' onMouseOut='coverToolTipOff();'/>";
 					}
-
 					document.getElementById("Cover").innerHTML = CoverList;
 					//else throw 'errordejugement'
 				});//end first get json
+			})(i)
 		}//end for each
 	});
 }
@@ -33,25 +45,21 @@ function giveCoversMood(genre)
     {
         var CoverList = "";
         for (var i = 0, len = data2.length; i < len; i++) {
-            var title=data2[i].title;
-            var artist=data2[i].artist;
-
-                $.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
-                    if (data3 && data3.track && data3.track.album && data3.track.album.image && (data3.track.album.image[2]['#text']!=""))
-                    {
-                        Cover=data3.track.album.image[2]['#text'];
-                        CoverList+= "<img src=\""+Cover+"\"/>";
-// CoverList+= "<div class=\"pageOneCoverFind\"><img src=\""+Cover+"\"/></div>";
-                    }
-                    else
-                    {
-                        CoverList+= "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'/>";
-// CoverList+= "<div class=\"pageOneCoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
-                    }
-
-                    document.getElementById("Cover").innerHTML = CoverList;
-                    //else throw 'errordejugement'
-                });//end first get json
+            (function(i) {
+				var title=data2[i].title;
+				var artist=data2[i].artist;
+				$.getJSON('/Cover/' + artist + '/' + title + '/', function (data3) {
+					if (data3 && data3.track && data3.track.album && data3.track.album.image && (data3.track.album.image[2]['#text'] != "")) {
+						Cover = data3.track.album.image[2]['#text'];
+						CoverList += "<img src=\"" + Cover + "\"  onMouseOver=' coverToolTipOn(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff();'/>";
+					}
+					else {
+						CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver='coverToolTipOn(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff();'/>";
+					}
+					document.getElementById("Cover").innerHTML = CoverList;
+					//else throw 'errordejugement'
+				});//end first get json
+			})(i)
         }//end for each
     });
 }

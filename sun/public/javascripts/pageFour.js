@@ -59,29 +59,40 @@ d3.json("./getLast24", function(data) {
 
 /* ################# COVERS ########################## */
 
+function coverToolTipOn2(artist, title)
+{
+    document.getElementById("toolTipCover2").innerHTML = artist + " - " + title ;
+}
+
+function coverToolTipOff()
+{
+
+}
+
 function giveCovers2()
 {
     $.getJSON('/today', function(data2)
     {
         var CoverList = "";
         for (var i = 0, len = data2.length; i < len; i++) {
-            var title=data2[i].title;
-            var artist=data2[i].artist;
-
-                $.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
-                    if (data3 && data3.track && data3.track.album && data3.track.album.image)
-                    {
-                        Cover=data3.track.album.image[2]['#text'];
-                        CoverList+= "<img width=100 src=\""+Cover+"\"/>";
-                    }
-                    else
-                    {
-                        CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" width=100 alt='Pochette non trouvée'/>";
-                    }
-
-                    document.getElementById("Cover2").innerHTML = CoverList;
-                    //else throw 'errordejugement'
-                });//end first get json
+            var CoverList = "";
+            for (var i = 0, len = data2.length; i < len; i++) {
+                (function(i) {
+                    var title=data2[i].title;
+                    var artist=data2[i].artist;
+                    $.getJSON('/Cover/' + artist + '/' + title + '/', function (data3) {
+                        if (data3 && data3.track && data3.track.album && data3.track.album.image && (data3.track.album.image[2]['#text'] != "")) {
+                            Cover = data3.track.album.image[2]['#text'];
+                            CoverList += "<img src=\"" + Cover + "\"  onMouseOver=' coverToolTipOn2(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff2();'/>";
+                        }
+                        else {
+                            CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver='coverToolTipOn2(\"" + esc_quot(artist) + "\", '" + esc_quot(title) + "');' onMouseOut='coverToolTipOff2();'/>";
+                        }
+                        document.getElementById("Cover2").innerHTML = CoverList;
+                        //else throw 'errordejugement'
+                    });//end first get json
+                })(i)
+            }//end for each
         }//end for each
     });
 }
