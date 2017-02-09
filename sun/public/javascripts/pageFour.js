@@ -86,7 +86,7 @@ function giveCovers2()
                             CoverList += "<img src=\"" + Cover + "\"  onMouseOver=' coverToolTipOn2(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff2();'/>";
                         }
                         else {
-                            CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver='coverToolTipOn2(\"" + esc_quot(artist) + "\", '" + esc_quot(title) + "');' onMouseOut='coverToolTipOff2();'/>";
+                            CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver=' coverToolTipOn2(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff2();'/>";
                         }
                         document.getElementById("Cover2").innerHTML = CoverList;
                         //else throw 'errordejugement'

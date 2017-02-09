@@ -1,7 +1,8 @@
 
 function esc_quot(text)
 {
-	return text.replace("'", " ");
+	var truc = text.replace("'", " ");
+	return truc.replace('"', " ");
 }
 
 function coverToolTipOn(artist, title)
@@ -30,7 +31,7 @@ function giveCovers(genre)
 						CoverList += "<img src=\"" + Cover + "\"  onMouseOver=' coverToolTipOn(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff();'/>";
 					}
 					else {
-						CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver='coverToolTipOn(\"" + esc_quot(artist) + "\", '" + esc_quot(title) + "');' onMouseOut='coverToolTipOff();'/>";
+						CoverList += "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'  onMouseOver=' coverToolTipOn(\"" + esc_quot(artist) + "\", \"" + esc_quot(title) + "\");' onMouseOut='coverToolTipOff();'/>";
 					}
 					document.getElementById("Cover").innerHTML = CoverList;
 					//else throw 'errordejugement'
