@@ -98,6 +98,12 @@ html, body{
 
 
 /* ################### Div Un ################### */
+
+
+#pageFourBottom {
+	padding-top: 2%;
+}
+
 #Cover {
 	width: 85%;
 	margin: 0 auto;
@@ -111,6 +117,31 @@ html, body{
 
 #Cover img {
 	max-width: 10%;
+}
+
+#toolTipCover {
+	position: absolute;
+}
+
+#toolTipCover2 {
+	position: absolute;
+}
+
+#pochette:hover {
+	color: white;
+	font-weight: bold;
+}
+
+#pochette {
+	color: #004266;
+}
+#pochette2:hover {
+	color: black;
+	font-weight: bold;
+}
+
+#pochette2 {
+	color: #FFCC00;
 }
 
 #Cover2 {
@@ -834,7 +865,6 @@ input:checked + .slider:before {
 	width: 70%;
 	display: inline-block;
 	height:100%;
-	padding-top: 4%;
 }
 
 #pageFourTopCenterBarre {
