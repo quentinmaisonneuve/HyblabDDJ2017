@@ -8,7 +8,7 @@ function getArrivee() {
 
 function hasSelectedPoints() {
   return getDepart().localeCompare("") != 0 &&
-    getArrivee().localeCompare("") != 0; 
+    getArrivee().localeCompare("") != 0;
 }
 
 var mapWidth = 960.0,
@@ -99,7 +99,7 @@ svg.append('rect')
   .attr('width', mapWidth)
   .attr('height', mapHeight)
   .attr('opacity', 0);
- 
+
 
 var g = svg.append('g');
 
@@ -118,7 +118,7 @@ var zone0 = {
   element: null,
   location: [200, 270],
   color: '#d8584e',
-  
+
 };
 
 var zone1 = {
@@ -149,7 +149,7 @@ decoTextG.append("svg:foreignObject")
   .style('font-family', 'ArialR')
   .style('font-family', '14px')
   .attr('x', '43px')
-  .attr('y', '170px')
+  .attr('y', '182px')
   .attr('width', 200)
   .attr('height', 300)
   .style('color', 'white')
@@ -159,37 +159,37 @@ var rectG = decoG.append('g');
 
 var startX = 40;
 var rectWidth = 340;
-var smallRectHeight = 30; 
+var smallRectHeight = 30;
 
 d3.select("#continuer")
   .style("bottom", "100px")
   .style("left", (startX + rectWidth/2 - 70) + "px");
 
 rectG.append("rect")
-    .attr("x", startX)       
-    .attr("y", 220)          
+    .attr("x", startX)
+    .attr("y", 220)
     .attr("width", rectWidth)
-    .attr("height", 150)   
-    .style("fill", "white")    
-    .attr("rx", 20)       
+    .attr("height", 150)
+    .style("fill", "white")
+    .attr("rx", 20)
     .attr("ry", 20);
 
 rectG.append("rect")
-    .attr("x", startX + 10)       
-    .attr("y", zone0.location[1] - 20)          
+    .attr("x", startX + 10)
+    .attr("y", zone0.location[1] - 20)
     .attr("width", rectWidth - 20)
-    .attr("height", smallRectHeight)   
-    .style("fill", zone0.color)    
-    .attr("rx", 20)       
+    .attr("height", smallRectHeight)
+    .style("fill", zone0.color)
+    .attr("rx", 20)
     .attr("ry", 20);
 
 rectG.append("rect")
-    .attr("x", startX + 10)       
-    .attr("y", zone1.location[1] - 20)          
+    .attr("x", startX + 10)
+    .attr("y", zone1.location[1] - 20)
     .attr("width", rectWidth - 20)
-    .attr("height", smallRectHeight)   
-    .style("fill", zone1.color)    
-    .attr("rx", 20)       
+    .attr("height", smallRectHeight)
+    .style("fill", zone1.color)
+    .attr("rx", 20)
     .attr("ry", 20);
 
 rectG.append("text")
@@ -269,7 +269,7 @@ function displayCities() {
     var text = cities[i][0];
     var city_x = cities[i][1];
     var city_y = cities[i][2];
-    
+
     svg.append("svg:image")
       .classed('notSelectable', true)
       .attr('x', city_x - icon_width/2)
@@ -287,7 +287,7 @@ function displayCities() {
 
     // determine text size
     var bbox = text.node().getBBox();
-    
+
     var textWidth = bbox.width;
     var textHeight = bbox.height;
 
@@ -340,7 +340,7 @@ function fillFn(d){
 
 function mapClicked(d) {
   updateZoneText(d);
-  // Create city from clicked location 
+  // Create city from clicked location
   if (debug_add_city)
     console.log(invertTransformation(d3.mouse(this)));
 
@@ -355,11 +355,11 @@ function mapClicked(d) {
       zoneState++;
       cross0Image.classed('cross', true).classed('hiddenCross', false);
       cross0Image.on('click', unclickedMap0);
-      
+
       // Highlight clicked province
       zone0.element = d3.select(this);
       zone0.element.style('fill', zone0.color);
-      
+
       if (zone1.text.localeCompare("") != 0) {
         zoneState++;
       }
@@ -375,7 +375,7 @@ function mapClicked(d) {
 
       cross1Image.classed('cross', true).classed('hiddenCross', false);
       cross1Image.on('click', unclickedMap1);
-      
+
       create_dataviz(); // Auto creation of dataviz, scroll without usin buttons
 
       break;
@@ -404,7 +404,7 @@ function unclickedMap1(d) {
   colorMap();
 }
 
-function mouseOverMap(d){  
+function mouseOverMap(d){
   // Highlight hovered province
   d3.select(this).style('fill', selectColor);
 
@@ -415,7 +415,7 @@ function mouseOverMap(d){
 function mouseOutMap(d){
 
   d3.select(this).style('fill', function(d) {return centered && d===centered ? '#D5708B' : fillFn(d);});
-  
+
   updateZoneText("");
 
   colorMap();
@@ -467,9 +467,9 @@ function myTextArt(data) {
     .style('font-family', fontFamily)
     .text(text)
     .style('opacity', 0);
-  
+
   var bbox = bigText.node().getBBox();
-  
+
   var textWidth = bbox.width;
   var textHeight = bbox.height;
 
@@ -487,7 +487,7 @@ function myTextArt(data) {
 function colorMap() {
   mapLayer.selectAll('path')
     .style('fill', function(d){return centered && d===centered ? '#D5708B' : fillFn(d);});
-  
+
   if (zone0.element != null) {
     zone0.element.style('fill', zone0.color);
   }
@@ -495,4 +495,3 @@ function colorMap() {
     zone1.element.style('fill', zone1.color);
   }
 }
-
