@@ -267,15 +267,15 @@ function updateCarSceneSize() {
     var defaultWidth = 1274.25;
     var defaultHeight = 663;
 
+    var divWidthCss = scenario1Elem.style("width");
+    var divWidth = parseInt(divWidthCss);
     var divHeightCss = scenario1Elem.style("height");
     var divHeight = parseInt(divHeightCss);
 
     var aspectRatio = divHeight / defaultHeight;
 
-    var width = defaultWidth * aspectRatio;
-
-    svgScene.style("width", width + "px")
-            .style("height", (divHeight * 3) + "px")
+    svgScene.attr("width", divWidth / aspectRatio)
+            .attr("height", (divHeight * 3) / aspectRatio)
             .style("transform-origin", "0 0")
             .style("transform", "scale(" + aspectRatio + ")");
 };

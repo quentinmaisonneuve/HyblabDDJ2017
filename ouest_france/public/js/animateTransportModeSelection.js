@@ -39,7 +39,7 @@ var endMode = {
 // Creation du svgTransport
 var svgTransport = d3.select('#modeTransport')
             .attr('width', modeWidth)
-            .attr('height', modeHeight);
+            .attr('height', '80%');
 
 svgTransport.append('rect')
   .attr('width', modeWidth)
@@ -49,8 +49,7 @@ svgTransport.append('rect')
 var gT = svgTransport.append('g');
 
 // Creation du text
-var textG = gT.append('g')
-  .style('trasform', 'translate(200px, 0)');
+var textG = gT.append('g');
 textG.append('text')
   .attr('class', 'bebas')
   .attr('x', '40px')
