@@ -112,3 +112,9 @@ function test() {
 function showTooltip2011() {
 	$('#mytooltip').tooltip('show');
 }
+
+$('#retourdebut').click(function() {
+    location.reload();
+});
+
+

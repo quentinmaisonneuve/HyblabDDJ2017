@@ -495,7 +495,7 @@
 		</div>
 	
 	   	<div class="item slideremerciements">
-		<div id="texteremerciements">Remerciements</br>Dans le cadre du projet Hyblab, des étudiants nantais d’Audencia SciencesCom, Polytech et AGR ont créé en collaboration ce data visuel. C’est sous la supervision du Voyage à Nantes et de l’agence Doublemixte que les étudiants ont pu répondre à la problématique suivante : Dans quelle mesure la création du voyage à Nantes a changé la donne ?<br/>Cindy et Alice d’AGR puis Hassan, Aurélie, Meriem et Thibaud de Polytech et enfin Coline, Pierre-Antoine et Jade d’Audencia SciencesCom tiennent particulièrement à remercier Marie Laure Pogu, Aurélie Peneau, Florence Roussel et Cédric Coué du Voyage à Nantes ainsi que Rémi Guerber de l’agence de communication Doublemixte et l’équipe du HybLab.
+		<div id="texteremerciements"><span class="textenum">Remerciements</span></br>Dans le cadre du projet Hyblab, des étudiants nantais d’Audencia SciencesCom, Polytech et AGR ont créé en collaboration ce data visuel. C’est sous la supervision du Voyage à Nantes et de l’agence Doublemixte que les étudiants ont pu répondre à la problématique suivante : Dans quelle mesure la création du voyage à Nantes a changé la donne ?<br/>Cindy et Alice d’AGR puis Hassan, Aurélie, Meriem et Thibaud de Polytech et enfin Coline, Pierre-Antoine et Jade d’Audencia SciencesCom tiennent particulièrement à remercier Marie Laure Pogu, Aurélie Peneau, Florence Roussel et Cédric Coué du Voyage à Nantes ainsi que Rémi Guerber de l’agence de communication Doublemixte et l’équipe du HybLab.
 		 <div id="srcdonnees">Pour réaliser ce projet,  nos données ont été tirées de l'enquête Auran, des enquêtes de l'Insee, des dossiers de presse du Voyage à Nantes de 2012 à 2016 et des réseaux sociaux du voyage à Nantes.</div>
 
 		<div id="etudiantsposition">
@@ -504,7 +504,7 @@
 					<li><a href="https://fr.linkedin.com/in/alice-tremblais-1a4903104?trk=prof-samename-name" target="_blank"><img src="img/etudiants/Alice.svg" alt="alice"><br/>Alice Tremblais</a></li>
 					<li><a href="https://fr.linkedin.com/in/aurélie-durand-66a064114" target="_blank"><img src="img/etudiants/Aurélie.svg" alt="aurelie"><br/>Aurélie Durand</a></li>
 					<li><a href="https://fr.linkedin.com/in/hassan-karaki-7815aa137" target="_blank"><img src="img/etudiants/Hassan.svg" alt="hassan"><br/>Hassan Karaki</a></li>
-					<li><a href="https://fr.linkedin.com/in/meriem-el-qsimi/fr" target="_blank"><img src="img/etudiants/Meriem.svg" alt="meriem"><br/>Meriem EL Qsimi</a></li>
+					<li><a href="https://fr.linkedin.com/in/meriem-el-qsimi/fr" target="_blank"><img src="img/etudiants/Meriem.svg" alt="meriem"><br/>Meriem El Qsimi</a></li>
 					<li><a href="#" target="_blank"><img src="img/etudiants/Thibaud.svg" alt="thibaud"><br/>Thibaud Gauton</a></li>
 					
 				</ul>
@@ -541,7 +541,7 @@
 				<!--</ul>-->
 				<!-- Les autres logos -->
 				<!--<ul>-->
-				
+				<button id="retourdebut" type="button" class="btn btn-default btn-small">Rejouer l'histoire</button>
 			</div>
 			</div>
 		</div>
@@ -569,6 +569,12 @@
 Demo Scripts for Bootstrap Carousel and Animate.css article on SitePoint by Maria Antonietta Perna
 */
 (function( $ ) { 
+
+
+$('#retourdebut').click(function() {
+    location.reload();
+});
+
   // Function to animate slider captions 
   function doAnimations( elems ) {
     // Cache the animationend event in a variable
