@@ -244,6 +244,7 @@ video{
 /************************************************************************/
 
 #dataviz2-section h1{
+	text-align: center;
 	font-size: 4.5vmin;
     -webkit-margin-after: 0.20em;
 }
@@ -294,9 +295,15 @@ video{
 }
 
 .label,
-.node--root,
-.node--leaf {
+.node--root{
   pointer-events: none;
+}
+
+.node--leaf {
+}
+
+.node--leaf:hover{
+	stroke-width : 0px;
 }
 
 .svg-container {
@@ -307,11 +314,12 @@ video{
 	vertical-align : middle;
 	overflow: hidden;
 	/*border:#333 1px solid;*/
-	border-radius: 20%;
+	
 	bottom: 1px;
 }
 
 .svg-content {
+	border-radius: 20%;
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -373,16 +381,17 @@ video{
 }
 
 /* Color pie download*/
- .Cservices {
+ .Ccouts-des-services {
  	stroke: #001DC3;
+ 	background-color: black; 
 
  }
   
-.Cmarche {
+.Cmarche-public {
 	stroke : #1E47E9;
 }
      
-.Cconstruire {
+.Cpermis-de-construire {
 	stroke : #3C62EB;
 }
 
@@ -402,7 +411,7 @@ video{
 	stroke : #B4CDF6;
 } 
 
-.Cpv{
+.Cpv-deliberations{
 	stroke : #C3DBF8;
 } 
         
@@ -410,7 +419,7 @@ video{
 	stroke : #00F9DB;
 } 
  
-.Cenvironnement{
+.CEnvironnement{
 	stroke : #00F7BE;
 }
 .Ctransport{
@@ -503,7 +512,7 @@ video{
 	position: absolute;
 	top:5%;
 	left:5%;
-	font-size:4.5vmin;
+	font-size:3.4vmin;
 	text-align: center;
 }
 

@@ -94,10 +94,13 @@ function initDataviz2() {
     nodes[13].y = 445;
     */
 
+
   var circle = g.selectAll("circle")
     .data(nodes)
     .enter().append("circle")
-    .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
+    .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf " + d.data.id : "node node--root"; })
+    .attr("onmouseover",function(d){return "over(\""+d.data.id+"\")"})
+    .attr("onmouseout",function(d){ return  "out(\""+d.data.id+"\")"})
     .style("fill-opacity", function(d){
         if(!(d.data.id in arrayColor)){
             return "0"; 
@@ -111,7 +114,13 @@ function initDataviz2() {
             return "#ffffff";
         }
     })
-    .on("click", function(d) { updateDownload(d.data.id, d.data.name); if (focus !== d) zoom(d), d3.event.stopPropagation(); });
+    .on("click", function(d) {
+    	console.log(d);	
+    	if(regions.indexOf(d.data.id) >= 0) {
+    		updateDownload(d.data.id, d.data.name); if (focus !== d) zoom(d), d3.event.stopPropagation();}
+    	else {
+    		updateDownload(d.parent.data.id, d.parent.data.name); if (focus !== d.parent) zoom(d.parent), d3.event.stopPropagation(); 
+    	} });
 
   var text = g.selectAll("text")
     .data(nodes)
@@ -164,16 +173,16 @@ function initDataviz2() {
     var data = datavizDownLoad();
 
     new Chartist.Pie('#downloadChart', {
-      series: [{value : data["couts-des-services"], className : "Cservices"},
-                {value : data["marche-public"], className : "Cmarche"},
-                {value : data["permis-de-construire"], className : "Cconstruire"}, 
+      series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
+                {value : data["marche-public"], className : "Cmarche-public"},
+                {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
                 {value : data["budget"], className : "Cbudget"}, 
                 {value : data["election"], className : "Celection"}, 
                 {value : data["association"], className : "Cassociation"}, 
                 {value : data["subventions"], className : "Csubventions"}, 
-                {value : data["pv-deliberations"], className : "Cpv"}, 
+                {value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
                 {value : data["urbanisme"], className : "Curbanisme"}, 
-                {value : data["Environnement"], className : "Cenvironnement"},
+                {value : data["Environnement"], className : "CEnvironnement"},
                 {value : data["transport"], className : "Ctransport"},
                 {value : data["equipements"], className : "Cequipements"},
                 {value : data["culture"], className : "Cculture"}, 
@@ -205,16 +214,16 @@ function updateDownload(region, regionName){
     var data = datavizDownLoad(region);
 
     new Chartist.Pie('#downloadChart', {
-      series: [{value : data["couts-des-services"], className : "Cservices"},
-                {value : data["marche-public"], className : "Cmarche"},
-                {value : data["permis-de-construire"], className : "Cconstruire"}, 
+      series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
+                {value : data["marche-public"], className : "Cmarche-public"},
+                {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
                 {value : data["budget"], className : "Cbudget"}, 
                 {value : data["election"], className : "Celection"}, 
                 {value : data["association"], className : "Cassociation"}, 
                 {value : data["subventions"], className : "Csubventions"}, 
-                {value : data["pv-deliberations"], className : "Cpv"}, 
+                {value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
                 {value : data["urbanisme"], className : "Curbanisme"}, 
-                {value : data["Environnement"], className : "Cenvironnement"},
+                {value : data["Environnement"], className : "CEnvironnement"},
                 {value : data["transport"], className : "Ctransport"},
                 {value : data["equipements"], className : "Cequipements"},
                 {value : data["culture"], className : "Cculture"}, 
@@ -252,11 +261,15 @@ function updateDownload(region, regionName){
     
 } 
 
-/*
-$(document).ready(function(){
-    window.addEventListener("resize", function () {
-        if (window.innerWidth() <= 1150) {
-             $('.').css({ fill: "#ff0000" });
-        };
-    });
-}*/
+
+	function over(t){
+		$("#l-"+t).css("color","#002BE5");
+		$("#l-"+t).css("font-family","quicksandBold");
+		$(".C"+t).css("stroke-opacity","0.25"); 
+	} 
+
+	function out(t){
+		$("#l-"+t).css("color","black");
+		$("#l-"+t).css("font-family","quicksand");
+		$(".C"+t).css("stroke-opacity","1"); 
+	} 
