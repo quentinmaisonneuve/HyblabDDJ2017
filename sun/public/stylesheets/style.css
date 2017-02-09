@@ -98,6 +98,29 @@ html, body{
 
 
 /* ################### Div Un ################### */
+#Cover {
+	width: 85%;
+	margin: 0 auto;
+	background-color: #004266;
+}
+
+#Cover2 img {
+	width: 7%;
+	margin-left: -9.5%;
+}
+
+#Cover img {
+	max-width: 10%;
+	margin-left: 1%;
+}
+
+#MySunLogo img {
+	max-width: 5%;
+}
+
+#Cover p {
+	background-color: #004266;
+}
 
 #pageOne{
 	background-color: #004266;
@@ -128,7 +151,6 @@ html, body{
 #pageOne #pochette{
 	width: 75%;
 	margin: 0 auto;
-	background-color: grey;
 	margin-top: 2%;
 }
 
@@ -761,6 +783,23 @@ input:checked + .slider:before {
 }
 
 /* ################### pageFour ################### */
+#Cover2 {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -10%;
+	margin-bottom: 2%;
+}
+
+#Cover2 .CoverFind {
+	display: inline-block;
+	width: 10%;
+}
+
+#Cover2 .CoverNonTrouve {
+	display: inline-block;
+	width: 10%;
+}
+
 
 #pageFour {
 	background-color: #FFCC00;
@@ -798,7 +837,7 @@ input:checked + .slider:before {
 #pageFourTopCenterBarre {
 	background-image: url("/images/page4_tiret_haut_graphique.png");
 	background-size: 100% 100%;
-	width: 73.8%;
+	width: 76.7%;
 	margin-left: 4.5%;
 	margin-bottom: 0%;
 }
@@ -1284,5 +1323,87 @@ div.tooltip p
 	font-size: 4vw;
 	padding-right: 2%;
 	margin-top: 15%;
+}
+#pageTwo input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-ms-thumb {
+  height: 28px;
+  width : 62px;
+  margin: -5px;
+}
+
+#pageTwo input[type=range]::-webkit-slider-runnable-track {
+  max-width : 450px;
+  height: 18px;
+}
+
+#timeline1 {
+	width: 70%;
+	position: absolute;
+	margin-left: -20%;
+	background-color: #004266;
+	padding-right: 5%;
+}
+
+#timeline_value1 {
+	position: absolute;
+	visibility: hidden;
+}
+
+#vousGenre {
+	visibility: hidden;
+}
+#pageThree {background-image: none;}
+#bubleChart {background-image: none;}
+#ExplicationBoulles{visibility: hidden;}
+#boutonBuble {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 30%;
+}
+#bubleChart {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+#Cover2 {
+	visibility: hidden;
+	position: absolute;
+}
+
+#pageFourTopLeft {
+	visibility: hidden;
+	position: absolute;
+}
+#pageFourBottom {
+	margin-top: -30%;
+}
+
+#pageFourTopCenterGraph {
+	width: 100%;
+	display: block;
+}
+
+#pageFourTopCenterBarre {
+	visibility: hidden;
+	background-image: none;
+	position: absolute;
+}
+#pageFour {
+	background-image: none;
 }
 }
