@@ -23,6 +23,17 @@ function MyKey(p, duration) {
 };
 
 // Function
+function init() {
+ carImg.reset();
+ carImg.symX = -1.0;
+ var key0 = scene1.key0;
+
+ carImg.el.transition()
+            .attr('x', key0.p_x())
+            .attr('y', key0.p_y())
+            .duration(0);
+}
+
 function startScene1() {
    carImg.reset();
    
@@ -195,24 +206,36 @@ if (debugMode == 1) {
     d3.select("#fullpage").on("mousemove", moveCar)
         .on('mousedown', clicked);
 } else if (debugMode == 2) {
-    d3.select("#scenario1")[0][0]
-      .addEventListener("click", function() { console.log("start"); startScene1(); }, false);
-    d3.select("#scenario2")[0][0]
+    d3.select("#scenario1").node()
+      .addEventListener("click", function() { startScene1(); }, false);
+    d3.select("#scenario2").node()
       .addEventListener("click", function() { startScene2(); }, false);
-    d3.select("#scenario3")[0][0]
+    d3.select("#scenario3").node()
       .addEventListener("click", function() { startScene3(); }, false);
 }
 
 var svgScene = d3.select("#carScene")
-    .attr('width', "100%")
-    .attr('height', "300%")
-    /*.attr('width', "960")
-    .attr('height', "500")
-  .attr('viewBox',"0 0 960 500")*/
     .style('top', '0')
     .style('left', '0')
     .style('position', 'absolute')
     .style('z-index', '6');
+
+var scenario1Elem = d3.select("#scenario1");
+
+// Add an observer to resize the carScene following the image in the background
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutationRecord) {
+        updateCarSceneSize();
+    });    
+});
+
+var config = {
+    attributes : true,
+    attributeOldValue: true,
+    attributeFilter : ['style']
+}
+
+observer.observe(scenario1Elem.node(), config);
 
 scene1.g = svgScene.append("g");
 
@@ -239,8 +262,26 @@ carImg.el = carG.append("svg:image")
         .attr('height', carImg.height + 'px')
         .attr("xlink:href", listesvgTransport[iterator]);
 
-// init car position 
-disableCarScene();
 
-//startScene2();
+function updateCarSceneSize() {
+    var defaultWidth = 1274.25;
+    var defaultHeight = 663;
+
+    var divHeightCss = scenario1Elem.style("height");
+    var divHeight = parseInt(divHeightCss);
+
+    var aspectRatio = divHeight / defaultHeight;
+
+    var width = defaultWidth * aspectRatio;
+
+    svgScene.style("width", width + "px")
+            .style("height", (divHeight * 3) + "px")
+            .style("transform-origin", "0 0")
+            .style("transform", "scale(" + aspectRatio + ")");
+};
+
+
+// init car position 
+enableCarScene();
+init();
 updateCar();
