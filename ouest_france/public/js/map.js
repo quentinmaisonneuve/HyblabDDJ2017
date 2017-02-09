@@ -422,12 +422,15 @@ function unclickedMap1(d) {
   colorMap();
 }
 
-function mouseOverMap(d){
-  // Highlight hovered province
-  d3.select(this).style('fill', selectColor);
+function mouseOverMap(d) {
+  if (zoneState < 2) {
+    // Highlight hovered province
+    d3.select(this).style('fill', selectColor);
 
-  // Draw effects
-  updateZoneText(d);
+    // Draw effects
+    updateZoneText(d);
+
+  }
 }
 
 function mouseOutMap(d){
