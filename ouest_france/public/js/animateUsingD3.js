@@ -220,6 +220,7 @@ var svgScene = d3.select("#carScene")
     .style('position', 'absolute')
     .style('z-index', '6');
 
+
 var scenario1Elem = d3.select("#scenario1");
 
 // Add an observer to resize the carScene following the image in the background
@@ -262,6 +263,13 @@ carImg.el = carG.append("svg:image")
         .attr('height', carImg.height + 'px')
         .attr("xlink:href", listesvgTransport[iterator]);
 
+// Ajout de la maison
+svgScene.append("svg:image")
+    .attr("x", "278")
+    .attr("y", "1074")
+    .attr("width", "256")
+    .attr("height", "256")
+    .attr("xlink:href", "img/Point-info-ouest-02.svg");
 
 function updateCarSceneSize() {
     var defaultWidth = 1274.25;
