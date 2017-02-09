@@ -98,9 +98,7 @@ html, body{
 
 
 /* ################### Div Un ################### */
-#chart {
-	padding-bottom: 15%;
-}
+
 
 #pageFourBottom {
 	padding-top: 2%;
@@ -861,7 +859,6 @@ input:checked + .slider:before {
 	width: 70%;
 	display: inline-block;
 	height:100%;
-	padding-top: 4%;
 }
 
 #pageFourTopCenterBarre {
