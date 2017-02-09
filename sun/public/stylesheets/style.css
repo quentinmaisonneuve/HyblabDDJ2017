@@ -119,10 +119,17 @@ html, body{
 	max-width: 10%;
 }
 
+#toolTipCover {
+	position: absolute;
+}
+
+#toolTipCover2 {
+	position: absolute;
+}
+
 #pochette:hover {
 	color: white;
 	font-weight: bold;
-	margin-bottom: 1%;
 }
 
 #pochette {
@@ -131,7 +138,6 @@ html, body{
 #pochette2:hover {
 	color: black;
 	font-weight: bold;
-	margin-bottom: 1%;
 }
 
 #pochette2 {
