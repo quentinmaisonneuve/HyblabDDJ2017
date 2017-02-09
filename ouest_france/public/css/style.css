@@ -494,7 +494,7 @@ p
 #bar-demo, #bar-demo-3
 {
     position: absolute;
-    left: 40vh;
+    left: 47vh;
     top: 8vh;
 }
 
@@ -776,9 +776,9 @@ p
 {
     position: absolute;
     width: 63vw;
-    height: 39vh;
+    height: 58vh;
     left: 18vw;
-    bottom: 37vh;
+    bottom: 28vh;
 }
 
 #conclu1, #conclu2
@@ -844,7 +844,10 @@ p
 
 #copyright
 {
-    text-align: center;
+  position: absolute;
+  bottom: 22vh;
+  left: 42vw;
+  width: 30vw;
 }
 
 /* selection transport */
@@ -932,4 +935,34 @@ text.big-text
     cursor: pointer;
     cursor: hand;
     opacity: 1;
+}
+
+#ePolytech, #eAGR, #eSciencecom {
+  display: inline-block;
+  width: 17vw;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#credits {
+  position: absolute;
+  left: 6vw;
+  bottom: 0vh;
+}
+
+.noms .ec{
+  font-family: 'ArialR';
+  margin: 0;
+}
+
+.ecole {
+  position: absolute;
+  left: 6vw;
+  bottom: 18vh;
+}
+
+#Polytech, #AGR, #Sciencecom {
+  display: inline-block;
+  width: 17vw;
+  text-align: center;
 }

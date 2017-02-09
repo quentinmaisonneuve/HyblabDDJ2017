@@ -25,3 +25,6 @@ $("#pourcentTravail").fitText(0.15);
 $("#pourcentEtude").fitText(0.15);
 $("#pourcentAutres").fitText(0.15);
 $("#conclu1, #conclu2").fitText(4);
+$(".noms").fitText(1.5);
+$("#copyright").fitText(3);
+$('.ec').fitText();
