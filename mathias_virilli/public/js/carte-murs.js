@@ -103,8 +103,9 @@ var secondsInDay = 1;
 var newData;
 d3.select('#slider3').call(d3.slider()
   .axis(true).min(minDateUnix).max(maxDateUnix).step(secondsInDay)
-  .on("slide", function(evt, value) {
-  
+  .on("slide", updateCarteMurs));
+
+function updateCarteMurs(evt, value) {
     sliderValue = value;
     updateAnnee(value); // pour le graphique
     
@@ -127,9 +128,5 @@ d3.select('#slider3').call(d3.slider()
 
     });
     
-    
-    	 
-    document.onload = display(newData_annonce, newData_construit);
-  
-  })
-);
+    display(newData_annonce, newData_construit);
+}
