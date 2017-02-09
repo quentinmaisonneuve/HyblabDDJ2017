@@ -37,7 +37,7 @@ function giveCoversMood(genre)
             var artist=data2[i].artist;
 
                 $.getJSON('/Cover/'+artist+'/'+title+'/', function(data3) {
-                    if (data3 && data3.track && data3.track.album && data3.track.album.image)
+                    if (data3 && data3.track && data3.track.album && data3.track.album.image && (data3.track.album.image[2]['#text']!=""))
                     {
                         Cover=data3.track.album.image[2]['#text'];
                         CoverList+= "<img src=\""+Cover+"\"/>";
@@ -58,7 +58,7 @@ function giveCoversMood(genre)
 
 function putRandWeek()
 {
-	rand = Math.floor(Math.random() * 11) + 1;
+	rand = 11;//Math.floor(Math.random() * 11) + 1;
     switch (rand) {
     	case 1 :
     		$.getJSON('/ThisWeekRock/', function(data) 
