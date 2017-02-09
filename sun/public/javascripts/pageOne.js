@@ -13,10 +13,12 @@ function giveCovers(genre)
 					{
 						Cover=data3.track.album.image[2]['#text'];
 						CoverList+= "<img src=\""+Cover+"\"/>";
+// CoverList+= "<div class=\"pageOneCoverFind\"><img src=\""+Cover+"\"/></div>";
 					}
 					else
 					{
-						CoverList+= "<img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/>";
+						CoverList+= "<img src=\"./images/jacket-blanc.png\" alt='Pochette non trouvée'/>";
+// CoverList+= "<div class=\"pageOneCoverNonTrouve\"><img src=\"http://www.cdcenter.fr/upload/PAGE1/pochette-cd-4.jpg\" alt='Pochette non trouvée'/></div>";
 					}
 
 					document.getElementById("Cover").innerHTML = CoverList;
@@ -158,8 +160,6 @@ function putRandWeek()
     			document.getElementById("randomWeek2").innerHTML ="Et vous, quelle est votre humeur ? "
     		});
     		break;
-    	
-    	
     }
 }
 putRandWeek();
