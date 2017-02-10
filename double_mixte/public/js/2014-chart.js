@@ -55,15 +55,15 @@ datasetTotal = [
         ];
 
 datasetOption1 = [
-        {label:"Category 1", value:26}, 
-        {label:"Category 2", value:15.3}, 
-        {label:"Category 3", value:21.4},
-        {label:"Category 4", value:14.2},
-        {label:"Category 5", value:8.9},
-        {label:"Category 6", value:6.4},
-        {label:"Category 7", value:4.4},
-        {label:"Category 8", value:2.1},
-        {label:"Category 9", value:0.4}
+        {label:"Cadres et Professions intellectuelles supérieures", value:26}, 
+        {label:"Retraités", value:15.3}, 
+        {label:"Professions intermédiaires", value:21.4},
+        {label:"Employés", value:14.2},
+        {label:"Etudiants", value:8.9},
+        {label:"Artisants, commerçants, Chefts d'entreprises", value:6.4},
+        {label:"Inactifs", value:4.4},
+        {label:"Ouvriers", value:2.1},
+        {label:"Agriculteurs exploitants", value:0.4}
         ];
 
 change(datasetTotal);

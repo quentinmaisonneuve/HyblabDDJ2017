@@ -1,5 +1,5 @@
 {
-	"elements": ["Eléphant", "Galerie", "Caroussel"],
+	"elements": ["Eléphant", "Galerie", "Carrousel"],
 	"machines": {
 		"Eléphant": [52960, 58943, 73458],
 		"Galerie": [230251, 247436, 236800],
