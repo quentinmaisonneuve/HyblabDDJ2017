@@ -982,3 +982,49 @@ text.big-text
   font-family: 'Bebasneue';
   text-align: center;
 }
+
+#fp-nav ul li 
+{
+    padding-right: 1vw;
+    padding-left: 0.3vw;
+    list-style: none;
+    background-size: 1.5vw auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: scale(1.5);
+}
+
+#fp-nav ul li:nth-child(1) {
+    background-image: url(../img/Naviguation-Home-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(2) {
+    background-image: url(../img/Naviguation-Loire-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(3) {
+    background-image: url(../img/Naviguation-Vehicule-Version-bleu.svg);    
+}
+#fp-nav ul li:nth-child(7) {
+    background-image: url(../img/Naviguation-loupe-Version-bleu.svg);   
+}
+
+#fp-nav ul li:nth-child(1).active-li {
+    background-image: url(../img/Naviguation-Home-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(2).active-li {
+    background-image: url(../img/Naviguation-Loire-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(3).active-li {
+    background-image: url(../img/Naviguation-Vehicule-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(7).active-li {
+    background-image: url(../img/Naviguation-loupe-Version-blanc.svg);
+}
+
+#fp-nav ul li:hover a span, #fp-nav ul li a span {
+    display: none;
+}
+
+#fp-nav ul li:hover 
+{
+    transform: scale(3);
+}

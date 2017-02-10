@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" height="100%">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -52,10 +52,21 @@
         <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
 
         <!-- Configuration de fullPage.js -->
-        <script type="text/javascript">
+        <script type="text/javascript">                       
             $(document).ready(function() {
+                var idsOfSections = ["section0", "section1", "section2", "scenario1", "scenario2", "scenario3", "section6"];
+                function navLiUpdate() { 
+                    var old = document.getElementsByClassName("active-li")[0];
+                    var str = old.className.replace("active-li", ""); 
+                    old.className = str; // on remove l'ancienne balise "active-li" pour assurer l'unicité
+                    
+                    var index = idsOfSections.indexOf(document.getElementsByClassName('active')[0].id); // on récupère l'index de la slide actuellement affichée
+                    
+                    document.getElementById("fp-nav").childNodes[1].childNodes[2*index+1].className = "active-li"; // on définit la balise de la slide nav correspondante à la slide affichée comme étant la nouvelle "active-li"
+                };
+                
                 $('#fullpage').fullpage({
-                  afterLoad: updateSlideNav, // pour qu'après chaque chargement de slide, fullPage lance la fonction updateSlideNav() du modules noSlideNav.js
+                  afterLoad: function () {updateSlideNav(); navLiUpdate();}, // pour qu'après chaque chargement de slide, fullPage lance les fonctions updateSlideNav() du modules noSlideNav.js et navLiUpdate() définie ci-dessus
                 });
             });
         </script>
@@ -65,7 +76,7 @@
 
         <nav id="fp-nav" class="right">
             <ul>
-                <li><a><span></span></a></li>
+                <li class="active-li"><a><span></span></a></li>
                 <li><a><span></span></a></li>
                 <li><a><span></span></a></li>
                 <li style="display: none"><a><span></span></a></li>
@@ -77,7 +88,7 @@
 
         <div id="fullpage">
 
-            <section class="section" id="section0">
+            <section class="section active" id="section0">
                 <article class="content">
                   <img class="background" id="home" src="img/HOME-BASE-FINAL.svg"/>
                   <article id="textIntro">
