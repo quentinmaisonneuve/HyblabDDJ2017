@@ -18,11 +18,6 @@ app.get("/public/data/*", function(req, res) {
     res.json(json);
 });
 
-/*app.get("/public/fonts/*", function(req, res) {
-    var file = req.url.replace('/public/fonts/', '');
-    var font =
-});*/
-
 // This module is exported and served by the main server.js located
 // at the root of this set of projects. You can access it by lanching the main
 // server and visiting http(s)://127.0.0.1:8080/name_of_you_project/ (if on a local server)
