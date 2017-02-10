@@ -833,20 +833,23 @@
        y1="584"
        x2="1084"
        y2="584"
-       id="line4374" /></g><text
+       id="line4374" /></g>
+       <!-- <text
      x="100"
      y="200"
      fill="#000"
      id="textFrontiere"
      font-family="'Roboto-Bold'"
-     font-size="16">Essayez de tracer une frontière</text>
+     font-size="16">Essayez de tracer une frontière</text> -->
 <script
      xlink:href="../js/rare.js"
      type="text/ecmascript"
-     id="script217" /><script
+     id="script217" />
+     <!-- <script
      xlink:href="../js/trace.js"
      type="text/ecmascript"
-     id="script219" /><text
+     id="script219" /> -->
+     <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:5px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3b4351;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
      x="1098.0848"

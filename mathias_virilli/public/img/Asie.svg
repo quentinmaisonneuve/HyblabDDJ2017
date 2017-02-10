@@ -1539,20 +1539,24 @@
                cy="473.761"
                r="0.11"
                id="circle1274"
-               fill="#DE705F" /></g></g></g></g></g><text
+               fill="#DE705F" /></g></g></g></g></g>
+               
+       <!-- <text
      x="100"
      y="200"
      fill="#000"
      id="textFrontiere"
      font-family="'Roboto-Bold'"
-     font-size="16">Essayez de tracer une frontière</text>
+     font-size="16">Essayez de tracer une frontière</text> -->
 <script
      xlink:href="../js/rare.js"
      id="script463"
-     type="text/ecmascript" /><script
+     type="text/ecmascript" />
+     <!-- <script
      xlink:href="../js/trace.js"
      id="script465"
-     type="text/ecmascript" /><text
+     type="text/ecmascript" /> -->
+     <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:5px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="952.87305"

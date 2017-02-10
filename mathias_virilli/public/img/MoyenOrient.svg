@@ -3012,20 +3012,24 @@
        y1="662"
        x2="111"
        y2="662"
-       id="line1873" /></g><text
+       id="line1873" /></g>
+       
+       <!-- <text
      x="100"
      y="200"
      fill="#000"
      id="textFrontiere"
      font-family="'Roboto-Bold'"
-     font-size="16">Essayez de tracer une frontière</text>
+     font-size="16">Essayez de tracer une frontière</text> -->
 <script
      xlink:href="../js/rare.js"
      id="script913"
-     type="text/ecmascript" /><script
+     type="text/ecmascript" />
+     <!-- <script
      xlink:href="../js/trace.js"
      id="script915"
-     type="text/ecmascript" /><text
+     type="text/ecmascript" /> -->
+     <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:5px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#3b4351;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      x="13"
