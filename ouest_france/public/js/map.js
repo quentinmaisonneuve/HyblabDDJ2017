@@ -364,6 +364,7 @@ function mapClicked(d) {
 
       if (zone1.text.localeCompare("") != 0) {
         zoneState++;
+        create_dataviz(); // Auto creation of dataviz, scroll without using buttons
       }
       break;
     case 1:
@@ -378,7 +379,7 @@ function mapClicked(d) {
       cross1Image.classed('cross', true).classed('hiddenCross', false);
       cross1Image.on('click', unclickedMap1);
 
-      create_dataviz(); // Auto creation of dataviz, scroll without usin buttons
+      create_dataviz(); // Auto creation of dataviz, scroll without using buttons
       
       break;
   }
