@@ -1,15 +1,7 @@
 'use strict';
 // charset: utf-8
 
-window.addEventListener("resize", create_dataviz, false)
-document.getElementById("commencer").addEventListener(
-                                                      "click", 
-                                                      function () 
-                                                      {
-                                                          document.getElementById("transport").src = document.getElementById("myCar").href.baseVal;
-                                                      }, 
-                                                      false
-                                                      );
+window.addEventListener("resize", create_dataviz, false);
 
 var dataviz = {
     done: false
@@ -29,8 +21,8 @@ function create_dataviz() {
 }
 
 function create_dataviz_1() {
-    var value = data.d30.matrix.mode.total[getDepart()][getArrivee()];
-    var total = data.d30.matrix.mode.total[getDepart()].total;
+    var value = data.d30.matrix.mode[getMode()][getDepart()][getArrivee()];
+    var total = data.d30.matrix.mode.total[getDepart()][getArrivee()];
     var rounded = 0;
     if (total > 0) {
         rounded = Math.ceil(value / total * 10) * 10;
@@ -38,6 +30,8 @@ function create_dataviz_1() {
 
     if (rounded > 0) {
         document.getElementById("people").src = "img/dataviz1/" + rounded + ".svg";
+    } else {
+        document.getElementById("people").src = "";
     }
 
     document.getElementById("number").firstChild.nodeValue = value;
@@ -51,9 +45,9 @@ function create_dataviz_2() {
     if (total > 0) {
         bar = [
             (data.d30.matrix.mode.voiture[getDepart()][getArrivee()] / total * 100).toFixed(0),
-            (data.d30.matrix.mode.tc     [getDepart()][getArrivee()] / total * 100).toFixed(0),
-            (data.d30.matrix.mode.velo   [getDepart()][getArrivee()] / total * 100).toFixed(0),
-            (data.d30.matrix.mode.marche [getDepart()][getArrivee()] / total * 100).toFixed(0)
+            (data.d30.matrix.mode.tc[getDepart()][getArrivee()] / total * 100).toFixed(0),
+            (data.d30.matrix.mode.velo[getDepart()][getArrivee()] / total * 100).toFixed(0),
+            (data.d30.matrix.mode.marche[getDepart()][getArrivee()] / total * 100).toFixed(0)
         ];
     }
 
@@ -78,8 +72,6 @@ function create_dataviz_3() {
 }
 
 function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
-    //var barWidth = 40;
-    //var barHeight = 200 screen.width;
     var barWidth = 0.02 * window.innerWidth;
     var barHeight = 0.18 * window.innerHeight;
     var barFullWidth = (barWidth + 10) * dataset.length;
@@ -101,7 +93,7 @@ function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
       attr("y", function (value) { return barHeight - y(value); }).
       attr("height", function (value) { return y(value); }).
       attr("width", barWidth).
-      attr("fill", function(datum, index) {return colorsSet[index];});
+      attr("fill", function (datum, index) { return colorsSet[index]; });
 
     idsForValues.forEach(function (s, i) {
         document.getElementById(s).firstChild.nodeValue = dataset[i];
@@ -111,4 +103,9 @@ function drawBarChart(dataset, idForDrawing, idsForValues, colorsSet) {
 
 function clearBarChart(id) {
     d3.select(id).select("svg").remove();
+}
+
+function updateTransportMode() {
+    create_dataviz_1();
+    document.getElementById("transport").src = document.getElementById("myCar").href.baseVal;
 }

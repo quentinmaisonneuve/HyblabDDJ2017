@@ -3,8 +3,10 @@
 // No need for window.onload event here since we are using the def attribute
 // when loading our scripts
 
-var listesvgTransport = ["img/Voiture.svg","img/Bus-Transport-en-commun.svg","img/Velo.svg","img/Pieton.svg"];
+var listesvgTransport = ["img/Voiture.svg", "img/Bus-Transport-en-commun.svg", "img/Velo.svg", "img/Pieton.svg"];
+var mode_id = ["voiture", "tc", "velo", "marche"];
 var iterator = 0;
+
 document.getElementById('arrow_d').onclick = function () {
     iterator = iterator + 1;
     if (iterator > 3) {
@@ -12,15 +14,16 @@ document.getElementById('arrow_d').onclick = function () {
     }
    d3.selectAll('#myCar')
       .attr("xlink:href", listesvgTransport[iterator]);
+   updateTransportMode();
 };
 document.getElementById('arrow_l').onclick = function () {
-      iterator = iterator - 1;
-      if (iterator < 0) {
-        iterator = 3;
-      }
-      d3.selectAll('#myCar').attr("xlink:href", listesvgTransport[iterator])
+    iterator = iterator - 1;
+    if (iterator < 0) {
+      iterator = 3;
+    }
+    d3.selectAll('#myCar').attr("xlink:href", listesvgTransport[iterator]);
+    updateTransportMode();
 };
-
 
 var modeWidth = 400.0;
 var modeHeight = 600.0;
@@ -29,7 +32,6 @@ var startMode = {
   x: 280,
   y: 140
 };
-
 
 var endMode = {
   x: 0,
@@ -114,3 +116,7 @@ function startModeScene() {
 
 resetCar(0, function() {});
 resetCar(2000, function() { startModeScene(); });
+
+function getMode() {
+    return mode_id[iterator];
+}
