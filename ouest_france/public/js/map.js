@@ -142,7 +142,7 @@ decoTextG.append("svg:foreignObject")
   .attr('width', 300)
   .attr('height', 300)
   .style('color', 'white')
-  .text('OÙ ALLLONS NOUS?');
+  .text('OÙ ALLONS NOUS ?');
 
 decoTextG.append("svg:foreignObject")
   .attr("class", "bebas")
