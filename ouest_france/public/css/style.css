@@ -145,7 +145,8 @@ p
     position: absolute;
     width: 31vw;
     bottom: 2vw;
-    left: 64vw;
+    left: 67vw;
+    text-align: justify;
 }
 
 #center
@@ -987,6 +988,7 @@ text.big-text
 {
     padding-right: 1vw;
     padding-left: 0.3vw;
+    padding-bottom: 2.1vh;
     list-style: none;
     background-size: 1.5vw auto;
     background-repeat: no-repeat;
@@ -1031,35 +1033,37 @@ text.big-text
 
 .rs 
 {
-    position: absolute;
-    animation: bounce 0.35s ease 10 alternate;
+    position: absolute;   
     width:2vw;
     height:4vh;
     background-size: 100% 100%;    
+    left:5vh;
 }
 
 #twitter
 {         
-    top:32vh;
-    left:17vw;
+    top:50vh; 
     background-image:url('../img/rs/twitter.ico');
     background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
 }
 
 #instagram
 {
-    top:30vh;
-    left:21vw;
+    top:57vh;
     background-image:url('../img/rs/instagram.png');
     background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
+    animation-delay: 0.1s;
 }
 
 #github
 {
-    top:28vh;
-    left:25vw;
+    top:64vh;
     background-image:url('../img/rs/github.png');
     background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
+    animation-delay: 0.2s;
 }
 
 @keyframes bounce
