@@ -139,7 +139,7 @@ decoTextG.append("text")
   .attr('y', '90px')
   .style('font-size', '80px')
   .style('fill', 'white')
-  .text('OÙ ALLLONS');
+  .text('OÙ ALLONS');
 
 decoTextG.append("text")
   .style('font-family', 'Borg')
