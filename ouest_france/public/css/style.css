@@ -982,3 +982,100 @@ text.big-text
   font-family: 'Bebasneue';
   text-align: center;
 }
+
+#fp-nav ul li 
+{
+    padding-right: 1vw;
+    padding-left: 0.3vw;
+    list-style: none;
+    background-size: 1.5vw auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: scale(1.5);
+}
+
+#fp-nav ul li:nth-child(1) {
+    background-image: url(../img/Naviguation-Home-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(2) {
+    background-image: url(../img/Naviguation-Loire-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(3) {
+    background-image: url(../img/Naviguation-Vehicule-Version-bleu.svg);    
+}
+#fp-nav ul li:nth-child(7) {
+    background-image: url(../img/Naviguation-loupe-Version-bleu.svg);   
+}
+
+#fp-nav ul li:nth-child(1).active-li {
+    background-image: url(../img/Naviguation-Home-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(2).active-li {
+    background-image: url(../img/Naviguation-Loire-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(3).active-li {
+    background-image: url(../img/Naviguation-Vehicule-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(7).active-li {
+    background-image: url(../img/Naviguation-loupe-Version-blanc.svg);
+}
+
+#fp-nav ul li:hover a span, #fp-nav ul li a span {
+    display: none;
+}
+
+#fp-nav ul li:hover 
+{
+    transform: scale(3);
+}
+
+.rs 
+{
+    position: absolute;
+    animation: bounce 0.35s ease 10 alternate;
+    width:2vw;
+    height:4vh;
+    background-size: 100% 100%;    
+}
+
+#twitter
+{         
+    top:32vh;
+    left:17vw;
+    background-image:url('../img/rs/twitter.ico');
+    background-repeat: no-repeat;
+}
+
+#instagram
+{
+    top:30vh;
+    left:21vw;
+    background-image:url('../img/rs/instagram.png');
+    background-repeat: no-repeat;
+}
+
+#github
+{
+    top:28vh;
+    left:25vw;
+    background-image:url('../img/rs/github.png');
+    background-repeat: no-repeat;
+}
+
+@keyframes bounce
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-webkit-keyframes bounce /*Safari and Chrome*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-moz-keyframes bounce /*Firefox*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
