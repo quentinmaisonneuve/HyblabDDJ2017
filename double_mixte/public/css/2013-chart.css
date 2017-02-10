@@ -15,7 +15,7 @@
 }
 
 .ct-series-b > line:hover {
-    stroke: #7de8c1 !important;
+    stroke: #004680 !important;
 }
 
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
@@ -33,7 +33,7 @@
 
 /* couleur barre b */
 .ct-series-b > line {
-	stroke: #2cda9b !important;
+	stroke: #001526 !important;
 }
 /* Label années */
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
@@ -106,8 +106,8 @@
 }
 
 .ct-legend li.ct-series-1:before {
-    background-color: #2cda9b;
-    border-color: #2cda9b;
+    background-color: #001526;
+    border-color: #001526;
 }
 
 #val_graph2013 {
