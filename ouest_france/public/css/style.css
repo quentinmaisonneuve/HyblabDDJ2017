@@ -1041,7 +1041,7 @@ text.big-text
 
 #twitter
 {         
-    top:50vh; 
+    top:48vh; 
     background-image:url('../img/rs/twitter.ico');
     background-repeat: no-repeat;
     animation: bounce 0.35s ease 20 alternate;
@@ -1049,7 +1049,7 @@ text.big-text
 
 #instagram
 {
-    top:57vh;
+    top:55vh;
     background-image:url('../img/rs/instagram.png');
     background-repeat: no-repeat;
     animation: bounce 0.35s ease 20 alternate;
@@ -1058,7 +1058,7 @@ text.big-text
 
 #github
 {
-    top:64vh;
+    top:62vh;
     background-image:url('../img/rs/github.png');
     background-repeat: no-repeat;
     animation: bounce 0.35s ease 20 alternate;
