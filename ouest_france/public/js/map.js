@@ -133,16 +133,21 @@ var zone1 = {
 var decoG = g.append('g');
 var decoTextG = decoG.append('g');
 
-decoTextG.append("svg:foreignObject")
-  .attr("class", "texth2")
+decoTextG.append("text")
   .style('font-family', 'Borg')
   .attr('x', '39px')
-  .attr('y', '20px')
-  .style('font-family', '60px')
-  .attr('width', 300)
-  .attr('height', 300)
-  .style('color', 'white')
-  .text('OÙ ALLLONS NOUS?');
+  .attr('y', '90px')
+  .style('font-size', '80px')
+  .style('fill', 'white')
+  .text('OÙ ALLLONS');
+
+decoTextG.append("text")
+  .style('font-family', 'Borg')
+  .attr('x', '39px')
+  .attr('y', '150px')
+  .style('font-size', '80px')
+  .style('fill', 'white')
+  .text('NOUS?');
 
 decoTextG.append("svg:foreignObject")
   .attr("class", "bebas")
