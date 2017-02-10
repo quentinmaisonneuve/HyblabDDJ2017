@@ -147,14 +147,14 @@ decoTextG.append("text")
   .attr('y', '150px')
   .style('font-size', '80px')
   .style('fill', 'white')
-  .text('NOUS?');
+  .text('NOUS ?');
 
 decoTextG.append("svg:foreignObject")
   .attr("class", "bebas")
   .style('font-family', 'ArialR')
   .style('font-family', '14px')
   .attr('x', '43px')
-  .attr('y', '182px')
+  .attr('y', '165px')
   .attr('width', 200)
   .attr('height', 300)
   .style('color', 'white')
