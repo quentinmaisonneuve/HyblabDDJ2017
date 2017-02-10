@@ -1028,3 +1028,54 @@ text.big-text
 {
     transform: scale(3);
 }
+
+.rs 
+{
+    position: absolute;
+    animation: bounce 0.35s ease 10 alternate;
+    width:2vw;
+    height:4vh;
+    background-size: 100% 100%;    
+}
+
+#twitter
+{         
+    top:32vh;
+    left:17vw;
+    background-image:url('../img/rs/twitter.ico');
+    background-repeat: no-repeat;
+}
+
+#instagram
+{
+    top:30vh;
+    left:21vw;
+    background-image:url('../img/rs/instagram.png');
+    background-repeat: no-repeat;
+}
+
+#github
+{
+    top:28vh;
+    left:25vw;
+    background-image:url('../img/rs/github.png');
+    background-repeat: no-repeat;
+}
+
+@keyframes bounce
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-webkit-keyframes bounce /*Safari and Chrome*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-moz-keyframes bounce /*Firefox*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
