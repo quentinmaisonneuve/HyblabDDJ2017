@@ -1034,7 +1034,6 @@ text.big-text
 .rs 
 {
     position: absolute;   
-    width:2vw;
     height:4vh;
     background-size: 100% 100%;    
     left:5vh;
