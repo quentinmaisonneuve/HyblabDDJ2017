@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Hyblab 2017</title>
+  <title>Data, ouvre toi ! - Hyblab 2017</title>
   <!-- Basic viewport setting for mobile friendly page -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,12 +12,6 @@
   <!-- AJAX -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-
-  <!-- STYLESHEETS-->
-  <LINK rel="stylesheet" type="text/css" href="style/index.css">
-
-  <!-- JS --> 
-  <script src="script/modele.js"></script>
 
   <!-- LIENS BOOTSTRAP SI NÉCÉSSAIRE
   <LINK rel="stylesheet" type="text/css" href="style/bootstrap-3.3.5-dist/css/bootstrap.css">
@@ -47,6 +41,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
 
+  <!-- JS --> 
+  <script type="text/javascript" src="script/dataviz1.js" defer></script>
+  <script src="script/dataviz2.js" defer></script>
+  <script src="script/dataviz3.js" defer></script>
+  <script src="script/modele.js" defer></script>
+
+  <!-- STYLESHEETS-->
+  <LINK rel="stylesheet" type="text/css" href="style/index.css">
   
 </head>
 
@@ -255,7 +257,7 @@
             </ul>
 
             </div>
-            <div id="divDownload"><div> <div id="downloadChart" class="ct-chart ct-golden-section"></div>
+            <div id="divDownload"><div id="downloadChart" class="ct-chart ct-golden-section" style="height : 100%; "></div>
             <p id="textDownload"></p> 
             </div>
          <!--</div>-->
@@ -284,20 +286,20 @@
               </div>
               <div id="listeRegion2">
                 <ul style="list-style-type: none;" >
-                    <a onclick="changeRegion(this,2,'france')"><li class="listeRegion" id="selectedRegion2">France</li></a>
-                    <a onclick="changeRegion(this,2,'Auvergne-Rhone-Alpes')"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
-                    <a onclick="changeRegion(this,2,'Bourgogne-Franche-Comte')"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
-                    <a onclick="changeRegion(this,2,'Bretagne')"><li class="listeRegion">Bretagne</li></a>
-                    <a onclick="changeRegion(this,2,'Centre-Val-de-Loire')"><li class="listeRegion">Centre-Val-de-Loire</li></a>
-                    <a onclick="changeRegion(this,2,'Corse')"><li class="listeRegion">Corse</li></a>
-                    <a onclick="changeRegion(this,2,'Grand-Est')"><li class="listeRegion">Grand-Est</li></a>
-                    <a onclick="changeRegion(this,2,'Hauts-de-France')"><li class="listeRegion">Hauts-de-France</li></a>
-                    <a onclick="changeRegion(this,2,'Ile-de-France')"><li class="listeRegion">Île-de-France</li></a>
-                    <a onclick="changeRegion(this,2,'Normandie')"><li class="listeRegion">Normandie</li></a>
-                    <a onclick="changeRegion(this,2,'Nouvelle-Aquitaine')"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
-                    <a onclick="changeRegion(this,2,'Occitanie')"><li class="listeRegion">Occitanie</li></a>
-                    <a onclick="changeRegion(this,2,'Pays-de-la-Loire')"><li class="listeRegion">Pays-de-la-Loire</li></a>
-                    <a onclick="changeRegion(this,2,'Provence-Alpes-Cote-d-Azur')"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
+                    <a onclick="changeRegion(this,2,'france')" id="r-france-2"><li class="listeRegion" id="selectedRegion2">France</li></a>
+                    <a onclick="changeRegion(this,2,'Auvergne-Rhone-Alpes')" id="r-Auvergne-Rhone-Alpes-2"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
+                    <a onclick="changeRegion(this,2,'Bourgogne-Franche-Comte')" id="r-Bourgogne-Franche-Comte-2"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
+                    <a onclick="changeRegion(this,2,'Bretagne')" id="r-Bretagne-2"><li class="listeRegion">Bretagne</li></a>
+                    <a onclick="changeRegion(this,2,'Centre-Val-de-Loire')" id="r-Centre-Val-de-Loire-2"><li class="listeRegion">Centre-Val-de-Loire</li></a>
+                    <a onclick="changeRegion(this,2,'Corse')" id="r-Corse-2"><li class="listeRegion">Corse</li></a>
+                    <a onclick="changeRegion(this,2,'Grand-Est')" id="r-Grand-Est-2"><li class="listeRegion">Grand-Est</li></a>
+                    <a onclick="changeRegion(this,2,'Hauts-de-France')" id="r-Hauts-de-France-2"><li class="listeRegion">Hauts-de-France</li></a>
+                    <a onclick="changeRegion(this,2,'Ile-de-France')" id="r-Ile-de-France-2"><li class="listeRegion">Île-de-France</li></a>
+                    <a onclick="changeRegion(this,2,'Normandie')" id="r-Normandie-2"><li class="listeRegion">Normandie</li></a>
+                    <a onclick="changeRegion(this,2,'Nouvelle-Aquitaine')" id="r-Nouvelle-Aquitaine-2"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
+                    <a onclick="changeRegion(this,2,'Occitanie')" id="r-Occitanie-2"><li class="listeRegion">Occitanie</li></a>
+                    <a onclick="changeRegion(this,2,'Pays-de-la-Loire')" id="r-Pays-de-la-loire-2"><li class="listeRegion">Pays-de-la-Loire</li></a>
+                    <a onclick="changeRegion(this,2,'Provence-Alpes-Cote-d-Azur')" id="r-Provence-Alpes-Cote-d-Azur-2"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
                 </ul>
               </div>
               <img id="balance-fond" src="img/balance/fond.svg"/>
@@ -312,20 +314,20 @@
               <p id="valeurPoidsDroite">%</p>
               <div id="listeRegion1">
                   <ul style="list-style-type: none;" >
-                      <a onclick="changeRegion(this,1,'france')"><li class="listeRegion" id="selectedRegion1">France</li></a>
-                      <a onclick="changeRegion(this,1,'Auvergne-Rhone-Alpes')"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
-                      <a onclick="changeRegion(this,1,'Bourgogne-Franche-Comte')"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
-                      <a onclick="changeRegion(this,1,'Bretagne')"><li class="listeRegion">Bretagne</li></a>
-                      <a onclick="changeRegion(this,1,'Centre-Val-de-Loire')"><li class="listeRegion">Centre-Val-de-Loire</li></a>
-                      <a onclick="changeRegion(this,1,'Corse')"><li class="listeRegion">Corse</li></a>
-                      <a onclick="changeRegion(this,1,'Grand-Est')"><li class="listeRegion">Grand-Est</li></a>
-                      <a onclick="changeRegion(this,1,'Hauts-de-France')"><li class="listeRegion">Hauts-de-France</li></a>
-                      <a onclick="changeRegion(this,1,'Ile-de-France')"><li class="listeRegion">Île-de-France</li></a>
-                      <a onclick="changeRegion(this,1,'Normandie')"><li class="listeRegion">Normandie</li></a>
-                      <a onclick="changeRegion(this,1,'Nouvelle-Aquitaine')"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
-                      <a onclick="changeRegion(this,1,'Occitanie')"><li class="listeRegion">Occitanie</li></a>
-                      <a onclick="changeRegion(this,1,'Pays-de-la-Loire')"><li class="listeRegion">Pays-de-la-Loire</li></a>
-                      <a onclick="changeRegion(this,1,'Provence-Alpes-Cote-d-Azur')"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
+                      <a onclick="changeRegion(this,1,'france')" id="r-france-1"><li class="listeRegion" id="selectedRegion1">France</li></a>
+                      <a onclick="changeRegion(this,1,'Auvergne-Rhone-Alpes')" id="r-Auvergne-Rhone-Alpes-1"><li class="listeRegion">Auvergne-Rhônes-Alpes</li></a>
+                      <a onclick="changeRegion(this,1,'Bourgogne-Franche-Comte')" id="r-Bourgogne-Franche-Comte-1"><li class="listeRegion">Bourgogne-Franche-Comté</li></a>
+                      <a onclick="changeRegion(this,1,'Bretagne')" id="r-Bretagne-1"><li class="listeRegion">Bretagne</li></a>
+                      <a onclick="changeRegion(this,1,'Centre-Val-de-Loire')" id="r-Centre-Val-de-Loire-1"><li class="listeRegion">Centre-Val-de-Loire</li></a>
+                      <a onclick="changeRegion(this,1,'Corse')" id="r-Corse-1"><li class="listeRegion">Corse</li></a>
+                      <a onclick="changeRegion(this,1,'Grand-Est')" id="r-Grand-Est-1"><li class="listeRegion">Grand-Est</li></a>
+                      <a onclick="changeRegion(this,1,'Hauts-de-France')" id="r-Hauts-de-France-1"><li class="listeRegion">Hauts-de-France</li></a>
+                      <a onclick="changeRegion(this,1,'Ile-de-France')" id="r-Ile-de-France-1"><li class="listeRegion">Île-de-France</li></a>
+                      <a onclick="changeRegion(this,1,'Normandie')" id="r-Normandie-1"><li class="listeRegion">Normandie</li></a>
+                      <a onclick="changeRegion(this,1,'Nouvelle-Aquitaine')" id="r-Nouvelle-Aquitaine-1"><li class="listeRegion">Nouvelle-Aquitaine</li></a>
+                      <a onclick="changeRegion(this,1,'Occitanie')" id="r-Occitanie-1"><li class="listeRegion">Occitanie</li></a>
+                      <a onclick="changeRegion(this,1,'Pays-de-la-Loire')" id="r-Pays-de-la-loire-1"><li class="listeRegion">Pays-de-la-Loire</li></a>
+                      <a onclick="changeRegion(this,1,'Provence-Alpes-Cote-d-Azur')" id="r-Provence-Alpes-Cote-d-Azur-1"><li class="listeRegion">Provence-Alpes-Côtes-D'Azur</li></a>
                   </ul>
               </div>
         </div>
@@ -378,7 +380,4 @@
 	LE MENU DE SELECTION VERTICAL EST GÉNÉRÉ PAR LE JAVASCRIPT FULLPAGE
   #####################################################################-->
 </body>
-<script type="text/javascript" src="script/dataviz1.js"></script>
-<script src="script/dataviz2.js" defer></script>
-<script src="script/dataviz3.js" defer></script>
   

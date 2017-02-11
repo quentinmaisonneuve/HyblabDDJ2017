@@ -172,7 +172,7 @@ function initDataviz2() {
 
     var data = datavizDownLoad();
 
-    new Chartist.Pie('#downloadChart', {
+    /*new Chartist.Pie('#downloadChart', {
       series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
                 {value : data["marche-public"], className : "Cmarche-public"},
                 {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
@@ -194,7 +194,39 @@ function initDataviz2() {
         startAngle: 270,
         total: data["all"]*2,
         showLabel: false
-    });
+    });*/ 
+
+    new Chartist.Bar('#downloadChart', {
+		  series: [
+					{value : data["education"], className : "Ceducation"},
+					{value : data["culture"], className : "Cculture"}, 
+					{value : data["equipements"], className : "Cequipements"},
+					{value : data["transport"], className : "Ctransport"},
+					{value : data["Environnement"], className : "CEnvironnement"},
+					{value : data["urbanisme"], className : "Curbanisme"}, 
+					{value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
+					{value : data["subventions"], className : "Csubventions"}, 
+					{value : data["association"], className : "Cassociation"}, 
+					{value : data["election"], className : "Celection"}, 
+					{value : data["budget"], className : "Cbudget"}, 
+					{value : data["permis-de-construire"], className : "Cpermis-de-construire"},
+					{value : data["marche-public"], className : "Cmarche-public"},
+					{value : data["couts-des-services"], className : "Ccouts-des-services"}
+		               ]
+		}, {
+		  distributeSeries: true,
+		  horizontalBars: true,
+		  axisX: {
+				    showGrid: false,
+				    showLabel: false,
+				    offset: 0
+				},
+		  axisY: {
+				    showGrid: false,
+				    showLabel: false,
+				    offset: 0
+				}
+	});
 
      $("#textDownload").html("FRANCE <br>"+ Math.round(data["all"]) + " téléchargements de données"); 
 
@@ -213,7 +245,7 @@ function initDataviz2() {
 function updateDownload(region, regionName){
     var data = datavizDownLoad(region);
 
-    new Chartist.Pie('#downloadChart', {
+    /*new Chartist.Pie('#downloadChart', {
       series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
                 {value : data["marche-public"], className : "Cmarche-public"},
                 {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
@@ -235,7 +267,39 @@ function updateDownload(region, regionName){
         startAngle: 270,
         total: data["all"]*2,
         showLabel: false
-    });
+    });*/
+
+    new Chartist.Bar('#downloadChart', {
+		  series: [
+					{value : data["education"], className : "Ceducation"},
+					{value : data["culture"], className : "Cculture"}, 
+					{value : data["equipements"], className : "Cequipements"},
+					{value : data["transport"], className : "Ctransport"},
+					{value : data["Environnement"], className : "CEnvironnement"},
+					{value : data["urbanisme"], className : "Curbanisme"}, 
+					{value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
+					{value : data["subventions"], className : "Csubventions"}, 
+					{value : data["association"], className : "Cassociation"}, 
+					{value : data["election"], className : "Celection"}, 
+					{value : data["budget"], className : "Cbudget"}, 
+					{value : data["permis-de-construire"], className : "Cpermis-de-construire"},
+					{value : data["marche-public"], className : "Cmarche-public"},
+					{value : data["couts-des-services"], className : "Ccouts-des-services"}
+		               ]
+		}, {
+		  distributeSeries: true,
+		  horizontalBars: true,
+		  axisX: {
+				    showGrid: false,
+				    showLabel: false,
+				    offset: 0
+				},
+		  axisY: {
+				    showGrid: false,
+				    showLabel: false,
+				    offset: 0
+				}
+	});
 
     var white = "";
 
@@ -260,7 +324,6 @@ function updateDownload(region, regionName){
     },"500"); 
     
 } 
-
 
 	function over(t){
 		$("#l-"+t).css("color","#002BE5");

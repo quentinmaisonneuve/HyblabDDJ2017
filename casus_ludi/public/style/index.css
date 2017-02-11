@@ -342,19 +342,19 @@ video{
 
 #divDownload{
 	display : block;
-	width : 40%;
-	height: 100%;
+	width : 35%;
+	height: 70%;
 	position : absolute;
-	top : 40%;
-	left : 65%;
+	top : 23%;
+	left : 69%;
 }
 
 #textDownload {
 	position : absolute;
-	top : 24%;
-	left : 18%;
+	top : -7%;
+	left : 7%;
 	text-align: center; 
-	width : 67%;
+	width : 80%;
 }
 
 .textLegend {
@@ -383,8 +383,10 @@ video{
 /* Color pie download*/
  .Ccouts-des-services {
  	stroke: #001DC3;
- 	background-color: black; 
+ }
 
+ .ct-bar{
+ 	stroke-width : 4%;
  }
   
 .Cmarche-public {
@@ -454,11 +456,17 @@ video{
 	#textLegend2{
 		top : -22px;
 	}
+	#textDownload{
+		font-size: 2.3vmin;
+	}
 }
 
 @media only screen and (max-width: 960px){
 	.listLegend{
 		height: 4vmin;
+	}
+	#textDownload{
+		font-size: 2vmin;
 	}
 }
 

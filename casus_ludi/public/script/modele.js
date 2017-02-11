@@ -56,7 +56,7 @@ for(var type in types){
     arraySerDemo[types[type]].france = 0; 
 }
 
-fetch('data/dataLight.json')
+/*fetch('data/dataLight.json')
     // this promise will be fulfilled when the json fill will be
     .then(function (response){
         // if we could load the resource, parse it
@@ -137,6 +137,80 @@ fetch('data/dataLight.json')
         initDataviz2();  
         initDataviz3();
     });
+*/ 
+
+d3.json('data', function(error,data) { // D3 HTTP GET request + parse JSON to the server
+    if(error)
+    {
+      console.log("erreur"); 
+    }
+    else {
+        var first = true; 
+        data.forEach(function(item){
+            // init data about openData created by Year
+
+           // console.log(item);
+
+            arrayYearRegionC[item.created_year].all += item.value; 
+
+            if(isNaN(arrayYearRegionC[item.created_year][item.region])){
+                arrayYearRegionC[item.created_year][item.region] = item.value; 
+            }
+            else {
+                arrayYearRegionC[item.created_year][item.region] += item.value; 
+            }
+            
+            // init data about openData modified by Year
+            arrayYearRegionU[item.modified_year].all += item.value; 
+
+            if(isNaN(arrayYearRegionU[item.modified_year][item.region])){
+                arrayYearRegionU[item.modified_year][item.region] = item.value; 
+            }
+            else {
+                arrayYearRegionU[item.modified_year][item.region] += item.value; 
+            } 
+
+            // init data about opendData by keyword, region 
+            arrayKeywordRegion[item.keyword].all += item.value; 
+
+            if(isNaN(arrayKeywordRegion[item.keyword][item.region])){
+                arrayKeywordRegion[item.keyword][item.region] = item.value; 
+            }
+            else {
+                arrayKeywordRegion[item.keyword][item.region] += item.value; 
+            }
+
+            //init data about openData by region keyword 
+            arrayRegionKeyword[item.region].all += item.value; 
+
+            if(isNaN(arrayRegionKeyword[item.region][item.keyword])){
+                arrayRegionKeyword[item.region][item.keyword] = item.value; 
+            }
+            else {
+                arrayRegionKeyword[item.region][item.keyword] += item.value; 
+            }
+
+            //init data about openData downloaded by region keyword
+            arrayRegionDownload[item.region].all += item.downloadValue; 
+            arrayRegionDownload[item.region][item.keyword] += item.downloadValue; 
+
+            arrayRegionDownload.france[item.keyword] += item.downloadValue; 
+            arrayRegionDownload.france.all += item.downloadValue
+
+            arraySerDemo[item.DemoServ].france += item.value; 
+
+            if(isNaN(arraySerDemo[item.DemoServ][item.region])){
+                arraySerDemo[item.DemoServ][item.region] = item.value; 
+            }
+            else {
+                arraySerDemo[item.DemoServ][item.region] += item.value; 
+            }
+        });  
+        initDataviz1();
+        initDataviz2();  
+        initDataviz3();
+    }
+});
 
 function dataCreateYear(year){
     var data = [];
@@ -310,5 +384,5 @@ function datavizDownLoad(region ="france"){
 
 function getSerDemo(type, region = "france"){
     return arraySerDemo[type][region];
-};
+}
 
