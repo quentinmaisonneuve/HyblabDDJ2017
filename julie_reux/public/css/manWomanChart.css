@@ -1,0 +1,13 @@
+#legendContainer table{
+  width:100%
+}
+
+#legendContainer table td{
+  	text-align:center; 
+    	vertical-align:middle;
+}
+
+#titleManWoman {
+	text-align:center; 
+	font-family: "Helvetica Neue";
+}

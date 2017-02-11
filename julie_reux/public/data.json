@@ -1,0 +1,39 @@
+{
+
+    "HF" :{
+        "man" : 92,
+        "woman" : 8
+    },
+    "Age": {
+        "30 à 40 ans" : 31,
+        "40 à 50 ans" : 37,
+        "plus de 50 ans " : 32
+    },
+    "Surface" : {
+        "0 à 10 HA" : 75,
+        "10 à 20 HA" : 15,
+        "plus de 20 HA" : 10
+    },
+    "Rendement" :{
+        "National" : 50,
+        "Naturel" : 30,
+    },
+    "Finance" :{
+        "Subvient": 63,
+        "Partiellement" : 27,
+        "Non" : 6
+    },
+    "Positif":{
+        "Independant" : 78,
+        "Rencontre" : 73,
+        "Nature": 71,
+        "Intellect": 65
+    },
+    "Negatif" : {
+        "Stress" : 47,
+        "Argent": 43 ,
+        "Physiquement" : 37
+    }
+
+    
+}
