@@ -12,7 +12,6 @@ document.getElementById('continuer').addEventListener("click", function() {
 
 document.getElementById('commencer').addEventListener("click", function() {
   $.fn.fullpage.moveSectionDown();
-  startScene1();
 }, false);
 
 document.getElementById('buttonEncadre1').addEventListener("click", function() {
@@ -20,7 +19,6 @@ document.getElementById('buttonEncadre1').addEventListener("click", function() {
   if (value != 0) {
       value = 0;
       $.fn.fullpage.moveSectionDown();
-      startScene2();
   } else {
     value = 11;
   }
@@ -32,7 +30,6 @@ document.getElementById('buttonEncadre2').addEventListener("click", function() {
   if (value2 != 0) {
       value2 = 0;
       $.fn.fullpage.moveSectionDown();
-      startScene3();
   } else {
     value2 = 11;
   }
