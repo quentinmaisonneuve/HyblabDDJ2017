@@ -291,7 +291,6 @@ video{
     text-anchor: middle;
     fill : black;
     text-shadow: 0 1px 0 #EFF4F9, 1px 0 0 #EFF4F9, -1px 0 0 #EFF4F9, 0 -1px 0 #EFF4F9;
-   /* text-shadow: 0 1px 0 #ffffff, 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 -1px 0 #ffffff;*/
 }
 
 .label,
@@ -312,9 +311,7 @@ video{
 	width : 46%;
 	height: 80%;
 	vertical-align : middle;
-	overflow: hidden;
-	/*border:#333 1px solid;*/
-	
+	overflow: hidden;	
 	bottom: 1px;
 }
 
@@ -593,7 +590,6 @@ video{
 
 @media only screen and (max-width: 750px){
 	#radios{
-		/*height: 3vmin;*/
 		margin-bottom: 1.5vmin;
 	}
 
@@ -642,7 +638,6 @@ video{
 
 @media only screen and (max-width: 750px){
 	#imagePersoYeux{
-		/*height: 3vmin;*/
 		top:62%;
 		height: 5%;
 		width: 4%;
@@ -715,7 +710,6 @@ video{
 	top:63.5%;
 	width: 15%; 
 	height: 23%;
-	/*border: 3px solid #000000; */
 }
 
 #explicationAnnee p{

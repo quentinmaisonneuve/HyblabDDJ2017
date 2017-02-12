@@ -98,8 +98,6 @@ function texte2017(){
 	$('#explication2017').css('display', 'block');
 }
 
-//setTimeout(function(){
-	
 function initDataviz1(){
 	$("#topFlop #topCreate ul").append("<li></li><li></li><li></li>");
     $("#topFlop #topCreate ul li").each(function(i) {
@@ -137,7 +135,5 @@ function initDataviz1(){
 	  	}
 	});
 }
-//}, 2000);
 
-/* ANIMATION MAN */
 

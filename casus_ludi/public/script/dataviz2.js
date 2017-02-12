@@ -1,9 +1,5 @@
 'use strict';
 
-// No need for window.onload event here since we are using the def attribute
-// when loading our scripts
-//setTimeout(function(){
-
 function initDataviz2() {  
     var arrayColor = {"association" : "#96B2F4","budget" : "#5A7DEE","couts-des-services" : "#001DC3","culture" : "#00F365","education" : "#00F02B","election" : "#7897F1","Environnement" : "#00F7BE","equipements" : "#00F483","marche-public" : "#1E47E9","permis-de-construire" : "#3C62EB","pv-deliberations" : "#C3DBF8","subventions" : "#B4CDF6","transport" : "#00F6A0","urbanisme" : "#00F9DB", "France" : "none"}; 
     var regions = ["Auvergne-Rhone-Alpes","Bourgogne-Franche-Comte","Bretagne","Centre-Val-de-Loire","Corse","Grand-Est","Hauts-de-France","Ile-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays-de-la-Loire","Provence-Alpes-Cote-d-Azur"]; 
@@ -13,7 +9,6 @@ function initDataviz2() {
     var svg = d3.select("#circleChart"),
     margin = 20,
     diameter = 500, 
-    //diameter = +svg.attr("width"),
     g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
     var pack = d3.pack()
@@ -42,6 +37,7 @@ function initDataviz2() {
     }); 
 
 /*
+    Position x et y régions
     nodes[1].x =  310; 
     nodes[1].y =  265; 
   
@@ -115,7 +111,6 @@ function initDataviz2() {
         }
     })
     .on("click", function(d) {
-    	console.log(d);	
     	if(regions.indexOf(d.data.id) >= 0) {
     		updateDownload(d.data.id, d.data.name); if (focus !== d) zoom(d), d3.event.stopPropagation();}
     	else {
@@ -133,9 +128,7 @@ function initDataviz2() {
     var node = g.selectAll("circle,text");
 
     svg
-      //.style("background", "#FFFFFF")
       .style("background-image", "url(\"img/france/france.svg\")")
-      //.style("background-position","-5% -3%")
       .style("background-size", "100%")
       .style("background-repeat", false)
       .on("click", function() { updateDownload("france", "france");zoom(root); });
@@ -171,30 +164,6 @@ function initDataviz2() {
   }
 
     var data = datavizDownLoad();
-
-    /*new Chartist.Pie('#downloadChart', {
-      series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
-                {value : data["marche-public"], className : "Cmarche-public"},
-                {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
-                {value : data["budget"], className : "Cbudget"}, 
-                {value : data["election"], className : "Celection"}, 
-                {value : data["association"], className : "Cassociation"}, 
-                {value : data["subventions"], className : "Csubventions"}, 
-                {value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
-                {value : data["urbanisme"], className : "Curbanisme"}, 
-                {value : data["Environnement"], className : "CEnvironnement"},
-                {value : data["transport"], className : "Ctransport"},
-                {value : data["equipements"], className : "Cequipements"},
-                {value : data["culture"], className : "Cculture"}, 
-                {value : data["education"], className : "Ceducation"}]}, 
-    {
-        chartPadding: 0,
-        donut: true,
-        donutWidth: 40,
-        startAngle: 270,
-        total: data["all"]*2,
-        showLabel: false
-    });*/ 
 
     new Chartist.Bar('#downloadChart', {
 		  series: [
@@ -240,34 +209,9 @@ function initDataviz2() {
         });
     }); 
 }
-//}, 8000);
 
 function updateDownload(region, regionName){
     var data = datavizDownLoad(region);
-
-    /*new Chartist.Pie('#downloadChart', {
-      series: [{value : data["couts-des-services"], className : "Ccouts-des-services"},
-                {value : data["marche-public"], className : "Cmarche-public"},
-                {value : data["permis-de-construire"], className : "Cpermis-de-construire"}, 
-                {value : data["budget"], className : "Cbudget"}, 
-                {value : data["election"], className : "Celection"}, 
-                {value : data["association"], className : "Cassociation"}, 
-                {value : data["subventions"], className : "Csubventions"}, 
-                {value : data["pv-deliberations"], className : "Cpv-deliberations"}, 
-                {value : data["urbanisme"], className : "Curbanisme"}, 
-                {value : data["Environnement"], className : "CEnvironnement"},
-                {value : data["transport"], className : "Ctransport"},
-                {value : data["equipements"], className : "Cequipements"},
-                {value : data["culture"], className : "Cculture"}, 
-                {value : data["education"], className : "Ceducation"}]}, 
-    {
-        chartPadding: 0,
-        donut: true,
-        donutWidth: 40,
-        startAngle: 270,
-        total: data["all"]*2,
-        showLabel: false
-    });*/
 
     new Chartist.Bar('#downloadChart', {
 		  series: [
