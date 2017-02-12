@@ -3,84 +3,28 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<title>Les Vignerons Naturels</title>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 	    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
-	    <!-- Optional theme -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	    <!-- Latest compiled and minified JavaScript -->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<title>Les Vignerons Naturels</title>
 	    <link rel="stylesheet" href="css/example.css" />
 	    <link rel="stylesheet" type="text/css" href="css/manWomanChart.css">
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.4.0/echarts.min.js"></script>
-		<!--C3 bibl-->
 		<link href="css/c3.min.css" rel="stylesheet" type="text/css">
 		<script src="js/d3.min.js" charset="utf-8"></script>
 		<script src="js/c3.min.js"></script>
 		<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
-		<style type="text/css">
-		#titre{
-		    color: white;
-		    font-size: -webkit-xxx-large;
-		    font-family: 'Open Sans', sans-serif;
-		    position: absolute;
-		    margin: 115px 45px;
-
-				}
-		#wrapper {
-			margin: 182px 38px 0px;
-		    width: 400px;
-		    overflow: hidden; /* will contain if #first is longer than #second */
-		}
-		#first {
-			margin-right: 16px;
-			width: 140px;
-		    float: left;
-		    color: white;
-		    font-size: 85px;
-		    font-family: 'Open Sans', sans-serif;
-		}
-		#second {
-			color: white;
-		    font-family: -webkit-body;
-		    width: 385px;
-		    font-size: 15px;
-		    margin: 20px 20px;
-		    color: white;
-			font-family: 'Open Sans', sans-serif;
-		     /* if you don't want #second to wrap below #first */
-		}
-		#third {
-			color: white;
-			font-size: 15px;
-		    width: 385px;
-		    margin: 0px 50px;
-		    color: white;
-			font-family: 'Open Sans', sans-serif;
-		     /* if you don't want #second to wrap below #first */
-		}
-
-		.selected {
-		  opacity: 0.75;
-		}
-		 .button{
-		 	background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#faf9f9)); border-radius: 20px;
-		 	margin-right: 10px;
-		 	font-family: -webkit-body;
-		 }
-
-		</style>
 	</head>
-
 
 	<body>
 		<div class="front scroll"> 
 
+			<!-- PANEL TITRE -->
 			<div class="panel" id="panelAcceuil" >
 				<img src="images/topAcceuil.png" class="topbg" id="nuage">
-				
 				<img src="images/middleAcceuil.png" id="louisAcceuil">
 				 <div id="circleintro" class="boxtext">
 	                <div class="contentBoxText">
@@ -107,14 +51,12 @@
 	            <img src="images/titre-01.png" class="titleImg" style="left: -7%;">
 	        </div>
 
-
+	        <!-- PANEL PROFILE -->
 	        <div class="panel" id="panelProfile">
 	            <div class="topbg">
 	                <img src="images/hautprofil.png">
 	            </div>
-
 	            <div id="containerManWoman" >
-
 					<div id ="chartManWoman"></div>
 					<br>
 					<div id ="legendContainer">
@@ -126,7 +68,6 @@
 						</table>
 					</div>
 	            </div>
-	             
 	            <div id="circlehftext" class="boxtext">
 		            <div class="contentBoxText">
 						Un milieu majoritairement masculin
@@ -138,13 +79,12 @@
 						<p>45% d’entre eux refusent d’intégrer l’association des vins naturels (AVN).</p>
 		            </div>
 	            </div>
-
 	            <div class="bottombg">
 	                <img src="images/basprofil.png">
 	            </div>
 	        </div>
 
-
+	        <!-- PANEL BUSINESSMAN -->
 	        <div class="panelTitle" id="titleEntreprise">
 	            <img src="images/titreEntreprise.png" class="titleImg">
 	        </div>
@@ -152,7 +92,6 @@
 	            <div class="topbg">
 	                <img src="images/hautentreprise.png">
 	            </div>
-
 	            	<div class="container" style="width:50%; position: absolute; bottom: 26%; left:16%;">
 						<div id="anotherchart" style="z-index:100000">
 							<!--<canvas id="financeChart"></canvas>-->
@@ -165,37 +104,31 @@
 	            <div id = "potimage">
 					<img src="images/pot.png"/ style="width: 100%;"> 
 				</div>
-
 	            <div id="rendementtext" class="boxtext">
 		            <div class="contentBoxText">
 						Rendement annuel par hectare :
 		            </div>
 	            </div>
-
 	            <div id="argenttext" class="boxtext">
 		            <div class="contentBoxText">
 						La  vente de  vin naturel permet-elle aux vignerons de subvenir à leurs besoins ?
 		            </div>
 	            </div>
-
 	            <div class="bottombg">
 	                <img src="images/entreprisebas.png">
 	            </div>
-	            
-
 	        </div>
+
+	        <!-- PANEL ASPECTS POSITIFS NEGATIFS -->
 	        <div class="panelTitle" id="titleNegaPos" >
 	            <img src="images/titrePosNega.png"  class="titleImgBig">
 	        </div>
-			
 	         <div class="panel" id="panelNegaPos">
-			 
 			  	<div class="boxtext" id="boxnegapos">
 		            <div class="contentBoxText" style="margin-top:2%;">
 						Ce que pensent les vignerons de leur métier
 		            </div>
 	            </div>
-				 
 				<div id="nuagegentil">
 					<img src="images/nuage.png"/>
 				</div>
@@ -209,10 +142,7 @@
 				    </div>
 				</div>
 				-->
-
 				<div  class="intro" style="position: absolute; width: 50%; height: 50%; right: -2%; top: 40%; z-index: 1000">
-
-
 				<!--Point positif-->
 				<div id="poschart" style="position: absolute;"></div>
 
@@ -223,14 +153,11 @@
                       <button id="btnLib" onclick="myFunctionL()" type="button" style="border-radius: 20px; color:#9a901f; " class="button btn btn-default">Libre</button>
                       <button id="btnStim" onclick="myFunctionStim()" type="button" style="border-radius: 20px; color:#9a901f;" class="button btn btn-default">Stimulant</button>
                 </div>
-				
-
             </div>
 
 	            <div class="bottombg">
 	                <img src="images/basNegaPos.png" style="width: 100%; z-index: 1000;">
 	            </div>
-
 	             <!--Point negatif-->
     			<div  class="intro" style="position: absolute; width: 45%; height: 50%; top: 40%; left: 3%; z-index: 1000">
                 <div id="chart1" style="position: absolute;"></div>
@@ -239,9 +166,9 @@
                       <button id="btnF" onclick="myFunctionF()" type="button" style="color: #717575; border-radius: 20px;" class="button btn btn-default">Financièrement difficile</button>
                       <button id="btnP" onclick="myFunctionP()" type="button" style="color: #717575; border-radius: 20px;" class="button btn btn-default">Physiquement difficile</button>
                 </div>
-				
             </div>
-	
+
+            <!-- PANEL GENERATIONNEL -->
 	        </div>
              <div class="panelTitle" id="titleGeneration">
                 <img src="images/titreGeneration.png" class="titleImg" style="left: -2%;">
@@ -255,18 +182,16 @@
                          <div class="titleDiv"> <span class = "conclusiontitle">2008 L’année du vin naturel ?<br></span></div> 61% des vignerons qui ont répondu se sont installés après 2008. Sept fois sur dix, ces derniers exerçaient un autre métier.
                         Malgré leur “jeunesse” au sein de cette profession, ils semblent plus intransigeants vis à vis du soufre. 80% d’entre eux produisent des vins sous la norme proposée par l’AVN (20 mg\l de SO2 total pour les vins rouges et 30 mg\l de SO2 total pour les vins blancs).<br><br>
 
-
                         <div class="titleDiv"><span class = "conclusiontitle">Ce phénomène peut-il s’expliquer par la volonté d’un retour aux sources ?<br></span></div> Les vignerons naturels ont ce lien très fort avec la nature, un goût prononcé pour le vivant.  Pour 87% d’entre eux, cela donne un meilleur goût au vin. <br><br>
                          <div class="titleDiv"><span class = "conclusiontitle">Cette relation particulière avec le raisin serait-il un attachement écologique ?<br></span></div> C’est le cas pour 62,5% des répondants. Une chose est sûre : à la question “<b>Pourriez-vous sortir du vin naturel pour produire du vin conventionnel</b>”, les vignerons répondent <b>NON à 99%</b>...
-
                     </div>
                 </div>
-				<
 				<div id="conclusionimagenon">
 	                <img src="images/non.png" width="50%"/>
 	            </div>
-
             </div> 
+
+            <!-- PANEL CREDITS -->
             <div class="panel" id="panelCredits">
             	<div id="contentcredits">
 	            	<div id="creditdebuttext" class="boxtext">
@@ -274,18 +199,14 @@
 							Projet réalisé dans le cadre du
 			            </div>
 		            </div>
-
 		            <div id="creditfintext" class="boxtext">
 			            <div class="contentBoxText">
 			            	Nous remercions Julie Reux, journaliste, qui nous a fournis les données nécessaires et nous a aiguillé dans la réalisation de ce projet.<br><br>
 							Nous remercions également Matthieu L'Hôtellier, qui a accepté de nous rencontrer en entretien, ainsi que les 50 vignerons ayant répondu à l'enquête.
 			            </div>
 		            </div>
-
 		            <img src="./images/institutionnels/logo_hyblab.png" id="logohyblab">
-
 		            <img src="./images/portraits/bisous.png" id="nous">
-
 					<div id="bandeau">
 					    <!-- Les organisateurs -->
 					    <ul>
@@ -315,7 +236,10 @@
 					</div>
 				</div>
             </div> 
+
 	    </div>
+
+
 	    <script type="text/javascript">
 	        $('#manStat').html("35%");
 	         $('#womanStat').html("65%");
@@ -329,33 +253,7 @@
 	    <script type="text/javascript" src="./js/jquery.jInvertScroll.min.js"></script>
 	    <script type="text/javascript" src="js/moneyChart.js"></script>
 		<script type="text/javascript" src="js/moneyChart2.js"></script>
-	    <script language="JavaScript">
-			var gaugeDiv = document.getElementById("gaugeDiv");
-		    var value1 = 30;
-		    var value2 = 50;
-		    var verticalOffset1 = 0.7;
-		    var verticalOffset2 = 0.7;
-		    var config1 = liquidFillGaugeDefaultSettings();
-		    config1.circleColor = "#460613";
-		    config1.textColor = "#ab9fa2";
-		    config1.waveTextColor = "#460613";
-		    config1.waveColor = "#520000";
-		    config1.circleThickness = 0.1;
-		    config1.textVertPosition = verticalOffset1;
-		    config1.waveAnimateTime = 1000; //Changes the speed of the wave
-		    config1.displayPercent=false; //If put to false we replace the % by any ending text we want
-		    config1.textSize = 0.8;
-		    var gauge1= loadLiquidFillGauge("fillgauge1", value1, config1);
-		    var gauge2= loadLiquidFillGauge("fillgauge2", value2, config1);
-		    /*
-		    function NewValue(){
-		        if(Math.random() > .5){
-		            return Math.round(Math.random()*100);
-		        } else {
-		            return (Math.random()*100).toFixed(1);
-		        }
-		    }*/
-		</script>
+	    <script type="text/javascript" src="js/gauge.js"></script>
 		<script
 			src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
 			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
@@ -373,56 +271,6 @@
 	    	}(jQuery));
 	    </script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <script>
-			var man = 44;
-			var woman = 5;
-			var manPercent = Math.round(man / (man+woman) * 100);
-			var womanPercent = 100-manPercent;
-			var manTooltipText = "<img src=\"images/circleMan.png\" width=\"16px\"/> &nbsp&nbsp <b>homme : ".concat(manPercent).concat(" %</b>");
-			var womanTooltipText = "<img src=\"images/circleWoman.png\" width=\"16px\"/> &nbsp&nbsp <b>femme : ".concat(womanPercent).concat(" %</b>");
-			var figureWidth = "8%"; //change this percentage to have more or less figure per row
-
-			for (i = 0; i < man; i++) { 
-				var elem = document.createElement("img");
-				elem.src = 'images/man.png';
-				elem.className += " manIMG";
-				elem.title = manTooltipText;
-				
-			    document.getElementById("chartManWoman").appendChild(elem);
-			}
-			 var br = document.createElement("br");
-			 document.getElementById("chartManWoman").appendChild(br);
-			for (i = 0; i < woman; i++) { 
-				var elem = document.createElement("img");
-				elem.src = 'images/woman.png';
-				elem.className += " womanIMG";
-				elem.title = womanTooltipText;
-			    document.getElementById("chartManWoman").appendChild(elem);
-			}
-
-			$("#manTD" )
-			  .hover(function() {
-				$('.womanIMG').css({ opacity: 0.5 });
-			  }, function() {
-			    $('.womanIMG').css({ opacity: 1 });
-			  })
-			$("#womanTD" )
-			  .hover(function() {	
-				$('.manIMG').css({ opacity: 0.5 });
-			  }, function() {
-			    $('.manIMG').css({ opacity: 1 });
-			  })
-			  
-			  
-			$(document).ready(function(){
-				$('.manIMG').tooltip({ html : true });   
-			});
-			$(document).ready(function(){
-				$('.womanIMG').tooltip({ html : true });   
-			});
-
-			$(".manIMG").width(figureWidth);
-			$(".womanIMG").width(figureWidth);
-		</script>
+	    <script src="./js/manWomanChart.js"></script>
 	</body>
 </html>

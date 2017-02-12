@@ -619,3 +619,53 @@ position: relative;
 #contentcredits{
   left: 2%;
 }
+
+#titre{
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    margin: 115px 45px;
+
+    }
+#wrapper {
+  margin: 182px 38px 0px;
+    width: 400px;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#first {
+  margin-right: 16px;
+  width: 140px;
+    float: left;
+    color: white;
+    font-size: 85px;
+    font-family: 'Open Sans', sans-serif;
+}
+#second {
+  color: white;
+    font-family: -webkit-body;
+    width: 385px;
+    font-size: 15px;
+    margin: 20px 20px;
+    color: white;
+  font-family: 'Open Sans', sans-serif;
+     /* if you don't want #second to wrap below #first */
+}
+#third {
+  color: white;
+  font-size: 15px;
+    width: 385px;
+    margin: 0px 50px;
+    color: white;
+  font-family: 'Open Sans', sans-serif;
+     /* if you don't want #second to wrap below #first */
+}
+
+.selected {
+  opacity: 0.75;
+}
+ .button{
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#faf9f9)); border-radius: 20px;
+  margin-right: 10px;
+  font-family: -webkit-body;
+ }
