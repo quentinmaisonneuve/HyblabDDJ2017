@@ -62,7 +62,9 @@ function startScene1() {
     .transition()
         .attr('x', key3.p_x())
         .attr('y', key3.p_y())
-        .duration(key3.duration)
+        .duration(key3.duration);
+
+    actualScene = 1;
 }
 
 function startScene2() {
@@ -89,6 +91,8 @@ function startScene2() {
         .attr('x', key3.p_x())
         .attr('y', key3.p_y())
         .duration(key3.duration);
+
+    actualScene = 2;
 }
 
 function startScene3() {
@@ -117,6 +121,8 @@ function startScene3() {
         .attr('x', key3.p_x())
         .attr('y', key3.p_y())
         .duration(key3.duration);
+
+    actualScene = 3;
 }
 
 function enableCarScene() {
@@ -294,3 +300,4 @@ function updateCarSceneSize() {
 enableCarScene();
 init();
 updateCar();
+var actualScene = 0;
