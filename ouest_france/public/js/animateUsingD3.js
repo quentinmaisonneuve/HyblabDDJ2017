@@ -52,7 +52,7 @@ function startScene1() {
             .attr('x', key0.p_x())
             .attr('y', key0.p_y())
             .duration(0)
-    .transition().delay(2000)
+    .transition().delay(20)
         .attr('x', key1.p_x())
         .attr('y', key1.p_y())
         .duration(key1.duration)
@@ -78,7 +78,7 @@ function startScene2() {
             .attr('x', key0.p_x())
             .attr('y', key0.p_y())
             .duration(0)
-    .transition().delay(2000)
+    .transition().delay(20)
         .attr('x', key1.p_x())
         .attr('y', key1.p_y())
         .duration(key1.duration)
@@ -106,7 +106,7 @@ function startScene3() {
             .attr('x', key0.p_x())
             .attr('y', key0.p_y())
             .duration(0)
-    .transition().delay(2000)
+    .transition().delay(20)
         .attr('x', key1.p_x())
         .attr('y', key1.p_y())
         .duration(key1.duration)
@@ -172,6 +172,7 @@ var carImg = {
         + (this.translate.y - this.center.y + dy) + ")";   
    },
    reset : function () {
+        this.el.transition().remove();
         this.scale = 1.0;
         this.translate.x = 0;
         this.translate.y = 0;
