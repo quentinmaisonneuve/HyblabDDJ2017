@@ -1,0 +1,1505 @@
+[
+  {
+    "NOM": "Bilbao",
+    "PRENOM": "Andrea",
+    "VILLE": "Madrid",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Dimitriadis",
+    "PRENOM": "Dimitri",
+    "VILLE": "Athènes",
+    "PAYS": "Grèce",
+    "GENRE": "H",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Ebner",
+    "PRENOM": "Caroline",
+    "VILLE": "Munich",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Ghervan",
+    "PRENOM": "Raluca",
+    "VILLE": "Cluj-Napoca",
+    "PAYS": "Roumanie",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Haller",
+    "PRENOM": "Dora",
+    "VILLE": "Budapest",
+    "PAYS": "Hongrie",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Jolivet",
+    "PRENOM": "Estelle",
+    "VILLE": "Cholet",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Sahlberg",
+    "PRENOM": "Anja",
+    "VILLE": "Göteborg",
+    "PAYS": "Suède",
+    "GENRE": "F",
+    "TEAM": 1,
+    "": ""
+  },
+  {
+    "NOM": "Lebedjem",
+    "PRENOM": "Ina",
+    "VILLE": "Leipzig",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Fichou",
+    "PRENOM": "Killian",
+    "VILLE": "Ajaccio",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Cavaco",
+    "PRENOM": "Vanessa",
+    "VILLE": "Lisbonne",
+    "PAYS": "Portugal",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Katona",
+    "PRENOM": "Reka",
+    "VILLE": "Gyöngyöstarja'n",
+    "PAYS": "Hongrie",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Wacker",
+    "PRENOM": "Valérie",
+    "VILLE": "St Gall",
+    "PAYS": "Suisse",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Thun",
+    "PRENOM": "Fabian",
+    "VILLE": "Remscheid-Lennep",
+    "PAYS": "Allemagne",
+    "GENRE": "H",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Persson",
+    "PRENOM": "Elsa",
+    "VILLE": "Göteborg",
+    "PAYS": "Suède",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Ramos de Castro",
+    "PRENOM": "Maria",
+    "VILLE": "Zamora",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 2,
+    "": ""
+  },
+  {
+    "NOM": "Le Berre",
+    "PRENOM": "Sylvain",
+    "VILLE": "Héric",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Lienhart",
+    "PRENOM": "Carina",
+    "VILLE": "Graz",
+    "PAYS": "Autriche",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Graziani",
+    "PRENOM": "Francesca",
+    "VILLE": "Pescara",
+    "PAYS": "Italie",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Parola",
+    "PRENOM": "Rémi",
+    "VILLE": "Pornic",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Montel",
+    "PRENOM": "Pierre",
+    "VILLE": "Nantes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Seoanne Orro",
+    "PRENOM": "Alicia",
+    "VILLE": "Ferrol",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Monkman",
+    "PRENOM": "Amy",
+    "VILLE": "Ripon",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Petrova",
+    "PRENOM": "Darina",
+    "VILLE": "Helsinki",
+    "PAYS": "Finlande",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Jahn",
+    "PRENOM": "Elisabeth",
+    "VILLE": "Dresde",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Viana",
+    "PRENOM": "Clara",
+    "VILLE": "Porto",
+    "PAYS": "Portugal",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Heurtebize",
+    "PRENOM": "Jérôme",
+    "VILLE": "Laval",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Simpson",
+    "PRENOM": "Kathryn",
+    "VILLE": "Waterford",
+    "PAYS": "Irlande",
+    "GENRE": "F",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Verron",
+    "PRENOM": "Camille",
+    "VILLE": "Nantes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 3,
+    "": ""
+  },
+  {
+    "NOM": "Lord",
+    "PRENOM": "Ellie",
+    "VILLE": "Sheffield",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Diensi",
+    "PRENOM": "Yedi",
+    "VILLE": "Anvers",
+    "PAYS": "Belgique",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Paravidino",
+    "PRENOM": "Elisa",
+    "VILLE": "Bologne",
+    "PAYS": "Italie",
+    "GENRE": "F",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Parola",
+    "PRENOM": "Rémi",
+    "VILLE": "Pornic",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Erichsen",
+    "PRENOM": "Annika",
+    "VILLE": "Berlin",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Krzyzewska",
+    "PRENOM": "Joanna",
+    "VILLE": "Lublin",
+    "PAYS": "Pologne",
+    "GENRE": "F",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Alonso",
+    "PRENOM": "Diego",
+    "VILLE": "Valladolid",
+    "PAYS": "Espagne",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Lunz",
+    "PRENOM": "Patrick",
+    "VILLE": "Schweinfurt",
+    "PAYS": "Allemagne",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Jahn",
+    "PRENOM": "Elisabeth",
+    "VILLE": "Dresde",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Oellig",
+    "PRENOM": "Tobias",
+    "VILLE": "Tübingen",
+    "PAYS": "Allemagne",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Batail",
+    "PRENOM": "Pierre-Antoine",
+    "VILLE": "Nantes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 4,
+    "": ""
+  },
+  {
+    "NOM": "Bertolo Lueiro",
+    "PRENOM": "Adela",
+    "VILLE": "Pontevedra",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Schultz",
+    "PRENOM": "Ilioné",
+    "VILLE": "Lyon",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Villard",
+    "PRENOM": "Linn",
+    "VILLE": "Fribourg",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Belozerova",
+    "PRENOM": "Liza",
+    "VILLE": "Riga",
+    "PAYS": "Lettonie",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Du Bois",
+    "PRENOM": "Gatien",
+    "VILLE": "Bruxelles",
+    "PAYS": "Belgique",
+    "GENRE": "H",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Weil",
+    "PRENOM": "Elina",
+    "VILLE": "Strabourg",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Astilean",
+    "PRENOM": "Anca",
+    "VILLE": "Cluj-Napoca",
+    "PAYS": "Roumanie",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Cullen",
+    "PRENOM": "Alex",
+    "VILLE": "Dublin",
+    "PAYS": "Irlande",
+    "GENRE": "H",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Langlois",
+    "PRENOM": "Mireille",
+    "VILLE": "Québec",
+    "PAYS": "Canada",
+    "GENRE": "F",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Lapia",
+    "PRENOM": "Roberto",
+    "VILLE": "Nuoro",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 5,
+    "": ""
+  },
+  {
+    "NOM": "Fachal",
+    "PRENOM": "Barbara",
+    "VILLE": "A Coruna",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Brunois",
+    "PRENOM": "Alexandra",
+    "VILLE": "Laon",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Still",
+    "PRENOM": "Victoria",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Vinck",
+    "PRENOM": "Karen",
+    "VILLE": "Aartselaar",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Vida",
+    "PRENOM": "Sandor",
+    "VILLE": "Budapest",
+    "PAYS": "Hongrie",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Van Tillborg",
+    "PRENOM": "Britt",
+    "VILLE": "Wilrijk",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Novotna",
+    "PRENOM": "Hanka",
+    "VILLE": "Vrchlabi",
+    "PAYS": "République-Tchèque",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Headon",
+    "PRENOM": "Claudia",
+    "VILLE": "Birr",
+    "PAYS": "Irlande",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Impay",
+    "PRENOM": "Joanna",
+    "VILLE": "Colchester",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Mellino",
+    "PRENOM": "Emiliano",
+    "VILLE": "",
+    "PAYS": "Italie-Argentine",
+    "GENRE": "H",
+    "TEAM": 6,
+    "": ""
+  },
+  {
+    "NOM": "Zuri",
+    "PRENOM": "Rita",
+    "VILLE": "Cologne",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Pereira Rodriguez",
+    "PRENOM": "Nerea",
+    "VILLE": "Vigo",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Roberts",
+    "PRENOM": "Clare",
+    "VILLE": "Retford",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Chachaty",
+    "PRENOM": "Helen",
+    "VILLE": "Lyon",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Vida",
+    "PRENOM": "Zsuzsanna",
+    "VILLE": "Budapest",
+    "PAYS": "Hongrie",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Bruydonckx",
+    "PRENOM": "Anne-Sophie",
+    "VILLE": "Landelies",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Dupin",
+    "PRENOM": "Lucie",
+    "VILLE": "Bourgueil",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Dumas",
+    "PRENOM": "Thibault",
+    "VILLE": "Paris",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Taranova",
+    "PRENOM": "Yulia",
+    "VILLE": "",
+    "PAYS": "Russie",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Herms",
+    "PRENOM": "Katrin",
+    "VILLE": "",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 7,
+    "": ""
+  },
+  {
+    "NOM": "Caglioni",
+    "PRENOM": "Licia",
+    "VILLE": "Bergamo",
+    "PAYS": "Italie",
+    "GENRE": "F",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Krajcso",
+    "PRENOM": "Linda",
+    "VILLE": "Budapest",
+    "PAYS": "Hongrie",
+    "GENRE": "F",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Vilkisiute",
+    "PRENOM": "Odeta",
+    "VILLE": "Alytus",
+    "PAYS": "Lituanie",
+    "GENRE": "F",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Robert",
+    "PRENOM": "Simon",
+    "VILLE": "Rennes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Cauchie",
+    "PRENOM": "Charline",
+    "VILLE": "Mons",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Ivanova",
+    "PRENOM": "Valya",
+    "VILLE": "Sofia",
+    "PAYS": "Bulgarie",
+    "GENRE": "F",
+    "TEAM": 8,
+    "": ""
+  },
+  {
+    "NOM": "Ribes Leal",
+    "PRENOM": "Laura",
+    "VILLE": "Valence",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Frey",
+    "PRENOM": "Rosaura",
+    "VILLE": "Amsterdam",
+    "PAYS": "Pays-Bas",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Wagner",
+    "PRENOM": "Katharina",
+    "VILLE": "Vienne",
+    "PAYS": "Autriche",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Alamancos Rios",
+    "PRENOM": "Carlos",
+    "VILLE": "Arzua",
+    "PAYS": "Espagne",
+    "GENRE": "H",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Navanayagam",
+    "PRENOM": "Dhatri",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Nield",
+    "PRENOM": "Katie",
+    "VILLE": "Wolverhampton",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Osborne",
+    "PRENOM": "Alexandra",
+    "VILLE": "Doncaster",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Brantegem",
+    "PRENOM": "Matthias",
+    "VILLE": "Gent",
+    "PAYS": "Belgique",
+    "GENRE": "H",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Alexander Webber",
+    "PRENOM": "Miranda",
+    "VILLE": "Kent",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Herms",
+    "PRENOM": "Katrin",
+    "VILLE": "Dortmund",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Oakes",
+    "PRENOM": "Tara",
+    "VILLE": "Southport",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Yakoucheva",
+    "PRENOM": "Youlia",
+    "VILLE": "",
+    "PAYS": "Russie",
+    "GENRE": "F",
+    "TEAM": 9,
+    "": ""
+  },
+  {
+    "NOM": "Vale",
+    "PRENOM": "Giovanni",
+    "VILLE": "Gemona del Friuli",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Saccoccio",
+    "PRENOM": "Anna",
+    "VILLE": "Venise",
+    "PAYS": "Italie",
+    "GENRE": "F",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Gajic",
+    "PRENOM": "Jovana",
+    "VILLE": "Novi Sad",
+    "PAYS": "Serbie",
+    "GENRE": "F",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Cotton",
+    "PRENOM": "Johnny",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Wagner-Nagy",
+    "PRENOM": "Thomas",
+    "VILLE": "Karlsuhe",
+    "PAYS": "Hongrie",
+    "GENRE": "H",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Battenhausen",
+    "PRENOM": "Eva-Lena",
+    "VILLE": "Friedberg",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Stankova",
+    "PRENOM": "Iglika",
+    "VILLE": "Sofia",
+    "PAYS": "Bulgarie",
+    "GENRE": "F",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Gavrinevova",
+    "PRENOM": "Kristyna",
+    "VILLE": "Prague",
+    "PAYS": "République-Tchèque",
+    "GENRE": "F",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Gheerbrant",
+    "PRENOM": "James",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 10,
+    "": ""
+  },
+  {
+    "NOM": "Gorecki",
+    "PRENOM": "Mélina",
+    "VILLE": "Calais",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Yustres",
+    "PRENOM": "Victor",
+    "VILLE": "Barcelone",
+    "PAYS": "Spain",
+    "GENRE": "H",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Wynn",
+    "PRENOM": "Samantha",
+    "VILLE": "Barnsley - Sheffield",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Seddon",
+    "PRENOM": "Paul",
+    "VILLE": "Kettering",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Systermans",
+    "PRENOM": "Laurianne",
+    "VILLE": "Lille",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Hauraix",
+    "PRENOM": "Samuel",
+    "VILLE": "Nort-sur-Erdre",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 11,
+    "": ""
+  },
+  {
+    "NOM": "Bularda",
+    "PRENOM": "Daniela",
+    "VILLE": "Bucarest",
+    "PAYS": "Roumanie",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Lelan",
+    "PRENOM": "Claire",
+    "VILLE": "Bayonne",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Papin",
+    "PRENOM": "Florent",
+    "VILLE": "Rennes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Feldman",
+    "PRENOM": "Anna",
+    "VILLE": "Oxford",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Groppi",
+    "PRENOM": "Dario",
+    "VILLE": "Bruxelles",
+    "PAYS": "Belgique",
+    "GENRE": "H",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "O'Brien",
+    "PRENOM": "Richard",
+    "VILLE": "Peterborough",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Lerch",
+    "PRENOM": "Isabel",
+    "VILLE": "Berlin",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Wilputte",
+    "PRENOM": "Delphine",
+    "VILLE": "Bruxelles",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Six",
+    "PRENOM": "Flora",
+    "VILLE": "Bruxelles",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 12,
+    "": ""
+  },
+  {
+    "NOM": "Tazir",
+    "PRENOM": "Leila",
+    "VILLE": "Montreuil",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Peteva",
+    "PRENOM": "Lyubomira",
+    "VILLE": "Sofia",
+    "PAYS": "Bulgarie",
+    "GENRE": "F",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Segrétain",
+    "PRENOM": "Thomas",
+    "VILLE": "",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Vandermeulen",
+    "PRENOM": "Micha",
+    "VILLE": "Bruxelle",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Franci",
+    "PRENOM": "Manuele",
+    "VILLE": "",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Bavaveas",
+    "PRENOM": "Ilias-Loannis",
+    "VILLE": "",
+    "PAYS": "Grèce",
+    "GENRE": "H",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Luket",
+    "PRENOM": "Alexia",
+    "VILLE": "",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 13,
+    "": ""
+  },
+  {
+    "NOM": "Black",
+    "PRENOM": "Nina",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Hall-Luke",
+    "PRENOM": "Sophie",
+    "VILLE": "",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Hodgson",
+    "PRENOM": "Kara",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Örberg",
+    "PRENOM": "Viktor",
+    "VILLE": "Stokolm",
+    "PAYS": "Suède",
+    "GENRE": "H",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Hassner",
+    "PRENOM": "Lovisa",
+    "VILLE": "Ljusdal",
+    "PAYS": "Suède",
+    "GENRE": "F",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Marer",
+    "PRENOM": "Bea",
+    "VILLE": "",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Gentile",
+    "PRENOM": "Pietro",
+    "VILLE": "Bari",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Valençot",
+    "PRENOM": "Corentin",
+    "VILLE": "Toulouse",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 14,
+    "": ""
+  },
+  {
+    "NOM": "Lopolito",
+    "PRENOM": "Paolo",
+    "VILLE": "Bologne",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Martin",
+    "PRENOM": "Yaiza",
+    "VILLE": "Valladolid",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Klaric",
+    "PRENOM": "Matea",
+    "VILLE": "Split",
+    "PAYS": "Croatie",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Parent",
+    "PRENOM": "Salomé",
+    "VILLE": "Paris",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Celms",
+    "PRENOM": "Lisa",
+    "VILLE": "",
+    "PAYS": "France / Etats-Unis",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Bucklow",
+    "PRENOM": "Harriet",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Ortiz",
+    "PRENOM": "Anna",
+    "VILLE": "Barcelone",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Farina",
+    "PRENOM": "Andréas",
+    "VILLE": "Rome",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Valentin",
+    "PRENOM": "Lucia",
+    "VILLE": "",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Velasco",
+    "PRENOM": "Pauline",
+    "VILLE": "",
+    "PAYS": "Méxique / Etats-Unis",
+    "GENRE": "F",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Lopez",
+    "PRENOM": "Gaspard",
+    "VILLE": "",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 15,
+    "": ""
+  },
+  {
+    "NOM": "Wright",
+    "PRENOM": "Peter",
+    "VILLE": "",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 16,
+    "": ""
+  },
+  {
+    "NOM": "Duc",
+    "PRENOM": "Stefano",
+    "VILLE": "Florence",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 16,
+    "": ""
+  },
+  {
+    "NOM": "Besançon",
+    "PRENOM": "Raphaëlle",
+    "VILLE": "Beaufay",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 16,
+    "": ""
+  },
+  {
+    "NOM": "Dominguez",
+    "PRENOM": "Paula",
+    "VILLE": "Séville",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 16,
+    "": ""
+  },
+  {
+    "NOM": "Ellwood",
+    "PRENOM": "Sophie",
+    "VILLE": "Claverton Down",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 16,
+    "": ""
+  },
+  {
+    "NOM": "Moreau",
+    "PRENOM": "Maren",
+    "VILLE": "Meise",
+    "PAYS": "Belgique",
+    "GENRE": "F",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Tchipashvili",
+    "PRENOM": "Lika",
+    "VILLE": "",
+    "PAYS": "Lanchkhuti Georgie",
+    "GENRE": "F",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Campbell",
+    "PRENOM": "Oliver",
+    "VILLE": "Bristol",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Lindsay",
+    "PRENOM": "Annabel",
+    "VILLE": "Londres",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Hodgson",
+    "PRENOM": "Leah",
+    "VILLE": "",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Frey",
+    "PRENOM": "Léo",
+    "VILLE": "Strasbourg",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Colin",
+    "PRENOM": "Pauline",
+    "VILLE": "Paris",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 17,
+    "": ""
+  },
+  {
+    "NOM": "Davis",
+    "PRENOM": "Leah",
+    "VILLE": "",
+    "PAYS": "Egham,Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 18,
+    "": ""
+  },
+  {
+    "NOM": "Cotterell",
+    "PRENOM": "Vanessa",
+    "VILLE": "Düsseldorf",
+    "PAYS": "Allemagne",
+    "GENRE": "F",
+    "TEAM": 18,
+    "": ""
+  },
+  {
+    "NOM": "Alessandrini",
+    "PRENOM": "Andrea",
+    "VILLE": "Piacenza",
+    "PAYS": "Italie",
+    "GENRE": "H",
+    "TEAM": 18,
+    "": ""
+  },
+  {
+    "NOM": "Turner",
+    "PRENOM": "Oliver",
+    "VILLE": "Rochester Kent",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 18,
+    "": ""
+  },
+  {
+    "NOM": "Rybárová",
+    "PRENOM": "Bibiána",
+    "VILLE": "Trstená",
+    "PAYS": "Slovaquie",
+    "GENRE": "F",
+    "TEAM": 18,
+    "": ""
+  },
+  {
+    "NOM": "Smith",
+    "PRENOM": "Austin",
+    "VILLE": "Bristol",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Gallanti",
+    "PRENOM": "Lidia",
+    "VILLE": "Milan",
+    "PAYS": "Italie",
+    "GENRE": "F",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Jones",
+    "PRENOM": "Bethan",
+    "VILLE": "Oxford",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Kamate",
+    "PRENOM": "Mehdi",
+    "VILLE": "Saint Jacques de la Lande",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Vastel",
+    "PRENOM": "Julia",
+    "VILLE": "",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Chandesris",
+    "PRENOM": "Simon",
+    "VILLE": "Nantes",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Kersken",
+    "PRENOM": "Lara",
+    "VILLE": "Nantes",
+    "PAYS": "France",
+    "GENRE": "F",
+    "TEAM": 19,
+    "": ""
+  },
+  {
+    "NOM": "Standish",
+    "PRENOM": "Benjamin",
+    "VILLE": "Nottingham",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 20,
+    "": ""
+  },
+  {
+    "NOM": "Ellis",
+    "PRENOM": "George",
+    "VILLE": "Bristol",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "H",
+    "TEAM": 20,
+    "": ""
+  },
+  {
+    "NOM": "Ockenden",
+    "PRENOM": "Jessica",
+    "VILLE": "Oxford",
+    "PAYS": "Royaume-Uni",
+    "GENRE": "F",
+    "TEAM": 20,
+    "": ""
+  },
+  {
+    "NOM": "Bayarte",
+    "PRENOM": "Paula",
+    "VILLE": "Saragosse",
+    "PAYS": "Espagne",
+    "GENRE": "F",
+    "TEAM": 20,
+    "": ""
+  },
+  {
+    "NOM": "Deschanel",
+    "PRENOM": "Thibaut",
+    "VILLE": "Carquefou",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 20,
+    "": ""
+  },
+  {
+    "NOM": "Geneste",
+    "PRENOM": "Stephane",
+    "VILLE": "Paris",
+    "PAYS": "France",
+    "GENRE": "H",
+    "TEAM": 20,
+    "": ""
+  }
+]

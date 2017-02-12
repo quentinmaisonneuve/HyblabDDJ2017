@@ -1,0 +1,124 @@
+.cd-vertical-nav {
+  position: fixed;
+  z-index: 1;
+  overflow-y: auto;
+  transition: transform 0.2s;
+  border-radius: 0.25em;
+  right: 0;
+  top: 0;
+  bottom: auto;
+  height: 100vh;
+  width: 90px;
+  max-width: none;
+  max-height: none;
+  background-color: transparent;
+  display: table;
+  z-index: 100;
+}
+.cd-vertical-nav a {
+  display: block;
+  padding: 1em;
+  color: #3a2c41;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(58, 44, 65, 0.1);
+}
+.cd-vertical-nav a.active {
+  color: #c0a672;
+}
+
+.cd-vertical-nav::before {
+  /* this is the navigation background */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.no-touch .cd-vertical-nav:hover::before, .touch .cd-vertical-nav::before {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-vertical-nav ul {
+  /* vertically align <ul> inside <nav>*/
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.cd-vertical-nav a {
+  position: relative;
+  padding: 3em 0 0;
+  margin: 1.4em auto;
+  border-bottom: none;
+  font-size: 1.2rem;
+  color: #eaf2e3;
+}
+.cd-vertical-nav a.active {
+  color: #eaf2e3;
+}
+.cd-vertical-nav a::before, .cd-vertical-nav a::after {
+  /* used to create the filled circle and the background icon */
+  content: '';
+  position: absolute;
+  left: 50%;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-vertical-nav a::before {
+  /* filled circle */
+  top: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background: #eaf2e3;
+  -webkit-transform: translateX(-50%) scale(0.25);
+  -moz-transform: translateX(-50%) scale(0.25);
+  -ms-transform: translateX(-50%) scale(0.25);
+  -o-transform: translateX(-50%) scale(0.25);
+  transform: translateX(-50%) scale(0.25);
+  -webkit-transition: -webkit-transform 0.4s, background-color 0.2s;
+  -moz-transition: -moz-transform 0.4s, background-color 0.2s;
+  transition: transform 0.4s, background-color 0.2s;
+}
+.cd-vertical-nav a.active::before, .no-touch .cd-vertical-nav a:hover::before {
+  background-color: #D6E39C;
+}
+.cd-vertical-nav .label {
+  display: block;
+  /* Force Hardware Acceleration */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+/*Modification du point*/
+.no-touch .cd-vertical-nav:hover a::before, .no-touch .cd-vertical-nav:hover a::after, .touch .cd-vertical-nav li:nth-of-type(n) a::before, .touch .cd-vertical-nav li:nth-of-type(n) a::after {
+  transform: translateX(-50%) scale(1);
+}
+/*Affichage texte*/
+.no-touch .cd-vertical-nav:hover .label, .touch .cd-vertical-nav .label {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}

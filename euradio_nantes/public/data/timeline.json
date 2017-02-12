@@ -1,0 +1,65 @@
+{
+    "_comment": "les date ne correspondent pas forcement à la date correspondant à l'image, c'est pour le positionnement sur la timeline",
+    "data": [
+        {
+            "date": "01/01/2005",
+            "display": "2005",
+            "img": "2005.gif",
+            "description": "Référendum sur la constitution Européenne : les français se sont exprimés !"
+        },
+        {
+            "date": "01/01/2006",
+            "display": "2006",
+            "img": "2006.gif",
+            "description": "Création de l’association Radio Européenne Nantaise et obtention d’une fréquence FM, que l’aventure commence ! "
+        },
+        {
+            "date": "01/01/2007",
+            "display": "2007",
+            "img": "2007.gif",
+            "description": "Une directrice, un nom, des murs : EuradioNantes est née."
+        },
+        {
+            "date": "01/07/2007",
+            "display": "",
+            "img": "2007-2.gif",
+            "description": "Les portes d’EuradioNantes s’ouvrent, la première promo d’étudiants étrangers prend place en studio. "
+        },
+        {
+            "date": "01/01/2008",
+            "display": "2009",
+            "img": "2009.gif",
+            "description": "“Triste” constat : 59% d’abstention aux élections parlementaires européennes "
+        },
+        {
+            "date": "01/01/2009",
+            "display": "2011",
+            "img": "2011.gif",
+            "description": "Diffusion de l’émission “Citoyens et Responsables” en direct du Parlement Européen  "
+        },
+        {
+            "date": "01/01/2010",
+            "display": "2014",
+            "img": "2014.gif",
+            "description": "Élections Européennes : l'euroscepticisme demeure."
+        },
+        {
+            "date": "01/01/2011",
+            "display": "2015",
+            "img": "2015.gif",
+            "description": "Vague d’attentats, l’Europe est meurtrie."
+        },
+        {
+            "date": "01/01/2012",
+            "display": "2016",
+            "img": "2016.gif",
+            "description": "Choc historique, le Brexit questionne l’avenir de l’Europe et créé une rupture sans précédent."
+        },
+        {
+            "date": "01/01/2013",
+            "display": "2017",
+            "img": "2017.gif",
+            "description": "D’autant plus investie, et déterminée à prôner une europe solidaire, EuradioNantes devient Euradio et se déploie au niveau national. A terme, 13 antennes locales animeront l’hexagone !"
+        }
+    ]
+}

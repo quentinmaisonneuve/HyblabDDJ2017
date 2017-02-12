@@ -1,0 +1,57 @@
+{
+	"audiencePourcentage":
+	{
+		"homme":58,
+		"femme":38
+	},
+
+	"provenancePaysPourcentage":
+	[
+		{
+          "label": "Italie",
+          "y": 206,
+          "indexLabel": "2,65%"
+        },
+
+        {
+          "label": "Belgique",
+          "y": 189,
+          "indexLabel": "2,43%"
+        },
+        {
+          "label": "Espagne",
+          "y": 105,
+          "indexLabel": "1,35%"
+        },
+        {
+          "label": "Allemagne",
+          "y": 98,
+          "indexLabel": "1,26%"
+        },
+        {
+          "label": "Royaume-Uni",
+          "y": 83,
+          "indexLabel": "1,07%"
+        },
+        {
+          "label": "Etats Unis",
+          "y": 63,
+          "indexLabel": "0,81%"
+        },
+        {
+          "label": "Canada",
+          "y": 48,
+          "indexLabel": "0,62%"
+        },
+        {
+          "label": "Suisse",
+          "y": 36,
+          "indexLabel": "0,46%"
+        },
+        {
+          "label": "Portugal",
+          "y": 31,
+          "indexLabel": "0,4%"
+        }
+	]
+}
