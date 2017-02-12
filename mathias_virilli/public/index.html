@@ -1,40 +1,562 @@
-<!DOCTYPE html>
-<html lang="fr"> <!-- Notre page est en français -->
-  <head>
-    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-    <meta charset="utf-8">
-    <title>Hyblab 2016</title>
-		<!-- Basic viewport setting for mobile friendly page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Déclaration de la feuille de style du document-->
-    <link rel="stylesheet" href="css/style.css">
-		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/example.js" defer></script>
-  </head>
-  <body>
-    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entre murs et frontières : notre ouverture au monde</title>
+	<meta name="title" content="Entre murs et frontières : notre ouverture au monde" />
 
-    <!-- l'entête de la page: titre, barre de recherche -->
-    <header>
-			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
-      <h1>Hyblab Datajournalism 2017</h1>
-    </header>
+	<meta content="//www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="//www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="img/favicon.png"> 
+	<meta name="author" content="La Pangée">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+        <link href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="js/d3.slider.js"></script>
+	<script type="text/javascript" src="https://d3js.org/topojson.v2.min.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/d3.slider.css">
+	
+        
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+		window.onload = function() {
+		    fetchRegions();
+		    updateCarteMurs(undefined, YEAR_BEGIN);
+		}
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
 
-    <!-- Le contenu du site -->
-    <p>Replace this content by your web app !</p>
 
-		<p>Here is some data from a json file : <span id="data"></span><p>
 
-    <!-- Notre pied de page -->
-    <footer>
-      <p>Copyright Hyblab team 2017</p>
-    </footer>
+        <section class="page1">
+        <div class="page_container">
+          <div class="wrap aligncenter">
+              <h1><strong>Entre murs et frontières </strong></h1>
+              <h2>notre ouverture au monde</h2>
+              <p class="text-intro">
+La chute du mur de Berlin en 1989 a ravivé l’espoir d’un monde moins divisé. Alors qu’il ne restait à l’époque qu’une quinzaine de barrières, nous avons cru que celles-ci tomberaient à leur tour, et que les frontières s'ouvriraient. 
+Pourtant, à l’heure où la mondialisation accroît les échanges entre les nations, où la révolution numérique permet aux utilisateurs de communiquer partout dans le monde et à tout moment, les frontières n’ont paradoxalement jamais été aussi nombreuses. 
+Murs, check-points, douanes, contrôles aux frontières ou encore visas : autant de démarcations utilisées par les États pour marquer la séparation entre deux pays et se protéger de son voisin.
+            </p>
+            <p class="text-intro2">
+Alors que l’espace Schengen est remis en cause par certains en réponse à la crise migratoire et que Donald Trump annonce la construction d’un mur entre les Etats-Unis et le Mexique, nous avons souhaité dresser un constat actualisé sur l’état des frontières dans le monde. Nous nous sommes penchés sur les murs construits depuis la fin de la guerre froide et les raisons pour lesquelles ils se dressaient aujourd’hui. Interrogés par la notion de frontière, nous avons aussi fait appel aux visas et aux tarifs douaniers en nous posant la même question simple : qu’en est-il de notre ouverture au monde ?
+            </p>
+          </div>
+          </section>
+
+		   <section class="page2">
+             <div id="bar">
+                 
+        <div class='btn-cont btn-murs'>
+          <a class='btn' href='#'>
+            Murs
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+         
+        <div class='btn-cont btn-visas'>
+          <a class='btn' href='#7'>
+            Visa
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             
+            <div class='btn-cont btn-asie btn-first'>
+              <a class='btn' href='#'>
+                Asie
+                <span class='line-1'></span>
+                <span class='line-2'></span>
+                <span class='line-3'></span>
+                <span class='line-4'></span>
+              </a>
+            </div>
+                 
+         
+        <div class='btn-cont btn-europe btn-secnd'>
+          <a class='btn' href='#'>
+            Europe
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             
+
+ 
+        <div class='btn-cont btn-moyenO btn-third'>
+          <a class='btn' href='#'>
+            Moyen Orient
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+     
+        <div class='btn-cont btn-conclu'>
+          <a class='btn' href='#8'>
+            Conclusion
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
     </div>
-  </body>
+			<h2> L'évolution des murs dans le monde </h2>
+			<div id="carte-murs"></div>
+			<div id="slider3"></div>
+			
+			
+			<ul id="objets-separations">
+			    <li>Raison de la construction des murs :</li>
+			</ul>
+			
+			<div id="graphique-mur"></div>
+
+			<div id="affichage-annee">1989</div>
+			
+			
+            <script src="js/carte-murs.js"></script>
+            <script src="js/carte-regions.js"></script>
+			<script type="text/javascript" src="js/graphique-mur.js"></script>
+          
+          <p class="source-donnees">
+            Source : <a href="https://docs.google.com/spreadsheets/d/14Pq4416MIi4BX3gZAtFv0CuaDNxkpio4ZFArnwcIrQ8/edit#gid=1976504896">Mathias Virilli</a>
+          </p>
+          
+          <object id="legende-carte-murs" type="image/svg+xml" data="img/legende-carte-murs.svg">
+         </object>
+         
+         </section>
+		  
+		  
+         <section class="page3">
+         <div id="bar">
+             
+            <div class='btn-cont btn-asie btn-first'>
+              <a class='btn' href='#'>
+                Asie
+                <span class='line-1'></span>
+                <span class='line-2'></span>
+                <span class='line-3'></span>
+                <span class='line-4'></span>
+              </a>
+            </div>
+                 
+         
+        <div class='btn-cont btn-europe btn-secnd'>
+          <a class='btn' href='#'>
+            Europe
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             
+
+ 
+        <div class='btn-cont btn-moyenO btn-third'>
+          <a class='btn' href='#'>
+            Moyen Orient
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+
+        <div class='btn-cont btn-conclu'>
+          <a class='btn' href='#'>
+            Conclusion
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+    </div> <!-- Bar -->
+
+
+
+
+
+         <object type="image/svg+xml" data="img/Amerique.svg" width="100%" height="100%">
+         </object>
+         </section>
+
+
+
+
+
+         <section class="page4">
+         <div id="bar">
+             
+        <div class='btn-cont btn-usa btn-first'>
+          <a class='btn' href='#'>
+            Amérique du Nord
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+         
+     
+        <div class='btn-cont btn-europe btn-secnd'>
+          <a class='btn' href='#'>
+            Europe
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+         
+ 
+        <div class='btn-cont btn-moyenO btn-third'>
+          <a class='btn' href='#'>
+            Moyen Orient
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+         
+
+
+     
+        <div class='btn-cont btn-conclu'>
+          <a class='btn' href='#'>
+            Conclusion
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+
+        </div> <!-- Bar -->
+
+         <object type="image/svg+xml" data="img/Asie.svg" width="100%" height="100%"> 
+         </object >
+         </section>
+
+
+
+
+
+         <section class="page5">
+         <div id="bar">
+             
+    <div class='btn-cont btn-usa btn-first'>
+      <a class='btn' href='#'>
+        Amérique du Nord
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+     
+    <div class='btn-cont btn-asie btn-secnd'>
+      <a class='btn' href='#'>
+        Asie
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+
+ 
+    <div class='btn-cont btn-moyenO btn-third'>
+      <a class='btn' href='#'>
+        Moyen Orient
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+
+
+    <div class='btn-cont btn-conclu'>
+      <a class='btn' href='#'>
+        Conclusion
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         </div>
+
+
+
+
+         <object type="image/svg+xml" data="img/Europe.svg" width="100%" height="100%"> 
+         </object>
+         </section>
+
+        <section class="page6">
+         <div id="bar">
+             
+    <div class='btn-cont btn-usa btn-first'>
+      <a class='btn' href='#'>
+        Amérique du Nord
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+     
+    <div class='btn-cont btn-asie btn-secnd'>
+      <a class='btn' href='#'>
+        Asie
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+
+ 
+    <div class='btn-cont btn-europe btn-third'>
+      <a class='btn' href='#'>
+        Europe
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+
+
+    <div class='btn-cont btn-conclu'>
+      <a class='btn' href='#'>
+        Conclusion
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         </div>
+
+
+
+
+         <object type="image/svg+xml" data="img/MoyenOrient.svg" width="100%" height="100%"> </object>
+         </section>
+
+		 <section class="page7">
+         <div id="bar">
+             
+    <div class='btn-cont btn-murs'>
+      <a class='btn' href='#'>
+        Murs
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+     
+    <div class='btn-cont btn-visas'>
+      <a class='btn' href='#3'>
+        Visa
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         
+
+ 
+    <div class='btn-cont btn-conclu'>
+      <a class='btn' data-index="8" href='#8'>
+        Conclusion
+        <span class='line-1'></span>
+        <span class='line-2'></span>
+        <span class='line-3'></span>
+        <span class='line-4'></span>
+      </a>
+    </div>
+         </div>
+
+          <object id="mapVisas" type="image/svg+xml" data="img/visa.svg" width="100%" height="100%">
+          </object>
+          
+          <p class="source-donnees">
+            Source : <a href="https://www.passportindex.org/">passportindex.org</a>
+          </p>
+         </section>
+
+
+         <section class="page8">
+            <div class="page_container">
+              <div class="wrap aligncenter">
+                  <h1><strong>Conclusion</strong></h1>
+                  <p class="text-intro">
+                    On dénombre aujourd’hui une soixantaine de murs à travers le monde pour 40 000 km de long. De l’Europe à l’Asie en passant par le Moyen-Orient ou encore l’Amérique, de nombreux projets se succèdent… Une question subsiste pourtant : sont-ils vraiment efficaces ?
+                  </p>           
+              </div>
+            </div>
+              
+              
+          <div id="bandeau-logos">
+              <!-- Logo Hyblab -->
+                <a href="http://www.hyblab.fr/"><img id="hyblab" src="img/logo_hyblab.png" alt="Hyblab DataSport"></a>
+
+                <!-- Les organisateurs -->
+                <ul>
+                  <li><a href="http://www.ouestmedialab.fr/"><img src="img/logo_oml.png" alt="Ouest Médialab"></a></li>
+                  <li><a href="http://www.agrnantes.fr"><img src="img/ecoles/logo_agr.png" alt="AGR école de l'image"></a></li>
+                  <li><a href="http://www.univ-nantes.fr/"><img src="img/ecoles/logo_universitenantes.jpg" alt="Université de Nantes"></a></li>
+                  <li><a href="http://www.polytech.univ-nantes.fr/"><img src="img/ecoles/logo_polytech.png" alt="Polytech Nantes"></a></li>
+                  <li><a href="http://sciencescom.audencia.com/"><img src="img/ecoles/logo_sciencescom.jpg" alt="SciencesCom"></a></li>
+                </ul>
+                <!-- Les autres logos -->
+                <ul>
+                  <!-- Logos CC et opensource -->
+                  <li>
+                  <ul>
+                    <li class="stacked"><img id="cc" src="img/logo_cc.png" alt="Creative commons"></li>
+                    <li class="stacked"><img id="opensource" src="img/logo_opensource.png" alt="Open source"></li>
+                  </ul>
+                  </li>
+                  <!-- Logo de votre partenaire -->
+                  <!-- <li><a href="http://www.auran.org"><img src="img/partenaires/logo_auran.png" alt="AURAN"></a></li> -->
+                  <!-- Partenaires institutionnels -->
+                  <li><a href="http://www.paysdelaloire.fr/"><img class="institutionnel" src="img/institutionnels/logo_pdl.png" alt="Pays de La Loire"></a></li>
+                  <li><a href="http://www.stereolux.fr"><img class="institutionnel" src="img/institutionnels/logo_stereolux.png" alt="Stereolux"></a></li>
+                  <li><a href="http://www.nantesmetropole.fr/"><img class="institutionnel" src="img/institutionnels/logo_nantesmetropole.png" alt="Nantes Métropole"></a></li>
+                </ul>
+            </div>   
+         </section>
+         
+         
+         <section class="page9">
+         
+             <div id="bar">
+                 
+        <div class='btn-cont btn-murs'>
+          <a class='btn' href='#'>
+            Murs
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             
+         
+        <div class='btn-cont btn-visas'>
+          <a class='btn' href='#3'>
+            Visa
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             
+
+     
+        <div class='btn-cont btn-conclu'>
+          <a class='btn' data-index="8" href='#8'>
+            Conclusion
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+             </div>
+             
+             
+          <div id="credits" class="wrap aligncenter">
+              <h1 id="titre-credits">LA PANGÉE :</h1>
+               <ul>
+                <li>
+                  <h2>LES GRAPHISTES :</h2>
+                  <ul>
+                    <li><img src="img/photos_membres/UhlrichAgatheAGR.png" alt="Photo de Agathe UHLRICH"/><br/>Agathe UHLRICH</li>
+                    <li><img src="img/photos_membres/MarchandLaryAGR.png" alt="Photo de Lary MARCHAND"/><br/>Lary MARCHAND</li>
+                    <li><a href="http://marinefevrier.portfoliobox.io/"><img src="img/photos_membres/FevrierMarineAGR.png" alt="Photo de Marine FÉVRIER"/><br/>Marine FÉVRIER</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>LES RÉDACTEURS :</h2>
+                  <ul>
+                    <li><img src="img/photos_membres/VinceCyrielleAudenciaSciencesCom.png" alt="Photo de Cyrielle VINCE"/><br/>Cyrielle VINCE</li>
+                    <li><img src="img/photos_membres/RoxaneThébaudAudenciaSciencesCom.png" alt="Photo de Roxane THEBAUD"/><br/>Roxane THEBAUD</li>
+                    <li><img src="img/photos_membres/BinetEmmanuelleAudenciaSciencesCom.png" alt="Photo de Emanuelle BINET"/><br/>Emanuelle BINET</li>
+                    <li><img src="img/photos_membres/PaulMescusAudenciaSciencesCom.png" alt="Photo de Paul MESCUS"/><br/>Paul MESCUS</li>
+                  </ul>
+                </li>
+               </ul>
+               <ul>
+                <li>
+                  <h2>LE PORTEUR DE PROJET :</h2>
+                  <ul>
+                    <li><a href="https://twitter.com/shamathou"><img src="img/photos_membres/VirilliMathiasJournaliste.png" alt="Photo de Mathias VIRILLI"/><br/>Mathias VIRILLI</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>LES DÉVELOPPEURS :</h2>
+                  <ul>
+                    <li><a href="http://ache.one"><img src="img/photos_membres/GiraudeauHedyPolytech.png" alt="Photo de Hédy GIRAUDEAU"/><br/>Hédy GIRAUDEAU</a></li>
+                    <li><img src="img/photos_membres/PétillonPierrePolytech.png" alt="Photo de Pierre PÉTILLON"/><br/>Pierre PÉTILLON</li>
+                    <li><img src="img/photos_membres/HuangQianyingPolytech.png" alt="Photo de Qianying HUANG"/><br/>Qianying HUANG</li>
+                    <li><img src="img/photos_membres/PigeonHugoPolytech.png" alt="Photo de Hugo PIGEON"/><br/>Hugo PIGEON</li>
+                  </ul>
+                </li>
+               </ul>
+            </div>
+        </section>
+    </div>
+    
+  </div>
+</body>
 </html>
