@@ -7,6 +7,9 @@
     "express": "^4.10.2",
     "request": "^2.48.0"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "",
   "license": "MIT"
 }
