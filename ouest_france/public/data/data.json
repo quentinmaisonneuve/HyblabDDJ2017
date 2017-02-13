@@ -1,0 +1,74 @@
+﻿[
+    {
+        "area": "d30",
+        "data": [
+            {
+                "type": "matrix",
+                "subtype": "mode",
+                "docs": [
+                    {
+                        "path": "data/csv",
+                        "files": [
+                            {
+                                "name": "MOD_D30_Mode_Marche",
+                                "ext": "csv",
+                                "content": "marche"
+                            },
+                            {
+                                "name": "MOD_D30_Mode_Velo",
+                                "ext": "csv",
+                                "content": "velo"
+                            },
+                            {
+                                "name": "MOD_D30_Mode_TC",
+                                "ext": "csv",
+                                "content": "tc"
+                            },
+                            {
+                                "name": "MOD_D30_Mode_Voiture",
+                                "ext": "csv",
+                                "content": "voiture"
+                            },
+                            {
+                                "name": "MOD_D30_Mode_Total",
+                                "ext": "csv",
+                                "content": "total"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "matrix",
+                "subtype": "motif",
+                "docs": [
+                    {
+                        "path": "data/csv",
+                        "files": [
+                            {
+                                "name": "MOD_D30_Motif_Etudes",
+                                "ext": "csv",
+                                "content": "etudes"
+                            },
+                            {
+                                "name": "MOD_D30_Motif_Travail",
+                                "ext": "csv",
+                                "content": "travail"
+                            },
+                            {
+                                "name": "MOD_D30_Motif_Autre_AD",
+                                "ext": "csv",
+                                "content": "autre"
+                            },
+                            {
+                                "name": "MOD_D30_Motif_Sous_Total",
+                                "ext": "csv",
+                                "content": "total"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

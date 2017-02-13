@@ -1,40 +1,267 @@
-<!DOCTYPE html>
-<html lang="fr"> <!-- Notre page est en français -->
-  <head>
-    <!-- Il est obligatoire de préciser un encodage de caractères et un titre pour la page -->
-    <meta charset="utf-8">
-    <title>Hyblab 2016</title>
-		<!-- Basic viewport setting for mobile friendly page -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Déclaration de la feuille de style du document-->
-    <link rel="stylesheet" href="css/style.css">
-		<!-- Those polyfills are required so that old browsers support fetch mecanism -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
-		<!-- Simple sample script that loads data from a dummy json file -->
-		<script src="js/example.js" defer></script>
-  </head>
-  <body>
-    <!-- Ce conteneur est la seule balise div que l'on s'autorise pour effectuer la mise en page du site -->
-    <!-- On pourrait bien sûr en ajouter d'autres pour se faciliter la mise en page -->
-    <!-- Mais on va s'efforce de respecter et brouiller le moins possible la structure logique du contenu -->
-    <div id="container">
+﻿<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml" height="100%">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- l'entête de la page: titre, barre de recherche -->
-    <header>
-			<img src="img/logo_hyblab.png" alt="logo hyblab"/>
-      <h1>Hyblab Datajournalism 2017</h1>
-    </header>
+        <!-- Transports Urbains - Hyblab 2017 -->
+        <title>En route !</title>
 
-    <!-- Le contenu du site -->
-    <p>Replace this content by your web app !</p>
+        <meta name="author" content="Guillaume DOUSSET, Ronan JAMET, Corentin MARIE, Tudal LE BOT, Jinbo LIU" />
+        <meta name="description" content="Hyblab 2017 - Data journalisme. ScienceCom, AGR, Polytech Nantes. Transports urbains" />
+        <meta name="keywords"  content="hyblab,loire-atlantique,transports" />
+        <meta name="Resource-type" content="Document" />
 
-		<p>Here is some data from a json file : <span id="data"></span><p>
+        <!-- Basic viewport setting for mobile friendly page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Notre pied de page -->
-    <footer>
-      <p>Copyright Hyblab team 2017</p>
-    </footer>
-    </div>
-  </body>
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="shortcut icon" href="img/favicon.jpg" type="image/jpeg">
+
+        <!--[if IE]>
+            <script type="text/javascript">
+                 var console = { log: function() {} };
+            </script>
+        <![endif]-->
+
+        <!-- Libraries -->
+        <script type="text/javascript" src="lib/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/jquery-ui.min.js" defer></script>
+        <script type="text/javascript" src="lib/jquery.fullPage.min.js" defer></script>
+        <script type="text/javascript" src="lib/jquery.fittext.js" defer></script>
+        <script type="text/javascript" src="lib/d3.v3.min.js"></script>
+
+        <!-- Load index and data -->
+        <script type="text/javascript" src="js/load.js" defer></script>
+
+        <!-- Load map -->
+        <script type="text/javascript" src="js/map.js" defer></script>
+
+        <script type="text/javascript" src="js/datavizEvent.js" defer></script>
+        <script type="text/javascript" src="js/dataviz.js" defer></script>
+
+        <!-- Add event listener to transport mode choice -->
+        <script type="text/javascript" src="js/animateTransportModeSelection.js" defer></script>
+
+        <!-- Responsive text -->
+        <script type="text/javascript" src="js/responsive-text.js" defer></script>
+
+        <!-- Hide nav slide during story -->
+        <script type="text/javascript" src="js/noSlideNav.js" defer></script>
+
+        <!-- Add animations -->
+        <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
+
+        <!-- Configuration de fullPage.js -->
+        <script type="text/javascript">                       
+            $(document).ready(function() {
+                var idsOfSections = ["section0", "section1", "section2", "scenario1", "scenario2", "scenario3", "section6"];
+                function navLiUpdate() { 
+                    var old = document.getElementsByClassName("active-li")[0];
+                    var str = old.className.replace("active-li", ""); 
+                    old.className = str; // on remove l'ancienne balise "active-li" pour assurer l'unicité
+                    
+                    var index = idsOfSections.indexOf(document.getElementsByClassName('active')[0].id); // on récupère l'index de la slide actuellement affichée
+                    
+                    document.getElementById("fp-nav").childNodes[1].childNodes[2*index+1].className = "active-li"; // on définit la balise de la slide nav correspondante à la slide affichée comme étant la nouvelle "active-li"
+                };
+                
+                $('#fullpage').fullpage({
+                  afterLoad: function () {updateSlideNav(); navLiUpdate();}, // pour qu'après chaque chargement de slide, fullPage lance les fonctions updateSlideNav() du modules noSlideNav.js et navLiUpdate() définie ci-dessus
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <nav id="fp-nav" class="right">
+            <ul>
+                <li class="active-li"><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li style="display: none"><a><span></span></a></li>
+                <li><a><span></span></a></li>
+            </ul>
+        </nav>
+
+        <div id="fullpage">
+
+            <section class="section active" id="section0">
+                <article class="content">
+                  
+                  <article>
+                      <img class="background" id="home" src="img/HOME-BASE-FINAL.svg"/>
+                      
+                      <a href="https://twitter.com/transporthyblab"><img class="rs" id="twitter" src="img/rs/twitter.ico"></img></a>
+                      <a href="https://www.instagram.com/en_route_hyblab/"><img class="rs" id="instagram" src="img/rs/instagram.png"></img></a>
+                      <a href="https://github.com/kendearoth/HyblabDDJ2017/tree/ouest_france/ouest_france"><img class="rs" id="github" src="img/rs/github.png"></img></a>
+                  </article>
+                  
+                  <article id="textIntro">
+                    <p class="ArialR" id="text">
+                      Voiture, bus, vélo, chaque jour vous effectuez plus de 5 millions de déplacements. Découvrez qui sont ces anonymes, parfois stressés, souvent pressés, malpolis ou bienveillants, que l’on croise chaque matin et chaque soir, sans même s’en rendre compte.
+                    </p>
+                    <input class="bebas" type="button" id="enroute"  value="EN ROUTE !"/>
+                  </article>
+                </article>
+            </section>
+
+            <section class="section" id="section1">
+                <input class="bebas" type="button" id="continuer" value="C'EST PARTI"/>
+                <article class="intro" id="carteContainer">
+                    <svg id="carte"></svg>
+                </article>
+                <img class="footer" id="houses1" src="img/footer/Visuel-Footer.svg">
+            </section>
+
+            <section class="section" id="section2">
+                <article classe="middle" id="center">
+                  <input class="bebas" type="button" id="commencer" value="COMMENCER"/>
+                </article>
+                <input type="button" class="middle" id="arrow_l">
+                <svg id="modeTransport" viewBox="0 0 800 1200"></svg>
+                <input type="button" class="middle" id="arrow_d">
+                <img class="footer" id="houses2" src="img/footer/Visuel-Footer.svg">
+            </section>
+
+            <section class="section" id="scenario1">
+                <article class="intro" id="container1">
+                    <img class="base" id="base1" src="img/map-base-01.svg">
+                    <article id="encadre1">
+                      <img id="info" src="img/Volet-Infos.svg">
+                      <p class="bebas" id="number">?</p>
+                      <p class="bebas" id="paragraphe_encadre1">PERSONNES PARTAGENT LA ROUTE AVEC VOUS</p>
+                      <img id="sol" src="img/dataviz1/carre_perso.svg">
+                      <img id="people" src="">
+                    </article>
+                    <img class="logo_of" id="drapeau1" src="img/Point-Info.svg">
+                    <input type="button" class="openInfo" id="buttonEncadre1">
+                    <aside class="effect1"></aside>
+                    <svg id="carScene"></svg>
+                </article>
+            </section>
+
+            <section class="section" id="scenario2">
+                <article class="intro" id="container2">
+                    <img class="base" id="base2" src="img/map-base-02.svg">
+                    <article id="encadre2">
+                      <img id="info2" src="img/Volet-Infos.svg">
+                      <p id="intro2">COMME VOUS ILS FONT CE TRAJET...</p>
+                      <p id="txtvoiture">EN VOITURE</p>
+                      <p id="pourcentVoiture">?<span>%</span></p>
+                      <p id="txtCommun">EN TRANSPORT EN COMMUN</p>
+                      <p id="pourcentCommun">?<span>%</span></p>
+                      <p id="txtVelo">À VELO</p>
+                      <p id="pourcentVelo">?<span>%</span></p>
+                      <p id="txtPied">À PIED</p>
+                      <p id="pourcentPied">?<span>%</span></p>
+                      <img id="sol2" src="img/route2.svg">
+                      <img id="transport" src="img/Voiture-Gauche.svg">
+                      <aside id="bar-demo"></aside>
+                    </article>
+                    <img class="logo_of" id="drapeau2" src="img/Point-Info.svg">
+                    <input type="button" class="openInfo" id="buttonEncadre2">
+                    <div class="effect2"></div>
+                </article>
+            </section>
+
+            <section class="section" id="scenario3">
+                <article class="intro" id="container3">
+                    <img class="base" id="base3" src="img/map-base-03.svg">
+                    <article id="encadre3">
+                      <img id="info3" src="img/Volet-Infos.svg">
+                      <p id="intro3">SUR LES TRAJETS DEPUIS OU VERS LE DOMICILE</p>
+                      <p id="txtTravail">POUR LE TRAVAIL</p>
+                      <p id="pourcentTravail">?<span>%</span></p>
+                      <p id="txtEtude">POUR LES ÉTUDES</p>
+                      <p id="pourcentEtude">?<span>%</span></p>
+                      <p id="txtAutres">POUR LES ACTIVITÉS PERSONNELLES (LOISIRS, ACHATS, SOCIALES)</p>
+                      <p id="pourcentAutres">?<span>%</span></p>
+                      <img id="sol3" src="img/plateforme.svg">
+                      <img id="motif" src="img/usine.svg">
+                      <aside id="bar-demo-3"></aside>
+                    </article>
+                    <img class="logo_of" id="drapeau" src="img/Point-Info.svg">
+                    <input type="button" class="openInfo" id="buttonEncadre3">
+                    <aside class="effect3"></aside>
+                </article>
+            </section>
+
+            <section class="section" id="section6">
+                <article class="intro" id="conclusion">
+                    <p class="bebas" id="conclu1">
+                      EN VOUS FAISANT DÉCOUVRIR LA RÉALITÉ DES DÉPLACEMENT EN LOIRE-ATLANTIQUE, "EN ROUTE!" ESPÈRE VOUS AVOIR ÉGALEMENT FAIT
+                      RÉFLÉCHIR À NOS MODES DE TRANSPORTS. FAIRE LES BONS CHOIX POUR SE DÉPLACER, C'EST AUSSI UNE FAÇON DE SE FACILITER LA VIE,
+                      AINSI QUE CELLE DE TOUS CES ANONYMES QUE NOUS CROISONS.
+                    </p>
+                    <article class="ecole">
+                      <article id="Polytech">
+                        <p class="ec">POLYTECH</p>
+                      </article>
+                      <article id="AGR">
+                        <p class="ec">AGR</p>
+                      </article>
+                      <article id="Sciencecom">
+                        <p class="ec">AUDENCIA SCIENCESCOM</p>
+                      </article>
+                    </article>
+                    <article id="credits">
+                      <article id="ePolytech">
+                        <p class="noms">Ronan Jamet</p>
+                        <p class="noms">Tudal Le Bot</p>
+                        <p class="noms">Jinbo Liu</p>
+                        <p class="noms">Guillaume Dousset</p>
+                        <p class="noms">Corentin Marie</p>
+                      </article>
+                      <article id="eAGR">
+                        <p class="noms">Anthony Richefou</p>
+                        <p class="noms">Nathan Allard</p>
+                      </article>
+                      <article id="eSciencecom">
+                        <p class="noms">Bastien Gauriau</p>
+                        <p class="noms">Mathieu Rivy</p>
+                        <p class="noms">Raphaël Thureau</p>
+                      </article>
+                    </article>
+                </article>
+
+                <p id="copyright">Copyright © Hyblab team 2017</p>
+                <article id="bandeau">
+                    <!-- Logo Hyblab -->
+                    <a href="http://www.hyblab.fr/"><img id="hyblab" src="img/footerConclusion/logo_hyblab.png" alt="Hyblab DataJournalisme 2017"></a>
+
+                    <!-- Les organisateurs -->
+                    <ul>
+                        <li><a href="http://www.ouestmedialab.fr/"><img src="img/footerConclusion/logo_oml.png" alt="Ouest Médialab"></a></li>
+                        <li><a href="http://www.agrnantes.fr"><img src="img/footerConclusion/ecoles/logo_agr.png" alt="AGR école de l'image"></a></li>
+                        <li><a href="http://www.univ-nantes.fr/"><img src="img/footerConclusion/ecoles/logo_universitenantes.jpg" alt="Université de Nantes"></a></li>
+                        <li><a href="http://www.polytech.univ-nantes.fr/"><img src="img/footerConclusion/ecoles/logo_polytech.png" alt="Polytech Nantes"></a></li>
+                        <li><a href="http://sciencescom.audencia.com/"><img src="img/footerConclusion/ecoles/logo_sciencescom.jpg" alt="SciencesCom"></a></li>
+                    </ul>
+
+                    <!-- Les autres logos -->
+                    <ul>
+                      <!-- Logos CC et opensource -->
+                      <li>
+                      <ul>
+                        <li class="stacked"><img id="cc" src="img/footerConclusion/logo_cc.png" alt="Creative commons"></li>
+                        <li class="stacked"><img id="opensource" src="img/footerConclusion/logo_opensource.png" alt="Open source"></li>
+                      </ul>
+                      </li>
+
+                      <!-- Logo de votre partenaire -->
+                      <li><a href="http://www.ouest-france.fr"><img src="img/footerConclusion/partenaires/logo_ouestfrance.png" alt="OUEST-FRANCE"></a></li>
+
+                      <!-- Partenaires institutionnels -->
+                      <li><a href="http://www.paysdelaloire.fr/"><img class="institutionnel" src="img/footerConclusion/institutionnels/logo_pdl.png" alt="Pays de La Loire"></a></li>
+                      <li><a href="http://www.stereolux.fr"><img class="institutionnel" src="img/footerConclusion/institutionnels/logo_stereolux.png" alt="Stereolux"></a></li>
+                      <li><a href="http://www.nantesmetropole.fr/"><img class="institutionnel" src="img/footerConclusion/institutionnels/logo_nantesmetropole.png" alt="Nantes Métropole"></a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </body>
 </html>
