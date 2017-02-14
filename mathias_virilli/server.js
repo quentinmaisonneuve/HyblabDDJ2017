@@ -4,6 +4,7 @@
 // Load usefull expressjs and nodejs objects / modules
 var express = require('express');
 var path = require('path');
+var fs = require('fs');
 
 var app = express();
 

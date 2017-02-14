@@ -1,0 +1,206 @@
+{
+	"langueTemps":
+		[
+		  {
+		    "langue": "Français",
+		    "temps": 3755,
+		    "pourcentage": "60,32"
+		  },
+		  {
+		    "langue": "Anglais",
+		    "temps": 2030,
+		    "pourcentage": "32,61"
+		  },
+		  {
+		    "langue": "Espagnol",
+		    "temps": 70,
+		    "pourcentage": "1,12"
+		  },
+		  {
+		    "langue": "Italien",
+		    "temps": 70,
+		    "pourcentage": "1,12"
+		  },
+		  {
+		    "langue": "Allemand",
+		    "temps": 180,
+		    "pourcentage": "2,89"
+		  },
+		  {
+		    "langue": "Portugais",
+		    "temps": 120,
+		    "pourcentage": "1,93"
+		  },
+		  {
+		    "langue": "TOTAL",
+		    "temps": 6225,
+		    "pourcentage": 100
+		  }
+		],
+	"paysTemps":
+		[
+		  {
+		    "pays": "Allemand",
+		    "temps": 180,
+		    "pourcentage": "2,89"
+		  },
+		  {
+		    "pays": "Belgique",
+		    "temps": 300,
+		    "pourcentage": "4,82"
+		  },
+		  {
+		    "pays": "Espagne",
+		    "temps": 60,
+		    "pourcentage": "0,96"
+		  },
+		  {
+		    "pays": "USA",
+		    "temps": 60,
+		    "pourcentage": "0,96"
+		  },
+		  {
+		    "pays": "Italie",
+		    "temps": 80,
+		    "pourcentage": "1,29"
+		  },
+		  {
+		    "pays": "Montenegro",
+		    "temps": 120,
+		    "pourcentage": "1,93"
+		  },
+		  {
+		    "pays": "Portugal",
+		    "temps": 120,
+		    "pourcentage": "1,93"
+		  },
+		  {
+		    "pays": "UK",
+		    "temps": 180,
+		    "pourcentage": "2,89"
+		  },
+		  {
+		    "pays": "France",
+		    "temps": 5125,
+		    "pourcentage": "82,33"
+		  },
+		  {
+		    "pays": "TOTAL",
+		    "temps": 6225,
+		    "pourcentage": 100
+		  }
+	],
+	"categories":
+		[
+			{
+				"nom":"info",
+				"data":
+				[
+				  {
+				    "langue": "Francais",
+				    "temps": 1455,
+				    "pourcentage": "93,57"
+				  },
+				  {
+				    "langue": "Anglais",
+				    "temps": 10,
+				    "pourcentage": "0,64"
+				  },
+				  {
+				    "langue": "Espagnol",
+				    "temps": 10,
+				    "pourcentage": "0,64"
+				  },
+				  {
+				    "langue": "Italien",
+				    "temps": 80,
+				    "pourcentage": "5,14"
+				  }
+				]
+
+			},
+			{
+				"nom":"musicale",
+				"data":
+				[
+				  {
+				    "langue": "Anglais",
+				    "temps": 1890,
+				    "pourcentage": "55,75"
+				  },
+				  {
+				    "langue": "Francais",
+				    "temps": 1200,
+				    "pourcentage": "35,4"
+				  },
+				  {
+				    "langue": "Espagnol",
+				    "temps": 60,
+				    "pourcentage": "1,77"
+				  },
+				  {
+				    "langue": "Portugais",
+				    "temps": 120,
+				    "pourcentage": "3,54"
+				  },
+				  {
+				    "langue": "Allemand",
+				    "temps": 120,
+				    "pourcentage": "3,54"
+				  }
+				]
+
+			},
+			{
+				"nom":"culture",
+				"data":[
+				  {
+				    "langue": "Anglais",
+				    "temp": 60,
+				    "pourcentage": 100
+				  }
+				]
+			},
+			{
+				"nom":"debat",
+				"data":
+				[
+				  {
+				    "langue": "Francais",
+				    "temps": 780,
+				    "pourcentage": "86,67"
+				  },
+				  {
+				    "langue": "Anglais",
+				    "temps": 60,
+				    "pourcentage": "6,67"
+				  },
+				  {
+				    "langue": "Allemand",
+				    "temps": 60,
+				    "pourcentage": "6,67"
+				  }
+				]
+			},
+			{
+				"nom":"politique",
+				"data":[
+				  {
+				    "langue": "Francais",
+				    "temp": 80,
+				    "pourcentage": 100
+				  }
+				]
+			},
+			{
+				"nom":"societe",
+				"data":[
+				  {
+				    "langue": "Francais",
+				    "temp": 240,
+				    "pourcentage": 100
+				  }
+				]
+			}
+		]
+}

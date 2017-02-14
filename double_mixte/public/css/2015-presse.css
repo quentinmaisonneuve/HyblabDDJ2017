@@ -1,0 +1,33 @@
+#presse2015{
+	position: absolute;	
+	display: none;
+	left: 8vw;
+    top: 25vh;
+	text-align:center;
+	vertical-align:center;
+	background-image:url(../img/coupure_presse.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+#textepresse2015 {
+	position:relative;
+	font-size:1.1vw;
+	width:70%;
+	text-align:center;
+	margin:auto;
+	top:15%;
+    color:#ffffff;
+    font-weight: bold;
+}
+#titrepresse2015 {
+	position:relative;
+	float:right;
+	margin-right:8%;
+	margin-top:10%;
+	font-size:1vw;
+	text-align:right;
+    font-weight: bold;
+}
+#datepresse2015{
+	display:inline-block;
+}

@@ -1,15 +1,1084 @@
-/* just a sample css rule to show that everything works */
-footer p
+@CHARSET "UTF-8";
+
+@font-face
 {
-  font-size: small;
+    font-family: 'Borg';
+    src: url("../font/Borg.ttf");
+}
+
+@font-face
+{
+    font-family: 'Bebasneue_B';
+    src: url("../font/BEBASNEUE_BOLD.ttf");
+}
+
+.sectio
+{
+    display: none;
+}
+
+@font-face
+{
+    font-family: 'Bebasneue';
+    src: url("../font/BebasNeue.otf");
+}
+
+.bebas
+{
+    font-family: 'Bebasneue_B';
+}
+
+@font-face {
+  font-family: 'ArialR';
+  src: url('../font/Arial-Regular.ttf');
+}
+
+.ArialR
+{
+  font-family: 'ArialR';
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    text-align: center;
+}
+
+header img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+h2
+{
+    color: #C2DEBC;
+    font-size: 4vmin;
+    text-align: center;
+    top: 2vh;
+    width: 75vw;
+    margin: 0 12.5vw;
+}
+
+h3
+{
+    color: #C2DEBC;
+    font-size: 4vmin;
+    text-align: center;
+    top: 25vh;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p
+{
+    color: white;
+}
+
+#enroute
+{
+    cursor: pointer;
+    display: block;
+    top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    color: #35a8e0;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 11vw;
+    height: 5vh;
+}
+
+#section1, #section2, #section6
+{
+    background: linear-gradient(to bottom, #0f4864, #35a8e0);
+}
+
+#scenario1, #scenario2, #scenario3
+{
+    background-color: #efefef;
+}
+
+.footer
+{
+    /*pour pallier le fait que l'image débute par du transparent on la décale sur la gauche*/
+    position: absolute;
+    bottom: -5vh;
+    left: -2vw;
+    /*et on l'étend un peu plus que la largeur de la fenêtre pour pallier le fait que l'image se termine par du transparent*/
+    width: 104vw;
+}
+
+.content
+{
+    background: linear-gradient(to bottom, #216c99, #35a4dc);
+    position: fixed;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+#home
+{
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    left: 0vh;
+    width: 100%;
+    height: 100%;
+}
+
+#textIntro
+{
+    z-index: 1;
+    position: absolute;
+    width: 31vw;
+    bottom: 2vw;
+    left: 67vw;
+    text-align: justify;
+}
+
+#center
+{
+    position: absolute;
+    bottom: 10vh;
+    left: 28.5vw;
+    height: 67vh;
+}
+
+#center h2
+{
+    z-index: 3;
+    font-family: 'Borg';
+    position: absolute;
+    width: 23vw;
+    height: 36vh;
+    font-size: 8em;
+    text-align: -webkit-left;
+    color: white;
+    top: -19vh;
+    left: -6vh;
+}
+
+#center h5
+{
+    position: absolute;
+    color: white;
+    left: 9.2vw;
+    top: -24vh;
+    font-size: 1.3em;
+    width: 23vw;
+}
+
+#commencer
+{
+    z-index: 4;
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    color: #216c99;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 13vw;
+    height: 5vh;
+    bottom: 10%;
+    left: 21vw;
+}
+
+#continuer
+{
+    z-index: 4;
+    position: absolute;
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    color: #216c99;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 13vw;
+    height: 5vh;
+    bottom: 10%;
+    left: 3%;
+}
+
+#section2 #car
+{
+    z-index: 2;
+    position: absolute;
+    bottom: 49vh;
+    left: 25vw;
+    height: 21vh;
+    width: 16vw;
+    animation: mymove 5s infinite;
+    -moz-animation: mymove 5s infinite; /*Firefox*/
+    -webkit-animation: mymove 5s infinite; /*Safari and Chrome*/
+}
+
+#section2 #route
+{
+    z-index: 1;
+    position: absolute;
+    width: 43vw;
+    height: 60vh;
+}
+
+@keyframes mymove
+{
+    0%
+    {
+        transform: translate(0,0);
+    }
+
+    100%
+    {
+        transform: translate(-350px,205px);
+    }
+}
+
+@-moz-keyframes mymove /*Firefox*/
+{
+    0%
+    {
+        transform: translate(0,0);
+    }
+
+    100%
+    {
+        transform: translate(-350px,205px);
+    }
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+    0%
+    {
+        transform: translate(0,0);
+    }
+
+    100%
+    {
+        transform: translate(-350px,205px);
+    }
+}
+
+#arrow_l, #arrow_d
+{
+    width: 5vw;
+    height: 12vh;
+    border: 0;
+    cursor: pointer;
+    background-size: 100%;
+    background-size: 5vw;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#arrow_l
+{
+    background-image: url("../img/fleche-gauche-blanche.svg");
+    float: left;
+    margin-left: 25vw;
+}
+
+#arrow_d
+{
+    background-image: url("../img/fleche-droite-blanche.svg");
+    float: right;
+    margin-right: 25vw;
+}
+
+#base1
+{
+    z-index: 5;
+    position: absolute;
+    top: 0%;
+    width: auto;
+    height: 100%;
+}
+
+#base2
+{
+    z-index: 5;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: auto;
+    height: 100%;
+}
+
+#base3
+{
+    z-index: 5;
+    position: absolute;
+    top: -0.4%;
+    height: 100%;
+    width: auto;
+}
+
+#drapeau1
+{
+  z-index: 11;
+  position: absolute;
+  bottom: 24vh;
+  left: 116.3vh;
+  width: 13vh;
+}
+
+#container1 #encadre1
+{
+    z-index: 0;
+    position: absolute;
+    top: 27vh;
+    width: 60.7vh;
+    left: 64.1vh;
+}
+
+#container1 #car
+{
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform-origin: 0 0;
+  transform: matrix(-0.4, 0.0, 0.0, 0.40, 0, 0); */
+}
+
+#container1 #encadre1 #info
+{
+    width: 60vh;
+}
+
+#container1 #encadre1 #paragraphe_encadre1
+{
+    position: absolute;
+    color: black;
+    text-align: left;
+    font-size: 59pt;
+    width: 19vh;
+    height: 18vh;
+    bottom: 1vh;
+    left: 38vh;
+}
+
+#container1 #encadre1 #number
+{
+    position: absolute;
+    color: red;
+    font-size: 3.5em;
+    width: 8vh;
+    height: 13vh;
+    bottom: 16vh;
+    left: 37vh;
+}
+
+#container1 #encadre1 #sol
+{
+    position: absolute;
+    left: 0vh;
+    bottom: 7vh;
+    width: 37vh;
+}
+
+#container1 #encadre1 #people
+{
+    position: absolute;
+    left: 0vh;
+    bottom: 7vh;
+    width: 37vh;
+}
+
+#container1 #buttonEncadre1
+{
+    position: absolute;
+    opacity: 0;
+    border-radius: 100%;
+    z-index: 12;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    left: 118vh;
+    bottom: 25vh;
+    height: 11.5vh;
+    width: 11.5vh;
+}
+
+#container2 #encadre2
+{
+  z-index: 0;
+  position: absolute;
+  width: 77vh;
+  height: 55vh;
+  bottom: 22vh;
+  left: 60vh;
+}
+
+#container2 #encadre2 #info2
+{
+    position: absolute;
+    bottom: 0vh;
+    width: 76vh;
+    left: 0.8vh;
+}
+
+#container2 #encadre2 #intro2
+{
+    position: absolute;
+    color: black;
+    width: 32vh;
+    height: 4vh;
+    font-family: 'Bebasneue_B';
+    top: 3vh;
+    left: 39vh;
+}
+
+#container2 #encadre2 #txtvoiture
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 22vh;
+    top: 12vh;
+}
+
+#container2 #encadre2 #txtCommun
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 22vh;
+    top: 19vh;
+}
+
+#container2 #encadre2 #txtVelo
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 22vh;
+    top: 31vh;
+}
+
+#container2 #encadre2 #txtPied
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 22vh;
+    top: 40vh;
+}
+
+#bar-demo, #bar-demo-3
+{
+    position: absolute;
+    left: 47vh;
+    top: 8vh;
+}
+
+#drapeau2
+{
+  z-index: 11;
+  position: absolute;
+  bottom: 17.4vh;
+  left: 55vh;
+  width: 13vh;
+}
+
+#container2 #encadre2 #pourcentVoiture
+{
+    position: absolute;
+    color: #d4584e;
+    width: 12vh;
+    height: 8vh;
+    top: 5vh;
+    left: 6vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentCommun
+{
+    position: absolute;
+    color: #29a7de;
+    width: 12vh;
+    height: 8vh;
+    top: 14vh;
+    left: 6vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentVelo
+{
+    position: absolute;
+    color: #e3ab04;
+    width: 12vh;
+    height: 8vh;
+    top: 24vh;
+    left: 6vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #pourcentPied
+{
+    position: absolute;
+    color: #177275;
+    width: 12vh;
+    height: 8vh;
+    top: 33vh;
+    left: 6vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container2 #encadre2 #sol2
+{
+    position: absolute;
+    width: 38vh;
+    left: 39.7vh;
+    top: 26vh;
+}
+
+#container2 #encadre2 #transport
+{
+    position: absolute;
+    width: 20vh;
+    left: 54vh;
+    bottom: 9.7vh;
+}
+
+#container2 #buttonEncadre2
+{
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    z-index: 12;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    left: 56.7vh;
+    bottom: 19.5vh;
+    height: 10.5vh;
+    width: 10.5vh;
+}
+
+#drapeau
+{
+    z-index: 12;
+    position: absolute;
+    bottom: 36vh;
+    left: 124vh;
+    width: 13vh;
+}
+
+#container3 #encadre3
+{
+    z-index: 0;
+    position: absolute;
+    width: 77vh;
+    height: 55vh;
+    bottom: 38vh;
+    left: 60vh;
+}
+
+#container3 #encadre3 #info3
+{
+    width: 71.6vh;
+}
+
+#container3 #encadre3 #intro3
+{
+    position: absolute;
+    color: black;
+    width: 32vh;
+    height: 4vh;
+    font-family: 'Bebasneue_B';
+    top: 2vh;
+    left: 39vh;
+}
+
+#container3 #encadre3 #txtTravail
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 18vh;
+    top: 12vh;
+}
+
+#container3 #encadre3 #txtEtude
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 18vh;
+    top: 21.5vh;
+}
+
+#container3 #encadre3 #txtAutres
+{
+    position: absolute;
+    color: black;
+    font-family: 'Bebasneue_B';
+    width: 18vh;
+    height: 7vh;
+    left: 18vh;
+    top: 30.8vh;
+}
+
+#container3 #encadre3 #pourcentTravail
+{
+    position: absolute;
+    color: #d4584e;
+    width: 12vh;
+    height: 8vh;
+    top: 5vh;
+    left: 3vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #pourcentEtude
+{
+    position: absolute;
+    color: #29a7de;
+    width: 12vh;
+    height: 8vh;
+    top: 14vh;
+    left: 3vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #pourcentAutres
+{
+    position: absolute;
+    color: #e3ab04;
+    width: 12vh;
+    height: 8vh;
+    top: 24vh;
+    left: 3vh;
+    font-family: 'Bebasneue_B';
+}
+
+#container3 #encadre3 #sol3
+{
+    position: absolute;
+    width: 31vh;
+    top: 28vh;
+    left: 36vh;
+}
+
+#container3 #encadre3 #motif
+{
+    position: absolute;
+    width: 19vh;
+    top: 26vh;
+    left: 42vh;
+}
+
+#container3 #buttonEncadre3
+{
+    z-index: 13;
+    position: absolute;
+    opacity: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #1f1c1c;
+    height: 10.5vh;
+    bottom: 38vh;
+    left: 125.1vh;
+    width: 10.5vh;
+}
+
+@-webkit-keyframes pulse
+{
+    0%
+    {
+        box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    }
+
+    50%
+    {
+        box-shadow: 0 0 30px #ea4c89, inset 0 0 30px #ea4c89;
+    }
+
+    100%
+    {
+        box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    }
+}
+
+.effect1
+{
+    z-index: 11;
+    position: absolute;
+    background-color: transparent;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50px;
+    left: 118vh;
+    bottom: 26vh;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+.effect2
+{
+    z-index: 11;
+    position: absolute;
+    background-color: transparent;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50px;
+    left: 57vh;
+    bottom: 19.7vh;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+.effect3
+{
+    z-index: 12;
+    position: absolute;
+    background-color: transparent;
+    width: 10.5vh;
+    height: 10.5vh;
+    border-radius: 50px;
+    left: 125.3vh;
+    bottom: 38.2vh;
+    box-shadow: 0 0 8px #ea4c89, inset 0 0 8px #ea4c89;
+    -webkit-animation: pulse 1s linear 1s infinite;
+}
+
+#conclusion
+{
+    position: absolute;
+    width: 63vw;
+    height: 58vh;
+    left: 18vw;
+    bottom: 28vh;
+}
+
+#conclu1, #conclu2
+{
+    text-align: left;
+    ;
+}
+
+#bandeau
+{
+    padding: 8px;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: white;
+
+    /*pour pallier le fait que l'image débute par du transparent on la décale sur la gauche*/
+    position: absolute;
+    bottom: 0vh;
+    /*et on l'étend un peu plus que la largeur de la fenêtre pour pallier le fait que l'image se termine par du transparent*/
+}
+
+#bandeau li
+{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+}
+
+
+#bandeau img
+{
+    height: 46px;
+}
+
+#bandeau #hyblab
+{
+    margin: 46px 0;
+    height: 50px;
+    float: left;
+}
+
+#bandeau #cc, #bandeau #opensource
+{
+    height: 16px;
+}
+
+#bandeau .stacked
+{
+    display: block;
+}
+
+#bandeau ul
+{
+    text-align: center;
+    padding: 0 0;
+}
+
+#bandeau .institutionnel
+{
+    height: 42px;
+}
+
+#copyright
+{
+  position: absolute;
+  bottom: 22vh;
+  left: 42vw;
+  width: 30vw;
+}
+
+/* selection transport */
+#modeTransport
+{
+    position: absolute;
+    top: 0%;
+    margin-left: 3%;
+}
+
+.texth2
+{
+    z-index: 3;
+    font-family: 'Borg';
+    font-size: 5em;
+    fill: white;
+    font-weight: bold;
+}
+
+.route
+{
+    z-index: 1;
+    width: 100%;
+}
+
+.car
+{
+    z-index: 2;
+    position: absolute;
+    bottom: 49vh;
+    left: 25vw;
+    height: 21vh;
+    width: 16vw;
+}
+
+/* map */
+.background
+{
+    fill: #f2f2f2;
+    pointer-events: all;
+}
+
+.map-layer
+{
+    fill: #fff;
+    stroke: #aaa;
+    cursor: pointer;
+    cursor: hand;
+}
+
+text
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+text.big-text
+{
+    font-size: 30px;
+    font-weight: 400;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.notSelectable
+{
+    pointer-events: none;
+}
+
+.hiddenCross
+{
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cross
+{
+    pointer-events: all;
+    cursor: pointer;
+    cursor: hand;
+    opacity: 1;
+}
+
+#carteContainer
+{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+#carte
+{
+    width: 100%;
+    height: 100%
+}
+
+#ePolytech, #eAGR, #eSciencecom {
+  display: inline-block;
+  width: 17vw;
+  font-family: 'Bebasneue';
+  text-align: center;
+  vertical-align: middle;
+}
+
+#credits {
+  position: absolute;
+  left: 6vw;
+  bottom: 0vh;
+}
+
+.noms .ec{
+  font-family: 'Bebasneue';
+  margin: 0;
+}
+
+.ecole {
+  position: absolute;
+  left: 6vw;
+  bottom: 23vh;
+}
+
+#Polytech, #AGR, #Sciencecom {
+  display: inline-block;
+  width: 17vw;
+  font-family: 'Bebasneue';
   text-align: center;
 }
 
-header{
-  text-align: center;
+#fp-nav ul li 
+{
+    padding-right: 1vw;
+    padding-left: 0.3vw;
+    padding-bottom: 2.1vh;
+    list-style: none;
+    background-size: 1.5vw auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    transform: scale(1.5);
 }
 
-header img{
-  max-width: 100%;
-	height: auto;
+#fp-nav ul li:nth-child(1) {
+    background-image: url(../img/Naviguation-Home-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(2) {
+    background-image: url(../img/Naviguation-Loire-Version-bleu.svg);
+}
+#fp-nav ul li:nth-child(3) {
+    background-image: url(../img/Naviguation-Vehicule-Version-bleu.svg);    
+}
+#fp-nav ul li:nth-child(7) {
+    background-image: url(../img/Naviguation-loupe-Version-bleu.svg);   
+}
+
+#fp-nav ul li:nth-child(1).active-li {
+    background-image: url(../img/Naviguation-Home-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(2).active-li {
+    background-image: url(../img/Naviguation-Loire-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(3).active-li {
+    background-image: url(../img/Naviguation-Vehicule-Version-blanc.svg);
+}
+#fp-nav ul li:nth-child(7).active-li {
+    background-image: url(../img/Naviguation-loupe-Version-blanc.svg);
+}
+
+#fp-nav ul li:hover a span, #fp-nav ul li a span {
+    display: none;
+}
+
+#fp-nav ul li:hover 
+{
+    transform: scale(3);
+}
+
+.rs 
+{
+    position: absolute;   
+    height:4vh;
+    background-size: 100% 100%;    
+    left:5vh;
+}
+
+#twitter
+{         
+    top:48vh; 
+    background-image:url('../img/rs/twitter.ico');
+    background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
+}
+
+#instagram
+{
+    top:55vh;
+    background-image:url('../img/rs/instagram.png');
+    background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
+    animation-delay: 0.1s;
+}
+
+#github
+{
+    top:62vh;
+    background-image:url('../img/rs/github.png');
+    background-repeat: no-repeat;
+    animation: bounce 0.35s ease 20 alternate;
+    animation-delay: 0.2s;
+}
+
+@keyframes bounce
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-webkit-keyframes bounce /*Safari and Chrome*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
+}
+
+@-moz-keyframes bounce /*Firefox*/
+{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-2vh);}
 }

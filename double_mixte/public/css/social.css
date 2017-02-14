@@ -1,0 +1,52 @@
+#\32 011chiffre4 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 011chiffre1 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 012chiffre4 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 012chiffre1 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 013chiffre4 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 013chiffre1 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 014chiffre4 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 014chiffre1 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 015chiffre4 {
+  margin-left: 0.5vw !important;
+}
+
+#\32 015chiffre1 {
+  margin-left: 0.5vw !important;
+}
+
+.social {
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    left: 52%;
+}
+
+
+.social img {
+	width: 2vw;
+	margin-left: -0.2vw;
+}

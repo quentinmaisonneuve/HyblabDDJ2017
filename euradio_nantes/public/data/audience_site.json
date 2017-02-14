@@ -1,0 +1,378 @@
+[
+  {
+    "Pays": "France",
+    "Sessions": "4 623"
+  },
+  {
+    "Pays": "United Kingdom",
+    "Sessions": 366
+  },
+  {
+    "Pays": "United States",
+    "Sessions": 171
+  },
+  {
+    "Pays": "Germany",
+    "Sessions": 116
+  },
+  {
+    "Pays": "Belgium",
+    "Sessions": 115
+  },
+  {
+    "Pays": "Italy",
+    "Sessions": 97
+  },
+  {
+    "Pays": "Spain",
+    "Sessions": 90
+  },
+  {
+    "Pays": "Switzerland",
+    "Sessions": 42
+  },
+  {
+    "Pays": "Romania",
+    "Sessions": 40
+  },
+  {
+    "Pays": "Austria",
+    "Sessions": 31
+  },
+  {
+    "Pays": "Netherlands",
+    "Sessions": 30
+  },
+  {
+    "Pays": "Sweden",
+    "Sessions": 25
+  },
+  {
+    "Pays": "(not set)",
+    "Sessions": 22
+  },
+  {
+    "Pays": "Ukraine",
+    "Sessions": 20
+  },
+  {
+    "Pays": "Canada",
+    "Sessions": 17
+  },
+  {
+    "Pays": "Morocco",
+    "Sessions": 17
+  },
+  {
+    "Pays": "Portugal",
+    "Sessions": 17
+  },
+  {
+    "Pays": "Russia",
+    "Sessions": 14
+  },
+  {
+    "Pays": "Australia",
+    "Sessions": 13
+  },
+  {
+    "Pays": "Greece",
+    "Sessions": 10
+  },
+  {
+    "Pays": "Luxembourg",
+    "Sessions": 8
+  },
+  {
+    "Pays": "Tunisia",
+    "Sessions": 8
+  },
+  {
+    "Pays": "Albania",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Bosnia & Herzegovina",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Finland",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Japan",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Poland",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Turkey",
+    "Sessions": 7
+  },
+  {
+    "Pays": "Algeria",
+    "Sessions": 6
+  },
+  {
+    "Pays": "Réunion",
+    "Sessions": 6
+  },
+  {
+    "Pays": "Brazil",
+    "Sessions": 5
+  },
+  {
+    "Pays": "Ireland",
+    "Sessions": 5
+  },
+  {
+    "Pays": "South Korea",
+    "Sessions": 5
+  },
+  {
+    "Pays": "Malta",
+    "Sessions": 5
+  },
+  {
+    "Pays": "Slovakia",
+    "Sessions": 5
+  },
+  {
+    "Pays": "Côte d’Ivoire",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Czech Republic",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Denmark",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Mexico",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Norway",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Singapore",
+    "Sessions": 4
+  },
+  {
+    "Pays": "Senegal",
+    "Sessions": 4
+  },
+  {
+    "Pays": "United Arab Emirates",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Argentina",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Colombia",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Georgia",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Guadeloupe",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Israel",
+    "Sessions": 3
+  },
+  {
+    "Pays": "India",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Kenya",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Kazakhstan",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Lithuania",
+    "Sessions": 3
+  },
+  {
+    "Pays": "St. Martin",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Philippines",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Pakistan",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Slovenia",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Togo",
+    "Sessions": 3
+  },
+  {
+    "Pays": "Ecuador",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Egypt",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Gabon",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Haiti",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Hungary",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Indonesia",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Monaco",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Mali",
+    "Sessions": 2
+  },
+  {
+    "Pays": "South Africa",
+    "Sessions": 2
+  },
+  {
+    "Pays": "Armenia",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Azerbaijan",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Bangladesh",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Bulgaria",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Congo (Republic)",
+    "Sessions": 1
+  },
+  {
+    "Pays": "China",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Dominican Republic",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Guinea",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Guatemala",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Croatia",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Jamaica",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Sri Lanka",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Liberia",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Moldova",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Montenegro",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Madagascar",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Macedonia (FYROM)",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Mauritius",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Peru",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Palestine",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Qatar",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Serbia",
+    "Sessions": 1
+  },
+  {
+    "Pays": "El Salvador",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Chad",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Thailand",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Timor-Leste",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Taiwan",
+    "Sessions": 1
+  },
+  {
+    "Pays": "Uruguay",
+    "Sessions": 1
+  }
+]

@@ -1,0 +1,147 @@
+/* -------- Div principal --------  */
+.chartandlegend{
+	position: absolute;
+	left: 45vw;
+	top:28vh;
+	width:41vw;
+	vertical-align: middle;
+}
+/*-----------------------------------*/
+/*-----------------------------------*/
+/* -------- Div Titre Graphe --------  */
+#stackedbartitle{
+	position: relative;
+	display:inline-block;
+	width:100%;
+	border-width:0px;
+	vertical-align: text-center;
+	text-align:center;
+	font: normal bold 16px "Josefin Sans", cursive, sans-serif;
+	font-size:1.5vw;
+    fill: #001526;
+	
+}
+#stackedbartitle #stackedbartitleunit{
+	display:inline-block;
+	position: relative;
+	border-width:0px;
+	text-align:center;
+	font-size:1vw;
+}
+/*-----------------------------------*/
+/*-----------------------------------*/
+/* -------- Div chart avec legend --------  */
+#stackedbarchart2
+{
+	width:40vw;
+	height:30vh;
+	vertical-align:middle;
+	
+	border :solid 2px;
+	/*text-align:center;*/
+}
+/*-----------------------------------*/
+/*left*/
+#stackedbarchart{
+	position:relative;
+	display:inline-block;
+	width:100%;
+	height: 30vh;
+	vertical-align:middle;
+	/*padding:5px;*/
+}
+.machine path {fill: #ffffff !important;}
+
+/*right*/
+.containerstacked {
+    position: relative;
+	display:inline-block;
+	border-width:0px;
+	/*margin:2px;*/
+	width:100%;
+	height:6vh
+	vertical-align:middle;
+	text-align:center;
+    /*border-style: solid;
+    border-color: #8B0000;*/
+	/*padding:5px;
+	right:1px;*/
+}
+#legendline{
+	position: relative;
+	/*display: inline-block;*/
+	width:100%;
+	vertical-align:middle;
+	text-align:center;
+	/*margin-top:1.vh;*/
+}
+#legend-machines{
+	position: relative;
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+}
+.containerstacked2 {
+    position: relative;
+	display: inline-flex;
+	/*margin:2px;*/
+	width:100%;
+	vertical-align:middle;
+	text-align:center;
+    /*border-style: solid;
+    border-color: #8B0000;*/
+	/*padding:5px;
+	right:1px;*/
+}
+
+
+.containerstacked2 .c3-legend-item-hidden {
+  /*opacity: 0.3;*/
+fill:#000000;  }
+#legenline .c3-legend-item-hidden {
+  /*opacity: 0.3;*/
+fill:#000000;  }
+/*
+#stackedbarchart .c3-axis-y text {
+   fill: red;
+   font-size:1vw;
+}*/
+#stackedbarchart .c3-axis-x text {
+    font: normal bold 1px "Josefin Sans";
+	font-size:1.5vw;
+    fill:	#001526;	
+}
+/*.c3-axis-x .tick line{
+  display: none;
+}*/
+#stackedbarchart .c3-axis-x line {
+	stroke-width:0px;	
+}
+#stackedbarchart .c3-axis-x path {
+    /*stroke:#00C745;*/
+	stroke-width:0px;	
+}
+#stackedbarchart .c3-xgrid-focus line {
+	stroke-width:0px;	
+}
+
+.stackedbartooltip
+{
+	font: normal bold 15px "Comic Sans MS", cursive, sans-serif;
+	font-size:1vw;
+	background-color:#DCDCDC;
+	border: 0.1vw solid;
+    border-radius: 20px;
+	border-width:0.1vw;
+	padding:0.2vw;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	-webkit-box-shadow: 7px 7px 12px -9px #777777;
+	-moz-box-shadow: 7px 7px 12px -9px #777777;
+	box-shadow: 7px 7px 12px -9px #777777;
+	opacity: 0.9; 
+}
+
+
+

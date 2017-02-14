@@ -1,0 +1,1147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*
+{
+outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ################################ SOMMAIRE #########################*/
+/*
+	I - Initialisation
+	II - Début
+	III - Div Un
+	IV - Div Deux
+	V - Div Trois
+	VI - Div Quatre
+*/
+
+
+/*#################### Début #################### */
+html {
+	height: 100%;
+	width: 101%;
+}
+
+body {
+	height: 100%;
+	width: 101%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+
+/* ################### Div Un ################### */
+
+
+#pageFourBottom {
+	padding-top: 2%;
+}
+
+#Cover {
+	width: 85%;
+	margin: 0 auto;
+	background-color: #004266;
+}
+
+#Cover2 img {
+	width: 7%;
+	margin-left: -10%;
+}
+
+#Cover img {
+	max-width: 10%;
+}
+
+#toolTipCover {
+	position: absolute;
+}
+
+#toolTipCover2 {
+	position: absolute;
+}
+
+#pochette:hover {
+	color: white;
+	font-weight: bold;
+}
+
+#pochette {
+	color: #004266;
+}
+#pochette2:hover {
+	color: black;
+	font-weight: bold;
+}
+
+#pochette2 {
+	color: #FFCC00;
+}
+
+#Cover2 {
+	margin-top: 7%;
+}
+
+#MySunLogo img {
+	max-width: 5%;
+}
+
+#Cover p {
+	background-color: #004266;
+}
+
+#pageOne{
+	background-color: #004266;
+	min-height: 100%;
+	text-align: center;
+	background-image: url("/images/tout_les_tirets.png");
+	background-size: 100% 100%;
+}
+
+#pageOne img {
+	width:20%;
+}
+
+#MySunLogo {
+	margin-top: 2%;
+}
+
+#MySunLogo img {
+	width: 7%;
+}
+
+#Fleche {
+	width: 20%;
+	margin: 0 auto;
+}
+
+
+#pageOne #pochette{
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+
+#pageOne .pageOnePremierP {
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+	width: 35%;
+	margin: 0 auto;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+#pageOne .pageOneDeuxiemeP {
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 1%;
+}
+
+
+#pageOne button {
+	background-color: #004266;
+	width: 10%;
+	color: #FFD000;
+	font-weight: bold;
+	border: 3px #FFD000 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
+}
+
+/* ################### pageTwo ################### */
+
+#pageTwo {
+	background-color: #FFD000;
+	min-height: 100%;
+	background-image: url("/images/page2_tiret.png");
+	background-size: 100% 100%;
+	text-align: center;
+	padding-top: 2%;
+}
+
+#pageTwo h1 {
+	font-size: 1.7em;
+	font-weight: bold;
+	color: #004266;
+	width: 40%;
+	margin: 0 auto;
+	margin-bottom: 2%;
+	margin-top: -5%;
+}
+
+#pageTwo .blocTwoOne {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 2%;
+}
+
+#pageTwo .blocTwoOne .Saison {
+	width: 24%;
+	display: inline-block;
+	color: #004266;
+	font-weight: bold;
+}
+
+#pageTwo .blocTwoTwo {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 13%;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #004266;
+	margin-top: 7%;
+	margin-bottom: 2%;
+	display: flex;
+}
+
+#pageTwo .blocTwoTwo .inlineBloc {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+}
+
+.inlineBlocWE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-right: 20%;
+}
+
+.inlineBlocSE {
+	width: 30%;
+	display: inline-block;
+	margin: auto;
+	margin-left: 20%;
+}
+
+#pageTwo {
+	min-height: 100%;
+}
+
+#pageTwo button {
+	background-color: #FFD000;
+	width: 10%;
+	color: #004266;
+	font-weight: bold;
+	border: 3px #004266 solid;
+	border-radius: 15px;
+	padding: 15px;
+	margin-top: 2%;
+}
+
+/* FORM */
+.printemps{background-image:url(/images/page2_feuille.png);}
+.ete{background-image:url(/images/page2_soleil.png);}
+.automne{background-image:url(/images/page2_automne.png);}
+.hiver{background-image:url(/images/page2_hiver.png);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:125px;height:90px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.9);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.9);
+            filter: brightness(1.8) grayscale(1) opacity(.9);
+}
+
+.cc-selector input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+.cc-selector input[type=radio] + label:before {
+    border: 2px solid #004266;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+.cc-selector input[type=radio]:checked + label:before {
+    background: #004266;
+    border-color: #004266;
+}
+
+.cc-selector label.drinkcard-cc.printemps::before{
+	margin-top: 80%;
+	margin-right: 30%;
+}
+.cc-selector label.drinkcard-cc.ete::before{
+	margin-top: 80%;
+	margin-right: 55%;
+}
+.cc-selector label.drinkcard-cc.automne::before{
+	margin-top: 80%;
+	margin-right: 15%;
+}
+.cc-selector label.drinkcard-cc.hiver::before{
+	margin-top: 80%;
+	margin-right: 60%;
+}
+
+label.drinkcard-cc.ete {
+	margin-left: 10%;
+}
+.cc-selector label.drinkcard-cc.automne {
+	margin-left: 5%;
+}
+.cc-selector label.drinkcard-cc.hiver {
+	margin-left: 7%;
+}
+label.drinkcard-cc.printemps {
+	margin-left: 7%;
+}
+
+/* TOGLE */
+/* The slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  max-width : 450px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; 
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+#pageTwo input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
+}
+
+#pageTwo input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
+}
+
+#pageTwo input[type=range]::-ms-thumb {
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn_glissiere.png");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FFD000;
+  border: 0px solid transparent;
+}
+
+#pageTwo input[type=range]::-webkit-slider-runnable-track {
+  
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-ms-thumb {
+  height: 28px;
+  width : 62px;
+  background-image: url("/images/btn-timeline.svg");
+  background-size: cover;
+  margin: -5px;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-webkit-slider-runnable-track {
+  
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+  background-color: #FECB2E;
+  border: 0px solid transparent;
+}
+
+#pageThree input[type=range]::-moz-range-track {
+  max-width : 450px;
+  height: 18px;
+
+}
+
+#pageThree input[type=range]::-ms-track {
+  max-width : 450px;
+  height: 18px;
+
+}
+
+input[type=range]::-moz-range-track {
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+}
+
+input[type=range]::-ms-track {
+  max-width : 450px;
+  height: 18px;
+  background: url("/images/glissiere.png");
+  background-size: cover;
+}
+
+#timeline1, #timeline2
+{
+	position: relative;
+	left : 75px;
+}
+
+#timeline_value1, #timeline_value2
+{
+	display: inline-block;
+	width: 130px;
+	font-weight: bold;
+	font-size: 1.3em;
+	color : #004266;
+	margin: 10px;
+	position: relative;
+	left : 75px;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.Printemps
+{
+	display: inline-block;
+	width : 80px;
+	position: relative;
+	left: 40px;
+	margin-right: 10px;
+}
+
+.Ete
+{
+	display: inline-block;
+	width : 80px;
+	position: relative;
+	left: 40px;
+	margin-left: 10px;
+}
+
+.Automne
+{
+	display: inline-block;
+	width : 80px;
+	position: relative;
+	left: 40px;
+	margin-left: 10px;
+}
+
+.Hiver
+{
+	display: inline-block;
+	width : 80px;
+	position: relative;
+	left: 40px;
+	margin-right: 10px;
+}
+
+label[for="slider"]
+{
+	text-align: center;
+}
+
+input:checked + .slider {
+  background-color: #004266;
+}
+
+input:focus + .slider {
+
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.play, .pause {
+	width:75px;
+	height:75px;
+}
+
+.inlineBloc {
+
+	position: relative;
+	top: 32px;
+}
+
+/* ################### pageThree ################### */
+#entetePageTrois{
+	color: #004266;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.3em;
+	margin-bottom: 1%;
+}
+
+#pageThree {
+	min-height: 100%;
+	background-image: url("/images/fond.png");
+	background-size: 100% 100%;
+  	background-color: #FECB2E;
+  	z-index: 5;
+}
+
+#bubleChart {
+	width: 50%;
+	height: 80%;
+	display: inline-block;
+  	margin:0;
+  	padding:0;
+  	background: url(/images/fond-matiere.png) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+  	margin-left: 1%;
+  	z-index: 10
+}
+
+#aVousDeJouer {
+	text-align: center;
+}
+
+#aVousDeJouer p {
+	font-size: 1.2em;
+	color: #004266;
+	font-weight: bold;
+}
+
+#ExplicationBoulles {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#ExplicationBoulles p {
+	font-size: 0.8em;
+	color: #004266;
+	font-weight: bold;
+	text-align: center;
+}
+
+#vousGenre {
+	width: 50%;
+	margin: 0 auto;
+	margin-left: 30%;
+	padding-top: 1%;
+}
+
+#vousGenre p {
+	color: #004266;
+	font-weight: bold;
+}
+
+#bubble3 {
+	margin-left: 12%;
+	margin-top: 7%;
+}
+
+/*.bubble*/
+
+#boutonBuble {
+	position: absolute;
+	width: 45%;
+	height: 70%;
+	display: inline-block;
+	padding-top: 2%;
+
+}
+
+#boutonBubleTopLeft {
+	width: 49%;
+	display: inline-block;
+	margin-bottom: 10%;
+}
+
+#boutonBubleTopLeft img {
+	width: 50%;
+}
+
+#boutonBubleTopLeft {
+	text-align: center;
+}
+
+#boutonBubleTopRight {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-bottom: 10%;
+}
+
+#boutonBubleTopRight p{
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+#boutonBubleBottomLeft {
+	width: 49%;
+	display: inline-block;
+	text-align: center;
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+#boutonBubleBottomLeft p{
+	/*margin-bottom: 3%;*/
+}
+
+#boutonBubleBottomRight {
+	width: 49%;
+	display: inline-block;
+}
+
+#BubleBottom {
+	text-align: center;
+	margin-top: 2%;
+}
+
+#timeline2 {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+
+#BubleBottom > input[type=range] {
+  max-width : 450px;
+}
+
+#BubleBottomHeure {
+	margin-top: 1%;
+}
+
+#BubleBottomHeure1{
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.3em;
+	width: 33%;
+	display: inline-block;
+}
+
+#BubleBottomHeure2{
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.3em;
+	width: 33%;
+	display: inline-block;
+}
+
+#BubleBottomHeure3{
+	color: #004266;
+	font-weight: bold;
+	font-size: 1.3em;
+	width: 33%;
+	display: inline-block;
+}
+
+/* Bubble vinyle Effect Animation*/
+.bubbleC:hover
+{
+	animation:spin 4s linear infinite;
+}
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
+/* ################### pageFour ################### */
+#Cover2 {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -10%;
+	margin-bottom: 2%;
+}
+
+#Cover2 .CoverFind {
+	display: inline-block;
+	width: 10%;
+}
+
+#Cover2 .CoverNonTrouve {
+	display: inline-block;
+	width: 10%;
+}
+
+
+#pageFour {
+	background-color: #FFCC00;
+	height: 100%;
+	text-align: center;
+	background-image: url("/images/page4_tiret.png");
+	background-size: 100% 100%;
+}
+
+#pageFourTop {
+	width: 95%;
+	height: 75%;
+	margin: 0 auto;
+	display: flex;
+}
+
+#pageFourTopLeft {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+}
+
+#pageFourTopLeft img{
+	max-width: 70%;
+	margin-top: 50%;
+}
+
+#pageFourTopCenter {
+	width: 70%;
+	display: inline-block;
+	height:100%;
+}
+
+#pageFourTopCenterBarre {
+	background-image: url("/images/page4_tiret_haut_graphique.png");
+	background-size: 100% 100%;
+	width: 76.7%;
+	margin-left: 4.5%;
+	margin-bottom: 0%;
+}
+
+#pageFourTopCenterBarre p {
+	visibility: hidden;
+}
+
+
+/* ##################################################C3################################"*/
+#player1 {
+	width: 35%;
+	margin-left: 20%;
+}
+
+.aplayer-controller {
+	visibility: hidden;
+}
+
+.aplayer-music {
+	padding-top: 7%;
+	padding-right: 27%;
+}
+
+#DirectLive {
+	width: 50%;
+	font-size: 0.9em;
+	position: absolute; 
+	margin: 0 auto;
+	margin-top: 1%;
+	font-weight: bold;
+}
+
+
+
+#pageFourTopRight {
+	width: 20%;
+	display: inline-block;
+	height:100%;
+	padding-top: 40%;
+	line-height: 1.7em;
+}
+
+#pageFourTopRight1 {
+	color: #3E634D;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight2 {
+	color: #134D64;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight3 {
+	color: #4A95B8;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#pageFourTopRight4 {
+	color: #D6515B;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#pageFourBottom img {
+	max-width: 70%;
+	padding-top: 1%;
+	padding-right: 10%;
+}
+
+#pageFourBottom p {
+	padding-right: 10%;
+	padding-top: 1%;
+	color: #0F4A60;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#btnOne {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnTwo {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnThree {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#btnFour {
+	width: 45%;
+	display: inline-block;
+	color: #001F6C;
+}
+
+#boutonBubleBottomRight {
+	line-height: 1.2em;
+}
+
+#boutonBubleBottomRight img {
+	width: 50%;
+}
+
+#btnSaisonImg {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.rs-block {
+	background-image: url("/images/btn-saison-fonds.png");
+	background-size: 100% 100%;
+}
+
+.rs-handle {
+  background: #004266;
+}
+
+/*, .rs-move */
+
+/* ########### TOOLTIPS ########################*/
+div.tooltip {
+	/* placement & tailles */
+	left:50%;
+	top:15%;
+	position: absolute;
+	width:15%;
+	min-height:40%;
+
+	/* Marges */
+	padding: 2%;
+
+	/* Textes */
+
+	border: 0px;
+	border-radius: 8px;
+	pointer-events: none;
+	color:#FEFEFE;
+	text-align: left;
+}
+
+div.tooltip h1
+{
+	font-size:16pt;
+	padding-bottom: 0.3em;
+}
+
+div.tooltip h2
+{
+	font-size:9pt;
+	padding-bottom: 2em;
+}
+
+div.tooltip p
+{
+	font-size: 11pt;
+	text-align: justify;
+}
+
+
+/* ########################## page 5 #################*/
+#pageFive {
+	background-color: #FFCC00;
+	min-height: 100%;
+	text-align: center;
+	position: relative;
+}
+
+#pageFive h1 {
+	color: #014165;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 3%;
+	margin-top: -10%;
+}
+
+#firstLine {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#firstLine #alban, #raph, #rom, #axel, #pingPong {
+	width: 19%;
+	display: inline-block;
+}
+
+#firstLine #alban img, #raph img, #rom img, #axel img, #pingPong img {
+	width: 50%;
+}
+
+#secondLine #Arthur, #Greg, #Clelia, #Jeanne, #Cheezy, #Elise {
+	width: 15%;
+	display: inline-block;
+}
+
+#secondLine #Arthur img, #Greg img, #Clelia img, #Cheezy img, #Elise img, #Jeanne img {
+	width: 50%;
+}
+
+.profilNom {
+	font-weight: bold;
+	font-size: 1em;
+	margin-top: 2%;
+	color: #0C4153;
+}
+
+.profilCursus {
+	margin-top: 2%;
+	color: #0C4153;
+}
+
+#secondLine {
+	margin-top: 2%;
+}
+
+#sponsor {
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	min-height: 20%;
+}
+
+.logoSpons {
+	margin-top: 2%;
+	width: 8%;
+	display: inline-block;
+}
+
+.hyblab img {
+	width: 80%;
+}
+
+.stereolux img {
+	width: 80%;
+}
+
+.agr img {
+	width: 50%;
+}
+
+.popo {
+	margin-left: 2%;
+}
+
+.univ {
+	margin-left: 2%;
+}
+
+.hyblab {
+	margin-left: 2%;
+}
+.stereolux {
+	margin-left: 2%;
+}
+
+.span_12_of_12 {
+	width: 100%;
+}
+
+.span_3_of_12 {
+	width: 24%;
+	display: inline-block;
+}
+
+#pageTwo {
+	padding-top: 2%; 
+}

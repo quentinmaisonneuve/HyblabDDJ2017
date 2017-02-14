@@ -23,3 +23,5 @@ fetch('data/dummy.json')
         document.querySelector('#data')
             .textContent = json.data;
     });
+
+

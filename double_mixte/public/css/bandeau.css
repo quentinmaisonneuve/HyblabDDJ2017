@@ -1,0 +1,128 @@
+#bandeauposition{
+	position:relative;
+	top:3vh;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+    #bandeau {
+	position:relative;
+	 display:inline-block;
+	 width:100%;
+	 margin:auto;
+	 padding:1vh;
+	/* background-color:#ffffff;*/
+	vertical-align:middle;
+	text-align:center;
+    }
+
+    #bandeau li{
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 2vh;
+    }
+
+
+    #bandeau img{
+      height: 3.5vh;
+    }
+
+    #bandeau #hyblab{
+      
+      height: 3.5vh;
+      /*float: left;
+	  margin: 46px 0;
+	  */
+    }
+
+    #bandeau #cc, #bandeau #opensource
+    {
+      height:1.5vh;
+    }
+
+    #bandeau .stacked{
+      display:block;
+    }
+
+    #bandeau ul{
+      text-align: center;
+      padding: 0 0;
+    }
+
+    #bandeau .institutionnel
+    {
+      height: 3.5vh;
+    }
+	
+	#texteremerciements{
+		position:relative;
+		width:80%;
+		top:3vh;
+		margin:auto;
+		text-align:center;
+		font-size: 2.5vh;
+		font-weight:600;
+		font-family: Josefin Sans;
+		color: #001526;
+	}
+	#srcdonnees{
+		font-size: 2vh;
+		font-weight:400;
+	}
+	
+	
+	
+	#etudiantsposition{
+	position:relative;
+	display:absolute;
+	top:2vh;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+	
+}
+	
+  #etudiants {
+	position:relative;
+	 display:inline-block;
+	 width:75vw;
+	 margin:auto;
+	 padding:1vh;
+	vertical-align:middle;
+	text-align:center;
+    }
+
+    #etudiants li{
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 2vh;
+    }
+
+
+    #etudiants img{
+      height: 15vh;
+    }
+
+
+
+    #etudiants ul{
+      text-align: center;
+      padding: 0 0;
+    }
+
+	
+	#etudiants a:link, a:visited  {
+    text-decoration: none;
+	font-size: 13pt;
+		font-weight:700;
+		font-family: Josefin Sans;
+		color: #001526;
+	}
+	
+	#logos ul {
+		width : 100%;
+	}
+	

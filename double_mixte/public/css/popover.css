@@ -1,0 +1,556 @@
+#popover2013 {
+    position: absolute;
+    display: none;
+    left: 45vw;
+    top: 60vh;
+    width: 21vw;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color:white;
+    font-weight: bold;
+}
+
+#bulle2013 {
+	width: 20vw;
+}
+
+#texte2013 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.presse {
+	position: absolute;
+    
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color: #f43f00;
+    font-weight: bold;	
+    -vendor-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -ms-animation-duration: 3s;
+    -khtml-animation-duration: 3s;
+}
+#presse2013 {
+	display: none;
+	left: 9vw;
+    top: 35vh;
+    width: 20vw;
+    height: 10vh;
+}
+
+#textepresse2013 {
+	padding: 1em;
+    background-image: url(../img/presse2013_vide.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: right;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+}
+
+#presse2015 {
+	display: none;
+    left: 9vw;
+    top: 20vh;
+    width: 22vw;
+    height: 10vh;
+}
+
+#textepresse2015 {
+	padding: 1em;
+    background-image: url(../img/presse2013_vide.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 11vh;
+    text-align: right;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 1.5vw;
+}
+
+#textehistoire2013 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 29vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+.textenum {
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
+}
+
+.gras {
+	color: #f43f00;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#funfact2013 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2013 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#funfact2014 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2014 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#funfact2015 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2015 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#funfact2016 {
+    position: absolute;
+    display: none;
+    left: 79vw;
+    top: -6vh;
+    width: 20vw;
+}
+
+#textefunfact2016 {
+	vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+#textehistoire2011 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 50vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2012 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 50vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2014 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 43vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2015 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 44vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#textehistoire2016 {
+	position: absolute;
+    display: block;
+    left: 35vw;
+    top: 4vh;
+    width: 43vw;
+    height: 10vh;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+}
+
+#titre2011 {
+position: absolute;
+    display: block;
+    left: 22vw;
+    top: 26vh;
+    width: 61vw;
+    height: 50vh;
+    font-size: 1.8vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#texteintro {
+   position: absolute;
+    display: table-cell;
+    left: 36%;
+    top: 24vh;
+    width: 28vw;
+    /* height: 49vh; */
+    font-size: 1.8vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /* margin-top: 0vh; */
+    /* transform: translateY(-50%); */
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+#donatien {
+       position: absolute;
+    display: block;
+    left: 12vw;
+    top: 16vh;
+    /* width: 20vw; */
+    /* bottom: 0; */
+}
+
+#donatien img {
+	width: 9vw;
+}
+
+#van_intro {
+    position: absolute;
+    display: block;
+    left: 71vw;
+    top: 32vh;
+    /* width: 20vw; */
+    /* bottom: 0; */
+}
+
+#van_intro img {
+	width: 19vw;
+}
+
+#texte2016 {
+position: absolute;
+    display: block;
+    left: 28vw;
+    top: 40vh;
+    width: 43vw;
+    height: 40vh;
+    font-size: 2.5vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#popover2015 {
+    position: absolute;
+    display: none;
+    left: 75vw;
+    top: 60vh;
+    width: 21vw;
+    font-size: 11pt;
+    font-family: Josefin Sans;
+    color:white;
+    font-weight: bold;
+}
+
+#texte2015 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#labelValue {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pb {
+    position: absolute;
+    display: block;
+    left: -7vw;
+    top: 65vh;
+    width: 51vw;
+    height: 50vh;
+    font-size: 2.5vw;
+    font-family: Josefin Sans;
+    color: #001526;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+
+#timeline {
+	position: absolute;
+    left: 23vw;
+    top: 88vh;
+}
+
+#pola2011 {
+	display: block;
+	width: 27vw;
+}
+
+#pola2012 {
+	width: 27vw;
+	display: none;
+    -vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+
+}
+#pola2013 {
+	width: 31vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+#pola2014 {
+	width: 32vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+#pola2015 {
+width: 32vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+
+#pola2016 {
+width: 32vw;
+	display: none;
+	-vendor-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -khtml-animation-duration: 2s;
+}
+
+#btn2011 {
+	font-family: Josefin Sans;
+}
+#btn2012 {
+	font-family: Josefin Sans;
+}
+#btn2013 {
+	font-family: Josefin Sans;
+}
+#btn2014 {
+	font-family: Josefin Sans;
+}
+#btn2015 {
+	font-family: Josefin Sans;
+}
+#btn2016 {
+	font-family: Josefin Sans;
+}
+#selfie {
+    position: absolute;
+    left: 53vw;
+    bottom: 0;
+    width: 50%;
+}
+
+#perso {
+	width: 66%;
+}
+#photo {
+    position: absolute;
+    /* top: 14vh; */
+    left: 20vw;
+    bottom: 29vh;
+}
+
+.orange {
+	color: #f43f00;
+}
+
+#titrepola {
+position: absolute;
+    top: 10vh;
+    left: 56vw;
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: Josefin Sans;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: #f43f00;
+}
+
+
+#popover2014 {
+position: absolute;
+    display: block;
+    left:55vw;
+    top: 50vh;
+    width: 12vw;
+    font-size: 1.2vw;
+    font-family: Josefin Sans;
+    color: white;
+    font-weight: bold;
+}
+
+#texte2014 {
+	padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#age {
+    position: absolute;
+    top: 25vh;
+    left: 53vw;
+}
+
+#classe {
+    position: absolute;
+    top: 25vh;
+    left: 63vw;
+}
+
+
+#pieForm{
+      margin-top: 10%;
+}
+
+.radio label {
+    display:inline-block;
+    width: 270px;
+    padding:8px;
+    font-family:Josefin Sans;
+    font-size:13pt;
+    background-color: #f43f00;
+    color: white;
+    font-weight: bold;
+}
+
+#ageLabel{
+    color:#001526;
+}
+#csLabel:{
+    color:#001526;
+}
+#ageLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+}
+#csLabel:hover{
+        background-color: #001526;
+        color: #f43f00;
+    font-weight: bold;
+
+}
+.radio input[type="radio"]:checked + label { 
+    background-color:#bbb;
+}
+input {
+    display: block;
+    box-sizing: border-box;
+}
+#labelValue {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#001526;
+}
+
+#labelValue14 {
+    padding: 1em;
+    background-image: url(../img/bulle2013.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#001526;
+}
+
+#leftbtn {
+	display: none !important;
+}
+
+#retourdebut {
+	background-color: #f43f00;
+    color: white;
+    font-family: Josefin Sans;
+    font-weight: bold;
+}
+
+#retourdebut:hover {
+	background-color: #ff794d;
+}

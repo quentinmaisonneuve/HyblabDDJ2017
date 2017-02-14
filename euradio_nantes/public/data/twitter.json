@@ -1,0 +1,47 @@
+[
+    {
+      "y": 6,
+      "label": "Belgique",
+      "indexLabel": "6%"
+    },
+    {
+      "y": 3,
+      "label": "Royaume-Uni",
+      "indexLabel": "3%"
+    },
+    {
+      "y": 2,
+      "label": "Italie",
+      "indexLabel": "2%"
+    },
+    {
+      "y": 1,
+      "label": "Espagne",
+      "indexLabel": "1%"
+    },
+    {
+      "y": 1,
+      "label": "Allemagne",
+      "indexLabel": "1%"
+    },
+    {
+      "y": 1,
+      "label": "Etats-Unis",
+      "indexLabel": "1%"
+    },
+    {
+      "y": 1,
+      "label": "Pays-Bas",
+      "indexLabel": "1%"
+    },
+    {
+      "y": 1,
+      "label": "Canada",
+      "indexLabel": "1%"
+    },
+    {
+      "y": 1,
+      "label": "Grèce",
+      "indexLabel": "1%"
+    }
+  ]

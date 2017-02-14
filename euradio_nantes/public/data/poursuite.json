@@ -1,0 +1,21 @@
+{
+	"apresEuradio":
+	{
+		"journalismePresse":2,
+		"journalismeTV":2,
+		"journalismeRadio":9,
+		"journalismePluriMedia":3,
+		"autre":5,
+		"freelance":4,
+		"nonPoursuiteMedia":16
+	},
+
+	"avantEuradio":
+	{
+		"journalisme":18,
+		"languesLettres":9,
+		"sciencesPo":4,
+		"communication":4,
+		"autres":6
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="194.667px" height="42.667px" viewBox="0 0 194.667 42.667" enable-background="new 0 0 194.667 42.667"
+	 xml:space="preserve">
+<line fill="none" stroke="#002CE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="140" y1="10.333" x2="141" y2="10.333"/>
+<path fill="#00FDD5" stroke="#002CE6" stroke-miterlimit="10" d="M39.636,30.188"/>
+<path fill="#FFFFFF" stroke="#000045" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M165.5,34.161c0,2.028-1.644,3.672-3.672,3.672H82.172c-2.028,0-3.672-1.644-3.672-3.672V9.505c0-2.028,1.644-3.672,3.672-3.672
+	h79.656c2.028,0,3.672,1.644,3.672,3.672V34.161z"/>
+<g>
+	<rect x="165" y="13.333" fill="#FFFFFF" width="23" height="17"/>
+	<path fill="#000045" d="M188.5,31.333h-23c-0.829,0-1.5-0.672-1.5-1.5v-17c0-0.828,0.671-1.5,1.5-1.5h23c0.829,0,1.5,0.672,1.5,1.5
+		v17C190,30.661,189.329,31.333,188.5,31.333z M167,28.333h20v-14h-20V28.333z"/>
+</g>
+<rect x="173" y="16.333" fill="#000045" width="16" height="4"/>
+<rect x="173" y="22.333" fill="#000045" width="16" height="4"/>
+<g>
+	<g>
+		<path fill="#002CE6" d="M30.56,20.482c13.829,0,27.659,0,41.488,0c1.451,0,1.451-2.25,0-2.25c-13.829,0-27.659,0-41.488,0
+			C29.109,18.232,29.109,20.482,30.56,20.482L30.56,20.482z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="#002CE6" d="M16.969,26.92c13.829,0,27.659,0,41.488,0c1.451,0,1.451-2.25,0-2.25c-13.829,0-27.659,0-41.488,0
+			C15.518,24.67,15.518,26.92,16.969,26.92L16.969,26.92z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="#002CE6" d="M9.816,26.92c0.954,0,1.907,0,2.861,0c1.451,0,1.451-2.25,0-2.25c-0.954,0-1.907,0-2.861,0
+			C8.365,24.67,8.365,26.92,9.816,26.92L9.816,26.92z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="#002CE6" d="M26.221,20.482c0.159,0,0.318,0,0.477,0c1.451,0,1.451-2.25,0-2.25c-0.159,0-0.318,0-0.477,0
+			C24.771,18.232,24.771,20.482,26.221,20.482L26.221,20.482z"/>
+	</g>
+</g>
+<path fill="none" stroke="#002CE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M83,22.333v-10c0,0-0.333-2,2.333-2c2.667,0,50.667,0,50.667,0"/>
+</svg>

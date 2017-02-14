@@ -1,0 +1,209 @@
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+  background : url(../img/fond7.svg);
+	width:100%;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-color:#d0f3f4; 
+}
+
+.skyblue {
+  width:100%;
+}
+.darkerskyblue {
+  width:100%;
+}
+#logo_van {
+min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.busVan{
+    position: absolute;
+    bottom: 0;
+    
+}
+#logo_van img {
+vertical-align: middle;
+    margin-right: 0;
+    padding-right: 0;
+    width: 71%;
+    margin-left: 4vw;
+    margin-bottom: 31vh;
+}
+.page-accueil {
+  width:100%;
+   background: url(../img/ligne_accueil.svg),url(../img/nuages/Slide_1.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top; 
+
+}
+.page-intro {
+  width:100%;
+  background: url(../img/ligne_intro.svg), url(../img/nuages/Slide_2_co.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+  background-position: center center, center top;   
+}
+
+.slide2011 {
+  width:100%;
+  background: url(../img/fond_2011.svg),url(../img/nuages/Slide_3.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;
+}
+.slide2012 {
+  width:100%;
+  background: url(../img/fond_2012.svg), url(../img/nuages/Slide_4.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;   
+}
+.slide2013 {
+  width:100%;
+  background: url(../img/fond_2013.svg), url(../img/nuages/Slide_5.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;          
+}
+
+.slide2014 {
+  width:100%;
+  background: url(../img/fond_2014.svg), url(../img/nuages/Slide_6.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;          
+}
+
+.slide2015 {
+  width:100%;
+  background: url(../img/fond_2015.svg), url(../img/nuages/Slide_7.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;          
+}
+
+.slide2016 {
+  width:100%;
+  background: url(../img/fond_2016.svg), url(../img/nuages/Slide_8.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;     
+}
+
+.slidebilan {
+  width:100%;
+  background: url(../img/fond_bilan.svg), url(../img/nuages/Slide_9.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;     
+}
+
+.slideremerciements {
+  width:100%;
+  background: url(../img/fond_remerciements.svg), url(../img/nuages/Slide_10.svg);
+  background-size:     100%;  
+  background-repeat:   no-repeat;
+    background-position: center center, center top;
+}
+.darkerskyblue .skyblue .deepskyblue {
+
+}
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel .item {
+  min-height: 350px; 
+  height: 100%;
+  width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+  background-color: #09c;
+}
+.carousel-caption h3 {
+  padding: .5em;
+}
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.carousel-caption button {
+  border-color: #00bfff;
+  margin-top: 1em; 
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+.carousel-caption #circleBarCharts {
+  animation-delay: 3s;
+}
+
+
+.carousel-caption button {
+  animation-delay: 3s;
+}
+
+
+.p {
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+}
+
+#logo1 {
+  display: block;
+}
+
+#logo2 {
+  display: none;
+}
+
+#logo3 {
+  display: none;
+}
+
+.nuages{
+	position:absolute;
+	display: block;
+     width: 100vw;
+	 margin:0;
+	 padding:0;
+	 z-index:-100;
+}
+.nuagesimages{
+	display: block;
+	 margin:0;
+	 padding:0;
+     width: 100vw;
+  object-fit: cover;
+}
+
+#fleche_droite {
+  color : #001526;
+}
+
+input[type=radio] {
+    display: none;
+  }
