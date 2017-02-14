@@ -7,9 +7,10 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "chartist-plugin-legend": "^0.6.1",
     "body-parser": "^1.16.1",
+    "chartist-plugin-legend": "^0.6.1",
     "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
     "express": "^4.10.2",
     "morgan": "^1.8.1",
     "mysql": "^2.13.0",
