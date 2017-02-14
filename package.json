@@ -4,15 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-      "start": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "chartist-plugin-legend": "^0.6.1",
+    "body-parser": "^1.16.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.10.2",
-    "request": "^2.48.0"
-  },
-  "scripts": {
-    "start": "node server.js"
+    "morgan": "^1.8.1",
+    "mysql": "^2.13.0",
+    "request": "^2.48.0",
+    "serve-favicon": "^2.3.2"
   },
   "author": "",
   "license": "MIT"
