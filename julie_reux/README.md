@@ -1,15 +1,15 @@
 # Descriptif du projet
 
-Média :
+Média : Julie Reux
 
-Sujet :
+Sujet : Vignobles
 
 Equipe :
 
-Patricipants :
+Participants :
 
 - AGR :
-- Polytech :  
+- Polytech :  Madi Hind, Martin Etienne, Sechet Marc, Chauvineau Eliot
 - SciencesCom :
 
 # Installation

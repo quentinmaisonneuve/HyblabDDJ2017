@@ -1,0 +1,17 @@
+var gaugeDiv = document.getElementById("gaugeDiv");
+var value1 = 30;
+var value2 = 50;
+var verticalOffset1 = 0.7;
+var verticalOffset2 = 0.7;
+var config1 = liquidFillGaugeDefaultSettings();
+config1.circleColor = "#460613";
+config1.textColor = "#ab9fa2";
+config1.waveTextColor = "#460613";
+config1.waveColor = "#520000";
+config1.circleThickness = 0.1;
+config1.textVertPosition = verticalOffset1;
+config1.waveAnimateTime = 1000; //Changes the speed of the wave
+config1.displayPercent=false; //If put to false we replace the % by any ending text we want
+config1.textSize = 0.8;
+var gauge1= loadLiquidFillGauge("fillgauge1", value1, config1);
+var gauge2= loadLiquidFillGauge("fillgauge2", value2, config1);
