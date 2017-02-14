@@ -1,0 +1,10 @@
+.nbnuitees {
+	display: inline-block;
+	margin-left: 15%;
+    margin-top: 2%;
+}
+
+.nbnuitees img {
+	width: 2vw;
+	margin-left: -0.2vw;
+}

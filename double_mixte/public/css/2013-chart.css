@@ -1,0 +1,139 @@
+#color-series-a {
+	color: black;
+}
+
+#color-series-b {
+	color: black;
+}
+
+#texte_nuitees {
+	color: #001526;
+}
+
+.ct-series-a > line:hover {
+    stroke: #ff794d !important;
+}
+
+.ct-series-b > line:hover {
+    stroke: #004680 !important;
+}
+
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+	font-size: 0.9em;
+}
+
+.ct-label.ct-vertical.ct-start {
+	font-size: 0.9em;
+}
+
+/* couleur barre a*/
+.ct-series-a > line {
+	stroke: #f43f00 !important;
+}
+
+/* couleur barre b */
+.ct-series-b > line {
+	stroke: #001526 !important;
+}
+/* Label années */
+.ct-chart-bar .ct-label.ct-horizontal.ct-end {
+    font-size: 1.7em;
+    color: #661600;
+    font-family: Josefin Sans;
+}
+
+#label-aout {
+	background-color: #481C8C !important;
+}
+
+#label-octobre {
+	background-color: #DE8948 !important;
+}
+
+#chart1 .ct-grid {
+    stroke: rgba(0, 0, 0, 0.0);
+}
+
+#chart1 .ct-label.ct-vertical.ct-start {
+    display: none;
+}
+
+
+.ct-legend {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    text-align: center;
+    margin: 1vh auto !important;
+}
+
+.ct-legend li {
+    position: relative;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 16px;
+    color: #661600;
+    font-family: Josefin Sans;
+    font-size: 1.5em;
+}
+
+.ct-legend li:before {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    content: '';
+    border: 3px solid transparent;
+    border-radius: 2px;
+}
+
+.ct-legend li.inactive:before {
+    background-color: transparent !important;
+}
+
+.ct-legend li.ct-legend-inside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ct-legend li.ct-series-0:before {
+    background-color: #f43f00;
+    border-color: #f43f00;
+}
+
+.ct-legend li.ct-series-1:before {
+    background-color: #001526;
+    border-color: #001526;
+}
+
+#val_graph2013 {
+    font-family: Josefin Sans;
+    text-align: center;
+}
+
+#chart1 {
+    position: absolute;
+    top: 27vh;
+    left: 57vw;
+    width: 30vw;
+}
+
+#img-nuitees-2013 {
+    position: absolute;
+	left: 63vw;
+    top: 62vh;
+    width: 20vw;
+}
+#img-nuitees-2013 img {
+    display: block;
+    margin: auto;
+    width: 6vw;
+}
+
+.ct-legend {
+	margin: 3% auto;
+}

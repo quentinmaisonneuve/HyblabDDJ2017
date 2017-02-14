@@ -1,0 +1,22 @@
+{
+    "barCircleMobile":[
+    {"index":0.6,   "value":10,  "fill":"#e43a43", "label":"18 - 24 ans"},
+    {"index":0.7, "value":16,  "fill":"#d03d00", "label":"25 - 34 ans"},
+    {"index":0.8, "value":36,  "fill":"#661600", "label":"35 - 49 ans"},
+    {"index":0.9,   "value":24,  "fill":"#9b2800", "label":"50 - 62 ans"},
+    {"index":1, "value":10,  "fill":"#e43a43", "label":"63 - 75 ans"},
+    {"index":1.1, "value":1,  "fill":"#ff6169", "label":"plus de 75 ans"}
+    ],
+    "barCircleWeb":[
+    {"index":0.3, "value":26, "fill":"#443308", "label":"Cadres et professions intellectuelles supérieures"},
+    {"index":0.4, "value":15.3, "fill":"#89590b", "label":"Retraités"},
+    {"index":0.5, "value":21.4, "fill":"#604206", "label":"Professions intermédiaires"},
+    {"index":0.6, "value":14.2, "fill":"#aa7809", "label":"Employés"},
+    {"index":0.7, "value":8.9, "fill":"#dd9014", "label":"Etudiants"},
+    {"index":0.8, "value":6.4, "fill":"#e58c4a", "label":"Artisants, commerçants, Chefts d'entreprises"},
+    {"index":0.9, "value":4.4, "fill":"#ffb40d", "label":"Inactifs"},
+    {"index":1,   "value":2.1,  "fill":"#ddd205", "label":"Ouvriers"},
+    {"index":1.1, "value":0.4,  "fill":"#ffed43", "label":"Agriculteurs exploitants"}
+
+    ]
+}

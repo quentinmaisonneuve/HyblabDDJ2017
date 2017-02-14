@@ -1,0 +1,34 @@
+
+#presse2012{
+	position: absolute;	
+	display: none;
+	left: 14vw;
+    top: 30vh;
+	text-align:center;
+	vertical-align:center;
+	background-image:url(../img/coupure_presse.svg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+#textepresse2012 {
+	position:relative;
+	font-size:1.1vw;
+	width:70%;
+	text-align:center;
+	margin:auto;
+	top:15%;
+    color:#ffffff;
+    font-weight: bold;
+}
+#titrepresse2012 {
+	position:relative;
+	float:right;
+	margin-right:8%;
+	margin-top:10%;
+	font-size:1vw;
+	text-align:right;
+    font-weight: bold;
+}
+#datepresse2012{
+	display:inline-block;
+}

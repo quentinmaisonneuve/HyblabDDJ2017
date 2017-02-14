@@ -1,0 +1,22 @@
+#chart2{
+  text-align: center;
+}
+
+#chart2 .ct-chart-bar, .ct-label.ct-horizontal.ct-end {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  font-size: 1em;
+  max-height: 1.5em;
+  min-width: 50px;
+  max-width: 100px;
+}
+
+#chart2 .ct-chart-bar, .ct-label.ct-vertical.ct-start{
+  position: left;
+  text-align: left;
+  font-size: 1em;
+
+}

@@ -1,0 +1,9 @@
+#img-accueil img {
+	width: 43%;
+	vertical-align: middle;
+}
+
+#img-accueil {
+	display: block;
+	margin:auto;
+}
