@@ -1,0 +1,27 @@
+{
+	"vulnerability": [{
+		"date": 1705,
+		"zoneA": 0.40,
+		"zoneB": 0.11,
+		"zoneC": 0.44,
+		"zoneD": 0.05
+	}, {
+		"date": 1820,
+		"zoneA": 0.46,
+		"zoneB": 0.05,
+		"zoneC": 0.40,
+		"zoneD": 0.09
+	}, {
+		"date": 1950,
+		"zoneA": 0.43,
+		"zoneB": 0.07,
+		"zoneC": 0.36,
+		"zoneD": 0.13
+	}, {
+		"date": 2010,
+		"zoneA": 0.33,
+		"zoneB": 0.07,
+		"zoneC": 0.41,
+		"zoneD": 0.18
+	}]
+}

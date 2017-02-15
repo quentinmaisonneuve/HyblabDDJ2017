@@ -1,0 +1,1867 @@
+
+/*Couleurs
+/*38a0a7*/
+/*86c6ca*/
+/*9ac21b/
+/*f39200*/
+/*faf7f5*/
+
+@font-face{
+	font-family: 'Lato';
+	src: url(../fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+
+
+html{
+	/*background-image: url(../pictures/Exemple.jpg);*/
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	font-family: 'Lato';
+}
+
+body{
+	margin : 0 auto;
+}
+
+
+.Localhead{
+	height: 100%;
+	display: block;
+	margin:auto;
+	background-color: #86c6ca;
+}
+
+.Localhead article{
+	display: inline-block;
+}
+
+.ReseauSociaux {
+	float : right;
+	margin-right : 30px;
+	height:40px;
+}
+
+.ReseauSociaux ul {
+	height:40px;
+}
+
+.ReseauSociaux li {
+	display: inline-block;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size : 0px;
+	width: 40px;
+	height: 40px;
+	list-style-type: none;
+	margin : 10px;
+}
+
+.ReseauSociaux a{
+	display: inline-block;
+	min-width:40px;
+	min-height:40px;
+	background-repeat:no-repeat;
+	background-size: 40px;
+}
+.Facebook{
+	background-image: url(../pictures/FacebookIcon.png);
+}
+
+.Twitter{
+	background-image: url(../pictures/TwitterIcon.png);
+}
+
+
+.Titre{
+	background-image: url(../pictures/Intro/titre_nouveau.png);
+	background-size: contain;
+	width:46vw;
+	height:14vw;
+	margin: auto;
+	position: relative;
+	top : 125px;
+	display: block !important;
+	}
+
+
+
+.Sol{
+	width: 100%;
+	height: 20%;
+	background-color: #faf7f5;
+	position: absolute;
+	bottom: 0;
+}
+
+.Cross{
+	width: 3.15vw;
+	height: 3.1vw;
+	background-image: url(../pictures/Boutons/bouton_maison.png);
+	background-size: contain;
+	display: inline-block;
+}
+
+
+#CrossJ1{
+	position: absolute;
+	left : 21.8%;
+	top : 2vw;
+}
+
+#CrossJ2{
+	position: absolute;
+	left : 41.8%;
+	top : 2vw;
+}
+
+#CrossJ3{
+	position: absolute;
+	left : 61.8%;
+	top : 2vw;
+}
+
+#CrossJ4{
+	position: absolute;
+	left : 81.8%;
+	top : 2vw;
+}
+
+#CrossCredit{
+	position: absolute;
+	left : 1%;
+	top : 0.5vw;
+}
+
+/*INTRO*/
+
+.GaucheIntro{
+	position: absolute;
+	bottom: 11%;
+	left : 10%;
+	background-image: url(../pictures/Intro/image_mer.png);
+	background-size:contain;
+	width:27.8vw;
+	height:20vw;
+}
+
+.DroiteIntro{
+	position: absolute;
+	bottom: 11%;
+	right: 10%;
+	background-image: url(../pictures/Intro/illu_homme.png);
+	background-size:contain;
+	width:30.5vw;
+	height:22vw;
+}
+
+#BoutonP1{
+	position: absolute;
+	margin : auto;
+	top : 50%;
+	left: 45%;
+}
+
+
+.Presentation{
+	display: block;
+}
+
+.Presentation p {
+	margin-top : 10px;
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 200px;
+	font-size: 25px;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.Presentation>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+	width: 66%
+}
+.Presentation>p>span>span {
+	line-height: 2.5vw; /* on ajuste le "véritable" line-height du texte */
+}
+
+.Bouton{
+	margin-top :30px !important;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : #faf7f5;
+
+	width:10vw;
+	height:2vw;
+	display: block;
+
+	border: none;
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+.Bouton:hover{
+	opacity: 0.7;
+}
+
+#MouetteP2{
+	display: inline-block;
+	position: absolute;
+	top: 200px;
+	right : 200px;
+}
+
+#ResetV{
+	position: absolute;
+	top : 28vw;
+	left : -6vw;
+}
+
+
+/*Carte*/
+.CarteJeu{
+	display: block;
+	height: 100%;
+	width : 100%;
+	background-color: #86c6ca;
+}
+.CarteJeu article{
+	display: inline-block;
+}
+
+.CoteCarte{
+	width:100%;
+	height:100%;
+}
+
+.ImageJeu2{
+	display: inline-block;
+	background-size: contain;
+	width: 19vw;
+	height: 19vw;
+	background-image: url(../pictures/Carte/bouton-bateau-carte.png);
+	position: absolute;
+	bottom: 6.3%;
+	left : 2.62%;
+	font-size: 0;
+}
+
+.ImageJeu1{
+	display: inline-block;
+	background-size: contain;
+	width: 9.8vw;
+	height: 7.8vw;
+	background-image: url(../pictures/Carte/mouettes_rocher.png);
+	position: absolute;
+	top: 24.5%;
+	left : 5%;
+	font-size: 0;
+}
+
+.ImageJeu3{
+	display: inline-block;
+	background-size: contain;
+	width: 14vw;
+	height: 14vw;
+	background-image: url(../pictures/Carte/bouton-algue-carte.png);
+	position: absolute;
+	bottom: 4%;
+	left :14%;
+	font-size: 0;
+}
+
+.ImageJeu4{
+	display: inline-block;
+	background-size: contain;
+	width: 18vw;
+	height: 18vw;
+	background-image: url(../pictures/Carte/bouton-maison-carte.png);
+	position: absolute;
+	bottom: 31%;
+	left :12%;
+	font-size: 0;
+}
+
+.Credit{
+	margin-top :30px !important;
+	margin : auto;
+
+	font-size: 2vw;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 2px 0 #86c6ca;
+	color : black;
+	padding-top: 10px; /*permet le centrage vertical*/
+	padding-bottom: 10px;
+
+	width:10vw;
+	height:3vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+.ImageJeu2:hover,.ImageJeu3:hover, .ImageJeu4:hover, .Credit:hover{
+	opacity: 0.7;
+
+}
+
+
+/*JEU 1*/
+
+.TitreJ1{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 27.5%;
+	font-size: 2.5vw;
+}
+
+.TextJ1{
+	display: block;
+	position: absolute;
+	top : 2%;
+	left : 22.5%;
+}
+
+.TextJ1 p {
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 2vw;
+	font-size: 1.5vw;
+	position: relative;
+	top : 4vw;
+	height: 70vw;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ1>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ1>p>span>span {
+	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
+}
+
+
+
+/*JEU 2*/
+
+.InterfaceJ2 article{
+	display: inline-block;
+}
+.TitreJ2{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 47.5%;
+	font-size: 2.5vw;
+}
+
+.TextJ2{
+	display: block;
+	position: absolute;
+	top : 2%;
+	left : 42.5%;
+}
+
+.TextJ2 p {
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 2vw;
+	font-size: 1.5vw;
+	position: relative;
+	top : 4vw;
+	height: 70vw;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ2>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ2>p>span>span {
+	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
+}
+
+.barre{
+	-webkit-appearance: slider-vertical;
+}
+
+.FondJ2{
+	display: inline-block;
+	background-image: url(../pictures/Jeu2/visu_jeu_peche.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
+}
+
+.Merlu1{
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 17vw;
+    left: 30%;
+}
+.Merlu2{
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 23vw;
+    left: 5%;
+}
+.Merlu3{
+	height : 3vw;
+	width : 6vw;
+	position: absolute;
+    top: 7vw;
+    left: 35%;
+}
+.Merlu4{
+	height : 4vw;
+	width : 8vw;
+	position: absolute;
+    top: 12vw;
+    left: 12%;
+}
+.Sole1{
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 8.5vw;
+    left: 21%;
+}
+.Sole2{
+	height : 2vw;
+	width : 4vw;
+	position: absolute;
+    top: 26vw;
+    left: 15%;
+}
+.Sole3{
+	height : 2.5vw;
+	width : 5.5vw;
+	position: absolute;
+    top: 12.5vw;
+    left: 33%;
+}
+.Sole4{
+	height : 3.5vw;
+	width : 7vw;
+	position: absolute;
+    top: 18vw;
+    left: 1%;
+}
+.Homard1{
+	height : 1vw;
+	width : 3vw;
+	position: absolute;
+    top: 19.5vw;
+    left: 42%;
+}
+.Homard2{
+	height : 1vw;
+	width : 3vw;
+	position: absolute;
+    top: 11vw;
+    left: 5%;
+}
+.Homard3{
+	height : 2vw;
+	width : 4.5vw;
+	position: absolute;
+    top: 27vw;
+    left: 2%;
+}
+.Homard4{
+	height : 4vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 19.5vw;
+    left: 17%;
+}
+.SoleA{
+	height : 1vw;
+	width : 2vw;
+	position: absolute;
+    top: 31.5vw;
+    left: 36.8%;
+}
+.HomardA{
+	height : 1vw;
+	width : 2.5vw;
+	position: absolute;
+    top: 31.5vw;
+    left: 48%;
+}
+.MerluA{
+	height : 1.5vw;
+	width : 2.5vw;
+	position: absolute;
+    top: 31.2vw;
+    left: 59.5%;
+}
+.BateauP1{
+	height : 2vw;
+	width : 5vw;
+	position: absolute;
+    top: 8vw;
+    left: 60%;
+}
+.BateauP2{
+	height : 2vw;
+	width : 5vw;
+	position: absolute;
+    top: 25vw;
+    left: 85%;
+}
+.BateauM1{
+	height : 3.5vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 15vw;
+    left: 55%;
+}
+.BateauM2{
+	height : 3.5vw;
+	width : 7.5vw;
+	position: absolute;
+    top: 28vw;
+    left: 74%;
+}
+.BateauG1{
+	height : 4.5vw;
+	width : 9vw;
+	position: absolute;
+    top: 7vw;
+    left: 79%;
+}
+
+.BateauG2{
+	height : 5vw;
+	width : 9.5vw;
+	position: absolute;
+    top: 16vw;
+    left: 73%;
+}
+
+.Homme1{
+	height : 7vw;
+	width : 6.5vw;
+	position: absolute;
+    top: 22.72vw;
+    left:44%;
+}
+
+
+.Homme2{
+	height : 7vw;
+	width : 6.5vw;
+	position: absolute;
+    top: 22.72vw;
+    left: 32.5%;
+}
+
+
+.Homme3{
+	height : 7vw;
+	width : 6.5vw;
+	position: absolute;
+    top: 22.72vw;
+    left: 56.35%;
+}
+
+.radioJ2 label, .radioJ3 label{
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	width : 30px;
+	height: 30px;
+	border-radius: 10px;
+	position: relative;
+	left : -20px;
+	top : -20px;
+
+	background-color: #ffffff;
+	box-shadow: 2px 2px 0px 0px #999999;
+
+
+}
+
+.radioJ2 label:after, .radioJ3 label:after
+{
+	opacity: 0;
+	content: '';
+	background: transparent;
+	position: absolute;
+	top: 9px;
+	left: 8px;
+
+	width: 12px;
+	height: 5px;
+	border: 5px solid #000000;
+	border-top: none;
+	border-right: none;
+
+	transition: opacity 1s ease-out, transform 1s;
+}
+
+
+.radioJ2 input[type=radio]:checked + label:after, .radioJ3 input[type=radio]:checked + label:after{
+	opacity: 1;
+	transition: opacity 1s ease-out, transform 1s;
+	transform: rotate(315deg);
+}
+
+.LabelJ2{
+	position: relative;
+	top : -2.8vw;
+	left: 3vw;
+	margin: 0;
+}
+
+.EnsembleRadioJ2{
+	display: inline-block;
+	position: absolute;
+	left: 56.5%;
+	top : 28%;
+	width :3%;
+}
+
+.EnsembleRadioJ3{
+	display: inline-block;
+	position: absolute;
+	left: 76.5%;
+	top : 28%;
+	width :3%;
+}
+
+
+ #pb{
+	position: absolute;
+    top: -0.8vw;
+    left: 14%;
+}
+
+ #gb{
+	 position: absolute;
+    top: 1.6vw;
+    left: 14%;
+}
+
+ #gpb{
+	position: absolute;
+    top: 4vw;
+    left: 14%;
+}
+
+ #flotte{
+	 position: absolute;
+    top: 6.4vw;
+    left: 14%;
+}
+
+ #Bouton2050,#Reset2, #AttaqueM{
+ 	font-size: 1.5vw;
+ 	position: relative;
+ 	left: -3vw;
+}
+
+#Data1{
+	font-size: 1.5vw;
+	position: absolute;
+	bottom : 1vw;
+	left : 21%;
+	padding-top: 0.3vw;
+	height:2vw;
+}
+
+#Data2{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	bottom : 1vw;
+	left : 41%;
+	padding-top: 0.3vw;
+}
+
+#Data3{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	bottom : 1vw;
+	left : 61%;
+	padding-top: 0.3vw;
+}
+
+#Data4{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	bottom : 1vw;
+	left : 81%;
+	padding-top: 0.3vw;
+}
+
+/*Jeu3*/
+.TitreJ3{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 66.5%;
+	font-size: 2.5vw;
+}
+
+.TextJ3{
+	display: block;
+	position: absolute;
+	top : 2%;
+	left : 62.5%;
+}
+
+.TextJ3 p {
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 2vw;
+	font-size: 1.5vw;
+	position: relative;
+	top : 4vw;
+	height: 70vw;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ3>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ3>p>span>span {
+	line-height: 1.8vw; /* on ajuste le "véritable" line-height du texte */
+}
+
+.FondJ3{
+	display: inline-block;
+	background-image: url(../pictures/Jeu3/FondJ3.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
+}
+
+
+.Monstre1{
+	width : 26vw;
+	position: absolute;
+    top: 3.5vw;
+    left: 5.5%;
+}
+.Monstre2{
+	width : 15vw;
+	position: absolute;
+    top: 13vw;
+    left: 10.5%;
+ }
+.Monstre3{
+	width : 26vw;
+	position: absolute;
+    top: 3.5vw;
+    left: 5.5%;
+}
+.Monstre4{
+	width : 21vw;
+	position: absolute;
+    top: 7vw;
+    left: 5.5%;
+}
+.Touriste1{
+	width : 7vw;
+	position: absolute;
+    top: 15.5vw;
+    left: 82%;
+}
+.Touriste2{
+	width : 10vw;
+	position: absolute;
+    top: 21.5vw;
+    left: 69%;
+}
+.Touriste3{
+	width : 7vw;
+	position: absolute;
+    top: 16vw;
+    left: 63%;
+}
+.Touriste4{
+	width : 13vw;
+	position: absolute;
+    top: 8.5vw;
+    left: 43%;
+}
+.Agriculteur{
+	width : 16vw;
+	position: absolute;
+    top: 8vw;
+    left: 60%;
+}
+.PORC{
+	width : 7vw;
+	position: absolute;
+    top: 22.6vw;
+    left: 79%;
+}
+.Bouse1{
+	width : 3vw;
+	position: absolute;
+    top: 29vw;
+    left: 89%;
+}
+.Bouse2{
+	width : 3vw;
+	position: absolute;
+    top: 14vw;
+    left: 55%;
+}
+.Bouse3{
+	width : 3vw;
+	position: absolute;
+    top: 10vw;
+    left: 36%;
+}
+.Bouse4{
+	width : 3vw;
+	position: absolute;
+    top: 16vw;
+    left: 28%;
+}
+.Sceau{
+	width : 7vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;
+}
+.Scientifique{
+	width : 10vw;
+	position: absolute;
+    top: 8vw;
+    left: 38vw;
+}
+.Scientifique-réussite{
+	width : 15.5vw;
+	position: absolute;
+    top: 7vw;
+    left: 38vw;
+}
+.LogoScientifique1{
+	width : 4vw;
+	position: absolute;
+    top: 28vw;
+    left: 83%;
+}
+
+.LogoScientifique2{
+	width : 2vw;
+	position: absolute;
+    top: 28vw;
+    left: 79%;
+}
+
+.LogoScientifique3{
+	width : 3vw;
+	position: absolute;
+    top: 25vw;
+    left: 85%;
+}
+
+.LogoScientifique4{
+	width : 2vw;
+	position: absolute;
+    top: 24.5vw;
+    left: 81.5%;
+}
+
+.LogoScientifique5{
+	width : 3vw;
+	position: absolute;
+    top: 26.9vw;
+    left: 21vw;
+}
+
+.LabelJ3{
+	position: relative;
+	top : -2.4vw;
+	left: 3vw;
+	margin: 0;
+}
+
+/*data J3*/
+
+.ScientifiqueJ3-1{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2vw;
+
+}
+.ScientifiqueJ3-2{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2vw;
+}
+.ScientifiqueJ3-3{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2vw;
+}
+.ScientifiqueJ3-4{
+	width: 17vw;
+    position: absolute;
+    top: 8.5vw;
+    left: 2vw;
+}
+.DataJ3-1{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-2{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-3{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+.DataJ3-4{
+	width: 30vw;
+    position: absolute;
+    top: 5.5vw;
+    left: 49%;
+}
+
+
+.FondDJ3{
+	background-color: #CC9698;
+	height : 35vw;
+	width : 60vw;
+	display: inline-block;
+	position: relative;
+  top: 1vw;
+  left: 20vw;
+  border : 0.5vw solid white;
+}
+
+.EnsembleRadioDJ3{
+	position: absolute;
+	top: 8vw;
+	left: 20vw;
+}
+
+.radioDJ3 input{
+	display: none
+}
+
+#Macération{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Ultrasons{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Enzymes{
+	margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+#Ultrasons_Enzymes{
+		margin-top : 1.7vw !important ;
+	margin : auto;
+
+	font-size: 1.5vw;
+	text-decoration: none;
+	text-align: center;
+	color : black;
+
+	width:8vw;
+	height:2vw;
+	display: block;
+
+	background-color: #6a9dae;
+	border-radius: 10px;
+}
+
+
+
+#BoutonUE label{
+	height: 4vw;
+}
+
+/*Jeu4*/
+.TitreJ4{
+	display: inline-block;
+	position: absolute;
+	top : 2%;
+	left : 88.5%;
+	font-size: 2.5vw;
+}
+
+.TextJ4{
+	display: block;
+	position: absolute;
+	top : 4%;
+	left : 83.85%;
+}
+
+.TextJ4 p {
+	margin-bottom: auto;
+	text-align: center;
+	line-height: 1.3vw;
+	font-size: 1vw;
+	position: relative;
+	top : 1vw;
+	height: 70vw;
+}
+
+/*Solution trouvée sur le net pour centrer correctement*/
+.TextJ4>p>span {
+	display: inline-block;
+	vertical-align: middle; /* on centre le 2e span */
+	line-height: 0;
+	margin-right: auto;
+	margin-left : auto;
+}
+.TextJ4>p>span>span {
+	line-height: 1.5vw; /* on ajuste le "véritable" line-height du texte */
+}
+.FondJ4{
+	display: inline-block;
+	background-image: url(../pictures/Jeu4/ciel_jeu4.png);
+	background-size: contain;
+	height : 35vw;
+	width : 60vw;
+	position: relative;
+    top: 5vw;
+    left: 20vw;
+    border : 0.5vw solid white;
+}
+
+
+
+
+.Sable
+{
+	width : 60vw;
+	position: absolute;
+    top: 24.2vw;
+    left: 0vw;
+}
+.Mer1{
+	width : 38vw;
+	position: absolute;
+    top: 22vw;
+    left: 0vw;
+}
+.Mer2{
+	width : 29vw;
+	position: absolute;
+    top: 23vw;
+    left: 0vw;
+}
+.Mer3{
+	width : 60vw;
+	position: absolute;
+    top:20vw;
+    left: 0vw;
+}
+.Mer4{
+	width : 60vw;
+	position: absolute;
+    top: 17vw;
+    left: 0vw;
+}
+
+.Maison1 {
+	width : 6vw;
+	position: absolute;
+    top: 19vw;
+    left: 45vw;
+}
+.Maison2{
+	width : 6vw;
+	position: absolute;
+    top: 18vw;
+    left: 52vw;
+}
+.Maison3{
+	width : 6vw;
+	position: absolute;
+    top: 19vw;
+    left: 38vw;
+}
+.Digue1{
+	width : 6vw;
+	position: absolute;
+    top: 25vw;
+    left: 27vw;
+}
+.Digue2{
+	width : 9vw;
+	position: absolute;
+    top: 21.9vw;
+    left: 26vw;
+}
+.Digue3{
+	width : 8vw;
+	position: absolute;
+    top: 23vw;
+    left: 26vw;
+}
+.Money{
+	position: absolute;
+	top :-5vw;
+	left : -5vw;
+}
+
+.BarreJ4{
+	position: absolute;
+	top : 13vw;
+	right: 12vw;
+}
+
+#barreJ4-1{
+	position: relative;
+	left : 2vw;
+}
+
+#barreJ4-2{
+	position: relative;
+	left : 2vw;
+}
+
+.Bdigue{
+	position: absolute;
+	right : -9vw;
+}
+
+.Bhabitation{
+	height: 2vw;
+	position: absolute;
+	right: -1.5vw;
+}
+
+.Bhabitation p{
+	width : 8vw;
+}
+
+.Bbudget{
+	position: absolute;
+	right: -2vw;
+	top : 20vw;
+	width: 1vw;
+}
+
+.boutonV{
+	font-size: 1.5vw;
+	position: absolute;
+	right: -4vw;
+	bottom: -28vw;
+}
+
+
+
+/*Logos*/
+.Equipe{
+	position: relative;
+	top : 5.5vw;
+	left : 10vw;
+}
+
+.Nous{
+	display: inline-block;
+	font-size: 1.5vw;
+	background-color: #b8e8f2;
+	height : 50%;
+	width: 20%;
+	position: absolute;
+	top: 0vw;
+}
+
+.Crabe{
+	position: absolute;
+	text-align: center;
+	bottom: -5vw;
+	left: 42.5%;
+	font-size: 1.3vw;
+}
+.Paroles{
+	position: absolute;
+	bottom: -2vw;
+	left : 77vw;
+	font-size: 0.8vw
+}
+
+.NousAGR{
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 25.5%;
+}
+
+.NousPolytech{
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 38%;
+}
+
+.NousScienceCom{
+	height : 8vw;
+	position: relative;
+	top : 2vw;
+	left : 53%;
+}
+
+.AGR1{
+	position: absolute;
+	top : 10vw;
+	left : 25.5%;
+
+}
+.AGR2{
+	position: absolute;
+	top : 13vw;
+	left : 23.5%;
+
+}
+.AGR3{
+	position: absolute;
+	top : 16vw;
+	left : 24%;
+
+}
+.Polytech1{
+	position: absolute;
+	top : 10vw;
+	left : 44%;
+}
+.Polytech2{
+	position: absolute;
+	top : 13vw;
+	left : 44.5%;
+}
+.Polytech3{
+	position: absolute;
+	top : 16vw;
+	left : 45%;
+}
+.Polytech4{
+	position: absolute;
+	top : 19vw;
+	left : 45.5%;
+}
+.ScienceCom1{
+	position: absolute;
+	top : 10vw;
+	left : 66%;
+}
+.ScienceCom2{
+	position: absolute;
+	top : 13vw;
+	left: 67%;
+}
+.ScienceCom3{
+	position: absolute;
+	top : 16vw;
+	left : 67.5%;
+}
+
+#bandeau {
+  	padding: 8px;
+}
+
+#bandeau li{
+	  list-style-type: none;
+	  display: inline-block;
+	  vertical-align: middle;
+	  margin: 0 12px;
+}
+
+
+#bandeau img{
+ 	height: 3vw;
+}
+
+#bandeau #hyblab{
+	  height: 2vw;
+	  position: relative;
+	  top :11vw;
+	  left: 45%;
+}
+
+#bandeau{
+  	display:block;
+}
+
+.stacked{
+	display: block;
+	height : 1vw;
+	position: relative;
+	top : 14vw;
+	left : 29vw;
+}
+
+#bandeau ul{
+	text-align: center;
+	padding: 0 0;
+}
+
+#bandeau .institutionnel
+{
+	height: 3vw;
+	position: relative;
+	top : 10vw;
+
+}
+
+.organisateurs{
+	position: relative;
+	top: 14vw;
+	left : -17vw;
+}
+
+#Crédit{
+	font-size: 1.5vw;
+	position: absolute;
+	height:2vw;
+	bottom : 1vw;
+	left : 1%;
+	padding-top: 0.3vw;
+}
+
+#RetourData1{
+	font-size: 1.5vw;
+	position: absolute;
+	top : 4vw;
+	left : 21%;
+	padding-top: -0.7vw;
+	height:2vw;
+}
+
+#RetourData2{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 41%;
+	padding-top: -0.7vw;
+}
+
+#RetourData3{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 61%;
+	padding-top: -0.7vw;
+}
+
+#RetourData4{
+	height:2vw;
+	font-size: 1.5vw;
+	position: absolute;
+	top : 1vw;
+	left : 81%;
+	padding-top: -0.7vw;
+}
+
+
+
+.LegendeD4{
+	height: 3vw;
+	position: absolute;
+	top: 33vw;
+	left: 93.5%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Gestion en pages */
+
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+
+    /* Touch detection for Windows 8 */
+    -ms-touch-action: none;
+
+    /* IE 11 on Windows Phone 8.1*/
+    touch-action: none;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: hidden;
+    position: relative;
+}
+.fp-scroller{
+    overflow: hidden;
+}
+.iScrollIndicator{
+    border: 0 !important;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+}
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+    height: auto !important;
+}
+
+#div1{
+	width:80px;
+	height:80px;
+	display:block;
+	background-color:red;
+}
+
+#dataviz2_img{
+	display: block;
+	margin: auto;
+	width: 70vw;
+	height: 40vw;
+}
+
+#chart_bateau1{
+	position: absolute;
+	top: 11vw;
+	left: 236.75vw;
+	width: 32vw;
+	height: 26vw;
+}
+
+#chart_bateau1 .line{
+	fill: none;
+	stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.tick line{
+	display: none;
+}
+
+#text_age_bateau{
+	position: absolute;
+	top: 30vw;
+	left: 222vw;
+	font-size: 2.5vw;
+	color: white;
+}
+
+#textDataViz2{
+	top: 34vw;
+	left: 215.5vw;
+	width: 67vw;
+}
+
+.textData{
+	position: absolute;
+	text-align: justify;
+	background-color: #cc9698;
+	border-radius: 1vw;
+	line-height: 2vw;
+	font-size: 1.3vw;
+	padding: 1vw 1vw 1vw 1vw;
+}
+
+#dataviz4 div h2{
+	position: absolute;
+	top: 0vw;
+	left: 440vw;
+}
+
+#div_amount{
+	position: absolute;
+	color: #980b11;
+	font-size: 1.6vw;
+}
+
+#textDataviz4{
+	position: absolute;
+	width: 80vw;
+	top: 35vw;
+	left: 408vw;
+}
+
+#histogramme{
+	position: absolute;
+	left: 408vw;
+	top: 6vw;
+	height: 30vw;
+	background-color: #cc9698;
+	width: 39vw;
+	border-radius: 1vw;
+}
+
+#graphHabitat{
+	position: absolute;
+	left: 447.3vw;
+	top: 6vw;
+	background-color: #cc9698;
+	height: 30vw;
+	width: 42.7vw;
+	border-radius: 1vw;
+}
+
+#text_graphe_habitat{
+	position: absolute;
+	left : 1vw;
+	top : 20vw;
+	font: 3vw sans-serif;
+	color: white;
+}
+
+.chart_habitat{
+	position: absolute;
+}
+
+.list_annee{
+	position: absolute;
+}
+
+.legendeHisto{
+	width: 3vw;
+	height: 3vw;
+	display: inline-block;
+}
+
+#legende{
+	position: absolute;
+	top: 5vw;
+	left: 1vw;
+	text-align: left;
+}
+
+.textLegende{
+	fill: #eff2f4;
+	font: 1.5vw sans-serif;
+	display: inline-block;
+}
+
+#legende1{
+	background-color: #062a3a;
+}
+#legende2{
+	background-color: #6a9dae;
+}
+#legende3{
+	background-color: #b8e8f2;
+}
+#legende4{
+	background-color: #ffffff;
+}
+
+.button_anne{
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	color: white;
+}
+
+.button_anne_selected{
+	text-align: center;
+	text-decoration: none;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	display: inline-block;
+}
+
+.bar {
+	fill: #6a9dae;
+}
+
+.textHisto{
+	fill: #eff2f4;
+	font: 2vw sans-serif;
+}
+
+.dateHisto{
+	fill: #980b11;
+	font: 2vw sans-serif;
+}
+
+.bar:hover {
+	fill: brown;
+}
+
+.axis--x path {
+	display: none;
+}
