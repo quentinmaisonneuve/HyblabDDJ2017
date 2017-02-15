@@ -24,6 +24,10 @@
             </script>
         <![endif]-->
 
+        <!-- Those polyfills are required so that old browsers support fetch mecanism -->
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.min.js" defer ></script>
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.min.js" defer></script>
+
         <!-- Libraries -->
         <script type="text/javascript" src="lib/jquery.min.js"></script>
         <script type="text/javascript" src="lib/jquery-ui.min.js" defer></script>
@@ -53,19 +57,19 @@
         <script type="text/javascript" src="js/animateUsingD3.js" defer></script>
 
         <!-- Configuration de fullPage.js -->
-        <script type="text/javascript">                       
+        <script type="text/javascript">
             $(document).ready(function() {
                 var idsOfSections = ["section0", "section1", "section2", "scenario1", "scenario2", "scenario3", "section6"];
-                function navLiUpdate() { 
+                function navLiUpdate() {
                     var old = document.getElementsByClassName("active-li")[0];
-                    var str = old.className.replace("active-li", ""); 
+                    var str = old.className.replace("active-li", "");
                     old.className = str; // on remove l'ancienne balise "active-li" pour assurer l'unicité
-                    
+
                     var index = idsOfSections.indexOf(document.getElementsByClassName('active')[0].id); // on récupère l'index de la slide actuellement affichée
-                    
+
                     document.getElementById("fp-nav").childNodes[1].childNodes[2*index+1].className = "active-li"; // on définit la balise de la slide nav correspondante à la slide affichée comme étant la nouvelle "active-li"
                 };
-                
+
                 $('#fullpage').fullpage({
                   afterLoad: function () {updateSlideNav(); navLiUpdate();}, // pour qu'après chaque chargement de slide, fullPage lance les fonctions updateSlideNav() du modules noSlideNav.js et navLiUpdate() définie ci-dessus
                 });
@@ -91,15 +95,15 @@
 
             <section class="section active" id="section0">
                 <article class="content">
-                  
+
                   <article>
                       <img class="background" id="home" src="img/HOME-BASE-FINAL.svg"/>
-                      
+
                       <a href="https://twitter.com/transporthyblab"><img class="rs" id="twitter" src="img/rs/twitter.ico"></img></a>
                       <a href="https://www.instagram.com/en_route_hyblab/"><img class="rs" id="instagram" src="img/rs/instagram.png"></img></a>
                       <a href="https://github.com/kendearoth/HyblabDDJ2017/tree/ouest_france/ouest_france"><img class="rs" id="github" src="img/rs/github.png"></img></a>
                   </article>
-                  
+
                   <article id="textIntro">
                     <p class="ArialR" id="text">
                       Voiture, bus, vélo, chaque jour vous effectuez plus de 5 millions de déplacements. Découvrez qui sont ces anonymes, parfois stressés, souvent pressés, malpolis ou bienveillants, que l’on croise chaque matin et chaque soir, sans même s’en rendre compte.

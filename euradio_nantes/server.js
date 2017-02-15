@@ -13,8 +13,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // You can then add whatever routing code you need
 app.get("/public/data/*", function(req, res) {
-    var file = req.url.replace('/public/data/', '');
-    var json = JSON.parse(fs.readFileSync('euradio_nantes/public/data/' + file, 'utf8'));
+    var file = req.url.replace('/public/data/euradio_nantes', '');
+    var json = JSON.parse(fs.readFileSync(path.join(__dirname, file), 'utf8'));
     res.json(json);
 });
 

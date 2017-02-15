@@ -11,9 +11,9 @@ var db = mysql.createConnection(configDB);
 db.connect(function(err){
     if(err){
         console.log("Error connection to database. Check if your database work and if login is correct");
+        console.log(err);
         return;
     }
     console.log("Connection to database established");
 });
 module.exports=db;
-
