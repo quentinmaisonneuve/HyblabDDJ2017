@@ -1097,6 +1097,9 @@ a{
 	text-decoration:none;
 }
 
+a:visited{
+	color : #000044;
+}
 
 #dataviz-3-title h1{
 	text-align:center;
